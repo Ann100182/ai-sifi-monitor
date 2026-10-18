@@ -1,0 +1,1044 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "HashiCorp",
+        "fields": {
+          "role": "acquiree"
+        }
+      },
+      {
+        "type": "company",
+        "name": "StreamSets",
+        "fields": {
+          "role": "acquiree"
+        }
+      },
+      {
+        "type": "company",
+        "name": "WebMethods",
+        "fields": {
+          "role": "acquiree"
+        }
+      },
+      {
+        "type": "company",
+        "name": "The Weather Company",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "IBM-R&D-FY2024",
+        "fields": {
+          "filer": "IBM",
+          "purpose": "Research, development and engineering",
+          "verbatim_quote": "Research, development and engineering 1,796"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Software AG",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Francisco Partners",
+        "fields": {
+          "aliases": [
+            "Zephyr Buyer, L.P."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "HashiCorp",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "StreamSets-webMethods-\u20ac2.13B",
+        "fields": {
+          "filer": "IBM",
+          "amount_usd": 2400000000,
+          "counterparty": "Software AG",
+          "purpose": "Acquisition of StreamSets and webMethods (Super iPaaS integration platforms); expected to close mid-year 2024",
+          "verbatim_quote": "on December 18, 2023, the company entered into a definitive agreement with Software AG to acquire StreamSets and webMethods, Software AG's Super iPaaS (integration platform-as-a-service) enterprise technology platforms, for approximately \u20ac2.13 billion in cash"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "HashiCorp-$6.4B",
+        "fields": {
+          "filer": "IBM",
+          "amount_usd": 6400000000,
+          "counterparty": "HashiCorp",
+          "purpose": "Acquisition of all outstanding shares of HashiCorp, Inc.; expected to close by end of 2024",
+          "verbatim_quote": "On April 24, 2024, the company announced its intent to acquire all of the outstanding shares of HashiCorp, Inc., (HashiCorp)...HashiCorp shareholders will receive $35 per share in cash, representing a total enterprise value of approximately $6.4 billion"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Weather-Company-Seller-Financing",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "IBM",
+          "beneficiary": "Francisco Partners",
+          "purpose": "Seller financing for Weather Company asset sale",
+          "term_yrs": 7,
+          "debt_stack_usd": 100000000,
+          "verbatim_quote": "Upon closing, the company received cash proceeds of $750 million and provided seller financing to Francisco in the form of a $100 million loan with a term of 7 years"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "IBM-Financing-ClientLeases",
+        "fields": {
+          "investor": "IBM",
+          "target": "Various clients",
+          "amount_usd": 3949000000,
+          "purpose": "Sales-type and direct financing leases for infrastructure products",
+          "verbatim_quote": "Investment in sales-type and direct financing leases relate principally to the company's Infrastructure products and are for terms generally up to five years"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Supplier-Finance-Program-Risk",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "OTHER",
+          "severity": 1,
+          "numeric_signal": {
+            "amount_usd": 113000000,
+            "note": "Q1 2024 supplier finance obligations outstanding"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The company has supplier finance programs with third-party financial institutions where the company agrees to pay the financial institutions the stated amounts of invoices from participating suppliers on the originally invoiced maturity date, which have an average term of 90 to 120 days, consistent with the company's standard payment terms"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Financing-Receivables-Credit-Risk",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 10448000000,
+            "note": "Total net financing receivables at Q1 2024; customer concentration in lease financing"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Loans are provided primarily to clients to finance the purchase of IBM hardware, software and services. Payment terms on these financing arrangements are for terms generally up to seven years"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Intangible-Asset-Exposure",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 10750000000,
+            "pct_of_assets": 15,
+            "note": "Net intangible assets including goodwill at Q1 2024; substantial amortization schedule ahead"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The net carrying amount of intangible assets decreased $287 million during the first three months of 2024, primarily due to intangible asset amortization...The aggregate intangible asset amortization expense was $598 million and $547 million for the three months ended March 31, 2024 and 2023, respectively"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "GlobalFoundries",
+        "fields": {
+          "ticker": "GFS",
+          "aliases": [
+            "GlobalFoundries U.S. Inc.",
+            "GF"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "BMC Software",
+        "fields": {
+          "aliases": [
+            "BMC"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Software AG",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Kyndryl",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "IIC",
+        "fields": {
+          "entity_type": "SPV",
+          "sponsor": "IBM",
+          "beneficiary": "IBM",
+          "debt_stack_usd": 5500000000.0,
+          "purpose": "Issuance of debt securities for funding IBM operations",
+          "verbatim_quote": "IBM International Capital Pte. Ltd (IIC), a wholly owned finance subsidiary of the company, issued $5.5 billion of U.S. dollar fixed rate notes (IIC Notes) in tranches with maturities ranging from 2 to 30 years and coupons ranging from 4.6 to 5.3 percent. These notes are fully and unconditionally guaranteed by the company. IIC is a 100 percent owned finance subsidiary of IBM, as described by the SEC in Rule 13-01(a)(4)(vi) of Regulation S-X, the primary purpose of which is to borrow money to be made available for the benefit of IBM and its affiliates."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "StreamSets-webMethods-Acquisition",
+        "fields": {
+          "filer": "IBM",
+          "counterparty": "Software AG",
+          "purpose": "Acquisition of StreamSets and webMethods",
+          "verbatim_quote": "in December 2023, in connection with the announced acquisition of StreamSets and webMethods from Software AG, the company entered into foreign exchange call option contracts (the call options) with a total notional amount of $2.3 billion (\u20ac2.13 billion) and a total premium paid of $49 million."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GF-Litigation-Risk",
+        "fields": {
+          "filer": "IBM",
+          "category": "Counterparty Breach & Litigation Exposure",
+          "named_counterparties": [
+            "GlobalFoundries"
+          ],
+          "severity": 3,
+          "verbatim_quote": "On June 8, 2021, IBM sued GlobalFoundries U.S. Inc. (GF) in New York State Supreme Court for claims including fraud and breach of contract relating to a long-term strategic relationship between IBM and GF for researching, developing, and manufacturing advanced semiconductor chips for IBM. GF walked away from its obligations and IBM is now suing to recover amounts paid to GF, and other compensatory and punitive damages, totaling more than $1.5 billion."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "BMC-Litigation-Risk",
+        "fields": {
+          "filer": "IBM",
+          "category": "Litigation Exposure & Damage Awards",
+          "named_counterparties": [
+            "BMC Software"
+          ],
+          "severity": 3,
+          "verbatim_quote": "As disclosed in the Kyndryl Form 10 and subsequent Kyndryl public filings, in 2017 BMC Software, Inc. (BMC) filed suit against IBM in the United States District Court for the Southern District of Texas in a dispute involving IBM's former managed infrastructure services business. On May 30, 2022, the trial court awarded BMC $718 million in direct damages and $718 million in punitive damages, plus interest and fees."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Brazil-Tax-Exposure",
+        "fields": {
+          "filer": "IBM",
+          "category": "Tax & Regulatory Risk",
+          "severity": 2,
+          "verbatim_quote": "Along with many other U.S. companies doing business in Brazil, the company is involved in various challenges with Brazilian tax authorities regarding non-income tax assessments and non-income tax litigation matters. The total potential amount related to all these matters for all applicable years is approximately $400 million."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Debt-Covenant-Risk",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 60715000000.0,
+            "note": "Total long-term debt + finance lease obligations at March 31, 2024"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The company's indenture governing its debt securities and its various credit facilities each contain significant covenants which obligate the company to promptly pay principal and interest, limit the aggregate amount of secured indebtedness and sale and leaseback transactions to 10 percent of the company's consolidated net tangible assets, and restrict the company's ability to merge or consolidate unless certain conditions are met."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Finance-Lease-Obligations",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 705000000.0,
+            "note": "Finance lease obligations (4.8%) due 2024\u20132034"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Finance lease obligations (4.8%) 2024\u20132034 $705 million"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Software AG",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Apptio",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "AWS",
+        "fields": {
+          "aliases": [
+            "Amazon Web Services"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "aliases": [
+            "Azure"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Red Hat",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "IBM-StreamSets-WebMethods-Acquisition",
+        "fields": {
+          "investor": "IBM",
+          "target": "Software AG",
+          "verbatim_quote": "mark-to-market impact on the foreign exchange call option contracts to economically hedge the foreign currency exposure related to the purchase price of our announced acquisition of StreamSets and webMethods from Software AG"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "IBM-RDE-Investment",
+        "fields": {
+          "filer": "IBM",
+          "purpose": "AI, hybrid cloud and quantum innovation",
+          "verbatim_quote": "Research, development and engineering (RDE) expense in the first quarter of 2024 increased 8.5 percent year to year primarily driven by investments to drive innovation in AI, hybrid cloud and quantum."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Acquisition-Integration-Costs",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "named_counterparties": [
+            "Software AG",
+            "Apptio"
+          ],
+          "verbatim_quote": "Acquisition-related charges such as in-process research and development, transaction costs, applicable retention, restructuring and related expenses, tax charges related to acquisition integration and pre-closing charges, such as financing costs.",
+          "numeric_signal": {
+            "amount_usd": 346000000,
+            "note": "Q1 2024 acquisition-related charges of $346M"
+          }
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Consulting-Revenue-Concentration",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "named_counterparties": [
+            "AWS",
+            "Microsoft"
+          ],
+          "verbatim_quote": "Our strategic partnerships continued to account for approximately 40 percent of our Consulting revenue with both AWS and Azure practices reflecting double-digit growth year-to-year in the quarter.",
+          "numeric_signal": {
+            "pct_of_revenue": 40,
+            "counterparty_count": 2,
+            "note": "40% of Consulting segment revenue ($5.2B) derives from AWS and Azure partnerships"
+          }
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Backlog-Duration-Lengthening",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "named_counterparties": [],
+          "verbatim_quote": "At the same time, we saw both a lengthening of backlog duration driven by large scale digital transformations and a reduced level of revenue realization in the quarter as clients tightened discretionary spending.",
+          "numeric_signal": {
+            "note": "Consulting backlog duration lengthening; delayed revenue realization affecting Q1 performance"
+          }
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Infrastructure-Support-Decline",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 2,
+          "named_counterparties": [],
+          "verbatim_quote": "Infrastructure Support revenue of $1,273 million decreased 8.3 percent as reported (7.3 percent adjusted for currency) in the first quarter of 2024 compared to the prior-year period, driven by volume decline in support of non-IBM equipment and IBM product cycle dynamics.",
+          "numeric_signal": {
+            "pct_of_revenue": -8.3,
+            "amount_usd": 1273000000,
+            "note": "Support revenue for non-IBM equipment declining; potential cyclical dependency on z16 product cycle"
+          }
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Software AG",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "StreamSets",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "webMethods",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "HashiCorp",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "The Weather Company",
+        "fields": {
+          "role": "divested_asset"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Rensselaer Polytechnic Institute",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "IBM-Financing-Operating-Capex",
+        "fields": {
+          "filer": "IBM",
+          "amount_usd": 1500000000,
+          "start_fy": 2024,
+          "duration_yrs": 1,
+          "purpose": "retirement-related plan contributions",
+          "verbatim_quote": "Contributions for all retirement-related plans are expected to be approximately $1.5 billion in 2024"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "IBM-Financing-Segment",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "IBM",
+          "beneficiary": "IBM",
+          "debt_stack_usd": 9921000000,
+          "term_yrs": null,
+          "purpose": "financing solutions for IBM clients' acquisition of hardware, software and services",
+          "verbatim_quote": "Financing is a reportable segment that facilitates IBM clients' acquisition of hardware, software and services by providing financing solutions, while generating solid returns on equity."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "IBM-StreamSets-Acquisition",
+        "fields": {
+          "investor": "IBM",
+          "target": "StreamSets",
+          "disclosed_date": "2024-04-30",
+          "verbatim_quote": "we expect to close the announced acquisition of StreamSets and webMethods from Software AG by mid-year"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "IBM-webMethods-Acquisition",
+        "fields": {
+          "investor": "IBM",
+          "target": "webMethods",
+          "disclosed_date": "2024-04-30",
+          "verbatim_quote": "we expect to close the announced acquisition of StreamSets and webMethods from Software AG by mid-year"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "IBM-HashiCorp-Acquisition",
+        "fields": {
+          "investor": "IBM",
+          "target": "HashiCorp",
+          "amount_usd": 6400000000,
+          "disclosed_date": "2024-04-24",
+          "verbatim_quote": "On April 24, 2024, we announced our intent to acquire all of the outstanding shares of HashiCorp...representing a total enterprise value of approximately $6.4 billion. The transaction is expected to close by the end of 2024"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-Acquisition-Integration-Risk",
+        "fields": {
+          "filer": "IBM",
+          "category": "execution_and_integration",
+          "named_counterparties": [
+            "StreamSets",
+            "webMethods",
+            "HashiCorp",
+            "Software AG"
+          ],
+          "severity": 3,
+          "verbatim_quote": "the company's ability to successfully manage acquisitions, alliances and dispositions, including integration challenges, failure to achieve objectives, the assumption of liabilities and higher debt levels"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-CAPEX-ROI-Acquisition-Gap",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 6400000000,
+            "note": "HashiCorp acquisition at $6.4B enterprise value announced Q1 2024; StreamSets and webMethods from Software AG transaction timing uncertain; integration costs and revenue accretion not quantified"
+          },
+          "named_counterparties": [
+            "HashiCorp",
+            "StreamSets",
+            "webMethods",
+            "Software AG"
+          ],
+          "verbatim_quote": "The transaction is expected to close by the end of 2024, subject to approval by HashiCorp shareholders, regulatory approvals and other customary closing conditions"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Financing-Segment-Leverage",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 9921000000,
+            "pct_of_assets": 83.1,
+            "note": "Financing segment debt of $9.9B against total Financing assets of $11.9B; debt-to-equity ratio 9.0:1; intercompany loan structure"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Financing segment debt is primarily composed of intercompany loans. Total debt changes generally correspond with the level of client and commercial financing receivables...The Financing debt-to-equity ratio remained at 9.0 to 1 at March 31, 2024."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Financing-ROE-Concentration",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 9377000000,
+            "pct_of_assets": 78.6,
+            "note": "Client financing receivables $9.4B of $11.9B Financing total assets; 73% with investment-grade clients; significant portfolio concentration in IBM client base"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Approximately 73 percent of the total external portfolio was with investment grade clients, essentially flat compared to December 31, 2023...A key objective of the Financing business is to generate strong returns on equity, and our Financing receivables are the basis for that growth."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-Foreign-Exchange-Risk",
+        "fields": {
+          "filer": "IBM",
+          "category": "currency_and_hedging",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Changes in the relative values of non-U.S. currencies to the USD affect our financial results and financial position...the fact that we do not hedge 100 percent of our currency exposures, will result in a currency impact to our revenues, profit and cash flows throughout 2024"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-StreamSets-FX-Hedging-Loss",
+        "fields": {
+          "filer": "IBM",
+          "category": "derivative_loss",
+          "named_counterparties": [
+            "Software AG",
+            "StreamSets"
+          ],
+          "severity": 1,
+          "verbatim_quote": "2024 includes a loss of $50 million on foreign exchange call option contracts related to the company's planned acquisition of StreamSets and webMethods from Software AG"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Financing-Residual-Value-Exposure",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 1,
+          "numeric_signal": {
+            "amount_usd": 424000000,
+            "note": "Unguaranteed residual value on sales-type and direct financing leases at March 31, 2024"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The unguaranteed residual value for sales-type and direct financing leases at March 31, 2024...was $424 million"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-Tax-Audit-Exposure",
+        "fields": {
+          "filer": "IBM",
+          "category": "tax_contingency",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 3,
+          "verbatim_quote": "The IRS issued a revised RAR. These adjustments, if sustained, would increase the company's income subject to tax by approximately $4.2 billion...the company continues to strongly disagree with the IRS position and will pursue resolution at IRS Appeals and then court, if necessary"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-India-Tax-Dispute",
+        "fields": {
+          "filer": "IBM",
+          "category": "tax_contingency",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "The company is involved in a number of income tax-related matters in India challenging tax assessments issued by the India Tax Authorities. As of March 31, 2024, the company had recorded $572 million as prepaid income taxes in India."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "StreamSets-webMethods-\u20ac2.13B"
+      },
+      {
+        "source_type": "capex_commitment",
+        "source_name": "StreamSets-webMethods-\u20ac2.13B",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Software AG"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "HashiCorp-$6.4B"
+      },
+      {
+        "source_type": "capex_commitment",
+        "source_name": "HashiCorp-$6.4B",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "HashiCorp"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Supplier-Finance-Program-Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Financing-Receivables-Credit-Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Intangible-Asset-Exposure"
+      },
+      {
+        "source_type": "off_balance_entity",
+        "source_name": "Weather-Company-Seller-Financing",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Francisco Partners"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "BENEFITS",
+        "target_type": "off_balance_entity",
+        "target_name": "Weather-Company-Seller-Financing"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "GlobalFoundries",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "relationship": "Strategic supplier in long-term R&D and manufacturing agreement"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "BMC Software",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "relationship": "Disputed managed infrastructure services business"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Software AG",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {
+          "relationship": "Acquisition of StreamSets and webMethods"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "off_balance_entity",
+        "target_name": "IIC",
+        "predicate": "SPONSORS",
+        "properties": {
+          "relationship": "100% ownership of finance subsidiary"
+        }
+      },
+      {
+        "source_type": "off_balance_entity",
+        "source_name": "IIC",
+        "target_type": "company",
+        "target_name": "IBM",
+        "predicate": "BENEFITS",
+        "properties": {
+          "relationship": "Debt proceeds benefit IBM operations"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "risk_factor",
+        "target_name": "GF-Litigation-Risk",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "risk_factor",
+        "target_name": "BMC-Litigation-Risk",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "risk_factor",
+        "target_name": "Brazil-Tax-Exposure",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Debt-Covenant-Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Finance-Lease-Obligations",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Software AG",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {
+          "deal_type": "acquisition",
+          "targets": [
+            "StreamSets",
+            "webMethods"
+          ],
+          "status": "announced"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Apptio",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "deal_type": "acquisition",
+          "timing": "Q3 2023"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Red Hat",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "note": "Subsidiary; Red Hat revenue and consulting growth highlighted"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "AWS",
+        "predicate": "ROUND_TRIPS_WITH",
+        "properties": {
+          "revenue_concentration": "~40% of IBM Consulting revenue",
+          "note": "Strategic partnership driving double-digit Consulting revenue growth"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Microsoft",
+        "predicate": "ROUND_TRIPS_WITH",
+        "properties": {
+          "revenue_concentration": "~40% of IBM Consulting revenue (combined with AWS)",
+          "note": "Azure practice reflecting double-digit growth year-to-year"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Consulting-Revenue-Concentration",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Acquisition-Integration-Costs",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Backlog-Duration-Lengthening",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Infrastructure-Support-Decline",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "StreamSets",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "webMethods",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "HashiCorp",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Software AG",
+        "target_type": "company",
+        "target_name": "StreamSets",
+        "predicate": "SUPPLIES"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Software AG",
+        "target_type": "company",
+        "target_name": "webMethods",
+        "predicate": "SUPPLIES"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "capex_commitment",
+        "target_name": "IBM-Financing-Operating-Capex",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "off_balance_entity",
+        "target_name": "IBM-Financing-Segment",
+        "predicate": "SPONSORS"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "risk_factor",
+        "target_name": "IBM-Acquisition-Integration-Risk",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-CAPEX-ROI-Acquisition-Gap",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Financing-Segment-Leverage",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Financing-ROE-Concentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "risk_factor",
+        "target_name": "IBM-Foreign-Exchange-Risk",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "risk_factor",
+        "target_name": "IBM-StreamSets-FX-Hedging-Loss",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Financing-Residual-Value-Exposure",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "risk_factor",
+        "target_name": "IBM-Tax-Audit-Exposure",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "risk_factor",
+        "target_name": "IBM-India-Tax-Dispute",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Rensselaer Polytechnic Institute",
+        "target_type": "company",
+        "target_name": "IBM",
+        "predicate": "BUYS_COMPUTE_FROM"
+      }
+    ],
+    "notes": "[chunk 1/5] The provided source text is primarily structured financial data (XBRL instance tags and tables from IBM's 10-Q filing for Q1 2024). The narrative sections that would typically contain SIFI-material business relationships, customer concentration data, supplier dependencies, and strategic partnerships are not included in this extraction. The filing shows: (1) Q1 2024 revenue of $14.462B (Services $7.47B, Sales $6.8B, Financing $192M); (2) multiple acquisitions tracked (2024 Acquisitions Member noted in segment allocation for Software and Consulting); (3) HashiCorp and StreamSets/WebMethods mentioned as acquired entities with deferred consideration tied to investment return metrics; (4) The Weather Company divested in January 2024 with contingent consideration structured around investment return metrics. However, without the narrative sections (Item 1 Business, Item 1A Risk Factors, MD&A narrative portions), specific customer concentration >10% of revenue, supplier single-source dependencies, off-balance-sheet financing structures, or circular counterparty relationships cannot be reliably extracted. The financing receivables ($9.8B combined current + long-term) and significant deferred income ($14.051B current + $3.488B long-term) suggest IBM's captive finance operations, but materiality to SIFI systemic risk requires context on credit concentration and off-balance vehicles not visible in these tables.\"\n\n[chunk 2/5] IBM Q1 2024 10-Q (filed 2024-04-30): Extracted SIFI-material entities and risk signals. Key findings: (1) Two announced major capex commitments: \u20ac2.13B (~$2.4B) for StreamSets/webMethods acquisition from Software AG (expected mid-2024), and $6.4B for HashiCorp acquisition (expected end-2024)\u2014both remain pending regulatory and closing conditions; (2) Off-balance seller financing: $100M 7-year loan to Francisco Partners for Weather Company asset sale (divestiture completed Jan 2024); (3) Financing receivables exposure: $10.4B net client financing receivables (leases + loans) with customer concentration risk, particularly in lease financing; (4) Intangible asset risk: $10.75B in net intangible assets and goodwill with high amortization burden ($598M/quarter); (5) Supplier finance program: $113M outstanding at Q1 2024 (low material risk but disclosed per new standard). No evidence of hidden leverage, circularity, revenue roundtripping, or customer/supplier concentration >10%. Acquisition integration risk and execution risk on pending deals are material for medium-term outlook but not yet reflected as SIFI-triggering patterns.\n[chunk 3/5] IBM 10-Q filing (April 30, 2024) extracted SIFI-material entities and relationships. Key findings: (1) **Off-Balance Finance SPV (IIC)**: IBM uses wholly-owned subsidiary IIC to issue $5.5B in debt securities with 100% guarantee, a standard debt issuance vehicle but disclosed per SEC rules. (2) **Litigation Exposure**: Two major counterparty disputes\u2014GlobalFoundries ($1.5B+ claim for breach and fraud in semiconductor R&D partnership) and BMC Software ($1.436B awarded in damages for managed services business dispute, currently on appeal). (3) **Debt Covenants**: IBM has material covenant restrictions including a consolidated net interest expense ratio covenant (2.20:1.0 minimum), sale-leaseback limits at 10% of net tangible assets, and cross-default provisions at $500M threshold. (4) **Hidden Leverage**: Finance lease obligations of $705M due 2024\u20132034 at 4.8% represent off-balance obligations. (5) **Tax Risk**: Brazil exposure of ~$400M in non-income tax disputes. (6) **Acquisition Execution**: StreamSets/webMethods acquisition from Software AG involving $2.3B notional FX hedging indicates material deal in progress. No direct evidence of AI lab investments or hyperscaler circularity in this excerpt.\n[chunk 4/5] EXTRACTION SUMMARY for IBM 10-Q (2024-04-30):\n\nSIFI-MATERIAL FINDINGS:\n\n1. **CUSTOMER CONCENTRATION** (Severity 2): Consulting segment faces 40% revenue concentration with AWS and Azure partnerships. With Consulting revenue at $5.2B, this represents ~$2.1B in revenue from two hyperscaler platforms. Double-digit growth in these partnerships creates circularity risk if demand from these customers weakens or shifts.\n\n2. **EXECUTION RISK** (Severity 2): Consulting backlog duration is lengthening due to large-scale digital transformation projects, coinciding with reduced revenue realization as clients tightened discretionary spending in Q1 2024. This signals timing mismatch between commitments and cash realization.\n\n3. **COST_OPACITY** (Severity 2): Acquisition-related charges remain substantial ($346M in Q1 2024) for StreamSets/webMethods purchase from Software AG and Apptio (acquired Q3 2023). The filing notes amortization of intangible assets ($257M), mark-to-market FX hedging costs, and integration expenses, but does not fully disclose the total committed purchase price or earnout structures.\n\n4. **REVENUE_ROUNDTRIP** (Severity 2): Infrastructure Support revenue declining 8.3% YoY, driven by \"volume decline in support of non-IBM equipment and IBM product cycle dynamics.\" This suggests cyclical dependency on z16/Power product cycles and potential single-customer or single-product concentration in hardware support revenue.\n\n5. **RELATED-PARTY DYNAMICS**: IBM's strategic partnerships with AWS and Azure for Consulting represent de facto revenue dependencies. AWS and Microsoft customers are being funneled to IBM Consulting, creating a round-trip dynamic where cloud hyperscalers benefit from IBM's services but control key customer relationships.\n\n6. **CAPEX ALIGNMENT**: RD&E investment of $1.8B in Q1 2024 (+8.5% YoY) is directed at AI, hybrid cloud, and quantum. No corresponding multi-year capex commitments disclosed for infrastructure or data center buildout to support AI workloads (unlike hyperscaler capex announcements). This is consistent with IBM's model as a software/services provider relying on hyperscaler infrastructure.\n\nNOT EXTRACTED (boilerplate):\n- Generic pension/postretirement benefit accounting (Notes 17-19)\n- Standard currency hedging programs (mentioned as routine)\n- Executive compensation details (no related-party material issues)\n- Standard revenue recognition policies\n- Routine competitive risk disclosures"
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "Adobe Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Figma",
+        "fields": {
+          "aliases": [],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "ADBE",
+            "Adobe Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "ADBE"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Adobe-Supplier-Commitments-2.3B",
+        "fields": {
+          "filer": "Adobe",
+          "amount_usd": 2300000000,
+          "duration_yrs": 4.75,
+          "start_fy": 2024,
+          "purpose": "long-term supplier commitments for goods and services",
+          "verbatim_quote": "we executed agreements associated with certain of our long-term supplier commitments that increased our minimum purchase obligations by $2.3 billion through December 2028"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Adobe-Revolving-Credit-1.5B",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "Adobe",
+          "debt_stack_usd": 1500000000,
+          "term_yrs": 5,
+          "purpose": "senior unsecured revolving credit facility for general corporate purposes",
+          "verbatim_quote": "five-year $1.5 billion senior unsecured revolving credit facility"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Adobe-Commercial-Paper-3B",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "Adobe",
+          "debt_stack_usd": 3000000000,
+          "term_yrs": 1,
+          "purpose": "unsecured commercial paper program for general corporate purposes",
+          "verbatim_quote": "commercial paper program under which we may issue unsecured commercial paper up to a total of $3 billion outstanding at any time, with maturities of up to 397 days"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Adobe-Figma-Failed-Acquisition",
+        "fields": {
+          "filer": "Adobe",
+          "category": "execution_risk",
+          "named_counterparties": [
+            "Figma"
+          ],
+          "severity": 2,
+          "verbatim_quote": "During the nine months ended August 30, 2024, we entered into a mutual termination agreement with Figma to terminate the previously announced merger agreement... we incurred a $1 billion termination fee which resulted from termination of the Figma transaction."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Adobe-Customer-Concentration-Risk",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 1,
+          "numeric_signal": {
+            "note": "No single customer represents material percentage of total revenue"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We contract with a number of software distributors and other third parties to distribute our products, services and solutions, none of which are individually responsible for a material amount of our total net revenue in any recent period."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Adobe-AI-Development-Execution-Risk",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "named_counterparties": [],
+          "verbatim_quote": "While we have released new generative artificial intelligence products, such as Adobe Firefly, and are focused on enhancing the artificial intelligence capabilities of such products and incorporating AI into existing products, services and solutions, there can be no assurance that our products will be successful or that we will innovate effectively to keep pace with the rapid evolution of AI"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Adobe-Subscription-Revenue-Lag-Risk",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 1,
+          "numeric_signal": {
+            "pct_of_revenue": 95,
+            "note": "95% of revenue from subscriptions recognized ratably over 1-36 month terms"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "If there is a change in subscriptions or renewals in a reporting period, this could cause our financial results to suffer and may not be immediately reflected in our revenue and financial results for that period because we recognize revenue over the subscription term."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Adobe-Geopolitical-Multi-Border-Risk",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "pct_of_revenue": 40,
+            "note": "Approximately 40% of revenue derived from outside US (EMEA 26% + APAC 14%)"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We derive a large portion of our total revenue from, and have significant operations, outside of the United States... approximately 50% of our employees are located outside the United States."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Adobe-Generative-AI-Regulatory-Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "regulatory_ai",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Around the world, AI regulation is in the nascent stages of development. The evolving AI regulatory environment may increase our research and development costs, increase our liability related to the use of AI by our customers or users that are beyond our control"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Adobe-GDPR-Data-Transfer-Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "regulatory_privacy",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "European data transfers outside the European Economic Area are highly regulated and litigated. The mechanisms that we and many other companies rely upon for European data transfers (for example, Standard Contractual Clauses and the EU - US Data Privacy Framework) are the subject of legal challenge"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "customer"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Figma"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "capex_commitment",
+        "target_name": "Adobe-Supplier-Commitments-2.3B",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "off_balance_entity",
+        "target_name": "Adobe-Revolving-Credit-1.5B",
+        "predicate": "DEPENDS_ON"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "off_balance_entity",
+        "target_name": "Adobe-Commercial-Paper-3B",
+        "predicate": "DEPENDS_ON"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Adobe-Figma-Failed-Acquisition",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Adobe-Customer-Concentration-Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Adobe-AI-Development-Execution-Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Adobe-Subscription-Revenue-Lag-Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Adobe-Geopolitical-Multi-Border-Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Adobe-Generative-AI-Regulatory-Risk",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Adobe-GDPR-Data-Transfer-Risk",
+        "predicate": "CITES_RISK"
+      }
+    ],
+    "notes": "[chunk 1/4] Adobe 10-Q filing (Q3 FY2024, filed 2024-09-25) is predominantly boilerplate XBRL metadata and standard financial statements. The substantive SIFI-material content extracted: (1) Figma acquisition termination with $1B penalty paid in Dec 2023 \u2014 disclosed as non-tax-deductible charge in operating expenses. This is acquisition-related, not an ongoing counterparty dependency. (2) Deferred revenue of $5.91B (Aug 2024) with ~4% non-cancellable/non-refundable enterprise commitments \u2014 typical for SaaS, not SIFI-material concentration. (3) Stock repurchases totaling $7.05B in 9M 2024, funded from operating cash \u2014 standard capital allocation, not hidden leverage. (4) No named supplier concentration, customer concentration, off-balance-sheet debt, or circularity risks identified. No AI lab investments disclosed in the section provided. No capex commitments to specific counterparties. No related-party transactions beyond executive compensation (deferred comp plan ~$266M in assets \u2014 routine). Geographic revenue split (Americas 60%, EMEA 26%, APAC 14%) is standard disclosure. The filing contains no material SIFI patterns meeting the 8-category threshold.\"\n[chunk 2/4] The provided source text (Notes 6\u201314 of Adobe's 10-Q condensed consolidated financial statements for the nine months ended August 30, 2024) contains primarily routine financial disclosures on derivative hedging instruments, goodwill impairment testing, intangible asset amortization, accrued expenses, stock-based compensation, accumulated comprehensive income, stock repurchase programs, earnings per share, and debt issuances. No SIFI-material entities, hidden leverage structures, circular dependencies, or counterparty concentrations are identified in this section. The text does mention an FTC/DOJ civil complaint regarding subscription cancellation practices and securities class action litigation related to Figma competition disclosures, but these are standard legal proceedings without material counterparty, leverage, or circularity signals. The stock repurchase agreements with unspecified \\\"large financial institutions\\\" and ASR arrangements are boilerplate equity management. No named strategic partnerships, investments in AI labs, acquisitions, or off-balance-sheet entities with SIFI relevance are disclosed.\"\n[chunk 3/4] ADBE 10-Q 2024-09-25: Extracted SIFI-material entities and risks from Adobe's Q3 FY2024 filing. Key findings: (1) $2.3B long-term supplier commitments through Dec 2028 (material capex obligation); (2) $1B Figma acquisition termination fee indicating execution risk on AI/M&A strategy; (3) 95% of revenue from ratable subscription recognition (1-36 month terms) creates revenue lag risk if churn accelerates; (4) 40% of revenue from outside US with heightened geopolitical exposure; (5) Generative AI regulatory uncertainty (nascent global AI regulations) and GDPR data transfer litigation creating operational and compliance risk. No evidence of hidden leverage (SPVs, VIEs, or operating leases with RVGs), circularity with AI labs/hyperscalers, or revenue roundtripping. Customer concentration is explicitly denied as non-material.\n[chunk 4/4] The provided excerpt from Adobe's Q3 2024 10-Q filing (Item 5 & 6) contains only routine administrative disclosure: accelerated share repurchase (ASR) agreements with unnamed large financial institutions, Rule 10b5-1 trading plan adoption by directors, certificate amendments, and exhibit listings. No SIFI-material entities, counterparties, investments, or risk signals are present in this section. The ASRs reference 'large financial institutions' but do not name them, and are standard treasury management activities without concentration or leverage implications. The document includes only boilerplate governance and exhibit certifications. No edges or additional entity nodes warrant extraction given the absence of named business relationships, supplier/customer concentration, related-party arrangements, or strategic partnerships.\""
+  }
+}

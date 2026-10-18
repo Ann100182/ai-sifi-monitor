@@ -82,24 +82,19 @@ EDGAR ──fetch──► raw HTML ──parse──► sections ──extract 
 
 ## Running it
 
-The data cache (`graphrag/cache/`, about 1.2 GB) is not in the repo, so build it once.
+### Quick start (about 15 minutes, no extraction cost)
+
+The repo includes the parsed filing sections (`graphrag/cache/parsed/`) and the Claude-extracted graph data (`graphrag/cache/extracted/`). You only build the local graph and search indexes from them.
 
 ```bash
+git clone https://github.com/Ann100182/ai-sifi-monitor.git && cd ai-sifi-monitor
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-pip install anthropic langgraph kuzu chromadb sentence-transformers python-dotenv \
-            requests beautifulsoup4 lxml tqdm pydantic
+pip install anthropic langgraph kuzu chromadb sentence-transformers python-dotenv
 
 echo "ANTHROPIC_API_KEY=sk-ant-..." > graphrag/.env
 
-# 1. Fetch and parse filings (no LLM cost)
-python -c "from graphrag.fetch import fetch_all_universe; fetch_all_universe()"
-python -c "from graphrag.parse import parse_all; parse_all()"
-
-# 2. Extract the graph with Claude (about $35, several hours)
-python -m graphrag.scripts.extract_all
-
-# 3. Build the Kuzu graph and Chroma index (local, about 15 minutes)
+# Build the Kuzu graph and Chroma index locally (no API calls, about 15 minutes)
 python -m graphrag.scripts.phase3_build
 ```
 
@@ -110,7 +105,25 @@ python -m graphrag.scripts.ask "Which SPVs does Meta sponsor?"
 streamlit run app.py        # → ExposureIQ tab
 ```
 
-Only `ANTHROPIC_API_KEY` is required. Embeddings run locally.
+The only key you need is `ANTHROPIC_API_KEY`, used at query time (about $0.02–$0.13 per question). Embeddings run locally. The first run downloads the ~130 MB `bge-small` embedding model.
+
+### Full rebuild from EDGAR (optional)
+
+To refresh the corpus or change the universe, re-run the whole pipeline:
+
+```bash
+pip install requests beautifulsoup4 lxml tqdm pydantic
+
+# 1. Fetch and parse filings (no LLM cost, about 650 MB download)
+python -c "from graphrag.fetch import fetch_all_universe; fetch_all_universe()"
+python -c "from graphrag.parse import parse_all; parse_all()"
+
+# 2. Extract the graph with Claude (about $35, several hours)
+python -m graphrag.scripts.extract_all
+
+# 3. Rebuild the indexes
+python -m graphrag.scripts.phase3_build
+```
 
 ---
 

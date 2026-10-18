@@ -1,0 +1,442 @@
+{
+  "related_party": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "LTA Research",
+        "fields": {
+          "aliases": [
+            "LTA Research & Exploration LLC"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "BCH San Jose",
+        "fields": {
+          "aliases": [
+            "BCH San Jose LLC"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "CapitalG",
+        "fields": {
+          "aliases": [
+            "Capital G"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "GV",
+        "fields": {
+          "aliases": [
+            "Google Ventures"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Kleiner Perkins",
+        "fields": {
+          "aliases": [
+            "KPCB Holdings",
+            "Kleiner Perkins Caufield & Byers"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "CapitalG-GV-KleinerPerkins-Portfolio-2024",
+        "fields": {
+          "investor": "Alphabet",
+          "target": "Kleiner Perkins co-invested private companies",
+          "amount_usd": 83000000,
+          "disclosed_date": "2025-04-25",
+          "verbatim_quote": "CapitalG and GV directly invested, or committed to invest, an aggregate of approximately $83,000,000 in certain private companies from the beginning of 2024 through March 31, 2025, in which Kleiner Perkins was a co-investor or existing investor."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-RelatedParty-Kleiner-CoInvestment",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Related Party / Conflict of Interest",
+          "named_counterparties": [
+            "Kleiner Perkins",
+            "CapitalG",
+            "GV"
+          ],
+          "severity": 2,
+          "verbatim_quote": "CapitalG and GV directly invested, or committed to invest, an aggregate of approximately $83,000,000 in certain private companies from the beginning of 2024 through March 31, 2025, in which Kleiner Perkins was a co-investor or existing investor. KPCB Holdings, Inc., as nominee for certain funds of Kleiner Perkins and several of the managers of the fund, holds more than 10% of the outstanding shares of such private companies."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-RelatedParty-LTA-Hangar",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Related Party Transaction \u2014 Founder-Affiliated Entity",
+          "named_counterparties": [
+            "LTA Research"
+          ],
+          "severity": 1,
+          "verbatim_quote": "we entered into an agreement to license a portion of our hangar space at Moffett Airfield (the Airfield) to LTA Research & Exploration LLC (LTA), which is owned by an entity affiliated with Sergey. From the beginning of 2024 through March 31, 2025, we charged LTA approximately $9,088,533."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-RelatedParty-BCH-Hangar",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Related Party Transaction \u2014 Founder-Affiliated Entity",
+          "named_counterparties": [
+            "BCH San Jose"
+          ],
+          "severity": 1,
+          "verbatim_quote": "Larry, Sergey, and Eric E. Schmidt each own one-third interests in BCH, through their respective affiliated entities. From the beginning of 2024 through March 31, 2025, we paid approximately $1,674,910 to BCH."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-KleinerPerkins-CircularInvestorCustomer",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "CIRCULARITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 83000000,
+            "note": "CapitalG/GV co-invest alongside Kleiner Perkins in private companies; Alphabet simultaneously buys and sells products/services to Kleiner Perkins portfolio companies where KP holds >10% stake. Board director L. John Doerr is KP managing director."
+          },
+          "named_counterparties": [
+            "Kleiner Perkins",
+            "CapitalG",
+            "GV"
+          ],
+          "verbatim_quote": "from time to time, we sell to and purchase from companies in which Kleiner Perkins holds more than 10% of the outstanding shares, products and services in the ordinary course of our business. L. John Doerr is a managing director/member of the managing members of those funds."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "CapitalG",
+        "target_type": "company",
+        "target_name": "Kleiner Perkins",
+        "properties": {
+          "note": "Co-invested alongside Kleiner Perkins in private companies; ~$83M aggregate 2024\u2013Q1 2025"
+        }
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "GV",
+        "target_type": "company",
+        "target_name": "Kleiner Perkins",
+        "properties": {
+          "note": "Co-invested alongside Kleiner Perkins in private companies; ~$83M aggregate 2024\u2013Q1 2025"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "investment",
+        "source_name": "CapitalG-GV-KleinerPerkins-Portfolio-2024",
+        "target_type": "company",
+        "target_name": "Kleiner Perkins"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-RelatedParty-LTA-Hangar"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-RelatedParty-LTA-Hangar",
+        "target_type": "company",
+        "target_name": "LTA Research"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-RelatedParty-BCH-Hangar"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-RelatedParty-BCH-Hangar",
+        "target_type": "company",
+        "target_name": "BCH San Jose"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-RelatedParty-Kleiner-CoInvestment"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-KleinerPerkins-CircularInvestorCustomer"
+      },
+      {
+        "predicate": "CIRCULAR_WITH",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Kleiner Perkins"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "GOOGL-KleinerPerkins-CircularInvestorCustomer",
+        "target_type": "company",
+        "target_name": "Kleiner Perkins"
+      }
+    ],
+    "notes": "[chunk 1/1] GOOGL DEF 14A (2025-04-25): Related party section is thin on SIFI-material structure. No SPVs, no off-balance-sheet entities, no AI lab investments, no large capex commitments disclosed here. Key extractions: (1) CapitalG+GV co-invested ~$83M alongside Kleiner Perkins (board director Doerr is KP MD) in private companies while Alphabet simultaneously transacts commercially with KP portfolio companies \u2014 mild circularity, severity 2. (2) Founder-affiliated hangar transactions (LTA/Sergey ~$9.1M; BCH/Larry-Sergey-Schmidt ~$1.7M) \u2014 related-party watch items, severity 1. No hidden leverage, no SPVs, no AI lab equity stakes named in this section. Recommend cross-referencing GOOGL 10-K Note on non-marketable securities for deeper investment roster."
+  },
+  "director_comp": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] The Director Compensation section of Alphabet's 2025 DEF 14A (filed 2025-04-25) contains no SIFI-material relationships, investments, acquisitions, or counterparty dependencies. The section covers routine non-employee director compensation arrangements (cash retainers, stock unit grants, vesting schedules, stock ownership requirements) and standard board governance procedures. Named individuals (Frances H. Arnold, Sergey Brin, John L. Doerr, Roger W. Ferguson Jr., John L. Hennessy, Larry Page, K. Ram Shriram, Robin L. Washington) are identified as directors with their 2024 compensation amounts, but none represent SIFI-material related-party transactions, hidden leverage, circularity, concentration risk, or other patterns of financial systemic importance. The references to compensation consultants (Compensia Inc., Semler Brossy) and the peer company analysis methodology in the CD&A are mentioned but not detailed in the excerpted text. No acquisition, investment, or strategic partnership information is disclosed in this section. Recommendation: No nodes or edges to extract.\""
+  },
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-ProjectNimbus-HumanRights",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Geopolitical / Human Rights / Reputational",
+          "named_counterparties": [
+            "Israel Defense Forces",
+            "Amazon"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Providing cloud computing technology, through Project Nimbus, to the Israeli government, including the Israel Defense Forces (IDF), raising ethical, legal, and reputational risks concerns among Google executives and employees. Project Nimbus has reportedly supported IDF operations in the Occupied Palestinian Territory, including AI-powered facial recognition and sentiment analysis."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-SaudiArabia-CloudDataCenter",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Geopolitical / Human Rights",
+          "named_counterparties": [
+            "Saudi Arabia"
+          ],
+          "severity": 2,
+          "verbatim_quote": "Supporting cloud data centers in Saudi Arabia for the state's access to user data and well-documented surveillance, detention, and extrajudicial killings of dissidents."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-GHGEmissions-ClimateGoalRisk",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Climate / Operational",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Alphabet's GHG emissions have ballooned, rising 13 percent higher in 2023 than the previous year and 48 percent higher than in 2019. The Company identifies data centers hosting energy-intensive AI functions as the primary cause, noting their energy consumption is 'outpacing' the Company's ability to bring on clean energy projects."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-AdvertisingConcentration",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 0.75,
+            "note": "AI-driven targeted advertising accounted for more than 75% of Alphabet's revenue in 2023"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Alphabet's advertising business, which heavily relies on artificial intelligence ('Al'), accounted for more than 75% of Alphabet's revenue in 2023."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-DualClassVotingStructure",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Class B stock has 10x voting rights; Page and Brin control >51% of voting power while owning <13% of stock"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In our company's multi-class voting structure, Class B stock has 10 times the voting rights of Class A. As a result, Mr. Page and Mr. Brin currently control over 51% of our company's total voting power while owning less than 13% of stock."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-AIDataPrivacyRegulatoryRisk",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Ireland DPC inquiry into AI model; $5B class-action settled over incognito tracking; EU AI Act and DSA exposure"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Google settled a 'class-action suit that sought damage payments of at least $5 billion' for 'pervasively tracking their internet use through browsers set in private mode.' The Company agreed to delete all the data collected."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Anthropic",
+        "fields": {
+          "role": "competitor",
+          "aliases": []
+        }
+      },
+      {
+        "type": "company",
+        "name": "OpenAI",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Cohere",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "competitor"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-AdvertisingConcentration"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-DualClassVotingStructure"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-AIDataPrivacyRegulatoryRisk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-ProjectNimbus-HumanRights"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-SaudiArabia-CloudDataCenter"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-GHGEmissions-ClimateGoalRisk"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-ProjectNimbus-HumanRights",
+        "target_type": "company",
+        "target_name": "Amazon"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Amazon",
+        "properties": {
+          "note": "Both named as co-providers of Project Nimbus cloud computing to Israeli government/IDF"
+        }
+      }
+    ],
+    "notes": "[chunk 1/5] This filing section is a DEF 14A Compensation Discussion & Analysis for Alphabet (GOOGL) covering FY2024 executive compensation. After thorough review, there are NO SIFI-material entities to extract. The section covers: (1) standard executive pay philosophy and benchmarking against a peer group of publicly named companies (Amazon, Apple, Cisco, Comcast, Intel, IBM, Meta, Microsoft, Netflix, Oracle, Salesforce, Disney) \u2014 these are mentioned solely as compensation comparators, not as counterparties, customers, suppliers, or investment targets; (2) routine GSU/PSU equity award details for six named executive officers with no related-party angles; (3) standard clawback, hedging, and ownership policies \u2014 all boilerplate; (4) no SPVs, off-balance-sheet entities, investments in AI labs, customer concentration, supplier dependencies, or circular relationships are disclosed or implied. The peer group listing does not constitute a business relationship edge. Nothing in this section rises to SIFI-material threshold per the hard rules.\n[chunk 2/5] This section of Alphabet's DEF 14A (2025-04-25) covers: executive compensation tables (GSU/PSU vesting scenarios, CEO pay ratio, CAP methodology), equity compensation plan information, auditor ratification (Ernst & Young LLP), director election nominees, and stockholder proposals (Proposals 3\u201314). None of the content meets the SIFI-materiality threshold for the AI SIFI Monitor knowledge graph. Specifically: (1) Executive compensation figures are routine NEO pay disclosures with no related-party or counterparty-web dimension. (2) The Ernst & Young auditor relationship is a standard service provider engagement, not SIFI-material. (3) Stockholder proposals cover governance (written consent, buyback policy, charitable partnerships, DEI, climate, AI ethics) \u2014 none reveal hidden leverage, SPVs, circular dependencies, revenue roundtripping, capex ROI gaps, customer/supplier concentration, or single-source dependencies. (4) The buyback figure cited ($62.2B in 2023) is from a stockholder proponent's supporting statement, not a company disclosure of off-balance-sheet risk. No SIFI-material nodes or edges are extractable from this filing section.\n[chunk 3/5] This DEF 14A section covers stockholder proposals (6\u201312) and Alphabet's opposing statements. SIFI-material extractions:\n\n1. ADVERTISING CONCENTRATION (HIDDEN_RISK_SIGNAL, severity 3): Advertising >75% of 2023 revenue and deeply AI-dependent \u2014 structurally exposed to single-revenue-stream risk amplified by AI ethics/regulatory pressure.\n\n2. PROJECT NIMBUS (risk_factor, severity 3): Named government cloud contract with IDF cited in proposal text and corroborated by NYT/Wired/Intercept sourcing. Amazon co-named as Nimbus co-provider. Represents execution + reputational risk for a live, named government contract.\n\n3. SAUDI ARABIA CLOUD DATA CENTERS (risk_factor, severity 2): Named counterparty relationship with a CAHRA-designated state actor for cloud infrastructure.\n\n4. GHG/AI DATA CENTER ENERGY (risk_factor, severity 2): Emissions 48% above 2019 baseline; AI compute \"outpacing\" clean energy procurement \u2014 potential stranded capex risk if 2030 net-zero goals are missed and regulatory penalties apply.\n\n5. DUAL-CLASS VOTING (HIDDEN_RISK_SIGNAL, severity 2): Page/Brin retain >51% voting control with <13% economic ownership \u2014 governance concentration risk relevant to SIFI structural analysis.\n\n6. AI DATA PRIVACY REGULATORY RISK (HIDDEN_RISK_SIGNAL, severity 3): $5B incognito settlement, Ireland DPC AI model inquiry, EU AI Act + DSA exposure \u2014 multi-jurisdictional regulatory liability pipeline tied directly to Alphabet's AI/ads revenue engine.\n\nCoSAI consortium members (Anthropic, Amazon, Cisco, Cohere, IBM, Intel, Microsoft, NVIDIA, OpenAI) mentioned as collaborative partners in AI security \u2014 noted but not individually material as investment/supply edges from this filing alone. Nodes emitted for completeness of counterparty web.\n[chunk 4/5] This section of the GOOGL DEF 14A (pages 88\u2013103) covers: (1) stockholder proposals on human rights/advertising due diligence, child safety lobbying alignment, and YouTube child safety metrics; (2) standard proxy Q&A boilerplate (voting procedures, householding, broker non-votes, meeting logistics). None of the content contains SIFI-material entities under the extraction rules. Specifically: no named business relationships with customer/supplier concentration, no investments or acquisitions, no related-party arrangements, no SPVs/off-balance-sheet vehicles, no capex commitments, no AI lab counterparties, no revenue roundtripping, no hidden leverage. The $170M YouTube FTC fine and $959M ad-revenue-from-minors figures cited are from third-party shareholder proposals referencing external studies \u2014 not Alphabet disclosures \u2014 and do not rise to SIFI-material structural risk signals. The only third-party service provider named is Broadridge Financial Solutions ($13,000 fee for proxy distribution), which is immaterial. Skipping extraction per Rule 3.\n[chunk 5/5] Source text is a proxy card / voting instruction form (DEF 14A cover page and ballot). It contains only boilerplate proxy mechanics, director nominee names, and stockholder proposal titles. There are zero SIFI-material disclosures: no named business relationships, no investments, no capex commitments, no SPVs, no revenue figures, no counterparty dependencies, and no risk factor language. Nothing meets the extraction threshold. Graph is intentionally empty."
+  }
+}

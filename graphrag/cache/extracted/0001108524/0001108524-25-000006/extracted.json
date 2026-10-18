@@ -1,0 +1,1145 @@
+{
+  "item_1": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "MuleSoft",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": [
+            "Salesforce MuleSoft"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Tableau",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": [
+            "Salesforce Tableau"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Slack",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": [
+            "Salesforce Slack"
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "MuleSoft",
+        "predicate": "SUPPLIES"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Tableau",
+        "predicate": "SUPPLIES"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Slack",
+        "predicate": "SUPPLIES"
+      }
+    ],
+    "notes": "[chunk 1/1] Item 1 Business section of Salesforce 10-K filing (2025-03-05). No SIFI-material risks identified in this narrative section. No hidden leverage, circularity, revenue roundtripping, customer concentration >10%, or supplier dependencies disclosed. Company explicitly states: 'None of our customers accounted for more than ten percent of our revenues in fiscal years 2025, 2024 or 2023. In addition, we do not have any material dependencies on any specific product, service or particular group or groups.' Company mentions cloud computing platform partners for Infrastructure-as-a-Service and Hyperforce deployment but does not name specific counterparties or disclose material concentration risk. Strategic investment portfolio in private companies mentioned but no specific investees, amounts, or AI lab relationships named in Item 1. Acquisitions and M&A strategy discussed generically without specific material transactions. No off-balance-sheet entities, SPVs, or related-party arrangements disclosed in this section."
+  },
+  "item_1a": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-ThirdPartyCloudDependency",
+        "fields": {
+          "filer": "CRM",
+          "category": "Supplier Concentration / Single-Source Infrastructure Dependency",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "The hardware, software, data and cloud computing platforms that we rely on, including, for example, the large language models leveraged in our AI offerings, may not continue to be available at reasonable prices, on commercially reasonable terms or at all. Any loss of the right to use any of these hardware, software, data or cloud computing platforms could significantly increase our expenses and disrupt or otherwise result in delays in the provisioning of our services"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-LLMSupplierConcentration",
+        "fields": {
+          "filer": "CRM",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "The hardware, software, data and cloud computing platforms that we rely on, including, for example, the large language models leveraged in our AI offerings, may not continue to be available at reasonable prices, on commercially reasonable terms or at all. Any loss of the right to use any of these hardware, software, data or cloud computing platforms could significantly increase our expenses and disrupt or otherwise result in delays in the provisioning of our services"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-OffBalanceSheetObligations",
+        "fields": {
+          "filer": "CRM",
+          "category": "Hidden Leverage / Off-Balance-Sheet Contractual Commitments",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "We also have significant other contractual commitments, including leases that have not yet commenced and commitments with infrastructure service providers, which are not reflected on our consolidated balance sheets."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-OffBalanceSheetLeverage",
+        "fields": {
+          "filer": "CRM",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "We also have significant other contractual commitments, including leases that have not yet commenced and commitments with infrastructure service providers, which are not reflected on our consolidated balance sheets.",
+          "numeric_signal": {
+            "note": "Amount unquantified; $5.0B revolving credit facility disclosed with no outstanding borrowings as of Jan 31, 2025; Senior Notes outstanding"
+          }
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-DebtServiceRisk",
+        "fields": {
+          "filer": "CRM",
+          "category": "Financial Risk / Debt Service and Lease Obligations",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "As of January 31, 2025, we had a substantial level of outstanding debt, including our Senior Notes. We are also party to the Revolving Loan Credit Agreement, which provides for our $5.0 billion Credit Facility... we have also recorded substantial liabilities associated with noncancellable future payments on our long-term lease agreements."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-AgentforceExecutionRisk",
+        "fields": {
+          "filer": "CRM",
+          "category": "Execution Risk / New Consumption-Based AI Products",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "The markets and monetization strategies for certain offerings, including Agentforce and Data Cloud, remain relatively new and uncertain and as a result our expansion into such offerings, and related investments, may present additional risks and challenges... We have limited experience with determining optimal pricing for our consumption-based contracts. Additionally, due to customer flexibility in the timing of their consumption, we could have lower levels of customer consumption of our products than we expect which may result in suboptimal pricing for consumption-based contracts."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-AgentforceCapexROIGap",
+        "fields": {
+          "filer": "CRM",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "We anticipate that significant additional investments, including in human capital software, as well as leveraging agentic AI and other technologies, will be required to scale our operations and increase productivity... These investments will increase our cost base, making it more difficult for us to offset any future revenue shortfalls by reducing expenses in the short term.",
+          "numeric_signal": {
+            "note": "Investment quantum not quantified; consumption-based revenue from Agentforce/Data Cloud unproven; pricing model described as sub-optimal risk"
+          }
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-AgentforceExecutionSignal",
+        "fields": {
+          "filer": "CRM",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "The markets and monetization strategies for certain offerings, including Agentforce and Data Cloud, remain relatively new and uncertain... We have limited experience with determining optimal pricing for our consumption-based contracts. Additionally, due to customer flexibility in the timing of their consumption, we could have lower levels of customer consumption of our products than we expect which may result in suboptimal pricing for consumption-based contracts."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-StrategicInvestmentPortfolioRisk",
+        "fields": {
+          "filer": "CRM",
+          "category": "Strategic Investment Portfolio Volatility",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We are exposed to volatility in our operating results due to changes in market prices, observable price changes and impairments of our strategic investments. The measurement of our non-marketable equity and debt securities at fair value is inherently subjective and requires management judgment and estimation. The resulting gains or losses could be material depending on market conditions and events, particularly in periods with economic uncertainty, inflation, geopolitical conflict, volatile public equity markets or unsettled global market conditions."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-InvestmentPortfolioCostOpacity",
+        "fields": {
+          "filer": "CRM",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "named_counterparties": [],
+          "verbatim_quote": "The measurement of our non-marketable equity and debt securities at fair value is inherently subjective and requires management judgment and estimation. The resulting gains or losses could be material depending on market conditions and events, particularly in periods with economic uncertainty, inflation, geopolitical conflict, volatile public equity markets or unsettled global market conditions."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-AIRegulationRisk",
+        "fields": {
+          "filer": "CRM",
+          "category": "Legal/Regulatory Risk / AI and Data Privacy Regulation",
+          "named_counterparties": [
+            "EU",
+            "USG"
+          ],
+          "severity": 3,
+          "verbatim_quote": "New EU laws, including the DSA, the Data Act and the AI Act, may impose additional rules and restrictions on the use of our products and services... countries and states are applying their data and consumer protection laws to AI, and particularly generative AI, and/or are enacting or considering legal frameworks on AI, such as the Utah Artificial Intelligence Policy Act, the Colorado Artificial Intelligence Act and the draft CCPA regulations on automated decision-making technology."
+        }
+      },
+      {
+        "type": "company",
+        "name": "EU",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "USG",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-ChinaExportControlRisk",
+        "fields": {
+          "filer": "CRM",
+          "category": "Geopolitical / Export Control and Sanctions Risk",
+          "named_counterparties": [
+            "China",
+            "USG"
+          ],
+          "severity": 2,
+          "verbatim_quote": "Sanctions and export and import control regulations in the United States and other countries are subject to change and uncertainty, including as a result of rapidly evolving technology, increased government regulation of AI and cloud service solutions, and geopolitical developments such as events affecting relations between the United States and China, multi-jurisdictional sanctions on Russia, the war in Ukraine and regional conflict in the Middle East."
+        }
+      },
+      {
+        "type": "company",
+        "name": "China",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-AICostOpacityComputing",
+        "fields": {
+          "filer": "CRM",
+          "category": "Cost Opacity / AI Compute Costs",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Developing, testing and deploying AI systems may also increase the cost profile of our offerings due to the nature of the computing costs involved in such systems... Uncertainty around new and emerging AI applications such as generative AI content creation and AI agents will require additional investment in compliance, governance and the licensing or development of proprietary datasets, machine learning models and systems to test for accuracy, bias and other variables, which are often complex, may be costly and could impact our profit margin."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-AIComputeCostOpacity",
+        "fields": {
+          "filer": "CRM",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "named_counterparties": [],
+          "verbatim_quote": "Developing, testing and deploying AI systems may also increase the cost profile of our offerings due to the nature of the computing costs involved in such systems... Uncertainty around new and emerging AI applications such as generative AI content creation and AI agents will require additional investment in compliance, governance and the licensing or development of proprietary datasets, machine learning models and systems to test for accuracy, bias and other variables, which are often complex, may be costly and could impact our profit margin."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-DataPrivacyLitigationRisk",
+        "fields": {
+          "filer": "CRM",
+          "category": "Legal Risk / Data Privacy Litigation (GDPR, CCPA)",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 2,
+          "verbatim_quote": "In 2020 we were made a party to a legal proceeding brought by a Dutch privacy advocacy group (the Privacy Collective) on behalf of certain Dutch citizens that claims we violated the GDPR and Dutch Telecommunications Act through the processing and sharing of data in connection with our Audience Studio and Data Studio products... The appeal hearing took place in the Amsterdam Court of Appeal in February 2024 and the appellate court reversed the district court's judgment. We have appealed that appellate decision to the Dutch Supreme Court."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-CrossBorderDataTransferRisk",
+        "fields": {
+          "filer": "CRM",
+          "category": "Regulatory Risk / Cross-Border Data Transfer Restrictions",
+          "named_counterparties": [
+            "EU",
+            "USG"
+          ],
+          "severity": 2,
+          "verbatim_quote": "In July 2020, the Court of Justice of the European Union invalidated the EU-U.S. Privacy Shield Framework... While the EU and U.S. governments have since adopted the EU-U.S. Data Privacy Framework... it is uncertain whether this framework will be overturned in court like the previous two EU-U.S. bilateral cross-border transfer frameworks."
+        }
+      }
+    ],
+    "edges": [],
+    "notes": null
+  },
+  "item_1b": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM"
+          ],
+          "role": "supplier"
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/1] Item 1C (Cybersecurity) from Salesforce 10-K (2025-03-05) contains no SIFI-material entities or relationships. The section discusses: (1) Salesforce's internal cybersecurity governance, including Board Cybersecurity and Privacy Committee and Chief Trust Officer oversight; (2) generic cybersecurity frameworks (NIST, ISO) and certifications (SOC 1/2/3, ISO 27001/27017/27018, CSA STAR); (3) internal incident response, threat intelligence, and employee training processes; (4) third-party risk management mentioned generically but no named vendors or service providers. There are no disclosed customer concentration risks, supplier dependencies, strategic partnerships, investments, acquisitions, or related-party arrangements that would be SIFI-material. The Board cybersecurity committee and executive roles (CTrO, CEO, CFO, C/E, CLO) are internal governance structures, not external relationships. Item 1B states 'None' (no unresolved SEC staff comments). This section is routine cybersecurity disclosure and risk management framework\u2014boilerplate governance and operational security measures. No extraction warranted beyond confirming the filer entity.\""
+  },
+  "item_3": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM",
+            "Salesforce Corp"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Slack",
+        "fields": {
+          "aliases": [
+            "Slack Technologies"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Celonis",
+        "fields": {
+          "aliases": [
+            "Celonis GmbH"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Vlocity",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SAP",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "McDonald's",
+        "fields": {
+          "ticker": "MCD",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "GoDaddy",
+        "fields": {
+          "ticker": "GDDY",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Zoomin Software",
+        "fields": {
+          "aliases": [
+            "Zoomin Software Ltd"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Own Company",
+        "fields": {
+          "aliases": [
+            "Own Company Ltd"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Zoomin-acquisition",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Zoomin Software",
+          "disclosed_date": "2024-11-01",
+          "verbatim_quote": "In connection with the Company's acquisition of Zoomin Software Ltd, on November 1, 2024, the Company issued 116,132 shares of its common stock to certain former stockholders of Zoomin Software Ltd. that will vest over time."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Own-acquisition",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Own Company",
+          "disclosed_date": "2024-11-18",
+          "verbatim_quote": "In connection with the Company's acquisition of Own Company Ltd., on November 18, 2024, the Company issued 43,682 shares of its common stock to certain former stockholders of Own Company Ltd. that will vest over time."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Bank of America",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "CRM-Infrastructure-FY2025",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": null,
+          "purpose": "infrastructure scaling and capacity for business growth",
+          "verbatim_quote": "During fiscal 2025 and in future years, we have made, and expect to continue to make, additional investments in our infrastructure to scale our operations to increase productivity and enhance our security measures."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "CRM-LeaseCommitments",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Salesforce",
+          "purpose": "office space, co-location data center facilities, development and test data center, computer equipment, software, furniture and fixtures",
+          "debt_stack_usd": 4000000000,
+          "term_yrs": null,
+          "verbatim_quote": "As of January 31, 2025, the future noncancellable minimum payments under these commitments were approximately $4.0 billion, with payments of $1.0 billion due in the next 12 months and $3.0 billion due thereafter."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "CRM-InfrastructureServiceCommitments",
+        "fields": {
+          "entity_type": "project_finance",
+          "sponsor": "Salesforce",
+          "purpose": "infrastructure service provider agreements for capacity and operations scaling",
+          "debt_stack_usd": 17300000000,
+          "term_yrs": null,
+          "verbatim_quote": "In addition to our leasing arrangements, we have other contractual commitments associated with agreements that are enforceable and legally binding, including those with infrastructure service providers. As of January 31, 2025 our total commitments under these agreements were approximately $17.3 billion, of which payments of $2.8 billion are due in the next 12 months and $14.5 billion are due thereafter."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Slack",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Vlocity",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Zoomin Software",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Own Company",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "DEPENDS_ON",
+        "target_type": "company",
+        "target_name": "Bank of America",
+        "properties": {
+          "context": "Credit Agreement administrative agent; $5.0B unsecured revolving credit facility"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "CRM-Infrastructure-FY2025",
+        "properties": {}
+      }
+    ],
+    "notes": "[chunk 1/2] ITEM 3 (Legal Proceedings) contains boilerplate risk language about IP indemnification and litigation costs. No SIFI-material risks extracted from this section. ITEM 4A (Executive Officers) disclosed related-party board memberships: Amy Weaver serves on McDonald's and Habitat for Humanity boards; Srinivas Tallapragada serves on GoDaddy board. These are director interlocks but do not constitute material counterparty relationships for SIFI purposes. Miguel Milano's prior role as Co-Owner and CRO at Celonis noted for historical context but no active material relationship disclosed. Vlocity acquisition integrated through David Schmaier, co-founder/prior CEO. Two recent acquisitions (Zoomin, Own Company) disclosed with equity consideration. No capex commitments, off-balance-sheet entities, hidden leverage, or circularity risks identified in this narrative section. Revenue concentration and customer relationships are disclosed in MD&A but lack material counterparty naming (94% subscription revenue, 8% attrition rate). No hidden risk signals meet SIFI threshold.\n[chunk 2/2] FILING CONTEXT: Salesforce 10-K FY2025 (filed 2025-03-05), Item 3 (Legal Proceedings) section provided. ANALYSIS: The source text is primarily financial/cash flow discussion with limited SIFI-material business relationship disclosure. KEY EXTRACTIONS: (1) Operating lease commitments of $4.0B and infrastructure service provider commitments of $17.3B represent material off-balance liabilities. (2) Disclosed explicit non-use of SPVs/off-balance-sheet financing. (3) Bank of America relationship as credit facility administrative agent (replaced Citibank in Oct 2024). (4) Ongoing capex for infrastructure scaling without specific dollar amount or counterparty names disclosed. (5) No customer concentration, supplier concentration, or circularity patterns evident in this section. (6) No investments in AI labs or strategic equity positions disclosed in this excerpt. SKIPPED: Generic ESG/stakeholder reporting, routine stock repurchase program mechanics, dividend announcements, and standard debt covenant compliance\u2014these are boilerplate and lack SIFI relevance.\""
+  },
+  "item_7a": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce.com"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Strategic_Investments_Portfolio",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Portfolio of 400+ companies",
+          "amount_usd": 4900000000.0,
+          "carrying_value_usd": 4811000000.0,
+          "disclosed_date": "2025-01-31",
+          "verbatim_quote": "our strategic investment portfolio consisted of investments in over 400 companies with a combined carrying value of $4.9 billion, including four privately held investments with carrying values that were individually greater than five percent of the total strategic investments portfolio and represented 24 percent of the portfolio in aggregate"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "investment",
+        "target_name": "Strategic_Investments_Portfolio",
+        "properties": {}
+      }
+    ],
+    "notes": "[chunk 1/1] FILING CONTEXT: CRM 10-K, 2025-03-05. ITEM 7A (QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK) extracted.\n\nKEY FINDINGS:\n1. **Strategic Investments Portfolio**: Salesforce discloses $4.9B in strategic investments spanning 400+ companies as of Jan 31, 2025. Carrying value is $4.811B (private equity: $4.742B; public equity: $69M). The portfolio carries cumulative unrealized gains of $1.19B and unrealized losses of $755M.\n\n2. **Investment Concentration Risk**: Four privately held investments individually exceed 5% of the portfolio and represent 24% in aggregate (~$1.15B). The five largest privately held securities alone total $1.3B. This represents a material concentration in illiquid, valuation-sensitive holdings.\n\n3. **Valuation Volatility Signal (HIDDEN_LEVERAGE pattern)**: The disclosure states \"If the enterprise value of the companies in which we hold those securities decreased by ten percent, the carrying value of our investment portfolio would decline by approximately $84 million.\" This signals balance-sheet fragility tied to venture/growth equity valuations that may not reflect observable market pricing.\n\n4. **Liquidity Constraints**: \"In certain cases, our ability to sell these investments may be impacted by contractual obligations to hold the securities for a set period of time after a public offering.\" This creates lock-up risk.\n\n5. **No Named Investees Listed**: Unlike NVIDIA's detailed roster of non-marketable equity securities (CoreWeave, Lambda, Figure, xAI, Mistral, etc.), this Salesforce disclosure does NOT enumerate specific portfolio companies. Per HARD RULE 1, we do not fabricate names. We therefore do NOT emit individual investment nodes for unnamed targets.\n\n6. **Off-Balance-Sheet Structures**: No SPVs, VIEs, operating leases with residual value guarantees, or project finance structures are disclosed in this Item 7A section.\n\n7. **Capex Commitments**: No specific capex commitments to counterparties are disclosed in this section. The text mentions \"capital expenditures\" as a use of cash but does not quantify future multi-year obligations.\n\n8. **Related-Party Transactions**: No related-party transactions are disclosed in this Item 7A extract.\n\nRISK SIGNALS IDENTIFIED:\n- **Investment Concentration (CUSTOMER_CONCENTRATION analog)**: 24% of $4.9B portfolio (~$1.18B) concentrated in four names violates SIFI materiality threshold (>10% via concentration in illiquid, unobservable securities).\n- **Valuation Sensitivity (COST_OPACITY)**: Reliance on \"observable transaction for a same or similar security\" for mark-to-market creates accounting opacity; impairment recognition is discretionary.\n\nEXTRACTION APPROACH:\nWe emit one **investment** node capturing the aggregate portfolio structure, as no individual investees are named. We include a **hidden_risk_signal** node for the concentration and valuation fragility, with severity 2 (concern), as the portfolio is large ($4.9B) but is primarily diversified across 400+ companies (thus not a single-point-of-failure); however, the four mega-concentration positions and illiquidity merit monitoring.\n\nCANONICAL NAMING: Salesforce (ticker: CRM).\n\""
+  },
+  "financial_statements_and_notes": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce, Inc.",
+            "CRM"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "CRM-StrategicInvestments-FY2025",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Privately Held Portfolio (Enterprise Cloud / Tech Startups / System Integrators)",
+          "amount_usd": 4852000000,
+          "verbatim_quote": "As of January 31, 2025, the Company held four investments, all privately held, with carrying values that were individually greater than five percent of its total strategic investments portfolio and represented approximately 24 percent of the portfolio in the aggregate."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-StrategicInvestments-Concentration",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 4852000000,
+            "pct_of_assets": 4.7,
+            "note": "4 privately held investments each >5% of $4.85B strategic investments portfolio; top 4 = ~24% of portfolio. Portfolio concentrated in enterprise cloud, tech startups, system integrators."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of January 31, 2025, the Company held four investments, all privately held, with carrying values that were individually greater than five percent of its total strategic investments portfolio and represented approximately 24 percent of the portfolio in the aggregate."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-PrivateEquityValuation-Opacity",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 4852000000,
+            "note": "Privately held equity securities ($4.85B carrying value) valued using measurement alternative or equity method; 'Valuations of privately held securities are inherently complex and require judgment due to the lack of readily available market data.'"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Valuations of privately held securities are inherently complex and require judgment due to the lack of readily available market data. In determining the estimated fair value of its strategic investments in privately held companies, the Company utilizes the most recent data available to the Company."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-StrategicInvestment-ImpairmentRisk",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 121000000,
+            "note": "Net losses on strategic investments of $121M in FY2025, $277M in FY2024, $239M in FY2023. Ongoing impairment losses on privately held securities held at $4.85B."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Losses on strategic investments, net (121) (277) (239)... The Company assesses its privately held strategic investments quarterly for impairment. The Company's impairment analysis encompasses an assessment of both qualitative and quantitative factors, including the investee's financial metrics, market acceptance of the investee's product or technology and the rate at which the investee is using its cash."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-GoodwillOpacity",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 51283000000,
+            "pct_of_assets": 49.8,
+            "note": "Goodwill of $51.3B represents ~50% of total assets ($102.9B). Tested annually for impairment; no granular segment allocation disclosed (single operating segment)."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Goodwill 51,283 48,620... The Company evaluates and tests the recoverability of its goodwill for impairment annually during its fourth quarter of each fiscal year or more often if and when circumstances indicate that goodwill may not be recoverable."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-OperatingLeaseLiability",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 2959000000,
+            "note": "Total operating lease liabilities (current $579M + noncurrent $2,380M = $2,959M) vs. ROU assets $2,157M. Also finance lease obligations embedded in financing obligations ($603M principal payments in FY2025)."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Operating lease right-of-use assets, net 2,157 2,366... Operating lease liabilities, current 579 518... Noncurrent operating lease liabilities 2,380 2,644... Principal payments on financing obligations (603) (629) (419)"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-DerivativeNotionalExposure",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "OTHER",
+          "severity": 1,
+          "numeric_signal": {
+            "amount_usd": 10700000000,
+            "note": "Notional amount of outstanding FX derivative contracts $10.7B as of Jan 31, 2025 (up from $8.6B prior year). Not designated as hedging instruments."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The notional amount of outstanding foreign currency derivative contracts as of January 31, 2025 and January 31, 2024 was $10.7 billion and $8.6 billion, respectively."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-PrivatelyHeldImpairmentJudgment",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Investment Valuation / Impairment Judgment",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Significant judgment may be required by the Company in determining if an investment is impaired based on the information available about the investee... Auditing the Company's accounting for impairment of privately held equity securities required significant judgment to evaluate management's assessment of impairment indicators to evaluate whether investments are impaired considering the current economic environment."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-StrategicInvestmentPortfolioConcentration",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Investment Portfolio Concentration",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "The Company is also exposed to concentrations of risk in its strategic investment portfolio, including within specific industries, as the Company primarily invests in enterprise cloud companies, technology startups and system integrators."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM",
+            "Salesforce.com"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "CRM-VIE-Portfolio",
+        "fields": {
+          "entity_type": "VIE",
+          "sponsor": null,
+          "beneficiary": "Salesforce",
+          "debt_stack_usd": null,
+          "residual_value_guarantee": false,
+          "purpose": "Strategic investments in variable interest entities not consolidated by Salesforce",
+          "verbatim_quote": "The Company holds investments in, or management agreements with, variable interest entities (\"VIEs\") which the Company does not consolidate because it is not considered the primary beneficiary of these entities. The carrying value of VIEs within strategic investments was $484 million and $382 million, as of January 31, 2025 and January 31, 2024, respectively."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "CRM-OperatingLeases",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": null,
+          "beneficiary": "Salesforce",
+          "debt_stack_usd": 2959000000,
+          "residual_value_guarantee": false,
+          "term_yrs": 15,
+          "purpose": "Corporate offices, data centers and equipment under noncancellable operating leases",
+          "verbatim_quote": "The Company has operating leases for corporate offices, data centers and equipment under noncancellable operating and finance leases with various expiration dates. The leases have noncancellable remaining terms of 1 year to 15 years... Total operating lease liabilities $2,959 [million]"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "CRM-TotalLeaseCommitment-$4B",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 4000000000,
+          "purpose": "Total lease commitment balance including leases not yet commenced; approximately $3.3B related to facilities space, remainder primarily equipment",
+          "verbatim_quote": "Of the total lease commitment balance, including leases not yet commenced, of $4.0 billion, approximately $3.3 billion is related to facilities space. The remaining commitment amount is primarily related to equipment."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "CRM-StrategicEquity-$4.85B",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Various private and public companies (strategic investment portfolio)",
+          "amount_usd": 4852000000,
+          "disclosed_date": "2025-01-31",
+          "verbatim_quote": "The Company's privately held debt and equity securities and other investments amounted to $4.8 billion and $4.8 billion as of January 31, 2025 and January 31, 2024, respectively. Strategic investments... Balance as of January 31, 2025 $4,852 [million]"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "CRM-Own-PreAcquisition",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Own Data Company Ltd.",
+          "amount_usd": 172000000,
+          "disclosed_date": "2024-11-01",
+          "verbatim_quote": "The fair value of the Company's noncontrolling equity investment in Own prior to the acquisition was $172 million. The Company recognized a gain of approximately $40 million as a result of remeasuring its prior equity interest in Own held before the business combination."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-VIE-HiddenLeverage",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 484000000,
+            "note": "VIE carrying value $484M as of Jan 31, 2025; not consolidated as Salesforce is not primary beneficiary"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The Company holds investments in, or management agreements with, variable interest entities (\"VIEs\") which the Company does not consolidate because it is not considered the primary beneficiary of these entities. The carrying value of VIEs within strategic investments was $484 million and $382 million, as of January 31, 2025 and January 31, 2024, respectively."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-StrategicPortfolio-Impairments",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 582000000,
+            "note": "Impairments on privately held equity and debt securities $582M in FY2025; $583M downward adjustments on measurement alternative securities; $385M upward adjustments vs $583M downward in FY2025"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Impairments on privately held equity and debt securities (582) ... For privately held securities accounted for under the measurement alternative, the Company recorded upward adjustments of $385 million and $125 million and impairments and downward adjustments of $583 million and $465 million for fiscal 2025 and 2024, respectively."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-GoodwillConcentration",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 51283000000,
+            "note": "Goodwill of $51.3B as of Jan 31, 2025 against total assets; generally not deductible for tax purposes and untested for impairment triggers in this filing section"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Goodwill represents the excess of the purchase price in a business combination over the fair value of net assets acquired... Balance as of January 31, 2025 $51,283 [million]. Goodwill, which is generally not deductible for tax purposes."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-LeaseCommitment-CapexROIGap",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 4000000000,
+            "duration_yrs": 15,
+            "note": "Total lease commitments $4.0B including not-yet-commenced leases; $303M expected sublease income over next 5 years partially offsets; operating lease ROU assets declined from $2.4B to $2.2B suggesting rationalization in progress"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Of the total lease commitment balance, including leases not yet commenced, of $4.0 billion, approximately $3.3 billion is related to facilities space. The remaining commitment amount is primarily related to equipment. The Company expects to receive sublease income of approximately $303 million in the next five years and $29 million thereafter."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-Backpage-Litigation-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Legal / Contingent Liability",
+          "named_counterparties": [
+            "Backpage.com"
+          ],
+          "severity": 2,
+          "verbatim_quote": "Plaintiffs' counsel in these actions have stated that they represent several hundred additional possible claimants. All of the foregoing actions seek unspecified monetary damages, attorneys' fees, and costs."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-Unrecognized-Tax-Benefits-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Tax / Contingent Liability",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "total unrecognized tax benefits in an amount of $1.7 billion, $1.7 billion and $1.5 billion, respectively, if recognized, would have reduced income tax expense and the Company's effective tax rate."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-StrategicInvestments-Concentration"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-PrivateEquityValuation-Opacity"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-StrategicInvestment-ImpairmentRisk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-GoodwillOpacity"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-OperatingLeaseLiability"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-DerivativeNotionalExposure"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "investment",
+        "target_name": "CRM-StrategicInvestments-FY2025"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "risk_factor",
+        "target_name": "CRM-PrivatelyHeldImpairmentJudgment"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "risk_factor",
+        "target_name": "CRM-StrategicInvestmentPortfolioConcentration"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "off_balance_entity",
+        "target_name": "CRM-VIE-Portfolio"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "off_balance_entity",
+        "target_name": "CRM-OperatingLeases"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "capex_commitment",
+        "target_name": "CRM-TotalLeaseCommitment-$4B"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "investment",
+        "target_name": "CRM-StrategicEquity-$4.85B"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "investment",
+        "target_name": "CRM-Own-PreAcquisition"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-VIE-HiddenLeverage"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-StrategicPortfolio-Impairments"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-GoodwillConcentration"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-LeaseCommitment-CapexROIGap"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "off_balance_entity",
+        "source_name": "CRM-VIE-Portfolio",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-VIE-HiddenLeverage"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "off_balance_entity",
+        "source_name": "CRM-OperatingLeases",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-LeaseCommitment-CapexROIGap"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "risk_factor",
+        "target_name": "CRM-Backpage-Litigation-Risk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "risk_factor",
+        "target_name": "CRM-Unrecognized-Tax-Benefits-Risk"
+      }
+    ],
+    "notes": "[chunk 1/3] FILING: Salesforce (CRM) 10-K, FY2025 (ended Jan 31, 2025), filed 2025-03-05.\n\nKEY FINDINGS:\n1. STRATEGIC INVESTMENTS ($4.85B): Salesforce carries a $4.85B strategic investments portfolio, predominantly privately held equity/debt. FY2025 discloses 4 individual holdings each >5% of portfolio (~24% combined). FY2024 had 2 such holdings (~16%). Counterparty names are NOT disclosed in this section \u2014 the filing only references \"enterprise cloud companies, technology startups and system integrators.\" Investment nodes are therefore aggregate; individual investee names would require Note 3 (not included in this extract).\n\n2. RECURRING LOSSES ON STRATEGIC INVESTMENTS: Net losses of $121M (FY25), $277M (FY24), $239M (FY23) \u2014 consistent pattern of value erosion in the portfolio.\n\n3. GOODWILL CONCENTRATION: $51.3B goodwill = ~50% of total assets ($102.9B). Single operating segment means no sub-segment allocation is required or disclosed, creating opacity risk.\n\n4. OPERATING LEASE OBLIGATIONS: Total operating lease liabilities ~$2.96B vs. ROU assets $2.16B. Additional finance lease obligations embedded in financing obligations (cash payments $603M in FY2025). No residual value guarantees mentioned in this section.\n\n5. FX DERIVATIVES (NOT HEDGES): $10.7B notional outstanding FX forwards \u2014 not designated as hedging instruments, creating mark-to-market P&amp;L volatility.\n\n6. NO CUSTOMER CONCENTRATION: Explicitly confirmed \u2014 no single customer \u226510% of revenue or AR.\n\n7. NO SPVs/VIEs/PROJECT FINANCE: None disclosed in this section. No off-balance-sheet entities identified.\n\n8. NO AI LAB INVESTMENTS NAMED in this section: Specific investee names for the private equity portfolio are not disclosed here; would require Note 3 to identify individual AI lab stakes (e.g., Anthropic, which CRM has publicly disclosed elsewhere).\n[chunk 2/3] Filing: Salesforce (CRM) 10-K, FY2025 (ended Jan 31, 2025). Key SIFI-material findings:\n\n1. VIE PORTFOLIO ($484M, not consolidated): Salesforce holds investments in and management agreements with VIEs it does not consolidate, carrying value grew from $382M to $484M YoY. No named counterparties disclosed in this section \u2014 potential hidden leverage.\n\n2. STRATEGIC INVESTMENT PORTFOLIO ($4.85B): Dominated by privately held equity securities under the measurement alternative ($4.617B). No individual investee names are disclosed in this filing section (unlike NVIDIA's Note 8 roster). Heavy impairments: $582M in FY2025 vs. $466M FY2024 \u2014 persistent and growing losses signal portfolio quality deterioration.\n\n3. LEASE COMMITMENTS ($4.0B total including not-yet-commenced): $3.3B facilities, remainder equipment. Operating lease ROU assets declining (restructuring-related real estate exits underway). Sublease income of only ~$332M expected over 5+ years partially offsets. Finance leases add $678M liability.\n\n4. GOODWILL ($51.3B): Enormous relative to operating assets; not deductible for tax; no impairment discussion in this section. Warrants monitoring for COST_OPACITY.\n\n5. No named AI lab investees, no SPV/project finance structures, no compute-specific capex commitments, and no revenue roundtripping signals were found in this section. The strategic investment portfolio opaqueness is the primary SIFI concern.\n[chunk 3/3] This section (financial statements & notes) of Salesforce's FY2025 10-K contains primarily: (1) deferred tax schedules, (2) unrecognized tax benefit reconciliation, (3) EPS tables, and (4) legal proceedings disclosures. No SIFI-material off-balance-sheet entities, AI lab investments, capex commitments, or hidden-leverage structures were disclosed in this excerpt. The two most notable items are: (a) $2.4B in gross unrecognized tax benefits (risk_factor, severity 2 \u2014 large but not uncommon for a company of CRM's size); and (b) Backpage litigation with \"several hundred additional possible claimants\" seeking unspecified damages (risk_factor, severity 2 \u2014 material contingency but management opines no material adverse impact expected). No SPVs, VIEs, JVs, operating leases with RVGs, AI lab equity stakes, or compute commitments were identified in this section. The Slack securities class action appears largely resolved at the appellate level (Ninth Circuit instructed dismissal with prejudice on Feb 10, 2025) and therefore is not SIFI-material."
+  },
+  "item_9a": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Slack",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ernst & Young",
+        "fields": {
+          "role": "supplier",
+          "aliases": [
+            "EY"
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Ernst & Young",
+        "predicate": "SUPPLIES",
+        "target_type": "company",
+        "target_name": "Salesforce",
+        "properties": {
+          "service": "audit",
+          "context": "independent registered public accounting firm"
+        }
+      }
+    ],
+    "notes": "[chunk 1/1] ITEM 9A (Controls & Procedures) is boilerplate disclosure of audit firm (Ernst & Young LLP) and standard certifications by PEO (Marc Benioff) and PFO (Amy Weaver). ITEM 9B discloses two Rule 10b5-1 trading arrangements by insiders (Parker Harris, Co-Founder/CTO of Slack; Marc Benioff, Chair/CEO) but these are routine insider trading plan filings, not SIFI-material relationships. ITEM 10\u201314 are incorporation-by-reference to proxy materials and contain no substantive operational, financial, or counterparty detail in the excerpt provided. No hidden leverage, circularity, revenue roundtripping, capex ROI gaps, execution risk, cost opacity, or material customer/supplier concentration signals are present in this control/governance section. Slack is mentioned only in connection with Parker Harris's role and his stock sale plan; no material business relationship between Salesforce and Slack is disclosed here.\""
+  },
+  "item_15": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce, Inc."
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Bank of America",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "U.S. Bank National Association",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Transbay Tower LLC",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "Salesforce",
+          "purpose": "Office Lease",
+          "term_yrs": 11,
+          "verbatim_quote": "Office Lease, dated April 10, 2014, between the Registrant and Transbay Tower LLC"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "50 Fremont Tower LLC",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "Salesforce",
+          "purpose": "Real Estate Purchase",
+          "verbatim_quote": "Purchase and Sale Agreement, dated November 10, 2014, between the Registrant and 50 Fremont Tower, LLC"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "DEPENDS_ON",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Bank of America",
+        "properties": {
+          "relationship": "Credit Agreement",
+          "date": "2024-10-31"
+        }
+      },
+      {
+        "predicate": "DEPENDS_ON",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "U.S. Bank National Association",
+        "properties": {
+          "relationship": "Indenture Trustee for bond issuances",
+          "date": "2018-04-11"
+        }
+      }
+    ],
+    "notes": "[chunk 1/1] Item 15 (Exhibits) and Item 16 (Form 10-K Summary) contain primarily formal exhibit listings and boilerplate. The substantive SIFI-material entities extracted are: (1) Bank of America as credit facility agent under the October 31, 2024 Credit Agreement; (2) U.S. Bank National Association as trustee for multiple bond indentures (2018\u20132021); (3) Two real-estate SPVs: Transbay Tower LLC (office lease from 2014) and 50 Fremont Tower LLC (purchase agreement 2014). These are operational property arrangements, not hidden leverage, so severity is low. The exhibit list itself references prior acquisitions (MetaMind, Traction Sales and Marketing, Tenyx) via equity incentive plans, but without material details. No material customer/supplier concentration, SIFI-relevant circularity, or capex commitments are disclosed in this section."
+  }
+}

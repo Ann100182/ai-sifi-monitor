@@ -1,0 +1,420 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google",
+            "GOOG"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Waymo",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Character.AI",
+        "fields": {
+          "private": true
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "character.ai",
+        "fields": {
+          "aliases": [
+            "Character"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Waymo",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Alphabet-Character-2.7B-Aug2024",
+        "fields": {
+          "investor": "Alphabet",
+          "target": "character.ai",
+          "amount_usd": 2700000000,
+          "disclosed_date": "2024-08",
+          "verbatim_quote": "In August 2024, we entered into a license agreement with Character pursuant to which we obtained a non-exclusive license to its current large language model technology. We paid Character $2.7 billion in cash and canceled our convertible instruments."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Alphabet-Property-Equipment-2024",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 46009000000,
+          "purpose": "Construction in progress",
+          "verbatim_quote": "Construction in progress $35,229 million as of December 31, 2023 and $46,009 million as of September 30, 2024"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Waymo-VIE",
+        "fields": {
+          "entity_type": "VIE",
+          "sponsor": "Alphabet",
+          "beneficiary": "Alphabet",
+          "purpose": "Autonomous driving technology development",
+          "verbatim_quote": "Waymo, a fully autonomous driving technology company and a consolidated VIE, received $4.8 billion in funding during the three months ended September 30, 2024, followed by an additional $860 million in October 2024. The majority of the total funding of $5.6 billion was provided by Alphabet."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Alphabet-Antitrust-Search",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "ANTITRUST",
+          "named_counterparties": [
+            "DOJ",
+            "USG"
+          ],
+          "severity": 4,
+          "verbatim_quote": "on August 5, 2024, the U.S. District Court for the District of Columbia ruled that Google violated such antitrust laws. A separate proceeding is being held to determine remedies, the range of which vary widely. The DOJ has proposed a high level remedy framework, which includes alterations to our products and services and our business models and operations, including structural remedies, and/or our distribution arrangements, among other changes, some of which could have a material adverse effect on our financial statements."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Alphabet-Antitrust-Android",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "ANTITRUST",
+          "named_counterparties": [
+            "Epic Games"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In December 2023, a California jury delivered a verdict in a similar lawsuit in Epic Games v. Google. The jury found that Google violated antitrust laws related to Google Play's business. The presiding judge issued a remedies decision on October 7, 2024, ordering a variety of alterations to our business models and operations and contractual agreements for Android and Google Play."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Alphabet-Antitrust-Advertising-Tech",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "ANTITRUST",
+          "named_counterparties": [
+            "DOJ",
+            "CMA",
+            "ACCC",
+            "EC"
+          ],
+          "severity": 4,
+          "verbatim_quote": "On January 24, 2023, the DOJ, along with a number of state Attorneys General, filed an antitrust complaint in the U.S. District Court for the Eastern District of Virginia alleging that Google's digital advertising technology products violate U.S. antitrust laws. The trial ended on September 27, 2024, and we expect a decision in late 2024 or early 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-CAPEX-ROI-Gap",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 46009000000,
+            "note": "Construction in progress grew 30% YoY from $35.2B to $46.0B, primarily for data center and AI infrastructure buildout, while revenue backlog of $86.8B is concentrated in Google Cloud which grew only 31% YoY"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Construction in progress $35,229 million as of December 31, 2023 and $46,009 million as of September 30, 2024"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-Revenue-Backlog-Concentration",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 86800000000,
+            "note": "Revenue backlog of $86.8B is primarily related to Google Cloud, representing concentrated customer commitments"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of September 30, 2024, we had $86.8 billion of remaining performance obligations ('revenue backlog'), primarily related to Google Cloud. We expect to recognize approximately half of the revenue backlog as revenues over the next 24 months with the remainder to be recognized thereafter."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-VIE-Liquidity-Risk",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 7800000000,
+            "note": "Consolidated VIE assets (primarily Waymo) that are restricted and not available to parent creditors"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "For certain consolidated VIEs, their assets are not available to us, and their creditors do not have recourse to us. As of December 31, 2023 and September 30, 2024, assets that can only be used to settle obligations of these VIEs were $4.9 billion and $7.8 billion, respectively"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Google Cloud",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": []
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "GOOGL-CapEx-2024",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 38300000000.0,
+          "start_fy": 2024,
+          "purpose": "technical infrastructure (servers, network equipment, data centers) to support growth and long-term AI initiatives",
+          "verbatim_quote": "We expect to increase, relative to 2023, our investment in our technical infrastructure, including servers, network equipment, and data centers, to support the growth of our business and our long-term initiatives, in particular in support of AI products and services."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-CAPEX_ROI_GAP",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 38300000000.0,
+            "duration_yrs": 1,
+            "note": "Nine months ended Sept 30, 2024: $38.3B capex vs $31.3B Google Cloud revenue YTD. Rapid capex acceleration for AI without explicitly tied revenue contracts."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We expect to increase, relative to 2023, our investment in our technical infrastructure, including servers, network equipment, and data centers, to support the growth of our business and our long-term initiatives, in particular in support of AI products and services."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "GOOGL-Operating-Leases",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Alphabet",
+          "purpose": "data centers, office facilities",
+          "term_yrs": 7.8,
+          "debt_stack_usd": 17100000000.0,
+          "verbatim_quote": "As of September 30, 2024, the amount of total future lease payments under operating leases, which had a weighted average remaining lease term of 7.8 years, was $17.1 billion."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-EXECUTION_RISK",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 6100000000.0,
+            "note": "Leases not yet commenced with future payments $6.1B, commencing 2024-2027. Multi-year data center projects with extended construction timelines."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of September 30, 2024, we have entered into leases that have not yet commenced with future lease payments of $6.1 billion, that are not yet recorded on our Consolidated Balance Sheets. These leases will commence between 2024 and 2027 with non-cancelable lease terms of one to 25 years."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-ANTITRUST_RISK",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Regulatory/Antitrust",
+          "named_counterparties": [
+            "DOJ",
+            "Epic Games"
+          ],
+          "severity": 4,
+          "verbatim_quote": "in August 2024, the U.S. District Court for the District of Columbia ruled that Google violated such antitrust laws. The Court is holding a separate proceeding to determine remedies, which could include alterations to our products and services and our business models and operations, including structural remedies, and/or our distribution arrangements, among other changes."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-GOOGLE-PLAY-REMEDIES",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Regulatory/Antitrust - Google Play",
+          "named_counterparties": [
+            "Epic Games"
+          ],
+          "severity": 4,
+          "verbatim_quote": "The presiding judge issued a remedies decision on October 7, 2024 that ordered a variety of alterations to our business models and operations and contractual agreements for Android and Google Play."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Waymo",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "investment",
+        "target_name": "Alphabet-Character-2.7B-Aug2024",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "investment",
+        "source_name": "Alphabet-Character-2.7B-Aug2024",
+        "target_type": "company",
+        "target_name": "character.ai",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "capex_commitment",
+        "target_name": "Alphabet-Property-Equipment-2024",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "off_balance_entity",
+        "target_name": "Waymo-VIE",
+        "predicate": "SPONSORS"
+      },
+      {
+        "source_type": "off_balance_entity",
+        "source_name": "Waymo-VIE",
+        "target_type": "company",
+        "target_name": "Waymo",
+        "predicate": "BENEFITS"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "Alphabet-Antitrust-Search",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "Alphabet-Antitrust-Android",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "Alphabet-Antitrust-Advertising-Tech",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-CAPEX-ROI-Gap",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-Revenue-Backlog-Concentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-VIE-Liquidity-Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "capex_commitment",
+        "target_name": "GOOGL-CapEx-2024",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-CAPEX_ROI_GAP",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "off_balance_entity",
+        "target_name": "GOOGL-Operating-Leases",
+        "predicate": "DEPENDS_ON"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-EXECUTION_RISK",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-ANTITRUST_RISK",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-GOOGLE-PLAY-REMEDIES",
+        "predicate": "CITES_RISK"
+      }
+    ],
+    "notes": "[chunk 1/4] FILING: Alphabet Inc. 10-Q (Q3 2024, filed 2024-10-30). SOURCE TEXT is primarily XBRL metadata and boilerplate cover pages. No substantive Business (Item 1) or Risk Factors (Item 1A) narrative prose was included in the provided text \u2014 only structured financial statement line items, XML tags, and regulatory headers. EXTRACTION NOTES: (1) Consolidated Balance Sheet and Income Statement show Alphabet's core business segments (Google Services, Google Cloud) and substantial capex ($38.3B in 9M 2024 vs $21.2B in 9M 2023), consistent with AI infrastructure build-out. (2) Waymo is identified as a Variable Interest Entity (VIE) with primary beneficiary status as of Q3 2024 and a Subsequent Event disclosing activity through 2024-10-29. This suggests recent capitalization or transaction. (3) Character.AI is mentioned in the XBRL dimensions (goog:Character.aiMember) with dates 2024-09-30 and 2024-08-01 to 2024-08-31, indicating a possible recent acquisition or investment. However, NO VERBATIM QUOTE about Character.AI was present in the source text \u2014 only the XML tag \u2014 so per Hard Rule 2, NO risk_factor or hidden_risk_signal node was emitted. (4) The provided text contains NO narrative on strategic partnerships, customer concentration, related-party arrangements, AI capex commitments with named counterparties, or off-balance-sheet SPVs beyond Waymo's VIE status. NO investment amounts, equity stakes, or deal terms are disclosed in the excerpt. (5) Stock repurchase and dividend activity are boilerplate shareholder returns, not SIFI-material. (6) Forward-looking statements section is standard safe-harbor language. OUTCOME: Minimal extractable SIFI material from this excerpt. The actual Item 1A Risk Factors and MD&A sections were not included in the provided text. For a complete analysis of Google's AI infrastructure capex, cloud customer concentration, and relationships with AI labs and hyperscalers, the full 10-Q narrative sections would be required.\"\n[chunk 2/4] FILING: Alphabet 10-Q, Q3 2024 (filed 2024-10-30). SCOPE: General narrative sections (financial instruments, commitments, investments, legal matters). KEY EXTRACTIONS: (1) Character.ai $2.7B license agreement + employee acquisition in Aug 2024, recorded as goodwill. (2) Waymo consolidated VIE with $5.6B funding (mostly from Alphabet) in Q3-Q4 2024; restricted assets $7.8B. (3) Construction in progress $46B (30% YoY growth) suggests significant uncommitted capex for AI/data center buildout. (4) Revenue backlog $86.8B concentrated in Google Cloud with only ~50% expected in next 24 months, creating ROI visibility gap. (5) Multiple critical antitrust exposures: DOJ Search (remedy phase, structural remedies possible), Epic Games Android/Play (remedies ordered Oct 2024, under appeal), DOJ/state advertising tech (decision pending late 2024). EC AdTech has issued Statement of Objections; UK CMA issued SO Sept 2024. (6) VIE liquidity risk: $7.8B consolidated VIE assets not available to parent creditors, primarily Waymo. SIFI SIGNALS: Capex-ROI gap (large infrastructure spend with execution risk); revenue concentration in high-growth but still-immature Google Cloud; structural antitrust remedies risk; hidden leverage via consolidated VIE restricted assets. No circularity detected in this filing; no round-tripping or supply-chain dependencies disclosed. Non-SIFI boilerplate excluded: standard foreign exchange hedging, routine legal indemnifications, generic privacy/patent IP risks, tax audit commentary.\n[chunk 3/4] SCANNING RESULT: The provided text excerpt from Alphabet's 10-Q (Q3 2024, filed 2024-10-30) contains financial and operational segment disclosures (Notes 11-14 and MD&A opening) but NO SIFI-MATERIAL BUSINESS RELATIONSHIPS, COUNTERPARTY DEPENDENCIES, INVESTMENTS IN AI LABS, OFF-BALANCE-SHEET ENTITIES, CAPEX COMMITMENTS, OR RELATED-PARTY ARRANGEMENTS. The text covers: (1) EPS computation across three share classes; (2) stock-based compensation accruals (~$39.6B unrecognized RSU cost over 2.6 years average vesting); (3) income tax disclosures and unrecognized tax benefits (~$12B gross); (4) segment breakdown (Google Services, Google Cloud, Other Bets) with revenue and operating income metrics; (5) geographic distribution of long-lived assets (US $129.3B, Intl $45.5B as of Sept 2024). NONE of these sections disclose: specific customer concentration >10%, strategic investments in OpenAI/Anthropic/CoreWeave/xAI, capex commitments tied to AI infrastructure, off-balance-sheet financing, circular transactions, or material related-party dealings. The MD&A discussion of revenue drivers and cost structure is boilerplate (competition, seasonality, FX, general economic conditions). CONCLUSION: No SIFI-material entities or relationships to extract from this excerpt. If full 10-Q Item 1A (Risk Factors) or other sections name strategic counterparties, AI lab investments, or capex commitments, those should be provided separately.\"\n[chunk 4/4] SIFI-MATERIAL EXTRACTION from Alphabet 10-Q (2024-10-30). \n\nKEY SIGNALS:\n\n1. **CAPEX_ROI_GAP (Severity 3)**: Alphabet deployed $38.3B capex in 9M 2024 (vs $21.2B in 9M 2023 \u2014 81% YoY increase) explicitly for AI infrastructure, yet Google Cloud revenue for same period was only $31.3B. Capex is front-loaded to \"long-term initiatives, in particular in support of AI products and services\" with no disclosed multi-year SaaS contracts backing these outlays. Classic hyperscaler problem: betting capex on AI ROI without matched revenue contracts.\n\n2. **EXECUTION_RISK (Severity 3)**: $6.1B in non-commenced leases (data center and office), commencing 2024\u20132027 with terms up to 25 years. Multi-year data center construction projects are inherently execution-risky (supply chain delays, architectural pivots, demand shifts). These are off-balance-sheet obligations not yet expensed.\n\n3. **OFF-BALANCE OPERATING LEASES**: $17.1B future lease obligation (weighted average 7.8 yr term). This is standard but material, and combined with $6.1B future commitments, signals substantial fixed-cost burden scaling with capex.\n\n4. **ANTITRUST CRITICALITY (Severity 4)**: \n   - DOJ antitrust lawsuit verdict (Aug 2024): Google violated Sherman Act re: Search. Remedies proceeding underway. Potential structural remedies could alter distribution, products, business model.\n   - Epic Games v. Google (Dec 2023 verdict, Oct 2024 remedies order): Judge ordered \"variety of alterations to business models and operations\" for Android/Google Play. Alphabet appealing and seeking stay, but \"no assurance\" of success.\n   - These are not routine regulatory matters \u2014 they are existential to Google's distribution channels and revenue models (Search ads, Play Store margin capture, Android licensing).\n\n**NOT EXTRACTED (BOILERPLATE SKIPPED)**:\n- Generic currency hedging disclosures (routine).\n- Standard M&A and capital structure commentary (not SIFI-material without named counterparties or hidden leverage).\n- Routine dividend/share repurchase programs ($47B YTD, $59.7B remaining authorization) \u2014 material for shareholders but not SIFI-systemic.\n- EC fines ($3B paid for 2017 decision) \u2014 historical/resolved, disclosed liability.\n- Generic tax policy risk (OECD minimum tax coordination) \u2014 not company-specific.\n- Employee count, R&D spend trends \u2014 operational, not SIFI.\n\n**COUNTERPARTY WEB**:\n- Alphabet has no disclosed equity investments in AI labs or cross-counterparty circularity visible in this section. (Note: Google Cloud Platform customers may include OpenAI, but no named relationship in this excerpt.)\n- No SPV/VIE leverage detected.\n- No revenue roundtripping or related-party financing.\n\n**NEXT STEPS**: Cross-reference Note 6 (Other Income & Expense) and Note 8 (Non-Marketable Equity Securities) for AI lab investments; Note 14 for segment detail on Google Cloud customer concentration."
+  }
+}

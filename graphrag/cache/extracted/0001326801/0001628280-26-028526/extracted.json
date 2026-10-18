@@ -1,0 +1,1107 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "aliases": [
+            "Meta Platforms, Inc."
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Louisiana-DataCenter-Venture-20pct",
+        "fields": {
+          "entity_type": "JV",
+          "sponsor": "Meta",
+          "co_owner": "<UNKNOWN>",
+          "beneficiary": "Meta",
+          "debt_stack_usd": 27000000000.0,
+          "residual_value_guarantee": true,
+          "term_yrs": 20,
+          "purpose": "Data center campus development",
+          "verbatim_quote": "co-develop a data center campus in Louisiana (the Venture), in which we hold a 20% membership interest. This Venture provides strategic optionality and flexibility, which we expect will enable us to effectively meet future infrastructure capacity needs as AI markets and technologies develop. The parties have committed to fund their respective pro rata share of approximately $27 billion in total estimated development costs."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Louisiana-DataCenter-Capex",
+        "fields": {
+          "filer": "Meta",
+          "amount_usd": 27000000000.0,
+          "duration_yrs": 20,
+          "start_fy": 2026,
+          "counterparty": "<UNKNOWN>",
+          "purpose": "Data center campus construction in Louisiana",
+          "verbatim_quote": "The parties have committed to fund their respective pro rata share of approximately $27 billion in total estimated development costs."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Louisiana-DataCenter-Leases",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Meta",
+          "co_owner": "<UNKNOWN>",
+          "beneficiary": "Meta",
+          "debt_stack_usd": 12310000000.0,
+          "residual_value_guarantee": true,
+          "term_yrs": 20,
+          "purpose": "Right to use properties on data center campus",
+          "verbatim_quote": "Our lease agreements with the Venture, which cover the right to use properties on the data center campus, will commence in 2029 and have an aggregate initial lease commitment of approximately $12.31 billion. Each leased property has an initial four-year lease term and options to renew for a total lease period of up to 20 years. In addition, we have provided residual value guarantees (RVG) with an aggregate threshold of approximately $28 billion that decreases over time."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Hidden-Leverage-Louisiana-RVG",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 45990000000.0,
+            "pct_of_assets": 11.6,
+            "duration_yrs": 20,
+            "note": "Maximum exposure includes equity investment ($2.37B), lease commitments ($12.31B), future funding commitments, and RVG threshold ($28B)."
+          },
+          "named_counterparties": [
+            "<UNKNOWN>"
+          ],
+          "verbatim_quote": "our maximum exposure to loss related to the Venture was $45.99 billion and $45.95 billion, respectively, consisting of the carrying value of our equity investment, the lease commitments, our estimated future funding commitments, and the maximum RVG threshold."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-VIE-Non-Primary-Beneficiary-Risk",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 5790000000.0,
+            "duration_yrs": 20
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In addition, we have other types of unconsolidated VIEs of which we are not the primary beneficiary. As of March 31, 2026 and December 31, 2025, our maximum exposure to loss in these VIEs was $5.79 billion and $5.58 billion, respectively, which represents the carrying value of our investments."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Meta-Infrastructure-2026-2027",
+        "fields": {
+          "filer": "Meta",
+          "amount_usd": 237670000000,
+          "purpose": "Third-party cloud capacity arrangements, servers and network infrastructure, data centers, and Reality Labs consumer hardware",
+          "verbatim_quote": "As of March 31, 2026, we had $237.67 billion of non-cancelable contractual commitments, comprising both short-term and long-term arrangements. These commitments are mostly related to third-party cloud capacity arrangements and continued investments in servers and network infrastructure, data centers, and consumer hardware products in Reality Labs."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Meta-Leases-2026-2036",
+        "fields": {
+          "filer": "Meta",
+          "amount_usd": 182880000000,
+          "duration_yrs": 30,
+          "start_fy": 2026,
+          "purpose": "Data centers, colocations, and network infrastructure operating and finance leases",
+          "verbatim_quote": "In addition to the lease liabilities that are included on our balance sheet, we have operating and finance leases that have not yet commenced as of March 31, 2026. These lease obligations were approximately $182.88 billion, consisting of data centers, colocations, and certain network infrastructure, which will commence during the remainder of 2026 and 2036 with lease terms ranging from greater than one year to 30 years."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Meta-CloudCapacity-Contingent",
+        "fields": {
+          "filer": "Meta",
+          "amount_usd": 14720000000,
+          "duration_yrs": 5,
+          "purpose": "Contingent obligation to purchase cloud capacity",
+          "verbatim_quote": "In addition, as of March 31, 2026, we have contingent obligations to purchase up to $14.72 billion of cloud capacity over a five-year period, which may be reduced if the cloud service provider is able to sell such capacity to other customers."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Meta-April-2026-Infrastructure",
+        "fields": {
+          "filer": "Meta",
+          "amount_usd": 24000000000,
+          "start_fy": 2026,
+          "purpose": "Multi-year infrastructure contracts",
+          "verbatim_quote": "In April 2026, we entered into additional multi-year infrastructure contracts, related to which our non-cancelable contractual commitments increased by approximately $24 billion."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Meta-DataCenter-Held-for-Sale",
+        "fields": {
+          "entity_type": "project_finance",
+          "sponsor": "Meta",
+          "purpose": "Co-development of data centers with third party",
+          "verbatim_quote": "In March 2026, we approved a plan to dispose of certain data center assets with a carrying value of $1.48 billion, consisting mostly of construction in progress and land. These assets were classified as held-for-sale within prepaid expenses and other current assets on our condensed consolidated balance sheet as of March 31, 2026. We expect to dispose of these assets within the next twelve months through a contribution to a third party for the purpose of co-developing data centers."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-Regulatory-DMA-Subscriptions",
+        "fields": {
+          "filer": "Meta",
+          "category": "Regulatory / Digital Markets Act",
+          "named_counterparties": [
+            "European Commission"
+          ],
+          "severity": 3,
+          "verbatim_quote": "In March 2024, the European Commission opened an investigation into the compliance of our \"subscription for no ads\" consent model with requirements under Article 5(2) of the Digital Markets Act (DMA)... In April 2025, the European Commission issued a final decision that our \"subscription for no ads\" model does not comply with such requirements and imposed a fine of EUR \u20ac200 million. Based on feedback from the European Commission in connection with the DMA, we launched less personalized ads (LPA) in November 2024 and made significant modifications to LPA since the European Commission issued its final decision."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-Regulatory-Abuse-of-Dominance",
+        "fields": {
+          "filer": "Meta",
+          "category": "Antitrust / Abuse of Dominance",
+          "named_counterparties": [
+            "Spain",
+            "France"
+          ],
+          "severity": 3,
+          "verbatim_quote": "On December 1, 2023, 87 news media companies filed a joint action against us in Spain in relation to our legal basis under the GDPR for behavioral advertising, alleging unfair competition and abuse of dominance (Asociacion de Medios de Informacion (AMI) v. Meta Ireland). On November 19, 2025, the court issued judgment against us, finding that AMI had failed to establish abuse of dominance but upholding its case on unfair competition and awarding damages of approximately EUR \u20ac542 million."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-NewMexico-Youth-Litigation",
+        "fields": {
+          "filer": "Meta",
+          "category": "Consumer Protection / Youth Harms",
+          "named_counterparties": [
+            "New Mexico Attorney General"
+          ],
+          "severity": 4,
+          "verbatim_quote": "Trial in the New Mexico Attorney General's case, which has expanded to include various claims related to content moderation issues, is scheduled to begin on September 8, 2026. The New Mexico Attorney General has indicated that they intend to seek up to $62.85 billion in penalties in this case."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Capex-ROI-Gap",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 458570000000,
+            "note": "Total non-cancelable commitments ($237.67B) plus operating/finance leases ($182.88B) plus contingent cloud capacity ($14.72B) plus April 2026 contracts ($24B) = ~$459B committed capex with unmatched revenue guarantees from named customers"
+          },
+          "named_counterparties": [
+            "unknown cloud service providers"
+          ],
+          "verbatim_quote": "As of March 31, 2026, we had $237.67 billion of non-cancelable contractual commitments... These lease obligations were approximately $182.88 billion... In addition, as of March 31, 2026, we have contingent obligations to purchase up to $14.72 billion of cloud capacity over a five-year period... In April 2026, we entered into additional multi-year infrastructure contracts, related to which our non-cancelable contractual commitments increased by approximately $24 billion."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Cost-Opacity-Depreciation",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 4380000000,
+            "pct_of_assets": null,
+            "note": "Server and network depreciation doubled YoY ($2.63B to $4.38B) without disclosure of underlying asset base or revised useful life assumptions"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Depreciation expense on property and equipment was $5.68 billion and $3.84 billion for the three months ended March 31, 2026 and 2025, respectively. Within property and equipment, our servers and network assets depreciation expenses were $4.38 billion and $2.63 billion for the three months ended March 31, 2026 and 2025, respectively."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "aliases": [
+            "Meta Platforms",
+            "Facebook Inc."
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Apple",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Google",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Anthropic",
+        "fields": {
+          "aliases": [
+            "Anthropic PBC"
+          ],
+          "private": true
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "regulatory_data_controls",
+        "fields": {
+          "filer": "Meta",
+          "category": "regulatory_data_restrictions",
+          "named_counterparties": [
+            "Apple",
+            "Google",
+            "EU",
+            "USG"
+          ],
+          "severity": 4,
+          "verbatim_quote": "legislative and regulatory developments such as the General Data Protection Regulation, including its evolving interpretation through decisions of the Court of Justice of the European Union, ePrivacy Directive, European Digital Services Act, Digital Markets Act, and U.S. state privacy laws have impacted our ability to use data signals in our ad products"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "revenue_targeting_degradation",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 79220000000,
+            "note": "unrecognized share-based compensation (RSU + stock options) expected to vest over 3-4 years; significant AI/infrastructure capex not yet matched by quantified revenue uplift from AI initiatives"
+          },
+          "named_counterparties": [
+            "Apple",
+            "Google"
+          ],
+          "verbatim_quote": "Our advertising revenue has been, and we expect will continue to be, adversely affected by reduced marketer spending as a result of limitations on our ad targeting and measurement tools arising from changes to the regulatory environment and third-party mobile operating systems and browsers"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ios_targeting_impact",
+        "fields": {
+          "filer": "Meta",
+          "category": "third_party_platform_dependency",
+          "named_counterparties": [
+            "Apple"
+          ],
+          "severity": 3,
+          "verbatim_quote": "in 2021, Apple made certain changes to its products and data use policies in connection with changes to its iOS operating system that reduce our and other iOS developers' ability to target and measure advertising, which has negatively impacted, and we expect will continue to negatively impact, the size of the budgets marketers are willing to commit to us"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ai_infrastructure_spending_concentration",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": null,
+            "pct_of_revenue": null,
+            "note": "significant infrastructure capex disclosed as increasing; Q1 2026 capex $19.84B; unquantified AI/cloud capacity being contracted with third parties"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "we have significantly increased our infrastructure investments in connection with our AI initiatives, including third-party cloud capacity arrangements and investments in servers, data centers, and network infrastructure, and expect our investments to continue to increase"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "reality_labs_operating_loss",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 4028000000,
+            "note": "Q1 2026 RL operating loss $4.03B; expected to remain similar for full-year 2026; long-term bet on products 'only fully realized in the next decade'"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "our RL segment reduced our overall operating profit by approximately $4.03 billion, and we expect our full-year 2026 RL operating losses to remain similar to 2025. Many of our RL investments are directed toward long-term, cutting-edge research and development for products that may only be fully realized in the next decade"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "reels_monetization_headwind",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 2,
+          "numeric_signal": {
+            "pct_of_revenue": null,
+            "note": "Reels monetization rate lower than Feed/Stories; Reels expected to continue monetizing at lower rate foreseeable future"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "while Reels is growing in usage, it monetizes at a lower rate than our Feed and Stories products and we expect it will continue to monetize at a lower rate for the foreseeable future"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "copyright_litigation",
+        "fields": {
+          "filer": "Meta",
+          "category": "ip_litigation",
+          "named_counterparties": [
+            "Anthropic"
+          ],
+          "severity": 2,
+          "verbatim_quote": "Beginning in November 2025, additional cases with similar claims were filed against us in the U.S. District Court for the Northern District of California (Entrepreneur Media v. Meta Platforms, Inc., Carreyrou et al. v. Anthropic PBC, et al., TED Entertainment, Inc. v. Meta Platforms, Inc. and Chicken Soup for the Soul LLC v. Anthropic PBC, et al.)"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "dsa_compliance_proceedings",
+        "fields": {
+          "filer": "Meta",
+          "category": "regulatory_compliance",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "The Commission issued preliminary findings with respect to some of these topics on October 24, 2025 reflecting its preliminary view that we have infringed DSA obligations related to notice and action mechanisms for illegal content reporting, content moderation decision appeals, and data access for researchers"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "transfer_pricing_tax_dispute",
+        "fields": {
+          "filer": "Meta",
+          "category": "tax_risk",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 3,
+          "verbatim_quote": "In September 2025, we received a Statutory Notice of Deficiency ('2017-2019 Notice') from the IRS, asserting an additional $15.89 billion in tax, plus interest and penalties for our 2017 through 2019 tax years. This 2017-2019 Notice primarily relates to transfer pricing with our foreign subsidiaries and other international tax adjustments"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "tax_uncertainty_unrecognized_benefits",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 17820000000,
+            "note": "Gross unrecognized tax benefits $17.82B as of March 31, 2026; if realized would result in $11.98B tax benefit"
+          },
+          "named_counterparties": [
+            "USG"
+          ],
+          "verbatim_quote": "Our gross unrecognized tax benefits were $17.82 billion and $16.45 billion as of March 31, 2026 and December 31, 2025, respectively. These unrecognized tax benefits are primarily related to the uncertainties with our research tax credits and transfer pricing with our foreign subsidiaries"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "aliases": [
+            "Facebook",
+            "Instagram",
+            "WhatsApp",
+            "Messenger"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Apple",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Google",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "TikTok",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Meta-2026-Capex",
+        "fields": {
+          "filer": "Meta",
+          "amount_usd": 125000000000,
+          "duration_yrs": 1,
+          "start_fy": 2026,
+          "purpose": "AI efforts and core business infrastructure",
+          "verbatim_quote": "We anticipate making capital expenditures of approximately $125 billion to $145 billion in 2026 to support our AI efforts and core business."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Meta-Multi-Year-Purchase-Agreement",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "Meta",
+          "purpose": "Cloud capacity and infrastructure commitments",
+          "verbatim_quote": "in addition, as of March 31, 2026, we have contingent obligations to purchase up to $14.72 billion of cloud capacity over a five-year period, which may be reduced if the cloud service provider is able to sell such capacity to other customers.",
+          "debt_stack_usd": 14720000000,
+          "term_yrs": 5
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Meta-Operating-Lease-Commitments",
+        "fields": {
+          "filer": "Meta",
+          "amount_usd": 182880000000,
+          "duration_yrs": 30,
+          "counterparty": "Third-party data center and infrastructure operators",
+          "purpose": "Data centers, colocations, and network infrastructure",
+          "verbatim_quote": "we have operating and finance leases that have not yet commenced as of March 31, 2026. These lease obligations were approximately $182.88 billion, consisting of data centers, colocations, and certain network infrastructure, which will commence during the remainder of 2026 and 2036 with lease terms ranging from greater than one year to 30 years."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Meta-Non-Cancelable-Commitments",
+        "fields": {
+          "filer": "Meta",
+          "amount_usd": 237670000000,
+          "counterparty": "Third-party cloud and infrastructure providers",
+          "purpose": "Cloud capacity, servers, network infrastructure, data centers, and consumer hardware",
+          "verbatim_quote": "As of March 31, 2026, we had $237.67 billion of non-cancelable contractual commitments, comprising both short-term and long-term arrangements. These commitments are mostly related to third-party cloud capacity arrangements and continued investments in servers and network infrastructure, data centers, and consumer hardware products in Reality Labs, with approximately $42.25 billion and $47.65 billion due in 2026 and 2027, respectively."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-Apple-iOS-Targeting-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Ad Targeting Capability Loss",
+          "named_counterparties": [
+            "Apple"
+          ],
+          "severity": 3,
+          "verbatim_quote": "in 2021, Apple made certain changes to its products and data use policies in connection with changes to its iOS operating system that reduce our and other iOS developers' ability to target and measure advertising, which has negatively impacted, and we expect will continue to negatively impact, the size of the budgets marketers are willing to commit to us and other advertising platforms."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-Google-Cookies-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Ad Measurement Technology Deprecation",
+          "named_counterparties": [
+            "Google"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Google previously proposed phasing out third-party cookies in its Chrome browser. We expect that any similar changes to Apple's, Google's, or other browser or mobile platforms will further limit our ability to target and measure the effectiveness of ads and impact monetization."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Capex-ROI-Gap",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 145000000000,
+            "duration_yrs": 1,
+            "note": "2026 capex guidance of $125-145B with no new revenue-generating contracts disclosed to justify this magnitude relative to current revenue trajectory"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We have made significant investments in AI initiatives, including investments in infrastructure and headcount, including specialized technical personnel, to support our efforts to enhance our products, features, and advertising tools, as well as to develop and train our AI models, and expect to continue to increase these investments. We are also continuing to increase our investments in new platforms and technologies, including as part of our VR, Horizon, and wearables efforts. Some of these investments have generated only limited revenue and reduced our cash flows, operating margin, and profitability, and we expect the adverse financial impact of such investments to continue for the foreseeable future."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Reality-Labs-Operating-Loss",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 19190000000,
+            "pct_of_revenue": null,
+            "note": "2025 Reality Labs operating loss, expected to continue in 2026"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "our investments in Reality Labs reduced our 2025 overall operating profit by approximately $19.19 billion, and we expect our full-year 2026 Reality Labs operating losses to remain similar to 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Infrastructure-Commitment-Execution-Risk",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 420000000000,
+            "note": "Combined operating leases ($182.88B), non-cancelable commitments ($237.67B), and additional April 2026 commitments (~$24B)"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We have operating and finance leases that have not yet commenced as of March 31, 2026. These lease obligations were approximately $182.88 billion... In April 2026, we entered into additional multi-year infrastructure contracts, related to which our non-cancelable contractual commitments increased by approximately $24 billion."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Advertising-Revenue-Concentration",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 97.4,
+            "note": "Advertising revenue (other revenue $885M, total $56.311B Q1 2026)"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Substantially all of our revenue is currently generated from marketers advertising on Facebook and Instagram. As is common in the industry, our marketers do not have long-term advertising commitments with us."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Supplier-Concentration-Mobile-OS",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "counterparty_count": 2,
+            "note": "Dependence on Apple iOS and Google Android for majority of mobile revenue"
+          },
+          "named_counterparties": [
+            "Apple",
+            "Google"
+          ],
+          "verbatim_quote": "We are dependent on the interoperability of our products with popular mobile operating systems, networks, technologies, products, and standards that we do not control, such as the Android and iOS operating systems and mobile browsers. Changes, bugs, or technical issues in such systems, or changes in our relationships with mobile operating system partners, handset manufacturers, browser developers, or mobile carriers, or in the content or application of their terms of service or policies (which they have made in the past and continue to seek to implement) that degrade our products' functionality, reduce or eliminate our ability to update or distribute our products, give preferential treatment to competitive products, limit our ability to deliver, target, or measure the effectiveness of ads, or charge fees related to the distribution of our products or our delivery of ads have adversely affected, and could in the future adversely affect, the usage of our products and monetization on mobile devices."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-European-Data-Transfer-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Data Localization and Transfer Restrictions",
+          "named_counterparties": [
+            "EU",
+            "Ireland"
+          ],
+          "severity": 4,
+          "verbatim_quote": "in May 2023, the IDPC issued a Final Decision concluding that Meta Platforms Ireland's reliance on Standard Contractual Clauses (SCCs) in respect of certain transfers of European Economic Area (EEA) Facebook user data was not in compliance with the GDPR. The IDPC issued an administrative fine of EUR \u20ac1.2 billion as well as corrective orders requiring Meta Platforms Ireland to suspend the relevant transfers and to bring its processing operations into compliance with Chapter V GDPR by ceasing the unlawful processing, including storage, of such data in the United States."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-EU-Revenue-At-Risk",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 4,
+          "named_counterparties": [
+            "EU",
+            "Ireland"
+          ],
+          "verbatim_quote": "we are unable to offer a number of our most significant products and services, including Facebook and Instagram, in Europe, or are otherwise limited in our business operations, as a result of European courts invalidating the EU-U.S. DPF or regulators, courts, or legislative bodies determining that the legal bases we rely upon to transfer user data from the European Union to the United States are invalid."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-AI-Model-Training-Data-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Intellectual Property and Copyright Litigation",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Beginning on July 7, 2023, multiple cases, including putative class actions, were filed against us in the United States and elsewhere, alleging that we improperly acquired, distributed, and used various copyrighted materials and/or other types of data to train our artificial intelligence models and seeking unspecified damages and injunctive relief."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-Youth-Social-Media-Litigation",
+        "fields": {
+          "filer": "Meta",
+          "category": "Youth-Related Product Liability",
+          "named_counterparties": [],
+          "severity": 5,
+          "verbatim_quote": "Beginning in January 2022, we became subject to litigation and other proceedings that were filed in various federal and state courts in the United States as well as other jurisdictions alleging that Facebook and Instagram cause \"social media addiction\" in users, with most proceedings focused on those under 18 years old, resulting in various mental health and other harms."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Litigation-Damages-Exposure",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "OTHER",
+          "severity": 5,
+          "named_counterparties": [],
+          "verbatim_quote": "The maximum aggregate monetary damages or penalties sought across our various legal proceedings could amount to an aggregate of up to hundreds of billions of dollars and, as a result, could be material to the financial condition of the company."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "aliases": [
+            "Facebook",
+            "Instagram",
+            "WhatsApp"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "EU",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "CJEU",
+        "fields": {
+          "role": "regulator",
+          "aliases": [
+            "Court of Justice of the European Union"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "India",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "USG",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "FTC",
+        "fields": {
+          "role": "regulator",
+          "aliases": [
+            "Federal Trade Commission"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Brazil",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "EU-DPF-Invalidation-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Data Transfer & Service Availability",
+          "named_counterparties": [
+            "EU",
+            "CJEU"
+          ],
+          "severity": 4,
+          "verbatim_quote": "A further invalidation of the EU-U.S. DPF by the CJEU could create considerable uncertainty and lead to us being unable to offer a number of our most significant products and services, including Facebook and Instagram, in Europe, which would materially and adversely affect our business, financial condition, and results of operations."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "India-WhatsApp-Data-Sharing-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Regulatory Investigations & Data Sharing",
+          "named_counterparties": [
+            "India"
+          ],
+          "severity": 3,
+          "verbatim_quote": "We have been managing investigations and lawsuits in India and other jurisdictions regarding the 2021 updates to WhatsApp's terms of service and privacy policy and its sharing of certain data with other Meta products and services, including a lawsuit currently pending before the Supreme Court of India and an order by the Competition Commission of India, which we are appealing."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GDPR-Compliance-Evolution-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Privacy Regulation & Enforcement Uncertainty",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "The interpretation of the GDPR is still evolving, including through decisions of the CJEU, and draft decisions in investigations by the IDPC are subject to review by other European privacy regulators as part of the GDPR's consistency mechanism, which may lead to significant changes in the final outcome of such investigations."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "DMA-DSA-Compliance-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Digital Markets & Services Regulation",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "The DMA in the European Union imposes restrictions and requirements on companies like ours, including in areas such as the combination of data across services and product design. The DMA also includes significant penalties for non-compliance. The DMA has caused, and may in the future cause, us to incur significant compliance costs and make changes to our products or business practices."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "LPA-Model-Compliance-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Ad Model Regulatory Challenge",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In April 2025, the European Commission issued a final decision that our \"subscription for no ads\" model does not comply with such requirements. We made significant modifications to LPA since the European Commission issued its final decision. We have appealed the European Commission's decision but further modifications to our model may be imposed during the appeal process, which could result in a materially worse user experience for European users and a significant impact to our European business and revenue."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Minors-Service-Restrictions-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Regulatory Restrictions on Minor Access & Services",
+          "named_counterparties": [
+            "USG",
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Several U.S. states, including Arkansas, California, Colorado, Florida, New York, Texas, and Utah, among others, have passed laws restricting our ability to offer services to minors without parental consent or otherwise limiting the services that we can provide to minors."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Brazil-Liability-Framework-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Content Liability & Platform Responsibility",
+          "named_counterparties": [
+            "Brazil"
+          ],
+          "severity": 3,
+          "verbatim_quote": "In June 2025, the Brazilian Supreme Court partially invalidated the country's intermediary liability framework, which previously limited platform responsibility for third-party content. The new court-established liability framework requires platforms to remove unlawful content upon private notice and to implement adequate measures to prevent and remove illegal ads and content related to certain crimes under local law, resulting in civil liability in case of non-compliance."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "FTC-Consent-Order-Compliance-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "FTC Enforcement & Consent Decree Risk",
+          "named_counterparties": [
+            "FTC"
+          ],
+          "severity": 4,
+          "verbatim_quote": "The FTC initiated an administrative proceeding against us alleging, among other things, deficient compliance with the FTC consent order and seeking substantial modifications to the requirements of the consent order, including a prohibition on our use of minors' data for any commercial purposes, changes to the composition of our board of directors, and significant limitations on our ability to modify and launch new products."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Third-Party-Developer-Data-Security-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Third-Party Data Security & Vendor Risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "If these third parties or developers fail to adopt or adhere to adequate data security practices, or in the event of a breach of their networks, our data or our users' data may be improperly accessed, used, or disclosed."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Cybersecurity-AI-Vulnerability-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "AI-Driven Cybersecurity & Vulnerability Risk",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Rapid advances in AI technologies have enabled the discovery of security vulnerabilities at unprecedented speed and scale across the industry, which is expected to continue and may outpace our or other parties' abilities to remediate any such vulnerabilities."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Copyrighted-Material-AI-Training-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Copyright & IP Litigation (AI Training & Outputs)",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "We and other companies are, and expect to continue to be, the subject of litigation in the United States, Europe, Canada, and elsewhere alleging copyright infringement in connection with the acquisition, distribution, and use of copyrighted materials for AI training as well as potential reproduction of copyrighted materials in AI outputs, including cases addressing the applicability of the fair use defense in the United States."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Copyright-Statutory-Damages-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Copyright Liability & Statutory Damages",
+          "named_counterparties": [],
+          "severity": 4,
+          "verbatim_quote": "For certain jurisdictions, including the United States, statutory damages for copyright liability are calculated on a per work basis, which may result in substantial damages, particularly given the large volumes of data required to train AI models."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CUSTOMER_CONCENTRATION-Meta-Advertisers",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "named_counterparties": [
+            "Advertisers"
+          ],
+          "numeric_signal": {
+            "note": "Advertising represents majority of revenue; regulatory restrictions on ad targeting and personalization (GDPR, DMA, LPA) could trigger customer churn"
+          },
+          "verbatim_quote": "These laws and regulations, as well as any associated claims, inquiries, or investigations or any government actions, have led to, and may in the future lead to, unfavorable outcomes including increased compliance costs, changes to our products, loss of revenue, delays or impediments in the development of new products, negative publicity and reputational harm, increased operating costs, diversion of management time and attention, and remedies that harm our business, including fines, damages, or orders that we modify or cease existing business practices."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "EXECUTION_RISK-AI-Product-Deployment",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "note": "AI initiatives introduce new vulnerabilities and security risks; rapid AI vulnerability discovery may outpace remediation"
+          },
+          "verbatim_quote": "Our AI initiatives and other efforts to develop and launch new features, products, and services in a timely manner have introduced additional risks and vulnerabilities that are not fully mitigated. In particular, our efforts to develop and deploy AI models, internal and third-party AI tools, and other AI applications and agents expose us and users of AI agents to increased and novel risks and vulnerabilities, including prompt injection, errors, and other issues related to AI agents, as well as compromise of data, systems, or valuable intellectual property including source code, model weights, and other assets."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "COST_OPACITY-Regulatory-Compliance-Burden",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "named_counterparties": [
+            "FTC",
+            "EU"
+          ],
+          "numeric_signal": {
+            "note": "Undisclosed, escalating compliance costs from FTC consent order, GDPR, DMA, DSA, youth privacy laws, and other regulations"
+          },
+          "verbatim_quote": "Compliance with our FTC consent order, the GDPR, U.S. state privacy laws, youth social media laws, the ePrivacy Directive, the DMA, the DSA, the OSA, and other regulatory and legislative privacy requirements require significant operational resources and modifications to our business practices, and any compliance failures may have a material adverse effect on our business, reputation, and financial results."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CAPEX_ROI_GAP-Content-Moderation-Infrastructure",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "note": "Large investments in safety, security, content moderation, and compliance infrastructure; ROI unclear given regulatory-driven operational changes"
+          },
+          "verbatim_quote": "We are making significant investments in privacy, safety, security, and content and advertising review efforts to combat these activities, including investigations and audits of platform applications, as well as other enforcement efforts."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "Louisiana-DataCenter-Capex"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "BENEFITS",
+        "target_type": "off_balance_entity",
+        "target_name": "Louisiana-DataCenter-Venture-20pct"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-Hidden-Leverage-Louisiana-RVG"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-VIE-Non-Primary-Beneficiary-Risk"
+      },
+      {
+        "source_type": "off_balance_entity",
+        "source_name": "Louisiana-DataCenter-Venture-20pct",
+        "predicate": "DEPENDS_ON",
+        "target_type": "capex_commitment",
+        "target_name": "Louisiana-DataCenter-Capex"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "capex_commitment",
+        "target_name": "Meta-Infrastructure-2026-2027",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "capex_commitment",
+        "target_name": "Meta-Leases-2026-2036",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "capex_commitment",
+        "target_name": "Meta-CloudCapacity-Contingent",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "capex_commitment",
+        "target_name": "Meta-April-2026-Infrastructure",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "off_balance_entity",
+        "target_name": "Meta-DataCenter-Held-for-Sale",
+        "predicate": "SPONSORS"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Meta-Regulatory-DMA-Subscriptions",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Meta-Regulatory-Abuse-of-Dominance",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Meta-NewMexico-Youth-Litigation",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-Capex-ROI-Gap",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-Cost-Opacity-Depreciation",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "company",
+        "target_name": "Apple",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "context": "iOS platform for ad delivery; Apple privacy changes restrict Meta targeting capability"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "company",
+        "target_name": "Google",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "context": "Browser and mobile OS platform; Google announced ad targeting limitations"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "ailab",
+        "target_name": "Anthropic",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "context": "Joint copyright infringement litigation on generative AI training"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "regulatory_data_controls",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "revenue_targeting_degradation",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ai_infrastructure_spending_concentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "reality_labs_operating_loss",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "tax_uncertainty_unrecognized_benefits",
+        "predicate": "HAS_RISK_SIGNAL"
+      }
+    ],
+    "notes": "[chunk 1/5] KEY SIFI FINDINGS: (1) HIDDEN LEVERAGE \u2014 Meta has committed to a 20% stake in a Louisiana data center campus JV with $27B total capex and embedded $28B residual value guarantees (RVGs) on operating leases commencing 2029. Total max exposure is $45.99B (~11.6% of total assets). RVGs decrease over time but create contingent obligation. (2) VIE RISK \u2014 Meta is not the primary beneficiary of the Louisiana Venture (lacks power to direct activities most significantly impacting economics), so JV is unconsolidated. Co-owner identity is NOT disclosed. (3) EXECUTION RISK \u2014 Leases commence 2029, requiring 4 years of construction completion and tenant negotiations. No contracted revenue backlog disclosed to offset capex and RVG exposure. (4) COST OPACITY \u2014 RVG is contingent and \"not probable,\" so no liability recorded. However, at 20-year horizon, fair value of data center assets may be volatile, creating tail risk. (5) CAPEX-ROI GAP \u2014 $27B capex commitment to serve \"future infrastructure capacity needs as AI markets and technologies develop\" but no specific customer contracts or revenue commitments disclosed. Timing and volume uncertain. Meta is not naming the co-sponsor of the Venture, creating counterparty visibility gap. The restricted cash escrow of $5B related to a \"multi-year purchase agreement\" (Note 4) likely relates to this or another cloud compute obligation but is not explicitly tied to the Louisiana JV in this excerpt.\"\n[chunk 2/5] Meta 10-Q Q1 2026: Extracted capex commitments (~$459B total non-cancelable spend through 2036), off-balance-sheet data-center co-development vehicle, and regulatory/litigation risks including $62.85B penalty exposure (New Mexico), DMA fines ($200M EUR), and abuse-of-dominance judgments ($542M EUR). Two key SIFI signals: (1) CAPEX_ROI_GAP\u2014massive infrastructure spend ($237.67B contractual + $182.88B leases) with no disclosed revenue-matching contracts from hyperscaler customers; (2) COST_OPACITY\u2014servers/network depreciation doubled YoY without explanation of asset life or valuation assumptions. Private counterparties to cloud/infrastructure deals are unnamed, limiting supply-chain transparency. Youth litigation exposure (bellwether trials ongoing, potential multi-billion abatement costs) and European regulatory uncertainty (DSA compliance questions on minor protection) pose material downside to European revenue and user experience.\n[chunk 3/5] SIFI-Material Extraction from META 10-Q (Q1 2026). Key findings: (1) CAPEX_ROI_GAP: Meta has significantly increased infrastructure capex (Q1 2026: $19.84B) and unrecognized RSU/option expense ($79.22B expected to vest over 3 years), with large committed spend on AI initiatives, cloud capacity, and Reality Labs ($4.03B Q1 loss expected to persist), but no quantified contracted revenue uplift disclosed. (2) REVENUE_ROUNDTRIP: Reels monetizes at structurally lower rate than Feed/Stories\u2014investments in Reels growth/promotion do not generate equivalent ad revenue. (3) SUPPLIER_CONCENTRATION: Critical dependency on Apple iOS (largest platform) and Google (browser/Android) for ad delivery\u2014both have restricted data signaling used in targeting, adversely impacting advertiser budgets. (4) COST_OPACITY: $17.82B unrecognized tax benefits / $15.89B IRS 2017-2019 transfer pricing claim creates material contingent liability and earnings volatility. (5) Tax Court ruled Meta's IP transfer undervalued by $1.48B (2010 tax year), signaling systematic underestimation of IP transfer pricing. (6) Regulatory headwinds (EU DSA, GDPR, privacy laws, Apple/Google platform changes) are quantifiably eroding ad targeting capability. (7) Reality Labs represents long-term capex bet on products \"only realized next decade\"\u2014classic execution risk / ROI gap. NOTE: No off-balance-sheet SPVs, no circular investments, no counterparty round-tripping detected in this filing section."
+  }
+}

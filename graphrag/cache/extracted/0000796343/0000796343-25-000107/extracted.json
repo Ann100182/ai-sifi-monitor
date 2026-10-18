@@ -1,0 +1,185 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "ADBE Inc.",
+            "Adobe Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Figma",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE_IP_Protection_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Intellectual Property & Piracy",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "we actively combat software piracy, but we continue to lose revenue due to illegal use of our software. Third parties may illegally copy and sell counterfeit versions of our products. To the extent counterfeit installations and sales replace otherwise legitimate ones, our operating results could be adversely affected."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE_GenAI_IP_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "AI Technology IP Challenge",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "due to challenges in detecting patent infringement pertaining to generative AI technologies, it may be more difficult to protect our generative AI and related innovations with patents. Additionally, if we use generative AI in the creation of our source code, we may not be able to rely on copyright to protect such intellectual property."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE_Subscription_Revenue_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Revenue Recognition & Customer Churn",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Lower sales and subscriptions, reduced demand for our products, services and solutions, and increases in our attrition rate in any given period may not be fully reflected in our results of operations until future periods."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE_DATA_CUSTOMER_LIABILITY",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Customer data liability; no single-customer concentration metric disclosed"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "we collect and store information on behalf of our business customers and if our customers fail to comply with contractual obligations or applicable laws, it could result in litigation or reputational harm to us."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE_Goodwill_Impairment_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Goodwill & Intangible Asset Impairment",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We test goodwill for impairment at least annually. We review our goodwill and intangible assets for impairment when events or changes in circumstances indicate the carrying value may not be recoverable, including declines in stock price, market capitalization or reduced future cash flow estimates and slower growth rates in our industry."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE_Debt_Covenant_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Debt Obligations & Covenants",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Our senior unsecured notes, commercial paper program and revolving credit agreement impose restrictions on us and require us to maintain compliance with specified covenants. Our ability to comply with these covenants may be affected by events beyond our control. If we breach any of the covenants and do not obtain a waiver from the noteholders or lenders, then, subject to applicable cure periods, any outstanding debt may be declared immediately due and payable."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE_Privacy_Regulation_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Privacy & Data Protection Regulation",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "These laws, regulations and codes may also impact our innovation and business drivers in developing new and emerging technologies (for example, AI and machine learning) and may impact demand for our offerings and force us to bear the burden of more onerous obligations in our contracts."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "company",
+        "target_name": "Figma",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "context": "Acquisition termination",
+          "amount_usd": 1000000000,
+          "year": 2024
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE_DATA_CUSTOMER_LIABILITY"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "ADBE_IP_Protection_Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "ADBE_GenAI_IP_Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "ADBE_Subscription_Revenue_Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "ADBE_Goodwill_Impairment_Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "ADBE_Debt_Covenant_Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "ADBE_Privacy_Regulation_Risk"
+      }
+    ],
+    "notes": "[chunk 1/4] ADBE 10-Q filing for Q3 FY2025 (period ended August 29, 2025). The provided text contains only the cover page, table of contents, and condensed consolidated financial statements plus notes thereto. No material SIFI-relevant business relationships, counterparty concentrations, investments in AI labs, or off-balance-sheet structures are visible in this excerpt. The document is primarily financial statement tables, accounting policy disclosures (cash, investments, fair value measurements, revenue recognition, deferred revenue), and segment reporting. No customer names, supplier concentration, strategic partnerships with hyperscalers or AI labs, or hidden leverage structures are disclosed in this section. A full Item 1A (Risk Factors) and MD&A would be needed to identify SIFI risks or material counterparty dependencies.\"\n[chunk 2/4] The source text consists entirely of standard financial footnotes (Notes 4-13 of Adobe's 10-Q) covering fair value measurements, derivatives, goodwill/intangibles, stock-based compensation, debt, and legal proceedings. No SIFI-material entities, relationships, investments, or counterparties are named or disclosed. The filing contains only routine treasury operations, hedging activities, executive compensation, and standard IP indemnification boilerplate. No customer concentrations, supplier dependencies, strategic partnerships, related-party arrangements, or off-balance-sheet structures relevant to the AI SIFI Monitor project are present in this excerpt. The DOJ/FTC litigation sections describe a consumer-facing dispute over subscription cancellation disclosures unrelated to AI infrastructure or systemic financial interconnection.\n[chunk 3/4] This Q3 FY2025 10-Q for Adobe (ADBE) contains limited SIFI-material entities or relationships. The filing is primarily operational and financial disclosure with standard risk factor boilerplate. Key findings: (1) Figma acquisition termination: Adobe incurred a $1B termination fee in Q1 FY2024 (nine months ended August 30, 2024) for the failed Figma acquisition\u2014noted as a one-time cost but not SIFI-material. (2) Debt and capital: Adobe has $6.15B in senior notes outstanding, a $1.5B revolving credit facility (undrawn), and a $3B commercial paper program (undrawn). These are standard corporate financing arrangements. (3) Third-party dependencies: Adobe discloses reliance on third-party hosting, data center facilities, and cloud infrastructure providers for its cloud solutions and AI inferencing costs, but does not name specific counterparties or disclose material concentrations. (4) No customer concentration disclosures above 10% are mentioned. (5) No related-party arrangements or off-balance-sheet entities are disclosed. (6) AI risk: Adobe acknowledges risks from generative AI development, regulatory exposure (EU AI Act), and competition from other generative AI offerings, but these are standard risk disclosures without SIFI-material specifics. No hidden leverage, circularity, revenue roundtripping, capex ROI gaps, execution risks, or cost opacity patterns are identified in this section. The Figma termination fee is the only concrete transaction mentioned and does not meet the SIFI threshold for extraction.\"\n[chunk 4/4] ADBE 10-Q filed 2025-09-24 (Q3 FY2025). Extract filtered to SIFI-material risks. No customer concentration >10% named. No off-balance-sheet entities, SPVs, or hidden leverage disclosed in this section. No strategic capex commitments to specific counterparties. Debt: $6.15B senior unsecured notes + $3B commercial paper facility (undrawn) + $1.5B undrawn revolving credit. No related-party transactions or equity investments named in the narrative. Key SIFI signals: (1) generative AI patent/copyright protection gap (emerging tech risk); (2) customer data liability\u2014Adobe stores enterprise customer data and faces joint/several liability if customers breach compliance; (3) goodwill impairment risk given market volatility; (4) debt covenant risk with specified thresholds. ASR with \"large financial institution\" in March 2025 ($3.5B prepayment, 9.1M shares repurchased) is financial engineering but does not rise to SIFI-material leverage or circularity without more detail. No named capex commitments, no AI lab partnerships, no supply-chain concentration disclosed.\""
+  }
+}

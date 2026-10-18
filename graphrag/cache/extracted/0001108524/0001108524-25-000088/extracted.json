@@ -1,0 +1,739 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM_Customer_Concentration",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Customer Concentration",
+          "named_counterparties": [],
+          "severity": 1,
+          "verbatim_quote": "No single customer accounted for ten percent or more of accounts receivable as of July 31, 2025 and January 31, 2025. No single customer accounted for ten percent or more of total revenue during the three and six months ended July 31, 2025 and 2024."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM_Investment_Concentration",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "counterparty_count": 3,
+            "pct_of_assets": null,
+            "note": "Three private investments each >5% of strategic investments portfolio"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of July 31, 2025, the Company held three investments, all privately held, with carrying values that were individually greater than five percent of its total strategic investments portfolio"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM",
+            "Salesforce.com"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Informatica",
+        "fields": {
+          "aliases": [
+            "Informatica Inc."
+          ],
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Informatica-Acquisition-8B",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 8000000000,
+          "counterparty": "Informatica",
+          "purpose": "Acquisition of AI-powered enterprise cloud data management platform",
+          "start_fy": 2026,
+          "verbatim_quote": "Under the terms of the agreement, holders of Informatica's Class A and Class B-1 common stock will receive $25 in cash per share and the Company will acquire all outstanding shares of common stock of Informatica that the Company does not already own. The transaction represents an equity value of approximately $8 billion, net of the Company's current investment in Informatica."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Salesforce-Informatica-PreExisting",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Informatica",
+          "equity_pct": null,
+          "amount_usd": null,
+          "verbatim_quote": "The transaction represents an equity value of approximately $8 billion, net of the Company's current investment in Informatica."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Bank of America",
+        "fields": {
+          "role": "lender"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Salesforce-Strategic-Investments-VIE",
+        "fields": {
+          "entity_type": "VIE",
+          "sponsor": "Salesforce",
+          "debt_stack_usd": null,
+          "purpose": "Strategic equity investments",
+          "verbatim_quote": "The Company holds investments in, or management agreements with, variable interest entities ('VIEs') which the Company does not consolidate because it is not considered the primary beneficiary of these entities. The carrying value of VIEs within strategic investments was $571 million and $484 million, as of July 31, 2025 and January 31, 2025, respectively."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Salesforce-Strategic-Investments-Opacity",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 5085000000,
+            "pct_of_assets": null,
+            "note": "Strategic investments ($5.085B as of July 31, 2025) measured at fair value on non-recurring basis with substantial Level 3 unobservable inputs; no itemization of individual investees provided"
+          },
+          "verbatim_quote": "Substantially all of the Company's privately held equity securities and other investments are recorded at fair value on a non-recurring basis. The estimation of fair value for these investments requires the use of significant unobservable inputs, and as a result, the Company deems these assets as Level 3 within the fair value measurement framework."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Salesforce-Capex-ROI-Informatica",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "named_counterparties": [
+            "Informatica"
+          ],
+          "numeric_signal": {
+            "amount_usd": 8000000000,
+            "duration_yrs": 1,
+            "note": "Informatica acquisition ($8B equity value) closing in Q4 FY2026 or early FY2027; near-term execution risk and integration uncertainty"
+          },
+          "verbatim_quote": "The transaction is expected to close in the fourth quarter of fiscal 2026 or early fiscal 2027, subject to the receipt of required regulatory clearances and satisfaction of other customary closing conditions."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Salesforce-Execution-Risk-Informatica",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "named_counterparties": [
+            "Informatica"
+          ],
+          "numeric_signal": {
+            "amount_usd": 8000000000,
+            "note": "Material acquisition subject to regulatory approvals and closing conditions"
+          },
+          "verbatim_quote": "The transaction is expected to close in the fourth quarter of fiscal 2026 or early fiscal 2027, subject to the receipt of required regulatory clearances and satisfaction of other customary closing conditions."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Informatica",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Regrello",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Slack",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Website Technologies",
+        "fields": {
+          "role": "former_customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Backpage",
+        "fields": {
+          "role": "former_customer_affiliate"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Informatica-Acquisition",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 8000000000,
+          "counterparty": "Informatica",
+          "purpose": "acquisition of AI-powered enterprise cloud data management platform",
+          "verbatim_quote": "acquisition of Informatica, an AI-powered enterprise cloud data management platform, which is expected to close in the fourth quarter of fiscal 2026 or early fiscal 2027, subject to the satisfaction of customary closing conditions, including regulatory approvals, for an estimated $8.0 billion, net of the Company's current investment in Informatica"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Regrello-Acquisition",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 900000000,
+          "counterparty": "Regrello",
+          "purpose": "acquisition of AI-native business process automation solution",
+          "verbatim_quote": "the Company will acquire Regrello for approximately $900 million in cash, subject to customary purchase price adjustments"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Informatica-Credit-Facility-364Day",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 4000000000,
+          "duration_yrs": 1,
+          "counterparty": "Informatica",
+          "purpose": "financing for Informatica acquisition, debt repayment, and related costs",
+          "verbatim_quote": "364-Day Credit Agreement that provides the Company with the ability to borrow up to $4.0 billion"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Informatica-Credit-Facility-3Year",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 2000000000,
+          "duration_yrs": 3,
+          "counterparty": "Informatica",
+          "purpose": "financing for Informatica acquisition, debt repayment, and related costs",
+          "verbatim_quote": "three-year Credit Agreement that provides the Company with the ability to borrow up to $2.0 billion"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Backpage-Litigation-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Legal-Liability-Product-Misuse",
+          "named_counterparties": [
+            "Website Technologies",
+            "Backpage"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Plaintiffs in these actions generally allege that they were victims of sex trafficking by individuals who advertised them on backpage.com, a website operated by Backpage, and assert various claims and theories premised on the Company's provision to Website Technologies of Salesforce CRM Software and related products, which the plaintiffs allege facilitated the operation and growth of Backpage's business"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Informatica-Acquisition-Execution-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 8000000000,
+            "duration_yrs": 2
+          },
+          "named_counterparties": [
+            "Informatica"
+          ],
+          "verbatim_quote": "pending acquisition of Informatica Inc. and those described in Part I, Item 2, 'Management's Discussion and Analysis of Financial Condition and Results of Operations,' Part I, Item 3, 'Quantitative and Qualitative Disclosures About Market Risk,' Part II, Item 1A, 'Risk Factors,' and elsewhere in this Quarterly Report on Form 10-Q"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Slack-Litigation-Overhang",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "named_counterparties": [
+            "Slack"
+          ],
+          "verbatim_quote": "On July 10, 2025, the plaintiff filed a petition for a writ of certiorari with the U.S. Supreme Court. The state court actions were consolidated in November 2019, and the consolidated action is captioned In re Slack Technologies, Inc. Shareholder Litigation"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Backpage-Litigation-Exposure",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "numeric_signal": {
+            "counterparty_count": 6,
+            "note": "Multiple consolidated actions across federal and state courts in TX, IL; 244 new plaintiffs filed in June 2025"
+          },
+          "named_counterparties": [
+            "Website Technologies",
+            "Backpage"
+          ],
+          "verbatim_quote": "In June 2025, Plaintiff's counsel in A.S. and S.M.A. filed six new actions in the Northern District of Illinois on behalf of a total of 244 new Plaintiffs. On August 26, 2025, the six new actions were consolidated before the Northern District of Illinois judge who is presiding over the G.G. action"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Informatica",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Spiff",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Salesforce-Capex-H1-2025",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 314000000,
+          "duration_yrs": null,
+          "start_fy": 2025,
+          "counterparty": null,
+          "purpose": "Capital expenditures for platform infrastructure and cloud computing services"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Informatica-Acquisition-SPV",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "Salesforce",
+          "co_owner": null,
+          "beneficiary": null,
+          "debt_stack_usd": 6000000000,
+          "residual_value_guarantee": false,
+          "term_yrs": null,
+          "purpose": "Financing for pending acquisition of Informatica",
+          "verbatim_quote": "In June 2025, we entered into a 364-Day Credit Agreement that provides us with the ability to borrow up to $4.0 billion and a three-year Credit Agreement that provides us with the ability to borrow up to $2.0 billion, both on an unsecured basis, to finance a portion of the cash consideration for the pending acquisition of Informatica"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Salesforce-Informatica-Acquisition-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Execution Risk / Acquisition Integration",
+          "named_counterparties": [
+            "Informatica"
+          ],
+          "severity": 2,
+          "verbatim_quote": "In June 2025, we entered into a 364-Day Credit Agreement that provides us with the ability to borrow up to $4.0 billion and a three-year Credit Agreement that provides us with the ability to borrow up to $2.0 billion, both on an unsecured basis, to finance a portion of the cash consideration for the pending acquisition of Informatica"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Informatica",
+        "fields": {
+          "role": "target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Genesys",
+        "fields": {
+          "role": "investment_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Regrello",
+        "fields": {
+          "role": "target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Convergence",
+        "fields": {
+          "role": "target"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Informatica-Acquisition-$8B",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 8000000000,
+          "counterparty": "Informatica",
+          "purpose": "acquisition of enterprise cloud data management platform",
+          "verbatim_quote": "The transaction represents an equity value of approximately $8 billion, net of our current investment in Informatica."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Genesys-Investment-$750M",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 750000000,
+          "counterparty": "Genesys",
+          "purpose": "strategic investment in cloud-based AI customer experience platform",
+          "verbatim_quote": "In July 2025, we committed up to $750 million for a strategic investment in Genesys Cloud Services Topco LLC, which offers a cloud-based AI customer experience platform. We expect to fund this investment in fiscal 2026 with cash on our balance sheet."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Regrello-Acquisition-$900M",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 900000000,
+          "counterparty": "Regrello",
+          "purpose": "acquisition of AI-native business process automation solution",
+          "verbatim_quote": "Under the terms of the agreement to acquire Regrello, which was entered into in August 2025, we will acquire the company for approximately $900 million in cash, subject to customary purchase price adjustments."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Salesforce-Informatica-Stake",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Informatica",
+          "verbatim_quote": "holders of Informatica's Class A and Class B-1 common stock will receive $25 in cash per share and we will acquire all outstanding shares of common stock of Informatica that it does not already own"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Capex-ROI-Gap",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [
+            "Informatica",
+            "Genesys",
+            "Regrello"
+          ],
+          "numeric_signal": {
+            "amount_usd": 9650000000,
+            "note": "Three major acquisitions/investments ($8B Informatica, $750M Genesys, $900M Regrello) announced in rapid succession (May-Aug 2025) with uncertain integration timelines and ROI"
+          },
+          "verbatim_quote": "While we continue to make investments in our infrastructure and with infrastructure service providers to provide capacity for the growth of our business, our strategy may continue to change related to these investments and we may slow the pace of our investments."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Execution-Risk-Acquisitions",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [
+            "Informatica",
+            "Regrello"
+          ],
+          "verbatim_quote": "As we acquire companies or technologies, we may not realize the expected business or financial benefits and the acquisitions could prove difficult to integrate, disrupt our business, dilute stockholder value and adversely affect our operating results and the market value of our common stock."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Revenue-Concentration-Consumption",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "named_counterparties": [
+            "Agentforce",
+            "Data Cloud"
+          ],
+          "verbatim_quote": "For example, we offer certain products, including Agentforce and Data Cloud, through a consumption-based business model and may increase the number of products through which we do so. We have limited experience with determining optimal pricing for our consumption-based contracts. Additionally, due to customer flexibility in the timing of their consumption, we could have lower levels of customer consumption of our products than we expect which may result in suboptimal pricing for consumption-based contracts."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce, Inc."
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "JPMorgan Chase",
+        "fields": {
+          "role": "supplier"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM_Investment_Concentration"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "CRM_Customer_Concentration"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "capex_commitment",
+        "target_name": "Informatica-Acquisition-8B",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "investment",
+        "target_name": "Salesforce-Informatica-PreExisting",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Informatica",
+        "predicate": "NAMES_COUNTERPARTY"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Bank of America",
+        "predicate": "NAMES_COUNTERPARTY"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "off_balance_entity",
+        "target_name": "Salesforce-Strategic-Investments-VIE",
+        "predicate": "SPONSORS"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Salesforce-Strategic-Investments-Opacity",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Salesforce-Capex-ROI-Informatica",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Salesforce-Execution-Risk-Informatica",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "Informatica-Acquisition"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "Regrello-Acquisition"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "Informatica-Credit-Facility-364Day"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "Informatica-Credit-Facility-3Year"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "Backpage-Litigation-Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Informatica-Acquisition-Execution-Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Slack-Litigation-Overhang"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Backpage-Litigation-Exposure"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Informatica"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Regrello"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Slack"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Informatica",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "off_balance_entity",
+        "target_name": "Informatica-Acquisition-SPV",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "capex_commitment",
+        "target_name": "Informatica-Acquisition-$8B",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "capex_commitment",
+        "target_name": "Genesys-Investment-$750M",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "capex_commitment",
+        "target_name": "Regrello-Acquisition-$900M",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "investment",
+        "target_name": "Salesforce-Informatica-Stake",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Capex-ROI-Gap",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Execution-Risk-Acquisitions",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Revenue-Concentration-Consumption",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "DEPENDS_ON",
+        "target_type": "company",
+        "target_name": "JPMorgan Chase",
+        "properties": {
+          "relationship_type": "Credit facility provider",
+          "facilities": [
+            "364-Day Credit Agreement (June 20, 2025)",
+            "Three-Year Credit Agreement (June 20, 2025)"
+          ]
+        }
+      }
+    ],
+    "notes": "[chunk 1/6] Filing CONTEXT: CRM 10-Q for Q2 FY2026 (ended July 31, 2025), filed 2025-09-04. SOURCE TEXT PROVIDED: The filing excerpt is a standard 10-Q header and partial Business/Notes section with primarily boilerplate accounting policy disclosures and financial statement tables (condensed balance sheet, income statement, cash flows, stockholders' equity). The \"FULL\" section designation suggests the entire filing was intended, but only the header/cover page and initial notes were included in the source text. EXTRACTION NOTES: 1. **No Major SIFI-Material Entities Named**: The text does not identify specific named counterparties, strategic partnership details, or material related-party arrangements that rise to SIFI level. It mentions \"enterprise cloud companies, technology startups and system integrators\" as investment targets but provides no specific names. 2. **Customer & Supplier Concentration**: The filing explicitly states NO single customer represents \u226510% of revenue or accounts receivable for the periods shown. This is a LOW-RISK signal and does not trigger a SIFI hidden_risk_signal on customer concentration. 3. **Strategic Investment Concentration**: The only material disclosure is that Salesforce holds THREE privately held investments, each >5% of the strategic investments portfolio. This is flagged as a hidden_risk_signal (CUSTOMER_CONCENTRATION risk_type used as proxy for investment concentration, since the schema lacks an explicit \"investment concentration\" type). Severity: 2 (concern, not critical, as only 3 investments disclosed and no counterparty names given). 4. **No Circularity, Roundtripping, Hidden Leverage, or Capex Gaps**: None detected in this excerpt. 5. **Incomplete Source Text**: The excerpt cuts off mid-sentence after the investment concentration disclosure. Full analysis would require the complete Item 1A (Risk Factors), Item 2 (MD&A), and any related-party transaction disclosures. RECOMMENDATION: Request complete filing text (especially Items 1A, 8, and related footnotes) to identify specific investee names and any strategic partnerships or agreements that could trigger SIFI analysis.\"\n  }\n]\n[chunk 2/6] FILING: Salesforce 10-Q (2025-09-04); SIFI-material extractions only. KEY FINDINGS: (1) **Informatica Acquisition ($8B)** \u2013 Material capex commitment with regulatory execution risk; financing via new debt + cash; closing Q4 FY2026 or early FY2027. (2) **Strategic Investments Opacity** \u2013 $5.1B portfolio of privately held equities measured at Level 3 fair value (unobservable inputs); no itemized investee roster provided in this section; significant impairment activity ($133M H1 FY2026). (3) **VIE Holdings** \u2013 $571M in non-consolidated variable-interest entities; governance and beneficiary role unclear. (4) **Lease Obligations** \u2013 $3.15B in operating lease commitments (6-month through thereafter); standard corporate real estate; no residual value guarantees disclosed that would trigger SPV treatment. (5) **Revolving Credit Facility** \u2013 $5.0B unsecured facility with BofA (new; replaced prior $3.0B facility); matures Oct 2029; no outstanding borrowings reported as of July 31, 2025. SKIPPED: Revenue recognition mechanics (boilerplate); foreign currency hedging (routine); standard stock-based comp; tax accounting; generic market risks. NOTE: This section does not enumerate specific AI lab investments or counterparty circularity patterns visible in other Salesforce filings (e.g., Note 8 non-marketable equity securities roster, if disclosed). Recommend cross-check with full 10-K or DEF 14A for complete strategic investment roster.\n[chunk 3/6] EXTRACTION SUMMARY: Salesforce 10-Q filing (2025-09-04) reveals three key SIFI-material vectors: (1) **Informatica Acquisition (~$8B net, closing Q4 FY2026/early FY2027)** backed by $6B committed credit facilities (364-day + 3-year tranches), conditional on regulatory approval\u2014execution risk to Salesforce balance sheet if deal slips or regulatory headwinds emerge. (2) **Slack subsidiary litigation overhang**: Ninth Circuit reversed and remanded for dismissal Feb 2025; plaintiff filed SCOTUS petition July 2025\u2014unresolved tail risk for parent. (3) **Backpage litigation cascade**: 244 new plaintiffs added June 2025 across IL/TX federal courts; multiple consolidated actions (G.G., A.B., S.M.A., A.S., T.S., Jane Doe MDL) alleging Website Technologies (Backpage affiliate) used Salesforce CRM to facilitate sex trafficking operations. Trial scheduled June 2026 in IL. Material reputational and potential liability exposure. Core business metrics show 9% YoY revenue growth, 22% operating margin, $59.9B remaining performance obligation (12% growth), and $15.4B cash\u2014adequate to weather current headwinds. No off-balance-sheet SPVs, circular dependencies, or cost opacity detected in this section. Regrello acquisition (~$900M, Q3 FY2026 close) is modest bolt-on for AI process automation, lower risk.\n[chunk 5/6] EXTRACTION SUMMARY \u2014 Salesforce 10-Q (CRM, filed 2025-09-04):\n\nSIFI-MATERIAL ENTITIES & RELATIONSHIPS:\n1. **Informatica Acquisition ($8B)**: Major pending acquisition announced May 2025; represents equity value net of existing stake. Funding via combination of new debt (364-day and 3-year credit agreements totaling $6B) and cash.\n\n2. **Genesys Strategic Investment ($750M)**: Committed in July 2025; cloud AI customer experience platform; funding from cash in fiscal 2026.\n\n3. **Regrello Acquisition ($900M)**: AI-native business process automation; entered Aug 2025; expected close Q3 FY2026.\n\n4. **Convergence Acquisition**: Smaller acquisition (June 2025); 57,276 shares issued; role in agentic roadmap acceleration.\n\nRISK SIGNALS IDENTIFIED:\n\n**CAPEX_ROI_GAP (Severity 3):**\n- $9.65B in committed capex across three major acquisitions/investments in 5-month window (May-Aug 2025)\n- Filing explicitly states \"our strategy may continue to change related to these investments and we may slow the pace of our investments\" \u2014 indicates uncertainty around ROI realization\n- Integration of newly acquired AI/automation tech (Regrello, Informatica) with existing platform unclear\n- Informatica has embedded operating lease obligations and potential integration complexity\n\n**EXECUTION_RISK (Severity 3):**\n- Informatica and Regrello both require \"assumption of unvested equity awards\" \u2014 retention/integration risk\n- Multiple acquisitions concurrent with ERP implementation (Q2 FY2026) compounds execution complexity\n- Consumption-based monetization models (Agentforce, Data Cloud) untested at scale; CRM admits \"limited experience with determining optimal pricing\"\n\n**COST_OPACITY (Severity 2):**\n- Consumption-based offerings create revenue unpredictability and forecasting challenges\n- Depreciation/amortization from $8.65B in intangible assets will pressure margins\n- Strategic investment portfolio ($5.1B, with 18% in three privately held names) subject to high volatility; impairment risk in uncertain market\n\n**DEBT STRUCTURE:**\n- Informatica acquisition credit lines ($4.0B + $2.0B) not yet drawn but available post-close; adds leverage\n- Existing debt load ($7.5B in Senior Notes) + new facilities increase financial rigidity\n- Operating leases substantial; real estate restructuring extended to end of FY2026\n\n**CUSTOMER/SUPPLIER CONCENTRATION:**\n- No single customer >10% of revenue disclosed\n- Heavy reliance on third-party data center providers and cloud platforms (AWS, Azure inferred)\n- International operations expose FX risk (Euro, GBP, JPY, CAD, AUD, BRL, INR)\n\n**OTHER OBSERVATIONS:**\n- Workforce restructuring ongoing (severance obligations $30-50M); impacts talent retention for acquisitions\n- AI-related regulatory uncertainty (DSA, AI Act) creates compliance cost\n- Geopolitical risks (Ukraine, Middle East, US-China tensions) affect international revenue and data transfer\n\nNO HIDDEN LEVERAGE OR CIRCULARITY detected in this filing section.\n[chunk 6/6] Salesforce 10-Q (CRM, 0001108524-25-000088, filed 2025-09-04). The provided text excerpt contains only routine corporate governance, share repurchase program updates, and exhibits/signature pages. No SIFI-material entities, hidden leverage, circularity, off-balance-sheet arrangements, customer/supplier concentration risks, or strategic partnerships are evident in this excerpt. The only substantive relationship identified is the credit facility arrangements with JPMorgan Chase as administrative agent, which is standard working capital financing and does not rise to SIFI-material status without disclosure of material counterparty concentration or covenant issues. The share repurchase program ($50B authorized post-September 2025 authorization) is a capital allocation activity, not a SIFI-material business risk signal. No AI lab investments, private equity stakes, or related-party SIFI structures are disclosed in this section.\""
+  }
+}

@@ -1,0 +1,1785 @@
+{
+  "item_5": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "ASML",
+        "fields": {
+          "ticker": "ASML",
+          "aliases": [
+            "ASML Holding N.V."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Mistral",
+        "fields": {
+          "aliases": [
+            "Mistral AI"
+          ],
+          "private": true,
+          "known_backers": [
+            "ASML"
+          ]
+        }
+      },
+      {
+        "type": "investment",
+        "name": "ASML-Mistral-2025",
+        "fields": {
+          "investor": "ASML",
+          "target": "Mistral",
+          "disclosed_date": "2025-09",
+          "verbatim_quote": "In September 2025, following discussions with the Board of Management on the growing importance of AI, the company finalized an investment in the French-based AI leader Mistral AI. Bringing together ASML's leading capabilities in innovation and knowledge of the technology ecosystem along with Mistral AI's expertise, we believe this agreement will allow both companies to innovate faster together."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-Mistral-Circularity-Signal",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "CIRCULARITY",
+          "severity": 2,
+          "named_counterparties": [
+            "Mistral"
+          ],
+          "verbatim_quote": "In September 2025, following discussions with the Board of Management on the growing importance of AI, the company finalized an investment in the French-based AI leader Mistral AI. Bringing together ASML's leading capabilities in innovation and knowledge of the technology ecosystem along with Mistral AI's expertise, we believe this agreement will allow both companies to innovate faster together. We believe it will also help us enhance our products, processes and overall performance."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-Geopolitical-ExportControls-Risk",
+        "fields": {
+          "filer": "ASML",
+          "category": "Geopolitical / Export Controls",
+          "named_counterparties": [
+            "China",
+            "USG"
+          ],
+          "severity": 4,
+          "verbatim_quote": "The year was marked by market uncertainties and a continuously challenging geopolitical situation that included export restrictions and tensions between the US and China. We closely followed the execution of the product and technology roadmap... Other areas of focus during 2025 were export controls and tariffs. We closely followed and discussed with the Board of Management developments in this area and the implications for ASML."
+        }
+      },
+      {
+        "type": "company",
+        "name": "ASML",
+        "fields": {
+          "ticker": "ASML",
+          "aliases": [
+            "ASML Holding N.V."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-ExportControl-Geopolitical-Risk",
+        "fields": {
+          "filer": "ASML",
+          "category": "Geopolitical / Export Controls",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Geopolitical challenges and in particular the potential impact of increasing export control restrictions and tariffs on ASML's business was another topic of focus."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-RevenueRecognition-CriticalAuditMatter",
+        "fields": {
+          "filer": "ASML",
+          "category": "Revenue Recognition / Contract Complexity",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "identification of distinct performance obligations in volume purchase agreements has been identified as a critical audit matter by the external auditor."
+        }
+      },
+      {
+        "type": "company",
+        "name": "ASML",
+        "fields": {
+          "ticker": "ASML",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "ASML-ClimateMasterPlan-2030",
+        "fields": {
+          "filer": "ASML",
+          "amount_usd": 126000000,
+          "duration_yrs": 5,
+          "start_fy": 2021,
+          "purpose": "Five-year energy savings master plan covering five largest industrial sites; heat pumps, building renovation, solar panels, energy grid. Total investments in 2025 amounted to \u20ac126 million.",
+          "verbatim_quote": "The total investments toward our five-year energy savings master plan in 2025 amounted to \u20ac126 million, of which the projects for the heat pumps and renovation of office buildings in Veldhoven, and the solar panels for our San Diego location, are the most significant."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-SupplyChain-ScopeEmissions-Risk",
+        "fields": {
+          "filer": "ASML",
+          "category": "Supply chain concentration / sustainability execution risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "progress in reducing the carbon footprint of our supply chain has been slower than anticipated... By year-end 2025, 32% of our top suppliers in scope had committed to reducing their CO2e footprint by 2030. We aimed to achieve a 45% commitment by the end of 2025 to enable us to remain on track for the 2026 target; however, performance did not meet this goal."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-GridCongestion-NL-Risk",
+        "fields": {
+          "filer": "ASML",
+          "category": "Infrastructure / energy supply risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "the broader challenge of grid congestion in the Eindhoven area extends beyond the boundaries of our company alone... the national electricity network is facing increasing strain due to rapid electrification, expanding industries, and rising demand from households and mobility."
+        }
+      },
+      {
+        "type": "company",
+        "name": "ASML",
+        "fields": {
+          "ticker": "ASML",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Mistral",
+        "fields": {
+          "private": true,
+          "aliases": [
+            "Mistral AI"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "TSMC",
+        "fields": {
+          "ticker": "TSM",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "ASML-Mistral-Equity",
+        "fields": {
+          "investor": "ASML",
+          "target": "Mistral",
+          "verbatim_quote": "Our company has investments in two associates and made an equity investment this year. This category includes the emissions not already included in scope 1 or scope 2 associated with those investments in the reporting year. For HighTechXL Group B.V. and Mistral AI, this is calculated using the average-data method from GHG Protocol."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "ASML-HighTechXL-Equity",
+        "fields": {
+          "investor": "ASML",
+          "target": "HighTechXL Group B.V.",
+          "verbatim_quote": "Our company has investments in two associates and made an equity investment this year. For HighTechXL Group B.V. and Mistral AI, this is calculated using the average-data method from GHG Protocol."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "ASML-CarlZeissSMT-Equity",
+        "fields": {
+          "investor": "ASML",
+          "target": "Carl Zeiss SMT Holding GmbH & Co. KG",
+          "verbatim_quote": "For Carl Zeiss SMT Holding GmbH & Co. KG, we directly receive our share in their scope 1 and 2 emissions \u2014 which is multiplied by our equity stake. Since they are also a key supplier, and to avoid double-counting, these emissions are deducted from scope 3 category 1."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-CarlZeiss-Supplier-Investee-Circularity",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "CIRCULARITY",
+          "severity": 2,
+          "named_counterparties": [
+            "Carl Zeiss SMT Holding GmbH & Co. KG"
+          ],
+          "verbatim_quote": "For Carl Zeiss SMT Holding GmbH & Co. KG, we directly receive our share in their scope 1 and 2 emissions \u2014 which is multiplied by our equity stake. Since they are also a key supplier, and to avoid double-counting, these emissions are deducted from scope 3 category 1. The reclassification impact is 3 kt."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-Mistral-NewEquityInvestment",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "OTHER",
+          "severity": 1,
+          "named_counterparties": [
+            "Mistral"
+          ],
+          "verbatim_quote": "Our company has investments in two associates and made an equity investment this year. This category includes the emissions not already included in scope 1 or scope 2 associated with those investments in the reporting year. For HighTechXL Group B.V. and Mistral AI, this is calculated using the average-data method from GHG Protocol."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-CustomerClimatePhysicalRisk",
+        "fields": {
+          "filer": "ASML",
+          "category": "EXECUTION_RISK",
+          "named_counterparties": [
+            "TSMC"
+          ],
+          "severity": 2,
+          "verbatim_quote": "The increased frequency and severity of climate change effects are expected to impact our key customers, particularly in the long term (2050). Extreme weather events are predicted to be more severe and the manufacturing facilities of our key customers are especially exposed to water stress, droughts, storms and typhoons \u2013 events that can potentially disrupt their operations."
+        }
+      },
+      {
+        "type": "company",
+        "name": "ASML",
+        "fields": {
+          "ticker": "ASML",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-Customer-Concentration-Climate",
+        "fields": {
+          "filer": "ASML",
+          "category": "Customer concentration + climate physical risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Our dependence on a concentrated number of customers could have a material adverse effect on our revenue and financial condition."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-Supply-Chain-Raw-Material-Scarcity",
+        "fields": {
+          "filer": "ASML",
+          "category": "Supplier concentration / raw material scarcity",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "The availability of some input materials (for example raw materials used in our equipment like steel, aluminum and rare earth elements) is expected to be impacted, since demand will increase in a low-carbon economy. Increased demand and decreased availability... could significantly impact the cost of raw materials."
+        }
+      },
+      {
+        "type": "company",
+        "name": "ASML",
+        "fields": {
+          "ticker": "ASML",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "ASML-TUe-Cleanroom-\u20ac30M",
+        "fields": {
+          "filer": "ASML",
+          "amount_usd": 33000000,
+          "duration_yrs": 3,
+          "start_fy": 2025,
+          "counterparty": "TU/e",
+          "purpose": "Construction of new cleanroom facility on TU/e campus, hub for research collaborations",
+          "verbatim_quote": "\u20ac30 million will be invested to support the construction of the new cleanroom on the TU/e campus over 2025-2028."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "ASML-Beethoven-Housing-Fund-\u20ac61M",
+        "fields": {
+          "filer": "ASML",
+          "amount_usd": 67000000,
+          "duration_yrs": 10,
+          "start_fy": 2025,
+          "purpose": "Affordable housing development \u2014 17,000 homes and 2,280 student homes in Brainport Eindhoven region",
+          "verbatim_quote": "In 2025, we committed to support the Beethoven Affordable Housing Fund, a \u20ac245 million private-public partnership over 10 years. We aim to contribute 25% (\u20ac61.3 million) alongside 25% from local municipalities and 50% from central government."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "ASML-Brainport-Mobility-PPP",
+        "fields": {
+          "filer": "ASML",
+          "duration_yrs": 15,
+          "start_fy": 2025,
+          "purpose": "Co-financing infrastructure upgrades in Brainport Eindhoven region \u2014 bus/railway station, bus and bicycle lanes",
+          "verbatim_quote": "The total investment of the partnerships is expected to reach \u20ac2.5 billion over 10-15 years, with contributions from the Dutch government, the province and local municipalities, and private-sector partners including ASML."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "ASML-DeepTechXL-Fund-I",
+        "fields": {
+          "investor": "ASML",
+          "target": "DeepTechXL",
+          "amount_usd": 130000000,
+          "round": "Fund I",
+          "disclosed_date": "2022",
+          "verbatim_quote": "In 2022, we became a strategic investor and co-initiator in DeepTechXL Fund I, a new Dutch deep-tech fund of now \u20ac118 million and a follow-up to HighTechXL."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "ASML-HighTechXL-Stake",
+        "fields": {
+          "investor": "ASML",
+          "target": "HighTechXL",
+          "verbatim_quote": "ASML is one of the main shareholders of HighTechXL, together with other tech-minded partners such as Philips, research institute TNO, Brabantse Ontwikkelings Maatschappij and High Tech Campus Eindhoven."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Beethoven-Affordable-Housing-Fund",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "Dutch Government / Municipalities",
+          "co_owner": "ASML",
+          "debt_stack_usd": 270000000,
+          "term_yrs": 10,
+          "purpose": "Private-public partnership to develop 17,000+ affordable homes in Brainport Eindhoven region",
+          "verbatim_quote": "In 2025, we committed to support the Beethoven Affordable Housing Fund, a \u20ac245 million private-public partnership over 10 years. We aim to contribute 25% (\u20ac61.3 million) alongside 25% from local municipalities and 50% from central government."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Brainport-Mobility-PPP",
+        "fields": {
+          "entity_type": "project_finance",
+          "sponsor": "Dutch Government",
+          "co_owner": "ASML",
+          "debt_stack_usd": 2750000000,
+          "term_yrs": 15,
+          "purpose": "Public-private partnership for infrastructure upgrades \u2014 bus, railway, bicycle lanes in Brainport Eindhoven region",
+          "verbatim_quote": "The total investment of the partnerships is expected to reach \u20ac2.5 billion over 10-15 years, with contributions from the Dutch government, the province and local municipalities, and private-sector partners including ASML."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-Conflict-Minerals-Supply-Chain-Opacity",
+        "fields": {
+          "filer": "ASML",
+          "category": "Supply chain opacity / conflict minerals",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Due to incomplete information received from our suppliers, we were unable to fully identify the countries of origin and processing facilities for all conflict minerals. However, the result of our due diligence indicates that some of the 3TG minerals that we use originated in the Democratic Republic of the Congo (DRC) and other conflict-affected and high-risk areas."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-Housing-PPP-Hidden-Obligation",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 67000000,
+            "duration_yrs": 10,
+            "note": "ASML committed \u20ac61.3M (25% of \u20ac245M fund) to Beethoven Affordable Housing Fund; also exposed to loss-coverage obligations on individual housing projects"
+          },
+          "named_counterparties": [
+            "Dutch Government"
+          ],
+          "verbatim_quote": "we support in a manner that avoids distorting the market, either by contributing a pre-agreed amount upon completion, or a de-risking construction by committing to cover potential losses at the end of the project... we committed to support the Beethoven Affordable Housing Fund, a \u20ac245 million private-public partnership over 10 years."
+        }
+      },
+      {
+        "type": "company",
+        "name": "ASML",
+        "fields": {
+          "ticker": "ASML",
+          "aliases": [
+            "ASML Holding N.V."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Carl Zeiss SMT",
+        "fields": {
+          "aliases": [
+            "Carl Zeiss SMT Holding GmbH & Co. KG"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "ASML-CarlZeiss-VIE",
+        "fields": {
+          "entity_type": "VIE",
+          "sponsor": "ASML",
+          "beneficiary": "ASML",
+          "purpose": "24.9% equity interest in Carl Zeiss SMT Holding GmbH & Co. KG; ASML funds R&D and capitalizes contributions; equity method investment with VIE assessment",
+          "verbatim_quote": "Equity method investments relates to our 24.9% equity interest in Carl Zeiss SMT Holding GmbH & Co. KG and includes our share of the net result, dividends received and other equity movements, as well as the capitalization of our R&D funding to Carl Zeiss SMT Holding GmbH & Co. KG as disclosed in Note 26 Related parties and variable interest entities."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "ASML-CarlZeiss-Equity",
+        "fields": {
+          "investor": "ASML",
+          "target": "Carl Zeiss SMT",
+          "equity_pct": 24.9,
+          "verbatim_quote": "Equity method investments relates to our 24.9% equity interest in Carl Zeiss SMT Holding GmbH & Co. KG and includes our share of the net result, dividends received and other equity movements, as well as the capitalization of our R&D funding to Carl Zeiss SMT Holding GmbH & Co. KG."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "ASML-EquityInvestments-2025",
+        "fields": {
+          "investor": "ASML",
+          "target": "<UNKNOWN>",
+          "amount_usd": 1302200000,
+          "disclosed_date": "2025",
+          "verbatim_quote": "Purchase of equity investments 9 \u2014 \u2014 (1,302.2)"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-RelatedParty-Loans-HiddenLeverage",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 1914100000,
+            "note": "Non-current loans receivable from related parties \u20ac1,647.3M + current loans receivable from related parties \u20ac260.2M + other non-current assets with related parties \u20ac868.4M = substantial related-party financing exposure off income statement; loans issued to related parties \u20ac703.7M cash outflow in 2025"
+          },
+          "named_counterparties": [
+            "Carl Zeiss SMT"
+          ],
+          "verbatim_quote": "Loans receivable \u2013 non-current includes amounts with related parties of \u20ac1,647.3 million and \u20ac1,440.8 million at December 31, 2025 and 2024, respectively. Loans issued and other investments includes a cash outflow of \u20ac703.7 million... net of \u20ac121.8 million unamortized discount included in other assets, to related parties."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-CarlZeiss-Circularity",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "CIRCULARITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 822600000,
+            "note": "ASML holds 24.9% equity in Carl Zeiss SMT (\u20ac822.6M book value), funds its R&D, buys optics from it (Carl Zeiss SMT is key single-source optics supplier), and consolidates as VIE candidate \u2014 investor + R&D funder + customer + creditor simultaneously"
+          },
+          "named_counterparties": [
+            "Carl Zeiss SMT"
+          ],
+          "verbatim_quote": "Equity method investments relates to our 24.9% equity interest in Carl Zeiss SMT Holding GmbH & Co. KG and includes our share of the net result, dividends received and other equity movements, as well as the capitalization of our R&D funding to Carl Zeiss SMT Holding GmbH & Co. KG as disclosed in Note 26 Related parties and variable interest entities."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-RelatedParty-CostOfSales",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 3503100000,
+            "pct_of_revenue": 10.7,
+            "note": "Related-party cost of sales \u20ac3,503.1M in 2025 out of total cost of sales \u20ac15,409.3M = ~22.7% of COGS; primary related party is Carl Zeiss SMT as sole-source optics supplier"
+          },
+          "named_counterparties": [
+            "Carl Zeiss SMT"
+          ],
+          "verbatim_quote": "Cost of sales includes amounts with related parties of \u20ac3,503.1 million, \u20ac2,793.2 million and \u20ac2,854.5 million in 2025, 2024 and 2023, respectively."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-ContractLiabilities-ExecutionRisk",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 46500000000,
+            "note": "Remaining performance obligations \u20ac46.5B as of Dec 31, 2025; 65% expected recognized in next 12 months; subject to export control restrictions and customer facility readiness"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of December 31, 2025, the remaining performance obligations amount to \u20ac46.5 billion (December 31, 2024: \u20ac43.3 billion). The remaining performance obligations mainly include orders related to NXT immersion, NXE and EXE lithography systems... subject to modifications or changes in estimates... as well as applicable export control restrictions."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-NewEquityInvestments-Opacity",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 1302200000,
+            "note": "\u20ac1,302.2M in new equity investments purchased in 2025 (vs. \u20ac0 in 2023 and 2024); investees not named in this section; classified as 'Equity investments' at \u20ac1,320.7M on balance sheet \u2014 new category not present in 2024"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Purchase of equity investments 9 \u2014 \u2014 (1,302.2) ... Equity investments 9 \u2014 1,320.7"
+        }
+      },
+      {
+        "type": "company",
+        "name": "ASML",
+        "fields": {
+          "ticker": "ASML",
+          "aliases": [
+            "ASML Holding N.V."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Mistral",
+        "fields": {
+          "private": true,
+          "known_backers": [
+            "ASML",
+            "Andreessen Horowitz",
+            "General Catalyst",
+            "Lightspeed"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Carl Zeiss SMT",
+        "fields": {
+          "aliases": [
+            "Carl Zeiss SMT GmbH",
+            "Carl Zeiss SMT Holding GmbH & Co. KG"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "ASML-Mistral-SeriesC",
+        "fields": {
+          "investor": "ASML",
+          "target": "Mistral",
+          "amount_usd": 1302200000,
+          "equity_pct": 11.1,
+          "round": "Series C",
+          "disclosed_date": "2025-09-09",
+          "verbatim_quote": "On September 9, 2025, ASML and Mistral AI announced an investment and partnership agreement for which ASML invested \u20ac1.3 billion in Mistral AI's Series C funding round as lead investor. This resulted in ASML holding an 11.1% share on a fully diluted basis in Mistral AI as per December 31, 2025."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "ASML-CarlZeiss-24.9pct",
+        "fields": {
+          "investor": "ASML",
+          "target": "Carl Zeiss SMT",
+          "equity_pct": 24.9,
+          "disclosed_date": "2017-06-29",
+          "verbatim_quote": "Equity method investments consists of a 24.9% equity interest acquired on June 29, 2017, in Carl Zeiss SMT Holding GmbH & Co. KG, a limited partnership that owns Carl Zeiss SMT GmbH, our single supplier of optical columns."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "ASML-PurchaseObligations-2025",
+        "fields": {
+          "filer": "ASML",
+          "amount_usd": 12700000000,
+          "duration_yrs": 5,
+          "start_fy": 2025,
+          "purpose": "Unconditional purchase obligations toward suppliers for goods, services, and facility expansion/upgrade",
+          "verbatim_quote": "Purchase obligations 12.7 [billion total]... We have purchase obligations toward suppliers in the ordinary course of business which mainly relate to goods and services for our operations and obligations relating to further expansion and upgrade of our facilities."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-CustomerConcentration-2025",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 61.2,
+            "amount_usd": 20000000000,
+            "counterparty_count": 4,
+            "note": "Four customers each individually exceeded 10% of total net sales in 2025, totaling \u20ac20.0 billion or 61.2% of total net sales"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In 2025, four customers each individually exceeded 10% of total net sales, totaling \u20ac20.0 billion, or 61.2%, of total net sales."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-SupplierConcentration-CarlZeiss",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 5,
+          "numeric_signal": {
+            "amount_usd": 1191900000,
+            "note": "Advance payments to Carl Zeiss SMT GmbH total \u20ac1,191.9M (\u20ac323.5M current + \u20ac868.4M non-current). Carl Zeiss SMT is ASML's single supplier of optical columns, in which ASML also holds a 24.9% equity stake."
+          },
+          "named_counterparties": [
+            "Carl Zeiss SMT"
+          ],
+          "verbatim_quote": "Equity method investments consists of a 24.9% equity interest acquired on June 29, 2017, in Carl Zeiss SMT Holding GmbH & Co. KG, a limited partnership that owns Carl Zeiss SMT GmbH, our single supplier of optical columns."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-CarlZeiss-Circularity",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "CIRCULARITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 1191900000,
+            "note": "ASML holds 24.9% equity in its sole optical column supplier Carl Zeiss SMT, has \u20ac1.19B in advance payments outstanding to it, and receives dividends (\u20ac320.5M in 2025). Investor-is-also-sole-customer relationship creates circular dependency."
+          },
+          "named_counterparties": [
+            "Carl Zeiss SMT"
+          ],
+          "verbatim_quote": "Equity method investments consists of a 24.9% equity interest... in Carl Zeiss SMT Holding GmbH & Co. KG... our single supplier of optical columns. In 2025, we received a dividend of \u20ac320.5 million... from Carl Zeiss SMT Holding GmbH & Co. KG."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-Receivables-Factoring-Signal",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 6212500000,
+            "note": "\u20ac6.2B receivables sold via factoring in 2025 (vs \u20ac2.0B in 2024), including \u20ac3.5B of absolute, unconditional, irrevocable accounts receivable for down payments on systems to be shipped in 2026+. Rapid acceleration in off-balance-sheet receivables monetization."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In 2025, \u20ac6,212.5 million of receivables were sold through factoring arrangements (2024: \u20ac2,042.7 million). The amounts consist of \u20ac2,704.8 million of regular trade receivables and \u20ac3,507.7 million of absolute, unconditional, irrevocable accounts receivable for down payments on systems to be shipped in 2026 and thereafter."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-Mistral-CAPEX-ROI-Gap",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 1302200000,
+            "note": "ASML invested \u20ac1.3B in Mistral AI Series C as lead investor \u2014 an AI lab investment outside ASML's core semiconductor equipment business. No contracted revenue or compute supply relationship disclosed to justify the scale of this investment."
+          },
+          "named_counterparties": [
+            "Mistral"
+          ],
+          "verbatim_quote": "On September 9, 2025, ASML and Mistral AI announced an investment and partnership agreement for which ASML invested \u20ac1.3 billion in Mistral AI's Series C funding round as lead investor. This resulted in ASML holding an 11.1% share on a fully diluted basis in Mistral AI as per December 31, 2025."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-China-Revenue-Concentration",
+        "fields": {
+          "filer": "ASML",
+          "category": "Geographic/geopolitical concentration",
+          "named_counterparties": [
+            "China"
+          ],
+          "severity": 3,
+          "verbatim_quote": "China: Total net sales 2025: 9,519.7 [\u20acM], 2024: 10,195.1 [\u20acM], 2023: 7,251.8 [\u20acM]. In 2025, four customers each individually exceeded 10% of total net sales, totaling \u20ac20.0 billion, or 61.2%, of total net sales."
+        }
+      },
+      {
+        "type": "company",
+        "name": "ASML",
+        "fields": {
+          "ticker": "ASML",
+          "aliases": [
+            "ASML Holding N.V."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-Supplier-Concentration",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "We rely on outside vendors for components and subassemblies used in our systems, including the design thereof, each of which is obtained from a single supplier or a limited number of suppliers. Our reliance on a limited group of suppliers involves several risks, including a potential inability to obtain an adequate supply of required components, reduced control over pricing, and the risk of untimely delivery."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-Tax-Incentive-Dependency",
+        "fields": {
+          "filer": "ASML",
+          "category": "Tax / Cost Opacity",
+          "named_counterparties": [
+            "Netherlands"
+          ],
+          "severity": 2,
+          "verbatim_quote": "The innovation box is a facility under Dutch corporate tax law pursuant to which qualified income associated with R&D is subject to an effective tax rate of 9.0%. As of 2024 this agreement has been renewed, now being applicable for the years 2024 through 2028 assuming facts and circumstances do not change."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-Innovation-Box-Cost-Opacity",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Innovation box reduces effective tax rate from 25.8% statutory to 17.7% effective; tax incentive benefit ~\u20ac1.056B in 2025. Agreement runs through 2028."
+          },
+          "named_counterparties": [
+            "Netherlands"
+          ],
+          "verbatim_quote": "Adjustments in respect of tax incentives: 1,055.8 (9.3)%... The innovation box is a facility under Dutch corporate tax law pursuant to which qualified income associated with R&D is subject to an effective tax rate of 9.0%. The application has been confirmed in agreements between ASML and the Dutch tax authorities. As of 2024 this agreement has been renewed, now being applicable for the years 2024 through 2028."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-Transfer-Pricing-UTB",
+        "fields": {
+          "filer": "ASML",
+          "category": "Tax / Unrecognized Tax Benefits",
+          "named_counterparties": [
+            "Netherlands"
+          ],
+          "severity": 2,
+          "verbatim_quote": "The movement for 2025 is mainly driven by continued dialogues with Dutch and foreign tax authorities in the area of transfer pricing and the use of foreign tax credits... Our estimate for the potential outcome of any uncertain tax position is highly judgmental. Settlement of these uncertain tax positions in a manner inconsistent with our expectations could have a material impact on our Consolidated financial statements."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-Unrecognized-Deferred-Tax-Foreign-Subs",
+        "fields": {
+          "filer": "ASML",
+          "category": "Tax / Hidden Liability",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "At December 31, 2025, the aggregate amount of unrecognized temporary differences approximately amounts to \u20ac1,267.6 million (2024: \u20ac1,010.2 million)... no deferred tax liability has been recognized in respect of undistributed retained earnings of our non-Dutch subsidiaries."
+        }
+      },
+      {
+        "type": "company",
+        "name": "ASML",
+        "fields": {
+          "ticker": "ASML",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Carl Zeiss SMT",
+        "fields": {
+          "aliases": [
+            "Carl Zeiss SMT GmbH",
+            "Carl Zeiss SMT Holding GmbH & Co. KG"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Carl Zeiss SMT Holding VIE",
+        "fields": {
+          "entity_type": "VIE",
+          "sponsor": "Carl Zeiss AG",
+          "co_owner": "ASML",
+          "beneficiary": "ASML",
+          "debt_stack_usd": null,
+          "residual_value_guarantee": false,
+          "purpose": "Single supplier of optical columns for ASML lithography systems; structured as VIE because established without substantive voting rights with disparity between ASML voting rights and economics; substantially all activities involve ASML",
+          "verbatim_quote": "We have determined that Carl Zeiss SMT Holding GmbH & Co. KG is a VIE mainly because the entity was established without substantive voting rights, since there is disparity between our voting rights and our economics, and substantially all of Carl Zeiss SMT Holding GmbH & Co. KG's activities involve us or are conducted on our behalf. However, we are not the primary beneficiary of the VIE."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "ASML-CarlZeiss-24.9pct",
+        "fields": {
+          "investor": "ASML",
+          "target": "Carl Zeiss SMT",
+          "equity_pct": 24.9,
+          "verbatim_quote": "We have a 24.9% interest in Carl Zeiss SMT Holding GmbH & Co. KG (ultimate parent is Carl Zeiss AG), which owns 100% of the shares in Carl Zeiss SMT GmbH."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "ASML-CarlZeiss-CapexFinancing",
+        "fields": {
+          "filer": "ASML",
+          "counterparty": "Carl Zeiss SMT",
+          "purpose": "ASML committed to finance Carl Zeiss SMT GmbH capital expenditures exceeding certain thresholds required to execute lithography business roadmap; loans are interest-free with 7 or 15-year repayment terms plus short-term supply chain support loans",
+          "verbatim_quote": "A commitment from ASML to finance the capital expenditures of Carl Zeiss SMT GmbH if Carl Zeiss SMT GmbH's investments required to execute on the lithography business roadmap exceed certain thresholds, measured annually."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "ASML-Capex-2026",
+        "fields": {
+          "filer": "ASML",
+          "amount_usd": 1900000000,
+          "start_fy": 2026,
+          "purpose": "Expansion and upgrades of facilities, tooling and machinery",
+          "verbatim_quote": "We expect that our capital expenditures (purchases of property, plant and equipment) in 2026 will be approximately \u20ac1.9 billion. These expenditures are expected to mainly consist of further expansion and upgrades of facilities as well as tooling and machinery."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-CarlZeiss-SupplierConcentration",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 5,
+          "numeric_signal": {
+            "amount_usd": 4900000000,
+            "note": "\u20ac4,406.9M in purchases from Carl Zeiss SMT in 2025; loans receivable \u20ac1,907.5M; advance payments \u20ac1,191.9M; equity investment \u20ac822.6M; maximum exposure to loss on VIE = sum of all asset carrying values"
+          },
+          "named_counterparties": [
+            "Carl Zeiss SMT"
+          ],
+          "verbatim_quote": "Carl Zeiss SMT GmbH is our single supplier, and we are their single customer, of optical columns for lithography systems. Carl Zeiss SMT GmbH is capable of developing and producing these items only in limited numbers and only through the use of manufacturing and testing facilities in Oberkochen and Wetzlar, Germany."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-CarlZeiss-HiddenLeverage",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 3923000000,
+            "note": "Total on-balance-sheet exposure to unconsolidated VIE: Loans receivable \u20ac1,907.5M + Advance payments \u20ac1,191.9M + Equity investment \u20ac822.6M as of Dec 31, 2025. VIE not consolidated despite ASML bearing substantially all economic risk."
+          },
+          "named_counterparties": [
+            "Carl Zeiss SMT"
+          ],
+          "verbatim_quote": "Our maximum exposure to loss related to our involvement in Carl Zeiss SMT Holding GmbH & Co. KG as a VIE includes the carrying value of each of the assets, as well as the risk of any future operating losses of Carl Zeiss SMT Holding GmbH & Co. KG, which cannot be quantified."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-CarlZeiss-Circularity",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "CIRCULARITY",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 4406900000,
+            "note": "ASML is sole customer of Carl Zeiss SMT; Carl Zeiss SMT is sole supplier of ASML optical columns; ASML holds 24.9% equity, provides loans and advance payments, and funds R&D. Mutual single-source dependency creates circular financial and operational lock-in."
+          },
+          "named_counterparties": [
+            "Carl Zeiss SMT"
+          ],
+          "verbatim_quote": "Carl Zeiss SMT GmbH is our single supplier, and we are their single customer, of optical columns for lithography systems... Our relationship with Carl Zeiss SMT GmbH is structured as a strategic alliance that is run under the principle of 'two companies, one business'."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-CarlZeiss-ExecutionRisk",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 1054000000,
+            "note": "2024 loan (\u20ac610M drawn, up to \u20ac1B) and 2025 loans (\u20ac444M + \u20ac212.5M) are interest-free or near-zero rate, with 7-15 year repayment terms contingent on Carl Zeiss SMT revenue performance. Discount/subsidy embedded in below-market loan terms."
+          },
+          "named_counterparties": [
+            "Carl Zeiss SMT"
+          ],
+          "verbatim_quote": "Loans are interest-free with an expected repayment term of either 7 or 15 years. Variable quarterly repayments based on Carl Zeiss SMT GmbH's actual revenue during a given year, subject to a certain corridor. First repayment after a three-year grace period."
+        }
+      },
+      {
+        "type": "company",
+        "name": "ASML",
+        "fields": {
+          "ticker": "ASML",
+          "aliases": [
+            "ASML Holding N.V."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-ECP-693M-2025",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 1,
+          "numeric_signal": {
+            "amount_usd": 693000000,
+            "note": "\u20ac693.0 million outstanding under \u20ac1.5 billion ECP program as of Dec 31 2025; nil in 2024. Short-tenor commercial paper up to 364 days."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of December 31, 2025, we had \u20ac693.0 million (2024: nil) outstanding under our \u20ac1.5 billion ECP program and the carrying amount was \u20ac691.7 million (2024: nil) with a weighted-average interest rate of 2.03%."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "ailab",
+        "target_name": "Mistral"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-Mistral-Circularity-Signal"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "ASML-Mistral-Circularity-Signal",
+        "target_type": "ailab",
+        "target_name": "Mistral"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "risk_factor",
+        "target_name": "ASML-Geopolitical-ExportControls-Risk"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "ASML-Geopolitical-ExportControls-Risk",
+        "target_type": "company",
+        "target_name": "China"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "risk_factor",
+        "target_name": "ASML-ExportControl-Geopolitical-Risk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "risk_factor",
+        "target_name": "ASML-RevenueRecognition-CriticalAuditMatter"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "capex_commitment",
+        "target_name": "ASML-ClimateMasterPlan-2030"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "risk_factor",
+        "target_name": "ASML-SupplyChain-ScopeEmissions-Risk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "risk_factor",
+        "target_name": "ASML-GridCongestion-NL-Risk"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "ailab",
+        "target_name": "Mistral"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "investment",
+        "target_name": "ASML-HighTechXL-Equity"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "investment",
+        "target_name": "ASML-CarlZeissSMT-Equity"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "company",
+        "target_name": "TSMC"
+      },
+      {
+        "predicate": "DEPENDS_ON",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "investment",
+        "target_name": "ASML-CarlZeissSMT-Equity"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-CarlZeiss-Supplier-Investee-Circularity"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-Mistral-NewEquityInvestment"
+      },
+      {
+        "predicate": "CIRCULAR_WITH",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "investment",
+        "target_name": "ASML-CarlZeissSMT-Equity"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "risk_factor",
+        "target_name": "ASML-CustomerClimatePhysicalRisk"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "ASML-CustomerClimatePhysicalRisk",
+        "target_type": "company",
+        "target_name": "TSMC"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "risk_factor",
+        "target_name": "ASML-Customer-Concentration-Climate"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "risk_factor",
+        "target_name": "ASML-Supply-Chain-Raw-Material-Scarcity"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "capex_commitment",
+        "target_name": "ASML-TUe-Cleanroom-\u20ac30M"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "capex_commitment",
+        "target_name": "ASML-Beethoven-Housing-Fund-\u20ac61M"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "capex_commitment",
+        "target_name": "ASML-Brainport-Mobility-PPP"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "investment",
+        "target_name": "ASML-DeepTechXL-Fund-I"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "investment",
+        "target_name": "ASML-HighTechXL-Stake"
+      },
+      {
+        "predicate": "SPONSORS",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "off_balance_entity",
+        "target_name": "Beethoven-Affordable-Housing-Fund"
+      },
+      {
+        "predicate": "SPONSORS",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "off_balance_entity",
+        "target_name": "Brainport-Mobility-PPP"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "off_balance_entity",
+        "target_name": "Beethoven-Affordable-Housing-Fund"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "off_balance_entity",
+        "target_name": "Brainport-Mobility-PPP"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-Housing-PPP-Hidden-Obligation"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "risk_factor",
+        "target_name": "ASML-Conflict-Minerals-Supply-Chain-Opacity"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "ASML-Housing-PPP-Hidden-Obligation",
+        "target_type": "off_balance_entity",
+        "target_name": "Beethoven-Affordable-Housing-Fund"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "SPONSORS",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "off_balance_entity",
+        "target_name": "ASML-CarlZeiss-VIE"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "off_balance_entity",
+        "target_name": "ASML-CarlZeiss-VIE"
+      },
+      {
+        "predicate": "DEPENDS_ON",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Carl Zeiss SMT",
+        "target_type": "company",
+        "target_name": "ASML"
+      },
+      {
+        "predicate": "CIRCULAR_WITH",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-RelatedParty-Loans-HiddenLeverage"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-CarlZeiss-Circularity"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-RelatedParty-CostOfSales"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-ContractLiabilities-ExecutionRisk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-NewEquityInvestments-Opacity"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "ASML-RelatedParty-Loans-HiddenLeverage",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "ASML-CarlZeiss-Circularity",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "ASML-RelatedParty-CostOfSales",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "ailab",
+        "target_name": "Mistral"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "DEPENDS_ON",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Carl Zeiss SMT",
+        "target_type": "company",
+        "target_name": "ASML"
+      },
+      {
+        "predicate": "CIRCULAR_WITH",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "capex_commitment",
+        "target_name": "ASML-PurchaseObligations-2025"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-CustomerConcentration-2025"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-SupplierConcentration-CarlZeiss"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-CarlZeiss-Circularity"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-Receivables-Factoring-Signal"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-Mistral-CAPEX-ROI-Gap"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "ASML-SupplierConcentration-CarlZeiss",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "ASML-CarlZeiss-Circularity",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "ASML-Mistral-CAPEX-ROI-Gap",
+        "target_type": "ailab",
+        "target_name": "Mistral"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "risk_factor",
+        "target_name": "ASML-China-Revenue-Concentration"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-Supplier-Concentration"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-Innovation-Box-Cost-Opacity"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "risk_factor",
+        "target_name": "ASML-Tax-Incentive-Dependency"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "risk_factor",
+        "target_name": "ASML-Transfer-Pricing-UTB"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "risk_factor",
+        "target_name": "ASML-Unrecognized-Deferred-Tax-Foreign-Subs"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "ASML-Tax-Incentive-Dependency",
+        "target_type": "company",
+        "target_name": "Netherlands"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "ASML-Innovation-Box-Cost-Opacity",
+        "target_type": "company",
+        "target_name": "Netherlands"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "off_balance_entity",
+        "target_name": "Carl Zeiss SMT Holding VIE"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Carl Zeiss SMT",
+        "target_type": "company",
+        "target_name": "ASML"
+      },
+      {
+        "predicate": "DEPENDS_ON",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "CIRCULAR_WITH",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-CarlZeiss-SupplierConcentration"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-CarlZeiss-HiddenLeverage"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-CarlZeiss-Circularity"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-CarlZeiss-ExecutionRisk"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "ASML-CarlZeiss-SupplierConcentration",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "ASML-CarlZeiss-HiddenLeverage",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "ASML-CarlZeiss-Circularity",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "ASML-CarlZeiss-ExecutionRisk",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "off_balance_entity",
+        "source_name": "Carl Zeiss SMT Holding VIE",
+        "target_type": "company",
+        "target_name": "Carl Zeiss SMT"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "ASML",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ASML-ECP-693M-2025"
+      }
+    ],
+    "notes": "[chunk 1/18] This filing section (Item 5 / Corporate Governance / Supervisory Board Report) is primarily a governance narrative \u2014 AGM procedures, share capital structure, Supervisory Board composition and meeting attendance. It contains minimal financial-structure disclosures. No SPVs, VIEs, operating leases with RVGs, project finance structures, purchase obligations, or off-balance-sheet entities are disclosed in this section. No capex commitments with named counterparties appear.\n\nKEY SIFI-MATERIAL FINDINGS:\n1. ASML-Mistral AI Investment (September 2025): ASML disclosed a strategic equity investment in French AI lab Mistral AI. No amount or equity percentage was disclosed. The stated rationale is product/process enhancement \u2014 creating a mild investor-is-also-beneficiary dynamic (CIRCULARITY severity 2) worth monitoring if Mistral becomes a compute customer or if ASML licenses IP to Mistral.\n2. Geopolitical / Export Control Risk (severity 4): Extensive Supervisory Board discussion of export restrictions and US-China tensions as material risks to ASML's business. China is a significant revenue concentration counterparty for ASML (DUV sales); this is flagged at severity 4 given ASML's monopoly supplier position in EUV and ongoing tightening of Dutch/US export licensing.\n3. No off-balance-sheet entities, capex commitments, or related-party transactions with financial materiality were present in this section. Further extraction would require the Notes to Financial Statements (Note 22 Shareholders' Equity, Note on Non-Marketable Securities, lease footnotes, purchase commitments footnote).\n[chunk 2/18] This filing section (ASML 20-F Item 5, 2026-02-25) is primarily a corporate governance / supervisory board report section \u2014 Supervisory Board committee activities, remuneration policy, board evaluation, and ESG oversight. It contains NO capex commitments, off-balance-sheet entities, SPVs, investment disclosures, or related-party transactions material to the SIFI Monitor project. Financial highlights referenced are summary KPIs (FY2025 total sales \u20ac32.7bn, gross profit \u20ac17.3bn, operating income \u20ac11.3bn, cash \u20ac13.3bn) with no structural finance implications. Only SIFI-material extractions made: (1) export control / geopolitical risk explicitly flagged by Audit Committee as a key focus area; (2) revenue recognition complexity in volume purchase agreements flagged as a critical audit matter by PwC \u2014 both are watch-level given the governance-report context with no quantified exposure. No hidden leverage, circularity, SPV, or investment signals found in this section.\n[chunk 3/18] This filing section (ASML 20-F item_5, accession 0001628280-26-011378) is exclusively the Remuneration Report covering Board of Management and Supervisory Board compensation policies, STI/LTI plans, pay ratios, and share-based payment disclosures for FY2025. There are zero SIFI-material items in this section: no SPVs, no VIEs, no off-balance-sheet entities, no capex commitments to named counterparties, no equity investments in AI labs or compute providers, no hidden leverage, no circularity, no revenue roundtripping, no customer/supplier concentration disclosures, and no export-control risk factors. The only financial figures are executive compensation amounts (\u20ac thousands) and company performance metrics (net sales \u20ac32.7B, net income \u20ac9.6B) presented as remuneration context. No extraction is warranted under the SIFI Monitor hard rules.\n[chunk 4/18] The provided filing section (ASML 20-F, item_5, filing date 2026-02-25) covers exclusively: (1) Supervisory Board remuneration tables and policies, (2) ESG sustainability governance narrative, (3) PwC limited assurance report on sustainability statements, (4) Basis for preparation of sustainability statements, (5) ESG KPI scorecards, and (6) Environmental/human rights due diligence program descriptions. None of this content contains SIFI-material disclosures of the types targeted: no off-balance-sheet SPVs/VIEs, no capex commitments to named counterparties, no equity investments in private companies or AI labs, no revenue roundtripping structures, no customer/supplier concentration data, no hidden leverage signals, no circularity relationships, and no named counterparties relevant to the AI SIFI Monitor. All content is boilerplate governance, remuneration, and sustainability reporting \u2014 explicitly excluded per Hard Rule 3. Emitting zero nodes and zero edges is the correct and honest output.\n[chunk 5/18] The source text provided is entirely from ASML's sustainability/ESG section of the 20-F (Item 5 / Annual Report 2025), covering: human rights policy, ESG materiality assessment (DMA), climate transition plan (scope 1/2/3 emissions targets, SBTi validation, energy efficiency, carbon offsets), and operational energy initiatives at Veldhoven campus. There are NO SIFI-material items in this text. Specifically: no off-balance-sheet entities (SPVs, VIEs, operating leases with RVGs), no capex commitments to named counterparties, no equity investments in AI labs or compute providers, no revenue roundtripping, no customer/supplier concentration disclosures, no hidden leverage, and no circularity signals. The only financial figure mentioned is the internal carbon price of \u20ac208/tonne CO2, which is a shadow price for internal investment decisions only and is explicitly noted as not used in financial statements. All content is standard ESG sustainability disclosure \u2014 boilerplate under Rule 3 and not SIFI-material. No nodes or edges are emitted.\n[chunk 6/18] This filing section (ASML 20-F, Item 5 / Sustainability chapter) is predominantly a Climate Transition Plan / ESG operating review covering energy efficiency targets, scope 1-3 emissions, logistics decarbonisation, and supply-chain supplier engagement. It contains NO SIFI-material structures of the types primarily monitored: no SPVs, no VIEs, no off-balance-sheet project finance, no AI-lab equity investments, no compute-supply agreements, no hyperscaler customer/supplier circularity, no revenue round-tripping, no large committed capex tied to a named counterparty (beyond the \u20ac126M internal energy master plan). The only financially material disclosures extracted are: (1) the \u20ac126M five-year energy savings capex program (internal, no named external counterparty), and (2) qualitative risk flags around supply-chain decarbonisation underperformance and Dutch grid congestion. No hidden-leverage, circularity, or customer/supplier-concentration signals are present in this section. Severity scores are kept low (1-2) accordingly.\n[chunk 7/18] This section is primarily ASML's 2025 ESG/sustainability disclosure (energy, GHG, climate resilience). SIFI-material findings are limited but notable:\n\n1. NEW EQUITY INVESTMENT IN MISTRAL AI (FY2025): ASML discloses it \"made an equity investment this year\" in Mistral AI, named explicitly in Scope 3 Category 15 (Investments) GHG accounting. No amount or equity % disclosed. This is a first-class ailab node event \u2014 ASML joins the Mistral backer roster.\n\n2. CARL ZEISS SMT HOLDING (KEY SUPPLIER + INVESTEE): ASML holds an equity stake in Carl Zeiss SMT, which is also described as \"a key supplier.\" This investor-is-also-supplier relationship creates a mild circularity signal. Emissions accounting explicitly deducts Zeiss scope 1+2 from ASML's category 1 to avoid double-counting (3 kt reclassification). No financial amounts disclosed for the stake.\n\n3. TSMC NAMED AS KEY CUSTOMER: TSMC is named explicitly (Supplier 'Excellence in Green Manufacturing' Award context and as one of \"five of our largest customers\" used for emission factor differentiation). ASML supplies lithography equipment to TSMC; TSMC is ASML's largest customer by revenue (known from other filings).\n\n4. No capex commitments, SPVs, VIEs, operating leases with RVGs, or other off-balance-sheet structures are disclosed in this section. The source text is exclusively sustainability/ESG content.\n[chunk 8/18] This section of ASML's 20-F (Annual Report 2025) is dominated by sustainability/ESG disclosures \u2014 climate scenario analysis, circular economy metrics, and waste management reporting. It contains NO SIFI-material financial structures: no SPVs, no off-balance-sheet entities, no AI lab investments, no capex commitments to named counterparties, no revenue roundtripping, and no equity stakes in private companies.\n\nThe only SIFI-adjacent signals found are: (1) a brief mention of customer concentration risk in the context of climate-driven demand loss, and (2) raw material / supplier scarcity risk for rare earth elements and metals used in EUV manufacturing. Both are low-to-moderate severity watch items given the generic framing and lack of specific counterparty names or dollar amounts in this section.\n\nNo capex_commitment, off_balance_entity, investment, or hidden_risk_signal nodes were emitted because the text does not disclose any of the 8 monitored risk patterns with sufficient specificity or materiality to warrant extraction. The ~\u20ac50M Reuse & Repair opex figure is routine operational spend, not a capital commitment to a named counterparty.\n[chunk 9/18] The source text is ASML's 20-F Item 5 section covering sustainability/ESG disclosures: circular economy methodology, EU Taxonomy reporting, water management, and social/workplace topics. There are NO SIFI-material financial structures present in this text. Specifically: no SPVs, VIEs, or off-balance-sheet entities; no equity investments in AI labs or compute providers; no capex commitments to named counterparties; no related-party transactions; no revenue roundtripping; no customer/supplier concentration disclosures; no hidden leverage signals. The capex figures mentioned (\u20ac2,811.3M total, \u20ac6.7M taxonomy-aligned) relate to routine building renovations, solar panels, and flood prevention infrastructure \u2014 not AI/compute infrastructure. This section is entirely ESG/sustainability narrative and taxonomy compliance reporting, none of which meets the SIFI-materiality threshold defined in the extraction rules. No nodes or edges are emitted to avoid fabrication per Hard Rule #1.\n[chunk 10/18] The source text is entirely composed of ASML's sustainability/ESG disclosures covering occupational health & safety, employee engagement, talent attraction, learning & development, inclusion & diversity, labor conditions, and well-being programs from the 2025 Annual Report (20-F filed 2026-02-25). There are zero SIFI-material disclosures in this section: no capital commitments, no off-balance-sheet entities (SPVs, VIEs, operating leases with RVGs, project finance), no equity investments in AI labs or compute providers, no related-party transactions, no revenue roundtripping, no customer/supplier concentration data, no hidden leverage signals, and no capex ROI gaps. All content is boilerplate HR/ESG narrative. Nothing meets the materiality threshold for extraction under the hard rules. No nodes or edges are emitted.\n[chunk 11/18] The source text provided is from ASML's Annual Report 2025 (20-F filed 2026-02-25), but the section extracted covers sustainability disclosures, HR metrics, employee well-being programs, supply chain ESG due diligence, responsible product design, and conflict minerals \u2014 NOT Item 5 (Operating & Financial Review) financial structure content. There are no capital commitments, off-balance-sheet entities (SPVs, VIEs, operating leases with RVGs), equity investments in private companies/AI labs, related-party transactions, or any of the 8 SIFI risk patterns present in this text. All content is routine sustainability/ESG reporting (employee headcount, gender pay gap, training hours, health & safety metrics, RBA supplier audits) that does not meet SIFI-material thresholds under the hard rules. Nothing extracted per Rule 3 (skip boilerplate/non-SIFI-material content).\n[chunk 12/18] This section of ASML's 2025 20-F covers sustainability/community investment disclosures (Item 5 equivalent \u2014 MD&A/operating review). It contains NO AI lab investments, no compute revenue circularity, no hyperscaler SPVs, and no NVIDIA-style non-marketable equity portfolio. SIFI-material items found: (1) \u20ac61.3M commitment to Beethoven Affordable Housing Fund \u2014 a \u20ac245M private-public partnership with a contingent loss-coverage obligation that could function as off-balance-sheet leverage; (2) \u20ac2.5B Brainport mobility infrastructure PPP where ASML's share is undisclosed but material; (3) \u20ac30M cleanroom capex commitment to TU/e (2025-2028); (4) Strategic equity stakes in HighTechXL and DeepTechXL Fund I (\u20ac118M fund). Conflict minerals opacity (84 of 317 in-scope suppliers non-responsive) is flagged as a supply chain risk but is below SIFI materiality threshold at severity 2. No circular investor-customer-supplier triangles, no revenue roundtripping, and no AI lab dependencies identified in this section.\n[chunk 13/18] The source text provided is entirely from ASML's Annual Report 2025 Sustainability Statements section \u2014 specifically covering community engagement (inclusive communities, STEM education), ESG integrated governance, responsible business conduct and compliance, an ESRS reference table, and related ESG disclosures. There is NO financial-structure content in this section: no off-balance-sheet entities (SPVs, VIEs, operating leases with RVGs), no material capex commitments to named counterparties, no equity investments in AI labs or compute providers, no related-party transactions, no hidden leverage signals, no circularity patterns, no revenue roundtripping, and no customer/supplier concentration disclosures meeting the SIFI-material threshold. The only financial figures mentioned are community investment amounts (\u20ac9.4M in STEM education, $2.2M over 3 years for Junior Academy), which are philanthropic expenditures far below SIFI-materiality thresholds. No extraction is warranted per the hard rules \u2014 fabricating nodes would violate Rule 1.\n[chunk 14/18] Key findings from ASML 20-F FY2025 financial statements section:\n\n1. CARL ZEISS SMT CIRCULARITY (Severity 3): ASML holds 24.9% equity in Carl Zeiss SMT Holding GmbH & Co. KG (book value \u20ac822.6M), funds its R&D (capitalized), issues it loans (\u20ac1,647.3M non-current + \u20ac260.2M current related-party loans receivable), and simultaneously buys optics from it (~\u20ac3.5B/yr in related-party COGS). This is a classic investor+creditor+customer+R&D-funder circularity with a VIE assessment noted in Note 26. The single-source optics dependency is SIFI-material.\n\n2. HIDDEN LEVERAGE VIA RELATED-PARTY LOANS: ASML has extended \u20ac703.7M in new loans to related parties in 2025, with total non-current related-party loans receivable of \u20ac1,647.3M. These are issued at a discount (\u20ac121.8M unamortized discount in other assets), indicating below-market financing to Carl Zeiss SMT \u2014 effectively off-balance-sheet subsidization of a key supplier.\n\n3. UNIDENTIFIED \u20ac1.3B EQUITY INVESTMENT PORTFOLIO: ASML deployed \u20ac1,302.2M into a new \"Equity investments\" category in 2025 (vs. zero in prior years), carried at \u20ac1,320.7M on the balance sheet. The investees are not named in this section (Note 9 referenced but not included). This is a cost-opacity/SIFI signal requiring Note 9 review.\n\n4. EXECUTION RISK \u2014 \u20ac46.5B BACKLOG: Remaining performance obligations of \u20ac46.5B (up from \u20ac43.3B), subject to export control restrictions and customer facility readiness. EXE (High-NA EUV) ramp is central to this backlog.\n\n5. RELATED-PARTY COGS CONCENTRATION: Related-party cost of sales of \u20ac3,503.1M in 2025 = ~22.7% of total COGS, all flowing through the Carl Zeiss SMT relationship. This is a SIFI-material single-source supplier concentration signal.\n\nNote: Note 26 (Related parties and VIEs) was referenced but not included in this filing excerpt. The full Carl Zeiss SMT VIE determination and loan terms require that note for complete extraction.\n[chunk 15/18] Key extractions from ASML 20-F FY2025 (item_5 / notes to financial statements):\n\n1. MISTRAL AI INVESTMENT (\u20ac1.3B, 11.1% stake, Series C lead): ASML's single largest disclosed equity investment \u2014 in an AI lab entirely outside its core business. No revenue or partnership economics disclosed beyond \"investment and partnership agreement.\" Flagged as CAPEX_ROI_GAP severity=2.\n\n2. CARL ZEISS SMT \u2014 SINGLE-SOURCE SUPPLIER + EQUITY INVESTEE: ASML holds 24.9% equity in its SOLE supplier of optical columns (the most critical component in EUV systems). Outstanding advance payments of ~\u20ac1.19B (\u20ac323.5M current + \u20ac868.4M non-current). ASML received \u20ac320.5M dividend from Zeiss in 2025. This investor-owner-sole-supplier triangle is flagged as both SUPPLIER_CONCENTRATION (severity=5, no substitute within 2 years) and CIRCULARITY (severity=3).\n\n3. CUSTOMER CONCENTRATION: Four customers >10% each = 61.2% of \u20ac32.7B revenue in 2025. Names not disclosed per filing conventions but severity=3 given the four-customer dependency.\n\n4. RECEIVABLES FACTORING ACCELERATION: \u20ac6.2B factored in 2025 vs \u20ac2.0B in 2024 \u2014 a 3x surge. Critically, \u20ac3.5B were \"absolute, unconditional, irrevocable\" down-payment receivables for systems not yet shipped. This off-balance-sheet acceleration of future cash flows is flagged as HIDDEN_LEVERAGE severity=2.\n\n5. PURCHASE OBLIGATIONS: \u20ac12.7B total unconditional purchase commitments (\u20ac9.6B due within 1 year), primarily supplier goods/services and facility expansion. No single named counterparty for the bulk, but Carl Zeiss SMT advance payments are cross-referenced to Note 26.\n\n6. CHINA REVENUE: \u20ac9.5B in 2025 (29.1% of total net sales), down slightly from \u20ac10.2B in 2024. Given export control environment, this is material geopolitical risk but classified as risk_factor rather than hidden_risk_signal as it is explicitly disclosed.\n\nCurrency note: All \u20ac-denominated figures are treated as approximate USD equivalents for amount_usd fields given \u20ac/$ near parity in the filing period. Strictly, the filing uses euros.\n[chunk 16/18] \nFILING SECTION ASSESSMENT \u2014 ASML 20-F Item 5 (Notes 20\u201325), FY2025:\n\nThis section covers share-based compensation (Note 20), income taxes (Note 21), shareholders' equity (Note 22), EPS (Note 23), supplier concentration (Note 24), and financial risk management (Note 25). Key SIFI-material findings:\n\n1. SUPPLIER CONCENTRATION (Note 24): ASML explicitly discloses single-source and limited-source supplier dependencies for components and subassemblies \u2014 the most direct SIFI signal in this filing. No dollar amounts or specific counterparty names are given (typical for competitive sensitivity), limiting severity to 3.\n\n2. INNOVATION BOX TAX CLIFF (Note 21): ASML's effective tax rate of 17.7% vs. 25.8% statutory is almost entirely driven by the Dutch Innovation Box, worth ~\u20ac1.056B in tax benefit in 2025 alone. The agreement runs only through 2028. Cliff risk if not renewed or if facts/circumstances change. Flagged as COST_OPACITY severity 2.\n\n3. UNRECOGNIZED TAX LIABILITY ON FOREIGN EARNINGS (Note 21): \u20ac1,267.6M in unrecognized temporary differences on undistributed earnings of non-Dutch subsidiaries (no deferred tax recognized). Growing YoY from \u20ac1,010.2M. Potential hidden liability.\n\n4. TRANSFER PRICING / UTB (Note 21): Active dialogues with Dutch and South Korean tax authorities; \"highly judgmental\" estimate of uncertain tax positions; \u20ac174.5M liability for unrecognized tax benefits.\n\n5. NO SPVs, VIEs, OFF-BALANCE-SHEET ENTITIES, CAPEX COMMITMENTS TO THIRD PARTIES, OR PRIVATE COMPANY INVESTMENTS were disclosed in this section. No AI lab relationships or compute agreements. No related-party transactions with financial institutions.\n\n6. SHARE BUYBACK: \u20ac12B program announced Jan 2026, up to Dec 2028. Not a SIFI-material commitment.\n\n7. Financial risk (Note 25) \u2014 Currency and interest rate hedging are routine. Not extracted per hard rules.\n\nCarl Zeiss SMT Holding GmbH & Co. KG is mentioned briefly as an equity method investment affecting tax, but no financial details are given in this section to constitute a SIFI-material investment node. Would require a separate note for full extraction.\n\n[chunk 17/18] Key findings from ASML 20-F (FY2025):\n\n1. SINGLE-SOURCE CIRCULARITY (Severity 5): Carl Zeiss SMT GmbH is ASML's sole supplier of optical columns, and ASML is Carl Zeiss SMT's sole customer. This mutual single-source dependency is structurally irreplaceable within any near-term horizon. Total 2025 purchases: \u20ac4,406.9M.\n\n2. UNCONSOLIDATED VIE WITH MASSIVE EXPOSURE (Severity 4): Carl Zeiss SMT Holding GmbH & Co. KG is classified as a VIE in which ASML is NOT the primary beneficiary despite bearing enormous economic risk. Maximum loss exposure as of Dec 31, 2025: Loans receivable \u20ac1,907.5M + Advance payments \u20ac1,191.9M + Equity investment \u20ac822.6M = ~\u20ac3.9B total off-balance-sheet-style exposure in an unconsolidated entity.\n\n3. BELOW-MARKET LOAN TERMS / COST OPACITY (Severity 3): The 2025 restated framework introduced interest-free loans with 7\u201315 year terms and revenue-linked repayment. The 2024 loan (\u20ac610M drawn) and July 2025 loan (\u20ac444M) carry large unamortized discounts (\u20ac68M and \u20ac110.8M respectively), suggesting significant embedded subsidies being amortized through \"Other assets\" as \"Advanced payments.\"\n\n4. CAPEX COMMITMENT TO CARL ZEISS SMT: Open-ended commitment to finance Carl Zeiss SMT capex above certain thresholds; second loan facility up to \u20ac1B opened Sept 2024 with \u20ac610M drawn.\n\n5. ASML own capex: \u20ac1.9B guided for 2026, funded from operations \u2014 no third-party counterparty commitment flagged.\n\nNo AI lab investments, hyperscaler compute arrangements, or SPVs with external debt were identified in this filing section. The Carl Zeiss SMT relationship dominates all SIFI-material signals.\n[chunk 18/18] This section of ASML's 20-F (Annual Report 2025) covers tax appendices, financing policy, exchange controls, and administrative appendices. There are NO material off-balance-sheet SPVs, VIEs, project-finance structures, AI lab investments, hyperscaler capex commitments, or SIFI-material circular relationships disclosed in this text. The only financially notable item is the \u20ac693.0M newly drawn ECP (Euro Commercial Paper) program balance as of Dec 31 2025 (vs. nil in 2024), which is a watch-level hidden leverage signal given it is short-tenor unsecured commercial paper that did not appear in the prior year. All other content (passive foreign investment company tax disclosures, dividend policy, share buyback program details, credit ratings A1/A+, credit facility of \u20ac1.5B undrawn, Eurobonds of \u20ac3.8B aggregate) is routine financing policy disclosure without SIFI-material structure. No AI lab investments, no SPVs, no customer/supplier concentration disclosures, no circular dependency patterns are present in this section."
+  },
+  "item_3d": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "ASML",
+        "fields": {
+          "ticker": "ASML",
+          "aliases": [
+            "ASML Holding N.V."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-CarlZeiss-SingleSource-Dependency",
+        "fields": {
+          "filer": "ASML",
+          "category": "Supplier Concentration / Single-Source Dependency",
+          "named_counterparties": [
+            "Carl Zeiss SMT"
+          ],
+          "severity": 4,
+          "verbatim_quote": "Restated ASML \u2013 SMT Business Agreement, dated May 8, 2025, between ASML Netherlands B.V. and Carl Zeiss SMT GmbH"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-CarlZeiss-SupplierConcentration",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 4,
+          "named_counterparties": [
+            "Carl Zeiss SMT"
+          ],
+          "verbatim_quote": "Restated ASML \u2013 SMT Business Agreement, dated May 8, 2025, between ASML Netherlands B.V. and Carl Zeiss SMT GmbH"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Carl Zeiss SMT",
+        "fields": {
+          "aliases": [
+            "Carl Zeiss SMT GmbH",
+            "Carl Zeiss SMT AG"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-ExportControl-China-Risk",
+        "fields": {
+          "filer": "ASML",
+          "category": "Geopolitical / Export Control",
+          "named_counterparties": [
+            "China",
+            "USG",
+            "Netherlands"
+          ],
+          "severity": 4,
+          "verbatim_quote": "CHIPS and Science Act: The Creating Helpful Incentives to Produce Semiconductors and Science Act of 2022 (CHIPS Act), signed into law in August 2022, designed to boost US competitiveness, innovation and national security."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-ExportControl-CustomerConcentration-China",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "named_counterparties": [
+            "China",
+            "USG",
+            "Netherlands"
+          ],
+          "verbatim_quote": "CHIPS and Science Act: The Creating Helpful Incentives to Produce Semiconductors and Science Act of 2022 (CHIPS Act), signed into law in August 2022, designed to boost US competitiveness, innovation and national security."
+        }
+      },
+      {
+        "type": "company",
+        "name": "China",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "USG",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Netherlands",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-TSMC-CustomerConcentration",
+        "fields": {
+          "filer": "ASML",
+          "category": "Customer Concentration",
+          "named_counterparties": [
+            "TSMC",
+            "Intel",
+            "Samsung"
+          ],
+          "severity": 3,
+          "verbatim_quote": "TSMC: Taiwan Semiconductor Manufacturing Company Ltd.; Intel: Intel Corporation"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-CustomerConcentration-Signal",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "named_counterparties": [
+            "TSMC",
+            "Intel",
+            "Samsung"
+          ],
+          "verbatim_quote": "TSMC: Taiwan Semiconductor Manufacturing Company Ltd.; Intel: Intel Corporation"
+        }
+      },
+      {
+        "type": "company",
+        "name": "TSMC",
+        "fields": {
+          "ticker": "TSM",
+          "aliases": [
+            "Taiwan Semiconductor Manufacturing Company Ltd."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intel",
+        "fields": {
+          "ticker": "INTC",
+          "aliases": [
+            "Intel Corporation"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Samsung",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-HighNA-EUV-ExecutionRisk",
+        "fields": {
+          "filer": "ASML",
+          "category": "Execution Risk / New Technology Ramp",
+          "named_counterparties": [
+            "TSMC",
+            "Intel",
+            "Samsung"
+          ],
+          "severity": 3,
+          "verbatim_quote": "EXE: ASML's second TWINSCAN platform for EUV lithography, also referred to as EUV 0.55 NA or High NA EUV."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-HighNA-ExecutionRisk-Signal",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [
+            "TSMC",
+            "Intel",
+            "Samsung"
+          ],
+          "verbatim_quote": "EXE: ASML's second TWINSCAN platform for EUV lithography, also referred to as EUV 0.55 NA or High NA EUV."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-FastShipment-RevenueRecognition-Risk",
+        "fields": {
+          "filer": "ASML",
+          "category": "Cost Opacity / Revenue Recognition",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "A fast shipment process skips some of the testing in our factory and provides our customers with earlier access to wafer output capacity. When customer acceptance at FAT is not proven, this leads to a deferral of revenue recognition until SAT."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-FastShipment-CostOpacity-Signal",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "named_counterparties": [],
+          "verbatim_quote": "A fast shipment process skips some of the testing in our factory and provides our customers with earlier access to wafer output capacity. When customer acceptance at FAT is not proven, this leads to a deferral of revenue recognition until SAT."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-Nikon-PatentLicense-Dependency",
+        "fields": {
+          "filer": "ASML",
+          "category": "IP / Single-Source Dependency",
+          "named_counterparties": [
+            "Nikon"
+          ],
+          "severity": 2,
+          "verbatim_quote": "Settlement and Cross License Agreement, dated February 18, 2019, among Nikon Corporation, ASML Holding N.V. and Carl Zeiss SMT GmbH"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Nikon",
+        "fields": {
+          "aliases": [
+            "Nikon Corporation"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ASML-VIE-RelatedParty-HiddenLeverage",
+        "fields": {
+          "filer": "ASML",
+          "category": "Hidden Leverage / Off-Balance-Sheet / VIE",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Note 26 Related parties and variable interest entities"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ASML-VIE-HiddenLeverage-Signal",
+        "fields": {
+          "filer": "ASML",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "named_counterparties": [],
+          "verbatim_quote": "Note 26 Related parties and variable interest entities"
+        }
+      }
+    ],
+    "edges": [],
+    "notes": null
+  }
+}

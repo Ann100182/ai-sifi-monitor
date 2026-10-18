@@ -1,0 +1,699 @@
+{
+  "director_comp": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "aliases": [
+            "International Business Machines Corporation"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "PricewaterhouseCoopers",
+        "fields": {
+          "aliases": [
+            "PwC",
+            "PricewaterhouseCoopers LLP"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Red Hat",
+        "fields": {
+          "aliases": [],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Fidelity National Information Services",
+        "fields": {
+          "aliases": [
+            "FIS"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "AXA",
+        "fields": {
+          "aliases": [
+            "AXA S.A."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Emerson Electric",
+        "fields": {
+          "aliases": [],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Johnson & Johnson",
+        "fields": {
+          "aliases": [],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Mastercard",
+        "fields": {
+          "aliases": [],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Northrop Grumman",
+        "fields": {
+          "aliases": [],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "The Charles Schwab Corporation",
+        "fields": {
+          "aliases": [
+            "Charles Schwab",
+            "Schwab"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Akamai Technologies",
+        "fields": {
+          "aliases": [],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "aliases": [],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Omgeo",
+        "fields": {
+          "aliases": [
+            "Omgeo LLC"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SunGard Financial Systems",
+        "fields": {
+          "aliases": [],
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Royal Dutch Shell",
+        "fields": {
+          "aliases": [
+            "Shell"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "ABB",
+        "fields": {
+          "aliases": [
+            "Asea Brown Boveri",
+            "ABB Ltd."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "UnitedHealth Group",
+        "fields": {
+          "aliases": [],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "The Vanguard Group",
+        "fields": {
+          "aliases": [
+            "Vanguard"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Northern Trust",
+        "fields": {
+          "aliases": [
+            "Northern Trust Corporation"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Siris Capital Group",
+        "fields": {
+          "aliases": [],
+          "role": "investment_partner"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Nasdaq",
+        "fields": {
+          "aliases": [],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Bank of New York Mellon",
+        "fields": {
+          "aliases": [
+            "BNY Mellon"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "The Dow Chemical Company",
+        "fields": {
+          "aliases": [
+            "Dow"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "DowDuPont",
+        "fields": {
+          "aliases": [],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Apple",
+        "fields": {
+          "aliases": [],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "JPMorgan Chase",
+        "fields": {
+          "aliases": [
+            "JPMorgan"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Temasek Holdings",
+        "fields": {
+          "aliases": [
+            "Temasek"
+          ],
+          "role": "investment_partner"
+        }
+      },
+      {
+        "type": "company",
+        "name": "PSA International",
+        "fields": {
+          "aliases": [],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Roche Holding",
+        "fields": {
+          "aliases": [
+            "Roche"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Federal Reserve Bank of New York",
+        "fields": {
+          "aliases": [
+            "Federal Reserve"
+          ],
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Public Service Enterprise Group",
+        "fields": {
+          "aliases": [
+            "PSEG"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Worley",
+        "fields": {
+          "aliases": [],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Saudi Aramco",
+        "fields": {
+          "aliases": [],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Lucid Motors",
+        "fields": {
+          "aliases": [],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NOVONIX Limited",
+        "fields": {
+          "aliases": [
+            "NOVONIX"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "AbbVie",
+        "fields": {
+          "aliases": [],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Axiom",
+        "fields": {
+          "aliases": [],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Bertelsmann",
+        "fields": {
+          "aliases": [],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "AXA Equitable Holdings",
+        "fields": {
+          "aliases": [],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Zurich Insurance Group",
+        "fields": {
+          "aliases": [],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Winterthur",
+        "fields": {
+          "aliases": [],
+          "role": "acquisition_target"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "PricewaterhouseCoopers",
+        "predicate": "NAMES_COUNTERPARTY"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Red Hat",
+        "predicate": "NAMES_COUNTERPARTY"
+      }
+    ],
+    "notes": "[chunk 1/2] This DEF 14A proxy statement for IBM's 2025 annual shareholder meeting contains director biographies and board governance information. The SIFI-material content is minimal. Key findings: (1) Named counterparties are limited to PricewaterhouseCoopers LLP (auditor) and Red Hat (major acquisition completed); (2) The filing mentions IBM's strategic position in hybrid cloud and AI but does not disclose specific customer concentration, capex commitments, or off-balance-sheet entities; (3) No material customer or supplier relationships are disclosed that represent >10% of revenue; (4) Director interlocks and related-party transactions section explicitly states that IBM has found no material related-person transactions requiring disclosure; (5) The document is governance-focused and does not contain disclosure of SIFI-material risks, hidden leverage, circularity, or execution gaps. The Red Hat acquisition is mentioned as 'the largest acquisition in the Company's history' but no CAPEX_COMMITMENT structure is disclosed. No risk factors, hidden risks, or off-balance-sheet entities are identifiable from this section.\"\n  }\n\n[chunk 2/2] This section is pure governance boilerplate\u2014director compensation, Board evaluation processes, succession planning procedures, risk oversight framework, and strategy oversight. No SIFI-material entities, counterparty relationships, investments, acquisitions, or related-party arrangements are mentioned. The only named third party is Semler Brossy (a director compensation consultant), which does not meet the SIFI-materiality threshold. No hidden leverage, circularity, revenue roundtripping, capex commitments, execution risk, cost opacity, or customer/supplier concentration signals are present. Extraction yields zero nodes and edges."
+  },
+  "beneficial_owners": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Vanguard",
+        "fields": {
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "BlackRock",
+        "fields": {
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "State Street",
+        "fields": {
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "PricewaterhouseCoopers",
+        "fields": {
+          "aliases": [
+            "PwC"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Kyndryl",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadridge Corporate Issuer Solutions",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "First Coast Results",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Computershare Trust Company",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Business Roundtable",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "US Chamber of Commerce",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alliance for Competitive Taxation",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "aliases": [
+            "International Business Machines Corporation"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Software AG",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Innisfree M&A",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Computershare Trust Company",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadridge",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Red Hat",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Kyndryl",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "StreamSets",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "webMethods",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "FX-Hedging-SoftwareAG-StreamSets-webMethods",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "IBM",
+          "beneficiary": "IBM",
+          "purpose": "foreign exchange derivative contracts to economically hedge foreign currency exposure related to the purchase price of StreamSets and webMethods from Software AG",
+          "verbatim_quote": "mark-to-market impact on the foreign exchange derivative contracts entered into prior to the acquisition of StreamSets and webMethods from Software AG, beginning in December 2023, to economically hedge the foreign currency exposure related to the purchase price of this acquisition. These derivative contracts expired by June 28, 2024."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Pension-Settlement-Risk",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 3100000000.0,
+            "note": "One-time, non-cash pension settlement charges in 2024; IBM transferred $7 billion of defined benefit pension obligations and related plan assets to insurers"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "one-time, non-cash, U.S. and non-U.S. pension settlement charges of $3.1 billion ($2.4 billion net of tax) resulting from the transfer to insurers of a portion of U.S. and non-U.S. defined benefit pension obligations and related plan assets in 2024"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "PricewaterhouseCoopers",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "context": "Independent auditor since 1958",
+          "amount_usd": 72600000,
+          "fiscal_year": 2024
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Kyndryl",
+        "predicate": "SUPPLIES",
+        "properties": {
+          "context": "Managed Infrastructure business separated November 3, 2021"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Broadridge Corporate Issuer Solutions",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "context": "Vote tabulation services"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Computershare Trust Company",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "context": "Transfer agent for share registry"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Business Roundtable",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "context": "Trade association member with lobbying activities"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "US Chamber of Commerce",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "context": "Trade association member with lobbying activities"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "BUYS_COMPUTE_FROM",
+        "target_type": "company",
+        "target_name": "Software AG"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "DEPENDS_ON",
+        "target_type": "company",
+        "target_name": "Computershare Trust Company"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "DEPENDS_ON",
+        "target_type": "company",
+        "target_name": "Broadridge"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "DEPENDS_ON",
+        "target_type": "company",
+        "target_name": "Innisfree M&A"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Pension-Settlement-Risk"
+      },
+      {
+        "source_type": "off_balance_entity",
+        "source_name": "FX-Hedging-SoftwareAG-StreamSets-webMethods",
+        "predicate": "CIRCULAR_WITH",
+        "target_type": "company",
+        "target_name": "Software AG"
+      }
+    ],
+    "notes": "[chunk 1/5] DEF 14A Beneficial Ownership section (Item 1): Extracted passive shareholder information. Vanguard (10.03%), BlackRock (8.3%), and State Street (6.03%) are disclosed as beneficial owners but are custodians/index fund managers holding shares in ordinary course of business with no voting/influence intent. No SIFI-material relationships detected. Section contains standard executive compensation disclosures, board oversight, AI ethics framework, and sustainability initiatives\u2014all boilerplate governance. No hidden leverage, circularity, revenue roundtrips, capex gaps, execution risks, cost opacity, or counterparty concentration material to SIFI monitoring. Filing does not mention AI lab investments, strategic compute partnerships, or off-balance-sheet obligations. No risk factors or hidden signals extracted.\"\n[chunk 2/5] FILING CONTEXT: IBM DEF 14A filed 2025-03-10 (Accession 0001104659-25-022186), Section: Beneficial Owners (Compensation Discussion and Analysis). EXTRACTION FINDING: This section contains ONLY executive compensation decisions and awards. There are NO SIFI-material entities, relationships, or risk signals. The text discusses: (1) CEO compensation ($1.5M salary, $3.85M incentive, $25M long-term awards); (2) CFO, SVP, and Chief Legal Officer compensation structures; (3) equity grant practices (PSUs, RSUs, Stock Options); (4) executive performance metrics (Software revenue growth 9%, Consulting 1%, Free cash flow $12.7B, Gen AI book of business ~$1B); (5) governance on compensation risk (clawback provisions, hedging restrictions, stock ownership guidelines). NO material counterparty relationships, hidden leverage, circularity, capex commitments to AI labs, investments in private AI companies, off-balance-sheet entities, or customer/supplier concentration > 10% are disclosed in this section. The mention of '11 strategic acquisitions in 2024' and '$7.5B in R&D' is aggregate and lacks counterparty detail. IBM's Gen AI initiatives (Granite 3.0 & 3.1, Qiskit) are internal product development, not SIFI-material counterparty arrangements. CONCLUSION: No SIFI-material extraction warranted. Return minimal graph with only IBM as filer context.\"\n[chunk 3/5] IBM DEF 14A (2025-03-10, Accession 0001104659-25-022186), beneficial_owners and executive compensation section. This filing excerpt contains ONLY executive compensation details, retirement plan vesting schedules, deferred compensation accounts, and termination benefit scenarios. No SIFI-material entities, strategic partnerships, customer/supplier relationships, off-balance investments, circularity, or capex commitments are disclosed in this section. The content is pure internal IBM compensation and benefits administration\u2014routine disclosure required under SEC proxy rules. Skipping per instruction to exclude boilerplate executive compensation absent related-party angles or SIFI risks. No counterparty web, leverage structure, or concentration risk evident in this excerpt.\"\n[chunk 4/5] IBM DEF 14A filing (2025-03-10) - Beneficial Owners section contains minimal SIFI-material content. The proxy statement is primarily procedural (voting instructions, executive compensation, stockholder proposals on lobbying and DEI). Key entities identified: (1) Audit supplier PwC ($72.6M annual fees) with 67-year tenure creates switching cost but no leverage risk; (2) Kyndryl separation (Nov 2021) of Managed Infrastructure business noted for revenue comparability; (3) Vote tabulation and transfer agent dependencies are operational but routine; (4) Lobbying disclosure shows IBM is member of Business Roundtable and US Chamber of Commerce but the proposal disputes the transparency and alignment of these relationships. No hidden leverage, circularity, or SIFI-material concentration risk detected in this section. The stockholder proposals (Proposals 4 and 5) are reputational/governance issues, not financial stability risks. Per HARD RULE 3, skipping boilerplate on generic market risks and routine governance matters.\"\n[chunk 5/5] This DEF 14A proxy filing is primarily administrative and procedural, focused on shareholder meeting logistics, proxy voting procedures, and householding disclosure. The material SIFI-relevant extractions are limited: (1) the FX hedging SPV for the StreamSets/webMethods acquisition from Software AG, which was marked-to-market through 2024 with a $68M loss impact; (2) IBM's significant pension settlement and transfers to insurers ($3.1B charge in 2024, $7B in obligations transferred), creating cost-opacity and potential off-balance-sheet leverage; (3) routine vendor dependencies (Computershare, Broadridge, Innisfree M&A). The Kyndryl spinoff and Red Hat acquisition are referenced in financial reconciliations but no novel counterparty risk or circularity is evident in this section. No AI lab relationships or customer/supplier concentration > 10% of revenue are named. Generative AI book of business is mentioned as consulting-focused but no SIFI-material contract or capex commitment is disclosed.\""
+  }
+}

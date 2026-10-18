@@ -1,0 +1,656 @@
+{
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "hyperscaler",
+          "aliases": [
+            "Oracle Corporation",
+            "ORCL"
+          ]
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL-Ellison-Pledging-Risk",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "named_counterparties": [
+            "Lawrence J. Ellison"
+          ],
+          "verbatim_quote": "Mr. Ellison has the financial capacity to repay the related personal term loans without resorting to the sale or transfer of pledged shares, none of the shares are pledged in margin accounts and the arrangements are not used to hedge or shift Mr. Ellison's economic exposure to Oracle common stock.",
+          "numeric_signal": {
+            "note": "Governance Committee reviews Ellison pledging arrangements quarterly; independent third-party advisors engaged periodically. Specific dollar amounts of pledged shares or personal term loans not disclosed."
+          }
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL-Dual-CEO-Execution-Risk",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "named_counterparties": [
+            "Clayton M. Magouyrk",
+            "Michael D. Sicilia"
+          ],
+          "verbatim_quote": "the Compensation Committee determined that the loss of either executive during this transition would have created significant disruption and execution risk at an important point in Oracle's growth. This risk was heightened by the exceptionally competitive market for proven cloud and AI leaders.",
+          "numeric_signal": {
+            "note": "Dual-CEO structure introduced September 22, 2025 during critical OCI/AI expansion phase. No backup succession plan publicly named."
+          }
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL-Cloud-AI-Talent-Retention-Risk",
+        "fields": {
+          "filer": "Oracle",
+          "category": "Executive Retention / Human Capital",
+          "named_counterparties": [
+            "Clayton M. Magouyrk",
+            "Michael D. Sicilia"
+          ],
+          "severity": 2,
+          "verbatim_quote": "established global technology companies and well-funded private companies have offered and continue to offer significant compensation opportunities to attract executives with demonstrated records of innovation and execution."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Ellison-Pledge-413M-Shares",
+        "fields": {
+          "filer": "ORCL",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "counterparty_count": 1,
+            "note": "413 million shares of Oracle common stock pledged as collateral for personal term loans by Founder/Executive Chair/CTO/largest stockholder Larry Ellison as of September 21, 2026"
+          },
+          "named_counterparties": [
+            "Lawrence J. Ellison"
+          ],
+          "verbatim_quote": "Mr. Ellison, Oracle's Founder, Executive Chair, CTO and largest stockholder, had pledged 413 million shares of Oracle common stock as collateral to secure certain personal indebtedness. The pledged shares secure personal term loans only used to fund outside personal business ventures."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL-Ellison-Pledge-Risk",
+        "fields": {
+          "filer": "ORCL",
+          "category": "Related-Party / Founder Leverage",
+          "named_counterparties": [
+            "Lawrence J. Ellison"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Mr. Ellison may continue to pledge Oracle securities as collateral to secure or guarantee indebtedness, but he may not hold Oracle securities in a margin account."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL-AI-Infra-Capex-Board-Oversight",
+        "fields": {
+          "filer": "ORCL",
+          "category": "Capex / AI Infrastructure Financing",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "review material financing plans related to significant strategic initiatives, including, where applicable, financing plans for AI infrastructure, and make recommendations to the Board on such financing plans"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL-AI-Risk-Oversight",
+        "fields": {
+          "filer": "ORCL",
+          "category": "AI / Technology Governance",
+          "named_counterparties": [],
+          "severity": 1,
+          "verbatim_quote": "the Board oversees AI-related risks and opportunities at the full Board level, including the strategic use of AI in Oracle products and services, responsible deployment considerations, data governance, and related legal, regulatory and reputational matters"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL-DataCenter-Capex-Risk-Oversight",
+        "fields": {
+          "filer": "ORCL",
+          "category": "Capex / Data Center Financing",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "strategic and operational planning, including with respect to significant acquisitions, significant capital investments, financing activities supporting data center capacity and Oracle's long-term growth"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL-Ellison-Pledge-413M-Shares",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "413,000,000 shares pledged as collateral by Larry Ellison (38.2% beneficial owner) to secure personal indebtedness including lines of credit"
+          },
+          "named_counterparties": [
+            "Lawrence J. Ellison"
+          ],
+          "verbatim_quote": "Includes 142,821 shares subject to stock options exercisable within 60 days of the record date and 413,000,000 shares pledged as collateral to secure certain personal indebtedness, including various lines of credit."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL-PSO-Revenue-Doubling-Target",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "PSO threshold at $100B, target at $125B FY2028 non-GAAP revenue vs $67.4B in FY2026 \u2014 requires near-doubling in 2 years; awards fully unearned after year 1",
+            "amount_usd": 125000000000,
+            "duration_yrs": 3
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "requiring revenues to more than double from fiscal 2025 levels in order to achieve target payout... Oracle achieved non-GAAP Total Revenues of $67.4 billion in fiscal 2026, representing strong first-year progress. However, the PSOs remain fully unearned, evidencing the rigor of the targets established."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL-Ellison-Concentration-38pct",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "pct_of_assets": 0.382,
+            "note": "Single insider (Ellison) controls 38.2% of voting stock; all directors and NEOs as a group hold 38.4%. Combined with pledged shares, creates governance concentration risk."
+          },
+          "named_counterparties": [
+            "Lawrence J. Ellison"
+          ],
+          "verbatim_quote": "Lawrence J. Ellison: 1,158,375,174 shares, 38.2%... All current executive officers and directors as a group (18 persons): 1,165,082,037 shares, 38.4%"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL-AI-Cloud-Leader-Retention-Risk",
+        "fields": {
+          "filer": "Oracle",
+          "category": "talent_concentration",
+          "named_counterparties": [
+            "Clayton M. Magouyrk",
+            "Michael D. Sicilia"
+          ],
+          "severity": 2,
+          "verbatim_quote": "the Compensation Committee determined that the loss of either executive during this transition would have created significant disruption and execution risk at an important point in Oracle's growth. This risk was heightened by the exceptionally competitive market for proven cloud and AI leaders, in which established global technology companies and well-funded private companies have offered and continue to offer significant compensation opportunities."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL-RPO-638B-Execution-Risk",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 638000000000,
+            "note": "Remaining performance obligations of $638B at fiscal 2026 year-end against total revenues of $67.4B \u2014 implies ~9.5x annual revenue coverage requiring sustained multi-year delivery execution"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Remaining performance obligations of $638 billion at fiscal year-end... Total revenues of $67.4 billion, up 17% year-over-year... Cloud Infrastructure (IaaS) revenues of $18.1 billion, up 77% year-over-year"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-PSO-Revenue-Gap",
+        "fields": {
+          "filer": "ORCL",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 67400000000,
+            "note": "FY2026 non-GAAP revenues of $67.4B vs. $100B threshold (80% vest) and $125B target (100% vest) for FY2028 PSOs; PSOs remain fully unearned after year 1"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Oracle achieved non-GAAP total revenues of $67.4 billion in fiscal 2026, representing strong first-year progress. However, the PSOs remain fully unearned, evidencing the rigor of the targets established."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Ellison-Pledge-Risk",
+        "fields": {
+          "filer": "ORCL",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Larry Ellison exempt from anti-pledging policy; pledging activity monitored by Governance Committee only"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Oracle also maintains an anti-pledging policy applicable to employees and directors, except for Mr. Ellison, whose pledging activity is carefully monitored by the Governance Committee."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-CEO-Equity-Dilution",
+        "fields": {
+          "filer": "ORCL",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "New co-CEOs Magouyrk and Sicilia received combined option award grant-date fair values of ~$870B per SCT; 102M shares outstanding under equity plans with weighted avg exercise $217.97; 382M shares available for future issuance"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The amounts reported in the Stock Awards and Option Awards columns represent the aggregate grant date fair values of RSU awards and stock options (including PSO awards)... Clayton M. Magouyrk... $621,669,237 [Option Awards]... Michael D. Sicilia... $248,667,656 [Option Awards]"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-PSO-Execution-Risk",
+        "fields": {
+          "filer": "ORCL",
+          "category": "Execution risk \u2014 revenue target gap for PSO vesting",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "are less than $100 billion (the \"Threshold\"), no PSOs will vest... equal $125 billion (the \"Target\"), 100% of the PSOs will vest... equal or exceed $250 billion (the \"Maximum\"), 200% of the PSOs will vest... Oracle achieved non-GAAP total revenues of $67.4 billion in fiscal 2026"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "F50 League",
+        "fields": {
+          "aliases": [
+            "SailGP"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Skydance Animation",
+        "fields": {
+          "aliases": [
+            "Skydance Corporation",
+            "Paramount subsidiary"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ellison Institute",
+        "fields": {
+          "aliases": [
+            "Ellison Institute, LLC"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Glass Aviation",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Wing and a Prayer",
+        "fields": {
+          "aliases": [
+            "Wing and a Prayer, Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Ellison Related-Party Revenue Roundtrip",
+        "fields": {
+          "filer": "ORCL",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 32200000,
+            "note": "Total purchases by Ellison-related entities from Oracle in fiscal 2026 ~$32.2M; Oracle also paid ~$10.4M to Ellison-related entities (F50 League ~$7.5M cash + $1.5M in Oracle products; Glass Aviation ~$2.3M; Wing and a Prayer ~$0.41M). SailGP sponsorship valued at ~$10M/year under three-year agreement."
+          },
+          "named_counterparties": [
+            "F50 League",
+            "Glass Aviation",
+            "Wing and a Prayer",
+            "Ellison Institute",
+            "Skydance Animation"
+          ],
+          "verbatim_quote": "In fiscal 2024, Oracle commenced a three-year sponsorship agreement with the SailGP sailing league (operated by Mr. Ellison's company F50 League LLC)... Oracle received a SailGP sponsorship package valued at approximately $10 million per year... In fiscal 2026, Oracle paid F50 League approximately $7.5 million and SailGP received Oracle products and services valued at approximately $1.5 million."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Ellison Institute Concentration",
+        "fields": {
+          "filer": "ORCL",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 1,
+          "numeric_signal": {
+            "amount_usd": 21973148,
+            "note": "Ellison Institute alone accounts for ~$21.97M of the ~$32.2M total Ellison-related entity purchases, representing ~68% of total related-party customer revenues from Ellison entities."
+          },
+          "named_counterparties": [
+            "Ellison Institute"
+          ],
+          "verbatim_quote": "Ellison Institute, LLC purchased approximately $21,973,148 in Oracle Cloud services, hardware, licenses, support and consulting services."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-Ellison Pledged-Shares Governance Risk",
+        "fields": {
+          "filer": "ORCL",
+          "category": "Related-party / governance concentration",
+          "named_counterparties": [
+            "Lawrence Ellison"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Per the Company's 2025 proxy, founder Lawrence Ellison owns 40.6 percent of Oracle's outstanding common stock \u2014 with 346 million shares pledged as collateral for personal indebtedness."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle OCI Securities Class Action",
+        "fields": {
+          "filer": "ORCL",
+          "category": "Litigation / cloud infrastructure disclosure",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "On February 3, 2026, a putative class action... was filed... against us, our Chief Technology Officer, one of our Chief Executive Officers, two other Oracle executives, and one member of the Board... alleging that the defendants made or are responsible for false and misleading statements regarding Oracle's cloud infrastructure business."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle Netherlands GDPR Privacy Class Action",
+        "fields": {
+          "filer": "ORCL",
+          "category": "Litigation / GDPR regulatory",
+          "named_counterparties": [
+            "Salesforce"
+          ],
+          "severity": 2,
+          "verbatim_quote": "TPC alleges that the Oracle Defendants' Data Management Platform product violates certain articles of the European Union Charter of Fundamental Rights, the General Data Protection Regulation (GDPR) and the Dutch Telecommunications Act... TPC claims damages under a number of categories, including: 'immaterial damages' (at a fixed amount of \u20ac500 per Dutch internet user)."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL-Ellison-Pledging-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL-Dual-CEO-Execution-Risk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "ORCL-Cloud-AI-Talent-Retention-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Ellison-Pledge-413M-Shares"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "ORCL-Ellison-Pledge-Risk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "ORCL-AI-Infra-Capex-Board-Oversight"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "ORCL-AI-Risk-Oversight"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "ORCL-DataCenter-Capex-Risk-Oversight"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL-Ellison-Pledge-413M-Shares"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL-PSO-Revenue-Doubling-Target"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL-Ellison-Concentration-38pct"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "ORCL-AI-Cloud-Leader-Retention-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL-RPO-638B-Execution-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-PSO-Revenue-Gap"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Ellison-Pledge-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-CEO-Equity-Dilution"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "Oracle-PSO-Execution-Risk"
+      },
+      {
+        "predicate": "SELLS_COMPUTE_TO",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ellison Institute"
+      },
+      {
+        "predicate": "SELLS_COMPUTE_TO",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "F50 League"
+      },
+      {
+        "predicate": "SELLS_COMPUTE_TO",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Skydance Animation"
+      },
+      {
+        "predicate": "BUYS_COMPUTE_FROM",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "F50 League"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Glass Aviation",
+        "target_type": "company",
+        "target_name": "Oracle"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Wing and a Prayer",
+        "target_type": "company",
+        "target_name": "Oracle"
+      },
+      {
+        "predicate": "ROUND_TRIPS_WITH",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "F50 League"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Ellison Related-Party Revenue Roundtrip"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Ellison Institute Concentration"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Oracle-Ellison Related-Party Revenue Roundtrip",
+        "target_type": "company",
+        "target_name": "F50 League"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Oracle-Ellison Related-Party Revenue Roundtrip",
+        "target_type": "company",
+        "target_name": "Glass Aviation"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Oracle-Ellison Related-Party Revenue Roundtrip",
+        "target_type": "company",
+        "target_name": "Ellison Institute"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Oracle-Ellison Institute Concentration",
+        "target_type": "company",
+        "target_name": "Ellison Institute"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "Oracle-Ellison Pledged-Shares Governance Risk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "Oracle OCI Securities Class Action"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "Oracle Netherlands GDPR Privacy Class Action"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "Oracle Netherlands GDPR Privacy Class Action",
+        "target_type": "company",
+        "target_name": "Salesforce"
+      }
+    ],
+    "notes": "[chunk 1/6] This section is a DEF 14A Compensation Discussion & Analysis / Proxy Statement. The vast majority of content is standard governance boilerplate (board composition, voting mechanics, say-on-pay, committee structure) \u2014 not SIFI-material. Three signals extracted: (1) Lawrence Ellison's pledged-share/personal-term-loan arrangement \u2014 a hidden leverage signal since pledge size and loan amounts are undisclosed, monitored quarterly but never quantified in this filing. Stockholders explicitly cited this as a risk concern. Severity 2 (concern) because the Governance Committee affirms Ellison has capacity to repay without forced sales, but opacity on notional size warrants monitoring. (2) Dual-CEO execution risk during OCI/AI infrastructure build-out \u2014 Magouyrk (OCI) and Sicilia (Industries/verticals) appointed simultaneously Sept 22, 2025; committee explicitly called out loss of either as a cascade disruption risk. Severity 2. (3) Cloud/AI talent competition from \"well-funded private companies\" (implicit reference to hyperscalers and AI labs competing for same executive pool) \u2014 standard but notable given Oracle is mid-transition. No named counterparties for investees or customers in this section; no capex commitments, SPVs, or investment nodes disclosed here.\n[chunk 2/6] This DEF 14A Compensation Discussion & Analysis / Governance section is largely standard proxy boilerplate (director compensation tables, committee charters, NYSE independence determinations, majority voting policy, etc.) and has been filtered accordingly. Four SIFI-material signals were extracted:\n\n1. HIDDEN_LEVERAGE (severity 3): Lawrence Ellison has pledged 413 million Oracle shares as collateral for personal term loans funding \"outside personal business ventures\" as of Sep 21, 2026. This is a meaningful concentration/forced-sale risk at the largest-shareholder/founder level. The proxy acknowledges quarterly board review, which itself signals the board treats this as material.\n\n2. AI Infrastructure Financing oversight: The F&A Committee charter explicitly names \"financing plans for AI infrastructure\" as a review item, confirming Oracle is financing AI data-center buildout through instruments material enough to require board-level financing plan review. This corroborates the CAPEX_ROI_GAP / HIDDEN_LEVERAGE signals seen in Oracle's 10-K filings.\n\n3. AI Risk Oversight: Board-level oversight of AI risks named explicitly, consistent with AI SIFI Monitor scope.\n\n4. Data Center Capex/Financing: F&A Committee explicitly tasked with overseeing \"capital investments and financing activities supporting cloud infrastructure and data center capacity,\" flagging ongoing large-scale capex cycle.\n\nNo named third-party counterparties (customers, AI labs, SPVs) appear in this governance section beyond Stanford University and Cleveland Clinic (both de minimis / independence disclosures, not SIFI-material). The Ellison pledge is the dominant signal.\n[chunk 3/6] Source is Oracle DEF 14A (proxy) FY2026, compensation discussion section. No direct AI lab investments, SPV/JV structures, or hyperscaler compute transactions are named in this section. The primary SIFI-material signals extracted are: (1) Ellison's 413M share pledge against personal debt \u2014 a classic hidden leverage / margin-call cascade risk given his 38.2% voting control; (2) $638B RPO backlog vs $67.4B annual revenue implying massive multi-year execution dependency; (3) PSO targets requiring revenue to more than double to $125B by FY2028 with awards fully unearned after year 1, signaling aggressive forward guidance embedded in compensation structure. GPU bookings named as a discrete compensation metric for President of Global Field Operations (Hura) confirms GPU/AI infrastructure is a material and tracked revenue driver. No circular investment relationships, SPVs, or named AI lab counterparties appear in this section.\n[chunk 4/6] This DEF 14A compensation section contains minimal SIFI-material content. The three substantive extractions are: (1) A CAPEX_ROI_GAP / EXECUTION_RISK signal around Oracle's PSO revenue targets \u2014 the company needs to nearly double FY2026 revenues ($67.4B \u2192 $125B) by FY2028 to hit the 100% vest threshold, implying massive execution dependency on cloud/AI infrastructure buildout. (2) A HIDDEN_LEVERAGE signal: Larry Ellison is carved out of Oracle's anti-pledging policy, meaning unknown quantity of ORCL shares may be pledged as collateral \u2014 a systemic risk if ORCL stock declines sharply. (3) A COST_OPACITY signal around the massive equity grants to the new co-CEOs (Magouyrk ~$622M, Sicilia ~$249M in options alone at grant-date FV), with 102M shares outstanding under plans and 382M shares available for future issuance \u2014 significant dilution overhang. The compensation peer group (Microsoft, Alphabet, Amazon, Meta, Adobe, IBM, Salesforce, etc.) is standard boilerplate for comp benchmarking and not extracted as relationships. No named external business counterparties, investments, SPVs, or related-party arrangements appear in this section.\n[chunk 5/6] This DEF 14A Compensation Discussion & Analysis / Related-Party section is primarily boilerplate executive compensation tables. SIFI-material extractions are: (1) A revenue-roundtrip signal between Oracle and F50 League LLC (Ellison's SailGP): Oracle pays ~$7.5M cash + receives $1.5M in Oracle products/services back under a 3-year sponsorship, while SailGP is also an Oracle Cloud customer. (2) Ellison Institute is Oracle's largest disclosed related-party customer at ~$21.97M of ~$32.2M total, representing insider revenue concentration. (3) Lawrence Ellison's 346M shares pledged as collateral \u2014 a governance/forced-sale risk that is material to Oracle's stock (sourced from shareholder proposal supporting statement citing the 2025 proxy). (4) OCI securities class action alleging false/misleading cloud infrastructure disclosures \u2014 potentially relevant to OCI revenue recognition integrity. (5) Netherlands GDPR class action (joint defendant with Salesforce) with potential \u20ac500/user + \u20ac100/user damages exposure. The Skydance Animation (~$6.5M) and other smaller Ellison entities are captured in the roundtrip signal. Glass Aviation (~$2.3M) and Wing and a Prayer (~$0.41M) are arm's-length-reviewed supplier relationships with minor amounts \u2014 included for counterparty web completeness.\n[chunk 6/6] This DEF 14A section is pure proxy mechanics boilerplate: voting instructions, quorum rules, meeting logistics, householding procedures, and standard forward-looking statement disclaimers. There are no SIFI-material entities, named business relationships, investments, acquisitions, related-party arrangements, customer/supplier concentrations, off-balance-sheet entities, capex commitments, or hidden leverage signals present in this text. The only named third parties are administrative service providers (Equiniti Trust Company as transfer agent, Innisfree M&A as proxy solicitor, Broadridge Financial Services as inspector of elections, EY as auditor) \u2014 none of which rise to SIFI-material threshold. No extraction warranted."
+  }
+}

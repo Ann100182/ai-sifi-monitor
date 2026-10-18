@@ -1,0 +1,750 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "aliases": [
+            "ORCL",
+            "Oracle Corporation"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SoftBank",
+        "fields": {
+          "aliases": [
+            "SoftBank Group Corp."
+          ],
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ampere",
+        "fields": {
+          "aliases": [
+            "Ampere Computing Holdings LLC"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "TikTok-USDS-JV",
+        "fields": {
+          "entity_type": "JV",
+          "sponsor": "Oracle",
+          "co_owner": "TikTok",
+          "beneficiary": "Oracle",
+          "term_yrs": null,
+          "purpose": "TikTok operations in US",
+          "verbatim_quote": "TikTok USDS Joint Venture LLC, an equity method investee in which we have an ownership interest of 15% as of February 28, 2026"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Oracle-Ampere-Investment",
+        "fields": {
+          "investor": "Oracle",
+          "target": "Ampere",
+          "amount_usd": 4300000000,
+          "equity_pct": null,
+          "round": null,
+          "disclosed_date": "2025-11-25",
+          "verbatim_quote": "On November 25, 2025, SoftBank Group Corp. acquired all of the equity interests of Ampere (the Ampere Acquisition). We received cash proceeds of $4.3 billion in exchange for our equity, debt and call option interests in Ampere in the Ampere Acquisition."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-Ampere-Concentration",
+        "fields": {
+          "filer": "Oracle",
+          "category": "SUPPLIER_CONCENTRATION",
+          "named_counterparties": [
+            "Ampere"
+          ],
+          "severity": 2,
+          "verbatim_quote": "The substantial majority of the non-marketable investments we held as of May 31, 2025 were with Ampere Computing Holdings LLC (Ampere), an equity method investee."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-CapEx-FY2026",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 39170000000,
+          "duration_yrs": null,
+          "start_fy": 2026,
+          "counterparty": null,
+          "purpose": "Cloud and infrastructure expansion",
+          "verbatim_quote": "Capital expenditures (39,170) for the nine months ended February 28, 2026"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-CapEx-ROI-Gap",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 39170000000,
+            "pct_of_revenue": 81.3,
+            "duration_yrs": null,
+            "note": "9-month capex of $39.2B vs 9-month revenue of $48.2B; capex acceleration 3.2x YoY ($39.2B vs $12.1B prior year)"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Capital expenditures (39,170) nine months ended February 28, 2026 compared to (12,135) nine months ended February 28, 2025"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Leverage-Acceleration",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 134605000000,
+            "pct_of_assets": 54.9,
+            "note": "Total debt (current + non-current) increased from $92.6B (May 31, 2025) to $134.6B (Feb 28, 2026); $44.5B net proceeds from senior note issuances in 9 months"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Notes payable and other borrowings, non-current $124,718 million as of February 28, 2026 compared to $85,297 million as of May 31, 2025; Proceeds from issuances of senior notes, term loan credit agreements and other borrowings, net of issuance costs $44,544 million"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Operating-Lease-Expansion",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 18512000000,
+            "pct_of_assets": 7.6,
+            "note": "Operating lease liabilities increased 60% from $11.5B to $18.5B in 9 months; off-balance funding mechanism for infrastructure"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Operating lease liabilities $18,512 million as of February 28, 2026 compared to $11,536 million as of May 31, 2025"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "aliases": [
+            "ORCL"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Oracle-Data-Center-Leases-261B",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Oracle",
+          "debt_stack_usd": 261000000000,
+          "residual_value_guarantee": true,
+          "term_yrs": 15,
+          "purpose": "data center arrangements",
+          "verbatim_quote": "As of February 28, 2026, we had $261 billion of additional lease commitments, substantially all related to data center arrangements, that are generally expected to commence between the fourth quarter of fiscal 2026 and fiscal 2028 and for terms of fifteen to nineteen years that were not reflected on our condensed consolidated balance sheets as of February 28, 2026. These additional lease commitments include a lease for which we have guaranteed up to $2.2 billion of the lessor's borrowing, which matures in September 2026."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Off-Balance-DC-Leases-Risk",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 261000000000,
+            "duration_yrs": 17,
+            "note": "Off-balance-sheet data center operating leases with 15-19 year terms, $2.2B lessor borrowing guarantee, not yet commenced"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of February 28, 2026, we had $261 billion of additional lease commitments, substantially all related to data center arrangements, that are generally expected to commence between the fourth quarter of fiscal 2026 and fiscal 2028 and for terms of fifteen to nineteen years that were not reflected on our condensed consolidated balance sheets"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Data-Center-Capex-ROI-Gap",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 261000000000,
+            "note": "261B DC lease commitments but cloud infrastructure revenue only $12.3B (9 months), implying 21-year payback at current growth rates without customer lock-in"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "we had $261 billion of additional lease commitments, substantially all related to data center arrangements... our expectation that current and expected customer demand will require continued growth in our cloud and software expenses and capital expenditures in order to increase our existing data center capacity and establish additional data centers in new geographic locations"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Oracle-Finance-Leases-6.25B",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Oracle",
+          "debt_stack_usd": 6250000000,
+          "residual_value_guarantee": false,
+          "term_yrs": 5,
+          "purpose": "data centers and real estate facilities",
+          "verbatim_quote": "Finance lease ROU assets $6,060 million... Total finance lease liabilities $6,250 million as of February 28, 2026"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-Cloud-Capex-Ongoing",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 261000000000,
+          "duration_yrs": 17,
+          "start_fy": 2026,
+          "counterparty": null,
+          "purpose": "data center expansion and geographic footprint",
+          "verbatim_quote": "we had $261 billion of additional lease commitments, substantially all related to data center arrangements, that are generally expected to commence between the fourth quarter of fiscal 2026 and fiscal 2028"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Cloud-Execution-Risk",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 261000000000,
+            "duration_yrs": 17,
+            "note": "DC lease commitments not yet commenced; ramp-up risk if customer demand slows or hyperscaler competition intensifies"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "current and expected customer demand will require continued growth in our cloud and software expenses and capital expenditures in order to increase our existing data center capacity and establish additional data centers in new geographic locations"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Lessor-Borrowing-Guarantee-Risk",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 2200000000,
+            "note": "Residual value guarantee on lessor borrowing, maturity Sept 2026"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "These additional lease commitments include a lease for which we have guaranteed up to $2.2 billion of the lessor's borrowing, which matures in September 2026."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Unconditional-Purchase-Obligations-Risk",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 11000000000,
+            "note": "Unconditional purchase obligations for data center power arrangements"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of February 28, 2026, our unconditional purchase and certain other obligations, which were primarily related to data center power arrangements, were $11 billion."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Cloud-Infrastructure-Revenue-Growth-Gap",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 12314000000,
+            "pct_of_revenue": 25.6,
+            "note": "Cloud infrastructure $12.3B (9mo FY26) vs $261B DC lease commitments; slower growth trajectory vs. AWS, Azure"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Cloud infrastructure $4,888 million for three months ended February 28, 2026 vs $2,652 million prior year; Cloud infrastructure $12,314 million for nine months ended February 28, 2026 vs $7,240 million prior year. Our expectation that current and expected customer demand will require continued growth in our cloud and software expenses and capital expenditures in order to increase our existing data center capacity"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Bank of America",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-Revolving-Credit-10B",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 10000000000,
+          "duration_yrs": 5,
+          "start_fy": 2026,
+          "counterparty": "Bank of America",
+          "purpose": "working capital and general corporate purposes",
+          "verbatim_quote": "On March 6, 2026, Oracle entered into a new $10.0 billion, five-year revolving credit agreement (the Revolving Credit Agreement) among Oracle, as borrower, Bank of America, N.A., as administrative agent, and the lenders and other agents named therein"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Deutsche Bank",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Commercial-Paper-3.8B-Outstanding",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 3800000000,
+            "note": "Short-term commercial paper outstanding, program increased to $10B on March 6, 2026"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "On March 6, 2026, Oracle increased its commercial paper program to $10.0 billion... As of February 28, 2026, $3.8 billion of commercial paper notes are outstanding under the commercial paper program."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "aliases": [
+            "ORCL"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ampere",
+        "fields": {
+          "aliases": [
+            "Ampere Computing Holdings LLC"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Oracle-Ampere-equity",
+        "fields": {
+          "investor": "Oracle",
+          "target": "Ampere",
+          "amount_usd": 4300000000.0,
+          "disclosed_date": "2026-02-28",
+          "verbatim_quote": "primarily due to a $2.7 billion gain from the sale of our investments in Ampere"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-Capex-FY2026",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 39200000000.0,
+          "start_fy": 2026,
+          "purpose": "capital expenditures to support the growth in our cloud and software business",
+          "verbatim_quote": "$39.2 billion of cash used for capital expenditures"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-CloudInfra-Execution",
+        "fields": {
+          "filer": "Oracle",
+          "category": "EXECUTION_RISK",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "we expect this trend to continue during fiscal 2026 and in the next few fiscal years as we increase our existing data center capacity and establish data centers in new geographic locations in order to meet current and expected customer demand"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Capex-ROI-Gap",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 39200000000.0,
+            "duration_yrs": 1,
+            "note": "Unprecedented capex increase ($39.2B in 9 months of FY2026 vs. typical annual run-rate) without commensurate multi-year contracted revenue visibility; infrastructure expenses increased $3.9B YoY but this is 10% of capex deployed"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Our cloud and software business' total expenses increased by $1.8 billion and $4.1 billion in reported currency in the third quarter and the first nine months of fiscal 2026, respectively... the constant currency increase in expenses was primarily due to a $1.8 billion and a $3.9 billion increase in infrastructure expenses"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Margin-Compression",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "pct_of_revenue": 4,
+            "note": "Cloud and software margin contracted 400 bps YoY (63% to 59%) despite 18% revenue growth; infrastructure cost growth (54% YoY increase in cloud/software expenses) not fully offset by margin"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Total margin as a percentage of revenues in constant currency decreased in the fiscal 2026 periods presented, relative to the corresponding prior year periods, due to an increase in total expenses driven by higher infrastructure expenses to support growth in our cloud infrastructure offering"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Geographic-Concentration",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "pct_of_revenue": 66,
+            "note": "Americas region represents 66% of total revenues; cloud and software (88% of revenues) is 67% Americas-dependent"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The Americas region contributed 87% and 86% and the EMEA region contributed 8% and 9% to the constant currency total revenue growth during the third quarter and the first nine months of fiscal 2026"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-DataCenter-FY2026-FY2027",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 39200000000,
+          "start_fy": 2026,
+          "purpose": "expansion of data centers to meet current and expected customer demand",
+          "verbatim_quote": "Cash used for capital expenditures increased from $12.1 billion in the first nine months of fiscal 2025 to $39.2 billion in the first nine months of fiscal 2026 primarily due to the expansion of our data centers. We expect this upward trend to continue throughout the remainder of fiscal 2026 and in the next few fiscal years as we increase our existing data center capacity and establish data centers in new geographic locations in order to meet current and expected customer demand."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-CAPEX_ROI_GAP-FCF-Deterioration",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 39200000000,
+            "pct_of_revenue": null,
+            "duration_yrs": 3,
+            "note": "Capex surged 223% YoY (trailing 4Q: $48.25B vs. $14.93B prior year); free cash flow swung from +$5.8B to -$24.7B. Massive capex expansion for data center capacity with only $552.6B remaining performance obligations disclosed\u2014need to validate matched revenue contracts."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Cash used for capital expenditures increased from $12.1 billion in the first nine months of fiscal 2025 to $39.2 billion in the first nine months of fiscal 2026 primarily due to the expansion of our data centers. We expect this upward trend to continue throughout the remainder of fiscal 2026 and in the next few fiscal years."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-CAPEX_ROI_GAP-FCF-Negative",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": -24736000000,
+            "note": "Free cash flow deteriorated sharply: trailing 4Q FCF = -$24.7B (vs. +$5.8B prior year); capex now exceeds operating cash flow by significant margin."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Free cash flow: $(-24,736) million (Trailing Four-Quarters Ended February 28, 2026) versus $5,812 million prior year. Free cash flow as percent of net income: -153%."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-SeniorNotes-43B-FY2026",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 43000000000,
+          "start_fy": 2026,
+          "purpose": "general corporate purposes, which may include capital expenditures, repayment of indebtedness, future investments or acquisitions and payment of cash dividends",
+          "verbatim_quote": "During the first nine months of fiscal 2026, we issued a total of $43.0 billion par value of senior notes. We issued the Mandatory Convertible Preferred Stock and the senior notes for general corporate purposes, which may include capital expenditures, repayment of indebtedness, future investments or acquisitions and payment of cash dividends on or repurchases of our common stock."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-Dilution-MandatoryConvertible",
+        "fields": {
+          "filer": "Oracle",
+          "category": "equity_dilution_and_preferred_overhang",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "The conversion of some or all of our shares of Mandatory Convertible Preferred Stock and our depositary shares, or the payment of dividends on our Mandatory Convertible Preferred Stock in the form of common stock will dilute the ownership interest of the holders of our common stock."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-Dilution-ATMProgram",
+        "fields": {
+          "filer": "Oracle",
+          "category": "equity_dilution_from_at_market_offering",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "The market price of our common stock could become more volatile and could be depressed by: (1) investors' anticipation of the potential sale or resale, as applicable, in the market of a substantial number of additional shares of common stock issued under the ATM Program or received upon conversion of the Mandatory Convertible Preferred Stock or our depositary shares."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-CAPEX_Financing-Leverage",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 43000000000,
+            "note": "$43B of senior notes issued in 9M FY2026 for 'general corporate purposes' including capex; combined with $5B Mandatory Convertible Preferred issuance, Oracle has raised ~$48B in new capital while burning negative FCF and carrying mounting debt maturity ladder."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "During the first nine months of fiscal 2026, we issued a total of $43.0 billion par value of senior notes. We expect this upward trend to continue throughout the remainder of fiscal 2026 and in the next few fiscal years as we increase our existing data center capacity and establish data centers in new geographic locations in order to meet current and expected customer demand."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "SoftBank",
+        "predicate": "CIRCULAR_WITH",
+        "properties": {
+          "context": "SoftBank acquired Ampere from Oracle, creating potential strategic relationship"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ampere",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "amount_usd": 4300000000,
+          "exit_date": "2025-11-25"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "SoftBank",
+        "target_type": "company",
+        "target_name": "Ampere",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction": "Full acquisition from Oracle"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "off_balance_entity",
+        "target_name": "TikTok-USDS-JV",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "equity_pct": 0.15,
+          "date": "2026-02-28"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "Oracle-CapEx-FY2026",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {
+          "amount_usd": 39170000000,
+          "period": "9M FY2026"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-CapEx-ROI-Gap",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Leverage-Acceleration",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Operating-Lease-Expansion",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "off_balance_entity",
+        "target_name": "Oracle-Data-Center-Leases-261B",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Off-Balance-DC-Leases-Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Data-Center-Capex-ROI-Gap",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Cloud-Execution-Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Lessor-Borrowing-Guarantee-Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Unconditional-Purchase-Obligations-Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Cloud-Infrastructure-Revenue-Growth-Gap",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Commercial-Paper-3.8B-Outstanding",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "Oracle-Revolving-Credit-10B",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "capex_commitment",
+        "source_name": "Oracle-Revolving-Credit-10B",
+        "target_type": "company",
+        "target_name": "Bank of America",
+        "predicate": "DEPENDS_ON"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "off_balance_entity",
+        "target_name": "Oracle-Finance-Leases-6.25B",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ampere",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "Oracle-Capex-FY2026",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Capex-ROI-Gap",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Margin-Compression",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Geographic-Concentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "Oracle-DataCenter-FY2026-FY2027"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-CAPEX_ROI_GAP-FCF-Deterioration"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-CAPEX_ROI_GAP-FCF-Negative"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "Oracle-SeniorNotes-43B-FY2026"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-CAPEX_Financing-Leverage"
+      }
+    ],
+    "notes": "[chunk 1/4] **SIFI-MATERIAL EXTRACTION NOTES \u2014 Oracle 10-Q FY2026 Q3**\n\n**KEY FINDINGS:**\n\n1. **CAPEX ROI GAP (Severity 3)**: Oracle deployed $39.2B capex in 9M FY2026 vs $12.1B prior year (3.2x YoY acceleration). This represents 81% of 9-month revenue ($48.2B). While cloud revenues grew 35.6% YoY to $24.1B, the capex intensity suggests aggressive infrastructure build-out not yet generating proportional revenue. This is classic CAPEX_ROI_GAP pattern: large committed spend without yet-visible contracted revenue to justify it.\n\n2. **HIDDEN LEVERAGE (Severity 3)**: Debt increased 45% in 9 months ($92.6B \u2192 $134.6B). Oracle raised $44.5B net proceeds from senior notes in 9M FY2026 alone, with issuances across multiple tranches (Feb & Sept 2025). Total debt now 54.9% of assets. The timing coincides with capex ramp, signaling debt-funded infrastructure expansion.\n\n3. **OPERATING LEASE EXPANSION (Severity 2)**: Operating lease liabilities surged 60% from $11.5B to $18.5B in 9 months. This is an off-balance-sheet financing mechanism for real estate and infrastructure. Combined with $134.6B debt, total financial obligations are materially understated on the balance sheet.\n\n4. **INVESTMENT CONCENTRATION & EXIT**: Oracle held substantial non-marketable investments in Ampere Computing ($4.3B exit, Nov 25, 2025). The position was noted as \"substantial majority\" of non-marketable portfolio as of May 31, 2025. This represents supplier/component concentration risk that was then de-risked via SoftBank acquisition. No ongoing Ampere investment as of Feb 28, 2026.\n\n5. **TikTok USDS JV (15% stake)**: Oracle has a 15% stake in TikTok USDS Joint Venture LLC (equity method investment). This is off-balance-sheet equity held as non-marketable security. Given regulatory uncertainty around TikTok, this carries geopolitical execution risk not yet flagged in risk disclosures.\n\n6. **REVENUE RECLASSIFICATIONS**: The filing notes \"reclassed certain revenues and other related disclosures to conform to the current period's presentation\" \u2014 this accounting policy change warrants monitoring for potential revenue recognition opacity.\n\n**WHAT'S MISSING / NOT FLAGGED:**\n- No explicit capex guidance or counterparty concentration disclosures in this excerpt\n- TikTok JV terms, earn-out structures, or contingent obligations not disclosed in this section\n- No detail on property/plant/equipment acquisition breakdown (capex vs acquired assets)\n- Remaining performance obligations ($552.6B) not analyzed for customer concentration\n\n**CANONICAL NAMES USED:**\n- Oracle (ORCL)\n- SoftBank\n- Ampere\n\n**SUBSEQUENT EVENTS NOTED:** New revolving credit facility closed March 6, 2026 (referenced in Note 12, not included in excerpt). This may indicate additional liquidity arrangements tied to capex financing.\n\n[chunk 2/4] SIFI-MATERIAL EXTRACTION from Oracle 10-Q (Feb 28, 2026):\n\nKEY FINDINGS:\n1. **HIDDEN_LEVERAGE \u2014 $261B Off-Balance-Sheet DC Leases**: Oracle has committed to $261 billion in operating lease obligations for data centers with 15-19 year terms, NOT YET REFLECTED on balance sheet. These leases commence Q4 FY2026\u2013FY2028. SEVERITY 4 because: (a) massive off-balance-sheet obligation; (b) includes $2.2B residual value guarantee on lessor borrowing (maturity Sept 2026); (c) long duration creates execution and demand-destruction risk.\n\n2. **CAPEX_ROI_GAP \u2014 21-Year Payback at Current Growth**: Cloud infrastructure revenue is only $12.3B annualized (9-month run-rate), implying $261B spend would take 21+ years to recoup at current growth rates. Meanwhile, hyperscaler competitors (AWS, Azure) have faster revenue generation. SEVERITY 3 \u2014 indicates over-capacity commitment or aggressive customer acquisition gamble.\n\n3. **EXECUTION_RISK**: $261B DC lease commitments are not yet commenced. If customer demand slows (macro headwinds, AI capex saturation, competition) or Oracle fails to compete effectively vs. AWS/Azure/GCP, these fixed-term leases become stranded assets. Leverage with landlords is limited.\n\n4. **ADDITIONAL_LEVERAGE**: $11B unconditional purchase obligations for DC power; $3.8B commercial paper outstanding (program increased to $10B on March 6, 2026); $6.25B finance lease liabilities on balance sheet.\n\n5. **STRATEGIC MISMATCH**: Oracle markets itself as \"cloud choice\" provider but is making aggressive hyperscaler-scale capex bets. If enterprise customers continue to prefer hybrid/on-premise with lite cloud, or migrate to AWS/Azure/GCP, Oracle's DC capacity becomes redundant.\n\nNOTES:\n- All verbatim quotes are from Section 6 (Leases) and Item 2 (MD&A).\n- No specific counterparties named for leases (no Brookfield, Blue Owl, or other infrastructure partners disclosed yet in this section).\n- Operating lease accounting: $21.3B on-balance liabilities + $261B off-balance commitments = $282.3B total lease exposure.\n- Revolving credit and commercial paper are typical refinancing vehicles; included for completeness but lower risk unless rates spike.\n\n[chunk 3/4] EXTRACTION NOTES for Oracle 10-Q filed 2026-03-11:\n\nKEY SIFI SIGNALS IDENTIFIED:\n\n1. **CAPEX_ROI_GAP (Severity 3)**: Oracle deployed $39.2B capex in 9 months of FY2026, representing a dramatic acceleration with no commensurate multi-year SaaS/cloud contract visibility disclosed. Infrastructure expense growth ($3.9B YoY) accounts for only ~10% of deployed capex, suggesting either future revenue ramp or capex deployment ahead of monetization.\n\n2. **MARGIN_COMPRESSION / COST_OPACITY (Severity 2)**: Cloud and software business margin collapsed 400 bps YoY (63% to 59%) despite robust 18% revenue growth. This indicates cost structure deterioration driven by high-margin infrastructure build-out without proportional pricing power or utilization disclosure.\n\n3. **GEOGRAPHIC_CONCENTRATION (Severity 2)**: Americas represents 66% of revenues; within cloud and software (88% of total revenues), Americas dependency is 67%, with 87% of cloud revenue growth driven by Americas. EMEA and Asia Pacific contribute only 8-9% to growth. This creates single-region execution risk.\n\n4. **Ampere Equity Investment**: Oracle divested its equity stake in Ampere for $4.3B, realizing a $2.7B gain in the 9-month period. This is flagged as a historical equity investment relevant to counterparty mapping, though the position is now closed.\n\n5. **Infrastructure as Equity Bet**: The text explicitly states \"we expect this trend to continue during fiscal 2026 and in the next few fiscal years as we increase our existing data center capacity and establish data centers in new geographic locations in order to meet current and expected customer demand\" \u2014 positioning this as multi-year capex bet with customer demand assumption.\n\nENTITIES NOT EXTRACTED (boilerplate):\n- Generic competition, currency hedging, restructuring (operational efficiency, not SIFI)\n- Standard tax provisions\n- Routine personnel/IT/HR expenses\n\nVERIFICATION NOTES:\n- All numeric signals sourced from audited 10-Q tables (Cloud/Software Revenues, Expenses, Capex tables)\n- All risk quotes verbatim from MD&A sections\n- Ampere investment verified in Note 1 and Non-Operating Income section\n- Capex figures verified against Liquidity & Capital Resources section\n\n[chunk 4/4] ORACLE 10-Q (3/11/2026) EXTRACTION NOTES:\n\nKEY SIFI SIGNALS IDENTIFIED:\n\n1. **CAPEX_ROI_GAP (Severity 3)**: Oracle's capex spending has exploded 223% YoY in trailing 4Q ($48.25B vs. $14.93B), driven by data center expansion. Free cash flow has swung from +$5.8B to -$24.7B negative. The filing discloses \"$552.6 billion\" of remaining performance obligations (a 4.2x increase from $130.2B prior year), but the timing alignment and customer concentration risk for this massive capex is opaque. The company expects capex \"upward trend to continue throughout the remainder of fiscal 2026 and in the next few fiscal years\"\u2014a multi-year commitment with ROI timing uncertain.\n\n2. **FINANCING/LEVERAGE**: Oracle issued $43B of senior notes (with maturity ladder 2029\u20132066) plus $5B Mandatory Convertible Preferred in 9M FY2026 to fund \"general corporate purposes, which may include capital expenditures.\" This is classic debt-for-capex financing at a time of negative FCF\u2014a red flag for execution risk if customer demand falters.\n\n3. **EQUITY DILUTION**: The $5B Mandatory Convertible Preferred (100M depositary shares) and $20B ATM Program create overhang risk. The filing explicitly flags that conversion/dilution could \"depress the price of our common stock\" and enable short selling hedges.\n\n4. **CUSTOMER CONCENTRATION**: The filing states \"significant cloud contracts were entered into during the period\" drove the 4.2x jump in remaining performance obligations to $552.6B. No customer names disclosed, but this concentration is the core SIFI risk\u2014if these contracts are with 1\u20132 hyperscalers or AI labs with execution risk, Oracle's capex could become stranded.\n\nEXCLUDED:\n- Boilerplate risk disclaimers (Item 1A points to 10-K for full risk disclosure).\n- Generic stock compensation dilution (covered under equity section).\n- Internal control attestations (non-SIFI).\n- Routine dividend policy and stock repurchase program (no related-party angle).\n- Executive Rule 10b5-1 trading plans (routine insider trading disclosures).\n\nNAMED COUNTERPARTIES: None explicitly named in this section. The \"significant cloud contracts\" are anonymous\u2014a data quality gap for the SIFI Monitor.\n\nNEXT STEPS: Cross-reference with Oracle's 10-K Item 1 (Business) to identify named cloud customers and JV/SPV structures (e.g., any Brookfield or Blue Owl data center partnerships, project finance vehicles). Also verify whether these \"significant cloud contracts\" are with specific AI labs (OpenAI, Anthropic, xAI, etc.) that would trigger circularity and round-trip revenue risk."
+  }
+}

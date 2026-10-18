@@ -1,0 +1,332 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "CoreWeave",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "aliases": [
+            "NVIDIA Corporation"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "CoreWeave",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Arm",
+        "fields": {
+          "ticker": "ARM",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "NVIDIA-CoreWeave-Investment",
+        "fields": {
+          "investor": "NVIDIA",
+          "target": "CoreWeave",
+          "amount_usd": 1000000000.0,
+          "disclosed_date": "2025-04-27",
+          "verbatim_quote": "The balance as of the first quarter of fiscal year 2026 includes an investment in CoreWeave, Inc., or CoreWeave, which was reclassified from non-marketable equity securities to marketable securities following public market trading. The fair value of the investment as of April 27, 2025 was $1 billion and is subject to a short-term restriction on the ability to sell."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "China-Export-Control-H20",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Export Controls & Geopolitical Risk",
+          "named_counterparties": [
+            "China",
+            "USG"
+          ],
+          "severity": 5,
+          "verbatim_quote": "On April 9, 2025, the U.S. government, or USG, informed us that it requires a license for export to China (including Hong Kong and Macau) and D:5 countries, or to companies headquartered or with an ultimate parent therein, of our H20 integrated circuits and any other circuits achieving the H20's memory bandwidth, interconnect bandwidth, or combination thereof. As a result of these new requirements, we incurred a $4.5 billion charge in the first quarter of fiscal year 2026 associated with H20 excess inventory and purchase obligations as the demand for H20 products diminished."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-H20-Inventory-Writedown",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 4500000000.0,
+            "pct_of_revenue": 10.2
+          },
+          "named_counterparties": [
+            "China"
+          ],
+          "verbatim_quote": "As a result of these new requirements, we incurred a $4.5 billion charge in the first quarter of fiscal year 2026 associated with H20 excess inventory and purchase obligations as the demand for H20 products diminished. Sales of our H20 products were $4.6 billion for the first quarter of fiscal year 2026 prior to the new export licensing requirements."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVDA-Supply-Capacity-Obligations",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 29800000000.0,
+          "counterparty": "TSMC & Contract Manufacturers",
+          "purpose": "Blackwell architecture components and long-term supply agreements",
+          "verbatim_quote": "As of April 27, 2025, we had outstanding inventory purchase and long-term supply and capacity obligations totaling $29.8 billion, an increase from the prior year led by commitments, capacity and components for our Blackwell architecture."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVDA-China-Market-Foreclosure",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Strategic Market Risk",
+          "named_counterparties": [
+            "China"
+          ],
+          "severity": 5,
+          "verbatim_quote": "We may be unable to create a competitive product for China's data center market that receives approval from the USG. In that event, we would effectively be foreclosed from competing in China's data center computing/compute market, with a material and adverse impact on our business, operating results, and financial condition."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVDA-Supply-Demand-Mismatch",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Operational Risk",
+          "severity": 3,
+          "verbatim_quote": "Long manufacturing lead times and uncertain supply and capacity availability, combined with a failure to estimate customer demand accurately, has led and could lead to mismatches between supply and demand."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-Customer-Concentration",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "counterparty_count": 2,
+            "pct_of_revenue": 30
+          },
+          "named_counterparties": [
+            "Customer A",
+            "Customer B"
+          ],
+          "verbatim_quote": "Sales to one direct customer, Customer A, represented 16% of total revenue and sales to a second direct customer, Customer B, represented 14% of total revenue for the first quarter of fiscal year 2026, both of which were attributable to the Compute & Networking segment."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-Indirect-Customer-Concentration",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "counterparty_count": 2,
+            "pct_of_revenue": 20
+          },
+          "named_counterparties": [
+            "Unnamed AI research company",
+            "Cloud service providers"
+          ],
+          "verbatim_quote": "For the first quarter of fiscal year 2026, two indirect customers which primarily purchase our products through system integrators and distributors, including through Direct Customers A and B, are estimated to represent 10% or more of total revenue, attributable to the Compute & Networking segment. We estimate that in the first quarter of fiscal year 2026, an AI research and deployment company contributed to a meaningful amount of our revenue."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVDA-AI-Diffusion-Export-Rule",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Regulatory & Export Control Risk",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In May 2025, the USG announced that it would rescind the AI Diffusion IFR and implement a replacement rule. The scope, timing, and requirements of the forthcoming rule remain uncertain. The replacement rule may impose new restrictions on our products or operations and/or add license requirements that could have a material impact on our business, operating results, and financial condition."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVDA-Cloud-Service-Commitments",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 10600000000.0,
+          "purpose": "Multi-year cloud service agreements for R&D and DGX Cloud offerings",
+          "verbatim_quote": "Other non-inventory purchase obligations were $13.7 billion, including $10.6 billion of multi-year cloud service agreements. We expect our cloud service agreements to primarily be used to support our research and development efforts, as well as our DGX Cloud offerings."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVDA-Future-Lease-Obligations",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 7400000000.0,
+          "duration_yrs": 2,
+          "start_fy": 2026,
+          "purpose": "Data center and office operating leases",
+          "verbatim_quote": "Between the second quarter of fiscal year 2026 and fiscal year 2030, we expect to commence leases with future obligations of $7.4 billion primarily of data center and office operating leases, with lease terms of 2 to 15.5 years."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-Inventory-Provision-Trend",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 5300000000.0,
+            "pct_of_revenue": 12
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Provisions for inventory and excess inventory purchase obligations totaled $5.3 billion, including $4.5 billion associated with H20 excess inventory and purchase obligations, and $393 million for the first quarter of fiscal years 2026 and 2025, respectively. The net effect of provisions for inventory and excess inventory purchase obligations on our gross margin was an unfavorable impact of 11.0% and 1.1% in the first quarter of fiscal years 2026 and 2025, respectively."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVDA-Product-Transition-Execution",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Execution Risk",
+          "severity": 2,
+          "verbatim_quote": "Product transitions are complex and we often ship both new and prior architecture products simultaneously as our channel partners prepare to ship and support new products. The increased frequency of these transitions and the larger number of products and product configurations may magnify the challenges associated with managing our supply and demand which may further create volatility in our revenue."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVDA-US-Manufacturing-Investment",
+        "fields": {
+          "filer": "NVIDIA",
+          "purpose": "U.S.-based manufacturing capabilities and domestic supply chain resilience",
+          "verbatim_quote": "We plan to increase our U.S.-based manufacturing and invest in specialized equipment and processes to support domestic production. This move is expected to strengthen our supply chain, boost resiliency and redundancy, and meet the growing demand for AI infrastructure."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "CoreWeave",
+        "properties": {
+          "context": "CoreWeave referenced in publicly held equity securities (Level 1 fair value measurement)"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "CoreWeave"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "China-Export-Control-H20"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-H20-Inventory-Writedown"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "NVDA-Supply-Capacity-Obligations"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "NVDA-China-Market-Foreclosure"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-Customer-Concentration"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-Indirect-Customer-Concentration"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "NVDA-AI-Diffusion-Export-Rule"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "NVDA-Cloud-Service-Commitments"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "NVDA-Future-Lease-Obligations"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-Inventory-Provision-Trend"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "NVDA-Product-Transition-Execution"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "NVDA-US-Manufacturing-Investment"
+      }
+    ],
+    "notes": "[chunk 1/2] The provided document is an XBRL-encoded 10-Q with minimal narrative content in the excerpt supplied. The only identifiable SIFI-material reference is CoreWeave, which appears in the context of NVIDIA's investment portfolio as a publicly held equity security. The document structure indicates this is primarily structured financial data rather than the detailed Item 1 Business narrative. No specific financial amounts, customer concentration figures, or substantive business relationships are disclosed in this XBRL extract. To complete a comprehensive counterparty-web analysis, the full narrative sections (Item 1, MD&A, Risk Factors) would be required. The filing date is 2025-05-28 for the quarter ended 2025-04-27.\""
+  }
+}

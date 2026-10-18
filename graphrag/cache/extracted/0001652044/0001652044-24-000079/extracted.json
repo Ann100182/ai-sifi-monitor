@@ -1,0 +1,435 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Waymo",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Waymo",
+        "fields": {
+          "aliases": [],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Waymo-VIE",
+        "fields": {
+          "entity_type": "VIE",
+          "sponsor": "Alphabet",
+          "beneficiary": "Alphabet",
+          "purpose": "Autonomous driving technology",
+          "verbatim_quote": "In July 2024, Alphabet committed to fund up to $5.0 billion for the ongoing operations of Waymo, a fully autonomous driving technology company and a consolidated VIE."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Waymo-$5B-2024",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 5000000000,
+          "start_fy": 2024,
+          "counterparty": "Waymo",
+          "purpose": "Ongoing operations of autonomous driving technology company",
+          "verbatim_quote": "In July 2024, Alphabet committed to fund up to $5.0 billion for the ongoing operations of Waymo, a fully autonomous driving technology company and a consolidated VIE."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-Antitrust-Search",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Antitrust and Competition",
+          "named_counterparties": [
+            "DOJ",
+            "State Attorneys General",
+            "European Court of Justice"
+          ],
+          "severity": 4,
+          "verbatim_quote": "The DOJ and a number of state Attorneys General filed a lawsuit in the U.S. District Court for the District of Columbia on October 20, 2020 alleging that Google violated U.S. antitrust laws relating to Search and Search advertising. The trial ended on November 16, 2023, and we expect a decision in 2024."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-Antitrust-PlayStore",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Antitrust and Competition",
+          "named_counterparties": [
+            "Epic Games",
+            "State Attorneys General",
+            "DOJ"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In December 2023, a California jury delivered a verdict in a similar lawsuit in Epic Games v. Google. The jury found that Google violated antitrust laws related to Google Play's business. Epic did not seek monetary damages. The presiding judge will determine non-monetary remedies in 2024, and the range of potential remedies vary widely."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-Antitrust-AdTech",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Antitrust and Competition",
+          "named_counterparties": [
+            "DOJ",
+            "State Attorneys General",
+            "European Commission",
+            "CMA",
+            "ACCC"
+          ],
+          "severity": 4,
+          "verbatim_quote": "On January 24, 2023, the DOJ, along with a number of state Attorneys General, filed an antitrust complaint in the U.S. District Court for the Eastern District of Virginia alleging that Google's digital advertising technology products violate U.S. antitrust laws, and on April 17, 2023, a number of additional state Attorneys General joined the complaint. A trial is scheduled for September 2024."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-EC-Fines",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Regulatory Penalties and Fines",
+          "named_counterparties": [
+            "European Commission"
+          ],
+          "severity": 3,
+          "verbatim_quote": "On June 27, 2017, the EC announced its decision that certain actions taken by Google regarding its display and ranking of shopping search results and ads infringed European competition law. The EC decision imposed a \u20ac2.4 billion ($2.7 billion as of June 27, 2017) fine."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-EC-Contingent-Liability",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 9376000000,
+            "note": "European Commission fines accrued as of June 30, 2024, with bank guarantees in lieu of cash"
+          },
+          "named_counterparties": [
+            "European Commission"
+          ],
+          "verbatim_quote": "European Commission fines (1) $9,525 ... $9,376 ... While each European Commission (EC) decision is under appeal, the fines are included in accrued expenses and other current liabilities on our Consolidated Balance Sheets, as we provided bank guarantees (in lieu of a cash payment) for the fines."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-Privacy-Investigations",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Privacy and Data Security",
+          "named_counterparties": [
+            "U.S. Regulators",
+            "European Union"
+          ],
+          "severity": 3,
+          "verbatim_quote": "We are subject to a number of privacy-related laws and regulations, and we currently are party to a number of privacy investigations and lawsuits ongoing in multiple jurisdictions. For example, there are ongoing investigations and litigation in the U.S. and the European Union, including those relating to our collection and use of location information, the choices we offer users, and advertising practices, which could result in significant fines, judgments, and product changes."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-IP-Infringement",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Intellectual Property",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We have had patent, copyright, trade secret, and trademark infringement lawsuits filed against us claiming that certain of our products, services, and technologies infringe others' intellectual property rights. Adverse results in these lawsuits may include awards of substantial monetary damages, costly royalty or licensing agreements, or orders preventing us from offering certain features, functionalities, products, or services."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-Capex-Intensity",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 40742000000,
+            "note": "Construction in progress as of June 30, 2024"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Property and equipment, gross ... Construction in progress $35,229 ... $40,742"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Google Cloud",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": [
+            "GCP"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Google Services",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-CAPEX-ROI-AI-GAP",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 25200000000.0,
+            "duration_yrs": null,
+            "note": "H1 2024 capex doubled YoY to $25.2B vs $13.2B H1 2023; focused on AI infrastructure with limited contracted revenue visibility"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We expect to increase, relative to 2023, our investment in our technical infrastructure, including servers, network equipment, and data centers, to support the growth of our business and our long-term initiatives, in particular in support of AI products and services."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-EXECUTION-RISK-DATACENTERS",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": null,
+            "duration_yrs": null,
+            "note": "Multi-year data center construction projects with extended deployment timelines from months to years"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Construction in progress consists primarily of technical infrastructure and office facilities which have not yet been placed in service. The time frame from date of purchase to placement in service of these assets may extend from months to years. For example, our data center construction projects are generally multi-year projects with multiple phases"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "GOOGL-CAPEX-H1-2024",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 25200000000.0,
+          "duration_yrs": null,
+          "start_fy": 2024,
+          "counterparty": null,
+          "purpose": "Technical infrastructure (servers, network equipment, data centers) and AI support",
+          "verbatim_quote": "During the six months ended June 30, 2023 and 2024, we spent $13.2 billion and $25.2 billion on capital expenditures, respectively. We expect to increase, relative to 2023, our investment in our technical infrastructure, including servers, network equipment, and data centers, to support the growth of our business and our long-term initiatives, in particular in support of AI products and services."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-LEASE-COMMITMENTS-FUTURE",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 5200000000.0,
+            "duration_yrs": null,
+            "note": "Uncommenced leases with future payments $5.2B, not yet on balance sheet; commencement 2024-2027"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of June 30, 2024, we have entered into leases that have not yet commenced with future lease payments of $5.2 billion, that are not yet recorded on our Consolidated Balance Sheets. These leases will commence between 2024 and 2027 with non-cancelable lease terms of one to 25 years."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-PURCHASE-COMMITMENTS",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 54900000000.0,
+            "pct_of_revenue": 33.2,
+            "note": "$54.9B total commitments as of Q2 2024 (33% of 6-month revenue run-rate); $41.0B short-term"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of June 30, 2024, we had material purchase commitments and other contractual obligations of $54.9 billion, of which $41.0 billion was short-term. These amounts primarily consist of purchase orders for certain technical infrastructure as well as the non-cancelable portion or the minimum cancellation fee in certain agreements related to commitments to purchase licenses, including content licenses, inventory, and network capacity."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-TAX-OECD-GLOBAL-MINIMUM",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Tax Policy & Regulatory",
+          "named_counterparties": [
+            "OECD"
+          ],
+          "severity": 2,
+          "verbatim_quote": "The OECD is coordinating negotiations among more than 140 countries with the goal of achieving consensus around substantial changes to international tax policies, including the implementation of a minimum global effective tax rate of 15%. Some countries have already implemented the legislation effective January 1, 2024, and we expect others to follow, however we do not expect a material change to our income tax provision for the 2024 fiscal year. As additional jurisdictions enact such legislation, transitional rules lapse, and other provisions of the minimum tax legislation become effective, we expect our effective tax rate and cash tax payments could increase in future years."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Waymo",
+        "predicate": "DEPENDS_ON",
+        "properties": {}
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "capex_commitment",
+        "target_name": "Waymo-$5B-2024"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "off_balance_entity",
+        "target_name": "Waymo-VIE"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-Antitrust-Search"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-Antitrust-PlayStore"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-Antitrust-AdTech"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-EC-Fines"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-EC-Contingent-Liability"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-Privacy-Investigations"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-IP-Infringement"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-Capex-Intensity"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "capex_commitment",
+        "target_name": "GOOGL-CAPEX-H1-2024"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-CAPEX-ROI-AI-GAP"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-EXECUTION-RISK-DATACENTERS"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-LEASE-COMMITMENTS-FUTURE"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-PURCHASE-COMMITMENTS"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-TAX-OECD-GLOBAL-MINIMUM"
+      }
+    ],
+    "notes": "[chunk 1/4] ANALYSIS: The provided text is almost entirely XBRL metadata (tags, dates, member definitions) and boilerplate financial statement headers/footnotes. The actual substantive narrative content is minimal. Key findings: 1. **Filer**: Alphabet Inc. (GOOGL), 10-Q for Q2 2024 (ended June 30, 2024). 2. **Business segments identified**: Google Services (Search, YouTube, Network, Subscriptions/Platforms/Devices), Google Cloud, and Other bets. 3. **Named subsidiaries/ventures**: Waymo is mentioned once in the XBRL context (goog:WaymoMember, dated 2024-07-01 to 2024-07-23, marked as subsequent event). This is the only concrete counterparty reference beyond consolidated financials. 4. **Related parties / investments**: The text does NOT disclose any significant related-party transactions, equity investments in AI labs, capex commitments to external counterparties, or off-balance-sheet SPVs. The \"Commitments and Contingencies\" reference in Note 8 is mentioned but the actual note content is not provided in the text. 5. **Geographic/customer concentration**: The filing shows revenue breakdown by geography (US, EMEA, Asia-Pacific, Americas ex-US) but no named single-customer concentration > 10%, which is typical for large tech ad platforms. 6. **No SIFI-material signals detected** in the provided excerpt: No hidden leverage (operating leases, SPVs, project finance), no circularity with major peers, no revenue roundtripping, no undisclosed capex gaps, no cost opacity red flags beyond standard depreciation disclosures. 7. **Limitation**: The text provided is overwhelmingly technical XBRL tagging and consolidated statement headers. The narrative sections (Item 1 Business Description, Risk Factors, MD&A detail) are NOT included. A complete extraction would require the full Item 1, Item 1A, and Item 2 sections, which would contain the material counterparty, investment, and risk details. **CONCLUSION**: Based on the available text, only Waymo (as a subsequent event reference) and the overall Alphabet company structure can be reliably extracted. No SIFI-material edges, investments, or risk signals are present in the excerpt provided.\"\n[chunk 2/4] GOOGL 10-Q 2024-07-24: This extraction focuses on material legal/regulatory matters and capital commitments. The primary SIFI signals are: (1) Multiple critical-severity antitrust investigations across Search, Google Play, and advertising technology with trials/decisions expected in 2024\u20132025, exposing the company to significant non-monetary remedies; (2) ~$9.4B in EC fines accrued under appeal, with bank guarantees substituting for cash; (3) Waymo consolidated VIE with $5B+ funding commitment through 2024 (execution risk on autonomous driving ROI); (4) $40.7B construction in progress without disclosed long-term contracted revenue (capex-ROI gap signal). Revenue backlog of $78.8B (Google Cloud-heavy) with half expected to be recognized in next 24 months suggests near-term revenue concentration. No direct CIRCULARITY, HIDDEN_LEVERAGE, or REVENUE_ROUNDTRIP signals detected in this narrative section. Non-marketable equity securities worth $31.6B mentioned but specific investees not enumerated in this excerpt (would require Note 8 disclosure if present). Private company investments and VIE operations are limited in materiality per SIFI thresholds in this section.\"\n[chunk 3/4] GOOGL 10-Q (2024-07-24): Segment reporting shows Google Services ($73.9B revenue, $29.7B operating income Q2 2024) and Google Cloud ($10.3B revenue, $1.2B operating income Q2 2024) as primary profit drivers. Other Bets operating loss $1.1B Q2. Key SIFI signals: (1) CAPEX_ROI_GAP: Capex doubled from $13.2B to $25.2B H1 YoY with focus on AI infrastructure, but no material new AI product revenue contracts disclosed (Google Cloud only 29% of revenue, lower than hyperscaler concentration in pure cloud players). (2) EXECUTION_RISK: Multi-year data center projects with extended timelines plus $5.2B uncommenced leases (2024-2027 commencement) not yet capitalized. (3) PURCHASE_COMMITMENTS: $54.9B material commitments (~33% of 6-month revenue run-rate), $41B short-term, heavily weighted to technical infrastructure and content/license obligations. (4) TAX: OECD minimum 15% tax coordination across 140+ countries; already adopted by some jurisdictions as of Jan 1, 2024; Alphabet anticipates effective tax rate increase in future years. No customer concentration risks >10% disclosed. No major AI lab investments or partnerships named in this section. No off-balance-sheet debt or SPVs identified. No supplier concentration >10% disclosed (contract manufacturers noted but not named).\n[chunk 4/4] FILING REVIEW: Google 10-Q Q2 2024 (2024-07-24, accession 0001652044-24-000079).\n\nSECTION ANALYZED: Item 1 (Business), Item 3\u20134 (Disclosure Controls), Item 1A (Risk Factors), Item 2 (Equity Repurchases), Item 5 (Insider Trading), Item 6 (Exhibits).\n\nSIFI-MATERIAL FINDINGS: None extracted. This excerpt is boilerplate governance, controls, and procedural disclosure.\n\nDETAILS:\n\u2022 Item 3 (Market Risk): Deferred to 10-K 2023, Item 7A. No new risk quantification.\n\u2022 Item 4 (Controls): Standard SOX 302/906 certifications, no material changes to internal controls reported.\n\u2022 Item 1A (Risk Factors): Single material disclosure \u2014 advertising revenue concentration (>75% of 2023 total revenue). Detailed threat to ad-tech value chain (third-party cookies, ad-blocking, economic sensitivity). This is critical customer/revenue concentration but is already well-known and disclosed in base 10-K. No new SIFI-material circularity, hidden leverage, or counterparty dependency is revealed here.\n\u2022 Item 2 (Buybacks): Q2 2024 repurchase of ~91.8M shares (~$16.6B notional). Standard capital allocation, no SIFI angle.\n\u2022 Item 5 (10b5-1 Plans): Four officers' trading arrangement modifications (Raghavan, Shriram, O'Toole, Walker). No related-party concern flagged.\n\u2022 Item 6 (Exhibits): CEO/CFO certifications, XBRL filings, Anat Ashkenazi letter agreement (June 3, 2024) reference. No detail on Ashkenazi role or agreement terms provided in this excerpt.\n\nNO SIFI-MATERIAL ENTITIES, INVESTMENTS, OFF-BALANCE STRUCTURES, CAPEX COMMITMENTS, or COUNTERPARTY RELATIONSHIPS are named or detailed in this text. The excerpt is purely procedural and governance-focused. \n\nNo nodes beyond the filer (Alphabet) warrant extraction.\""
+  }
+}

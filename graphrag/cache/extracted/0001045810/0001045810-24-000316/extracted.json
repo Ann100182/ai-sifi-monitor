@@ -1,0 +1,283 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier",
+          "aliases": [
+            "NVIDIA Corporation"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "hyperscaler",
+          "aliases": [
+            "NVIDIA Corporation"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "TSMC",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Samsung",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Micron",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "China",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "USG",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Blackwell_Capacity_FY2025-2026",
+        "fields": {
+          "filer": "NVIDIA",
+          "purpose": "Blackwell architecture production and ramp",
+          "start_fy": 2025,
+          "duration_yrs": 2,
+          "verbatim_quote": "Blackwell production shipments are scheduled to begin in the fourth quarter of fiscal year 2025 and will continue to ramp into fiscal year 2026"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Supply_Capacity_Agreements",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 28900000000,
+          "purpose": "inventory purchase and long-term supply and capacity obligations",
+          "verbatim_quote": "As of October 27, 2024, we had outstanding inventory purchase and long-term supply and capacity obligations totaling $28.9 billion, an increase from the prior year primarily due to commitments for Blackwell capacity and components"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Cloud_Service_Agreements",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 11300000000,
+          "purpose": "multi-year cloud service agreements for R&D and DGX Cloud",
+          "verbatim_quote": "Other non-inventory purchase obligations were $13.2 billion, including $11.3 billion of multi-year cloud service agreements. We expect our cloud service agreements to primarily be used to support our research and development efforts, as well as our DGX Cloud offerings"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Operating_Leases_Future_4.2B",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 4200000000,
+          "duration_yrs": 15.5,
+          "purpose": "data center and office operating leases",
+          "verbatim_quote": "Between the fourth quarter of fiscal year 2025 and fiscal year 2027, we expect to commence leases with future obligations of $4.2 billion primarily of data center and office operating leases, with lease terms of 1.5 to 15.5 years"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Export_Controls_China_Risk",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "geopolitical/export restrictions",
+          "named_counterparties": [
+            "China",
+            "USG",
+            "Middle East"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In August 2022, the U.S. government, or the USG, announced licensing requirements that, with certain exceptions, impact exports to China (including Hong Kong and Macau) and Russia of our A100 and H100 integrated circuits, DGX or any other systems or boards which incorporate A100 or H100 integrated circuits"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Blackwell_Licensing_Requirements",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "export controls",
+          "named_counterparties": [
+            "China",
+            "USG"
+          ],
+          "severity": 4,
+          "verbatim_quote": "Our upcoming Blackwell systems, such as GB200 NVL 72 and NVL 36 as well as B200 will also be subject to these requirements and therefore require a license for any shipment to certain entities and to China and Country Groups D1, D4 and D5, excluding Israel. To date, we have not received licenses to ship these restricted products to China"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Supply_Demand_Mismatch",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "supply chain/demand forecast",
+          "severity": 3,
+          "verbatim_quote": "Long manufacturing lead times and uncertain supply and component availability, combined with a failure to estimate customer demand accurately, has led and could lead to mismatches between supply and demand. We use third parties to manufacture and assemble our products, and we have long manufacturing lead times"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Product_Transition_Complexity",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "product execution",
+          "severity": 3,
+          "verbatim_quote": "Product transitions are complex and we often ship both new and prior architecture products simultaneously as our channel partners prepare to ship and support new products. The increased frequency of these transitions and the larger number of products and product configurations may magnify the challenges associated with managing our supply and demand"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Inventory_Provision_Spike",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 2200000000,
+            "pct_of_revenue": 2.4,
+            "duration_yrs": 1,
+            "note": "9-month provision for inventory and excess inventory purchase obligations"
+          },
+          "verbatim_quote": "Provisions for inventory and excess inventory purchase obligations totaled $865 million and $2.2 billion for the third quarter and first nine months of fiscal year 2025, respectively"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Blackwell_Yield_Risk",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "For example, our gross margins in the second quarter of fiscal year 2025 were negatively impacted by inventory provisions for low-yielding Blackwell material"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Customer_Concentration",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "counterparty_count": 4,
+            "pct_of_revenue": 48,
+            "note": "Four direct customers represent 18%, 13%, 11%, 11% of accounts receivable as of Q3 FY2025"
+          },
+          "verbatim_quote": "Four direct customers accounted for 18%, 13%, 11% and 11% of our accounts receivable balance as of October 27, 2024"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Cloud_Provider_Revenue_Concentration",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "pct_of_revenue": 50,
+            "note": "Cloud service providers represent 50% of Data Center revenue"
+          },
+          "verbatim_quote": "Cloud service providers represented approximately 50% of our Data Center revenue, and the remainder was represented by consumer internet and enterprise companies"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Data_Center_Revenue_Concentration",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "pct_of_revenue": 88,
+            "note": "Data Center (compute + networking) revenue represents 88% of Compute & Networking segment in Q3 FY2025"
+          },
+          "verbatim_quote": "Revenue from sales to customers outside of the United States accounted for 58% and 65% of total revenue for the third quarter, and 55% and 62% of total revenue for the first nine months, of fiscal years 2025 and 2024, respectively"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Taiwan_Supply_Dependency",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 4,
+          "named_counterparties": [
+            "Taiwan",
+            "TSMC"
+          ],
+          "verbatim_quote": "Finally, our business depends on our ability to receive consistent and reliable supply from our overseas partners, especially in Taiwan. Any new restrictions that negatively impact our ability to receive supply of components, parts, or services from Taiwan, would negatively impact our business and financial results"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Indirect_Customer_Revenue_Estimation",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 2,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "pct_of_revenue": 10,
+            "note": "Indirect customer through system integrators and distributors estimated at 10%+ of total revenue"
+          },
+          "verbatim_quote": "For the third quarter and first nine months of fiscal year 2025, an indirect customer which primarily purchases our products through system integrators and distributors, including through Customer C, is estimated to represent 10% or more of total revenue"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Israel_Operations_Disruption",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "named_counterparties": [
+            "Israel"
+          ],
+          "numeric_signal": {
+            "counterparty_count": 4300,
+            "note": "Employees in Israel, many on military duty"
+          },
+          "verbatim_quote": "We are monitoring the impact of the geopolitical conflict in and around Israel on our operations, including the health and safety of our approximately 4,300 employees in the region who primarily support the research and development, operations, and sales and marketing of our networking products. A substantial number of our employees in the region have been called-up for active military duty in Israel. Some employees in Israel have been on active military duty for an extended period and may continue to be absent, which may cause disruption to our product development or operations"
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/2] The document provided is a cover page / header section of NVIDIA's 10-Q filing dated 2024-11-20 (for the period ended 2024-10-27). It contains primarily XML/XBRL schema mappings and filing metadata, with no substantive business narrative, customer names, supplier relationships, investments, or SIFI-material counterparty relationships. The only extractable entity is NVIDIA itself as the filer. No customer concentration, investment, capex commitment, off-balance-sheet entity, risk factor, or hidden risk signal can be identified from this extract. A complete business narrative (Item 1, MD&A, risk factors, etc.) would be needed to perform the full SIFI analysis requested.\""
+  }
+}

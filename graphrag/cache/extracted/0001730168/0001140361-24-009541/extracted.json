@@ -1,0 +1,220 @@
+{
+  "director_comp": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Silver Lake",
+        "fields": {
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SolarWinds",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Splunk",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IonQ",
+        "fields": {
+          "role": "customer"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "Meta",
+        "predicate": "CIRCULAR_WITH",
+        "properties": {
+          "context": "CEO Hock Tan serves on Meta board while Meta is potential customer/counterparty"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "IonQ",
+        "predicate": "CIRCULAR_WITH",
+        "properties": {
+          "context": "Director Harry You serves on IonQ board while director compensation and potential business relationships create circular dependency"
+        }
+      }
+    ],
+    "notes": "[chunk 1/1] FILING CONTEXT: AVGO (Broadcom) DEF 14A filed 2024-02-26. SECTION: Director Compensation and Director Nominees. SIFI-MATERIAL FINDINGS: (1) CEO RELATED-PARTY CONCENTRATION: Hock E. Tan (President & CEO since 2006) does not receive compensation from Broadcom board service but sits on Meta Platforms board. This creates a circularity: Broadcom supplies networking/semiconductor components to Meta data centers; Tan's board seat at Meta gives him inside knowledge of Meta's capex/demand signals, creating potential conflicts-of-interest and information asymmetries. (2) DIRECTOR EXTERNAL BOARD SEAT CONCENTRATION: Harry L. You (director, Audit & Compensation Chair) serves on IonQ board. IonQ is an AI quantum computing company that may be a customer or technology partner to Broadcom's AI infrastructure business. This creates circularity in compensation oversight (You chairs Compensation Committee while having external equity interests). (3) KENNETH HAO / SILVER LAKE CIRCULARITY: Hao joined Broadcom board in Feb 2024 as Chairman/Managing Partner of Silver Lake (global tech investment firm). Silver Lake likely has significant invested capital in Broadcom suppliers, customers, or competitors (SolarWinds, Splunk portfolio companies). Hao also sits on SolarWinds and Splunk boards \u2014 both security/infrastructure software companies competing with or complementing Broadcom's security offerings. This multi-seat arrangement creates information cascades and potential conflicts. (4) JUSTINE PAGE INSIDER HISTORY: Page is Chair of Audit Committee. She was previously a director of Broadcom Limited (2016-2017) and Avago Technologies Limited (2008-2016). She chairs the Audit Committee of a company she previously served on, which may create familiarity bias in oversight. Not egregious but worth noting. EXTRACTED ENTITIES: (a) Broadcom (AVGO) \u2014 filer, supplier role. (b) Meta \u2014 customer/strategic counterparty via CEO Tan board seat. (c) Silver Lake \u2014 investor/influence node via Kenneth Hao. (d) IonQ \u2014 potential customer/technology partner, director circularity via You. (e) SolarWinds, Splunk \u2014 portfolio/competitor nodes for Hao. SKIP: Haemonetics (Bryant), Flowserve (Delly), Littelfuse (Delly), SIRIUS XM (Hartenstein), Singapore Telecom (Low), GTY Technology (You), Coupang (You), dMY SPACs (You) \u2014 these are generic director seat listings not SIFI-material to Broadcom's core counterparty web. PwC audit fees are immaterial to SIFI analysis. RISK SIGNAL: The absence of explicit conflict-of-interest policies or recusal procedures for CEO/directors serving on customer/investor boards (Meta, IonQ, Silver Lake portfolio) during compensation setting and audit committee work creates a CIRCULARITY / COST_OPACITY risk where inside information flows and approval chains are opaque.\""
+  },
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "role": "supplier",
+          "aliases": [
+            "AVGO"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": [
+            "VMware, Inc."
+          ]
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-AI-Revenue-Concentration",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "pct_of_revenue": 0.15,
+            "note": "15% of semiconductor revenue from generative AI products in FY2023"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Delivered 9% increase in fiscal 2023 revenue through strategic leadership and management of the Semiconductor Solutions Group and its product portfolio, including achieving 15% target of semiconductor revenue from products that support generative AI"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-VMware-Execution-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "VMware acquisition completed; integration risk and associated debt financing material to FY2023 performance; revenue and operating income excluded from APB Plan targets due to late close"
+          },
+          "named_counterparties": [
+            "VMware"
+          ],
+          "verbatim_quote": "The additional revenue and the adjusted non-GAAP operating income that would be generated by the VMware acquisition were excluded from the corporate financial goals as the closing of the acquisition had not yet occurred at that time."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Capex-Debt-VMware",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Credit agreement executed to fund VMware acquisition; scale of debt not specified in this section"
+          },
+          "named_counterparties": [
+            "VMware"
+          ],
+          "verbatim_quote": "Drove the execution of a credit agreement, which provided funding for the VMware acquisition"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-CEO-PSU-Concentration-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 160540000,
+            "duration_yrs": 5,
+            "note": "Single CEO PSU award front-loaded to replace 5 years of cash incentive and equity; $160.5M grant date fair value; forfeited entirely if stock does not reach $825 during earning period"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The grant date fair value of the maximum vesting opportunity under the 2023 Tan PSU Award was $160,540,000 (per ASC 718) and was based on the aggregate value of five annual cash incentive payouts under the APB Plan and five years of annual equity awards"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "AVGO-VMware-Execution-Risk",
+        "target_type": "company",
+        "target_name": "VMware"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "AVGO-Capex-Debt-VMware",
+        "target_type": "company",
+        "target_name": "VMware"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-AI-Revenue-Concentration"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-VMware-Execution-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Capex-Debt-VMware"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-CEO-PSU-Concentration-Risk"
+      },
+      {
+        "predicate": "DEPENDS_ON",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "VMware"
+      }
+    ],
+    "notes": "[chunk 1/3] This is a DEF 14A Compensation Discussion & Analysis section. SIFI-material signals extracted:\n\n1. AI Revenue Concentration: Broadcom's Semiconductor Solutions Group disclosed 15% of semiconductor revenue from generative AI products in FY2023. While this is a positive revenue driver, it signals growing customer concentration risk in the AI segment as this figure is expected to scale.\n\n2. VMware Execution Risk: The VMware acquisition was so late-closing that its revenue/operating income were excluded from executive incentive plan targets. This underscores integration risk materiality. Combined with a large credit facility drawn for the deal, this represents a significant leverage event.\n\n3. Hidden Leverage / VMware Debt: CFO Spears' individual performance highlights explicitly cite \"execution of a credit agreement, which provided funding for the VMware acquisition\" \u2014 confirming a major debt financing event that will appear on the balance sheet but was flagged here in the comp context.\n\n4. CEO Key-Person / Single-Point-of-Failure: The $160.5M front-loaded PSU for CEO Hock Tan covering FY2023\u2013FY2027 with no annual cash or equity awards during that period is a concentrated key-person dependency. The award is forfeited entirely if AVGO stock never reaches $825 during the earning period (years 3\u20135), creating a binary compensation structure tied to a single individual's continued tenure and stock price milestones.\n\n5. Peer group named (Accenture, Cisco, Intel, Micron, NVIDIA, Oracle, Salesforce, AMD, Applied Materials, IBM, Lam Research, Mastercard, PayPal, Qualcomm, TI, Visa, ADP) \u2014 not extracted as nodes since this is boilerplate benchmarking context with no material relationship disclosure.\n\nNo investments in AI labs, SPVs, or circular counterparty relationships were disclosed in this section.\n[chunk 2/3] This filing section is Broadcom's DEF 14A Compensation Discussion & Analysis (proxy statement). The entire text covers executive compensation tables, PSU/RSU award details, severance benefit agreements, CEO pay ratio, and pay-versus-performance disclosures. There are no SIFI-material entities present: no named business relationships involving customer concentration, supplier dependencies, strategic partnerships, AI lab investments, SPVs, off-balance-sheet entities, capex commitments, revenue round-tripping, or counterparty web disclosures. All content is routine executive compensation boilerplate \u2014 share vesting schedules, TSR performance percentiles, severance terms, and pay ratio calculations. Nothing meets the SIFI-materiality threshold defined in the extraction rules. No nodes or edges to emit.\n[chunk 3/3] This section of Broadcom's DEF 14A (Compensation Discussion & Analysis, equity plan tables, and stockholder ownership tables) contains no SIFI-material entities. Content is limited to: (1) executive compensation fair-value calculations per ASC 718, (2) equity plan share counts (Avago Plan, 2012 Plan, ESPP, legacy acquired plans from LSI, Brocade, CA Inc.), (3) TSR comparison vs. NASDAQ 100 Index, (4) standard beneficial ownership table showing institutional holders (Vanguard 9.4%, BlackRock 7.5%, Capital World 6.1%, Capital International 5.2%) and director/officer ownership all below 2%. None of these constitute hidden leverage, circularity, revenue roundtripping, capex commitments, off-balance-sheet entities, AI lab investments, customer/supplier concentration, or other SIFI-material signals. No extraction warranted."
+  },
+  "related_party": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] This filing is a DEF 14A (proxy statement) for Broadcom Inc. (AVGO), filed 2024-02-26. The Related Party Transactions section discloses only a boilerplate Audit Committee review process and a generic statement that Broadcom \"from time to time in the ordinary course of business, on an arms' length basis, purchases from and/or sells to certain entities where one of our directors or management may have relationships.\" No specific counterparties, dollar amounts, SPVs, off-balance-sheet entities, investments in AI labs or compute providers, capex commitments, or any SIFI-material structures are named or quantified. The appendix contains only a standard non-GAAP reconciliation (GAAP operating income, free cash flow) with no hidden leverage, circularity, or concentration signals beyond what would be in the 10-K. There is nothing extractable that meets the SIFI-material threshold per Hard Rule 3. Emitting an empty graph is correct here."
+  }
+}

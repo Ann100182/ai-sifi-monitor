@@ -1,0 +1,502 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "aliases": [
+            "Amazon.com, Inc.",
+            "AMZN"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Anthropic",
+        "fields": {
+          "aliases": [
+            "Anthropic, PBC"
+          ],
+          "private": true,
+          "known_backers": [
+            "Amazon"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Rivian",
+        "fields": {
+          "aliases": [
+            "Rivian Automotive, Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Amazon-Anthropic-Q3-2023",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Anthropic",
+          "amount_usd": 1250000000,
+          "round": "Series C",
+          "disclosed_date": "Q3 2023",
+          "verbatim_quote": "In Q3 2023, we invested in a $1.25 billion note from Anthropic, PBC, which is convertible to equity."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Amazon-Anthropic-Q1-2024",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Anthropic",
+          "amount_usd": 2750000000,
+          "round": "Series C",
+          "disclosed_date": "Q1 2024",
+          "verbatim_quote": "In Q1 2024, we invested $2.75 billion in a second convertible note."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Amazon-Anthropic-Q4-2024",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Anthropic",
+          "amount_usd": 4000000000,
+          "round": "Series C",
+          "disclosed_date": "Q4 2024",
+          "verbatim_quote": "In Q4 2024, we entered into an agreement and invested $1.3 billion in a third convertible note, and will invest an additional $2.7 billion by Q4 2025."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Amazon-Rivian",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Rivian",
+          "amount_usd": null,
+          "verbatim_quote": "The marketable equity securities valuation gain (loss) of $(2.1) billion and $(138) million in Q1 2024 and Q1 2025 is primarily from our equity investment in Rivian Automotive, Inc."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-Tech-DepreciationLife-Change",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 162000000,
+            "note": "Q1 2025 net income reduction from change in useful lives of servers/networking equipment"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Effective January 1, 2025 we changed our estimate of the useful lives of a subset of our servers and networking equipment from six years to five years. The effect of this change in estimate for Q1 2025, based on servers and networking equipment that were included in \"Property and equipment, net\" as of December 31, 2024 and those acquired during the three months ended March 31, 2025, was an increase in depreciation and amortization expense of $217 million and a reduction in net income of $162 million."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-AWS-CapEx-Acceleration",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 93093000000,
+            "pct_of_assets": 14.5,
+            "duration_yrs": 1,
+            "note": "12-month capex (YTD March 31, 2025) substantially increased from prior year; tech infrastructure investments driven by AI compute demand"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Purchases of property and equipment (12-month ended March 31, 2025): $(93,093) million vs. $(53,447) million for 12-month ended March 31, 2024. Technology and infrastructure expense: $22,994 million (Q1 2025) vs. $20,424 million (Q1 2024)."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-Anthropic-FairValue-Volatility",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 3300000000,
+            "note": "Q1 2025 reclassification gain from convertible note to preferred stock conversion"
+          },
+          "named_counterparties": [
+            "Anthropic"
+          ],
+          "verbatim_quote": "In Q1 2025, a portion of the notes were converted to nonvoting preferred stock. As a result of conversions, a significant portion of the unrealized gain associated with the notes as of December 31, 2024 was reclassified and a gain of approximately $3.3 billion was recorded in \"Other income (expense), net\"."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Amazon-AWS-LongTermContracts",
+        "fields": {
+          "filer": "Amazon",
+          "amount_usd": 189000000000,
+          "duration_yrs": 4.1,
+          "counterparty": "AWS customers",
+          "purpose": "Future AWS cloud services and capabilities",
+          "verbatim_quote": "For contracts with original terms that exceed one year, those commitments not yet recognized were approximately $189 billion as of March 31, 2025. The weighted-average remaining life of our long-term contracts is 4.1 years."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-Anthropic-Equity-Rounding",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 1,
+          "numeric_signal": {
+            "amount_usd": null,
+            "note": "Commercial arrangement for AWS cloud services provision and AWS chip usage embedded within equity investment relationship"
+          },
+          "named_counterparties": [
+            "Anthropic"
+          ],
+          "verbatim_quote": "We also have a commercial arrangement primarily for the provision of AWS cloud services, which includes the use of AWS chips."
+        }
+      },
+      {
+        "type": "company",
+        "name": "AMZN",
+        "fields": {
+          "ticker": "AMZN",
+          "aliases": [
+            "Amazon"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "aliases": [
+            "Amazon.com"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Anthropic",
+        "fields": {
+          "private": true,
+          "known_backers": [
+            "Amazon"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Rivian",
+        "fields": {
+          "role": "investee"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Amazon-Anthropic-Q3-2023-$1.25B",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Anthropic",
+          "amount_usd": 1250000000,
+          "round": "convertible note",
+          "disclosed_date": "Q3 2023",
+          "verbatim_quote": "In Q3 2023, we invested $1.25 billion in a convertible note from Anthropic, PBC."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Amazon-Anthropic-Q1-2024-$2.75B",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Anthropic",
+          "amount_usd": 2750000000,
+          "round": "convertible note",
+          "disclosed_date": "Q1 2024",
+          "verbatim_quote": "In Q1 2024, we invested $2.75 billion in a second convertible note."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Amazon-Anthropic-Q4-2024-$1.3B-plus-$2.7B",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Anthropic",
+          "amount_usd": 4000000000,
+          "round": "convertible note",
+          "disclosed_date": "Q4 2024",
+          "verbatim_quote": "In Q4 2024, we entered into an agreement and invested $1.3 billion in a third convertible note, and will invest an additional $2.7 billion by Q4 2025."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Amazon-AWS-Capex-2025",
+        "fields": {
+          "filer": "Amazon",
+          "amount_usd": 87978000000,
+          "start_fy": 2025,
+          "purpose": "Technology infrastructure and fulfillment network expansion, primarily AWS",
+          "verbatim_quote": "We expect cash capital expenditures to increase in 2025, primarily driven by investments in technology infrastructure."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-CAPEX_ROI_GAP-AWS-Infrastructure",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 87978000000,
+            "duration_yrs": 1,
+            "note": "TTM capex Q1 2025 jumped 88% YoY to $87.978B; AWS revenue grew only 17% to $29.3B; capex-to-revenue ratio for AWS segment accelerating"
+          },
+          "named_counterparties": [
+            "AWS customers"
+          ],
+          "verbatim_quote": "Purchases of property and equipment, net of proceeds from sales and incentives (87,978 million) for TTM ended March 31, 2025; AWS sales increased 17% in Q1 2025; We expect cash capital expenditures to increase in 2025, primarily driven by investments in technology infrastructure."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-COST_OPACITY-Depreciation-Capex",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 9056000000,
+            "note": "Depreciation expense Q1 2025 $9.056B on property and equipment; allocation 'based on usage' across segments without granular disclosure of capex payoff timing"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Depreciation and amortization expense on property and equipment, including corporate property and equipment, are allocated to all segments based on usage. Total net additions to property and equipment include the effect of non-cash activity such as property and equipment acquired but not yet paid."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-EXECUTION_RISK-Satellite-Broadband-Autonomous",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Satellite network (Project Kuiper) and autonomous vehicle initiatives in early/development stages; majority of costs expensed pre-commercialization"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We currently expense the majority of the costs associated with the development of our satellite network for global broadband service (including production, launch, and payroll costs, and launch services deposits upon launch). We will capitalize certain of these costs once the service achieves commercial viability, including sales to customers."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Amazon-Risk-AI-Adoption-Uncertainty",
+        "fields": {
+          "filer": "Amazon",
+          "category": "Technology and emerging markets",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "changes in usage or adoption rates of the internet, e-commerce, electronic devices, web services, satellite communications services, and artificial intelligence and machine learning technologies, products, and services, including outside the U.S."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Amazon-Risk-Semiconductor-Supply",
+        "fields": {
+          "filer": "Amazon",
+          "category": "Supply chain and materials",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "we rely on a limited group of suppliers for semiconductor products, including products related to artificial intelligence infrastructure such as graphics processing units. Constraints on the availability of these products could adversely affect our ability to develop and operate artificial intelligence technologies, products, or services."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Amazon-Risk-China-Suppliers-Sellers",
+        "fields": {
+          "filer": "Amazon",
+          "category": "Geopolitical and supply chain",
+          "named_counterparties": [
+            "China"
+          ],
+          "severity": 3,
+          "verbatim_quote": "because China-based sellers account for significant portions of our third-party seller services and advertising revenues, and China-based suppliers provide significant portions of our components and finished goods, regulatory and trade restrictions, tariff policy changes and trade disputes, data protection and cybersecurity laws, economic factors, geopolitical events, security issues, or other factors negatively impacting China-based sellers and suppliers could adversely affect our operating results."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Amazon-Risk-India-Operations-Regulatory",
+        "fields": {
+          "filer": "Amazon",
+          "category": "Regulatory and geopolitical",
+          "named_counterparties": [
+            "India"
+          ],
+          "severity": 2,
+          "verbatim_quote": "In India, the government restricts the ownership or control of Indian companies by foreign entities involved in online multi-brand retail trading activities. For www.amazon.in, we provide certain marketing tools and logistics services to third-party sellers to enable them to sell online and deliver to customers, and we hold an indirect minority interest in an entity that is a third-party seller on the www.amazon.in marketplace."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Amazon-Risk-Tax-Controversy-India",
+        "fields": {
+          "filer": "Amazon",
+          "category": "Tax and regulatory",
+          "named_counterparties": [
+            "India"
+          ],
+          "severity": 2,
+          "verbatim_quote": "For example, the Indian tax authority has asserted that tax applies to cloud services fees paid to Amazon in the U.S. We are contesting this position; however, if this matter is adversely resolved, we may be required to pay additional amounts with respect to current and prior periods and our taxes in the future could increase."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "ailab",
+        "target_name": "Anthropic",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "total_committed": "$4 billion (minimum)",
+          "timeline": "Q3 2023\u2013Q4 2025",
+          "instrument": "Convertible notes, converted to preferred stock"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "company",
+        "target_name": "Rivian",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "investment_type": "Equity securities",
+          "Q1_2024_mark": "$2.1B unrealized loss",
+          "Q1_2025_mark": "$138M unrealized loss"
+        }
+      },
+      {
+        "source_type": "ailab",
+        "source_name": "Anthropic",
+        "target_type": "company",
+        "target_name": "Amazon",
+        "predicate": "BUYS_COMPUTE_FROM",
+        "properties": {
+          "service": "AWS cloud services and AWS chips",
+          "commercial_arrangement": true
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-Tech-DepreciationLife-Change",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-AWS-CapEx-Acceleration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-Anthropic-FairValue-Volatility",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-Anthropic-Equity-Rounding",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "capex_commitment",
+        "target_name": "Amazon-AWS-LongTermContracts",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "ailab",
+        "target_name": "Anthropic",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "company",
+        "target_name": "Rivian",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "capex_commitment",
+        "target_name": "Amazon-AWS-Capex-2025",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-CAPEX_ROI_GAP-AWS-Infrastructure",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-COST_OPACITY-Depreciation-Capex",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-EXECUTION_RISK-Satellite-Broadband-Autonomous",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "risk_factor",
+        "target_name": "Amazon-Risk-Semiconductor-Supply",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "risk_factor",
+        "target_name": "Amazon-Risk-China-Suppliers-Sellers",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "risk_factor",
+        "target_name": "Amazon-Risk-India-Operations-Regulatory",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "risk_factor",
+        "target_name": "Amazon-Risk-Tax-Controversy-India",
+        "predicate": "CITES_RISK"
+      }
+    ],
+    "notes": "[chunk 1/4] EXTRACTION SUMMARY: Amazon Q1 2025 10-Q (Filed 2025-05-02)\n\nSIFI-MATERIAL FINDINGS:\n\n1. **ANTHROPIC INVESTMENT LADDER** (Severity 2 \u2013 Concern):\n   - Three convertible note tranches: $1.25B (Q3 2023), $2.75B (Q1 2024), $1.3B + deferred $2.7B (Q4 2024).\n   - Total minimum committed: $4B by Q4 2025.\n   - Q1 2025: Convertible notes partially converted to *nonvoting preferred stock*. $3.3B gain reclassified to \"Other Income\" \u2014 suggests significant fair-value remeasurement risk.\n   - **REVENUE ROUNDTRIP SIGNAL**: Commercial arrangement for AWS cloud services *embedded* within equity investment (AWS chips + compute). This is a circular relationship (equity investor \u21c4 compute supplier).\n   - Non-marketable equity in private companies (excl. Anthropic basis): jumped from $989M (Dec 2024) to $6.1B (Mar 2025) \u2014 6x increase, driven by observable price changes and warrant valuations.\n\n2. **CAPEX ACCELERATION & DEPRECIATION OPACITY** (Severity 2 \u2013 Concern):\n   - 12-month capex (ending Mar 2025): $93.1B vs. $53.4B prior year = **+74% YoY**.\n   - **Depreciation life change (effective Jan 2025)**: Servers/networking gear shortened from 6 years \u2192 5 years, citing \"increased pace of technology development, particularly in AI and machine learning.\" Impact: $217M additional depreciation in Q1 2025, $162M net income reduction.\n   - AWS long-term customer contracts: ~$189B committed (unrecognized revenue), 4.1-year weighted-average life. Revenue recognition \"largely driven by customer usage, which can extend beyond original contractual term\" \u2014 timing uncertainty.\n   - **RISK**: Rapid capex scaling without contemporaneous revenue ramp; depreciation assumptions dependent on AI tech cycle pace (unobservable).\n\n3. **FAIR VALUE VOLATILITY** (Severity 1 \u2013 Watch):\n   - Equity warrants: $2.7B (Dec 2024) \u2192 $1.9B (Mar 2025) = $800M loss in 3 months (Level 2/3 assets).\n   - Marketable securities: $3.3B reclassification gain Q1 2025 (available-for-sale debt securities).\n   - Rivian equity: $2.1B loss Q1 2024, $138M loss Q1 2025 (cumulative: ~$2.2B unrealized loss, still held).\n\n4. **OPERATING LEASE & FINANCE LEASE COMMITMENTS**:\n   - Operating leases: $97.6B gross liability (Mar 2025); $67.2B additional \"leases not yet commenced\" (future capex).\n   - Financing obligations: $8.9B total, 16-year weighted-average life. These are largely for fulfillment and data center facilities \u2014 operationally essential but off-balance for GAAP purposes prior to adoption (now capitalized).\n\n5. **NO MATERIAL CUSTOMER/SUPPLIER CONCENTRATION DISCLOSED** in this narrative section (Item 1 Business omitted from source text). Customer receivables: $35.5B as of Mar 2025; vendor receivables: $9.1B. No single-counterparty > 10% revenue signal in this excerpt.\n\n**EXTRACTION DISCIPLINE**: \n- Omitted: Generic market risk boilerplate, routine executive compensation, standard tax contingencies, routine debt covenants.\n- Included: Named investments (Anthropic, Rivian), capex acceleration with tech justification, depreciation life changes, embedded commercial arrangements tied to equity positions, fair-value volatility signals.\n- All risk nodes include verbatim quotes \u2264 500 chars per HARD RULE 2.\n\n[chunk 2/4] Note 6 (Stockholders' Equity): Stock repurchase authorization ($10.0B as of March 2022, $6.1B remaining as of March 31, 2025); stock-based compensation expense $3.689B in Q1 2025; $13.9B of unrecognized compensation cost related to unvested RSUs. These are standard equity and compensation disclosures without SIFI-material related-party or off-balance-sheet angles. Note 7 (Income Taxes): Income tax contingencies of $6.3B as of March 31, 2025, including disputes with Luxembourg and India tax authorities. The Luxembourg matter concerns intangible asset tax basis; the India matter concerns GST on cloud services. Neither constitutes a SIFI-material financial commitment or counterparty relationship. Note 8 (Segment Information): Discloses AWS revenue of $29.3B in Q1 2025 (vs. $25.0B in Q1 2024) and operating income of $11.5B (vs. $9.4B). This is operational reporting with no SIFI-material related-party, investment, or off-balance-sheet entity mentions. No named customer concentration, supplier dependencies, strategic partnerships, investments, acquisitions, or related-party arrangements are disclosed in this excerpt. No AI lab partnerships, capex commitments to specific counterparties, or hidden leverage structures are mentioned. The segment disclosure shows AWS is AMZN's highest-margin operating segment but does not name cloud customers (e.g., no mention of OpenAI or other AI labs). Product sales by category (online stores, physical stores, third-party seller services, advertising, subscriptions, AWS, other) are broken out but no single category concentration risk > 10% disclosed at the line level.\"\n[chunk 3/4] EXTRACTION SUMMARY:\\n\\n1. ANTHROPIC INVESTMENT CASCADE: Amazon disclosed $4B total committed to Anthropic across three convertible notes (Q3 2023: $1.25B; Q1 2024: $2.75B; Q4 2024: $1.3B + $2.7B pledge by Q4 2025). This is a SIFI-material strategic AI infrastructure relationship.\\n\\n2. CAPEX_ROI_GAP (Severity 3): TTM capex leaped 88% YoY to $87.978B (12-month ended March 31, 2025), driven primarily by AWS infrastructure. However, AWS revenue growth only 17%, suggesting accelerating capex-to-revenue ratio and execution risk on ROI realization. This pattern mirrors NVIDIA/Microsoft overinvestment cycles in AI.\\n\\n3. COST_OPACITY (Severity 2): Amazon allocates depreciation and property/equipment 'based on usage' across segments. No itemized disclosure of capex payoff timing, useful life changes, or segment-specific asset efficiency. This masks per-segment capital productivity trends.\\n\\n4. EXECUTION_RISK (Severity 3): Project Kuiper (satellite broadband) and autonomous vehicles remain pre-commercial. Majority of development costs are expensed immediately (not capitalized until commercial viability achieved). This defers balance-sheet impact but indicates uncertain ROI and execution risk.\\n\\n5. SEMICONDUCTOR SUPPLY CONCENTRATION (Severity 3): Amazon explicitly cites dependency on \\\"limited group of suppliers for semiconductor products, including GPUs related to AI infrastructure.\\\" This mirrors NVIDIA's customer-base risk and creates single-source vulnerability.\\n\\n6. CHINA/INDIA REGULATORY RISK (Severity 2\u20133): Amazon holds structural regulatory exposure in India (indirect minority stake in amazon.in third-party seller entity due to foreign ownership restrictions); tax controversy with Indian authorities on cloud services pricing; China represents significant seller/supplier concentration with tariff/trade exposure. Both jurisdictions carry escalating regulatory uncertainty.\\n\\n7. NO MAJOR OFF-BALANCE-SHEET ENTITIES DISCLOSED: Unlike Meta's Hyperion SPV or Oracle's project-finance structures, Amazon's filing does not disclose significant SPV debt, VIE arrangements, or operating lease RVGs above materiality threshold. Restricted cash $3.7B is modest.\\n\\n8. CUSTOMER/SUPPLIER CONCENTRATION: Filed does not name individual AWS customers or AWS revenue mix by customer. AWS represents 19% of total revenue ($29.3B Q1 2025 of $155.7B consolidated). AWS margin is highest (~39% operating income on 19% revenue)\u2014concentration of profitability but not customer-level detail.\\n\\n9. ANTHROPIC VALUATION MARK: Filing notes that Anthropic convertible notes were partially converted to nonvoting preferred stock in Q1 2025, generating $2.7B gain in \\\"Other income (expense), net.\\\" This suggests fair-value mark-up of equity stake and warrants\u2014typical SIFI-material private equity valuation volatility.\\n\\n10. SKIPPED: Generic competitive, foreign exchange, and tax risks are boilerplate. Focused extraction on SIFI material patterns only.\"\n[chunk 4/4] No SIFI-material entities extracted. The source text contains only routine executive stock trading plan disclosures (10b5-1 arrangements for directors and founder Jeffrey Bezos) and standard exhibit/signature boilerplate from a 10-Q filing. These are not counterparty relationships, investments, or business arrangements relevant to SIFI systemic-risk analysis. No supplier dependencies, customer concentration, related-party transactions, or hidden leverage detected.\""
+  }
+}

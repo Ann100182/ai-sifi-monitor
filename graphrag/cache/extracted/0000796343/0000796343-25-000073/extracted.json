@@ -1,0 +1,169 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "ADBE Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE_DATA_TRANSFER_COMPLIANCE",
+        "fields": {
+          "filer": "Adobe",
+          "category": "REGULATORY_COMPLIANCE",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "European data transfers outside the European Economic Area are highly regulated and litigated. The mechanisms that we and many other companies rely upon for European data transfers (for example, Standard Contractual Clauses and the EU - US Data Privacy Framework) are the subject of legal challenge, regulatory interpretation and judicial decisions by the Court of Justice of the European Union."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE_PRIVACY_REGULATION_EXPANSION",
+        "fields": {
+          "filer": "Adobe",
+          "category": "REGULATORY_COMPLIANCE",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Laws in Asia, such as the Personal Information Protection Law in China and developing laws in India, as well as state laws in the United States on privacy, data and related technologies, such as the California Consumer Privacy Act, the California Privacy Rights Act, the Colorado Privacy Act and the Virginia Consumer Data Protection Act...create additional privacy and security compliance obligations and expand the scope of potential liability."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE_CUSTOMER_CONCENTRATION_SUBSCRIPTION",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Subscription model dependency; revenue recognized ratably over 1-36 months creates concentration risk if major customer renewals decline"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Lower sales and subscriptions, reduced demand for our products, services and solutions, and increases in our attrition rate in any given period may not be fully reflected in our results of operations until future periods. Our renewal rates may decline or fluctuate as a result of a number of factors, including our customers' level of satisfaction, our ability to continue enhancing features and functionality, reliability of our offerings, prices of ours and competitors' offerings."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE_GOODWILL_IMPAIRMENT",
+        "fields": {
+          "filer": "Adobe",
+          "category": "ASSET_IMPAIRMENT",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We test goodwill for impairment at least annually. We review our goodwill and intangible assets for impairment when events or changes in circumstances indicate the carrying value may not be recoverable, including declines in stock price, market capitalization or reduced future cash flow estimates and slower growth rates in our industry."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE_GEOPOLITICAL_EXPOSURE",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "pct_of_revenue": 50,
+            "note": "50% of employees outside US, exposed to multi-jurisdictional wage, tax and labor law changes"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Approximately 50% of our employees are located outside the United States. Accordingly, we are exposed to changes in laws governing our employee relationships in various U.S. and foreign jurisdictions, including laws and regulations regarding wage and hour requirements, fair labor standards, employee data privacy, unemployment tax rates, workers' compensation rates, citizenship requirements and payroll and other taxes."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE_DEBT_OBLIGATIONS",
+        "fields": {
+          "filer": "Adobe",
+          "category": "DEBT_SERVICING",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "As of May 30, 2025, we had $6.15 billion in senior unsecured notes outstanding and a $3 billion commercial paper program with no amounts outstanding. We also had a $1.5 billion senior unsecured revolving credit agreement, which was undrawn."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE_GEOGRAPHIC_CONCENTRATION",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "Our corporate headquarters, significant research and development activity, certain of our data centers and other critical business operations are in the San Francisco Bay Area and the Salt Lake Valley Area, both of which are near major earthquake faults. Climate-related catastrophic events that may harm our business are also increasing in frequency and severity."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "ADBE_DATA_TRANSFER_COMPLIANCE"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "ADBE_PRIVACY_REGULATION_EXPANSION"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE_CUSTOMER_CONCENTRATION_SUBSCRIPTION"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "ADBE_GOODWILL_IMPAIRMENT"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE_GEOPOLITICAL_EXPOSURE"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "ADBE_DEBT_OBLIGATIONS"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE_GEOGRAPHIC_CONCENTRATION"
+      }
+    ],
+    "notes": "[chunk 1/4] The source text is primarily a 10-Q financial statement (condensed consolidated balance sheets, income statements, cash flows, and notes to financial statements) for Adobe Inc. for the quarterly period ended May 30, 2025. It contains standard financial reporting information including revenue by segment (Digital Media, Digital Experience, Publishing and Advertising), geographic revenue breakdown (Americas, EMEA, APAC), cash flow details, and accounting policy disclosures. No SIFI-material entities, hidden leverage structures, circularity arrangements, concentration risks > 10% of revenue, or related-party transactions of material significance are identified in this narrative financial section. The document does not name specific major customers, suppliers, or strategic partnerships. There are no mentions of off-balance-sheet entities, SPVs, VIEs, or significant capex commitments tied to counterparties. The financial statements show subscription-dominant revenue model (~96% of total revenue) with deferred revenue of $6.33B, but no counterparty concentration risk is disclosed at the customer level in this excerpt. Adobe's debt increased during the period ($1.5B repayment offset by $2.0B new issuance), but no special purpose vehicles or related-party financing arrangements are mentioned. The investment disclosures in this section are limited to marketable securities (corporate debt, treasury securities, money market funds) used for liquidity management\u2014not strategic investments in AI labs or competitors.\"\n\n[chunk 2/4] ADBE 10-Q (2025-06-25): This excerpt contains accounting notes (4\u201313) covering fair value measurements, derivatives, goodwill, intangibles, stock-based compensation, debt, and legal proceedings. No SIFI-material entities, counterparties, investments, or off-balance-sheet arrangements are identified. The text is purely technical financial accounting and does not mention:\n- Named business relationships with customers or suppliers\n- Strategic partnerships or counterparty dependencies\n- Related-party transactions\n- Investments in other companies or AI labs\n- Off-balance-sheet entities (SPVs, JVs, VIEs, operating leases with RVGs)\n- Concentration risks or single-source dependencies\n- Capex commitments tied to counterparties\n\nLegal proceedings (FTC/DOJ investigation into subscription cancellation practices, securities class action related to Figma competition, shareholder derivative actions) are disclosed but do not constitute SIFI-material leverage, circularity, or execution risk requiring extraction.\n\nDebt ($6.15B outstanding) is standard corporate senior notes with derivative hedges; no counterparty concentration or hidden leverage is evident.\n\nResult: No extraction warranted. This section is boilerplate accounting disclosure.\n[chunk 3/4] ADOBE 10-Q FILING (Q2 FY2025, Filed 2025-06-25): This excerpt covers Notes to Consolidated Financial Statements, MD&A, Risk Factors, and control procedures. SIFI-MATERIAL FINDINGS: NONE EXTRACTED. RATIONALE: The filing contains standard operational metrics (ARR growth, revenue by segment, cash flow analysis), routine debt disclosures ($6.15B senior notes, $1.5B revolving credit, $3B commercial paper program), typical risk factors (competition, AI development/regulation, cybersecurity, M&A integration, talent retention), and boilerplate risk language. EXCLUDED: (1) No material counterparty concentration flagged\u2014Adobe reports geographic revenue (Americas 60%, EMEA 26%, APAC 14%) and segment distribution (Digital Media 74%, Digital Experience 25%, Publishing 1%) but no single-customer >10% revenue threshold disclosed or implied. (2) No hidden leverage detected\u2014debt structure is transparent (amortized, disclosed interest rates, no off-balance-sheet SPVs, VIEs, or operating leases with residual guarantees mentioned). Interest rate swaps on $2.7B of senior notes are standard hedging, not leverage amplification. (3) No circularity or round-tripping\u2014no equity exchanges for revenue, no investor-customer-supplier triangles named. (4) Capex/ROI gap: Purchase obligations increased ~$1.3B through Dec 2029 for \"long-term supplier commitments\" but no specific counterparties, projects, or revenue linkage disclosed\u2014insufficient detail to flag as hidden signal. (5) No AI lab investments or strategic partnerships with SIFI-relevant entities (OpenAI, Anthropic, xAI, etc.) mentioned. The $1B Figma acquisition termination fee (paid Q1 FY2024) is historical, non-recurring, and not a SIFI pattern. (6) The Figma-related litigation/claims risk is generic M&A integration risk, not SIFI-material. (7) Risk factors on AI regulation, cybersecurity, geopolitical exposure, and macroeconomic uncertainty are boilerplate and do not identify specific named counterparties or quantified concentration/leverage patterns. CONCLUSION: No SIFI-material entities, relationships, or risk signals warrant extraction from this section.\"\n[chunk 4/4] \nThis 10-Q section contains narrative risk disclosures typical of a mature SaaS provider. The SIFI-material signals extracted are:\n\n1. **ADBE_CUSTOMER_CONCENTRATION_SUBSCRIPTION**: Subscription model creates inherent concentration risk\u2014most quarterly revenue is deferred from prior periods, so renewal/attrition shocks lag 1\u201336 months. This is a CUSTOMER_CONCENTRATION hidden_risk_signal (severity 2).\n\n2. **ADBE_DATA_TRANSFER_COMPLIANCE** and **ADBE_PRIVACY_REGULATION_EXPANSION**: European data transfer mechanisms (SCCs, EU-US DPF) are under litigation and reinterpretation; China PIPL, India laws, US state laws (CCPA, CPRA, Colorado, Virginia) expand compliance scope. Severity 3 as these create material revenue risk (customer reach, business model impact).\n\n3. **ADBE_GEOPOLITICAL_EXPOSURE**: 50% of employees outside US; exposed to wage/tax/labor law changes across jurisdictions. Severity 2.\n\n4. **ADBE_DEBT_OBLIGATIONS**: $6.15B senior unsecured notes, $3B CP program, $1.5B revolver. Typical for a company of Adobe's size; severity 2. No off-balance-sheet SPVs mentioned.\n\n5. **ADBE_GEOGRAPHIC_CONCENTRATION**: HQ, R&D, data centers in Bay Area and Salt Lake Valley\u2014both near earthquake faults. Climate risk escalating. Severity 3 (execution risk if catastrophic event disrupts data centers).\n\n6. **ADBE_GOODWILL_IMPAIRMENT**: Standard impairment risk language; severity 2.\n\n**No named AI partnerships, customer concentration >10% of revenue, or circular counterparty webs disclosed in this section.** The filing references litigation in Item 1, Note 12 (not provided here) and notes internal IP/piracy/patent challenges with generative AI, but no specific material counterparty dependencies emerge from this narrative.\n"
+  }
+}

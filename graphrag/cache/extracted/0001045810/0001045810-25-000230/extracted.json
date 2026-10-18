@@ -1,0 +1,433 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Anthropic",
+        "fields": {
+          "private": true,
+          "aliases": [
+            "Anthropic PBC"
+          ]
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVIDIA-Capex-FY2026",
+        "fields": {
+          "filer": "NVIDIA",
+          "purpose": "Manufacturing and supply chain capacity",
+          "verbatim_quote": "Manufacturing, production and long-term supply and capacity agreement commitments"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVIDIA-Cloud-Services-Capex",
+        "fields": {
+          "filer": "NVIDIA",
+          "purpose": "Multi-year cloud service agreements",
+          "verbatim_quote": "Multi-year cloud service agreement commitments"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVIDIA-Customer-Concentration-Risk",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "counterparty_count": 4,
+            "pct_of_revenue": "65%",
+            "note": "Top 4 direct customers account for 65% of Q3 FY2026 accounts receivable"
+          },
+          "named_counterparties": [
+            "Customer A",
+            "Customer B",
+            "Customer C",
+            "Customer D"
+          ],
+          "verbatim_quote": "Four direct customers accounted for 22%, 17%, 14% and 12% of our accounts receivable balance as of October 26, 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVIDIA-Inventory-Excess-Provision",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 3600000000,
+            "note": "Inventory provisions in first nine months of FY2026"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "$3.6 billion and $876 million for the first nine months of fiscal years 2026 and 2025, respectively, in cost of revenue"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "NVIDIA-Anthropic-Investment",
+        "fields": {
+          "investor": "NVIDIA",
+          "target": "Anthropic",
+          "disclosed_date": "2025-11-19",
+          "verbatim_quote": "Anthropic PBC subsequent event"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "OpenAI",
+        "fields": {
+          "private": true
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Anthropic",
+        "fields": {
+          "private": true
+        }
+      },
+      {
+        "type": "investment",
+        "name": "NVIDIA-Intel-$5B",
+        "fields": {
+          "investor": "NVIDIA",
+          "target": "Intel",
+          "amount_usd": 5000000000,
+          "verbatim_quote": "we committed to make an equity investment in Intel Corporation, subject to regulatory approval"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "NVIDIA-Anthropic-$10B",
+        "fields": {
+          "investor": "NVIDIA",
+          "target": "Anthropic",
+          "amount_usd": 10000000000,
+          "verbatim_quote": "In November 2025, we entered into an agreement, subject to certain closing conditions, to invest up to $10 billion in Anthropic"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "NVIDIA-OpenAI-LOI",
+        "fields": {
+          "investor": "NVIDIA",
+          "target": "OpenAI",
+          "verbatim_quote": "In the third quarter of fiscal year 2026, we entered into a letter of intent with an opportunity to invest in OpenAI"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVIDIA-CSP-Cloud-$26B",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 26000000000,
+          "counterparty": "Cloud Service Providers",
+          "purpose": "Multi-year cloud service agreement for research and development and DGX Cloud offerings",
+          "verbatim_quote": "Multi-year cloud service agreement commitments as of October 26, 2025, were $26 billion for which $1 billion, $6 billion, $6 billion, $5 billion, $4 billion, and $4 billion will be paid in fiscal years 2026 (fourth quarter), 2027, 2028, 2029, 2030, and 2031 & thereafter, respectively"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVIDIA-Manufacturing-$50.3B",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 50300000000,
+          "purpose": "Manufacturing production, long-term supply and capacity commitments",
+          "verbatim_quote": "As of October 26, 2025, these commitments were $50.3 billion, of which substantially all will be paid through fiscal year 2027"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Facility-Lease-Guarantee-Partner",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "NVIDIA",
+          "debt_stack_usd": 860000000,
+          "residual_value_guarantee": true,
+          "term_yrs": 5,
+          "purpose": "Partner facility lease for data center capacity",
+          "verbatim_quote": "In the third quarter of fiscal year 2026, we entered into an agreement to guarantee a partner's facility lease obligations in the event of their default. The agreement allows our partner to secure a limited-availability facility lease backed by our credit profile, in exchange for issuing us warrants. The maximum gross exposure is $860 million, which is reduced as the partner makes payments to the lessor over five years"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVIDIA-Customer-Concentration-Risk",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_revenue": 22,
+            "counterparty_count": 4
+          },
+          "named_counterparties": [
+            "Customer A",
+            "Customer B",
+            "Customer C",
+            "Customer D"
+          ],
+          "verbatim_quote": "For the third quarter of fiscal year 2026, four direct customers with sales greater than 10% of total revenue included: Customer A at 22%, Customer B at 15%, Customer C at 13%, and Customer D at 11%, which were attributable to the Compute & Networking segment"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVIDIA-Indirect-Customer-Concentration",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "note": "One AI research and deployment company represents meaningful revenue through cloud services purchased from customers"
+          },
+          "named_counterparties": [
+            "AI research and deployment company"
+          ],
+          "verbatim_quote": "We estimate that one AI research and deployment company contributed to a meaningful amount of our revenue purchasing cloud services from our customers in the third quarter of fiscal year 2026"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVIDIA-H20-Excess-Inventory-$4.5B",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 4500000000
+          },
+          "named_counterparties": [
+            "China"
+          ],
+          "verbatim_quote": "In April 2025, the U.S. government, or USG, informed us that a license is required for exports of our H20 product into the China market. As a result of these new requirements, we incurred a $4.5 billion charge in the first quarter of fiscal year 2026 associated with H20 for excess inventory and purchase obligations, as the demand for H20 diminished"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVIDIA-Export-Control-China-Foreclosure",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 5,
+          "named_counterparties": [
+            "China",
+            "USG"
+          ],
+          "verbatim_quote": "Under the current rules and geopolitical landscape, we are unable to create and deliver a competitive product for China's data center market that receives approval from both the USG and the Chinese government. We have effectively been foreclosed from competing in China's data center computing/compute market, and our effective foreclosure from the China market will help our competitors build larger developer and customer ecosystems to challenge us worldwide"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVIDIA-Energy-Capex-Capacity-Constraint",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [
+            "Cloud Service Providers"
+          ],
+          "verbatim_quote": "The availability of data centers, energy, and capital to support the buildout of NVIDIA AI infrastructure by our customers is crucial, and any shortage of these resources could impact our future revenue and financial performance. Expanding energy capacity to meet demand is a complex, multi-year process that involves significant regulatory, technical, and construction challenges"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVIDIA-Supply-Demand-Mismatch",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 50300000000,
+            "note": "Non-cancellable and non-returnable manufacturing commitments"
+          },
+          "verbatim_quote": "All of these factors may negatively impact our gross margins and financial results. We continue to increase our supply and capacity purchases with existing and new suppliers to support our demand projections and increasing complexity of our data center products. With these additions, we have also entered and may continue to enter into prepaid manufacturing and capacity agreements to supply both current and future products"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVIDIA-AI-Diffusion-Rule-Uncertainty",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "export controls and geopolitical",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In May 2025, the USG announced that it would rescind the AI Diffusion IFR and implement a replacement rule. The scope, timing, and requirements of the forthcoming rule remain uncertain. The replacement rule may impose new restrictions on our products or operations and/or add license requirements that could have a material impact on our business, operating results, and financial condition"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVIDIA-Facility-Lease-Guarantee-Counterparty-Risk",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "credit and counterparty risk",
+          "severity": 3,
+          "verbatim_quote": "These arrangements expose us to counterparty risk, including customers' or partners' inability to secure necessary financing or infrastructure, significant project delays, or financial distress or insolvency. Despite our efforts to mitigate these exposures, if triggered, these obligations could require payments that may negatively impact our business, financial condition, or results of operations"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intel",
+        "fields": {
+          "ticker": "INTC",
+          "role": "competitor"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "capex_commitment",
+        "target_name": "NVIDIA-Capex-FY2026",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "capex_commitment",
+        "target_name": "NVIDIA-Cloud-Services-Capex",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVIDIA-Customer-Concentration-Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVIDIA-Inventory-Excess-Provision",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "ailab",
+        "target_name": "Anthropic",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "ailab",
+        "target_name": "Anthropic",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "ailab",
+        "target_name": "OpenAI",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Intel",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "capex_commitment",
+        "target_name": "NVIDIA-CSP-Cloud-$26B",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "capex_commitment",
+        "target_name": "NVIDIA-Manufacturing-$50.3B",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVIDIA-Customer-Concentration-Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVIDIA-Indirect-Customer-Concentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVIDIA-H20-Excess-Inventory-$4.5B",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVIDIA-Export-Control-China-Foreclosure",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVIDIA-Energy-Capex-Capacity-Constraint",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVIDIA-Supply-Demand-Mismatch",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "risk_factor",
+        "target_name": "NVIDIA-AI-Diffusion-Rule-Uncertainty",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "off_balance_entity",
+        "target_name": "Facility-Lease-Guarantee-Partner",
+        "predicate": "SPONSORS"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "risk_factor",
+        "target_name": "NVIDIA-Facility-Lease-Guarantee-Counterparty-Risk",
+        "predicate": "CITES_RISK"
+      }
+    ],
+    "notes": "[chunk 1/2] This extraction covers NVIDIA's Q3 FY2026 10-Q (filed 2025-11-19). Key SIFI-material findings: (1) Four direct customers represent 22%, 17%, 14%, and 12% of accounts receivable (~65% concentration in Q3 FY2026 vs. 2 customers at 17%+16%=33% in Q1 FY2026), indicating elevated customer concentration risk. (2) $3.6B in inventory provisions in the first nine months of FY2026 vs. $876M in FY2025 signals potential demand-supply misalignment or obsolescence risk relative to committed capex in manufacturing and cloud service agreements. (3) Anthropic PBC is named in a subsequent event context (dated 2025-11-19), indicating a recent investment or strategic commitment by NVIDIA. (4) The 10-Q references non-marketable equity securities investments (Note 6) but does not enumerate named investees in this excerpt; full Note 8 and Note 6 detail would typically show a roster of AI lab and compute company stakes. Unnamed customers A-D in compute segment suggest direct hyperscaler/CSP concentration but anonymity limits specificity for counterparty-web tracing. Manufacturing and cloud services capex commitments are disclosed as commitment items but lack specific dollar amounts, duration, or counterparty detail in this section."
+  }
+}

@@ -1,0 +1,644 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Wiz",
+        "fields": {
+          "role": "customer",
+          "aliases": [
+            "Wiz, Inc."
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Alphabet-Technical-Infrastructure-Q3-2025",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 69856000000.0,
+          "purpose": "Technical infrastructure including servers, network equipment, data center land and buildings",
+          "verbatim_quote": "Add: assets not yet in service $50,597 million [2024] and $69,856 million [2025]"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Alphabet-Capex-9M2025",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 63596000000.0,
+          "duration_yrs": 0.75,
+          "start_fy": 2025,
+          "purpose": "Property and equipment purchases",
+          "verbatim_quote": "Purchases of property and equipment $(38,259) million [9M 2024] and $(63,596) million [9M 2025]"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Alphabet-Data-Center-Leases-Uncommenced",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Alphabet",
+          "debt_stack_usd": 42600000000.0,
+          "term_yrs": 15,
+          "purpose": "Data center leasing",
+          "verbatim_quote": "As of September 30, 2025, we have entered into leases primarily related to data centers that have not yet commenced with future lease payments of $42.6 billion, including a purchase option considered reasonably certain to be exercised, that are not yet recorded on our Consolidated Balance Sheet."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Alphabet-Consolidated-VIEs",
+        "fields": {
+          "entity_type": "VIE",
+          "sponsor": "Alphabet",
+          "debt_stack_usd": 1800000000.0,
+          "purpose": "Various operational purposes including Other Bets segment",
+          "verbatim_quote": "As of December 31, 2024 and September 30, 2025, liabilities for which creditors only have recourse to the VIEs were $2.3 billion and $1.8 billion, respectively."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-Capex-ROI-Gap",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 69856000000.0,
+            "duration_yrs": 6,
+            "note": "Assets not yet in service as of Q3 2025 represent uncommissioned technical infrastructure with no matched contracted revenue visibility"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Add: assets not yet in service $50,597 million [Dec 31, 2024] and $69,856 million [Sep 30, 2025]. As of September 30, 2025, we have entered into leases primarily related to data centers that have not yet commenced with future lease payments of $42.6 billion...that are not yet recorded on our Consolidated Balance Sheet."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-Execution-Risk-Data-Centers",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 42600000000.0,
+            "duration_yrs": 25,
+            "note": "Uncommenced data center leases with terms up to 25 years; operational commencement dates 2025-2031"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of September 30, 2025, we have entered into leases primarily related to data centers that have not yet commenced with future lease payments of $42.6 billion, including a purchase option considered reasonably certain to be exercised, that are not yet recorded on our Consolidated Balance Sheet. These leases will commence between 2025 and 2031 with non-cancelable lease terms between one and 25 years."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-Hidden-Leverage-Data-Center-Leases",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 42600000000.0,
+            "pct_of_assets": 19.1,
+            "note": "Off-balance-sheet data center lease obligations ($42.6B) relative to total property and equipment net ($223.8B as of Sep 30, 2025)"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of September 30, 2025, we have entered into leases primarily related to data centers that have not yet commenced with future lease payments of $42.6 billion, including a purchase option considered reasonably certain to be exercised, that are not yet recorded on our Consolidated Balance Sheet."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-Derivative-Credit-Backstops",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 6529000000.0,
+            "note": "Credit derivative notional amounts for data center lease backstop obligations"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Notional amounts for credit derivatives are the backstop obligations related to certain third party data center leases and represent the maximum potential amount of future payments that could be required in the event of certain default scenarios, upon which we may receive equity in or cash payments from certain counterparties."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Alphabet-Non-Marketable-Securities-Aggregate",
+        "fields": {
+          "investor": "Alphabet",
+          "target": "Private companies and VIEs (aggregate)",
+          "amount_usd": 61070000000.0,
+          "disclosed_date": "2025-09-30",
+          "verbatim_quote": "As of September 30, 2025, the carrying value of our non-marketable equity securities was $61.1 billion, of which $38.9 billion was remeasured at fair value during the three months ended September 30, 2025"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Wiz",
+        "fields": {
+          "role": "supplier",
+          "aliases": [
+            "Wiz Security"
+          ]
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Alphabet-Wiz-Acquisition-$32B",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 32000000000,
+          "start_fy": 2026,
+          "counterparty": "Wiz",
+          "purpose": "Acquisition of cloud security platform",
+          "verbatim_quote": "In March 2025, we entered into a definitive agreement to acquire Wiz, a leading cloud security platform, for $32.0 billion, subject to closing adjustments, in an all-cash transaction. The acquisition of Wiz is expected to close in 2026, subject to customary closing conditions, including the receipt of regulatory approvals."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Alphabet-Content-Licensing-$7.7B",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 7700000000,
+          "start_fy": 2025,
+          "duration_yrs": 5,
+          "purpose": "Content licensing agreements",
+          "verbatim_quote": "We have content licensing agreements with future fixed or minimum guaranteed commitments of $7.7 billion as of September 30, 2025, of which the majority is paid quarterly through the first quarter of 2030."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Alphabet-Antitrust-Risk-DOJ-Search",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Regulatory & Antitrust",
+          "named_counterparties": [
+            "USG",
+            "DOJ"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In September 2025, a decision on remedies was issued, which, among other things, imposes restrictions on how Google distributes its services, and requires Google to share certain search data with and offer syndication services to certain competitors."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Alphabet-Antitrust-Risk-DOJ-Ads",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Regulatory & Antitrust",
+          "named_counterparties": [
+            "USG",
+            "DOJ"
+          ],
+          "severity": 5,
+          "verbatim_quote": "In April 2025, the U.S. District Court for the Eastern District of Virginia issued a mixed decision in the DOJ case against Google, ruling that Google's advertiser tools or acquisitions of DoubleClick and AdMeld were not anticompetitive, but that Google's publisher tools unfairly excluded rivals... The DOJ's remedy proposal includes structural remedies that could have a material adverse effect on our business."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Alphabet-Antitrust-Risk-EC-Ads",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Regulatory & Antitrust",
+          "named_counterparties": [
+            "EU",
+            "EC"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In September 2025, the EC announced its decision that Google had infringed European competition laws through 'self-preferencing' practices on the buy-side and the sell-side relating to Google's advertising technology business. The EC decision imposed a \u20ac3.0 billion (approximately $3.5 billion as of September 5, 2025) fine and directed Google to cease and desist the alleged 'self-preferencing' practices."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Alphabet-Antitrust-Risk-Epic-Play",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Regulatory & Litigation",
+          "named_counterparties": [
+            "Epic Games"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In December 2023, a California jury delivered a verdict against Google in Epic Games v. Google related to Google Play's business... The presiding judge issued a remedies decision in October 2024, ordering a variety of alterations to our business models and operations and contractual agreements for Android and Google Play."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-Capex-ROI-Gap-Cloud",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Large capex commitment via infrastructure spend ($175.7B long-lived assets in US as of Sep 2025, up from $139B Dec 2024) vs. Google Cloud segment operating margin of ~24% (9-mo 2025: $8.6B op income on $41B revenue) indicates high capex footprint relative to mature cloud revenue monetization"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "United States long-lived assets increased from $138,993 million as of December 31, 2024 to $175,676 million as of September 30, 2025; Google Cloud generates revenues primarily from consumption-based fees and subscriptions received for Google Cloud Platform services."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-Regulatory-Execution-Risk",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "numeric_signal": {
+            "counterparty_count": 8,
+            "note": "Multiple overlapping antitrust, regulatory, and litigation mandates with conflicting operational requirements (Search distribution, ads tech, Android/Play) across US DOJ, EC, UK, Australian ACCC, and Japanese JFTC"
+          },
+          "named_counterparties": [
+            "USG",
+            "DOJ",
+            "EU",
+            "EC",
+            "UK",
+            "Australia",
+            "Japan",
+            "Epic Games"
+          ],
+          "verbatim_quote": "In addition to these antitrust proceedings, private individual and collective actions that overlap with claims pursued by regulatory authorities are pending in the U.S. and in several other jurisdictions, including across Europe. Given the nature of these matters, we cannot estimate a possible loss."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-Customer-Concentration-YouTube",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 26,
+            "note": "YouTube advertising and subscriptions represented ~26% of Google Services revenue; 9-mo 2025 Google Services revenue $246.9B, YouTube ads significant sub-segment"
+          },
+          "named_counterparties": [
+            "Advertisers"
+          ],
+          "verbatim_quote": "YouTube ads, which includes revenues generated on YouTube properties; Google subscriptions, platforms, and devices revenues are comprised of consumer subscriptions, which primarily include revenues from YouTube services, such as YouTube TV, YouTube Music and Premium, and NFL Sunday Ticket."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-Content-Acquisition-Concentration",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 7700000000,
+            "note": "Content licensing commitments of $7.7B through Q1 2030 concentrated on video content providers for YouTube"
+          },
+          "named_counterparties": [
+            "Content Providers"
+          ],
+          "verbatim_quote": "We have content licensing agreements with future fixed or minimum guaranteed commitments of $7.7 billion as of September 30, 2025... content acquisition costs, which are payments to content providers from whom we license video and other content for distribution, primarily related to YouTube."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Wiz",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Alphabet-AI-Infrastructure-2025-2026",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 63600000000,
+          "start_fy": 2025,
+          "purpose": "Technical infrastructure including servers, network equipment, and data centers to support AI products and services",
+          "verbatim_quote": "In 2026, we expect to significantly increase, relative to 2025, our investment in our technical infrastructure, including servers, network equipment, and data centers, to support the growth of our business and our long-term initiatives, in particular in support of AI products and services."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Alphabet-Future-Data-Center-Leases",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Alphabet",
+          "debt_stack_usd": 42600000000,
+          "term_yrs": 25,
+          "purpose": "Data centers",
+          "verbatim_quote": "As of September 30, 2025, we have entered into leases primarily related to data centers that have not yet commenced with future lease payments of $42.6 billion, including a purchase option considered reasonably certain to be exercised. These leases will commence between 2025 and 2031 with non-cancelable lease terms between one and 25 years."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Alphabet-Purchase-Commitments-2025",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 93700000000,
+          "purpose": "Energy contracts, licenses (including content licenses), and technical infrastructure and inventory orders",
+          "verbatim_quote": "As of September 30, 2025, the total for these commitments was $93.7 billion, of which $72.5 billion was short-term, mostly related to technical infrastructure and inventory orders."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Alphabet-EC-Competition-Risk",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Regulatory / Antitrust",
+          "named_counterparties": [
+            "European Commission"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In September 2025, the EC announced its decision that Google had infringed European competition laws through \"self-preferencing\" practices on the buy-side and the sell-side relating to its advertising technology. The EC imposed a \u20ac3.0 billion fine ($3.5 billion as of September 5, 2025)"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-CAPEX-ROI-Gap",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 63600000000,
+            "duration_yrs": 1,
+            "note": "Nine months ended September 30, 2025 capex; full-year expected to exceed 2024; 2026 expected to 'significantly increase' with no corresponding disclosed long-term contracted revenue from AI services"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "During the nine months ended September 30, 2024 and 2025, we spent $38.3 billion and $63.6 billion on capital expenditures, respectively. We expect full year 2025 capital expenditures to exceed full year 2024. In 2026, we expect to significantly increase, relative to 2025, our investment in our technical infrastructure, including servers, network equipment, and data centers, to support the growth of our business and our long-term initiatives, in particular in support of AI products and services."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-Execution-Risk-Data-Centers",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 42600000000,
+            "duration_yrs": 25,
+            "note": "Committed future lease payments for data centers not yet commenced, commencing 2025\u20132031"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of September 30, 2025, we have entered into leases primarily related to data centers that have not yet commenced with future lease payments of $42.6 billion, including a purchase option considered reasonably certain to be exercised. These leases will commence between 2025 and 2031 with non-cancelable lease terms between one and 25 years."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Alphabet-Non-Marketable-Equity-Securities",
+        "fields": {
+          "investor": "Alphabet",
+          "target": "Various AI Labs and Tech Companies",
+          "disclosed_date": "2025-09-30",
+          "verbatim_quote": "OI&E of $12.8 billion for the three months ended September 30, 2025 included net gains on equity securities of $10.7 billion, primarily related to unrealized gains on our non-marketable equity securities."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Wiz",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "context": "Wiz acquisition in progress as of Q3 2025 10-Q filing"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "capex_commitment",
+        "target_name": "Alphabet-Technical-Infrastructure-Q3-2025",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "capex_commitment",
+        "target_name": "Alphabet-Capex-9M2025",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "off_balance_entity",
+        "target_name": "Alphabet-Data-Center-Leases-Uncommenced",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "off_balance_entity",
+        "target_name": "Alphabet-Consolidated-VIEs",
+        "predicate": "SPONSORED"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-Capex-ROI-Gap",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-Execution-Risk-Data-Centers",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-Hidden-Leverage-Data-Center-Leases",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-Derivative-Credit-Backstops",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "investment",
+        "target_name": "Alphabet-Non-Marketable-Securities-Aggregate",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "Alphabet-Wiz-Acquisition-$32B"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "Alphabet-Content-Licensing-$7.7B"
+      },
+      {
+        "source_type": "capex_commitment",
+        "source_name": "Alphabet-Wiz-Acquisition-$32B",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Wiz"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "Alphabet-Antitrust-Risk-DOJ-Search"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "Alphabet-Antitrust-Risk-DOJ-Ads"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "Alphabet-Antitrust-Risk-EC-Ads"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "Alphabet-Antitrust-Risk-Epic-Play"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-Capex-ROI-Gap-Cloud"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-Regulatory-Execution-Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-Customer-Concentration-YouTube"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-Content-Acquisition-Concentration"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "Alphabet-AI-Infrastructure-2025-2026"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "Alphabet-Purchase-Commitments-2025"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "DEPENDS_ON",
+        "target_type": "off_balance_entity",
+        "target_name": "Alphabet-Future-Data-Center-Leases"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "Alphabet-EC-Competition-Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-CAPEX-ROI-Gap"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-Execution-Risk-Data-Centers"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "INVESTED_IN",
+        "target_type": "investment",
+        "target_name": "Alphabet-Non-Marketable-Equity-Securities"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Wiz"
+      }
+    ],
+    "notes": "[chunk 1/4] EXTRACTION NOTES: This filing is a largely XML/XBRL boilerplate 10-Q with limited narrative content. The extracted source text is primarily structured data tags and financial statement line items with minimal prose narrative suitable for counterparty analysis. KEY FINDING: The forward-looking statements section names only one strategic transaction: Wiz acquisition. No other material customer concentration, supplier dependencies, related-party arrangements, or SIFI-material investments are disclosed in the narrative portions provided. The balance sheet shows: (1) Non-marketable securities increased from $37.982B (Dec 31 2024) to $63.8B (Sept 30 2025), a $25.818B increase suggesting significant VC/growth equity investments not individually disclosed in this excerpt. (2) Long-term debt doubled from $10.883B to $21.607B. (3) Property and equipment grew from $171.036B to $223.787B (+$52.751B), consistent with disclosed AI capex expansion plans. However, the specific investees, capex counterparties, and customer/supplier concentration data are NOT present in the narrative sections extracted. A complete analysis would require: (1) MD&A sections detailing capex commitments; (2) Note 8 (Non-marketable securities) listing individual investments; (3) Note 10 (Commitments & Contingencies) detailing capex and lease obligations; (4) Risk Factors section (Item 1A). The excerpt cuts off before providing these critical sections.\"\n[chunk 2/4] SIFI-MATERIAL FINDINGS FROM ALPHABET 10-Q (2025-09-30):\n\n1. **CAPEX-ROI GAP (Severity 3)**: Alphabet has $69.9B in technical infrastructure assets not yet in service (Sep 30, 2025) plus $42.6B in uncommenced data center lease obligations. This $112.5B capex deployment lacks disclosed customer contracts or revenue commitments, creating execution and demand uncertainty.\n\n2. **EXECUTION RISK (Severity 3)**: $42.6B of data center leases not yet recorded on the balance sheet will commence 2025\u20132031 with terms 1\u201325 years. The purchase options are \"reasonably certain to be exercised,\" adding debt-like obligation. No visibility into utilization rates or revenue realization.\n\n3. **HIDDEN LEVERAGE (Severity 3)**: Off-balance-sheet data center lease commitments ($42.6B) represent ~19% of gross technical infrastructure assets ($247.9B in-service). Additionally, $6.5B notional credit derivatives backstop third-party data center leases\u2014contingent liabilities with up to 10-year exposure periods.\n\n4. **Consolidated VIEs**: Alphabet sponsors VIEs primarily in \"Other Bets\" with $1.8B of non-recourse liabilities (Sep 30, 2025). Creditors have no recourse to parent; ongoing funding required.\n\n5. **Non-Marketable Equity Securities**: $61.1B aggregate carrying value of private company investments (up from $35.5B Dec 31, 2024). $38.9B was remeasured at fair value in Q3 2025, indicating high volatility. No breakdown by counterparty disclosed (privacy/competitive sensitivity likely).\n\n6. **Revenue Backlog & Deferred Revenue**: Google Cloud has $157.7B revenue backlog; only ~55% expected to be recognized in next 24 months. This suggests long revenue tail and potential concentration risk in cloud customer base.\n\n7. **Operating Leverage**: Operating lease cost up 14% YoY in 9M 2025 ($2.47B vs $2.46B) while finance lease amortization doubled. Variable lease costs surged 20% YoY ($1.2B vs $1.0B), signaling accelerating infrastructure expansion.\n\n**SKIP**: Boilerplate risk disclosures, standard FX hedging programs, routine debt issuances, executive compensation, SEC fines accruals (non-SIFI).\n\n**KEY COUNTER-PARTY GAPS**: Filing does not name specific AI labs, cloud customers, or infrastructure vendors. Google Cloud's $41.0B revenue (9M 2025) lacks customer concentration disclosures\u2014SIFI-relevant if single customer exceeds 10% of revenue.\n[chunk 3/4] EXTRACTION SUMMARY \u2014 Alphabet 10-Q Q3 2025 (Filing 2025-10-30):\n\nSIFI-MATERIAL ENTITIES & RELATIONSHIPS EXTRACTED:\n\n1. **Wiz Acquisition ($32B pending)**: Major capex commitment (all-cash) expected to close 2026. Adds cloud security to Google Cloud segment. Execution contingent on regulatory approval.\n\n2. **Content Licensing Commitments ($7.7B through Q1 2030)**: Quarterly payment obligations to video content providers, primarily for YouTube. Represents supplier concentration risk.\n\n3. **Regulatory & Antitrust Cascade**: Alphabet faces 8+ overlapping antitrust enforcement actions across:\n   - **US DOJ (Search)**: Sep 2025 remedy decision imposed distribution restrictions and data-sharing mandates\n   - **US DOJ (Ads Tech)**: Apr 2025 mixed ruling; Sep 2025 remedy proceeding ongoing; DOJ proposes structural remedies (critical severity)\n   - **EC (Ads)**: Sep 2025 decision imposing \u20ac3.0B fine for \"self-preferencing\" + cease-desist orders\n   - **Epic Games (Play)**: Oct 2024 remedies affirmed on appeal; altered Android/Play business model\n   - **UK, Australia, Japan**: Additional Search/Android distribution investigations with settlement/compliance orders\n\n4. **Capex-ROI Gap Signal**: US long-lived assets surged from $139B (Dec 2024) to $175.6B (Sep 2025), a ~$36.7B increase YTD. Google Cloud segment shows 24% operating margin (9-mo 2025: $8.6B op income / $41B revenue), suggesting high infrastructure footprint relative to near-term cloud monetization runway.\n\n5. **Customer Concentration**: YouTube (ads + subscriptions) represents ~26% of Google Services revenue. Limited revenue diversification among primary advertising channels.\n\n6. **Execution Risk**: The overlap of DOJ remedies (Search distribution), EC mandates (ads tech), and Android/Play compliance requirements creates conflicting operational mandates that will strain execution capacity throughout 2026\u20132027.\n\nNO HIDDEN LEVERAGE SIGNALS: No SPV, operating lease with RVG, project finance, or off-balance-sheet debt structures disclosed in this excerpt. Goodwill increased $1.3B YTD (to $33.3B total), within normal parameters.\n\nMISSING/UNAVAILABLE: This 10-Q excerpt does not include full MD&A or Item 1A Risk Factors section. Additional geopolitical, currency, tax, and data privacy risks are likely disclosed in full 10-K, but source text focused on financial statements and selected legal matters.\n[chunk 4/4] SIFI EXTRACTION SUMMARY \u2014 Alphabet (GOOGL) 10-Q Filed 2025-10-30\n\nKEY FINDINGS:\n\n1. **CAPEX_ROI_GAP (Severity 3)**: Alphabet disclosed $63.6B capex for 9M 2025 (vs $38.3B in 9M 2024), with explicit guidance that 2026 capex will \"significantly increase\" to support \"AI products and services.\" However, the filing contains NO disclosed multi-year contracted revenue from AI services. Google Cloud grew 34% YoY ($15.2B Q3 2025) but is still only ~15% of total revenues. The ROI matching between massive AI infrastructure spend and incremental Cloud revenue remains opaque.\n\n2. **EXECUTION_RISK (Severity 3)**: Alphabet has committed to $42.6B in future data center lease payments that have NOT YET COMMENCED, with commencement between 2025\u20132031 and terms up to 25 years. These are operating leases (not capitalized, though disclosed via ASC 842). Multi-year data center projects carry high construction/assembly risk; delays would cascade across AI service roadmap. Assets not yet in service as of 9/30/2025 suggest significant deployment lag.\n\n3. **REGULATORY/ANTITRUST RISK (Severity 4)**: European Commission fined Alphabet \u20ac3.0B ($3.5B) in September 2025 for \"self-preferencing\" in advertising tech. This is the third major EC fine in 7 years (2018: \u20ac4.3B; 2019: \u20ac1.5B; 2025: \u20ac3.0B). Escalating regulatory posture in EMEA (29% of revenue) creates revenue downside and compliance cost risk. Multiple appeals pending.\n\n4. **PURCHASE COMMITMENTS (Severity 2\u20133)**: $93.7B in purchase commitments as of 9/30/2025, of which $72.5B is short-term (mostly technical infrastructure and inventory orders). These are non-cancellable or subject to minimum cancellation fees. Supply chain concentration and pricing risk embedded; no breakdown by supplier.\n\n5. **INVESTMENT DISCLOSURE GAP**: OI&E included $10.7B in unrealized gains on \"non-marketable equity securities\" for Q3 2025. This suggests Alphabet holds equity stakes in private AI labs or infrastructure cos, but the 10-Q does NOT enumerate the investees (unlike NVIDIA's Note 8 roster). Per Note 7 (not provided in source), these stakes likely include strategic positions in early-stage AI companies. Impact on SIFI circularity web is significant but unquantified.\n\n6. **PENDING ACQUISITION (Wiz)**: $32B all-cash acquisition of cloud security platform Wiz announced March 2025, expected close in 2026 subject to regulatory approval. Adds to capex/cash deployment but diversifies infrastructure security moat. Not yet material to current-period results.\n\n7. **REVENUE CONCENTRATION**: Google Services (advertising) represents 85% of revenues ($87.0B out of $102.3B in Q3 2025). Google Cloud is growing fast but still only 15% and dependent on hyperscaler infrastructure partnerships and content provider licensing.\n\n**NO CIRCULARITY or REVENUE ROUNDTRIP signals identified in this 10-Q excerpt.** The filing does not disclose counterparty-web links to OpenAI, CoreWeave, or other AI infrastructure vendors in the text provided. However, the $10.7B unrealized gains on non-marketable equity suggests hidden exposures.\n\n**LEASE ACCOUNTING NOTE**: The $42.6B in future data center lease payments are disclosed but NOT reflected as a liability on the balance sheet as of 9/30/2025 (leases not yet commenced). This is compliant under ASC 842 but represents a material off-balance-sheet commitment.\n"
+  }
+}

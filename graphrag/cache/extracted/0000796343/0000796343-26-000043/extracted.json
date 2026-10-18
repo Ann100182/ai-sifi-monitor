@@ -1,0 +1,129 @@
+{
+  "director_comp": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "filer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Compensia",
+        "fields": {
+          "role": "service_provider",
+          "aliases": [
+            "Compensia, Inc."
+          ]
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/1] FILING: Adobe DEF 14A (2026-02-27). SECTION: Director Compensation. ASSESSMENT: This section contains no SIFI-material entities or relationships. The text is pure boilerplate on non-employee director compensation structure (retainers, RSUs, committee fees, deferred compensation plan, stock ownership guidelines). Compensia, Inc. is mentioned only as Adobe's independent compensation consultant for peer benchmarking\u2014a standard advisory relationship with no leverage, circularity, concentration, or off-balance-sheet implication. No customer, supplier, investment, or related-party concentration risk identified. No capex commitments, hidden leverage, or counterparty dependencies. The deferred compensation plan is unfunded and nonqualified (standard director perquisite). No material business relationship, acquisition, or strategic partnership mentioned. SKIP all director names and compensation detail\u2014not SIFI-relevant.\""
+  },
+  "comp_disc_analysis": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/3] ADBE DEF 14A (filed 2026-02-27) \u2014 Compensation Discussion & Analysis section. This filing section is entirely focused on executive compensation program design, performance metrics (TSR, Net New Sales, ARR), and NEO pay decisions for fiscal year 2025. There are no named external counterparties, no customer/supplier concentration disclosures, no investment or acquisition mentions, no SPVs or off-balance-sheet entities, no related-party arrangements, and no AI lab relationships disclosed. The section references Adobe's own products (Acrobat Studio, Adobe Firefly, Adobe Firefly Foundry, Adobe GenStudio) only in the context of CEO leadership narrative, not as material business relationships. No SIFI-material entities or signals are present in this section. No nodes or edges are extracted.\n[chunk 2/3] This DEF 14A section covers Adobe's Compensation Discussion & Analysis for fiscal year 2025. After thorough review, no SIFI-material entities were identified. The filing contains: (1) standard executive compensation disclosures (PSP payouts, RSU grants, salary tables) \u2014 not SIFI-material; (2) a peer group list of public companies used solely for compensation benchmarking purposes \u2014 not indicative of business relationships, customer concentration, supplier dependencies, or counterparty web relevance; (3) routine governance disclosures (clawback policies, stock ownership guidelines, insider trading policy) \u2014 boilerplate; (4) engagement of Compensia as independent compensation consultant \u2014 immaterial vendor relationship; (5) no named investments, acquisitions, SPVs, off-balance-sheet arrangements, AI lab relationships, compute purchases/sales, or any of the 8 SIFI risk patterns. The peer group (Alphabet, Amazon, AMD, Airbnb, Apple, Autodesk, Broadcom, Cisco, Intuit, Meta, Microsoft, Netflix, NVIDIA, Oracle, Palo Alto Networks, PayPal, Salesforce, SAP, ServiceNow, Workday) is referenced strictly for talent competition and compensation benchmarking \u2014 not as business counterparties. Extracting these as nodes would be misleading for the counterparty-web analysis. No nodes or edges are warranted from this section.\n[chunk 3/3] The ADBE DEF 14A Compensation Discussion & Analysis section contains no SIFI-material entities. The content covers: (1) Nonqualified Deferred Compensation Plan mechanics and balances for NEOs \u2014 routine executive compensation, no related-party or third-party counterparty involvement; (2) Change of Control and Severance provisions \u2014 standard governance boilerplate, no named acquirer counterparties; (3) CEO Pay Ratio and Pay vs. Performance tables \u2014 internal metrics only; (4) Equity Compensation Plan Information \u2014 internal share reserve tables, with one minor historical note about the Magento acquisition (June 2018, long since closed and immaterial); (5) Security Ownership table \u2014 cut off before any 5%+ holder names were disclosed. None of the content touches hidden leverage, circularity, revenue roundtripping, capex commitments, AI lab relationships, customer/supplier concentration, or off-balance-sheet entities that would be SIFI-material. No nodes or edges extracted per hard rule 3."
+  },
+  "beneficial_owners": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "The Vanguard Group",
+        "fields": {
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "BlackRock",
+        "fields": {
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "KPMG",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "Adobe Inc."
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "KPMG",
+        "fields": {
+          "role": "auditor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadridge",
+        "fields": {
+          "role": "service_provider"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "The Vanguard Group",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "Adobe",
+        "properties": {
+          "shares": 41472249,
+          "pct_of_class": 10.17,
+          "filing_date": "2026-02-05",
+          "as_of_date": "2026-01-30"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "BlackRock",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "Adobe",
+        "properties": {
+          "shares": 37969080,
+          "pct_of_class": 9.31,
+          "filing_date": "2024-01-25",
+          "as_of_date": "2023-12-31"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "predicate": "DEPENDS_ON",
+        "target_type": "company",
+        "target_name": "KPMG",
+        "properties": {
+          "service_type": "audit",
+          "tenure_years": 43,
+          "fy2025_fees_usd": 11364222
+        }
+      }
+    ],
+    "notes": "[chunk 1/5] FILING ANALYSIS: Adobe Inc. DEF 14A (Proxy Statement) filed 2026-02-27. SIFI-material extraction from Beneficial Owners section.\n\nFINDINGS:\n1. **Institutional Investor Concentration**: The Vanguard Group and BlackRock collectively hold ~19.5% of Adobe's outstanding shares. Vanguard holds 41.5M shares (10.17%), BlackRock holds 37.97M shares (9.31%). Both are above the 10% individually material threshold. No other concentrated holdings detected.\n\n2. **Auditor Dependency**: KPMG has served as Adobe's independent registered public accounting firm for 43 years (since FY 1983), with FY2025 fees of $11.36M. This represents single-source audit dependency but is routine for public companies and pre-approved by the Audit Committee per policy.\n\n3. **Executive/Director Ownership**: Minimal insider ownership. CEO Shantanu Narayen holds 438,975 shares (~0.1%). All directors and executive officers as a group hold only 803,767 shares (~0.2%). No pledged shares noted.\n\n4. **Equity Incentive Program**: 2019 Equity Incentive Plan requesting 12M additional shares (total authorization would increase from 76M to 87.5M). Gross burn rate 1.4% FY2025, 3-year avg 1.1%. No material red flags on dilution given peer benchmarking language.\n\nSIFI-IMMATERIAL EXCLUSIONS:\n- Standard director election and proxy mechanics (boilerplate governance)\n- Routine compensation disclosure and say-on-pay advisory vote (standard under Dodd-Frank)\n- Generic equity plan administration provisions (fungible share ratios, vesting mechanics, tax consequences)\n- Routine internal audit committee oversight and PCAOB compliance\n\nNO HIDDEN LEVERAGE, CIRCULARITY, REVENUE ROUNDTRIPPING, CAPEX GAPS, EXECUTION RISK, COST OPACITY, OR CONCENTRATION RISKS identified in this beneficial ownership and proxy governance section. The filing is primarily administrative proxy disclosures with no undisclosed off-balance-sheet arrangements or counterparty web materiality.\n[chunk 2/5] FILING CONTEXT: ADBE DEF 14A (2026-02-27). SECTION: Beneficial Owners & Stockholder Proposals (Proposals 5\u20138). ASSESSMENT: This section contains ZERO SIFI-material entities. The text discusses routine shareholder governance matters: (1) executive compensation/severance policy; (2) board diversity disclosure; (3) content moderation practices; (4) retirement plan investment options. No named counterparties, no leverage, no circularity, no capex commitments, no investments in AI labs or strategic infrastructure partners, no off-balance entities. The stockholder proposals themselves (golden parachutes, board matrix, civil liberties, climate risk) are policy/governance advocacy without financial substance. Compensia (compensation consultant) and Innisfree M&A (proxy solicitor at $25k fee) are routine service vendors, not SIFI-material. No hiding of leverage, no supply-chain concentration, no revenue roundtripping, no execution risk on infrastructure. SIFI FILTER RESULT: SKIP. Return empty graph.\n[chunk 3/5] Section 111-112 of Adobe DEF 14A (2026-02-27) contains only procedural boilerplate regarding stockholder proposals, proxy access nominations, and director election mechanics. No SIFI-material entities, business relationships, customer/supplier dependencies, investments, acquisitions, related-party arrangements, or strategic partnerships are disclosed. Content is governance process only and falls below extraction threshold.\n[chunk 4/5] ADBE DEF 14A (2026-02-27): The beneficial owners section and attached annexes (Annex A: Non-GAAP Measures, Annex B: 2019 Equity Incentive Plan, and voting instructions) contain no SIFI-material information. The document consists entirely of:\n\n1. **Annex A (Non-GAAP Measures)**: Standard accounting disclosures explaining adjustments for stock-based compensation, amortization of intangibles, acquisition-related expenses, investment gains/losses, litigation accruals, lease-related impairments, tax adjustments. These are routine financial reporting metrics with no material business relationships, counterparty concentrations, hidden leverage, or execution risks disclosed.\n\n2. **Annex B (2019 Equity Incentive Plan)**: Boilerplate equity plan documentation covering plan administration, eligibility, award types (options, SARs, restricted stock units, performance shares), vesting, change-of-control provisions, tax withholding, and definitions. No named counterparties, related-party transactions, or strategic business partnerships mentioned beyond generic governance structures (Board, Committee, Officers).\n\n3. **Voting Instructions**: Standard proxy voting procedures (internet, telephone, mail).\n\n**Conclusion**: No SIFI-material entities, relationships, investments, acquisitions, or related-party arrangements are disclosed in this section. The text contains only standard equity compensation plan mechanics and non-GAAP reconciliation disclosures. There are no customer concentration risks, supplier dependencies, hidden leverage structures, circularity patterns, capex commitments, or execution risks to extract. This section does not contain information relevant to the AI SIFI Monitor's counterparty-web, leverage, or concentration analysis.\n[chunk 5/5] DEF 14A beneficial_owners section contains no SIFI-material content. The source text is a proxy voting card and administrative instructions. It names: (1) Adobe Inc. as the filer, (2) KPMG LLP as the proposed independent registered public accounting firm (standard auditor engagement with no unusual terms disclosed), and (3) Broadridge as the proxy agent for vote collection and mailing. No customer concentration, supplier dependencies, strategic partnerships, investments, acquisitions, or related-party arrangements are disclosed in this section. All content is routine proxy administration and shareholder voting mechanics. No risk signals detected.\""
+  }
+}

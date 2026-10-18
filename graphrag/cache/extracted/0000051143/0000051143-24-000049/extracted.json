@@ -1,0 +1,1142 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "StreamSets",
+        "fields": {
+          "aliases": [
+            "StreamSets"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "WebMethods",
+        "fields": {
+          "aliases": [
+            "WebMethods"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "HashiCorp",
+        "fields": {
+          "aliases": [
+            "HashiCorp"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "The Weather Company",
+        "fields": {
+          "aliases": [
+            "The Weather Company"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "QRadar",
+        "fields": {
+          "aliases": [
+            "QRadar SaaS"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Software AG",
+        "fields": {
+          "aliases": [
+            "Software AG"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Palo Alto Networks",
+        "fields": {
+          "aliases": [
+            "Palo Alto"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Francisco Partners",
+        "fields": {
+          "aliases": [
+            "Zephyr Buyer, L.P."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "HashiCorp",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "The Prudential Insurance Company of America",
+        "fields": {
+          "aliases": [
+            "The Insurer",
+            "Prudential"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "HashiCorp-Acquisition",
+        "fields": {
+          "filer": "IBM",
+          "amount_usd": 6400000000,
+          "counterparty": "HashiCorp",
+          "purpose": "Acquisition of HashiCorp to create comprehensive end-to-end hybrid cloud platform designed for the AI era",
+          "start_fy": 2024,
+          "verbatim_quote": "Under the terms of the definitive agreement, HashiCorp's shareholders on record immediately prior to the effective time on the closing date will receive $35 per share in cash, representing a total enterprise value of approximately $6.4 billion."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "IBM-Prudential-PPP-Annuity",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "IBM",
+          "beneficiary": "The Prudential Insurance Company of America",
+          "debt_stack_usd": 6000000000,
+          "purpose": "Pension obligation transfer via group annuity contract",
+          "verbatim_quote": "In September 2024, the IBM Qualified Personal Pension Plan (Qualified PPP) purchased a nonparticipating single premium group annuity contract from The Prudential Insurance Company of America (the Insurer) and irrevocably transferred to the Insurer approximately $6 billion of the Qualified PPP's defined benefit pension obligations and related plan assets"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "IBM-Francisco-Weather",
+        "fields": {
+          "investor": "Francisco Partners",
+          "target": "The Weather Company",
+          "amount_usd": 1100000000,
+          "disclosed_date": "2024-01-31",
+          "verbatim_quote": "On January 31, 2024, the company completed the sale of The Weather Company assets to Zephyr Buyer, L.P., a wholly-owned subsidiary of Francisco Partners (collectively, Francisco). Under the agreement, Francisco acquired The Weather Company assets from IBM for $1,100 million inclusive of $250 million of contingent consideration"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Pension-Settlement-Risk",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "named_counterparties": [
+            "The Prudential Insurance Company of America"
+          ],
+          "numeric_signal": {
+            "amount_usd": 2700000000,
+            "note": "One-time non-cash pension settlement charge in Q3 2024"
+          },
+          "verbatim_quote": "In September 2024, the IBM Qualified Personal Pension Plan (Qualified PPP) purchased a nonparticipating single premium group annuity contract from The Prudential Insurance Company of America (the Insurer) and irrevocably transferred to the Insurer approximately $6 billion of the Qualified PPP's defined benefit pension obligations and related plan assets, thereby reducing the company's pension obligations and assets by the same amount. As a result of this transaction, the company recognized a one-time, non-cash, pre-tax pension settlement charge of $2.7 billion"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Goodwill-Accumulation",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "named_counterparties": [
+            "Software AG",
+            "HashiCorp"
+          ],
+          "numeric_signal": {
+            "amount_usd": 61092000000,
+            "pct_of_assets": 45.5,
+            "note": "Goodwill as of Sept 30, 2024 represents 45.5% of total assets; recent acquisitions add significant additional goodwill"
+          },
+          "verbatim_quote": "The goodwill generated is primarily attributable to the assembled workforce of the acquired businesses and the increased synergies expected to be achieved from the integration of the acquired businesses into the company's various integrated solutions and services, neither of which qualifies as an amortizable intangible asset."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Supplier-Finance-Program",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 1,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 99000000,
+            "duration_yrs": 0.33,
+            "note": "Supplier finance obligations at Sept 30, 2024; average term 90-120 days"
+          },
+          "verbatim_quote": "The company has supplier finance programs with third-party financial institutions where the company agrees to pay the financial institutions the stated amounts of invoices from participating suppliers on the originally invoiced maturity date, which have an average term of 90 to 120 days, consistent with the company's standard payment terms. The obligations outstanding under these programs at September 30, 2024 and December 31, 2023 were $99 million and $101 million, respectively."
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "IBM-IIC-$5.5B",
+        "fields": {
+          "entity_type": "SPV",
+          "sponsor": "IBM",
+          "beneficiary": "IBM",
+          "debt_stack_usd": 5500000000,
+          "purpose": "Finance subsidiary issuing debt to fund IBM operations and financing business",
+          "verbatim_quote": "IBM International Capital Pte. Ltd (IIC), a wholly owned finance subsidiary of the company, issued $5.5 billion of U.S. dollar fixed rate notes (IIC Notes) in tranches with maturities ranging from 2 to 30 years and coupons ranging from 4.6 to 5.3 percent. These notes are fully and unconditionally guaranteed by the company."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "IBM-Client-Financing-Commitment",
+        "fields": {
+          "filer": "IBM",
+          "amount_usd": 1800000000,
+          "counterparty": "IBM clients",
+          "purpose": "Future financing to clients in connection with client purchase agreements",
+          "verbatim_quote": "the company has committed to provide future financing to its clients in connection with client purchase agreements for $1.8 billion"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-HIDDEN_LEVERAGE-Financing-Receivables",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 10696000000,
+            "pct_of_assets": null,
+            "note": "Financing receivables portfolio of $10.7B net with $3.8B in operating leases containing unguaranteed residual values ($457M), representing capital-light lending exposure to clients"
+          },
+          "named_counterparties": [
+            "IBM clients",
+            "Business partners and distributors"
+          ],
+          "verbatim_quote": "Financing receivables primarily consist of client loan and installment payment receivables (loans), investment in sales-type and direct financing leases (collectively referred to as client financing receivables) and commercial financing receivables. Investment in Sales-Type and Direct Financing Leases relate principally to the company's Infrastructure products and are for terms generally up to five years."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-EXECUTION_RISK-Receivables-Transfer",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 1300000000,
+            "note": "Commercial financing receivables transfer capacity reduced from $3.0B to $1.3B in January 2024, indicating tightening of receivables monetization capacity"
+          },
+          "named_counterparties": [
+            "Third-party investor",
+            "Third-party financial institutions"
+          ],
+          "verbatim_quote": "The company has an existing agreement with a third-party investor to sell IBM short-term commercial financing receivables on a revolving basis. This agreement previously allowed for sales up to $3.0 billion. In December 2023, the company amended and renewed its agreement for a one-year term, which reduced the limit to $1.3 billion in January 2024."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-CUSTOMER_CONCENTRATION-Client-Financing",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 5765000000,
+            "pct_of_revenue": null,
+            "note": "Current portion of client financing receivables ($5.8B) represents material concentration of credit risk to IBM clients and business partners; $1.8B committed to future client financing"
+          },
+          "named_counterparties": [
+            "IBM clients",
+            "Business partners",
+            "Distributors"
+          ],
+          "verbatim_quote": "Loans are provided primarily to clients to finance the purchase of IBM hardware, software and services. Commercial financing receivables, which consist of both held-for-investment and held-for-sale receivables, relate primarily to working capital financing for business partners and distributors of IBM products and services."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-RiskFactor-LitigationExposure",
+        "fields": {
+          "filer": "IBM",
+          "category": "Legal & Contingencies",
+          "named_counterparties": [
+            "GlobalFoundries",
+            "BMC Software"
+          ],
+          "severity": 2,
+          "verbatim_quote": "On June 8, 2021, IBM sued GlobalFoundries U.S. Inc. (GF) in New York State Supreme Court for claims including fraud and breach of contract relating to a long-term strategic relationship between IBM and GF for researching, developing, and manufacturing advanced semiconductor chips for IBM. GF walked away from its obligations and IBM is now suing to recover amounts paid to GF, and other compensatory and punitive damages, totaling more than $1.5 billion."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-RiskFactor-EnvironmentalLiability",
+        "fields": {
+          "filer": "IBM",
+          "category": "Environmental & Regulatory",
+          "named_counterparties": [
+            "U.S. environmental agencies",
+            "Brazilian tax authorities"
+          ],
+          "severity": 2,
+          "verbatim_quote": "The company is party to, or otherwise involved in, proceedings brought by U.S. federal or state environmental agencies under the Comprehensive Environmental Response, Compensation and Liability Act (CERCLA), known as \"Superfund,\" or laws similar to CERCLA... The total potential amount related to all these matters for all applicable years is approximately $300 million."
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "RBC Life Insurance Company",
+        "fields": {
+          "aliases": [
+            "RBC"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Brookfield Annuity Company",
+        "fields": {
+          "aliases": [
+            "Brookfield"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM Canada Ltd",
+        "fields": {
+          "aliases": [
+            "IBMC"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "IBM-Qualified-PPP-Annuity-Transfer-6B",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "IBM",
+          "beneficiary": "IBM",
+          "debt_stack_usd": 6000000000,
+          "purpose": "Group annuity contract to transfer defined benefit pension obligations",
+          "verbatim_quote": "In September 2024, the Qualified PPP irrevocably transferred to the Insurer approximately $6 billion of the Qualified PPP's defined benefit pension obligations and related plan assets, thereby reducing the company's pension obligations and assets by the same amount."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "IBMC-Annuity-Transfer-1.2B",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "IBM Canada Ltd",
+          "beneficiary": "IBM Canada Ltd",
+          "debt_stack_usd": 1200000000,
+          "purpose": "Group annuity contracts with RBC Life Insurance Company and Brookfield Annuity Company to transfer pension obligations",
+          "verbatim_quote": "In the fourth quarter of 2024, IBM Canada Ltd. purchased two separate nonparticipating single premium group annuity contracts from RBC Life Insurance Company and Brookfield Annuity Company that will transfer to the Insurers approximately $1.2 billion of the IBMC IBM Retirement Plan's defined benefit pension obligations"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-Pension-Settlement-Risk",
+        "fields": {
+          "filer": "IBM",
+          "category": "Pension De-risking / Actuarial Remeasurement",
+          "named_counterparties": [
+            "RBC Life Insurance Company",
+            "Brookfield Annuity Company"
+          ],
+          "severity": 2,
+          "verbatim_quote": "The company recognized a one-time, non-cash, pre-tax pension settlement charge of $2.7 billion ($2.0 billion net of tax) in the third quarter of 2024 primarily related to the accelerated recognition of actuarial losses included within AOCI"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Amortization-Period-Change",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 300000000,
+            "duration_yrs": 1,
+            "note": "Recognized actuarial losses increase for 9M 2024 vs 2023 due to amortization period change"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As a result of this change, inactive pension plan participants no longer represent substantially all of the participants in the Qualified PPP. As required by U.S. GAAP, this changed the amortization period of unrecognized actuarial losses from the average remaining life expectancy of inactive plan participants to the average remaining service period of active plan participants in 2024. Recognized actuarial losses for the U.S. Plans increased by approximately $100 million and $300 million for the three and nine months ended September 30, 2024, respectively"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Prudential Insurance Company of America",
+        "fields": {
+          "aliases": [
+            "The Insurer"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Red Hat",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Apptio",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "IBM-Hybrid-Cloud-AI-Investment",
+        "fields": {
+          "filer": "IBM",
+          "purpose": "Hybrid cloud and AI strategy, including innovation in Infrastructure for next IBM Z cycle in 2025",
+          "verbatim_quote": "higher spending, including expenses of acquired businesses, as a result of our continued investment to drive our hybrid cloud and AI strategy"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "IBM-Qualified-PPP-Pension-Settlement",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "IBM",
+          "beneficiary": "IBM employee retirees",
+          "purpose": "Transfer of defined benefit pension obligations and related plan assets to Prudential Insurance Company of America",
+          "verbatim_quote": "the IBM Qualified Personal Pension Plan (Qualified PPP) purchased a nonparticipating single premium group annuity contract from The Prudential Insurance Company of America (the Insurer) and irrevocably transferred to the Insurer approximately $6 billion of the Qualified PPP's defined benefit pension obligations and related plan assets"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-Consulting-Revenue-Decline",
+        "fields": {
+          "filer": "IBM",
+          "category": "Consulting Revenue Softness",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "The economic uncertainty caused by temporary factors including geopolitical issues, upcoming elections, and the changing landscape of interest rates and inflation is leading clients to manage their discretionary spending, which has impacted certain areas of our Consulting business"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-Geographic-Currency-Risk",
+        "fields": {
+          "filer": "IBM",
+          "category": "Foreign Currency Exposure",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "In the first nine months of 2024, movements in global currencies continued to impact our reported year-to-year revenue and profit. We execute hedging programs which defer, but do not eliminate, the impact of currency"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Product-Cycle-Execution-Risk",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "IBM Z showing 18.7% revenue decline in Q3 2024 due to product cycle dynamics; next cycle anticipated 2025"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Hybrid Infrastructure revenue of $1,765 million decreased 9.1 percent...Within Hybrid Infrastructure, IBM Z decreased 18.7 percent...reflecting the z16 program cycle dynamics...Our clients continue to face increased demands for workloads given rapid business expansion, complex regulatory environments, and increased cybersecurity threats and attacks. IBM Z remains uniquely positioned to address these demands with the technologies that our latest program offers"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Client-Discretionary-Spending-Reprioritization",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "pct_of_revenue": "Consulting signings decreased 8.7% YoY in Q3 2024"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Consulting signings decreased 8.7 percent as reported and 9.3 percent adjusted for currency. Clients are reprioritizing their IT budgets to prepare for investments in generative AI, while the challenging macroeconomic environment is impacting client spending, particularly on more discretionary projects"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Infrastructure-Support-Decline",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 2,
+          "numeric_signal": {
+            "pct_of_revenue": "Infrastructure Support revenue declined 3.9% in Q3 2024, 5.9% in 9M 2024"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Infrastructure Support revenue of $1,277 million decreased 3.9 percent as reported (3.1 percent adjusted for currency) in the third quarter of 2024 compared to the prior-year period, driven by product cycle dynamics and volume decline in support of non-IBM equipment"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Palo Alto Networks",
+        "fields": {
+          "aliases": [
+            "Palo Alto"
+          ],
+          "role": "partner"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Red Hat",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "HashiCorp",
+        "fields": {
+          "role": "target_acquisition"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Software AG",
+        "fields": {
+          "role": "seller"
+        }
+      },
+      {
+        "type": "company",
+        "name": "RBC Insurance",
+        "fields": {
+          "aliases": [
+            "RBC Life Insurance Company"
+          ],
+          "role": "counterparty"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Brookfield",
+        "fields": {
+          "aliases": [
+            "Brookfield Annuity Company"
+          ],
+          "role": "counterparty"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "IBM-Canada-Annuity-Transaction",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "IBM Canada Ltd.",
+          "co_owner": "RBC Insurance",
+          "beneficiary": "RBC Insurance",
+          "debt_stack_usd": 1200000000,
+          "term_yrs": null,
+          "purpose": "Transfer of pension obligations for ~6,000 participants",
+          "verbatim_quote": "IBM Canada Ltd. ('IBMC') purchased two separate nonparticipating single premium group annuity contracts from RBC Life Insurance Company ('RBC Insurance') and Brookfield Annuity Company ('Brookfield') (collectively the 'Insurers') that will transfer to the Insurers approximately $1.2 billion of the IBMC IBM Retirement Plan's (the 'Plan') defined benefit pension obligations"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "IBM-HashiCorp-Acquisition",
+        "fields": {
+          "filer": "IBM",
+          "amount_usd": 6400000000,
+          "duration_yrs": null,
+          "start_fy": 2024,
+          "counterparty": "HashiCorp",
+          "purpose": "Acquisition of HashiCorp to integrate into Software segment",
+          "verbatim_quote": "Under the terms of the definitive agreement, HashiCorp shareholders on record immediately prior to the effective time on the closing date will receive $35 per share in cash, representing a total enterprise value of approximately $6.4 billion"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "IBM-QRadar-Partnership",
+        "fields": {
+          "investor": "IBM",
+          "target": "Palo Alto Networks",
+          "amount_usd": null,
+          "equity_pct": null,
+          "round": null,
+          "disclosed_date": "2024-08",
+          "verbatim_quote": "In August, we completed the previously announced sale of certain IBM QRadar SaaS assets, which is part of a partnership to deliver AI-powered security solutions using watsonx with Palo Alto"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Pension-Settlement-Charge",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 2725000000,
+            "pct_of_revenue": null,
+            "pct_of_assets": null,
+            "duration_yrs": null,
+            "counterparty_count": 2,
+            "note": "One-time, non-cash pension settlement charge in Q3 2024; transfer of ~$6B pension obligations in Q4 2024"
+          },
+          "named_counterparties": [
+            "RBC Insurance",
+            "Brookfield"
+          ],
+          "verbatim_quote": "impact of a one-time, non-cash pension settlement charge of $2,725 million in the third quarter of 2024 and an increase in recognized actuarial losses due to the change in amortization period effective January 1, 2024"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-IRS-Cross-Border-Tax-Exposure",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 5400000000,
+            "pct_of_revenue": null,
+            "pct_of_assets": null,
+            "duration_yrs": null,
+            "counterparty_count": 1,
+            "note": "IRS proposed adjustments on cross-border transactions; $4.2B (2013-2014) + $1.2B (2015-2016)"
+          },
+          "named_counterparties": [
+            "USG"
+          ],
+          "verbatim_quote": "These adjustments, if sustained, would increase the company's income subject to tax by approximately $4.2 billion, with tax calculated at the relevant federal income tax rate. In the first quarter of 2024, the IRS concluded its examination of the company's U.S. income tax returns for 2015 and 2016 and issued a final RAR proposing adjustments related to certain cross-border transactions that occurred in 2015. The proposed adjustments, if sustained, would increase the company's income subject to tax by approximately $1.2 billion"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-India-Tax-Contingency",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 589000000,
+            "pct_of_revenue": null,
+            "pct_of_assets": null,
+            "duration_yrs": null,
+            "counterparty_count": 1,
+            "note": "Prepaid income taxes held in India for disputed tax assessments"
+          },
+          "named_counterparties": [
+            "India"
+          ],
+          "verbatim_quote": "As of September 30, 2024, the company had recorded $589 million as prepaid income taxes in India. A significant portion of this balance represents cash tax deposits paid over time to protect the company's right to appeal various income tax assessments made by the India Tax Authorities."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Derivative-Liability-Credit-Rating-Trigger",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 500000000,
+            "pct_of_revenue": null,
+            "pct_of_assets": null,
+            "duration_yrs": null,
+            "counterparty_count": null,
+            "note": "Fair value of derivative instruments in liability position subject to credit-rating termination triggers"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Our contractual agreements governing derivative instruments contain standard market clauses which can trigger the termination of the agreement if our credit rating were to fall below investment grade. At September 30, 2024, the fair value of those instruments that were in a liability position was $500 million, before any applicable netting, and this position is subject to fluctuations in fair value period to period based on the level of our outstanding instruments and market conditions."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Unrecognized-Tax-Benefits",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 8615000000,
+            "pct_of_revenue": null,
+            "pct_of_assets": null,
+            "duration_yrs": null,
+            "counterparty_count": 1,
+            "note": "Unrecognized tax benefits; $613M associated with timing and transfer pricing adjustments could reduce if recognized"
+          },
+          "named_counterparties": [
+            "USG"
+          ],
+          "verbatim_quote": "The amount of unrecognized tax benefits at September 30, 2024 is $8,615 million which can be reduced by $613 million associated with timing adjustments, potential transfer pricing adjustments, and state income taxes. The net amount of $8,002 million, if recognized, would favorably affect the company's effective tax rate."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "StreamSets",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "acquisition": true,
+          "segment": "Software",
+          "date": "2024-07-01"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "WebMethods",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "acquisition": true,
+          "segment": "Software",
+          "date": "2024"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "HashiCorp",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "acquisition": true,
+          "segment": "Software",
+          "date": "2024",
+          "note": "Pending acquisition"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "The Weather Company",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "divestiture": true,
+          "disposed_date": "2024-01-31"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "QRadar",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "divestiture": true,
+          "disposed_date": "2024-08-31"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "HashiCorp"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "HashiCorp-Acquisition"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "SOLD_COMPUTE_TO",
+        "target_type": "company",
+        "target_name": "Palo Alto Networks"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "BUYS_COMPUTE_FROM",
+        "target_type": "company",
+        "target_name": "Software AG"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "BENEFITS",
+        "target_type": "off_balance_entity",
+        "target_name": "IBM-Prudential-PPP-Annuity"
+      },
+      {
+        "source_type": "off_balance_entity",
+        "source_name": "IBM-Prudential-PPP-Annuity",
+        "predicate": "SUPPLIES",
+        "target_type": "company",
+        "target_name": "The Prudential Insurance Company of America"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Pension-Settlement-Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Goodwill-Accumulation"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Supplier-Finance-Program"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "off_balance_entity",
+        "target_name": "IBM-IIC-$5.5B",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "capex_commitment",
+        "target_name": "IBM-Client-Financing-Commitment",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-HIDDEN_LEVERAGE-Financing-Receivables",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-EXECUTION_RISK-Receivables-Transfer",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-CUSTOMER_CONCENTRATION-Client-Financing",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "risk_factor",
+        "target_name": "IBM-RiskFactor-LitigationExposure",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "risk_factor",
+        "target_name": "IBM-RiskFactor-EnvironmentalLiability",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "off_balance_entity",
+        "target_name": "IBM-Qualified-PPP-Annuity-Transfer-6B",
+        "predicate": "DEPENDS_ON"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "RBC Life Insurance Company",
+        "predicate": "DEPENDS_ON"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Brookfield Annuity Company",
+        "predicate": "DEPENDS_ON"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM Canada Ltd",
+        "target_type": "off_balance_entity",
+        "target_name": "IBMC-Annuity-Transfer-1.2B",
+        "predicate": "DEPENDS_ON"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "risk_factor",
+        "target_name": "IBM-Pension-Settlement-Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Amortization-Period-Change",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Red Hat",
+        "predicate": "OWNS",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Apptio",
+        "predicate": "OWNS",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Prudential Insurance Company of America",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "transaction_type": "Pension settlement, $6B obligation transfer"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "off_balance_entity",
+        "target_name": "IBM-Qualified-PPP-Pension-Settlement",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {
+          "amount_usd": 6000000000,
+          "type": "Pension obligation transfer"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "capex_commitment",
+        "target_name": "IBM-Hybrid-Cloud-AI-Investment",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Consulting-Revenue-Decline",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Geographic-Currency-Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Product-Cycle-Execution-Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Client-Discretionary-Spending-Reprioritization",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Infrastructure-Support-Decline",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Palo Alto Networks",
+        "predicate": "CIRCULAR_WITH",
+        "properties": {
+          "description": "Strategic partnership for AI-powered security solutions; IBM divested QRadar SaaS assets to Palo Alto"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "HashiCorp",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {
+          "amount_usd": 6400000000,
+          "status": "Pending regulatory approval; expected close by end of 2024"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Software AG",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "description": "IBM acquired StreamSets and webMethods assets from Software AG in July 2024; incurred $68M FX derivative loss on pre-acquisition hedges"
+        }
+      },
+      {
+        "source_type": "off_balance_entity",
+        "source_name": "IBM-Canada-Annuity-Transaction",
+        "target_type": "company",
+        "target_name": "RBC Insurance",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "description": "RBC Insurance is lead administrator for 25% of transferred pension obligations (~$300M)"
+        }
+      },
+      {
+        "source_type": "off_balance_entity",
+        "source_name": "IBM-Canada-Annuity-Transaction",
+        "target_type": "company",
+        "target_name": "Brookfield",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "description": "Brookfield Annuity Company responsible for 75% of transferred pension obligations (~$900M)"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "off_balance_entity",
+        "target_name": "IBM-Canada-Annuity-Transaction",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {
+          "risk_type": "HIDDEN_LEVERAGE",
+          "note": "Pension obligation transfer to third-party insurers reduces on-balance-sheet liabilities but creates dependency on insurer credit quality"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Pension-Settlement-Charge",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-IRS-Cross-Border-Tax-Exposure",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-India-Tax-Contingency",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Derivative-Liability-Credit-Rating-Trigger",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Unrecognized-Tax-Benefits",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      }
+    ],
+    "notes": "[chunk 1/6] \nThe source text is a 10-Q form header and metadata (XBRL tagging structure) for IBM's Q3 2024 filing. The substantive business narrative is not provided in the excerpt, only the document cover page and XBRL dimensional tags. The extraction identifies M&A and divestiture activity from contextual metadata tags:\n\n- **2024 Acquisitions**: StreamSets and WebMethods (Software segment), and HashiCorp (pending, all segments referenced)\n- **2024 Divestitures**: The Weather Company (disposed 2024-01-31) and QRadar SaaS (disposed 2024-08-31)\n- **Segments**: Software, Consulting, Infrastructure, Financing\n\nNo specific counterparty concentrations, off-balance-sheet entities, capex commitments, investment amounts, or SIFI-material risk factors are evident in the cover page and dimensional tag metadata provided. A full extraction would require access to Item 1 (Business), Item 1A (Risk Factors), MD&A, and financial statement footnotes, which are not included in the text submitted.\n\n[chunk 2/6] Extraction from IBM 10-Q filing (2024-10-30). Focus on SIFI-material relationships and risk signals. Key findings: (1) Pension settlement with Prudential (Oct 2024) transferred ~$6B in obligations, generating $2.7B one-time non-cash charge\u2014cost opacity risk from sudden actuarial adjustments. (2) Goodwill of $61.1B (45.5% of assets) accumulated through acquisitions; recent StreamSets/webMethods ($2.3B) and pending HashiCorp ($6.4B) acquisitions add to intangible-asset concentration risk. (3) Supplier finance program ($99M) is immaterial but documented per new standard. (4) QRadar SaaS sale to Palo Alto (Aug 2024, $500M) establishes customer relationship; IBM retains certain on-prem contracts and receives migration bonuses. (5) FiledWeather Company divestiture to Francisco Partners (Jan 2024, $1.1B) included $100M seller financing\u2014minor off-balance liability. No explicit AI lab investments, hyperscaler circularity, or hidden leverage > $1B detected in this excerpt. Remaining Performance Obligations of $57B with 70% expected in 2 years provides execution visibility but no counterparty concentration data disclosed.\"\n[chunk 3/6] EXTRACTION SUMMARY: IBM 10-Q filing dated 2024-10-30. Focused on financing receivables, capital commitments, and legal contingencies.\n\nKEY FINDINGS:\n\n1. **HIDDEN LEVERAGE \u2014 Finance Receivables & SPV Debt**:\n   - IBM-IIC: Wholly-owned finance subsidiary (100% owned) issuing $5.5B in secured debt (Feb 2024) with 2\u201330 year maturities at 4.6\u20135.3% coupons. Fully guaranteed by IBM parent.\n   - Client financing receivables: $10.7B net (current $5.8B), including $3.8B in sales-type/direct financing leases with $457M in unguaranteed residual values (RVG exposure, operating lease risk).\n   - Commercial financing receivables: $509M held-for-sale; $5.6B transferred YTD at 54.9% loss rate net (49M loss on 5.6B sales).\n\n2. **EXECUTION RISK \u2014 Receivables Monetization Constraint**:\n   - IBM's ability to transfer commercial financing receivables to third parties CONTRACTED sharply: Dec 2023 amendment reduced facility from $3.0B \u2192 $1.3B effective Jan 2024 (57% haircut). Indicates tightening credit conditions or counterparty risk.\n   - Only $5.6B transferred YTD (vs. $6.5B prior year) despite $1.8B committed future client financing, suggesting limited liquidity on the financing business.\n\n3. **CUSTOMER CONCENTRATION \u2014 Client Financing Dependency**:\n   - IBM extends credit directly to clients (up to 7 years on loans, 5 years on leases) and to distributors/partners (30\u201360 day working capital). $5.8B current portion is material concentration.\n   - Past-due aged > 90 days: $120M at Q3 2024 (1.2% of total client receivables), with $103M not accruing. Allowance for credit losses improved from $156M to $131M YoY (lower reserve coverage).\n\n4. **LEGAL & CONTINGENCY RISKS** (Severity 2):\n   - GlobalFoundries dispute: IBM pursuing $1.5B+ in damages (fraud & breach of contract on semiconductor R&D/mfg). Appellate Division reversed lower court's dismissal of fraud claim (April 2022). Status: Claims proceeding.\n   - BMC Software dispute: Fifth Circuit reversed $718M+$718M award (punitive damages) in IBM's favor (April 2024). IBM believes no material exposure.\n   - Environmental (CERCLA/Superfund): Multiple active proceedings; ~$300M estimated exposure (Brazil tax assessments largest component).\n\n5. **COST OPACITY \u2014 Intangible Asset Goodwill**:\n   - Goodwill +$914M YTD to $61.1B (11.3% of total assets). Acquisitions: StreamSets & webMethods (Software AG, July 2024) added $1.4B intangibles in Q3. No goodwill impairments recorded in 9M 2024 or FY 2023\u2014appears to lack sensitivity to operational headwinds.\n   - Intangible amortization accelerating: $1.9B (9M 2024) vs. $1.7B (9M 2023); $705M in Q3 2024 alone. Suggests aggressive amortization schedule or recent acquisition flush.\n\n6. **OPERATIONAL LEVERAGE \u2014 Financing Business Contraction Signal**:\n   - Lease income declining: $729M (9M 2024) vs. $689M (9M 2023), but gross profit on sales-type leases improved ($423M vs. $395M). Indicates shift in mix, not necessarily growth.\n   - Extended warranty liability dropping sharply: $112M (Q3 2024) vs. $201M (9M 2023 comp), driven by \"shift to alternative maintenance and support offerings without a warranty element\"\u2014signals business model transition risk.\n\nSIFI MATERIALITY THRESHOLD MET:\n- IBM's $10.7B financing receivables book (incl. operating leases with RVG) + $5.5B SPV debt + tightened receivables transfer capacity + legal contingencies warrant monitoring for counterparty web impacts, especially to customers in hardware/infrastructure who may be systemically important (cloud/hyperscalers).\n- Client concentration in infrastructure financing (up to 5-7 year terms) creates duration risk if credit cycles tighten or key customers face stress.\n\n[chunk 4/6] This IBM 10-Q filing (Q3 2024) contains material pension de-risking transactions and accounting changes that create COST_OPACITY and potential leverage restructuring signals. Key findings: (1) IBM transferred $6B of pension obligations via group annuity contract (Q3 2024), recognizing a $2.7B one-time settlement charge; (2) IBM Canada initiated a parallel $1.2B transfer in Q4 2024 with RBC Life and Brookfield; (3) A plan design change in January 2024 shifted the amortization period from inactive to active participants, increasing recognized actuarial losses by $300M YTD\u2014this is a pure accounting effect with no economic impact but masks underlying liability volatility; (4) Derivative hedging notional is large ($9.8B for FX royalty hedges, $5.0B for FX debt, $5.7B for subsidiary cash) but this is routine treasury management, not SIFI-material. The pension moves are de-risking and lower future funding pressure, but the accounting treatment changes warrant monitoring for how they interact with debt covenants or cash flow guidance.\n[chunk 5/6] IBM 10-Q filing (2024-10-30) extracted for SIFI-material entities and risks. Key findings: (1) $6B pension obligation transfer to Prudential Insurance Company of America via group annuity contract in Q3 2024, resulting in $2.7B non-cash settlement charge; (2) Consulting revenue impacted by client spending reprioritization toward AI investments amid macroeconomic uncertainty; (3) IBM Z infrastructure product cycle dynamics driving 18.7% Q3 revenue decline with next cycle anticipated in 2025; (4) Infrastructure Support revenues declining due to product cycles and non-IBM equipment support volume decline; (5) Currency volatility impact partially offset by hedging programs but remains material; (6) Significant ongoing capex commitment to hybrid cloud and AI strategy innovation. No evidence of undisclosed circularity, hidden leverage via SPVs, or revenue round-tripping with named AI labs in this section. Red Hat and Apptio are mature subsidiary operations with strong growth momentum.\""
+  }
+}

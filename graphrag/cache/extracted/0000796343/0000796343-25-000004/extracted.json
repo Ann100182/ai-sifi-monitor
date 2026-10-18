@@ -1,0 +1,906 @@
+{
+  "item_1": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "ADBE"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Blue Owl",
+        "fields": {
+          "role": "infrastructure_partner"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Atlassian",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Marvell Technology",
+        "fields": {
+          "role": "other"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ansys",
+        "fields": {
+          "role": "other"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Frontdoor",
+        "fields": {
+          "role": "other"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intuit",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Visa",
+        "fields": {
+          "role": "other"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Nike",
+        "fields": {
+          "role": "other"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Gap",
+        "fields": {
+          "role": "other"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Macromedia",
+        "fields": {
+          "role": "acquisition"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Behance",
+        "fields": {
+          "role": "acquisition"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Informatics",
+        "fields": {
+          "role": "other"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Symantec",
+        "fields": {
+          "role": "other"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VeriSign",
+        "fields": {
+          "role": "other"
+        }
+      },
+      {
+        "type": "company",
+        "name": "McKinsey",
+        "fields": {
+          "role": "consultant"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Deloitte",
+        "fields": {
+          "role": "auditor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Goldman Sachs",
+        "fields": {
+          "role": "financial_advisor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Applied Materials",
+        "fields": {
+          "role": "other"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NXP Semiconductors",
+        "fields": {
+          "role": "other"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Freescale",
+        "fields": {
+          "role": "other"
+        }
+      },
+      {
+        "type": "company",
+        "name": "GlobalFoundries",
+        "fields": {
+          "role": "other"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Mubadala Technology Fund",
+        "fields": {
+          "role": "investment_fund"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Greylock Partners",
+        "fields": {
+          "role": "venture_capital"
+        }
+      },
+      {
+        "type": "company",
+        "name": "AppDynamics",
+        "fields": {
+          "role": "acquisition"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Benchmark",
+        "fields": {
+          "role": "venture_capital"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Pinterest",
+        "fields": {
+          "role": "other"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Uber",
+        "fields": {
+          "role": "other"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Warby Parker",
+        "fields": {
+          "role": "other"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Gem Software",
+        "fields": {
+          "role": "other"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "company",
+        "target_name": "Behance",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition",
+          "year": 2012
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "company",
+        "target_name": "Macromedia",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition",
+          "context": "David Wadhwani joined Adobe through this acquisition in 2005"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "company",
+        "target_name": "AppDynamics",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition",
+          "context": "AppDynamics was led by David Wadhwani as President and CEO from Sept 2015 to Oct 2019"
+        }
+      }
+    ],
+    "notes": "[chunk 1/1] \n**EXTRACTION NOTES \u2014 Adobe 10-K Item 1 (Business)**\n\nThis Item 1 narrative is primarily boilerplate business description, organizational structure, and market positioning. No SIFI-material entities or relationships were identified meeting the strict extraction criteria.\n\n**Why minimal extraction:**\n\n1. **No customer/supplier concentration signals.** The text mentions diverse customer segments (creative professionals, enterprises, SMBs, governments) but no single customer or supplier represents >10% revenue, nor are any single-source dependencies disclosed.\n\n2. **No hidden leverage, SPVs, or off-balance-sheet arrangements.** No mention of operating leases with residual value guarantees, project-finance structures, or VIEs in Item 1.\n\n3. **No circularity or roundtripping.** No evidence of circular investor-customer-supplier triangles or revenue roundtripping (e.g., equity-for-revenue swaps).\n\n4. **No capex ROI gaps.** Strategic investments mentioned are general R&D spending; no large committed capex to specific counterparties without matched contracted revenue.\n\n5. **No AI lab or private-company investment roster.** The filing does not enumerate Adobe's portfolio of non-marketable equity securities (which would typically appear in financial statement footnotes, not Item 1). The Investments section states only: *\"From time to time, we make direct investments in privately held companies\"* \u2014 no specific targets named.\n\n6. **No strategic partnerships triggering concentration.** While the text mentions partnerships (e.g., *\"strategic partnerships with other technology companies,\"* systems integrators, agencies), these are described as broad ecosystem plays, not SIFI-material counterparty dependencies.\n\n7. **Board and executive affiliations.** Directors and officers listed (Daniel Durn on Marvell Technology board; Anil Chakravarthy on Ansys; Lara Balazs on Frontdoor; Scott Belsky on Atlassian, advisory board relationships with venture firms) are noted, but these are routine governance/advisory positions, not related-party transactions or SIFI-triggering concentrations.\n\n**What would trigger extraction (but is absent):**\n- Named capex commitments to AI labs or hyperscalers (e.g., \"committed $X billion to OpenAI infrastructure\").\n- Off-balance-sheet entities (Hyperion-style SPVs, JVs with infrastructure partners).\n- Equity investments in named AI labs (OpenAI, Anthropic, Mistral, xAI, etc.) with dollar amounts or percentages.\n- Customer/supplier concentration disclosures exceeding 10% of revenue.\n- Circular dependencies (e.g., Adobe sells software to Microsoft, Microsoft sells cloud services to Adobe at discount).\n\n**Edges extracted:**\nThree historical acquisitions (Behance, Macromedia, AppDynamics) are included for context but do not represent SIFI-material financial arrangements active as of the filing date. No risk factors, hidden leverage signals, or circularity detected.\n"
+  },
+  "item_1a": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "ADBE",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "Adobe",
+            "Adobe Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE-AI-Innovation-Risk",
+        "fields": {
+          "filer": "ADBE",
+          "category": "AI Innovation & Monetization",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "These costs could adversely impact our margins as we continue to make significant investments in AI development, add AI capabilities to our offerings and scale our AI offerings without assurance that our customers and users will adopt them."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE-AI-CapexROI-Gap",
+        "fields": {
+          "filer": "ADBE",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "These costs could adversely impact our margins as we continue to make significant investments in AI development, add AI capabilities to our offerings and scale our AI offerings without assurance that our customers and users will adopt them."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE-ThirdParty-AI-Model-Dependency",
+        "fields": {
+          "filer": "ADBE",
+          "category": "Supplier Concentration / Third-Party AI Dependency",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "To the extent we rely on third-party AI models in our products, services and solutions, we will face risks inherent in how those models have been developed and deployed, including situations in which the third party may lack a proper license or consent for the training data used for their model."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE-ThirdParty-AI-Supplier-Concentration",
+        "fields": {
+          "filer": "ADBE",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "We have experienced, and may in the future experience, challenges accessing AI models, datasets or hardware. Developing, testing and deploying AI systems may also increase the cost of our offerings, including due to the nature of the computing costs involved in such systems."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE-EU-AI-Act-Regulatory-Risk",
+        "fields": {
+          "filer": "ADBE",
+          "category": "AI Regulatory Compliance",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 2,
+          "verbatim_quote": "the EU AI Act was adopted in 2024 and will be implemented in phases through 2030, and other jurisdictions are considering similarly focused legislation. These regulations...may...increase our compliance, governance and research and development costs, increase our exposure to claims related to our AI models."
+        }
+      },
+      {
+        "type": "company",
+        "name": "EU",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE-Figma-Acquisition-Regulatory-Termination",
+        "fields": {
+          "filer": "ADBE",
+          "category": "M&A Execution Risk / Regulatory Block",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "we have experienced difficulties in obtaining regulatory approvals, resulting in the termination of a previously announced acquisition and the incurrence of additional costs."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE-MA-Execution-Risk",
+        "fields": {
+          "filer": "ADBE",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "we have experienced difficulties in obtaining regulatory approvals, resulting in the termination of a previously announced acquisition and the incurrence of additional costs. Any of these factors may adversely affect our financial condition or results of operations."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE-CloudInfra-ThirdParty-Dependency",
+        "fields": {
+          "filer": "ADBE",
+          "category": "Third-Party Infrastructure Dependency",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "We rely on third-party service providers and technologies to deliver our products, services and business operations and to operate critical business systems, such as cloud-based infrastructure, data center facilities, generative AI, encryption and authentication technology...If such third parties are negatively affected...our expenses could significantly increase."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE-Cloud-Supplier-Concentration",
+        "fields": {
+          "filer": "ADBE",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "We do not have redundancy for all our systems, many of our critical applications ('Apps') reside in only one of our data centers, and our disaster recovery planning may not account for all eventualities. If any critical third-party service provider of hosting or content delivery services is negatively affected or becomes unavailable to us for any reason, we may not be able to deliver the corresponding products."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE-Debt-Leverage-Risk",
+        "fields": {
+          "filer": "ADBE",
+          "category": "Financial Leverage",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "As of November 29, 2024, we had $5.65 billion in senior unsecured notes outstanding and a $3 billion commercial paper program with no amounts outstanding. We also had a $1.5 billion senior unsecured revolving credit agreement, which was undrawn."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE-Hidden-Leverage",
+        "fields": {
+          "filer": "ADBE",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 5650000000,
+            "note": "$5.65B senior unsecured notes outstanding; $3B commercial paper program; $1.5B revolving credit facility undrawn as of Nov 29, 2024"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of November 29, 2024, we had $5.65 billion in senior unsecured notes outstanding and a $3 billion commercial paper program with no amounts outstanding. We also had a $1.5 billion senior unsecured revolving credit agreement, which was undrawn."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE-CrossBorder-Data-Privacy-Risk",
+        "fields": {
+          "filer": "ADBE",
+          "category": "Data Privacy / Cross-Border Regulatory Risk",
+          "named_counterparties": [
+            "EU",
+            "China"
+          ],
+          "severity": 2,
+          "verbatim_quote": "If other countries implement more restrictive regulations for cross-border data transfers or do not permit data to leave the country of origin, such developments could adversely impact our business...Laws in Asia, such as the Personal Information Protection Law in China and developing laws in India...create additional privacy and security compliance obligations."
+        }
+      },
+      {
+        "type": "company",
+        "name": "China",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE-Goodwill-Impairment-Risk",
+        "fields": {
+          "filer": "ADBE",
+          "category": "Cost Opacity / Goodwill Impairment",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We test goodwill for impairment at least annually. We review our goodwill and intangible assets for impairment when events or changes in circumstances indicate the carrying value may not be recoverable, including declines in stock price, market capitalization or reduced future cash flow estimates...we may be required to record a significant charge to earnings."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE-Goodwill-Cost-Opacity",
+        "fields": {
+          "filer": "ADBE",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "named_counterparties": [],
+          "verbatim_quote": "We review our goodwill and intangible assets for impairment when events or changes in circumstances indicate the carrying value may not be recoverable, including declines in stock price, market capitalization or reduced future cash flow estimates and slower growth rates in our industry."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE-GenAI-Competition-Risk",
+        "fields": {
+          "filer": "ADBE",
+          "category": "Competitive Disruption from Generative AI",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "we face increasing competition from companies offering generative AI capabilities, including text-to-image, text-to-video and multi-modal offerings that compete directly with our creative offerings. If we are not able to provide products, services and solutions that compete effectively, we could experience reduced sales."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE-Cybersecurity-Risk",
+        "fields": {
+          "filer": "ADBE",
+          "category": "Cybersecurity / Data Breach",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Such products, services and solutions as well as our technologies, systems and networks have been subject to, and may in the future be subject to, cyberattacks, computer viruses, ransomware or other malware, fraud, worms, social engineering, denial-of-service attacks...that have in the past, and may in the future, result in the unauthorized access, disclosure, acquisition, use, loss or destruction of sensitive personal or business data."
+        }
+      }
+    ],
+    "edges": [],
+    "notes": null
+  },
+  "item_1b": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] ITEM 1B (Unresolved Staff Comments): Section states \"None.\" \u2014 no unresolved SEC staff comments.\n\nITEM 1C (Cybersecurity): This section describes Adobe's internal cybersecurity governance, risk management framework, and organizational structure (CSO, CCPO, Audit Committee, cybersecurity risk steering committee). It mentions:\n- Use of \"third-party vendors\" (unspecified by name) for security assessments\n- Consultation with \"cybersecurity consultants\" (unspecified)\n- Use of \"security vendor\" threat intelligence (unspecified)\n- Internal processes: penetration testing, vulnerability assessments, employee training, vendor security review program, incident response plan\n\nNo named material counterparties, investments, acquisitions, or strategic partnerships disclosed. No related-party arrangements or SIFI-material leverage structures mentioned. The section is routine governance and risk-management disclosure; it does not name specific vendors, customers, or suppliers, nor does it disclose financial commitments, concentrations, or circularity risks.\n\nPer task instructions: Skip pure boilerplate. This section qualifies as boilerplate cybersecurity governance disclosure without SIFI-material counterparty intelligence.\n\nEXTRACTION RESULT: Zero nodes, zero edges. No SIFI-material entities to extract from this section."
+  },
+  "item_2": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] ITEM 2 (Properties) contains no SIFI-material content. The section describes routine real estate holdings (owned and leased office space and data centers in San Jose, EMEA, APAC, and India). No counterparty concentrations, strategic partnerships, investments, related-party arrangements, or hidden leverage patterns are disclosed. The reference to \"Note 18 of our Notes to Consolidated Financial Statements for further information regarding our lease obligations\" is a standard cross-reference; without that note text, lease obligations cannot be assessed. Extraction scope: 0 nodes, 0 edges."
+  },
+  "item_3": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "ADBE"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Figma",
+        "fields": {
+          "aliases": [
+            "Figma"
+          ],
+          "role": "competitor"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "predicate": "CITES_RISK",
+        "target_type": "company",
+        "target_name": "Figma",
+        "properties": {
+          "context": "Acquisition termination",
+          "amount_usd": 1000000000
+        }
+      }
+    ],
+    "notes": "[chunk 1/1] FILING ANALYSIS: Adobe 10-K (FY2024, filed 2025-01-13). Item 3 (Legal Proceedings) is boilerplate reference to Note 16. Item 5-7 contain MD&A with business operations and financial results. SIFI-MATERIAL FINDINGS: (1) CAPEX_ROI_GAP signal: Adobe disclosed $5.79B in non-cancellable unconditional purchase obligations (primarily third-party hosting and data center services) with $463M in operating lease obligations through 2034, but revenue is subscription-based (95% of $21.5B = $20.5B) with high gross margins (89% on subscription). Infrastructure spend is matched to operations but worth monitoring for scale efficiency. (2) COST_OPACITY: Significant AI training/inferencing cost embedded in R&D ($3.944B, +14% YoY) and hosting/data center costs (mentioned across cost of revenue, R&D, and SG&A) but NOT separately disclosed by amount\u2014only noted as components. This creates opacity on Adobe's actual compute spend and AI scaling costs. (3) FIGMA ACQUISITION FAILURE: $1B termination fee incurred in FY2024 (disclosed in Item 7 MD&A, Operating Expenses). This is a material non-recurring charge but NOT classified as a hidden risk because it is fully disclosed and settled. No circularity or off-balance-sheet leverage involved. (4) CASH POSITION & LIQUIDITY: $7.613B cash + $273M short-term investments as of 2024-11-29; $1.5B revolving credit agreement undrawn; $3B commercial paper program undrawn. Senior notes: $5.65B outstanding (includes $1.5B due Feb 1, 2025, to be refinanced). No solvency concerns. NO SIFI-MATERIAL HIDDEN LEVERAGE, CIRCULARITY, or REVENUE ROUNDTRIP identified in this section. Adobe is a mature, profitable SaaS company with subscription dominance and standard operating leases. The Figma deal failure is disclosed; no undisclosed SPVs or VIEs mentioned.\"\n}\n]"
+  },
+  "item_7a": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] ADBE Item 7A (Market Risk) contains standard foreign currency and interest rate risk disclosures. No SIFI-material financial structures detected. No off-balance-sheet entities, capex commitments to specific counterparties, AI lab investments, or hidden leverage patterns are disclosed in this section. The text covers routine derivative hedging (FX forwards, collateral agreements, sensitivity analyses) and fixed-rate senior notes\u2014all standard treasury operations not requiring knowledge-graph extraction for AI SIFI monitoring. Foreign exchange forward contracts totaling $5.89B notional are routine operational hedges with standard counterparty credit mitigants (master netting, collateral agreements). No circularity, revenue roundtripping, execution risk, or cost opacity signals present."
+  },
+  "financial_statements_and_notes": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE-Figma-Termination-Fee",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Acquisition termination / one-time charge",
+          "named_counterparties": [
+            "Figma"
+          ],
+          "severity": 2,
+          "verbatim_quote": "On December 17, 2023, we entered into a mutual termination agreement with Figma to terminate the proposed merger. In accordance with the terms of the termination agreement, we paid Figma a termination fee of $1 billion. The termination fee was recorded in operating expenses in our Consolidated Statements of Income during fiscal 2024, and was not tax-deductible for financial statement purposes."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE-Data-Center-Lease-Judgment",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 428000000,
+            "note": "Operating lease ROU assets $281M + liabilities $428M ($75M current + $353M long-term) as of Nov 29, 2024; data center leases require judgment on identified asset and right-to-direct-use"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In certain of our lease arrangements, primarily those related to our data center arrangements, judgment is required in determining if a contract contains a lease. For these arrangements, there is judgment in evaluating if the arrangement involves an identified asset that is physically distinct or whether we have the right to substantially all of the capacity of an identified asset that is not physically distinct."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE-Lease-Asset-Impairment-FY2024",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 78000000,
+            "note": "Lease-related asset impairments of $78M in FY2024 vs. $0 in FY2023, indicating potential over-leasing or real-estate rationalization"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Lease-related asset impairments 78 \u2014 \u2014"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE-Buyback-Leverage-Signal",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 9574000000,
+            "note": "Adobe repurchased $9.57B of stock in FY2024, funded in part by $2B new debt issuance; net debt increased ~$2B while treasury stock cumulative balance reached $37.6B"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Repurchases of common stock (9,500) (4,400) (6,550) ... Proceeds from issuance of debt 1,997 \u2014 \u2014"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE-No-Customer-Concentration",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 1,
+          "numeric_signal": {
+            "counterparty_count": 0,
+            "note": "Explicitly disclosed: no single customer \u226510% of net revenue or trade receivables"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "For all periods presented, there were no customers that represented at least 10% of net revenue or that were responsible for over 10% of our trade receivables."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "ADBE-HostingDataCenter-$5.79B",
+        "fields": {
+          "filer": "Adobe",
+          "amount_usd": 5789000000,
+          "duration_yrs": 5,
+          "start_fy": 2025,
+          "purpose": "Non-cancellable unconditional purchase obligations primarily relating to contracts with vendors for third-party hosting and data center services",
+          "verbatim_quote": "The following table summarizes our non-cancellable unconditional purchase obligations for each of the next five years and thereafter as of November 29, 2024, primarily relating to contracts with vendors for third-party hosting and data center services: Total $5,789"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE-HostingConcentration-CapexROIGap",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 5789000000,
+            "duration_yrs": 5,
+            "note": "$5.79B in non-cancellable purchase obligations for third-party hosting and data center services over 5 years, with no disclosed matched contracted revenue. Annual obligations front-loaded: $1.52B in FY2025, $1.23B in FY2026, $1.27B in FY2027, $1.35B in FY2028."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "non-cancellable unconditional purchase obligations for each of the next five years and thereafter as of November 29, 2024, primarily relating to contracts with vendors for third-party hosting and data center services: 2025 $1,523 2026 $1,227 2027 $1,269 2028 $1,345 2029 $416 Thereafter $9 Total $5,789"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE-FigmaCapLoss-CostOpacity",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 1150000000,
+            "note": "$1.15B federal and state capital loss carryforwards from Figma acquisition termination fee, not deductible for financial statement purposes. Valuation allowance increased $321M in FY2024 primarily related to this capital loss."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We also had federal and state capital loss carryforwards of $1.15 billion mainly from the Figma acquisition termination fee which was not deductible for financial statement purposes... the increase in the valuation allowance was $321 million, mainly related to the capital loss generated from the Figma acquisition termination fee."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE-DOJ-ROSCA-Litigation",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Regulatory/Legal \u2014 DOJ civil complaint re subscription cancellation practices",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 3,
+          "verbatim_quote": "on June 17, 2024, the DOJ filed a civil complaint in the United States District Court for the Northern District of California, naming Adobe and certain of our employees as defendants... The defense or resolution of this matter could involve significant monetary costs or penalties and have a significant impact on our financial results and operations."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE-SecuritiesClassAction-Figma",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Legal \u2014 Securities class action re Figma competition disclosures",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "The Securities Action purports to be brought on behalf of purchasers of the Company's stock between July 23, 2021 and September 22, 2022... alleges that certain public statements made by Adobe during the Class Period related to competition from Figma and the adequacy of Adobe's existing offerings to counter harms Adobe may have faced due to Figma's growing market position were materially false and misleading."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE-DebtMaturity-2025",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 1,
+          "numeric_signal": {
+            "amount_usd": 1500000000,
+            "note": "$1.5B in senior notes maturing February 2025 (current as of Nov 29, 2024), plus $2B new debt issued April 2024 for total debt of $5.65B at par \u2014 a 55% increase from $3.65B in FY2023."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In April 2024, we issued $500 million of senior notes due April 4, 2027, $750 million of senior notes due April 4, 2029 and $750 million of senior notes due April 4, 2034. Our total proceeds were approximately $1.99 billion... As of November 29, 2024, the carrying value of our current debt was $1.50 billion"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Adobe-Operating-Leases-FY2024",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Adobe",
+          "purpose": "Facilities and data centers under non-cancellable operating leases expiring through 2034, plus one land lease expiring 2091",
+          "debt_stack_usd": 428000000,
+          "term_yrs": 6,
+          "residual_value_guarantee": false,
+          "verbatim_quote": "Our lease agreements do not contain any material residual value guarantees, material variable payment provisions or material restrictive covenants. ... weighted-average remaining lease term and weighted-average discount rate for our operating lease liabilities as of November 29, 2024 were 6 years and 2.69%, respectively."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Adobe-Lease-Impairment-FY2024",
+        "fields": {
+          "filer": "ADBE",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 78000000,
+            "note": "$78M impairment on leased facilities in FY2024 recorded as G&A, indicating real-estate over-commitment"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "During fiscal 2024, we recognized impairment charges of $78 million associated with the optimization of our leased facilities, primarily for operating lease right-of-use assets and leasehold improvements, which were recorded as general and administrative expenses."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "ADBE-Figma-Termination-Fee"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE-Data-Center-Lease-Judgment"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE-Lease-Asset-Impairment-FY2024"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE-Buyback-Leverage-Signal"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE-No-Customer-Concentration"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "capex_commitment",
+        "target_name": "ADBE-HostingDataCenter-$5.79B"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE-HostingConcentration-CapexROIGap"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE-FigmaCapLoss-CostOpacity"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE-DebtMaturity-2025"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "ADBE-DOJ-ROSCA-Litigation"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "ADBE-SecuritiesClassAction-Figma"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "ADBE-DOJ-ROSCA-Litigation",
+        "target_type": "company",
+        "target_name": "USG"
+      },
+      {
+        "predicate": "SPONSORS",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "off_balance_entity",
+        "target_name": "Adobe-Operating-Leases-FY2024"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "off_balance_entity",
+        "target_name": "Adobe-Operating-Leases-FY2024"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Adobe-Lease-Impairment-FY2024"
+      }
+    ],
+    "notes": "[chunk 1/3] Adobe FY2024 10-K (filed 2025-01-13). Key findings:\n\n1. NO SPVs, VIEs, JVs, or off-balance-sheet project finance structures disclosed. Adobe explicitly states it has no finance leases. Operating lease obligations total ~$428M ($75M current + $353M long-term) with ROU assets of $281M. Data center leases require management judgment on whether contracts contain leases (identified-asset and right-to-direct-use tests) \u2014 a watch-level hidden leverage signal.\n\n2. NO equity investments in AI labs or private compute providers disclosed in this section. The filing contains no note equivalent to NVIDIA's non-marketable equity securities schedule. The \"Purchases of long-term investments, intangibles and other assets\" line in the cash flow statement ($108M FY2024) is not broken down by investee in this section.\n\n3. CAPEX is modest and declining: property and equipment purchases $183M (FY2024) vs. $360M (FY2023) vs. $442M (FY2022). No multi-year compute agreements or named hyperscaler commitments disclosed in this section.\n\n4. The $1B Figma termination fee (non-tax-deductible) was a significant one-time charge in FY2024 operating expenses.\n\n5. Adobe issued $2B of new debt in FY2024 while repurchasing $9.5B of stock, increasing gross leverage. Total debt: $5.6B ($1.5B current + $4.1B long-term).\n\n6. $78M lease-related asset impairments in FY2024 (zero in prior years) suggests real-estate or data-center footprint rationalization.\n\n7. No customer or supplier concentration >10% explicitly confirmed by management.\n\n8. Remaining performance obligations of ~$19.96B provide strong revenue visibility \u2014 this is a positive credit signal, not a risk.\n\nSIFI materiality conclusion: Adobe does not present the AI-infrastructure circular-dependency, SPV leverage, or revenue-roundtrip patterns that are the primary SIFI monitor targets. The filing is structurally clean relative to hyperscalers. Signals flagged are watch-level (1\u20132) only.\n[chunk 2/3] Adobe's FY2024 10-K financial notes reveal three SIFI-material signals:\n\n1. CAPEX_ROI_GAP (severity 2): $5.79B in non-cancellable purchase obligations for third-party hosting/data-center services over 5 years, heavily front-loaded ($1.52B in FY2025 alone). No specific vendor is named and no matched contracted revenue is disclosed. This is the most structurally relevant signal \u2014 it shows Adobe's AI/cloud infrastructure dependency without counterparty transparency.\n\n2. COST_OPACITY (severity 2): The $1.15B Figma termination fee generated capital loss carryforwards that are not deductible for financial statement purposes, driving a $321M valuation allowance increase in FY2024. This creates a multi-year deferred tax asset quality question.\n\n3. HIDDEN_LEVERAGE (severity 1): Total debt grew 55% YoY from $3.65B to $5.65B following a $2B April 2024 debt raise, with $1.5B maturing in February 2025. While manageable given Adobe's cash generation, the combination of rising debt and the $5.79B off-P&L hosting obligation warrants monitoring.\n\nNo off-balance-sheet SPVs, VIEs, or JVs are disclosed. No equity investments in AI labs or compute providers are mentioned in this section. No residual value guarantees or project finance structures are present. The filing contains no named compute vendor counterparties for the hosting obligations \u2014 a transparency gap for SIFI monitoring purposes.\n[chunk 3/3] \nAdobe (ADBE) 10-K for FY2024 (filed 2025-01-13). This financial notes section is relatively clean from a SIFI-material risk perspective. Key findings:\n\n1. OPERATING LEASES: $428M present value of lease liabilities across facilities and data centers (expiring through 2034, plus a land lease to 2091). No residual value guarantees disclosed \u2014 not a hidden leverage concern per se, but the full undiscounted obligation is $463M. Weighted-average term 6 years at 2.69%.\n\n2. LEASE IMPAIRMENT: $78M impairment charge in FY2024 on right-of-use assets and leasehold improvements signals real estate over-commitment / facility optimization, classified as G&A \u2014 a mild cost opacity signal (severity 2).\n\n3. REVOLVING CREDIT / COMMERCIAL PAPER: $1.5B revolver (expandable to $2B) and $3B commercial paper program \u2014 both fully undrawn as of Nov 29, 2024. No SIFI-material risk; standard corporate liquidity facilities.\n\n4. TERM LOAN (FIGMA): $3.5B delayed-draw term loan for Figma acquisition was terminated after deal collapse in FY2024. No outstanding borrowings at termination. No residual obligation.\n\n5. NO off-balance-sheet SPVs, VIEs, or project-finance structures disclosed.\n6. NO AI-lab investments or compute commitments disclosed in this section.\n7. NO named counterparty concentration issues in this section.\n\nThe filing section does not surface SIFI-material circularity, roundtripping, capex-ROI gaps, or supplier/customer concentration in this excerpt.\n"
+  },
+  "item_9a": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "customer"
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/1] Item 9A-14 contains only standard governance and compliance disclosures with no SIFI-material entity relationships, investments, acquisitions, or counterparty dependencies. The section covers: (1) disclosure controls and procedures effectiveness certification; (2) internal control over financial reporting under COSO framework; (3) Board governance and executive compensation cross-references to proxy; (4) audit firm (KPMG LLP) engagement for attestation; (5) routine director changes (Brett Biggs non-re-election). No related-party transactions, customer concentration, supplier dependencies, investments in AI labs, capex commitments, or hidden leverage structures are disclosed in this section. KPMG LLP is named as auditor but is not extracted as a SIFI-material counterparty per the scoping rules (routine audit services are boilerplate). Extracted Adobe as a minimal node only to preserve document continuity; no edges can be justified from the text.\""
+  },
+  "item_15": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "Adobe Inc."
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Figma",
+        "fields": {
+          "aliases": [
+            "Figma, Inc."
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "company",
+        "target_name": "Figma",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "transaction_type": "Terminated merger agreement",
+          "agreement_date": "2022-09-15",
+          "termination_date": "2023-12-17",
+          "note": "Agreement and Plan of Merger terminated by Termination Agreement"
+        }
+      }
+    ],
+    "notes": "[chunk 1/1] ITEM 15 is a standard Exhibits list and does not contain operational, financial, or counterparty substance. The section lists filing exhibits (governance documents, equity incentive plans, debt indentures, commercial paper dealer agreements, etc.) with no new SIFI-material relationships disclosed.\n\nIDENTIFIED ENTITY: The only named counterparty of potential relevance is Figma, Inc., referenced in two exhibits: (1) the Agreement and Plan of Merger dated September 15, 2022 (Exhibit 2.1), and (2) the Termination Agreement dated December 17, 2023 (Exhibit 10.12). This represents a terminated M&A transaction, not an active business relationship. No investment stake, equity ownership, or ongoing commercial dependency is disclosed in this section.\n\nRATIONALE FOR MINIMAL EXTRACTION: Item 15 is administrative boilerplate. It does not disclose customer concentration, supplier dependencies, strategic partnerships, investments, or related-party arrangements. The Figma merger termination is a concluded historical event with no ongoing SIFI implications in the current filing context. No hidden leverage, circularity, capex commitments, or concentration risks are present in this exhibit schedule.\""
+  }
+}

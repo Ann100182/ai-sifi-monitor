@@ -1,0 +1,346 @@
+{
+  "related_party": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] This DEF 14A section covers corporate governance, board structure, ERM process, sustainability, human capital, and public policy \u2014 all boilerplate proxy statement content. There are NO disclosures of: off-balance-sheet entities/SPVs/VIEs, capex commitments, investment portfolio entries, related-party transactions with named counterparties, revenue concentration data, or any of the 8 SIFI risk-signal patterns. The section labeled \"Related party transactions\" in the filing metadata appears to be a table-of-contents checkbox item only; the actual substantive related-party transaction disclosures are not included in this source text. Nothing in this text meets the SIFI-materiality threshold required by the extraction rules. No nodes or edges are emitted."
+  },
+  "director_comp": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Exequity LLP",
+        "fields": {
+          "role": "advisor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Semler Brossy",
+        "fields": {
+          "role": "advisor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "The Vanguard Group",
+        "fields": {
+          "ticker": "VOO",
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "BlackRock",
+        "fields": {
+          "ticker": "BLK",
+          "role": "investor"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Exequity LLP",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "role": "compensation consultant",
+          "year": 2024
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Semler Brossy",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "role": "compensation consultant",
+          "year": 2024
+        }
+      }
+    ],
+    "notes": "[chunk 1/1] Source: NVIDIA DEF 14A, director_comp section. The filing discusses director and executive compensation policies, equity awards, and related-party transactions. Key entities identified: (1) Exequity LLP (compensation consultant through 2024, replaced September 2024); (2) Semler Brossy (current compensation consultant from September 2024); (3) The Vanguard Group (8.36% beneficial owner as of March 24, 2025); (4) BlackRock, Inc. (7.38% beneficial owner as of March 24, 2025). Related-party transactions noted: CEO Jen-Hsun Huang's daughter and son employed by NVIDIA (total FY2025 compensation ~$1.66M combined); director Aarti Shah's son employed by NVIDIA (~$475K FY2025 compensation). All compensation determined per standard NVIDIA practices, no SIFI-material conflicts identified. Indemnity agreements in place for executives and directors per Delaware law. No off-balance-sheet arrangements, hidden leverage, circularity, or customer concentration risks identified in this section. Stock ownership tables reflect Huang's significant beneficial ownership (3.77% of outstanding shares through family trusts and foundation), but this is disclosed and non-problematic. No evidence of unusual related-party transactions requiring disclosure under Nasdaq Listing Standards beyond family employment relationships."
+  },
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "competitor",
+          "aliases": [
+            "Adobe Inc."
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "AMD",
+        "fields": {
+          "ticker": "AMD",
+          "role": "competitor",
+          "aliases": [
+            "Advanced Micro Devices"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Cisco",
+        "fields": {
+          "ticker": "CSCO",
+          "role": "competitor",
+          "aliases": [
+            "Cisco Systems"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "competitor",
+          "aliases": [
+            "International Business Machines Corporation"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intel",
+        "fields": {
+          "ticker": "INTC",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "customer",
+          "aliases": [
+            "Meta Platforms"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Netflix",
+        "fields": {
+          "ticker": "NFLX",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "customer",
+          "aliases": [
+            "Oracle Corporation"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Qualcomm",
+        "fields": {
+          "ticker": "QCOM",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SAP",
+        "fields": {
+          "ticker": "SAP",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Visa",
+        "fields": {
+          "ticker": "V",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-CEO-Concentration-Risk",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "pct_of_revenue": null,
+            "note": "CEO security costs are rising YoY due to increased travel; Board mandates executive security program. CEO holds 10x base salary in stock ($15M threshold). 95% of CEO total target pay is at-risk/performance-based."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Due to the high profile of our CEO, and in accordance with the Board-approved, independently-assessed executive security program, NVIDIA provides Mr. Huang with security protection. In Fiscal 2025, these security arrangements included (i) residential security, consultation fees, and driver services, (ii) security monitoring, and (iii) car expenses. Mr. Huang's Fiscal 2025 security costs increased compared to the prior year due to increased travel."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-DataCenter-Revenue-Concentration",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 130500000000,
+            "note": "Fiscal 2025 revenue of $130.5B driven by Data Center demand for Hopper architecture for LLMs and generative AI. Single end-market (Data Center/AI) dominates revenue base."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "record performance on strength across all market platforms, led by Data Center demand for our Hopper architecture used for large language models, recommendation engines, and generative AI applications, revenue and Non-GAAP Operating Income for Fiscal 2025 exceeded their respective Stretch Compensation Plan goals"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Adobe"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "AMD"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Broadcom"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Cisco"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "IBM"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Intel"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Meta"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Netflix"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Oracle"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Qualcomm"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Salesforce"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "SAP"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Visa"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-CEO-Concentration-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-DataCenter-Revenue-Concentration"
+      }
+    ],
+    "notes": "[chunk 1/3] SOURCE: NVDA DEF 14A, filed 2025-05-13, Compensation Discussion and Analysis section.\n\nThis section is primarily an executive compensation disclosure with limited SIFI-material content. Key observations:\n\n1. PEER GROUP (SIFI-MATERIAL): The compensation peer group named in this filing canonically links NVIDIA to Adobe, AMD, Broadcom, Cisco, IBM, Intel, Meta, Netflix, Oracle, Qualcomm, Salesforce, SAP, and Visa as executive talent competitors. Meta was newly ADDED to the peer group in FY2025, and Texas Instruments was removed. Meta and Oracle are particularly relevant given their roles as NVIDIA compute customers \u2014 their presence in NVIDIA's peer group indicates strategic proximity.\n\n2. DATA CENTER CONCENTRATION SIGNAL: Management's own commentary in the performance narrative explicitly credits \"Data Center demand for Hopper architecture used for large language models, recommendation engines, and generative AI applications\" as the primary driver of $130.5B in FY2025 revenue and $86.8B Non-GAAP Operating Income. This is a single-segment concentration signal worth tracking.\n\n3. NO NEW INVESTMENTS, SPVs, OR RELATED-PARTY ARRANGEMENTS disclosed in this section. The CD&A is focused on NEO pay mechanics (PSUs, RSUs, variable cash). No named customer, supplier, or counterparty investments appear here.\n\n4. CEO KEY-PERSON RISK: Jensen Huang's compensation structure (95% at-risk, no employment contract, escalating security costs) combined with NVIDIA's near-total dependency on his leadership role is a soft key-person risk signal, though below SIFI-critical threshold without additional quantitative data.\n\n5. STOCK PRICE METHODOLOGY NOTE: NVIDIA uses a 30-calendar-day trailing average for equity grant calculations rather than spot price \u2014 minor cost opacity signal but standard practice, not extracted as a node.\n\nNo circular dependency, SPV, off-balance-sheet, or revenue roundtrip signals were identified in this section.\n[chunk 2/3] This section covers NVIDIA's DEF 14A Compensation Discussion & Analysis, executive pay tables, pay ratio, pay-versus-performance, auditor ratification (PwC), and stockholder proposals on governance matters. No SIFI-material entities are present: there are no named business counterparties, customer/supplier concentration disclosures, investments, SPVs, off-balance-sheet arrangements, AI lab relationships, or circular dependencies. All content is standard executive compensation disclosure and routine governance boilerplate. No extraction warranted under the hard rules.\n[chunk 3/3] This DEF 14A section contains exclusively corporate governance boilerplate: stockholder proposals on director resignation policy and workforce EEO-1 data reporting, equity compensation plan share counts (RSUs/PSUs/ESPP), Section 16(a) compliance notes, and the Amended & Restated Certificate of Incorporation text. None of this content meets the SIFI-materiality threshold. There are no named business counterparties, no investments, no SPVs, no capex commitments, no revenue concentration disclosures, no circular dependencies, and no hidden leverage signals. Broadcom, Intel, AMD, and Qualcomm are mentioned only as EEO-1 disclosure peers in a governance proposal \u2014 not as business counterparties. No extractable nodes or edges."
+  }
+}

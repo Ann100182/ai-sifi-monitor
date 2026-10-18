@@ -1,0 +1,951 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "FTC_consent_order_modification_risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "regulatory_execution",
+          "named_counterparties": [
+            "FTC"
+          ],
+          "severity": 4,
+          "verbatim_quote": "On January 10, 2025, the Commission issued a decision on certain threshold legal issues, including that the Commission has statutory authority to modify consent orders... Through the administrative process, the FTC could amend the order to impose the additional requirements set forth in the proposed order... It is unclear whether the appeal or the request for a stay would be successful."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "EU_regulatory_capex_impact",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "named_counterparties": [
+            "European Commission"
+          ],
+          "numeric_signal": {
+            "note": "Potential material adverse impact to European business and revenue as early as Q3 2025 due to DMA compliance modifications"
+          },
+          "verbatim_quote": "Based on feedback from the European Commission in connection with the DMA, we expect we will need to make some modifications to our model, which could result in a materially worse user experience for European users and a significant impact to our European business and revenue as early as the third quarter of 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GDPR_enforcement_uncertainty",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "named_counterparties": [
+            "IDPC",
+            "European regulators"
+          ],
+          "numeric_signal": {
+            "note": "Accrued significant amounts for loss contingencies; reasonable possibility of additional material accruals individually or in aggregate"
+          },
+          "verbatim_quote": "Although we are vigorously defending our regulatory compliance, we have accrued significant amounts for loss contingencies related to these inquiries and investigations in Europe, and we believe there is a reasonable possibility that additional accruals for losses related to these matters could be material individually or in the aggregate."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Meta_datacenter_capex",
+        "fields": {
+          "filer": "Meta",
+          "amount_usd": 35270000000,
+          "duration_yrs": 9,
+          "start_fy": 2025,
+          "purpose": "data centers, network infrastructure, and colocations",
+          "verbatim_quote": "These lease obligations were approximately $35.27 billion, mostly for data centers, certain network infrastructure, and colocations, which will commence between the remainder of 2025 and 2034."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Meta_servers_network_capex",
+        "fields": {
+          "filer": "Meta",
+          "amount_usd": 30050000000,
+          "start_fy": 2025,
+          "purpose": "servers and network infrastructure, and content costs",
+          "verbatim_quote": "We also have $30.05 billion of non-cancelable contractual commitments as of March 31, 2025, which are primarily related to our investments in servers and network infrastructure, and content costs, with $23.41 billion due in 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "depreciation_life_extension_signal",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "pct_of_assets": null,
+            "note": "Servers and network assets depreciation expense $2.63B in Q1 2025; estimated useful life extended to 5.5 years effective Jan 1, 2025"
+          },
+          "verbatim_quote": "We extended the estimated useful lives of most servers and network assets to 5.5 years, effective January 1, 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "construction_in_progress_concentration",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 32385000000,
+            "pct_of_assets": 18.0,
+            "note": "Construction in progress $32.4B as of March 31, 2025, up from $26.8B at Dec 31, 2024; 21% YoY increase"
+          },
+          "verbatim_quote": "Construction in progress includes costs mostly related to construction of data centers, network infrastructure and servers."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Meta_non_marketable_equity",
+        "fields": {
+          "investor": "Meta",
+          "target": "private companies portfolio",
+          "amount_usd": 6168000000,
+          "verbatim_quote": "Our non-marketable equity securities are investments in privately-held companies without readily determinable fair values... Total non-marketable equity securities $6,168 million as of March 31, 2025."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Apple",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Google",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "DSA_Compliance_Proceedings",
+        "fields": {
+          "filer": "Meta",
+          "category": "regulatory_enforcement",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "On April 30, 2024, the European Commission opened formal proceedings against us to assess Facebook and Instagram's compliance with certain requirements under Articles 14, 16, 17, 20, 24, 25, 34, 35, and 40 of the DSA, regarding a range of topics including elections, content reporting and appeals, third-party access to data, political content recommendations, potential deceptive advertising and disinformation"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CFPB_Financial_Advertising_Investigation",
+        "fields": {
+          "filer": "Meta",
+          "category": "regulatory_enforcement",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 2,
+          "verbatim_quote": "On September 18, 2024, staff of the Consumer Financial Protection Bureau (CFPB or Bureau) initiated a Notice and Opportunity to Respond and Advise (NORA) process related to its investigation of advertising for financial products and services on our platform, informing us that staff may recommend to the Director of the CFPB that the Bureau take legal action alleging violations of the Consumer Financial Protection Act"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Copyright_Litigation_Generative_AI",
+        "fields": {
+          "filer": "Meta",
+          "category": "litigation",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Motions for summary judgment will be heard in this case on May 1, 2025, including on the issue of the applicability of the fair use defense to use of copyrighted books for generative AI model training"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Ad_Targeting_Measurement_Restrictions",
+        "fields": {
+          "filer": "Meta",
+          "category": "regulatory_impact_on_revenue",
+          "named_counterparties": [
+            "Apple",
+            "Google",
+            "EU"
+          ],
+          "severity": 4,
+          "verbatim_quote": "Our advertising revenue has been, and we expect will continue to be, adversely affected by reduced marketer spending as a result of limitations on our ad targeting and measurement tools arising from changes to the regulatory environment and third-party mobile operating systems and browsers... For example, in 2021, Apple made certain changes to its products and data use policies in connection with changes to its iOS operating system that reduce our and other iOS developers' ability to target and measure advertising, which has negatively impacted, and we expect will continue to negatively impact, the size of the budgets marketers are willing to commit to us"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Ad_Revenue_Concentration",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_revenue": 100,
+            "note": "Substantially all revenue from advertising; vulnerable to platform and regulatory restrictions"
+          },
+          "named_counterparties": [
+            "Apple",
+            "Google"
+          ],
+          "verbatim_quote": "Substantially all of our revenue is currently generated from advertising on Facebook and Instagram. We rely on targeting and measurement tools that incorporate data signals from user activity on websites and services that we do not control, as well as signals generated within our products, in order to deliver relevant and effective ads to our users."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "RL_Segment_Operating_Loss",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 4210000000.0,
+            "duration_yrs": 10,
+            "note": "Q1 2025 RL operating loss; expected to increase full-year 2025; long-term initiative without near-term monetization"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "During the three months ended March 31, 2025, our RL segment reduced our overall operating profit by approximately $4.21 billion, and we continue to expect our full-year RL operating losses to increase in 2025. We expect this will be a complex, evolving, and long-term initiative, and our ability to support our RL efforts is dependent on generating sufficient profits from other areas of our business... Many of our RL investments are directed toward long-term, cutting-edge research and development for products that may only be fully realized in the next decade."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IRS_Transfer_Pricing_Dispute",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 9680000000.0,
+            "note": "Combined exposure from 2010 and 2011-2013 notices: up to $9.0B + $0.68B, plus interest and penalties; Tax Court decision expected 2025"
+          },
+          "named_counterparties": [
+            "USG"
+          ],
+          "verbatim_quote": "If the IRS prevails in its updated position, this could result in an additional federal tax liability of an estimated, aggregate amount of up to approximately $9.0 billion in excess of the amounts in our originally filed U.S. return, plus interest and any penalties asserted... If the IRS prevails in its position for these new adjustments, this could result in an additional federal tax liability of up to approximately $680 million in excess of the amounts in our originally filed U.S. returns, plus interest and any penalties asserted."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "aliases": [
+            "Facebook",
+            "Meta Platforms",
+            "Meta Platforms Inc."
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Apple",
+        "fields": {
+          "aliases": [
+            "Apple Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Google",
+        "fields": {
+          "aliases": [
+            "Alphabet Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "TikTok",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Meta-2025-Capex",
+        "fields": {
+          "filer": "Meta",
+          "amount_usd": 68000000000.0,
+          "start_fy": 2025,
+          "duration_yrs": 1,
+          "purpose": "infrastructure, data centers, AI initiatives",
+          "verbatim_quote": "We anticipate making capital expenditures of approximately $64 billion to $72 billion in 2025 to support our core business and generative AI efforts."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-DMA-Revenue-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "regulatory_revenue_impact",
+          "named_counterparties": [
+            "European Commission"
+          ],
+          "severity": 4,
+          "verbatim_quote": "Based on feedback from the European Commission in connection with the DMA, we expect we will need to make some modifications to our model, which could result in a materially worse user experience for European users and a significant impact to our European business and revenue as early as the third quarter of 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Capex-ROI-Gap",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 17730000000.0,
+            "note": "Reality Labs operating loss in 2024"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "For example, our investments in Reality Labs reduced our 2024 overall operating profit by approximately $17.73 billion, and we expect our Reality Labs investments and operating losses to increase in 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Depreciation-Life-Change",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "named_counterparties": [],
+          "verbatim_quote": "The increase was mainly due to higher operational expenses related to our data centers and technical infrastructure, which included a decrease in the depreciation growth rate due to an extension in the useful lives of servers and network assets, effective January 1, 2025."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-Apple-iOS-Targeting-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "supplier_dependency_advertising",
+          "named_counterparties": [
+            "Apple"
+          ],
+          "severity": 3,
+          "verbatim_quote": "For example, in 2021, Apple made certain changes to its products and data use policies in connection with changes to its iOS operating system that reduce our and other iOS developers' ability to target and measure advertising, which has negatively impacted, and we expect will continue to negatively impact, the size of the budgets marketers are willing to commit to us and other advertising platforms."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-TikTok-Engagement-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "user_engagement_competition",
+          "named_counterparties": [
+            "TikTok"
+          ],
+          "severity": 3,
+          "verbatim_quote": "User growth and engagement are also impacted by a number of other factors, including competitive products and services, such as TikTok, that have reduced some users' engagement with our products and services, as well as global and regional business, macroeconomic, and geopolitical conditions."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Revenue-Concentration-Advertising",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_revenue": 0.98,
+            "note": "Substantially all revenue from advertising"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We generate substantially all of our revenue from advertising. The loss of marketers, or reduction in spending by marketers, could seriously harm our business."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Meta-Operating-Leases",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Meta",
+          "purpose": "data centers, offices, network infrastructure",
+          "debt_stack_usd": 35270000000.0,
+          "term_yrs": 9,
+          "verbatim_quote": "In addition to lease liabilities, we have leases that have not yet commenced of approximately $35.27 billion as of March 31, 2025, which will commence between the remainder of 2025 and 2034."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-Data-Signal-Loss-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "regulatory_data_use",
+          "named_counterparties": [
+            "Apple",
+            "Google"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In addition, mobile operating system and browser providers, such as Apple and Google, have implemented product changes and/or announced future plans to limit the ability of websites and application developers to collect and use these signals to target and measure advertising."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Scale-Management-Risk",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": null,
+            "note": "14% headcount growth over 12 months"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The higher employee compensation was mainly from a 14% growth in employee headcount from March 31, 2024 to March 31, 2025 in engineering and other technical functions supporting our continued investment in our family of products and Reality Labs."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-FTC-Consent-Order-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "regulatory_enforcement",
+          "named_counterparties": [
+            "FTC"
+          ],
+          "severity": 5,
+          "verbatim_quote": "Through the administrative process, the FTC could amend the order to impose the additional requirements set forth in the proposed order. We should have the opportunity to appeal an FTC decision modifying the order and could request the appellate court to stay the enforcement of the modifications to the order while the appeal is pending."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "EU",
+        "fields": {
+          "aliases": [
+            "European Union"
+          ],
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "USG",
+        "fields": {
+          "aliases": [
+            "United States Government",
+            "FTC",
+            "US Department of Justice"
+          ],
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "India",
+        "fields": {
+          "aliases": [
+            "Indian government",
+            "Competition Commission of India"
+          ],
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Brazil",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "UK",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "DPF_invalidation_EU",
+        "fields": {
+          "filer": "Meta",
+          "category": "Regulatory - Data Transfer",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 4,
+          "verbatim_quote": "A further invalidation of the EU-U.S. DPF by the CJEU could create considerable uncertainty and lead to us being unable to offer a number of our most significant products and services, including Facebook and Instagram, in Europe, which would materially and adversely affect our business, financial condition, and results of operations."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "India_data_transfer_restrictions",
+        "fields": {
+          "filer": "Meta",
+          "category": "Regulatory - Data Transfer",
+          "named_counterparties": [
+            "India"
+          ],
+          "severity": 3,
+          "verbatim_quote": "If we are unable to transfer data between and among countries and regions in which we operate, or if we are restricted from sharing data among our products and services, it could affect our ability to provide our services, the manner in which we provide our services or our ability to target ads, which could adversely affect our financial results."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GDPR_compliance_cost",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "named_counterparties": [
+            "EU"
+          ],
+          "numeric_signal": {
+            "note": "Unquantified but described as significant ongoing investments in compliance processes, personnel, and technical infrastructure"
+          },
+          "verbatim_quote": "Compliance with our FTC consent order, the GDPR, U.S. state privacy laws, youth social media laws, the ePrivacy Directive, the DMA, the DSA, and other regulatory and legislative privacy requirements require significant operational resources and modifications to our business practices, and any compliance failures may have a material adverse effect on our business, reputation, and financial results."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "DMA_subscription_model_impact",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "named_counterparties": [
+            "EU"
+          ],
+          "numeric_signal": {
+            "note": "Potential materially worse user experience and significant impact to European business and revenue expected as early as Q3 2025"
+          },
+          "verbatim_quote": "In April 2025, the European Commission issued a final decision that our 'subscription for no ads' model does not comply with such requirements. Based on feedback from the European Commission in connection with the DMA, we expect we will need to make some modifications to our model, which could result in a materially worse user experience for European users and a significant impact to our European business and revenue as early as the third quarter of 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "product_development_delays",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [
+            "EU",
+            "USG"
+          ],
+          "numeric_signal": {
+            "note": "Unquantified delay impact on new product launches and feature development timelines"
+          },
+          "verbatim_quote": "As a result, we believe our ability to develop and launch new features, products, and services in a timely manner has been and will continue to be adversely affected."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "FTC_consent_order_risk",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "named_counterparties": [
+            "USG"
+          ],
+          "numeric_signal": {
+            "note": "Proposed order seeks prohibition on use of minors' data for any commercial purposes and significant limitations on product launches"
+          },
+          "verbatim_quote": "The FTC initiated an administrative proceeding against us alleging, among other things, deficient compliance with the FTC consent order and seeking substantial modifications to the requirements of the consent order, including a prohibition on our use of minors' data for any commercial purposes, changes to the composition of our board of directors, and significant limitations on our ability to modify and launch new products."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "European_advertising_restrictions",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 3,
+          "named_counterparties": [
+            "EU"
+          ],
+          "numeric_signal": {
+            "pct_of_revenue": "unclear - European region is material",
+            "note": "Personalized ads replaced with less relevant and effective ads; subscription model compliance failure"
+          },
+          "verbatim_quote": "in November 2024, we began offering users in the European Union, European Economic Area, and Switzerland who elect to continue using our services free-of-charge, supported by ads, an option to see less personalized ads, which are less relevant and effective than our premium ad offerings."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "minors_data_usage_restrictions",
+        "fields": {
+          "filer": "Meta",
+          "category": "Regulatory - Youth Privacy",
+          "named_counterparties": [
+            "USG",
+            "EU",
+            "Australia"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Several U.S. states, including Arkansas, Utah, Texas, California, and Florida, among others, have passed laws restricting our ability to offer services to minors without parental consent or otherwise limiting the services that we can provide to minors."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Section_230_scope_uncertainty",
+        "fields": {
+          "filer": "Meta",
+          "category": "Regulatory - Content Liability",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 3,
+          "verbatim_quote": "In the United States, in 2023, the U.S. Supreme Court heard oral argument in a matter in which the scope of the protections available to online platforms under Section 230 of the Communications Decency Act (Section 230) was at issue, but it ultimately declined to address Section 230 in its decision. There also have been, and continue to be, various other litigation concerning, and state and federal legislative and executive efforts to remove or restrict, the scope of the protections under Section 230."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "cybersecurity_breaches",
+        "fields": {
+          "filer": "Meta",
+          "category": "Security & Operations",
+          "named_counterparties": [],
+          "severity": 4,
+          "verbatim_quote": "Our industry is prone to cyber-attacks by parties seeking unauthorized access to our data or users' data or to disrupt our ability to provide service or otherwise harm us. Any failure to prevent or mitigate security breaches and improper access to or disclosure of our data or user data, including personal information, content, or payment information from users, or information from marketers, could result in the loss, modification, disclosure, destruction, or other misuse of such data, which could harm our business and reputation and diminish our competitive position."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "state_affiliated_cyber_threats",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 5,
+          "named_counterparties": [
+            "China",
+            "Russia"
+          ],
+          "numeric_signal": {
+            "note": "Nation-state and state-sponsored actors identified as significant threat; heightened risk during geopolitical events"
+          },
+          "verbatim_quote": "As a result of our prominence, the size of our user base, the types and volume of personal data and content on our systems, and the evolving nature of our products and services (including our efforts involving new and emerging technologies), we believe that we are a particularly attractive target for such breaches and attacks, including from nation states and highly sophisticated, state-sponsored, or otherwise well-funded actors, and we experience heightened risk from time to time as a result of geopolitical events."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "open_source_ip_risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Intellectual Property",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "In addition, we regularly contribute software source code under open source and other permissive licenses and have made other technology we developed available under such licenses, and we include open source software in our products. Additionally, our AI is trained on data sets that may include open source software and the outputs of our AI may be subject to open source license restrictions or obligations. As a result of our open source contributions and the use of open source in our products, we may license or be required to license or disclose code and/or innovations that turn out to be material to our business and may also be exposed to increased litigation risk."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "dual_class_governance_risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Governance & Control",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Our Class B common stock has ten votes per share and our Class A common stock has one vote per share. Holders of our Class B common stock, including our founder, Chairman, and CEO, together hold a majority of the combined voting power of our outstanding capital stock, and therefore are able to control the outcome of all matters submitted to our stockholders for approval."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "aliases": [
+            "Meta Platforms, Inc."
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "FTC_consent_order_modification_risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "EU_regulatory_capex_impact"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GDPR_enforcement_uncertainty"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "depreciation_life_extension_signal"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "construction_in_progress_concentration"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "capex_commitment",
+        "target_name": "Meta_datacenter_capex"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "capex_commitment",
+        "target_name": "Meta_servers_network_capex"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "FTC_consent_order_modification_risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "Ad_Targeting_Measurement_Restrictions"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Ad_Revenue_Concentration"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "RL_Segment_Operating_Loss"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IRS_Transfer_Pricing_Dispute"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Apple",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Meta"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Google",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Meta"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "company",
+        "target_name": "Apple",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "context": "iOS ad targeting and measurement capabilities"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "company",
+        "target_name": "Google",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "context": "Android platform, Chrome browser, third-party cookie deprecation"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "company",
+        "target_name": "TikTok",
+        "predicate": "CIRCULAR_WITH",
+        "properties": {
+          "context": "User engagement competition, particularly younger users"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "capex_commitment",
+        "target_name": "Meta-2025-Capex",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-Capex-ROI-Gap",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-Revenue-Concentration-Advertising",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-Depreciation-Life-Change",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Meta-DMA-Revenue-Risk",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Meta-Apple-iOS-Targeting-Risk",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Meta-Data-Signal-Loss-Risk",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "off_balance_entity",
+        "target_name": "Meta-Operating-Leases",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "DPF_invalidation_EU"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "DMA_subscription_model_impact"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GDPR_compliance_cost"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "product_development_delays"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "FTC_consent_order_risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "European_advertising_restrictions"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "state_affiliated_cyber_threats"
+      },
+      {
+        "source_type": "company",
+        "source_name": "EU",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Meta"
+      },
+      {
+        "source_type": "company",
+        "source_name": "USG",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Meta"
+      },
+      {
+        "source_type": "company",
+        "source_name": "India",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Meta"
+      }
+    ],
+    "notes": "[chunk 1/6] META 10-Q Q1 2025 (filing date 2025-05-01): SOURCE TEXT CONTAINS ONLY COVER PAGE, FINANCIAL STATEMENTS, AND ACCOUNTING POLICY NOTES. No narrative business section (Item 1 Business, MD&A Item 2 starts on page 27 but not included in source), no investment roster, no counterparty relationships, no capex commitments, no off-balance-sheet entities, no related-party arrangements mentioned. The document excerpt provided is purely technical financial data and accounting disclosures. SIFI-MATERIAL EXTRACTION: NONE. A full extraction would require Item 1 (Business), Item 2 (MD&A), and Item 1A (Risk Factors) sections.\n[chunk 2/6] META 10-Q Q1 2025 extraction focused on SIFI-material signals: (1) FTC consent order modification risk\u2014severity 4 due to administrative authority decision and unclear stay prospects. (2) EU regulatory execution risk\u2014DMA compliance forcing model changes with material revenue impact expected Q3 2025. (3) GDPR enforcement uncertainty and accrued contingencies. (4) Massive capex commitments: $35.3B lease obligations (data centers 2025\u20132034) + $30.05B non-cancelable contractual commitments (servers/network), totaling ~$65.3B incremental AI infrastructure spend. (5) CAPEX_ROI_GAP: $32.4B construction in progress (18% of tangible assets) with no disclosed contracted revenue from these assets; 21% YoY growth signals acceleration but lack of matched customer commitments (e.g., no OpenAI-scale deal mentioned). (6) COST_OPACITY: Server/network depreciation life extended to 5.5 years effective Jan 1, 2025, reducing near-term depreciation expense on $2.63B quarterly server depreciation. (7) Non-marketable equity $6.17B in private companies (no named investees disclosed in narrative section\u2014see if this appears in full 10-Q). No evidence of hidden leverage via SPVs or operating leases with RVGs in this excerpt. No material circularity with suppliers/customers named. All quotes are verbatim from 10-Q.\n[chunk 3/6] SIFI-material extracts from Meta 10-Q Q1 2025:\n\n**Regulatory & Litigation Risks:**\n- **DSA enforcement proceedings** (EU, April 2024): Formal proceedings on compliance with 8 Articles; may result in material fines/remediation\n- **CFPB financial advertising investigation** (Sept 2024): NORA process; potential Consumer Financial Protection Act violations around user data disclosure and controls\n- **Kadrey copyright litigation** (ongoing): Covers use of copyrighted books for generative AI training; summary judgment hearing May 1, 2025; fair use defense is central issue\n\n**Material Business Risks (SIFI-relevant):**\n- **Ad revenue concentration & platform dependency (severity 4)**: 100% of revenue from advertising on Facebook/Instagram; vulnerable to Apple iOS changes (2021) and Google browser restrictions; Meta explicitly states targeting/measurement tools compromised by regulatory changes (GDPR, ePrivacy, Digital Markets Act, CCPA/CPRA); expects continued negative impact on revenue\n- **Reality Labs operating losses (severity 3)**: Q1 2025 loss of $4.21B; full-year 2025 losses expected to increase; capex commitment for \"next decade\" without matched revenue; dependent on FoA profitability to sustain\n- **IRS transfer pricing dispute (severity 3)**: Combined exposure ~$9.68B (plus interest/penalties) from 2010 and 2011-2013 deficiency notices; Tax Court decision expected 2025; unresolved tax uncertainty with potential cascading impact on effective tax rate and cash\n\n**Excluded (boilerplate/routine):**\n- Share repurchase authorization, dividend payments, RSU vesting schedules\n- Generic macroeconomic headwinds, competitive product commentary\n- Routine segment reporting (FoA vs. RL margin tables)\n- DAP/ARPP metric calculations and estimation methodology\n- Standard infrastructure investment language for ad targeting/measurement improvements\n\n**Counterparty web:**\n- Meta <-- Apple (iOS privacy restrictions, material revenue impact)\n- Meta <-- Google (Chrome/browser privacy restrictions, material revenue impact)\n- Meta <-- EU (DSA enforcement, potential fines)\n- Meta <-- USG/IRS (transfer pricing dispute, CFPB investigation)\n[chunk 4/6] **SIFI-Material Extractions from Meta 10-Q (Q1 2025):**\n\n## Key Findings:\n\n### 1. **CAPEX-ROI GAP (Critical \u2013 Severity 4)**\n- Reality Labs operating loss: **$4.21B in Q1 2025**, down 9% YoY (larger loss)\n- 2024 full-year: $17.73B operating loss from Reality Labs\n- **Expected to increase in 2025**\n- Meanwhile: capex guidance $64\u201372B for 2025 for \"core business and generative AI\" with unclear ROI horizon on VR/metaverse\n\n### 2. **COST OPACITY (Medium \u2013 Severity 2)**\n- **Depreciation life extension** on servers/network assets effective Jan 1, 2025\n- Effect: Decreased depreciation growth rate reducing Q1 2025 CoR growth despite 14% revenue growth\n- This is a depreciation policy change that affects earnings quality\n\n### 3. **CUSTOMER CONCENTRATION \u2013 ADVERTISING (Critical \u2013 Severity 4)**\n- ~98% of revenue from advertising ($41.9B of $42.3B in Q1 2025)\n- Highly vulnerable to marketer pullback, platform changes, regulatory action\n- No material revenue diversification (WhatsApp Business + Meta Verified = only $510M, 1.2% of revenue)\n\n### 4. **SUPPLIER CONCENTRATION / PLATFORM DEPENDENCY (Severity 3\u20134)**\n- **Apple iOS changes (2021+)** have \"negatively impacted\" ad targeting/measurement and marketer budgets\n- **Google** Chrome cookie deprecation and Android platform dependency\n- Both control distribution and ad signal access\n\n### 5. **EXECUTION RISK \u2013 INFRASTRUCTURE SCALE**\n- 14% headcount growth in 12 months across engineering/technical teams\n- Rapid scaling for AI/infrastructure with legacy metaverse/Reality Labs drag\n- Management complexity acknowledged in risk factors\n\n### 6. **REGULATORY REVENUE RISK (Critical \u2013 Severity 4-5)**\n- **DMA \"subscription for no ads\" model** invalidated by European Commission (April 2025)\n- **\"could result in a materially worse user experience for European users and a significant impact to our European business and revenue as early as the third quarter of 2025\"**\n- FTC consent order modification proceedings ongoing; outcome uncertain\n\n### 7. **HIDDEN LEVERAGE \u2013 OPERATING LEASES**\n- $35.27B of **uncommenced leases** due 2025\u20132034 (off-balance-sheet future obligations)\n- Additional committed capex $30.05B for infrastructure/content\n\n### 8. **OFF-BALANCE-SHEET OBLIGATIONS**\n- $29.0B long-term debt (senior unsecured notes, 2027\u20132064)\n- Interest obligations: $1.38B short-term, $27.63B long-term\n\n### 9. **DATA SIGNALS LOSS RISK (Severity 4)**\n- Apple iOS App Tracking Transparency (ATT), Safari cookie limits\n- Google phasing third-party cookies\n- Regulatory requirements (GDPR, DMA, CCPA) all restricting signal use\n- Marked **\"materially and adversely affected\"** if mitigations fail\n\n---\n\n## SIFI Concerns:\n\n1. **Single-point-of-failure on ad targeting**: Apple + Google platform changes have demonstrably reduced marketer ROI perception; further platform changes could cascade to revenue collapse\n2. **Reality Labs is a capital sink**: $17.73B 2024 loss, expected to worsen in 2025, with no material revenue offset\n3. **Concentration + regulatory cliff**: 98% ad revenue + European regulatory invalidation of business model in Q3 2025 = acute downside tail risk\n4. **Depreciation life change**: Suggests balance sheet management under margin pressure; signals cost inflation\n5. **Uncommenced leases ($35B)**: Significant future cash obligation not in income statement\n\nNo named investments in AI labs, private equity placements, or SPVs detected in this excerpt. This is a narrative-focused filing section with heavy emphasis on regulatory/platform risks rather than financial engineering.\n[chunk 5/6] EXTRACTION SUMMARY \u2014 Meta 10-Q Q1 2025 (Accession 0001326801-25-000054):\n\nSIFI-MATERIAL FINDINGS:\n\n1. **REGULATORY EXECUTION RISK (Severity 4-5)**: EU DMA compliance order (April 2025) mandates subscription model modifications that Meta expects will materially worsen European user experience and significantly impact European revenue as early as Q3 2025. This is concrete, time-bound, and material.\n\n2. **COST OPACITY (Severity 3)**: Unquantified but acknowledged as \"significant ongoing investments\" in GDPR, FTC consent order, DMA, DSA compliance across compliance processes, personnel, and technical infrastructure. No dollar amount disclosed.\n\n3. **EXECUTION_RISK \u2014 FTC Consent Order (Severity 4)**: Proposed order seeks to prohibit use of minors' data for any commercial purposes and significantly limit product launches. If imposed, would materially restrict Meta's core business.\n\n4. **REVENUE_ROUNDTRIP (Severity 3)**: European advertising model degraded\u2014personalized ad offerings replaced with \"less relevant and effective\" ads for free-tier users. Subscription model compliance failure (April 2025 decision) will force further revenue impact.\n\n5. **NATION-STATE CYBER RISK (Severity 5)**: Explicit acknowledgment that Meta is \"particularly attractive target\" for nation-state and state-sponsored actors, with heightened risk during geopolitical events.\n\n6. **DATA TRANSFER RESTRICTIONS (Severity 3-4)**: India restrictions on WhatsApp data sharing + EU DPF invalidation risk could force service cessation.\n\n7. **GOVERNANCE**: Dual-class structure concentrates voting control with Mark Zuckerberg (founder/CEO/Chairman) holding majority voting power via Class B shares (10 votes per share).\n\nNO OFF-BALANCE-SHEET ENTITIES, CAPEX COMMITMENTS, or INVESTMENTS disclosed in this narrative section.\n\nNO COUNTERPARTY CIRCULAR DEPENDENCIES identified in this section.\n\nNO CUSTOMER/SUPPLIER CONCENTRATION figures provided (beyond regulatory cases mentioning broad geographic impact).\n\nBOILERPLATE EXCLUDED: Generic IP litigation risk, standard competition commentary, routine stock price volatility disclosure, payment processing risk (generic), open source IP risk (standard for tech).\n[chunk 6/6] Section 6 (Exhibits) and executive trading plan disclosures provided. No SIFI-material counterparty relationships, investments, acquisitions, off-balance-sheet entities, capex commitments, or hidden leverage identified in this excerpt. Content consists of: (1) routine Rule 10b5-1 trading plan filings for executives (Zuckerberg, Newstead, Li, Kimmitt) with standard termination dates; (2) SEC exhibit index and certification list; (3) signature block. All items are boilerplate executive compensation/trading disclosures with no material business relationships, related-party arrangements involving third parties, or SIFI-risk patterns. No action required.\""
+  }
+}

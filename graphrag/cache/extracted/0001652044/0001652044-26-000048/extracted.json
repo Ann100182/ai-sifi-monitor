@@ -1,0 +1,949 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Google Cloud",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "GOOG-Q1-2026-Capex",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 35674000000,
+          "start_fy": 2026,
+          "duration_yrs": null,
+          "counterparty": null,
+          "purpose": "property and equipment",
+          "verbatim_quote": "Purchases of property and equipment (35,674)"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Wiz",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intersect",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "GOOGL-Data-Center-Leases-75.6B",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 75600000000,
+          "purpose": "data center leases not yet commenced",
+          "start_fy": 2026,
+          "duration_yrs": 25,
+          "verbatim_quote": "As of March 31, 2026, we have entered into leases primarily related to data centers that have not yet commenced with future lease payments of $75.6 billion that are not yet recorded. These leases will commence between 2026 and 2031 with non-cancelable lease terms primarily between one and 25 years."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "GOOGL-Credit-Backstop-Data-Centers-28.4B",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 28436000000,
+          "purpose": "credit backstops for data center entities",
+          "verbatim_quote": "Credit backstops we have provided to data center VIEs are accounted for as credit derivatives. The maximum exposure arising from credit backstops with VIEs is limited to the financial risk over the remaining period of the arrangements, as reflected by the credit derivative notional value."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "GOOGL-Additional-Backstop-April-2026-15.3B",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 15300000000,
+          "purpose": "backstop agreements for third-party data center obligations",
+          "start_fy": 2026,
+          "verbatim_quote": "In April, 2026, we entered into additional agreements with certain third parties to backstop certain obligations relating to third-party data centers that we expect to be accounted for as credit derivatives with notional amounts totaling approximately $15.3 billion."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "GOOGL-Data-Center-VIE-Finance-Leases",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Alphabet",
+          "purpose": "data center operations",
+          "term_yrs": 25,
+          "verbatim_quote": "Leases with data center leasing VIEs are accounted for as finance leases and are included within total lease obligations disclosed in Note 4. The maximum exposure arising from leases with VIEs is limited to the net carrying value of commenced finance lease assets, plus the undiscounted future obligations for leases that have not yet commenced."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "GOOGL-Energy-Infrastructure-VIE-Backstops",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "Alphabet",
+          "purpose": "energy infrastructure support",
+          "verbatim_quote": "Backstop agreements we have provided to certain energy infrastructure VIEs are accounted for as financial guarantees. The maximum exposure to these VIEs is limited to the potential amount of future payments under these arrangements."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "GOOGL-Private-Companies-Investment",
+        "fields": {
+          "investor": "Alphabet",
+          "amount_usd": 101346000000,
+          "verbatim_quote": "As of March 31, 2026, the carrying value of our non-marketable equity securities accounted for under the measurement alternative was $101.3 billion, of which $73.6 billion was remeasured at fair value during the three months ended March 31, 2026 and was primarily classified within Level 2 of the fair value hierarchy at the time of measurement."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "GOOGL-Future-Funding-Equity-Derivative-40B",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 40700000000,
+          "purpose": "future funding commitments for private investments",
+          "verbatim_quote": "As of December 31, 2025 and March 31, 2026, future funding commitments were $1.1 billion and $40.7 billion, respectively. As of March 31, 2026, this amount includes commitments for a future private investment consisting of a $10.0 billion capital commitment and $30.0 billion of future capital funding contingent upon the achievement of specified operational and financial milestones through 2030, which is accounted for as an equity derivative."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-Off-Balance-Sheet-Data-Center-Leases",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 75600000000,
+            "duration_yrs": 25,
+            "note": "Massive uncommenced lease obligations off-balance-sheet; execution risk on data center deployment and utilization"
+          },
+          "verbatim_quote": "As of March 31, 2026, we have entered into leases primarily related to data centers that have not yet commenced with future lease payments of $75.6 billion that are not yet recorded. These leases will commence between 2026 and 2031 with non-cancelable lease terms primarily between one and 25 years."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-Credit-Backstop-Data-Center-Concentration",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 28436000000,
+            "note": "Credit derivatives backstopping third-party data center entities; notional exposure grows with April 2026 additional $15.3B commitment"
+          },
+          "verbatim_quote": "We have entered into agreements with certain third parties to backstop certain payment obligations relating to data centers, which we account for as credit derivatives. The notional amounts for these credit derivatives represent the maximum potential exposure regarding future payments in the event of specified default scenarios by underlying parties. These agreements carry remaining terms of up to 15 years and the total potential exposure reduces over time as the underlying parties fulfill their payment obligations."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-Equity-Derivative-Milestone-Contingency",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 30000000000,
+            "duration_yrs": 4,
+            "note": "Future capital funding ($30B) contingent on operational/financial milestones through 2030; structured as equity derivative"
+          },
+          "verbatim_quote": "The notional amounts for equity derivatives represent an agreement for future capital funding in the form of notes receivable or equity to be funded in multiple tranches contingent upon the achievement of specified operational and financial milestones through 2030."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-Non-Marketable-Securities-Mark-to-Market",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 101346000000,
+            "pct_of_assets": 12.5,
+            "note": "$101.3B portfolio, $36.3B unrealized gain Q1 2026; valuation relies on unobservable inputs; 73% remeasured in single quarter signals mark-to-market volatility"
+          },
+          "verbatim_quote": "Our valuation methods include option pricing models, market comparable approach, and common stock equivalent method, which may include a combination of the observable transaction price at the transaction date and other unobservable inputs including volatility, expected time to exit, risk free rate, and the rights, and obligations of the securities we hold. These inputs vary significantly based on investment type."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "GFiber",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": [
+            "Google Fiber"
+          ]
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "GFiber-VIE-2026",
+        "fields": {
+          "entity_type": "VIE",
+          "sponsor": "Alphabet",
+          "beneficiary": "Alphabet",
+          "purpose": "Pending divestiture of Google Fiber with 49.99% equity retained",
+          "term_yrs": 1,
+          "verbatim_quote": "we will no longer be the primary beneficiary. The transaction is expected to close in late 2026."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Alphabet-GFiber-Equity-49.99pct",
+        "fields": {
+          "investor": "Alphabet",
+          "target": "GFiber",
+          "equity_pct": 49.99,
+          "verbatim_quote": "we expect to receive $1.5 billion in cash, a $2.0 billion note receivable, and a 49.99% equity interest"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GFiber-Equity-Method-Transition",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 6800000000,
+            "note": "Property and equipment classified as held for sale as of March 31, 2026"
+          },
+          "named_counterparties": [
+            "GFiber"
+          ],
+          "verbatim_quote": "As of March 31, 2026, GFiber met the criteria for held for sale classification. No impairment loss was recognized upon classification as held for sale and we ceased depreciation of the related long-lived assets. Held for sale assets primarily consist of property and equipment of $6.8 billion"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Alphabet-Long-Term-Supply-Energy",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 232700000000,
+          "purpose": "Technical infrastructure, inventory components, and energy service agreements",
+          "term_yrs": 20,
+          "verbatim_quote": "As of March 31, 2026, expected future fixed or minimum guaranteed commitments under these agreements were $232.7 billion"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Alphabet-Energy-Commitments-TakePay",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "CAPEX and energy infrastructure obligations",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "The energy service agreements include terms ranging from two to 20 years, with payments through 2047, and generally include take-or-pay provisions for minimum quantities of energy supply and substantive termination fees."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-Financial-Guarantees-Equipment",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 9000000000,
+            "note": "Backstop guarantees for counterparty procurement of long-lead time equipment"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We provide financial guarantees to certain counterparties, primarily in the form of backstop agreements with varying terms through August 2026. These backstop agreements support counterparty procurement of long-lead time equipment for our future power purchase and energy agreements. As of March 31, 2026, our maximum potential amount of future payments under these guarantees was $9.0 billion"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-Goodwill-Intangible-Q1-2026",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 57774000000,
+            "pct_of_assets": null,
+            "note": "Goodwill increased $24.984B in Q1 2026 vs. $33.38B Dec 31, 2025"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Changes in the carrying amount of goodwill for the three months ended March 31, 2026 were as follows: Balance as of December 31, 2025 $33,380 Additions 24,984 Balance as of March 31, 2026 $57,774"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-Intangible-Acquisition-Spike",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 9249000000,
+            "note": "Definite-lived intangible assets grew from $1.088B to $9.249B in Q1 2026"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Total definite-lived intangible assets: As of December 31, 2025 $1,088 million, As of March 31, 2026 $9,249 million"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Alphabet-Antitrust-Search-US",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Antitrust litigation and regulatory remedies",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 5,
+          "verbatim_quote": "In August 2024, the US District Court for the District of Columbia ruled against Google. A final judgment was entered in December 2025, which, among other things, imposes restrictions on how Google distributes its services and requires Google to share certain search data with and offer syndication services to certain competitors."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Alphabet-Antitrust-Ads-DOJ",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Advertising technology antitrust and potential structural remedies",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 5,
+          "verbatim_quote": "The DOJ's remedy proposal includes structural remedies that could have a material adverse effect on our business. Closing arguments were held in November 2025, and we are awaiting a final judgment."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Alphabet-EC-Ads-Fine-2025",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "European Commission advertising technology self-preferencing fine",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In September 2025, the EC announced its decision that Google had infringed European competition laws through 'self-preferencing' practices on the buy-side and the sell-side relating to Google's advertising technology business. The EC decision imposed a \u20ac3.0 billion fine and directed Google to cease and desist the alleged 'self-preferencing' practices."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Alphabet-Epic-Games-Remedies",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Google Play antitrust remedies and ongoing compliance",
+          "named_counterparties": [
+            "Epic Games"
+          ],
+          "severity": 4,
+          "verbatim_quote": "The presiding judge issued a remedies decision in October 2024, ordering a variety of alterations to our business models and operations and contractual agreements for Android and Google Play. While that appeal was pending, we implemented the effective ordered remedies in October 2025."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Alphabet-DMA-Compliance-Risk",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "EU Digital Markets Act compliance investigations",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "In March 2024, the EC opened two investigations regarding Google's compliance with certain provisions of the European Union's (EU) Digital Markets Act relating to Google Play and Search. In March 2025, the EC issued preliminary findings of non-compliance in both investigations"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Alphabet-TPU-Supply-Agreements",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": null,
+          "purpose": "Tensor Processing Units (TPU) hardware supply to customers for on-premises infrastructure",
+          "start_fy": 2026,
+          "verbatim_quote": "We have signed a limited number of agreements to supply Tensor Processing Units (TPU) hardware to customers who require or provide on-premises infrastructure for specialized, high-scale workloads. We expect to begin recognizing revenues from these agreements later in 2026, with the significant majority to be recognized in 2027."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-TPU-Execution-Risk",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Unspecified TPU supply commitments with revenue recognition deferred to 2027"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We have signed a limited number of agreements to supply Tensor Processing Units (TPU) hardware to customers who require or provide on-premises infrastructure for specialized, high-scale workloads. We expect to begin recognizing revenues from these agreements later in 2026, with the significant majority to be recognized in 2027."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Wiz",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intersect",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "GFiber",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Waymo",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Alphabet-Technical-Infrastructure-2026",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 35700000000,
+          "start_fy": 2026,
+          "purpose": "technical infrastructure including servers, network equipment, and data centers",
+          "verbatim_quote": "Capital expenditures, which primarily reflected investments in technical infrastructure, were $35.7 billion for the three months ended March 31, 2026."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Alphabet-Projected-2026-Capex",
+        "fields": {
+          "filer": "Alphabet",
+          "start_fy": 2026,
+          "purpose": "significant increase in investment in technical infrastructure, including servers and network equipment and data centers",
+          "verbatim_quote": "In 2026, we expect to significantly increase, relative to 2025, our investment in our technical infrastructure, including servers and network equipment and data centers."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Alphabet-Private-Company-Investment-2026",
+        "fields": {
+          "investor": "Alphabet",
+          "target": "<UNKNOWN>",
+          "amount_usd": 40000000000,
+          "equity_pct": null,
+          "round": null,
+          "disclosed_date": "2026-03",
+          "verbatim_quote": "In March 2026, we committed to a $40.0 billion investment in a private company consisting of a $10.0 billion capital commitment and $30.0 billion of future capital funding contingent upon the achievement of specified operational and financial milestones."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "GFiber-Divestiture-VIE",
+        "fields": {
+          "entity_type": "VIE",
+          "sponsor": "Alphabet",
+          "beneficiary": null,
+          "term_yrs": null,
+          "purpose": "fiber infrastructure ownership restructure",
+          "verbatim_quote": "In March 2026, we entered into a definitive agreement to contribute our ownership interest in GFiber into a newly formed entity. Upon closing, we expect to receive $1.5 billion in cash, a $2.0 billion note receivable, and a 49.99% equity interest. The remaining interest is expected to be accounted for as an unconsolidated VIE under the equity method of accounting, as we will no longer be the primary beneficiary."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Alphabet-Data-Center-Backstops",
+        "fields": {
+          "entity_type": "project_finance",
+          "sponsor": "Alphabet",
+          "co_owner": null,
+          "beneficiary": "third-party data centers and power infrastructure",
+          "debt_stack_usd": 37400000000,
+          "residual_value_guarantee": false,
+          "term_yrs": null,
+          "purpose": "support third-party data center and power infrastructure build-out",
+          "verbatim_quote": "As of March 31, 2026, we provided backstops in the form of financial guarantees and credit derivatives with maximum potential amount of future payments of $9.0 billion and $28.4 billion, respectively... We have also entered into an agreement to provide up to $33.3 billion of future backstops to support the build-out of data center and energy supply infrastructure, subject to finalization of terms with data center providers. Against this remaining commitment, in April 2026, we entered into an agreement with a data center provider to backstop approximately $15.3 billion."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-Capex-ROI-Gap",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 35700000000,
+            "duration_yrs": 1,
+            "note": "Q1 2026 capex of $35.7B with significant unfunded TPU supply agreements and $40B undeployed private investment"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Google Cloud has entered into a limited number of agreements to supply multiple gigawatts of TPU hardware to customers who require or provide on-premises infrastructure for specialized, high-scale workloads. Revenues for these transactions are included in our backlog as of March 31, 2026. We expect to begin recognizing revenues from these agreements later in 2026, with the significant majority to be recognized in 2027."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-Execution-Risk-TPU",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "counterparty_count": 1,
+            "note": "Multiple gigawatt TPU supply commitments with deferred revenue recognition into 2027"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Google Cloud has entered into a limited number of agreements to supply multiple gigawatts of TPU hardware to customers who require or provide on-premises infrastructure for specialized, high-scale workloads. Revenues for these transactions are included in our backlog as of March 31, 2026. We expect to begin recognizing revenues from these agreements later in 2026, with the significant majority to be recognized in 2027."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-Hidden-Leverage-Backstops",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 37400000000,
+            "pct_of_assets": null,
+            "note": "$9.0B financial guarantees + $28.4B credit derivatives + $33.3B future data center backstops (of which $15.3B committed in April 2026)"
+          },
+          "named_counterparties": [
+            "third-party data centers",
+            "power infrastructure providers"
+          ],
+          "verbatim_quote": "As of March 31, 2026, we provided backstops in the form of financial guarantees and credit derivatives with maximum potential amount of future payments of $9.0 billion and $28.4 billion, respectively. Upon a default under these backstops, we retain the right to assume the underlying leases for internal use or to sublease to third parties."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-Lease-Commitment-Opacity",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 75600000000,
+            "duration_yrs": 25,
+            "note": "Future lease payments for data centers not yet commenced, spanning 2026-2031 with terms up to 25 years"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of March 31, 2026, we have entered into leases primarily related to data centers that have not yet commenced with future lease payments of $75.6 billion. These leases will commence between 2026 and 2031 with non-cancelable lease terms primarily between one and 25 years."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Alphabet-AI-Infrastructure-Investment-Risk",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "execution_and_capex",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "We have invested and expect to significantly expand our investment in property and equipment, including our technical infrastructure, and we expect these assets to benefit our business over their estimated useful lives. Changes in facts and circumstances such as changes to historical asset performance, expected technology advancements, and future network deployment plans could change the period over which we expect to benefit from the asset and impact our financial condition and operating results."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Alphabet-Google-Cloud-Large-Commitments-Risk",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "customer_concentration_and_counterparty_risk",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "We also have a number of large, long-duration commercial agreements, which could increase our liabilities and obligations in the event of nonperformance by us, our counterparties, or vendors. These include certain financial guarantees, such as backstops to support the build-out of third-party data centers and power infrastructure. In the event of such nonperformance or industry challenges, we may incur additional liabilities, have excess capacity that we cannot easily redeploy, and not receive payments from our counterparties or customers."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "capex_commitment",
+        "target_name": "GOOG-Q1-2026-Capex",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "GOOGL-Data-Center-Leases-75.6B"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "GOOGL-Credit-Backstop-Data-Centers-28.4B"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "GOOGL-Additional-Backstop-April-2026-15.3B"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "Wiz"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "Intersect"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-Off-Balance-Sheet-Data-Center-Leases"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-Credit-Backstop-Data-Center-Concentration"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-Equity-Derivative-Milestone-Contingency"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-Non-Marketable-Securities-Mark-to-Market"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "DEPENDS_ON",
+        "target_type": "off_balance_entity",
+        "target_name": "GOOGL-Data-Center-VIE-Finance-Leases"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "DEPENDS_ON",
+        "target_type": "off_balance_entity",
+        "target_name": "GOOGL-Energy-Infrastructure-VIE-Backstops"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "GOOGL-Future-Funding-Equity-Derivative-40B"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "GFiber",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "off_balance_entity",
+        "target_name": "GFiber-VIE-2026",
+        "predicate": "SPONSORS",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "investment",
+        "target_name": "Alphabet-GFiber-Equity-49.99pct",
+        "predicate": "INVESTED_IN",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "capex_commitment",
+        "target_name": "Alphabet-Long-Term-Supply-Energy",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "Alphabet-Energy-Commitments-TakePay",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-Financial-Guarantees-Equipment",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-Goodwill-Intangible-Q1-2026",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-Intangible-Acquisition-Spike",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "Alphabet-Antitrust-Search-US",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "Alphabet-Antitrust-Ads-DOJ",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "Alphabet-EC-Ads-Fine-2025",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "Alphabet-Epic-Games-Remedies",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "Alphabet-DMA-Compliance-Risk",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "capex_commitment",
+        "target_name": "Alphabet-TPU-Supply-Agreements",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-TPU-Execution-Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GFiber-Equity-Method-Transition",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Wiz",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "amount_usd": 29500000000,
+          "date": "2026-03-11",
+          "type": "acquisition"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Intersect",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "amount_usd": 5900000000,
+          "date": "2026-03-10",
+          "type": "acquisition"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Waymo",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "amount_usd": 16000000000,
+          "date": "2026-02",
+          "type": "funding"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "capex_commitment",
+        "target_name": "Alphabet-Technical-Infrastructure-2026",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "capex_commitment",
+        "target_name": "Alphabet-Projected-2026-Capex",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "investment",
+        "target_name": "Alphabet-Private-Company-Investment-2026",
+        "predicate": "INVESTED_IN",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "off_balance_entity",
+        "target_name": "GFiber-Divestiture-VIE",
+        "predicate": "SPONSORS",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "off_balance_entity",
+        "target_name": "Alphabet-Data-Center-Backstops",
+        "predicate": "SPONSORS",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-Capex-ROI-Gap",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-Execution-Risk-TPU",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-Hidden-Leverage-Backstops",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-Lease-Commitment-Opacity",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "Alphabet-AI-Infrastructure-Investment-Risk",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "Alphabet-Google-Cloud-Large-Commitments-Risk",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      }
+    ],
+    "notes": "[chunk 1/4] FILING ANALYSIS: Alphabet Q1 2026 10-Q (filed 2026-04-30)\n\nSCOPE: The provided text is largely XBRL metadata, schema definitions, and the front matter of the 10-Q (cover page, table of contents, forward-looking statements, and the start of financial statements). No Item 1A Risk Factors or Item 1 Business narrative sections are included in the source text\u2014only financial statement line items and footnotes 1\u20133.\n\nKEY OBSERVATIONS:\n\n1. **Capex Signal**: Q1 2026 shows $35.7B in property and equipment purchases, significantly higher than Q1 2025 ($17.2B). This is a 2.1x YoY jump, consistent with Google's aggressive AI infrastructure investment.\n\n2. **Revenue Backlog**: $467.6B disclosed (Note 2), of which $462.3B is Google Cloud. This is SIFI-material as it shows customer concentration in one segment and execution risk if cloud revenue growth slows.\n\n3. **Debt Issuance**: $31.4B in debt proceeds (net) during Q1 2026 vs. $4.5B in Q1 2025, and long-term debt jumped from $46.5B to $77.5B. This suggests Alphabet is financing capex via debt at scale.\n\n4. **Non-marketable Securities**: Jumped from $68.7B (Dec 2025) to $106.9B (Mar 2026)\u2014a $38.2B increase in one quarter. This requires footnote disclosure but is not provided in the excerpt. This is a major portfolio change that warrants investigation of new AI lab investments.\n\n5. **Goodwill & Intangibles**: Goodwill increased from $33.4B to $57.8B; intangibles from $1.3B to $9.4B. This signals acquisition activity (Wiz Inc. and Intersect mentioned in XBRL tags) during Q1 2026.\n\n6. **Acquisitions**: The XBRL metadata references:\n   - **Wiz Inc.** acquisition (2026-03-11)\n   - **Intersect** acquisition (2026-03-10)\n   \n   These are not described in the narrative excerpt but are inferred from the XBRL tags.\n\n7. **No Named Counterparties in Narrative**: The provided text excerpt does not include Item 1 Business or Item 1A Risk Factors, so no specific customer/supplier concentration data or strategic partnerships with cloud customers (e.g., OpenAI, Anthropic, etc.) are disclosed in this excerpt.\n\n8. **Related-Party Transactions**: The \"Sale of interest in consolidated entities\" line items ($400M Q1 2025, $3.2B Q1 2026) suggest Alphabet may be monetizing stakes in consolidated subsidiaries, but details are not in the excerpt.\n\nSIFI-MATERIAL PATTERNS IDENTIFIABLE:\n\n- **CAPEX_ROI_GAP**: $35.7B Q1 capex vs. $467.6B backlog, but we need to know the margin structure and whether all backlog revenue is contracted/committed. High capex with backlog suggests execution risk if conversion slows.\n  \n- **HIDDEN_LEVERAGE**: Debt spike ($31B net issuance in one quarter) to finance capex\u2014need to assess if this is sustainable or signals desperation for AI infrastructure financing.\n\n- **COST_OPACITY**: Non-marketable securities jumped $38.2B\u2014Alphabet is diversifying into AI lab stakes, but the specific targets are not disclosed in the narrative excerpt.\n\n**CONSTRAINTS**: The excerpt does not include the narrative sections (Item 1 Business, Item 1A Risk Factors, MD&A Item 2) where customer concentration, supplier relationships, and strategic partnerships would be detailed. Extraction is limited to what is explicitly stated in the financial statements and the three footnotes provided.\n\""
+  }
+}

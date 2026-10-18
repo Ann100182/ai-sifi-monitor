@@ -1,0 +1,199 @@
+{
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AMZN-AWS-GovCloud-HumanRights-Risk",
+        "fields": {
+          "filer": "AMZN",
+          "category": "Customer concentration / reputational risk \u2014 government cloud customers with human rights concerns",
+          "named_counterparties": [
+            "DHS",
+            "Israel Defense Forces"
+          ],
+          "severity": 2,
+          "verbatim_quote": "AWS will host the Department of Homeland Security's biometric database... The Israeli government's 'Project Nimbus,' protested by Amazon employees, uses AWS to support the apartheid system under which Palestinians are surveilled, unlawfully detained, and tortured. The UN has clearly indicated war crimes may have been committed by Amazon's major customer, the Israel Defense Forces, since October 7, 2023."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AMZN-LobbyingMisalignment-Risk",
+        "fields": {
+          "filer": "AMZN",
+          "category": "Reputational / governance risk \u2014 lobbying spend and trade association misalignment",
+          "named_counterparties": [
+            "Chamber of Commerce",
+            "Business Roundtable"
+          ],
+          "severity": 1,
+          "verbatim_quote": "Amazon spent $121,820,000 on federal lobbying from 2015-2022... Amazon belongs to the Chamber of Commerce and Business Roundtable (BRT), which have spent over $2.2 billion on lobbying since 1998... Amazon's lack of disclosure presents reputational risks when its lobbying contradicts company public positions."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "MIT",
+        "fields": {
+          "aliases": [
+            "Massachusetts Institute of Technology"
+          ],
+          "role": "customer"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "risk_factor",
+        "target_name": "AMZN-AWS-GovCloud-HumanRights-Risk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "risk_factor",
+        "target_name": "AMZN-LobbyingMisalignment-Risk"
+      }
+    ],
+    "notes": "[chunk 1/6] This DEF 14A section (Compensation Discussion & Analysis, Board of Directors information, corporate governance, ESG disclosures) contains no SIFI-material entities. The content covers: standard director biographies and independence disclosures, routine board committee structures, ESG/sustainability program descriptions (Climate Pledge, housing equity fund, packaging reduction), generic human capital metrics, and boilerplate forward-looking statement disclaimers. The only named business relationships are immaterial arm's-length transactions (IronNet AWS payments, Corning/Amazon payments, Washington Post payments) explicitly described as not significant to the company. No hidden leverage, SPVs, AI lab investments, compute sales/purchases, circular dependencies, capex commitments, customer/supplier concentration, or other SIFI-material signals are present in this section.\n[chunk 2/6] This DEF 14A section covers Amazon's Compensation Discussion & Analysis, board governance, director compensation, auditor ratification (Ernst & Young), and shareholder proposals (Items 4\u20135) related to board committee structure and public policy. There are zero SIFI-material entities to extract: no named strategic partnerships, no customer/supplier concentration disclosures, no investments or acquisitions, no SPVs or off-balance-sheet arrangements, no AI lab relationships, no capex commitments, no circularity or revenue roundtripping signals, and no hidden leverage. The content is pure corporate governance boilerplate \u2014 director RSU awards, audit fees, DEI disclosures, and shareholder proposal rebuttals. Ernst & Young audit fees (~$46.9M) are routine and not SIFI-material. No extraction warranted.\n[chunk 3/6] This DEF 14A section covers shareholder proposals (Items 5\u20138) related to Board committee structure, AWS customer due diligence (Rekognition, Ring, Project Nimbus/DHS), lobbying disclosure, and gender/racial pay gaps. No SIFI-material capex commitments, SPVs, investments in AI labs, circular counterparty dependencies, or revenue roundtripping were disclosed in this section. The two risk factors extracted are the closest to SIFI-material content: (1) AWS's government cloud customer exposure (DHS biometric database, Project Nimbus/IDF) creating reputational and legal risk around a named major customer, and (2) lobbying spend opacity across trade associations. All other content (board governance process, Ring/Rekognition product details, pay equity proposals) is boilerplate governance/ESG not meeting SIFI-materiality thresholds. No hidden leverage, circularity, revenue roundtripping, capex ROI gap, or supplier concentration signals were present.\n[chunk 4/6] This DEF 14A section (Items 8\u201311) covers shareholder proposals on pay equity reporting, viewpoint restriction, just transition/climate, and plastic packaging. After rigorous review against SIFI-material criteria, this section contains NO material nodes or edges warranting extraction:\n\n1. PAY EQUITY (Item 8): Pure HR/DEI boilerplate. No counterparty relationships, no leverage, no concentration risk.\n\n2. VIEWPOINT RESTRICTION (Item 9): Corporate governance/policy proposal. No financial counterparty relationships disclosed.\n\n3. JUST TRANSITION / CLIMATE (Item 10): The $2B Amazon Housing Equity Fund, $1.2B Upskilling 2025 pledge, $53M Climate Gender Equity Fund, and MIT automation partnership are mentioned, but none meet SIFI-materiality thresholds \u2014 they are CSR commitments, not hidden leverage, circular dependencies, supplier concentrations, off-balance-sheet structures, or capex ROI gaps. The MIT partnership is operational/research, not a financial commitment with systemic risk.\n\n4. PLASTIC PACKAGING (Item 11): Operational sustainability disclosures. References to Whole Foods, Amazon Fresh, NREL/BOTTLE consortium, The Recycling Partnership, Closed Loop Infrastructure Fund \u2014 none are SIFI-material counterparty relationships.\n\nNo hidden_risk_signal, capex_commitment, off_balance_entity, investment, or material risk_factor nodes are warranted from this section. Extracting them would violate Rule 3 (skip boilerplate about generic market risks, routine competition).\n[chunk 5/6] This DEF 14A section covers shareholder proposals on packaging, freedom of association/labor relations, emissions reporting, facial recognition (Rekognition), and director political donations. None of the content contains SIFI-material entities per the extraction criteria. The text discusses: (1) labor union activity at Amazon warehouses - operational/reputational, not SIFI-material hidden leverage or circularity; (2) GHG/Scope 3 emissions reporting methodology - routine ESG boilerplate; (3) Amazon Rekognition facial recognition governance - operational/reputational risk, no named counterparties with financial materiality (Credo AI mentioned as third-party evaluator but not SIFI-material); (4) director political donations policy - pure governance boilerplate. No named investments, SPVs, capex commitments, AI lab relationships, hyperscaler dependencies, customer/supplier concentration >10%, or circular financial relationships are present in this text. No nodes or edges extracted.\n[chunk 6/6] This DEF 14A section (Items 15\u201317 shareholder proposals and board responses) contains no SIFI-material entities. The content covers: (1) a shareholder proposal on director political/charitable disclosure, (2) a shareholder proposal on an AI board committee with Amazon's governance response, and (3) a shareholder proposal on warehouse working conditions. None of these sections disclose named customer concentrations, supplier dependencies >10% revenue, off-balance-sheet SPVs, AI lab investments, capex commitments to named counterparties, revenue roundtripping, or other SIFI-material patterns. The AI references are generic policy/governance statements (AWS Responsible AI Policy, White House Voluntary AI commitments) without financially material counterparty relationships. The DOJ investigation mention regarding warehouse safety fraud is a litigation risk but not SIFI-material under the defined categories. No extraction warranted."
+  },
+  "beneficial_owners": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "aliases": [
+            "AMZN"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "The Vanguard Group",
+        "fields": {
+          "ticker": "BTO",
+          "role": "shareholder"
+        }
+      },
+      {
+        "type": "company",
+        "name": "BlackRock",
+        "fields": {
+          "ticker": "BLK",
+          "role": "shareholder"
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/1] This DEF 14A beneficial ownership section contains no SIFI-material entities or relationships. The section lists standard institutional shareholders (Vanguard 7.4%, BlackRock 6.1%) and founder/executive holdings, none of which trigger concentration concerns (10%+ single supplier/customer), hidden leverage, circularity, or strategic operational dependencies. Andrew Y. Ng appears on the board but with zero shareholdings and no disclosed relationship to AI lab operations or model development. This is routine corporate governance disclosure with no counterparty-web risk signals warranting extraction.\""
+  },
+  "related_party": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Blue Origin",
+        "fields": {
+          "aliases": [
+            "Blue Origin LLC"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "AMZN-BlueOrigin-LaunchServices-$7.4B",
+        "fields": {
+          "filer": "AMZN",
+          "amount_usd": 7400000000,
+          "duration_yrs": 6,
+          "start_fy": 2022,
+          "counterparty": "Blue Origin",
+          "purpose": "Satellite launch and related services through 2028",
+          "verbatim_quote": "Amazon announced agreements with Blue Origin and a third party pursuant to which it expects to pay approximately $7.4 billion for satellite launch and related services through 2028, of which approximately $2.7 billion was expected to be paid to Blue Origin."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-BlueOrigin-RelatedParty-ConflictRisk",
+        "fields": {
+          "filer": "AMZN",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 2700000000,
+            "note": "~$2.7B of $7.4B total launch commitment directed to Blue Origin, owned by Executive Chair Jeff Bezos. $805M paid to Blue Origin in 2023 alone."
+          },
+          "named_counterparties": [
+            "Blue Origin"
+          ],
+          "verbatim_quote": "Amazon announced agreements with Blue Origin and a third party pursuant to which it expects to pay approximately $7.4 billion for satellite launch and related services through 2028, of which approximately $2.7 billion was expected to be paid to Blue Origin."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "capex_commitment",
+        "target_name": "AMZN-BlueOrigin-LaunchServices-$7.4B"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Blue Origin",
+        "target_type": "company",
+        "target_name": "Amazon"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "capex_commitment",
+        "source_name": "AMZN-BlueOrigin-LaunchServices-$7.4B",
+        "target_type": "company",
+        "target_name": "Blue Origin"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-BlueOrigin-RelatedParty-ConflictRisk"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "AMZN-BlueOrigin-RelatedParty-ConflictRisk",
+        "target_type": "company",
+        "target_name": "Blue Origin"
+      }
+    ],
+    "notes": "[chunk 1/1] Filing: AMZN DEF 14A, 2024-04-11 (Accession 0001104659-24-045910), Related Party Transactions section.\n\nKEY EXTRACTION:\n1. CAPEX COMMITMENT \u2014 $7.4B satellite launch services agreement (2022\u20132028) with Blue Origin (owned by Executive Chair Jeff Bezos) and an unnamed third party. ~$2.7B of that total is earmarked for Blue Origin specifically. By end of 2023, ~$2.1B had been paid across both parties, with ~$805M estimated to Blue Origin. This is a SIFI-material related-party commitment: the company's Executive Chair personally owns the primary counterparty.\n\n2. HIDDEN RISK SIGNAL \u2014 Related-party concentration risk. Jeff Bezos, as Executive Chair of Amazon and sole owner of Blue Origin, creates a governance and conflict-of-interest risk. The $7.4B total (with ~$2.7B to Blue Origin) flows to an entity controlled by Amazon's Executive Chair. The Audit Committee approved the arrangement, but the structural conflict persists for the remaining contract term through 2028.\n\n3. ROUTINE TRANSACTIONS NOT EXTRACTED (below SIFI-material threshold):\n   - $9.3M consumer goods sales to Blue Origin (ordinary course, immaterial)\n   - $1.1M advertising + $3.6M digital content to Washington Post (immaterial)\n   - Employee family compensation (Grace Olsavsky, Connor Clinton) \u2014 immaterial, standard HR disclosures\n   - No SPVs, VIEs, off-balance-sheet entities, or AI lab investments disclosed in this section.\n   - No compute/hyperscaler counterparties (Anthropic, OpenAI, etc.) mentioned here; those would appear in the 10-K financial statement notes.\n\nUNNAMED THIRD PARTY: The filing references a \"third party\" in the $7.4B launch agreement but does not name them. Not extracted per Rule 1 (no fabrication)."
+  }
+}

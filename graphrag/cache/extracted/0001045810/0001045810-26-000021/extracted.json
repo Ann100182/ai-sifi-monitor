@@ -1,0 +1,1113 @@
+{
+  "item_15": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] Item 15 (Exhibits and Financial Statement Schedules) and Item 16 (Form 10-K Summary) contain only boilerplate: social media disclosure channels, standard forward-looking statement disclaimers, and a table of contents reference. No SIFI-material entities, counterparties, investments, related-party arrangements, customer/supplier relationships, or strategic partnerships are named or disclosed in this section. The text is pure procedural/regulatory disclosure with no operational content relevant to counterparty-web analysis, concentration risk, hidden leverage, circularity, or execution risk. Recommendation: Skip this section and request extraction from Item 1 (Business), Item 1A (Risk Factors), or financial notes (especially Note 8 if it contains equity investment details)."
+  },
+  "item_1": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "TSMC",
+        "fields": {
+          "aliases": [
+            "Taiwan Semiconductor Manufacturing Company Limited"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Samsung",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SK Hynix",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Micron Technology",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Hon Hai Precision Industry",
+        "fields": {
+          "aliases": [
+            "Foxconn"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Wistron Corporation",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Fabrinet",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "AMD",
+        "fields": {
+          "aliases": [
+            "Advanced Micro Devices, Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intel",
+        "fields": {
+          "aliases": [
+            "Intel Corporation"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "aliases": [
+            "Alphabet Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "aliases": [
+            "Amazon, Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "aliases": [
+            "Microsoft Corporation"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Huawei",
+        "fields": {
+          "aliases": [
+            "Huawei Technologies Co. Ltd."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alibaba",
+        "fields": {
+          "aliases": [
+            "Alibaba Group"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Baidu",
+        "fields": {
+          "aliases": [
+            "Baidu, Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Tesla",
+        "fields": {
+          "aliases": [
+            "Tesla, Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Qualcomm",
+        "fields": {
+          "aliases": [
+            "Qualcomm Incorporated"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Arista Networks",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Cisco Systems",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Mellanox",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "USG",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "China",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVIDIA_export_control_china_demand",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Export Controls & Geopolitical Risk",
+          "named_counterparties": [
+            "China",
+            "USG"
+          ],
+          "severity": 5,
+          "verbatim_quote": "Under the current rules and geopolitical landscape, we are unable to create and deliver a competitive product for China's data center market that receives approval from both the USG and the Chinese government. As of the end of fiscal year 2026, we were effectively foreclosed from competing in China's data center computing/compute market, and our effective foreclosure from the China market helped our competitors build larger developer and customer ecosystems to challenge us worldwide."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVIDIA_H20_inventory_writedown",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 4500000000.0,
+            "note": "H20 inventory charge in Q1 FY2026 due to export control restrictions"
+          },
+          "named_counterparties": [
+            "China"
+          ],
+          "verbatim_quote": "In April 2025, the USG informed us that it requires a license for export to China (including Hong Kong and Macau) and D:5 countries, or to companies headquartered or with an ultimate parent therein, of our H20 integrated circuits and any other circuits achieving the H20's memory bandwidth, interconnect bandwidth, or combination thereof. As a result of these requirements, we incurred a $4.5 billion charge in the first quarter of fiscal year 2026 associated with H20 for excess inventory and purchase obligations, as the demand for H20 products diminished."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVIDIA_supply_chain_asia_concentration",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "named_counterparties": [
+            "TSMC",
+            "Samsung",
+            "SK Hynix",
+            "Micron Technology",
+            "Hon Hai Precision Industry",
+            "Wistron Corporation",
+            "Fabrinet"
+          ],
+          "verbatim_quote": "We utilize foundries, such as Taiwan Semiconductor Manufacturing Company Limited, or TSMC, and Samsung Electronics Co., Ltd., or Samsung, to produce our semiconductor wafers. We purchase memory from SK Hynix Inc., Micron Technology, Inc., and Samsung. We utilize CoWoS technology for semiconductor packaging. We engage with independent subcontractors and contract manufacturers such as Hon Hai Precision Industry Co., Ltd., Wistron Corporation, and Fabrinet to perform assembly, testing and packaging of our final products."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVIDIA_export_control_tariff_h200",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Export Controls & Trade Policy",
+          "named_counterparties": [
+            "USG",
+            "China"
+          ],
+          "severity": 3,
+          "verbatim_quote": "In February 2026, the USG granted a license that would allow us to ship small amounts of H200 products to specific China-based customers. To date, we have not generated any revenue under the H200 licensing program, and do not yet know whether any imports will be allowed into China. The license requires that the H200s go through an inspection process in the United States prior to any shipment to the customer. As a result, any H200 shipped under the new licensing program will be subject to a 25% tariff upon importation into the United States."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVIDIA_competitive_harm_china_foreclosure",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Market Competition & Loss of Market Share",
+          "named_counterparties": [
+            "China",
+            "AMD",
+            "Huawei",
+            "Intel"
+          ],
+          "severity": 4,
+          "verbatim_quote": "Our competitive position has been harmed by export controls, and our competitive position and future results will be further harmed, over the long term, if the restrictions remain in place or are expanded in geographic, customer, or product scope, if customers purchase product from competitors, if customers develop their own internal solution, if we are unable to provide contractual warranty or other extended service obligations, if the USG does not grant licenses in a timely manner or denies licenses to significant customers or if we incur significant transition costs."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVIDIA_china_government_encouragement_domestic_competitors",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Geopolitical & Regulatory",
+          "named_counterparties": [
+            "China"
+          ],
+          "severity": 4,
+          "verbatim_quote": "The Chinese government has encouraged customers to purchase from our China-based competitors and discouraged customers from purchasing, importing, or using our data center products, including any China-specific product designed to comply with U.S. export controls."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVIDIA_ai_diffusion_ifr_regulatory_uncertainty",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [
+            "USG"
+          ],
+          "verbatim_quote": "In January 2025, the USG published the AI Diffusion IFR in the Federal Register. The IFR would have imposed a worldwide licensing requirement on our data center products, such as our H200, GB200 and GB300. The AI Diffusion IFR would have divided the world into three tiers, relegating most countries to \"Tier 2\" status, and would have created a complex and burdensome scheme for licensing approvals. In May 2025, the USG announced that it would rescind the AI Diffusion IFR and implement a replacement rule. The scope, timing, and requirements of the forthcoming rule remain uncertain."
+        }
+      }
+    ],
+    "edges": [],
+    "notes": null
+  },
+  "item_1a": {
+    "nodes": [],
+    "edges": [],
+    "notes": null
+  },
+  "item_1b": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] Item 1B (Unresolved Staff Comments) contains \"None.\" Item 1C (Cybersecurity) describes NVIDIA's internal risk management, governance, and vendor assessment processes. No named counterparties, investments, acquisitions, customer/supplier relationships, or off-balance entities are disclosed. The Chief Security Officer reporting structure and cybersecurity frameworks (ISO 27001, ISO 28001, C-TPAT) are procedural governance, not SIFI-material entities. No extractable knowledge graph nodes or edges per the SIFI Monitor scope.\""
+  },
+  "item_3": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] Item 3 (Legal Proceedings) and Item 5 (Market for Registrant's Common Equity) contain no SIFI-material entities, relationships, or risk signals. The section comprises: (1) a cross-reference to Note 12 for legal proceedings (no detail provided here); (2) routine equity trading disclosures (Nasdaq listing, stock split, share count); (3) standard share repurchase program details; (4) dividend policy; and (5) stock performance graphs. The December 15, 2025 acquisition and issuance of 174,676 shares (~$31M) to a key employee is immaterial in scale and lacks counterparty/strategic detail. No customer concentration, supplier dependency, investment in AI labs, off-balance-sheet leverage, circularity, or other SIFI-material pattern is disclosed in this section. Extraction skipped per rule 3 (boilerplate only)."
+  },
+  "item_7": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier",
+          "aliases": [
+            "NVDA"
+          ]
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "OpenAI",
+        "fields": {
+          "private": true,
+          "known_backers": [
+            "Microsoft",
+            "NVIDIA"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intel",
+        "fields": {
+          "ticker": "INTC",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Groq",
+        "fields": {
+          "role": "competitor",
+          "aliases": [
+            "Groq Inc"
+          ]
+        }
+      },
+      {
+        "type": "investment",
+        "name": "NVDA-Private-FY2026-Portfolio",
+        "fields": {
+          "investor": "NVIDIA",
+          "target": "Private companies and infrastructure funds",
+          "amount_usd": 17500000000,
+          "disclosed_date": "2026-01-25",
+          "verbatim_quote": "We invested $17.5 billion in private companies and infrastructure funds, primarily to support early\u2011stage startups. These investments include AI model makers that purchase our products directly or through CSPs. Many of these investments are illiquid and non\u2011marketable."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "NVDA-Intel-CommonStock",
+        "fields": {
+          "investor": "NVIDIA",
+          "target": "Intel",
+          "disclosed_date": "2026-01-25",
+          "verbatim_quote": "The change in Other income, net, compared to fiscal year 2025, was primarily driven by unrealized gains in non-marketable and publicly-held equity securities, including gains from our previously announced investment in Intel's common stock."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "NVDA-OpenAI-Pending",
+        "fields": {
+          "investor": "NVIDIA",
+          "target": "OpenAI",
+          "disclosed_date": "2026-02-25",
+          "verbatim_quote": "We are finalizing an investment and partnership agreement with OpenAI. There is no assurance that we will enter into an investment and partnership agreement with OpenAI or that a transaction will be completed."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "NVDA-Facility-Lease-Guarantees",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "NVIDIA",
+          "beneficiary": "early-stage companies",
+          "debt_stack_usd": 3500000000,
+          "residual_value_guarantee": true,
+          "term_yrs": null,
+          "purpose": "Land, power, and shell guarantees to support build-out of complex datacenter infrastructures for early-stage companies",
+          "verbatim_quote": "We provided $3.5 billion in land, power, and shell guarantees to early\u2011stage companies, generally over multi\u2011year periods. If the escrow and the partners' operating activities are not sufficient to cover an event of default under these guarantees, we may elect to assume the underlying leases for internal use or sublease them to third parties."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVDA-Capex-FY2026",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 6100000000,
+          "start_fy": 2026,
+          "purpose": "Capital expenditures for fiscal year 2026",
+          "verbatim_quote": "During fiscal year 2026 and fiscal year 2025, we spent $6.1 billion and $3.4 billion on capital expenditures, respectively. We expect to increase capital expenditures in fiscal year 2027 relative to fiscal year 2026 to support the future growth of our business."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVDA-Groq-License",
+        "fields": {
+          "filer": "NVIDIA",
+          "counterparty": "Groq",
+          "purpose": "Non-exclusive license agreement with Groq",
+          "verbatim_quote": "Cash used in investing activities increased in fiscal year 2026 compared to fiscal year 2025, primarily driven by higher purchases of equity investment securities and the execution of a non-exclusive license agreement with Groq."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVDA-H20-Export-Control-Charge",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Export Controls / Geopolitical",
+          "named_counterparties": [
+            "USG",
+            "China"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In April 2025, the USG informed us that a license is required for exports of our H20 product into the China market. As a result of these requirements, we incurred a $4.5 billion charge in the first quarter of fiscal year 2026 associated with H20 for excess inventory and purchase obligations, as the demand for H20 diminished."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVDA-OpenAI-Investment-Uncertainty",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Investment / Strategic Partnership Risk",
+          "named_counterparties": [
+            "OpenAI"
+          ],
+          "severity": 2,
+          "verbatim_quote": "We are finalizing an investment and partnership agreement with OpenAI. There is no assurance that we will enter into an investment and partnership agreement with OpenAI or that a transaction will be completed."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVDA-Energy-Capital-Constraint",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Infrastructure Execution Risk",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "The availability of data centers, energy, and capital to support the buildout of NVIDIA AI infrastructure by our customers and partners is crucial, and any shortage of these or other necessary resources could impact our future revenue and financial performance. Expanding energy capacity to meet demand is a complex, multi-year process."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-CircularInvestment-AIModelMakers",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CIRCULARITY",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 17500000000,
+            "note": "$17.5B invested in private companies including AI model makers that also purchase NVIDIA products directly or through CSPs"
+          },
+          "named_counterparties": [
+            "OpenAI"
+          ],
+          "verbatim_quote": "We invested $17.5 billion in private companies and infrastructure funds, primarily to support early\u2011stage startups. These investments include AI model makers that purchase our products directly or through CSPs."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-RevenueRoundtrip-GuaranteePartners",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 3500000000,
+            "note": "$3.5B in facility guarantees to early-stage companies that are also customers purchasing NVIDIA products"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "To support the build-out of complex datacenter infrastructures, we enter into commercial arrangements, including guarantees with partners. We provided $3.5 billion in land, power, and shell guarantees to early\u2011stage companies, generally over multi\u2011year periods."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-CustomerConcentration-DirectCustomers",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_revenue": 0.36,
+            "counterparty_count": 2,
+            "note": "Two direct customers represent 22% and 14% of FY2026 total revenue respectively, totaling 36% of revenue"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "For fiscal year 2026, sales to one direct customer represented 22% of total revenue and sales to another direct customer represented 14% of total revenue, all of which were primarily attributable to the Compute & Networking segment."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-HiddenLeverage-FacilityGuarantees",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 3500000000,
+            "note": "$3.5B in off-balance-sheet land, power, and shell guarantees; NVIDIA may be required to assume underlying leases upon event of default"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We provided $3.5 billion in land, power, and shell guarantees to early\u2011stage companies, generally over multi\u2011year periods. If the escrow and the partners' operating activities are not sufficient to cover an event of default under these guarantees, we may elect to assume the underlying leases for internal use or sublease them to third parties."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-Illiquid-Portfolio-Opacity",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 17500000000,
+            "note": "$17.5B in private, illiquid, non-marketable investments with measurement alternative accounting (cost minus impairment, adjusted for observable price changes)"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Many of these investments are illiquid and non\u2011marketable. The related early-stage startups may not become profitable in the near term, or at all, and there can be no assurance that we will realize a return on our investments."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-IndirectCustomer-AIResearch-Concentration",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "One AI research and deployment company (unnamed) contributed to a meaningful amount of revenue via cloud services purchased from NVIDIA's customers"
+          },
+          "named_counterparties": [
+            "OpenAI"
+          ],
+          "verbatim_quote": "We estimate that one AI research and deployment company contributed to a meaningful amount of our revenue purchasing cloud services from our customers in fiscal year 2026."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-CapexROIGap-FY2027",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 6100000000,
+            "note": "FY2026 capex of $6.1B with guidance for further increases in FY2027 without disclosed matched contracted revenue commitments"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "During fiscal year 2026 and fiscal year 2025, we spent $6.1 billion and $3.4 billion on capital expenditures, respectively. We expect to increase capital expenditures in fiscal year 2027 relative to fiscal year 2026 to support the future growth of our business."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-H20-ExportControl-ExecutionRisk",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 4500000000,
+            "note": "$4.5B charge for H20 excess inventory and purchase obligations due to USG export licensing requirements to China"
+          },
+          "named_counterparties": [
+            "USG",
+            "China"
+          ],
+          "verbatim_quote": "In April 2025, the USG informed us that a license is required for exports of our H20 product into the China market. As a result of these requirements, we incurred a $4.5 billion charge in the first quarter of fiscal year 2026 associated with H20 for excess inventory and purchase obligations, as the demand for H20 diminished."
+        }
+      }
+    ],
+    "edges": [],
+    "notes": null
+  },
+  "item_7a": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/1] FILING ANALYSIS (Item 7A, Market Risk Disclosures): This section covers quantitative and qualitative disclosures about market risk exposure (interest rate, equity price, and foreign exchange risk). It references investments held and debt outstanding, but does NOT contain extractable SIFI-material structures per the hard rules. Specifically: (1) NO off-balance-sheet entities (SPVs, VIEs, operating leases with RVGs, or project-finance structures) are mentioned or described in this section. (2) NO capex commitments to counterparties are disclosed. (3) NO specific equity investments in private companies or AI labs are named in this text (the section only states that Notes 7 and 8 contain equity investment details, but those notes are not provided in the source text). (4) NO hidden-risk signals matching the 8 SIFI patterns can be extracted from this generic market-risk sensitivity analysis. The fixed-rate senior Notes ($8.5B) carry no interest-rate risk and require no further extraction. Foreign exchange hedging and equity price sensitivity are routine controls, not SIFI-material. EXTRACTION RESULT: Only the NVIDIA node (filer) is emitted. Detailed investment data (non-marketable equity securities portfolio) must await the actual Notes 7 and 8 text, which should be extracted separately when provided.\""
+  },
+  "item_9a": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] Item 9A (Controls & Procedures) through Item 14 (Principal Accountant Fees) contains no SIFI-material entities. The section is pure boilerplate disclosure controls compliance language, trading plan adoption notices (immaterial insider trades), director/officer identification cross-references to proxy, and audit committee disclosures. No named business relationships, counterparty dependencies, investments, SPVs, off-balance commitments, or related-party transactions are disclosed. No verbatim quotes are extractable because no material claims are made. PricewaterhouseCoopers LLP is named as the auditor, but auditor choice is not SIFI-material. Recommend skipping this section entirely for counterparty-web analysis."
+  },
+  "financial_statements_and_notes": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVDA-Inventory-Purchase-Obligations-FY2026",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 95200000000,
+          "start_fy": 2026,
+          "purpose": "Outstanding inventory purchase and long-term supply and capacity obligations",
+          "verbatim_quote": "the Company's consolidated outstanding inventory purchase and long-term supply and capacity obligations balance was $95.2 billion, of which a significant portion relates to inventory purchase obligations."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-CapexROIGap-SupplyObligations",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 95200000000,
+            "note": "$95.2B in outstanding inventory purchase and long-term supply/capacity obligations vs $21.4B current inventory; significant portion noncancelable"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "the Company's consolidated outstanding inventory purchase and long-term supply and capacity obligations balance was $95.2 billion, of which a significant portion relates to inventory purchase obligations. As of January 25, 2026, the Company's consolidated inventories balance was $21.4 billion"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-ExecutionRisk-ExcessInventoryProvisions",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 21400000000,
+            "note": "Inventory provisions driven by regulatory export restrictions and future demand assumptions; $21.4B inventory on balance sheet"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Most of the Company's inventory provisions relate to excess quantities of products, based on the Company's inventory levels and future product purchase commitments compared to assumptions about future demand including the impact of market conditions such as regulatory export restrictions on their products."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "NVDA-Groq-Investment-FY2026",
+        "fields": {
+          "investor": "NVIDIA",
+          "target": "Groq",
+          "amount_usd": 13000000000,
+          "disclosed_date": "FY2026",
+          "verbatim_quote": "Groq, Inc. (13,000) \u2014 \u2014"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Groq",
+        "fields": {
+          "aliases": [
+            "Groq, Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-NonMarketableEquity-ConcentrationRisk",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 22251000000,
+            "pct_of_assets": 10.76,
+            "note": "Non-marketable equity securities grew from $3.387B (FY2025) to $22.251B (FY2026), a ~6.6x increase in one year; $13B single investment in Groq, Inc. disclosed separately in cash flows"
+          },
+          "named_counterparties": [
+            "Groq"
+          ],
+          "verbatim_quote": "Non-marketable equity securities 22,251 3,387 ... Groq, Inc. (13,000) \u2014 \u2014 ... Purchases of non-marketable equity securities (17,502) (1,486) (862)"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-CircularityRisk-InvesteeCustomers",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CIRCULARITY",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 22251000000,
+            "note": "NVIDIA holds $22.25B in non-marketable equity securities (up from $3.4B), much of which is in AI compute customers (e.g., Groq $13B). NVIDIA simultaneously sells compute to these investees, creating investor-is-also-supplier circularity."
+          },
+          "named_counterparties": [
+            "Groq"
+          ],
+          "verbatim_quote": "Purchases of non-marketable equity securities (17,502) ... Groq, Inc. (13,000) ... Gains on non-marketable equity securities and publicly-held equity securities, net (8,918)"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-CostOpacity-GoodwillJump",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 20832000000,
+            "note": "Goodwill jumped from $5.188B (FY2025) to $20.832B (FY2026), a ~$15.6B increase, indicating significant acquisition activity with unallocated goodwill not yet disclosed in this section."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Goodwill 20,832 5,188 ... Intangible assets, net 3,306 807 ... Acquisitions, net of cash acquired (1,535) (1,007) (83)"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-HiddenLeverage-OperatingLeases",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 5439000000,
+            "note": "Operating lease assets $2.867B + long-term operating lease liabilities $2.572B (total lease liability exposure including current portion). Leases not capitalized as debt."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Operating lease assets 2,867 1,793 ... Long-term operating lease liabilities 2,572 1,519"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-RevenueRoundtrip-EquityGains",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 8918000000,
+            "note": "$8.918B in gains on non-marketable and publicly-held equity securities recognized in Other income, net (FY2026 vs $1.03B in FY2025). NVIDIA invests heavily in AI companies that are also its GPU customers; gains on these investments may mask the economic circularity."
+          },
+          "named_counterparties": [
+            "Groq"
+          ],
+          "verbatim_quote": "Gains on non-marketable equity securities and publicly-held equity securities, net (8,918) (1,030) (238) ... Other income, net 9,022 1,034 237"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVDA-Supply-$95.2B",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 95200000000,
+          "duration_yrs": 1,
+          "start_fy": 2026,
+          "purpose": "Manufacturing, supply, and capacity commitments for datacenter-scale production across current and future product architectures",
+          "verbatim_quote": "Manufacturing, supply, and capacity commitments reflect datacenter-scale production and longer future ordering horizons across current and future product architectures... As of January 25, 2026, these commitments were $95.2 billion, of which substantially all will be paid through fiscal year 2027."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVDA-CloudServices-$27B",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 27000000000,
+          "duration_yrs": 6,
+          "start_fy": 2027,
+          "purpose": "Multi-year cloud service agreements to support research and development efforts",
+          "verbatim_quote": "Multi-year cloud service agreement commitments as of January 25, 2026, were $27 billion, for which $7 billion, $6 billion, $5 billion, $5 billion, $2 billion, and $2 billion will be paid in fiscal years 2027, 2028, 2029, 2030, 2031, and 2032 and thereafter, respectively."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVDA-InvestmentCommitments-$11.4B",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 11400000000,
+          "duration_yrs": 1,
+          "start_fy": 2026,
+          "purpose": "Investment commitments subject to certain contingencies",
+          "verbatim_quote": "Investment commitments are $11.4 billion as of January 25, 2026, subject to certain contingencies, of which we expect substantially all will be made through fiscal year 2027."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVDA-DataCenterLeases-$22.7B",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 22700000000,
+          "duration_yrs": 4,
+          "start_fy": 2027,
+          "purpose": "Future data center lease obligations commencing between fiscal years 2027 and 2030, primarily to support R&D",
+          "verbatim_quote": "Between fiscal years 2027 and 2030, we expect to commence leases with future obligations of $22.7 billion, primarily data center leases to support our research and development efforts, with lease terms of 1.8 to 20 years."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "NVDA-FacilityLeaseGuarantees",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "NVIDIA",
+          "beneficiary": "partners",
+          "debt_stack_usd": 3500000000,
+          "residual_value_guarantee": true,
+          "term_yrs": 7,
+          "purpose": "Guarantees of partners' facility lease obligations in exchange for warrants; partners placed $712M in escrow",
+          "verbatim_quote": "In fiscal year 2026, we entered into agreements to guarantee partners' facility lease obligations in the event of their default in exchange for warrants. The maximum gross exposure under all agreements is $3.5 billion, which is reduced as the partners make payments to the lessors over terms ranging from 5 to 7 years. The partners have placed $712 million in escrow to mitigate our potential exposure."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "NVDA-NonMarketableEquity-Portfolio",
+        "fields": {
+          "investor": "NVIDIA",
+          "target": "Various private companies",
+          "amount_usd": 22251000000,
+          "disclosed_date": "2026-01-25",
+          "verbatim_quote": "Balance at end of period $22,251 [million]... Net additions 17,444 [million for fiscal year 2026]... Non-marketable equity securities had cumulative gross unrealized gains of $2.7 billion and cumulative gross unrealized losses and impairments of $176 million on securities held as of January 25, 2026."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "NVDA-PubliclyHeldEquity",
+        "fields": {
+          "investor": "NVIDIA",
+          "target": "Publicly-held equity securities (incl. reclassified non-marketable)",
+          "amount_usd": 4840000000,
+          "disclosed_date": "2026-01-25",
+          "verbatim_quote": "In the first quarter of fiscal year 2026, one investment was reclassified from non-marketable equity securities to marketable securities following public market trading. The balance as of January 25, 2026 includes $10.5 billion of investments which are subject to short-term lock-up restrictions on the ability to sell."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-SupplyCommitment-CAPEX_ROI_GAP",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 95200000000,
+            "duration_yrs": 1,
+            "note": "$95.2B supply/manufacturing commitments substantially all due in FY2027, plus $27B cloud, $11.4B investment, $22.7B future lease obligations \u2014 aggregate uncommitted capex pipeline exceeds $156B with no explicit matched contracted revenue disclosed"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Manufacturing, supply, and capacity commitments reflect datacenter-scale production and longer future ordering horizons... As of January 25, 2026, these commitments were $95.2 billion, of which substantially all will be paid through fiscal year 2027."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-CustomerConcentration-Direct",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_revenue": 0.36,
+            "counterparty_count": 2,
+            "note": "Two direct customers: 22% and 14% of total FY2026 revenue (~$47.5B and ~$30.2B respectively); three customers = 56% of AR balance"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "For fiscal year 2026, sales to one direct customer represented 22% of total revenue and sales to another direct customer represented 14% of total revenue, all of which were primarily attributable to the Compute & Networking segment."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-FacilityGuarantees-HIDDEN_LEVERAGE",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 3500000000,
+            "note": "Off-balance-sheet guarantee of $3.5B in partner lease obligations in exchange for warrants; only $712M escrow offsets exposure; classified as credit derivatives"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In fiscal year 2026, we entered into agreements to guarantee partners' facility lease obligations in the event of their default in exchange for warrants. The maximum gross exposure under all agreements is $3.5 billion, which is reduced as the partners make payments to the lessors over terms ranging from 5 to 7 years. The partners have placed $712 million in escrow to mitigate our potential exposure."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-NonMarketableEquity-CIRCULARITY",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CIRCULARITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 22251000000,
+            "note": "NVIDIA holds $22.3B in non-marketable equity in private companies that are also likely NVIDIA GPU customers (AI labs, neoclouds, compute providers); $17.4B net additions in FY2026 alone; investor-is-also-customer circularity risk"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Balance at end of period $22,251 [million]... Adjustments related to non-marketable equity securities: Net additions 17,444 [million for year ended Jan 25, 2026]"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-DataCenterLeases-EXECUTION_RISK",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 22700000000,
+            "duration_yrs": 4,
+            "note": "$22.7B in data center leases expected to commence FY2027-2030, not yet on balance sheet; if demand slows or export controls tighten, NVIDIA faces long-term lease obligations without matching revenue"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Between fiscal years 2027 and 2030, we expect to commence leases with future obligations of $22.7 billion, primarily data center leases to support our research and development efforts, with lease terms of 1.8 to 20 years."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-Groq-COST_OPACITY",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 16900000000,
+            "note": "$14.4B goodwill + $2.5B intangible from Groq license deal (no equity acquired); $13B paid at closing, $4B payable within 1 year; goodwill valued via 'cost-to-recreate' \u2014 highly subjective; total consideration $17B for a license and workforce, not an acquisition"
+          },
+          "named_counterparties": [
+            "Groq"
+          ],
+          "verbatim_quote": "In December 2025, we entered into a non-exclusive license agreement with Groq, Inc., or Groq, for its language processing unit technology and hired certain Groq employees. No customer contracts, existing products, or equity interests were purchased. We recorded $14.4 billion of goodwill and a $2.5 billion developed technology intangible asset, valued using a cost-to-recreate methodology with a five-year useful life."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-CloudCommitments-REVENUE_ROUNDTRIP",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 27000000000,
+            "duration_yrs": 6,
+            "note": "NVIDIA commits $27B to CSPs for cloud compute it then uses for R&D; those same CSPs are NVIDIA's largest customers buying GPUs \u2014 potential roundtrip: NVIDIA sells GPUs to CSPs, CSPs sell compute back to NVIDIA"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Multi-year cloud service agreement commitments as of January 25, 2026, were $27 billion... Some cloud service capacity may be reduced, terminated or sold to others by the CSPs, in which case our commitments will be reduced. We expect cloud service agreements to be used to support our research and development efforts."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-ExcessInventory-EXECUTION_RISK",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 2739000000,
+            "note": "Excess inventory purchase obligations of $2.74B on balance sheet; $3.2B expensed in FY2026 cost of revenue; signals over-ordering risk at scale"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Excess inventory purchase obligations (1) 2,739 [million as of Jan 25, 2026]... In fiscal years 2026 and 2025, we recorded an expense of approximately $3.2 billion and $2.0 billion, respectively, in cost of revenue."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Groq",
+        "fields": {
+          "role": "supplier",
+          "aliases": [
+            "Groq, Inc."
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "capex_commitment",
+        "target_name": "NVDA-Inventory-Purchase-Obligations-FY2026"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-CapexROIGap-SupplyObligations"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-ExecutionRisk-ExcessInventoryProvisions"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Groq"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-NonMarketableEquity-ConcentrationRisk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-CircularityRisk-InvesteeCustomers"
+      },
+      {
+        "predicate": "CIRCULAR_WITH",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Groq"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-CostOpacity-GoodwillJump"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-HiddenLeverage-OperatingLeases"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-RevenueRoundtrip-EquityGains"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "NVDA-CircularityRisk-InvesteeCustomers",
+        "target_type": "company",
+        "target_name": "Groq"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "NVDA-RevenueRoundtrip-EquityGains",
+        "target_type": "company",
+        "target_name": "Groq"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "investment",
+        "source_name": "NVDA-Groq-Investment-FY2026",
+        "target_type": "company",
+        "target_name": "Groq"
+      }
+    ],
+    "notes": "[chunk 1/2] KEY FINDINGS FROM NVIDIA FY2026 10-K FINANCIAL STATEMENTS & NOTES:\n\n1. GROQ $13B INVESTMENT (CRITICAL): Cash flow statement explicitly line-items \"Groq, Inc. $(13,000)\" under investing activities, representing a $13B single investment in FY2026. Total non-marketable equity securities surged from $3.387B to $22.251B (+$18.864B YoY), with $17.502B in total non-marketable equity purchases in FY2026.\n\n2. SUPPLY OBLIGATION OVERHANG ($95.2B): Outstanding inventory purchase and long-term supply/capacity obligations reached $95.2B against $21.4B in current inventory. PwC flagged this as a Critical Audit Matter due to significant management judgment in demand forecasting and export restriction impacts.\n\n3. CIRCULAR INVESTOR-CUSTOMER DYNAMIC: NVIDIA is simultaneously (a) the dominant GPU/compute supplier to AI companies, (b) a major equity investor in those same AI companies (e.g., Groq), and (c) recognizing $8.918B in investment gains from those positions. This creates a structural circularity where revenue growth inflates investee valuations which flow back as NVIDIA income.\n\n4. GOODWILL JUMP ($5.2B \u2192 $20.8B): Goodwill nearly quadrupled in FY2026, suggesting significant unannounced or undisclosed acquisitions beyond the $1.535B \"acquisitions net of cash\" in the cash flow statement. This section does not yet contain Note details explaining the delta \u2014 flags COST_OPACITY risk pending further note disclosure.\n\n5. OPERATING LEASE EXPOSURE: $2.867B in operating lease assets and $2.572B in long-term operating lease liabilities represent off-balance-sheet-style obligations not classified as debt. Terms and any residual value guarantees not disclosed in this section.\n\n6. NOTE: The filing section provided covers only the primary financial statements and Note 1 (accounting policies). Notes 7-12 (non-marketable equity securities detail, commitments, related parties) were not included. The $22.251B non-marketable equity portfolio likely contains additional named investees (CoreWeave, Lambda, xAI, Mistral, etc.) that would be extractable from Note 8. Only Groq is explicitly named in the cash flow statement in this section."
+  }
+}

@@ -1,0 +1,853 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce, Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Anthropic",
+        "fields": {
+          "aliases": [
+            "Anthropic PBC"
+          ],
+          "private": true,
+          "known_backers": [
+            "Salesforce"
+          ]
+        }
+      },
+      {
+        "type": "investment",
+        "name": "CRM-Anthropic-Investment",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Anthropic",
+          "disclosed_date": "2025-02-01"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce Inc."
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Anthropic",
+        "fields": {
+          "aliases": [
+            "Anthropic PBC"
+          ],
+          "private": true,
+          "known_backers": [
+            "Salesforce"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Qualified",
+        "fields": {
+          "aliases": [
+            "Qualified.com Inc."
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Contentful",
+        "fields": {
+          "aliases": [
+            "Contentful Global Inc."
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intercom",
+        "fields": {
+          "aliases": [
+            "Fin",
+            "Intercom Inc."
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Salesforce-Anthropic-Investment",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Anthropic",
+          "equity_pct": null,
+          "verbatim_quote": "the Company's privately held investment in Anthropic PBC (\"Anthropic\") had a carrying value that represented approximately 45 percent and 22 percent, respectively, of the Company's total strategic investments portfolio"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Anthropic-Concentration",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 5097,
+            "pct_of_assets": null,
+            "note": "Anthropic investment carrying value ~$5.1B represents 45% of strategic investments portfolio as of July 31, 2026"
+          },
+          "named_counterparties": [
+            "Anthropic"
+          ],
+          "verbatim_quote": "As of July 31, 2026 and January 31, 2026, the Company's privately held investment in Anthropic PBC (\"Anthropic\") had a carrying value that represented approximately 45 percent and 22 percent, respectively, of the Company's total strategic investments portfolio."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Qualified-Acquisition",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 1200000000,
+          "counterparty": "Qualified",
+          "purpose": "Acquire agentic artificial intelligence marketing solutions provider",
+          "verbatim_quote": "In April 2026, the Company acquired all of the outstanding stock of Qualified.com, Inc. (\"Qualified\"), a leading provider of agentic artificial intelligence marketing solutions. The acquisition date fair value of the consideration transferred for Qualified was $1.2 billion"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Contentful-Acquisition",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 1500000000,
+          "counterparty": "Contentful",
+          "purpose": "Acquire composable content platform provider",
+          "verbatim_quote": "In May 2026, the Company entered into an agreement to acquire Contentful Global, Inc. (\"Contentful\"), provider of a leading composable content platform, for approximately $1.5 billion in cash"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Intercom-Acquisition",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 3600000000,
+          "counterparty": "Intercom",
+          "purpose": "Acquire customer agent platform providing autonomous, end-to-end AI service agents",
+          "verbatim_quote": "In June 2026, the Company entered into an agreement to acquire Intercom, Inc. (\"Fin\"), a customer agent platform providing autonomous, end-to-end AI service agents, for approximately $3.6 billion in cash"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Salesforce-Strategic-Concentration",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 6300000000,
+            "duration_yrs": null,
+            "note": "Three pending/recent AI-focused acquisitions totaling $6.3B (Qualified $1.2B, Contentful $1.5B, Intercom $3.6B) without disclosed contracted revenue integration"
+          },
+          "named_counterparties": [
+            "Qualified",
+            "Contentful",
+            "Intercom"
+          ],
+          "verbatim_quote": "In April 2026, the Company acquired all of the outstanding stock of Qualified.com, Inc. (\"Qualified\")... for approximately $1.2 billion... In May 2026, the Company entered into an agreement to acquire Contentful Global, Inc. (\"Contentful\")... for approximately $1.5 billion in cash... In June 2026, the Company entered into an agreement to acquire Intercom, Inc. (\"Fin\")... for approximately $3.6 billion in cash"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Anthropic-Valuation-Uplift",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 3000000000,
+            "note": "Unrealized gains on Anthropic investment of $3.0B (H1 FY2027) suggests significant mark-to-market volatility in illiquid portfolio"
+          },
+          "named_counterparties": [
+            "Anthropic"
+          ],
+          "verbatim_quote": "Upward adjustments for the three and six months ended July 31, 2026 include unrealized gains of $2.7 billion and $3.0 billion, respectively, related to the Company's investment in Anthropic."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Bank of America",
+        "fields": {
+          "aliases": [
+            "BofA",
+            "BAC"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Slack",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Informatica",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Qualified",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Regrello",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Website Technologies",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Backpage",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Anthropic",
+        "fields": {
+          "private": true,
+          "known_backers": [
+            "Salesforce"
+          ]
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Backpage_Litigation_Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Third-party liability",
+          "named_counterparties": [
+            "Website Technologies",
+            "Backpage"
+          ],
+          "severity": 4,
+          "verbatim_quote": "Plaintiffs in these actions generally allege that they were victims of sex trafficking by individuals who advertised them on backpage.com, a website operated by Backpage, and assert various claims and theories premised on the Company's provision to Website Technologies of Salesforce CRM Software and related products, which the plaintiffs allege facilitated the operation and growth of Backpage's business."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Backpage_Customer_Liability_Concentration",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "counterparty_count": 1,
+            "note": "Single former customer (Backpage/Website Technologies) associated with multiple class action litigation across 11+ federal/state courts with aggregate 395+ plaintiffs"
+          },
+          "named_counterparties": [
+            "Website Technologies",
+            "Backpage"
+          ],
+          "verbatim_quote": "The Company has been named as a defendant in a number of state and federal actions relating to the activities of one of its former customers, Website Technologies, LLC (\"Website Technologies\"), an affiliate of Backpage.com, LLC (\"Backpage\")."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Slack_IPO_Litigation",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "named_counterparties": [
+            "Slack"
+          ],
+          "verbatim_quote": "Beginning in September 2019, seven purported class action lawsuits were filed against Slack, its directors, certain of its officers and certain investment funds associated with certain of its directors, each alleging violations of securities laws in connection with Slack's registration statement on Form S-1"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Salesforce_Anthropic_Investment",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Anthropic",
+          "amount_usd": null,
+          "disclosed_date": "2026-08-27",
+          "verbatim_quote": "The unrealized gains for the three and six months ended July 31, 2026 include gains of $2.7 billion and $3.0 billion, respectively, related to the Company's investment in Anthropic."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Informatica_Acquisition",
+        "fields": {
+          "filer": "Salesforce",
+          "counterparty": "Informatica",
+          "purpose": "acquisition",
+          "verbatim_quote": "our November 2025 acquisition of Informatica, Inc. (\"Informatica\")"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Qualified_Acquisition",
+        "fields": {
+          "filer": "Salesforce",
+          "counterparty": "Qualified",
+          "purpose": "acquisition",
+          "verbatim_quote": "our April 2026 acquisition of Qualified.com, Inc. (\"Qualified\")"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Regrello_Acquisition",
+        "fields": {
+          "filer": "Salesforce",
+          "counterparty": "Regrello",
+          "purpose": "acquisition",
+          "verbatim_quote": "our October 2025 acquisition of Regrello Corp. (\"Regrello\")"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Bank of America",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "JPMorgan Chase",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Informatica",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM",
+            "Salesforce.com"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Contentful",
+        "fields": {
+          "aliases": [
+            "Contentful Global Inc"
+          ],
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intercom",
+        "fields": {
+          "aliases": [
+            "Fin"
+          ],
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Anthropic",
+        "fields": {
+          "aliases": [
+            "Anthropic PBC"
+          ],
+          "private": true,
+          "known_backers": [
+            "Salesforce"
+          ]
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "CRM-Contentful-Acquisition",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 1500000000.0,
+          "counterparty": "Contentful",
+          "purpose": "acquisition of composable content platform provider",
+          "verbatim_quote": "In May 2026, the Company entered into an agreement to acquire Contentful Global, Inc. (\"Contentful\"), provider of a leading composable content platform, for approximately $1.5 billion in cash, net of the value of shares currently owned by Salesforce, and subject to customary purchase price adjustments."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "CRM-Intercom-Acquisition",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 3600000000.0,
+          "counterparty": "Intercom",
+          "purpose": "acquisition of customer agent platform provider",
+          "verbatim_quote": "In June 2026, the Company entered into an agreement to acquire Intercom, Inc. (\"Fin\"), a customer agent platform providing autonomous, end-to-end AI service agents, for approximately $3.6 billion in cash, and subject to customary purchase price adjustments."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "CRM-Anthropic-Investment",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Anthropic",
+          "amount_usd": 5100000000.0,
+          "disclosed_date": "2026-07-31",
+          "verbatim_quote": "the Company's investment in Anthropic PBC (\"Anthropic\") which represented approximately $5.1 billion of the total strategic investments portfolio"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Strategic-Investment-Concentration",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 5100000000.0,
+            "pct_of_revenue": null,
+            "note": "Anthropic represents 45% of $11.3B strategic investment portfolio (single investment concentration)"
+          },
+          "named_counterparties": [
+            "Anthropic"
+          ],
+          "verbatim_quote": "the Company's investment in Anthropic PBC (\"Anthropic\") which represented approximately $5.1 billion of the total strategic investments portfolio. No other privately held investments had carrying values that were individually greater than ten percent of the Company's strategic investments portfolio."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Strategic-Investment-Volatility",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 11300000000.0,
+            "note": "Strategic investment portfolio subject to mark-to-market volatility on non-marketable securities; no corresponding revenue streams disclosed"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We are exposed to volatility in our operating results due to changes in market prices, observable price changes and impairments of our strategic investments...The resulting gains or losses have been and could be material depending on market conditions and events, particularly in periods with economic uncertainty, inflation, geopolitical conflict, volatile public equity markets or unsettled global market conditions."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Acquisition-Integration-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 5100000000.0,
+            "duration_yrs": 1,
+            "note": "Two large acquisitions (Contentful $1.5B, Intercom $3.6B) pending close in Q3 FY2027; integration execution risk"
+          },
+          "named_counterparties": [
+            "Contentful",
+            "Intercom"
+          ],
+          "verbatim_quote": "As we acquire companies or technologies, we may not realize the expected business or financial benefits and the acquisitions could prove difficult to integrate, disrupt our operations, dilute stockholder value and adversely affect our operating results"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Infrastructure-Capex-Opacity",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Substantial infrastructure commitments to third-party providers disclosed but no itemized capex schedule provided"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We continue to make investments in enterprise cloud computing services to allow us to scale with our customers...While we continue to make investments in our infrastructure service providers to provide capacity for the growth of our business, our strategy may continue to change related to these investments and we may slow the pace of our investments."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-Cloud-Provider-Dependency",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Operational and Execution Risk - Third-Party Service Dependency",
+          "named_counterparties": [
+            "data center providers",
+            "cloud computing platform providers"
+          ],
+          "severity": 3,
+          "verbatim_quote": "We rely on third-party data center hosting facilities and cloud computing platform providers located in the United States and other countries...Any disruption, degradation or failure of our systems, or those of the third parties on which we rely, regardless of cause, could result in service interruptions and harm our business."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-AI-Content-Liability",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Strategic and Industry Risk - AI Deployment Risk",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "AI technologies may produce content that is inaccurate, misleading, biased, offensive or unsafe, and may implicate privacy, security or intellectual property rights, including through the generation of copyrighted or other protected material. If our customers or others rely on such content to their detriment, or if regulators or rights holders assert claims relating to AI-generated content, we may be exposed to litigation, regulatory investigations, enforcement actions, indemnification obligations, monetary penalties or other liabilities, or reputational harm."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-Consumption-Model-Forecasting",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Financial Risk - Revenue Forecasting",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "our transition toward more complex pricing structures, including AI-driven consumption models, may make it more difficult to optimize our pricing, predict attrition rates, and accurately forecast revenue."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-Regulatory-AI-Compliance",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Legal and Regulatory Risk - AI Regulation",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Regulatory frameworks such as the EU Digital Services Act (\"DSA\"), the EU AI Act and other rapidly evolving and sometimes conflicting global laws and regulations related to AI, privacy and consumer protection could increase compliance costs, restrict features or data flows, delay launches and expose us to penalties or litigation."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce, Inc."
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "INVESTED_IN",
+        "target_type": "ailab",
+        "target_name": "Anthropic"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "ailab",
+        "target_name": "Anthropic",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Qualified",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Contentful",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Intercom",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Anthropic-Concentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Salesforce-Strategic-Concentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Anthropic-Valuation-Uplift",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Bank of America",
+        "predicate": "BUYS_COMPUTE_FROM",
+        "properties": {
+          "facility_type": "Revolving Credit Facility",
+          "amount_usd": 5000000000,
+          "maturity": "October 2029",
+          "role": "administrative agent"
+        }
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "ailab",
+        "target_name": "Anthropic"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "Backpage_Litigation_Risk",
+        "target_type": "company",
+        "target_name": "Website Technologies"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "Backpage_Litigation_Risk",
+        "target_type": "company",
+        "target_name": "Backpage"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Backpage_Customer_Liability_Concentration"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Slack_IPO_Litigation"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "capex_commitment",
+        "target_name": "Informatica_Acquisition"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "capex_commitment",
+        "target_name": "Qualified_Acquisition"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "capex_commitment",
+        "target_name": "Regrello_Acquisition"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Bank of America",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "facility_type": "Revolving Loan Credit Facility",
+          "amount_usd": 5000000000,
+          "maturity": "October 2029"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "JPMorgan Chase",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "facility_type": "Term Loan Credit Agreement",
+          "amount_usd": 6000000000,
+          "maturity": "March 2031",
+          "note": "Issued March 2026, used to refinance acquisition financing"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Informatica",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "Acquisition",
+          "cash_outflow": 1100000000
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Contentful",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {
+          "amount_usd": 1500000000.0,
+          "expected_close": "Q3 FY2027"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Intercom",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {
+          "amount_usd": 3600000000.0,
+          "expected_close": "Q3 FY2027"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "ailab",
+        "target_name": "Anthropic",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "amount_usd": 5100000000.0,
+          "pct_of_portfolio": 0.45,
+          "as_of_date": "2026-07-31"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Strategic-Investment-Concentration",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Strategic-Investment-Volatility",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Acquisition-Integration-Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Infrastructure-Capex-Opacity",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "risk_factor",
+        "target_name": "CRM-Cloud-Provider-Dependency",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "risk_factor",
+        "target_name": "CRM-AI-Content-Liability",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "risk_factor",
+        "target_name": "CRM-Consumption-Model-Forecasting",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "risk_factor",
+        "target_name": "CRM-Regulatory-AI-Compliance",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      }
+    ],
+    "notes": "[chunk 1/7] EXTRACTED FROM XBRL TAXONOMY AND STRUCTURED DATA: The filing shows Salesforce has strategic investment exposure to Anthropic PBC (a privately-held AI lab). The investment appears in the XBRL dimensional taxonomy under 'crm:InvestmentConcentrationRiskMember' and 'crm:StrategicInvestmentsMember' and 'crm:AnthropicPBCMember' tags, with time periods spanning from 2025-02-01 through 2026-07-31. This indicates Anthropic is a material strategic investment held by Salesforce. However, the narrative section of the filing (which was provided as raw XBRL tags with minimal human-readable text) does not contain sufficient detail on the specific terms, amounts, or strategic rationale. The balance sheet shows 'Strategic investments' of $11.324 billion as of July 31, 2026 (up from $7.591 billion on January 31, 2026), but no single-investee breakdown is provided in the excerpt supplied. SIFI-relevance: Anthropic is a major AI lab; Salesforce's equity investment in a competitor AI platform warrants monitoring for circularity or customer concentration risk, but no additional risk patterns are evident from this excerpt alone.\"\n[chunk 2/7] \nSIFI-MATERIAL FINDINGS:\n\n1. **CUSTOMER_CONCENTRATION \u2014 Anthropic Investment (Severity 3)**\n   - Anthropic holding = 45% of Salesforce's strategic investments portfolio as of July 31, 2026 (carrying value ~$5.1B)\n   - Represents sharp concentration risk in single AI lab within discretionary investment allocation\n   - Material mark-to-market volatility: investment grew from 22% (Jan 2026) to 45% (Jul 2026) of portfolio, driven by $3.0B unrealized gains\n   - Flagged as explicit risk disclosure: \"The Company is also exposed to concentrations of risk in its strategic investment portfolio, including within specific industries, as the Company primarily invests in enterprise technology and artificial intelligence companies\"\n\n2. **CAPEX_ROI_GAP \u2014 AI Acquisition Blitz (Severity 2)**\n   - Three major AI acquisitions/commitments in 6 months: Qualified ($1.2B, closed Apr 2026), Contentful ($1.5B, pending Q3 FY2027), Intercom/Fin ($3.6B, pending Q3 FY2027)\n   - Total committed: $6.3B\n   - No disclosed contracted revenue synergies or integration roadmap\n   - Goodwill write-up risk: Qualified alone generated $954M goodwill (79% of $1.2B purchase price) with \"no basis and not deductible for U.S. income tax purposes\"\n   - Intangible asset assignment: Qualified added $290M in developed tech & customer relationships, amortized over 5\u20138 years\n   - Filing shows upward trajectory (Agentforce Apps revenue +7.7% YoY to $7.2B for 3M ended Jul 2026) but no explicit linkage to ROI payoff on these acquisitions\n\n3. **COST_OPACITY \u2014 Valuation Methodology Risk (Severity 2)**\n   - Anthropic investment measured on \"non-recurring basis\" using Level 3 (unobservable inputs) under fair value hierarchy\n   - Uses \"market approach, common stock equivalent method (CSE), option pricing models (OPM), or a combination\" \u2014 no single methodological anchor\n   - H1 FY2027 saw $3.0B unrealized gains on Anthropic; Anthropic carrying value per Note 3 Statement reconciliation = ~$5.1B (calculated from 45% of $11.324B portfolio)\n   - Mark-to-market driven by \"observable transactions, such as the issuance of new equity by an investee\" \u2014 Anthropic's Series C/D rounds likely inflated carrying value\n   - Impairment risk flagged: \"Upward and downward adjustments from equity securities accounted for under the measurement alternative\"\n   - 6M FY2027 impairments on privately held securities = $404M vs. $3.2B upward adjustments \u2014 net +$2.8B swing\n\n4. **NO CUSTOMER CONCENTRATION (cleary stated)**\n   - \"No single customer accounted for ten percent or more of accounts receivable... No single customer accounted for ten percent or more of total revenue during the three and six months ended July 31, 2026\"\n   - Americas revenue = 93% of total; no other country >10%\n   - Subscription & support revenue diversified (Agentforce 66%, Data 360/Headless 34% of $10.8B subscription revenue)\n   - Skipped as per HARD RULES: not SIFI-material for counterparty systemic risk\n\n5. **LEASE & CAPEX DISCLOSURES (skipped)**\n   - Operating leases $2.5B, finance leases $633M, total lease commitment $4.2B (~$3.5B facilities)\n   - Depreciation lives: Buildings 10\u201340 yrs, Computers 3\u20135 yrs, Leasehold improvements shorter of term or 10 yrs\n   - Standard IT SaaS capex structure; no hidden residual value guarantees or SPV residual risk flagged\n   - No ROU asset impairment signaled; leases appear on-balance-sheet ASC 842 compliant\n\n6. **ACQUISITION INTEGRATION RISK (implicit)**\n   - Qualified integration: only \"not material\" results to date (Apr\u2013Jul 2026 = 4 months)\n   - Goodwill carries \"no tax basis\" \u2014 deduction-blocking material risk if acquisition underperforms\n   - Pending acquisitions (Contentful, Intercom) expected to close Q3 FY2027 (Oct\u2013Dec 2026) \u2014 post-filing closure uncertain\n\n**EXCLUDED (boilerplate/non-SIFI):**\n- Revenue recognition policy (standard ASC 606)\n- Derivative hedging program ($1.4B designated cash flow hedges + $13.2B non-designated FX forwards) \u2014 routine fx risk management\n- Stock-based compensation ($4-yr vest cycle) \u2014 no related-party angle flagged\n- Tax accounting, income tax audits \u2014 standard uncertainty disclosure\n- Warranties and indemnification \u2014 standard IP indemnity clause, no material accruals\n\n**KEY EDGE PREDICATES USED:**\n- INVESTED_IN: Salesforce \u2192 Anthropic (strategic equity stake)\n- COMMITTED_CAPEX: Salesforce \u2192 Qualified/Contentful/Intercom (M&A commitments)\n- HAS_RISK_SIGNAL: Salesforce \u2192 3 hidden_risk_signal nodes (concentration, capex gap, valuation opacity)\n\n[chunk 3/7] CRM 10-Q dated 2026-08-27. This extraction focuses on SIFI-material elements from the debt and equity sections. Key findings: (1) Salesforce issued $25.0B in March 2026 Senior Notes across multiple tranches (2028\u20132066) with rates 4.50%\u20136.70%, plus a $6.0B Term Loan (March 2031, 4.24%). Total debt outstanding: $39.5B principal ($39.3B carrying value). (2) Bank of America (N.A.) is administrative agent on a $5.0B unsecured Revolving Loan Credit Facility (October 2029 maturity, undrawn as of July 31, 2026). (3) Salesforce executed $25.0B ASR (Accelerated Share Repurchase) agreements with \"several financial institutions\" in March 2026, receiving ~103M shares at $198.34/share. No individual financial institution counterparties named. (4) No customer concentration, supplier dependencies, or strategic AI partnerships disclosed in this section. (5) Legal proceedings note references generic IP/employment risks with no named counterparties or material contingencies quantified. (6) No off-balance-sheet entities, circular dependencies, or hidden leverage patterns detected in this debt/equity narrative. The filing is largely mechanical debt/equity disclosure with no SIFI red flags beyond routine capital structure activity.\"\n\n[chunk 4/7] Extraction focuses on SIFI-material legal/liability and investment relationships. Key findings: (1) Backpage litigation represents severe customer-liability concentration risk\u2014single former customer (Website Technologies/Backpage) associated with 395+ plaintiffs across 11+ courts with unspecified damages claims, some involving federal trafficking statutes carrying enhanced liability exposure. Multiple suits stayed pending criminal adjudication (18 U.S.C. \u00a7 1595(b)), introducing execution risk tied to external criminal proceedings. (2) Salesforce holds significant unrealized gains ($3.0B six-month) in Anthropic investment, creating mark-to-market volatility. (3) Recent acquisition spree (Informatica Nov 2025, Qualified Apr 2026, Regrello Oct 2025) and integration costs reflected in increased amortization and restructuring charges. Informatica contributed $900M revenue H1 FY27. (4) Slack subsidiary still subject to ongoing state court shareholder litigation (In re Slack Tech Shareholder Litig, Lead Case 19CIV05370) with stay lifted Nov 2025, allowing renewed discovery/class certification motion. (5) Debt principal due increased from $14.5B (Jan 2026) to $39.5B (Jul 2026), driven by March 2026 debt offering to fund acquisitions. Interest expense surged 406-655% YoY. Skipped boilerplate on: standard M&A/integration risks, routine geographic exposure, generic competitive commentary, normal employee restructuring (non-related-party), foreign currency hedging mechanics.\n[chunk 5/7] This extraction covers the cash flow and financing section of Salesforce's 10-Q filing (Q2 FY2027, filed 2026-08-27). Key SIFI-material relationships identified: (1) $5.0B revolving credit facility with Bank of America (October 2029 maturity); (2) $6.0B term loan with JPMorgan Chase (March 2031 maturity) used to refinance earlier acquisition debt; (3) Informatica acquisition with $1.1B cash outflow in 6M2026. The filing explicitly states 'We do not have any special purpose entities and we do not engage in off-balance sheet financing arrangements,' confirming no hidden leverage signals. The $3.2B gains on strategic investments noted in operating cash flow is mentioned but specific investees are not named in this excerpt. Repurchase activity ($27.3B in 6M2026) and debt issuance ($25.0B senior notes) are capital allocation decisions, not SIFI risks per se. No customer concentration, supplier concentration, or circularity patterns evident in this section.\"\n\n[chunk 6/7] EXTRACTION SUMMARY \u2014 Salesforce 10-Q (Aug 27, 2026):\n\nKEY SIFI-MATERIAL FINDINGS:\n\n1. **STRATEGIC INVESTMENT CONCENTRATION** (Severity 3): Anthropic represents $5.1B of $11.3B portfolio (45% concentration). No other single investment >10% of portfolio. This is a significant portfolio concentration risk in a private AI lab with illiquid equity.\n\n2. **PENDING ACQUISITIONS** (Severity 3): Two announced acquisitions totaling ~$5.1B expected to close Q3 FY2027:\n   - Contentful: $1.5B (composable content platform)\n   - Intercom (Fin): $3.6B (autonomous AI service agent platform)\n   Both carry execution risk and integration complexity noted extensively in risk factors.\n\n3. **INFRASTRUCTURE CAPEX OPAQUENESS** (Severity 2): Salesforce discloses material ongoing investments in third-party cloud/data center providers but provides NO itemized schedule. Capex strategy is discretionary: \"we may slow the pace of our investments.\"\n\n4. **AI REGULATORY & LIABILITY EXPOSURE** (Severity 3): \n   - Agentforce and Data 360 offerings rely on agentic AI with acknowledged risks of inaccurate/biased outputs\n   - AI-generated content liability (copyright infringement, privacy)\n   - Consumption-based pricing for AI products creates revenue forecasting opacity\n\n5. **THIRD-PARTY CLOUD DEPENDENCY** (Severity 3): Material dependence on third-party data centers and cloud providers with no disclosed SLAs or backup arrangements beyond boilerplate disaster recovery language.\n\n6. **LEVERAGE & LIQUIDITY**: As of July 31, 2026, Salesforce had $11.4B in cash/equivalents/securities but $40.75B in outstanding debt (Senior Notes + Term Loan). Debt-to-liquid-assets ratio elevated. Recent $25B March 2026 note issuance used for share buyback, not capex.\n\nBOILERPLATE SKIPPED: Standard currency hedging, generic competition, routine compliance commentary, standard IP indemnification language.\n\nNO OFF-BALANCE-SHEET ENTITIES DETECTED in this excerpt. No SPVs, JVs, or operating leases with residual value guarantees explicitly disclosed in the sections provided.\n\nCOUNTERPARTY WEB: Salesforce \u2192 Anthropic (investment, material concentration); Salesforce \u2192 Contentful + Intercom (announced acquisitions); Salesforce \u2190 Cloud/data center providers (operational dependency, unquantified capex).\n\n[chunk 7/7] The provided text excerpt contains only boilerplate SEC filing elements: share repurchase program details (authorized in February 2026 with $50B authorization, reduced by $25B ASR in March 2026), default disclosures, mine safety notice (not applicable), executive Rule 10b5-1 trading arrangements (none adopted/terminated in Q3 2026), and exhibits index. No SIFI-material business relationships, investments, acquisitions, counterparties, customer/supplier concentration, or related-party arrangements are disclosed in this section. The share repurchase program itself is a capital allocation decision but does not represent a third-party relationship or hidden leverage material to SIFI analysis. No extraction of risk factors, off-balance entities, or strategic partnerships is warranted.\""
+  }
+}

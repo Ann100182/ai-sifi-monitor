@@ -1,0 +1,633 @@
+{
+  "director_comp": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] FILING: MSFT DEF 14A 2024-10-24 | SECTION: Director Compensation and Named Executive Officer Compensation | ASSESSMENT: This section contains only routine director and executive compensation disclosure. No SIFI-material entities, counterparty relationships, investments, off-balance-sheet structures, or risk signals are present. The text details: (1) director retainer structure (cash + equity mix), (2) director compensation table with named individuals, (3) deferred compensation plan mechanics, (4) Lead Independent Director duties, and (5) Compensation Committee letter on CEO pay alignment. All content is standard governance boilerplate\u2014compensation philosophy, pay-for-performance metrics, audit committee oversight, and shareholder engagement. No named suppliers, customers, strategic partners, investments in AI labs, acquisition targets, or hidden leverage structures are mentioned. CEO Nadella's voluntarily reduced cash bonus due to cybersecurity accountability is disclosed but does not represent a SIFI-material risk factor or related-party transaction. EXTRACTION RESULT: Zero nodes and zero edges. This section is not relevant to AI SIFI monitoring."
+  },
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "OpenAI",
+        "fields": {
+          "private": true,
+          "known_backers": [
+            "Microsoft"
+          ]
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Cohere",
+        "fields": {
+          "private": true
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Mistral",
+        "fields": {
+          "private": true
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Databricks",
+        "fields": {
+          "private": true
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SAP",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "G42",
+        "fields": {
+          "role": "customer",
+          "aliases": [
+            "G42 Group"
+          ]
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "MSFT-SEA-AI-Infra-$5B",
+        "fields": {
+          "filer": "Microsoft",
+          "amount_usd": 5000000000,
+          "counterparty": "G42",
+          "purpose": "Cloud and AI infrastructure investment in Indonesia, Malaysia, Thailand, and Kenya together with partner G42",
+          "verbatim_quote": "investing, for example, $5 billion in cloud and AI infrastructure in Indonesia, Malaysia, and Thailand, as well as in Kenya, together with our partners G42"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "MSFT-G42-$30B-Govts",
+        "fields": {
+          "filer": "Microsoft",
+          "amount_usd": 30000000000,
+          "counterparty": "G42",
+          "purpose": "Partnerships with 12 governments announcing over $30B of investments; partnership with G42 including the largest commercial agreement in Microsoft's history",
+          "verbatim_quote": "partnerships with 12 governments to announce over $30 billion of investments; developed and launched partnership with G42, including the largest commercial agreement in Microsoft's history"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-OpenAI-Azure-Circularity",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "CIRCULARITY",
+          "severity": 3,
+          "named_counterparties": [
+            "OpenAI",
+            "NVIDIA"
+          ],
+          "verbatim_quote": "Our AI innovation continues to build on our strategic partnership with OpenAI. More than 65% of the Fortune 500 now use Azure OpenAI Service. Our deep partnership with Nvidia spans the entirety of the Copilot stack, across both their hardware innovation as well as their software innovation, including Nvidia's DGX cloud natively integrating with Microsoft Fabric.",
+          "numeric_signal": {
+            "note": "65% of Fortune 500 using Azure OpenAI Service; NVIDIA DGX cloud integrated with Microsoft Fabric"
+          }
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-G42-Concentration",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "named_counterparties": [
+            "G42"
+          ],
+          "verbatim_quote": "developed and launched partnership with G42, including the largest commercial agreement in Microsoft's history. Championed Microsoft's partnership with G42 leading to a ground-breaking business partnership and an Intergovernmental Assurance Agreement committed to world-leading standards in AI safety and security.",
+          "numeric_signal": {
+            "note": "Described as the largest commercial agreement in Microsoft's history; accompanied by intergovernmental assurance agreement"
+          }
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "role": "hyperscaler"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "ailab",
+        "source_name": "OpenAI",
+        "target_type": "company",
+        "target_name": "Microsoft"
+      },
+      {
+        "predicate": "SELLS_COMPUTE_TO",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "ailab",
+        "target_name": "OpenAI"
+      },
+      {
+        "predicate": "SELLS_COMPUTE_TO",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "ailab",
+        "target_name": "Cohere"
+      },
+      {
+        "predicate": "SELLS_COMPUTE_TO",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "ailab",
+        "target_name": "Mistral"
+      },
+      {
+        "predicate": "SELLS_COMPUTE_TO",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "ailab",
+        "target_name": "Databricks"
+      },
+      {
+        "predicate": "SELLS_COMPUTE_TO",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "company",
+        "target_name": "Meta"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Microsoft"
+      },
+      {
+        "predicate": "DEPENDS_ON",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "company",
+        "target_name": "NVIDIA"
+      },
+      {
+        "predicate": "BUYS_COMPUTE_FROM",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Microsoft"
+      },
+      {
+        "predicate": "BUYS_COMPUTE_FROM",
+        "source_type": "company",
+        "source_name": "SAP",
+        "target_type": "company",
+        "target_name": "Microsoft"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "capex_commitment",
+        "target_name": "MSFT-SEA-AI-Infra-$5B"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "capex_commitment",
+        "source_name": "MSFT-SEA-AI-Infra-$5B",
+        "target_type": "company",
+        "target_name": "G42"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "capex_commitment",
+        "target_name": "MSFT-G42-$30B-Govts"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "capex_commitment",
+        "source_name": "MSFT-G42-$30B-Govts",
+        "target_type": "company",
+        "target_name": "G42"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-OpenAI-Azure-Circularity"
+      },
+      {
+        "predicate": "CIRCULAR_WITH",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "ailab",
+        "target_name": "OpenAI"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "MSFT-OpenAI-Azure-Circularity",
+        "target_type": "ailab",
+        "target_name": "OpenAI"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "MSFT-OpenAI-Azure-Circularity",
+        "target_type": "company",
+        "target_name": "NVIDIA"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-G42-Concentration"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "MSFT-G42-Concentration",
+        "target_type": "company",
+        "target_name": "G42"
+      }
+    ],
+    "notes": "[chunk 1/3] Source is MSFT DEF 14A (2024-10-24), Compensation Discussion & Analysis section. Key SIFI-material findings:\n\n1. PARTNERSHIP WEB: Microsoft explicitly names OpenAI, Cohere, Databricks, Mistral, Meta, NVIDIA, Oracle, SAP, and G42 as strategic partners. Azure OpenAI Service is used by 65%+ of Fortune 500 \u2014 significant customer concentration signal for OpenAI's dependency on Azure.\n\n2. NVIDIA DEEP INTEGRATION: 'Deep partnership with Nvidia spans the entirety of the Copilot stack... including Nvidia's DGX cloud natively integrating with Microsoft Fabric' \u2014 supplier concentration / single-source dependency signal.\n\n3. G42 MEGA-DEAL: Described as 'the largest commercial agreement in Microsoft's history' with an accompanying Intergovernmental Assurance Agreement. $30B in government investment announcements across 12 governments. Geopolitical risk (G42 is UAE-based). Separate $5B infrastructure deployment in SEA/Kenya with G42.\n\n4. CIRCULARITY: Microsoft is simultaneously OpenAI's primary compute provider (Azure), a major investor in OpenAI, and a reseller of OpenAI models via Azure OpenAI Service \u2014 classic investor/customer/supplier triangle.\n\n5. Exec comp section is otherwise routine \u2014 no related-party compensation arrangements flagged; Nadella voluntarily reduced his own bonus by 50%+ citing cybersecurity urgency (security as top strategic priority signal).\n[chunk 2/3] This DEF 14A section is entirely a Compensation Discussion & Analysis covering PSA/SA equity award structures, executive pay tables, CEO pay ratio, pay-versus-performance disclosures, and severance plan terms for Microsoft's Named Executive Officers (Nadella, Hood, Althoff, Smith, Young). The only named external entity of potential SIFI relevance is Activision Blizzard, mentioned solely to note that ~11,825 acquired employees were excluded from the median-employee calculation for CEO pay ratio purposes \u2014 a routine disclosure footnote, not a material business relationship, investment, off-balance-sheet structure, or counterparty concentration risk. No SPVs, JVs, AI-lab investments, supplier/customer concentration, hidden leverage, revenue roundtripping, or capex commitments are disclosed or implied in this section. Nothing meets the SIFI-materiality threshold defined in the extraction rules.\n[chunk 3/3] This DEF 14A section covers Microsoft's Pay Versus Performance disclosure, equity compensation plan information, and principal shareholder table. The content is entirely boilerplate compensation disclosure \u2014 executive pay calculations under SEC Pay vs. Performance rules, equity plan share counts, and routine 5%+ shareholder disclosures (Vanguard at 8.95%, BlackRock at 7.30%). None of this meets the SIFI-material threshold: no SPVs, no AI lab investments named, no customer/supplier concentration, no off-balance-sheet arrangements, no circular dependencies, no revenue roundtripping, and no capex commitments. The Vanguard and BlackRock ownership disclosures are standard passive index-fund ownership and do not represent strategic or related-party arrangements. No SIFI-material entities to extract."
+  },
+  "beneficial_owners": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Deloitte",
+        "fields": {
+          "aliases": [
+            "Deloitte & Touche LLP"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "MSFT_Weapons_Reputational_Risk",
+        "fields": {
+          "filer": "MSFT",
+          "category": "Reputational risk from military contracting",
+          "named_counterparties": [
+            "US Department of Defense",
+            "US Army"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Involvement in the development of weapons poses a serious risk to a company's reputation, especially for investors and stakeholders. Is it prudent for our Company to be identified as a weapons developer?"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "MSFT_IVAS_Execution_Risk",
+        "fields": {
+          "filer": "MSFT",
+          "category": "Execution risk on military contracts",
+          "named_counterparties": [
+            "US Department of Defense",
+            "US Army"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Lawmakers cited concerns over the HoloLens 2-based device's field tests, where the headset struggled with environmental, sight calibration, and other issues. Device assessments also explained how the headset led to soldier 'impairments' such as motion sickness, headaches, and other concerns."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "MSFT_IVAS_Contract",
+        "fields": {
+          "filer": "MSFT",
+          "amount_usd": 22000000000,
+          "counterparty": "US Army",
+          "purpose": "Integrated Visual Augmentation System (IVAS) development and production",
+          "verbatim_quote": "$22 billion contract for a semi-custom version of IVAS to rapidly develop, test, and manufacture a single platform that soldiers can use to fight, rehearse, and train"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT_AI_Fossil_Fuel_Risk",
+        "fields": {
+          "filer": "MSFT",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "named_counterparties": [
+            "Oil and Gas Industry"
+          ],
+          "numeric_signal": {
+            "note": "Microsoft reported as having most contracts with oil and gas companies among large tech peers"
+          },
+          "verbatim_quote": "the Company develops advanced technology platforms \u2013 including Artificial Intelligence ('AI'), Machine Learning, Internet of Things, cloud computing, and High Performance Computing (collectively, 'advanced technology') \u2013 that facilitate new oil and gas production projects that are likely to 'increas[e] emissions' and 'slow[] the transition to low-carbon technologies.'"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT_AI_Fossil_Fuel_Staff_Risk",
+        "fields": {
+          "filer": "MSFT",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "named_counterparties": [
+            "Microsoft employees"
+          ],
+          "verbatim_quote": "The development and deployment of advanced technology for the fossil fuel industry has caused outcry, and has led to staff resignations."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT_Saudi_Arabia_Datacenter_Risk",
+        "fields": {
+          "filer": "MSFT",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "named_counterparties": [
+            "Saudi Arabia"
+          ],
+          "numeric_signal": {
+            "note": "Datacenter operations expansion to human rights sensitive jurisdiction"
+          },
+          "verbatim_quote": "Shareholders are concerned by Microsoft's announced plans to expand datacenter operations to locations identified by the US State Department's Country Reports on Human Rights Practices as presenting significant human rights challenges, in particular the plan to locate a Microsoft datacenter in Saudi Arabia."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "OpenAI",
+        "fields": {
+          "private": true,
+          "aliases": [
+            "ChatGPT"
+          ],
+          "known_backers": [
+            "Microsoft"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "ExxonMobil",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Schlumberger",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Chevron",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Google",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "MSFT-OpenAI-$13B",
+        "fields": {
+          "investor": "Microsoft",
+          "target": "OpenAI",
+          "amount_usd": 13000000000,
+          "verbatim_quote": "Microsoft has invested over 13 billion dollars in OpenAI, and has integrated ChatGPT into its AI-powered digital assistant Copilot."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "MSFT-fossil-fuel-reputational-risk",
+        "fields": {
+          "filer": "Microsoft",
+          "category": "reputational_and_competitive_risk",
+          "named_counterparties": [
+            "ExxonMobil",
+            "Schlumberger",
+            "Chevron"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Microsoft's reporting on the climate-positive applications of advanced technologies, while ignoring the impact of new fossil fuel production, puts the Company at risk of accusations of greenwashing, which can have significant reputational or legal consequences."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-customer-concentration-oil-gas",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "named_counterparties": [
+            "ExxonMobil",
+            "Schlumberger",
+            "Chevron"
+          ],
+          "numeric_signal": {
+            "counterparty_count": 3,
+            "note": "Named oil and gas customers with custom AI/ML deployments; broader exposure across oil and gas industry for decades"
+          },
+          "verbatim_quote": "Microsoft has worked with the energy industry for decades helping empower office workers and field operations across the entire value chain in mining, oil and gas, and power and utilities with a wide range of solutions and services."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-ai-misinformation-liability",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [
+            "OpenAI"
+          ],
+          "numeric_signal": {
+            "note": "Bing Chat: ~10% error rate on questions; Copilot produced 'bizarre, disturbing' responses; copyright litigation ongoing"
+          },
+          "verbatim_quote": "The Washington Post found Microsoft's Bing chat provided inadequate or inaccurate answers in about 10 percent of questions asked. Recently, Copilot produced responses that users referred to as 'bizarre, disturbing, and in some cases, harmful.'"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-ai-data-sourcing-liability",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "named_counterparties": [
+            "OpenAI"
+          ],
+          "numeric_signal": {
+            "note": "Copyright litigation with NY Times and authors; allegations of personal data scraping without consent"
+          },
+          "verbatim_quote": "Microsoft and OpenAI have been sued by the New York Times, among others, which alleged copyright infringement."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "MSFT-openai-liability-linkage",
+        "fields": {
+          "filer": "Microsoft",
+          "category": "joint_liability_and_control_risk",
+          "named_counterparties": [
+            "OpenAI"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Many legal experts believe technology companies' liability shield provided under Section 230 of the Communications Decency Act may not apply to content generated by AI... Microsoft has also already faced substantial defamation litigation due to misinformation produced by the Company's generative AI."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "company",
+        "target_name": "Deloitte",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "relationship": "Independent auditor since 1986",
+          "fees_2024_usd": 81267000
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "capex_commitment",
+        "target_name": "MSFT_IVAS_Contract",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "INVESTED_IN",
+        "target_type": "ailab",
+        "target_name": "OpenAI"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "SELLS_COMPUTE_TO",
+        "target_type": "company",
+        "target_name": "ExxonMobil"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "SELLS_COMPUTE_TO",
+        "target_type": "company",
+        "target_name": "Schlumberger"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "SELLS_COMPUTE_TO",
+        "target_type": "company",
+        "target_name": "Chevron"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-customer-concentration-oil-gas"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-ai-misinformation-liability"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-ai-data-sourcing-liability"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "MSFT-fossil-fuel-reputational-risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "MSFT-openai-liability-linkage"
+      },
+      {
+        "source_type": "ailab",
+        "source_name": "OpenAI",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Microsoft"
+      }
+    ],
+    "notes": "[chunk 1/3] Extraction from MSFT DEF 14A (2024-10-24). This is the Beneficial Ownership and Proposals section. The beneficial ownership table itself contains no SIFI-material entities\u2014it lists director and executive shareholdings, all below 1% except CEO Satya Nadella (867,989 shares). The significant SIFI-material content is in the Shareholder Proposals section (Proposals 4\u20137), which disclose: (1) $22B IVAS military contract with execution risks and employee resistance; (2) AI/ML facilitation of oil and gas expansion with staff turnover risk; (3) Saudi Arabia datacenter expansion into human rights hotspot. Audit fees to Deloitte increased from $45.6M (2023) to $56.3M (2024), indicating heightened audit scope. No off-balance-sheet entities, investments in AI labs, or counterparty circularity detected in this section. Related-party transactions are reviewed but not detailed in this excerpt.\"\n[chunk 2/3] EXTRACTION SUMMARY: Microsoft DEF 14A (2024-10-24) captures three SIFI-material risk clusters: (1) CUSTOMER_CONCENTRATION in fossil fuels (ExxonMobil, Schlumberger, Chevron named; broader oil-and-gas exposure for decades disclosed). (2) AI MISINFORMATION & DATA LIABILITY: $13B OpenAI investment creates reputational and legal exposure\u2014Bing Chat had ~10% error rate, Copilot produced 'bizarre, disturbing' responses, NY Times lawsuit alleges copyright infringement. (3) REPUTATIONAL RISK via greenwashing accusations (climate commitments vs. continued fossil fuel tech deployment). No off-balance-sheet entities, capex commitments, or circularity patterns detected in this narrative section. The shareholder proposals themselves (not management recommendations) articulated these risks. Employee concerns also noted (internal opposition to fossil fuel partnerships). Section 230 liability shield uncertainty flagged by legal experts; EU AI Act compliance reporting requirement introduced for 2025.\"\n[chunk 3/3] No SIFI-material entities identified. The source text is a standard proxy cover page containing only boilerplate information: shareholder meeting logistics, proxy appointment instructions (Sandra E. Peterson and Satya Nadella as proxies), and procedural voting language. No business relationships, investments, customer/supplier dependencies, related-party arrangements, or material counterparty data are disclosed. This section does not meet the threshold for extraction."
+  }
+}

@@ -1,0 +1,434 @@
+{
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "aliases": [
+            "AMZN",
+            "AWS",
+            "Amazon Web Services"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Amazon-DataCenter-$150B-15yr",
+        "fields": {
+          "filer": "Amazon",
+          "amount_usd": 150000000000,
+          "duration_yrs": 15,
+          "purpose": "Massive data center expansion in anticipation of AI boom; AWS is top profit source",
+          "verbatim_quote": "Amazon plans massive data center expansion in the coming years \u2013 reportedly planning to spend almost $150 billion in the coming 15 years \u2013 anticipating a boom in artificial intelligence."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-CapexROIGap-DataCenter-AI",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 150000000000,
+            "duration_yrs": 15,
+            "note": "~$150B data center capex commitment over 15 years; nuclear SMR power supply not available until early 2030s; renewable energy sufficiency under question given data center demand growth"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Amazon plans massive data center expansion in the coming years \u2013 reportedly planning to spend almost $150 billion in the coming 15 years \u2013 anticipating a boom in artificial intelligence. Cloud computing is Amazon's top source of profits, decisions related to data centers are vital to corporate strategy, and data center power poses particular risks."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-ExecutionRisk-SMR-PowerGap",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "SMRs not delivering power until early 2030s; data center expansion ongoing now; gap in carbon-free power supply for remainder of decade creates both climate commitment and operational risk"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Amazon has announced it will invest in small modular nuclear reactors \u2013 but these will not deliver power until the early 2030s, so they can not help meet Amazon's growing power demands for the remainder of this decade."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Amazon-DataCenter-PowerDemand-ClimateCommitment",
+        "fields": {
+          "filer": "Amazon",
+          "category": "Infrastructure / Climate Execution Risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Data center power demand may more than double, from 1-2% of global power now to 3-4% by 2030... Utilities in a number of geographies are planning expansion of fossil power, or pushing back retirement dates, to meet data center demand."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Anthropic",
+        "fields": {
+          "private": true,
+          "known_backers": [
+            "Amazon"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "OpenAI",
+        "fields": {
+          "private": true,
+          "known_backers": [
+            "Microsoft"
+          ]
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-Anthropic-Investment-Circularity",
+        "fields": {
+          "filer": "AMZN",
+          "risk_type": "CIRCULARITY",
+          "severity": 2,
+          "named_counterparties": [
+            "Anthropic",
+            "OpenAI",
+            "Microsoft"
+          ],
+          "verbatim_quote": "Amazon has not rushed to bring consumer generative AI products to market. While Amazon is a major investor in Anthropic \u2013 which offers Claude 3, one of the leading competitors to OpenAI's ChatGPT \u2013 the Company's own AI development has focused on internal use cases and enterprise solutions.",
+          "numeric_signal": {
+            "note": "Amazon is both a major investor in Anthropic and a cloud infrastructure provider (AWS); Anthropic depends on AWS compute while Amazon competes in AI services"
+          }
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AMZN-AI-DataEthics-Risk",
+        "fields": {
+          "filer": "AMZN",
+          "category": "AI data governance / regulatory risk",
+          "named_counterparties": [
+            "Anthropic",
+            "OpenAI"
+          ],
+          "severity": 2,
+          "verbatim_quote": "Amazon's vast empire of customer data\u2014its metastasizing record of what you search for, what you buy, what shows you watch, what pills you take, what you say to Alexa, and who's at your front door\u2014had become so sprawling, fragmented, and promiscuously shared within the company that the security division couldn't even map all of it, much less adequately defend its borders."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AMZN-AI-DataLeakage-Risk",
+        "fields": {
+          "filer": "AMZN",
+          "category": "AI product data leakage / hallucination",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Amazon's AI chatbot Q, an enterprise generative AI assistant, reportedly leaked confidential data in a preview."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "capex_commitment",
+        "target_name": "Amazon-DataCenter-$150B-15yr"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-CapexROIGap-DataCenter-AI"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-ExecutionRisk-SMR-PowerGap"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "risk_factor",
+        "target_name": "Amazon-DataCenter-PowerDemand-ClimateCommitment"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "ailab",
+        "target_name": "Anthropic"
+      },
+      {
+        "predicate": "SELLS_COMPUTE_TO",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "ailab",
+        "target_name": "Anthropic"
+      },
+      {
+        "predicate": "CIRCULAR_WITH",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "ailab",
+        "target_name": "Anthropic"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-Anthropic-Investment-Circularity"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "AMZN-Anthropic-Investment-Circularity",
+        "target_type": "ailab",
+        "target_name": "Anthropic"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "AMZN-Anthropic-Investment-Circularity",
+        "target_type": "ailab",
+        "target_name": "OpenAI"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "AMZN-Anthropic-Investment-Circularity",
+        "target_type": "company",
+        "target_name": "Microsoft"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "risk_factor",
+        "target_name": "AMZN-AI-DataEthics-Risk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "risk_factor",
+        "target_name": "AMZN-AI-DataLeakage-Risk"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "AMZN-AI-DataEthics-Risk",
+        "target_type": "ailab",
+        "target_name": "Anthropic"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "AMZN-AI-DataEthics-Risk",
+        "target_type": "ailab",
+        "target_name": "OpenAI"
+      }
+    ],
+    "notes": "[chunk 1/4] This DEF 14A section (Compensation Discussion & Analysis table of contents, Board of Directors biographical information, corporate governance, and sustainability narrative) contains no SIFI-material entities under the extraction rules. The content is entirely standard proxy boilerplate: director biographies, board committee assignments, independence determinations, generic sustainability/ESG pledges (Climate Pledge, Housing Equity Fund, renewable energy targets), and routine compensation governance. No named customer concentrations, supplier dependencies, SPVs, off-balance-sheet obligations, AI lab investments, revenue roundtripping, capex commitments to specific counterparties, or hidden leverage signals are present. The Blue Origin mention is a personal venture of Jeff Bezos with no financial relationship to Amazon disclosed here. The Washington Post / Corning / IronNet related-party disclosures are explicitly characterized as immaterial ordinary-course payments. Nothing meets the SIFI-materiality threshold for extraction.\n[chunk 2/4] This DEF 14A section (Compensation Discussion & Analysis, Board governance, auditor ratification, and shareholder proposals) contains no SIFI-material entities. The content covers: standard executive compensation philosophy (RSU grants, no cash bonus, no severance), routine board committee disclosures, Ernst & Young auditor ratification (standard), and shareholder proposals on CEO/Chair separation and advertising policy risks. None of these rise to SIFI-material thresholds: no SPVs, no off-balance-sheet entities, no AI lab investments named, no customer/supplier concentration disclosures, no capex commitments, no circularity arrangements, no revenue roundtripping, and no hidden leverage signals. The E&Y audit fees ($41.9M in FY2024) are routine. The GARM advertising coalition mention is a shareholder proposal context, not a material business relationship. No extraction warranted.\n[chunk 3/4] This DEF 14A section is largely shareholder proposal boilerplate (emissions reporting, packaging, AI governance). SIFI-material content is concentrated in Item 7 (data center expansion). Key signals:\n\n1. CAPEX_ROI_GAP: The $150B / 15-year data center figure is cited from a Bloomberg article referenced in the shareholder proposal \u2014 Amazon does not itself confirm this exact figure in the filing text. Extracted with that caveat; filer context suggests management did not dispute the characterization.\n\n2. EXECUTION_RISK: SMR nuclear agreements announced but power delivery deferred to early 2030s, creating a multi-year gap in carbon-free power supply during peak AI-driven demand growth. This also carries implicit operational risk if energy costs or grid reliability deteriorate.\n\n3. No named AI lab investees, SPVs, circular relationships, or revenue roundtripping arrangements appear in this section. The Climate Pledge Fund ($2B venture investment) is mentioned but described as a sustainability initiative without named investees \u2014 below SIFI materiality threshold for this extraction.\n\n4. Skipped: advertising risk proposal (Item 5), packaging proposals (Items 6, 9), and AI governance board structure proposal (Item 8) \u2014 all are ESG/governance boilerplate without SIFI-material financial relationships.\n[chunk 4/4] This section is a DEF 14A Shareholder Proposals section covering sustainability (packaging/plastics), warehouse safety, and AI data governance. SIFI-material content is limited. Key extractions:\n\n1. CIRCULARITY SIGNAL (severity 2): The filing explicitly names Amazon as a \"major investor in Anthropic\" while also positioning AWS as the cloud backbone for Anthropic's compute. Amazon simultaneously competes with Anthropic's enterprise customers (OpenAI/Microsoft) and invests in Anthropic \u2014 a classic investor\u21c4customer\u21c4supplier triangle. No dollar amounts are stated in this section (the $4B figure is from footnote citation to external WSJ article, not the filing text itself, so omitted per hard rules).\n\n2. AI DATA RISK: Shareholder proposal language (sourced from external reports and cited by the filer in the proxy) identifies Amazon Q data leakage and sprawling customer data governance as SIFI-material operational risks for an AI-exposed hyperscaler.\n\n3. Packaging, warehouse safety, and governance boilerplate were skipped as non-SIFI-material.\n\nNo SPVs, off-balance-sheet entities, capex commitments, or supply concentration data appear in this section."
+  },
+  "beneficial_owners": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "AMZN",
+        "fields": {
+          "ticker": "AMZN",
+          "aliases": [
+            "Amazon"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Vanguard",
+        "fields": {
+          "ticker": null,
+          "aliases": [
+            "The Vanguard Group, Inc."
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "BlackRock",
+        "fields": {
+          "ticker": null,
+          "aliases": [
+            "BlackRock, Inc."
+          ]
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/1] DEF 14A beneficial ownership section for AMZN (Amazon) filed 2025-04-10. This is a standard beneficial ownership table showing major shareholders. Jeffrey P. Bezos (founder) holds 9.6% of class, Vanguard holds 7.3%, BlackRock holds 5.9%. No SIFI-material relationships, hidden leverage, circularity, or risk signals are present in this section. The beneficial ownership data itself is boilerplate corporate governance disclosure. No related-party transactions, investments in AI labs, capex commitments, or off-balance-sheet entities are mentioned. Andrew Y. Ng appears on board with 0 shares but this is routine director equity disclosure without material SIFI implications. Skipping all purely routine shareholder/officer holdings as they do not constitute SIFI-material entities or risk signals per rule 3.\""
+  },
+  "related_party": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Blue Origin",
+        "fields": {
+          "aliases": [
+            "Blue Origin LLC"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "AMZN-BlueOrigin-LaunchServices-$2.7B",
+        "fields": {
+          "filer": "Amazon",
+          "amount_usd": 2700000000,
+          "duration_yrs": 6,
+          "start_fy": 2022,
+          "counterparty": "Blue Origin",
+          "purpose": "Satellite launch and related services through 2028",
+          "verbatim_quote": "Amazon announced agreements with Blue Origin and a third party pursuant to which it expects to pay approximately $7.4 billion for satellite launch and related services through 2028, of which approximately $2.7 billion was expected to be paid to Blue Origin."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-BlueOrigin-Circularity",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "CIRCULARITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 2700000000,
+            "note": "Founder Jeff Bezos owns Blue Origin; Amazon is both a seller of goods to and a major launch-services buyer from Blue Origin; $578M estimated paid to Blue Origin in 2024 alone under a $2.7B commitment"
+          },
+          "named_counterparties": [
+            "Blue Origin"
+          ],
+          "verbatim_quote": "Jeff Bezos, our founder and Executive Chair, owns Blue Origin...Amazon announced agreements with Blue Origin and a third party pursuant to which it expects to pay approximately $7.4 billion for satellite launch and related services through 2028, of which approximately $2.7 billion was expected to be paid to Blue Origin."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AMZN-RelatedParty-BlueOrigin-LaunchObligations",
+        "fields": {
+          "filer": "Amazon",
+          "category": "Related-Party Concentration / Founder-Controlled Counterparty",
+          "named_counterparties": [
+            "Blue Origin"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Since the beginning of the last fiscal year, Amazon paid approximately $1.7 billion under the agreements, and approximately $578 million is estimated to have been paid to Blue Origin."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "capex_commitment",
+        "target_name": "AMZN-BlueOrigin-LaunchServices-$2.7B"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "capex_commitment",
+        "source_name": "AMZN-BlueOrigin-LaunchServices-$2.7B",
+        "target_type": "company",
+        "target_name": "Blue Origin"
+      },
+      {
+        "predicate": "BUYS_COMPUTE_FROM",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "company",
+        "target_name": "Blue Origin"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-BlueOrigin-Circularity"
+      },
+      {
+        "predicate": "CIRCULAR_WITH",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "company",
+        "target_name": "Blue Origin"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "risk_factor",
+        "target_name": "AMZN-RelatedParty-BlueOrigin-LaunchObligations"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "AMZN-RelatedParty-BlueOrigin-LaunchObligations",
+        "target_type": "company",
+        "target_name": "Blue Origin"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "AMZN-BlueOrigin-Circularity",
+        "target_type": "company",
+        "target_name": "Blue Origin"
+      }
+    ],
+    "notes": "[chunk 1/1] Source: AMZN DEF 14A filed 2025-04-10. Key SIFI-material findings:\n\n1. CIRCULARITY (severity 3): Jeff Bezos is Amazon's founder/Executive Chair AND owns Blue Origin. Amazon has a ~$2.7B committed launch-services obligation to Blue Origin through 2028 (part of a $7.4B total agreement with Blue Origin + a third party). Amazon also *sells* consumer goods to Blue Origin (~$12.3M in 2024 under a line of credit). This creates a classic founder-controlled counterparty loop: Amazon's capital budget flows to a founder-owned vendor for mission-critical infrastructure (Kuiper satellite launches). $578M estimated paid to Blue Origin in 2024 alone.\n\n2. CAPEX COMMITMENT: The $2.7B Blue Origin tranche of the $7.4B total launch services commitment (2022\u20132028) is SIFI-material as a related-party spending obligation to a founder-controlled entity with limited competitive alternatives for launch cadence.\n\n3. No SPVs, VIEs, AI lab investments, or off-balance-sheet structures were disclosed in this section. The remaining content is boilerplate proxy mechanics (shareholder proposals, householding, solicitation costs, Section 16 reports) with no SIFI-material signals.\n\n4. BUYS_COMPUTE_FROM edge used for Blue Origin as proxy for \"launch services\" purchased \u2014 no compute predicate is perfectly accurate; closest available predicate for services procurement from a supplier."
+  }
+}

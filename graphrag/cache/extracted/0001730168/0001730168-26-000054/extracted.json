@@ -1,0 +1,772 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO",
+            "Broadcom Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "AVGO-Custom-AI-Accelerators",
+        "fields": {
+          "filer": "Broadcom",
+          "amount_usd": 164600000000.0,
+          "counterparty": "<UNKNOWN>",
+          "purpose": "custom AI accelerators",
+          "verbatim_quote": "long-term contract for custom AI accelerators entered in the fiscal quarter ended May 3, 2026"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-CAPEX-ROI-GAP",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 164600000000.0,
+            "pct_of_revenue": null,
+            "duration_yrs": null,
+            "note": "164.6B in firmly committed performance obligations; only 30% expected to recognize as revenue over next 12 months suggests multi-year execution risk and potential timing mismatch"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "firmly committed amounts and the remaining performance obligations under these contracts as of May 3, 2026 were approximately $164.6 billion. These commitments include obligations under a long-term contract for custom AI accelerators entered in the fiscal quarter ended May 3, 2026. We expect approximately 30% of this amount to be recognized as revenue over the next 12 months."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-CUSTOMER-CONCENTRATION",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 164600000000.0,
+            "pct_of_revenue": null,
+            "counterparty_count": 1,
+            "note": "164.6B remaining performance obligations concentrated in single long-term custom AI accelerator contract; likely single hyperscaler customer"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "long-term contract for custom AI accelerators entered in the fiscal quarter ended May 3, 2026. We expect approximately 30% of this amount to be recognized as revenue over the next 12 months."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "AI-Rack-Lease-SPV",
+        "fields": {
+          "entity_type": "SPV",
+          "sponsor": "Broadcom",
+          "beneficiary": "Broadcom",
+          "debt_stack_usd": 29000000000,
+          "residual_value_guarantee": true,
+          "term_yrs": 5,
+          "purpose": "Financing AI racks with custom accelerators and related customer lease agreements",
+          "verbatim_quote": "On June 8, 2026, we arranged for an investor partner to take on certain agreements to purchase AI racks based on custom AI accelerators designed by us and the related lease agreements with a customer that enable access to compute capacity. In connection with the arrangement, we entered into a backstop agreement with the investor partner for the customer's lease obligations over 5-year terms. The backstop will increase over time as the AI racks are deployed and decrease as the customer makes payments on its lease obligations, with a maximum exposure of $29 billion."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-HIDDEN-LEVERAGE-AI-Rack-Backstop",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 29000000000,
+            "duration_yrs": 5,
+            "note": "Maximum backstop exposure on customer lease obligations for AI racks, increasing as deployed, decreasing with customer payments. Single-customer concentration on compute deployment."
+          },
+          "named_counterparties": [
+            "unnamed AI customer"
+          ],
+          "verbatim_quote": "In connection with the arrangement, we entered into a backstop agreement with the investor partner for the customer's lease obligations over 5-year terms. The backstop will increase over time as the AI racks are deployed and decrease as the customer makes payments on its lease obligations, with a maximum exposure of $29 billion. In the event of default by the customer, we have various remedies, including the assumption of the lease or effecting a sale of the AI racks, which would reduce our maximum exposure."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-CUSTOMER-CONCENTRATION-Top5",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_revenue": 45,
+            "counterparty_count": 5,
+            "note": "Top 5 end customers account for ~45% of net revenue (fiscal Q2 2026). One distributor customer alone = 42% of revenue."
+          },
+          "named_counterparties": [
+            "Top 5 end customers (unnamed)",
+            "One semiconductor distributor (unnamed)"
+          ],
+          "verbatim_quote": "A relatively small number of customers account for a significant portion of our net revenue. Direct sales to one semiconductor solutions customer, which is a distributor, accounted for 42% of our net revenue for each of the fiscal quarter and two fiscal quarters ended May 3, 2026, and 29% of our net revenue for each of the fiscal quarter and two fiscal quarters ended May 4, 2025. We believe aggregate sales to our top five end customers, through all channels, accounted for approximately 45% of our net revenue for each of the fiscal quarter and two fiscal quarters ended May 3, 2026 and 40% of our net revenue for each of the fiscal quarter and two fiscal quarters ended May 4, 2025. The loss of, or significant decrease in demand from, any of our top five end customers could have a material adverse effect on our business, results of operations and financial condition."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-CAPEX-ROI-GAP-AI-Accelerators",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "duration_yrs": 5,
+            "note": "Custom AI accelerators and AI racks require significant R&D and manufacturing capex, revenue dependent on single customer (backstop arrangement suggests demand concentration risk). Semiconductor solutions revenue grew 79% YoY (Q1 FY2026) but driven primarily by custom AI accelerators to single/few customers with significant execution and deployment timing risk."
+          },
+          "named_counterparties": [
+            "AI data center customer",
+            "investor partner"
+          ],
+          "verbatim_quote": "On June 8, 2026, we arranged for an investor partner to take on certain agreements to purchase AI racks based on custom AI accelerators designed by us and the related lease agreements with a customer that enable access to compute capacity... Net revenue from our semiconductor solutions segment increased in the fiscal quarter and two fiscal quarters ended May 3, 2026 compared to the prior year fiscal periods due to strong demand for our networking solutions, primarily custom AI accelerators and AI networking products."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Broadcom-RF-Customer-Concentration-Loss",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "Customer Concentration and Demand Risk",
+          "named_counterparties": [
+            "Top 5 end customers (unnamed)",
+            "Distributor customer (unnamed)"
+          ],
+          "severity": 4,
+          "verbatim_quote": "The loss of, or significant decrease in demand from, any of our top five end customers could have a material adverse effect on our business, results of operations and financial condition."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Broadcom-Purchase-Commitments-2026-2030",
+        "fields": {
+          "filer": "Broadcom",
+          "amount_usd": 128110000000,
+          "start_fy": 2026,
+          "duration_yrs": 5,
+          "purpose": "Unconditional purchase commitments for goods/services, primarily inventory",
+          "verbatim_quote": "Purchase Commitments. Represent unconditional purchase commitments to purchase goods or services, primarily inventory, that are enforceable and legally binding on us and specify all significant terms, including fixed or minimum quantities to be purchased, price provisions, and the approximate timing of the transaction."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-EXECUTION-RISK-AI-Racks-Deployment",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "duration_yrs": 5,
+            "amount_usd": 29000000000,
+            "note": "AI rack deployment timing and customer acceptance is material. Backstop exposure increases as racks are deployed, creating timing and execution dependency. Customer default risk embedded in $29B maximum exposure."
+          },
+          "named_counterparties": [
+            "AI data center customer",
+            "investor partner"
+          ],
+          "verbatim_quote": "The backstop will increase over time as the AI racks are deployed and decrease as the customer makes payments on its lease obligations, with a maximum exposure of $29 billion. In the event of default by the customer, we have various remedies, including the assumption of the lease or effecting a sale of the AI racks, which would reduce our maximum exposure."
+        }
+      },
+      {
+        "type": "company",
+        "name": "AVGO",
+        "fields": {
+          "ticker": "AVGO",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "TSMC",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-TSMC-Concentration",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_manufacturing": 95,
+            "note": "95% of wafers from single foundry during two fiscal quarters ended May 3, 2026"
+          },
+          "named_counterparties": [
+            "TSMC"
+          ],
+          "verbatim_quote": "During the two fiscal quarters ended May 3, 2026, approximately 95% of the wafers manufactured by our CMs were produced by Taiwan Semiconductor Manufacturing Company Limited (\"TSMC\"). We believe our wafer requirements represent a meaningful portion of TSMC's total production capacity."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Customer-Concentration",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 45,
+            "counterparty_count": 5,
+            "note": "Top 5 end customers account for ~45% of revenue; distributors account for 56% of revenue"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We believe aggregate sales, through all channels, to our top five end customers accounted for approximately 45% of our net revenue for the two fiscal quarters ended May 3, 2026. For the two fiscal quarters ended May 3, 2026, sales to distributors accounted for 56% of our net revenue."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Supplier-Materials-Concentration",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_materials": 75,
+            "counterparty_count": 5,
+            "note": "More than three-quarters of manufacturing materials from 5 suppliers, some single-source"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "During the two fiscal quarters ended May 3, 2026, we purchased more than three-quarters of our manufacturing materials from five materials suppliers, some of which are single source suppliers."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-AI-Leasing-Revenue-Roundtrip",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Novel leasing/deferred payment models for custom AI accelerators and racks"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "our top customers, including our AI solutions customers, may make and have made greater demands on us with regards to pricing and contractual terms, such as seeking to lease our custom AI accelerators or XPUs or requiring us to purchase and then lease to them full AI racks or systems based on our XPUs instead of purchasing these chips or racks directly, as well as alternative financing arrangements for such leases or other novel or deferred payment models."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-AI-Customer-Capital-Constraints",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "AI customers with constrained resources, seeking deferred/alternative payment models"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Some of these AI customers may have constrained resources or capital and may be unable to pay for their required AI infrastructure and/or seek alternative financing arrangements or novel or deferred payment models from their vendors and suppliers, which could result in additional credit or customer default risks and may negatively impact our business."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Financial-Backstops-Leasing",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Unquantified financial obligations including backstops or guarantees for AI rack leases"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "such arrangements have and may impose financial obligations, including backstops or guarantees, upon us or increase our exposure to credit or customer default risks, and failure to mitigate these risks could negatively impact our business, financial condition or results of operations."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO-Geopolitical-Regulatory",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Geopolitical and regulatory risk",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "changes in political, regulatory, legal or economic conditions, geopolitical turmoil or conflict (including China-Taiwan relations), including terrorism, war or political or military coups, state-sponsored or politically motivated cyber-attacks, civil disturbances, or political instability (foreign and domestic)"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO-Export-Controls",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Export control and trade restrictions",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "if our suppliers or customers fail or choose not to comply with these legal requirements or governmental actions, become subject to export restrictions or are designated a \"supply chain risk,\" we may be required to suspend purchasing from such suppliers or selling to such customers, which could damage our reputation and have a material adverse impact on our results of operations."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO-Tariff-Supply-Chain",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Tariff and supply chain disruption",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "While U.S. tariffs and counter-tariffs, including semiconductor-related tariffs, have not had a material impact on our financial condition or results of operations, tariffs and other macroeconomic factors could materially increase costs and disrupt our supply chain."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "Broadcom Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Apollo",
+        "fields": {
+          "role": "investor"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Apollo-AVGO-AI-Racks-SPV",
+        "fields": {
+          "entity_type": "SPV",
+          "sponsor": "Broadcom",
+          "co_owner": "Apollo",
+          "purpose": "AI racks based on custom AI accelerators and related lease agreements",
+          "debt_stack_usd": 29000000000,
+          "term_yrs": 5,
+          "residual_value_guarantee": true,
+          "verbatim_quote": "On June 8, 2026, we arranged for Apollo (\"investor partner\") to take on certain agreements to purchase AI racks based on custom AI accelerators designed by us and the related lease agreements with a customer that enable access to compute capacity. In connection with the arrangement, we entered into a backstop agreement with the investor partner for the customer's lease obligations over 5-year terms. The backstop will increase over time as the AI racks are deployed and decrease as the customer makes payments on its lease obligations, with a maximum exposure of $29 billion."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Hidden-Leverage-Apollo-Backstop",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 29000000000,
+            "duration_yrs": 5,
+            "note": "Maximum exposure under backstop guarantee for customer lease obligations"
+          },
+          "named_counterparties": [
+            "Apollo"
+          ],
+          "verbatim_quote": "In connection with the arrangement, we entered into a backstop agreement with the investor partner for the customer's lease obligations over 5-year terms. The backstop will increase over time as the AI racks are deployed and decrease as the customer makes payments on its lease obligations, with a maximum exposure of $29 billion."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO-Manufacturing-Concentration",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "SUPPLIER_CONCENTRATION",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Our Fort Collins and Breinigsville facilities are the sole sources for the FBAR filters used in many of our wireless devices and for the InP-based wafers used in our fibre optics products, respectively."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO-Geographic-Concentration",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "SUPPLIER_CONCENTRATION",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Many of our facilities, and those of our CMs and suppliers, are concentrated in the same geographic regions of California and the Pacific Rim, which have above average seismic, wildfire, and severe weather activity, and increases the risk of natural disasters impacting multiple suppliers."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Customer-Concentration-Distributors",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 56,
+            "note": "Sales to distributors as percentage of net revenue in two fiscal quarters ended May 3, 2026"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Sales to distributors accounted for 56% of our net revenue in the two fiscal quarters ended May 3, 2026 and are subject to a number of risks, including: fluctuations in demand based on our distributors' product inventory levels, and the timing of delivery to and demand of end customers; our distributors and other channel partners are generally not subject to minimum sales requirements or any obligation to market our products to their customers and may market and distribute competing products; and our distributors' and other channel partners' agreements are generally nonexclusive and some may be terminated at any time without cause."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Distributor-Concentration-Limited",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "In addition, we sell our semiconductor products through an increasingly limited number of distributors, which exposes us to additional customer concentration and related credit risks."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO-Distributor-Relationship-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "CUSTOMER_CONCENTRATION",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Failure to maintain good relationships with our distributors and channel partners could materially adversely impact our business. From time to time, we enlist our distributors and channel partners to lead go-to-market and customer relationships for certain products, such as our Accelerate Program and Catalyst Initiative for certain infrastructure software products, with certain sole distribution relationships by region. To the extent these distributors and channel partners fail to maintain good relationships with our customers or we are unable to continue enlisting our distributors and channel partners to lead go-to-market and customer relationships, our business, operating results and cash flow may be adversely impacted."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Indebtedness-Large",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 66720000000,
+            "note": "Aggregate indebtedness as of May 3, 2026"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of May 3, 2026, the aggregate indebtedness was $66,720 million."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO-Alternative-Financing-Models",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "REVENUE_ROUNDTRIP",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Moreover, we may offer and have offered alternative financing arrangements or other novel or deferred payment models for the leasing of AI racks or systems based on our XPUs to effectively compete, which could have a material adverse effect on our revenue, free cash flow and gross margin and expose us to credit or customer default risks."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO-Software-Cybersecurity",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "EXECUTION_RISK",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Certain aspects of our software portfolio are intended to manage and secure IT infrastructures and environments, and as a result, we expect these products to be ongoing targets of cyber-attacks. Open source code or other third-party software used in these products could also be targeted or have flaws or vulnerabilities that may make our software vulnerable to additional security risks not posed by purely proprietary software."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO-VMware-Tax-Liability",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "HIDDEN_LEVERAGE",
+          "named_counterparties": [
+            "Dell"
+          ],
+          "severity": 3,
+          "verbatim_quote": "If the VMware spin-off from Dell in November 2021 is determined to not be tax-free for any reason, we could be liable for all or a portion of the tax liability, which could have a material adverse effect on our financial condition and operating results. Further, if the acquisition of VMware results in the spin-off failing to qualify as a tax-free transaction under Section 355 of the Internal Revenue Code, Dell, its affiliates and, potentially, its stockholders would incur significant tax liabilities and we may be required to indemnify Dell and its affiliates for any such tax liabilities, which could be material."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "BROADCOM INC.",
+            "AVGO"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Wilmington Trust",
+        "fields": {
+          "role": "supplier"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "VMware",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "context": "VMware Acquisition - debt issuance for acquisition"
+        }
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "capex_commitment",
+        "target_name": "AVGO-Custom-AI-Accelerators"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-CAPEX-ROI-GAP"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-CUSTOMER-CONCENTRATION"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "off_balance_entity",
+        "target_name": "AI-Rack-Lease-SPV",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-HIDDEN-LEVERAGE-AI-Rack-Backstop",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-CUSTOMER-CONCENTRATION-Top5",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-CAPEX-ROI-GAP-AI-Accelerators",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "Broadcom-RF-Customer-Concentration-Loss",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "capex_commitment",
+        "target_name": "Broadcom-Purchase-Commitments-2026-2030",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-EXECUTION-RISK-AI-Racks-Deployment",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "predicate": "BUYS_COMPUTE_FROM",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "company",
+        "target_name": "TSMC",
+        "properties": {
+          "pct_of_supply": 95,
+          "period": "two fiscal quarters ended May 3, 2026"
+        }
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-TSMC-Concentration",
+        "properties": {}
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Customer-Concentration",
+        "properties": {}
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Supplier-Materials-Concentration",
+        "properties": {}
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-AI-Leasing-Revenue-Roundtrip",
+        "properties": {}
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-AI-Customer-Capital-Constraints",
+        "properties": {}
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Financial-Backstops-Leasing",
+        "properties": {}
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "risk_factor",
+        "target_name": "AVGO-Geopolitical-Regulatory",
+        "properties": {}
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "risk_factor",
+        "target_name": "AVGO-Export-Controls",
+        "properties": {}
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "risk_factor",
+        "target_name": "AVGO-Tariff-Supply-Chain",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "off_balance_entity",
+        "target_name": "Apollo-AVGO-AI-Racks-SPV",
+        "predicate": "SPONSORS"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Apollo",
+        "target_type": "off_balance_entity",
+        "target_name": "Apollo-AVGO-AI-Racks-SPV",
+        "predicate": "BENEFITS"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Hidden-Leverage-Apollo-Backstop",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Customer-Concentration-Distributors",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Distributor-Concentration-Limited",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Indebtedness-Large",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "AVGO-Manufacturing-Concentration",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "AVGO-Geographic-Concentration",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "AVGO-Distributor-Relationship-Risk",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "AVGO-Alternative-Financing-Models",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "AVGO-Software-Cybersecurity",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "AVGO-VMware-Tax-Liability",
+        "predicate": "CITES_RISK"
+      }
+    ],
+    "notes": "[chunk 1/6] FILING CONTEXT: Broadcom 10-Q for Q2 FY2026 (period ended May 3, 2026). The source text provided is primarily structured XML/XBRL metadata and basic financial statements (balance sheet, income statement, cash flows, stockholders' equity) with minimal narrative disclosure in Item 1 Business. The text shows revenue disaggregation by geography (Americas, Asia Pacific, EMEA) and product type (Semiconductor Solutions, Infrastructure Software subscriptions/services). No significant SIFI-material entities, hidden leverage structures, circularity, or strategic partnerships are disclosed in the narrative sections provided. VMware is named in debt nomenclature (VMware Acquisition Member) but no acquisition details, terms, or related-party arrangements are disclosed in this excerpt. The filing does not include Item 1A Risk Factors or detailed business relationship narratives required for comprehensive counterparty mapping. Recommendation: Request full text of Item 1 Business and Item 1A Risk Factors to identify customer concentration (> 10% revenue), supplier dependencies, strategic partnerships with hyperscalers or AI labs, and any off-balance-sheet commitments or investments.\"\n[chunk 2/6] SIFI-material findings: (1) Broadcom disclosed $164.6B in firmly committed remaining performance obligations as of Q2 FY2026, heavily weighted to a long-term custom AI accelerator contract entered in Q2. This is the company's largest disclosed counterparty commitment and appears to represent a single hyperscaler customer (likely NVIDIA, though not explicitly named in this section). (2) Revenue recognition timing shows only ~30% expected in next 12 months, creating a multi-year execution and concentration risk. (3) No counterparty name disclosed in this excerpt; likely requires cross-reference to Item 1A, 15, or customer concentration disclosures. (4) Accounts receivable factoring ($600M Q2, $2,350M YTD) and contract liabilities ($10.0B current, $4.2B long-term) suggest significant working capital velocity tied to these large contracts. (5) No related-party transactions, SPVs, or off-balance-sheet arrangements detected in this section. (6) Standard debt, dividend, and stock repurchase activity noted but not SIFI-material in isolation.\n[chunk 3/6] BROADCOM Q2 FY2026 10-Q FILING ANALYSIS (June 9, 2026): KEY SIFI-MATERIAL FINDINGS: (1) **HIDDEN LEVERAGE - $29B AI-RACK BACKSTOP (CRITICAL, severity 4)**: Broadcom arranged a backstop guarantee on a customer's AI-rack lease obligations with an unnamed investor partner, maximum exposure $29B over 5 years. The backstop grows as racks deploy and shrinks with customer payments. This is a quasi-SPV structure that creates off-balance-sheet leverage tied to a single AI customer's deployment and payment performance. Default remedies (assumption or sale of racks) suggest collateral liquidation risk. (2) **CUSTOMER CONCENTRATION - 45% TOP 5, 42% SINGLE DISTRIBUTOR (CRITICAL, severity 4)**: One unnamed distributor customer = 42% of Q2 FY2026 revenue (up from 29% YoY). Top 5 end customers = ~45% of revenue. This extreme concentration on custom AI accelerators and AI networking creates single-point-of-failure risk. Filing explicitly warns: \"loss of, or significant decrease in demand from, any of our top five end customers could have a material adverse effect.\" (3) **CAPEX-ROI GAP - CUSTOM AI ACCELERATORS (ELEVATED, severity 3)**: Semiconductor solutions revenue exploded 79% YoY (Q1 FY2026, $6.6B uplift) driven by \"custom AI accelerators and AI networking products.\" However, the $29B backstop arrangement signals that revenue is concentrated with ONE customer and is contingent on deployment velocity. Broadcom's $128.1B in unconditional purchase commitments (inventory, 2026-2030) are heavily leveraged to this AI customer's capex and deployment schedule. (4) **EXECUTION RISK - AI-RACK DEPLOYMENT TIMING (ELEVATED, severity 3)**: The backstop agreement creates a dynamic exposure: \"increases as AI racks are deployed, decreases as customer makes payments.\" This ties Broadcom's contingent liability to the customer's infrastructure rollout speed and payment discipline. If deployment stalls or customer faces financial stress, both revenue recognition and backstop liability crystallize. (5) **RISK CONCENTRATION ON UNNAMED AI CUSTOMER**: The filing intentionally withholds the customer's identity. This opaqueness, combined with 42% revenue concentration and $29B backstop, suggests this is likely a hyperscaler (Microsoft, Amazon, Google, or Meta) or emerging AI cloud player (CoreWeave, Lambda Labs, etc.). The investor partner taking on the lease agreements could be a SPV backed by Blue Owl, Brookfield, or SoftBank. NO NAMED COUNTERPARTIES IN FILING = FLAG for follow-up. (6) **RELATED CAPEX COMMITMENT (2026-2030)**: $128.1B in unconditional purchase commitments (primarily inventory) over 5 years. Largest annual commitment: $72.9B in FY2028. This is largely AI-accelerator-specific inventory, creating inventory risk if customer demand shifts. (7) **BOILERPLATE EXCLUDED**: Generic risks about cybersecurity, competition, geopolitical trade tensions, IP litigation, tax uncertainties, and leverage ratios are excluded as SIFI-immaterial. CONFIDENCE LEVEL: High on HIDDEN LEVERAGE and CUSTOMER CONCENTRATION (both explicitly quantified and verbatim-quoted). Moderate on CAPEX-ROI GAP and EXECUTION RISK (inferred from deployment model, not fully quantified). All risk signals have verbatim quotes from filing.\n[chunk 4/6] SIFI extraction from AVGO 10-Q (2026-06-09). Focus on concentration and hidden leverage risks: (1) CRITICAL supplier concentration: 95% of wafers from TSMC alone during May 2026 quarter\u2014single point of failure with geopolitical exposure (Taiwan relations explicitly cited as risk). (2) Customer concentration: top 5 end customers = 45% revenue; distributors = 56% revenue\u2014creates lumpy cash flow and demand sensitivity. (3) Materials concentration: >75% from 5 suppliers, some single-source, with no long-term contracts. (4) NEW BUSINESS MODEL RISK: AI accelerator and AI rack leasing with backstop guarantees, deferred payments, and financial obligations\u2014AVGO is absorbing credit risk and potential mark-to-market risk on leased hardware. AI customers are capital-constrained, increasing default risk. (5) Gross margin compression from AI solutions mix. No named customers disclosed in this section (redacted by convention), but top-5 concentration quantified. No acquisitions, investments, or SPVs mentioned in this narrative. Taiwan geopolitical risk is explicitly material given TSMC dependency.\n[chunk 5/6] EXTRACTION SUMMARY \u2014 Broadcom 10-Q (AVGO), Filed 2026-06-09\n\nKEY FINDINGS:\n\n1. **CRITICAL HIDDEN LEVERAGE \u2014 Apollo Backstop ($29B)**\n   - June 8, 2026 arrangement: Apollo assumes AI rack purchase agreements and lease agreements with an unnamed customer\n   - Broadcom enters **5-year backstop guarantee** for customer's lease obligations\n   - **Max exposure: $29 billion** (grows as racks deploy, shrinks with customer payments)\n   - Default remedies: Broadcom can assume lease or sell AI racks to reduce exposure\n   - **SIFI Signal**: $29B contingent liability tied to customer credit risk and equipment residual value; typical of venture-backed hyperscaler capex financing structures\n\n2. **CUSTOMER CONCENTRATION \u2014 56% via Distributors**\n   - 56% of net revenue (2 qtrs ended May 3, 2026) goes through distributors\n   - **Increasingly limited number of distributors** = concentration + credit risk\n   - Distributors: no minimum sales obligations, can market competing products, terminable at-will\n   - Revenue volatility tied to distributor inventory management and end-customer demand timing\n\n3. **SUPPLIER CONCENTRATION \u2014 Single-Source Manufacturing**\n   - **Fort Collins, Colorado**: sole source for FBAR filters (wireless devices)\n   - **Breinigsville, Pennsylvania**: sole source for InP-based wafers (fibre optics)\n   - Geographic clustering in California + Pacific Rim = elevated natural disaster risk (seismic, wildfire, weather)\n\n4. **LARGE DEBT STACK**\n   - **Total indebtedness: $66.72 billion** (as of May 3, 2026)\n   - Material leverage constrains flexibility for acquisitions, capex, and operational pivots\n\n5. **VMWARE SPIN-OFF TAX EXPOSURE**\n   - Broadcom acquired VMware (Nov 2021 spin from Dell)\n   - If spin-off deemed non-tax-free, Broadcom could owe tax liability + indemnify Dell\n   - Contingent exposure to Dell's tax liabilities\n\n6. **ALTERNATIVE FINANCING MODELS \u2014 Credit Risk**\n   - Broadcom offers novel financing/deferred payment structures for AI racks/XPU systems to compete\n   - Exposes Broadcom to customer default risk + margin compression\n\n7. **SOFTWARE CYBERSECURITY**\n   - Infrastructure management/security portfolio targeted by cyber-attacks\n   - Open-source dependencies + exposed proprietary code = vulnerability exposure\n   - Failed mitigation = customer loss + reputational damage\n\n**COUNTERPARTY WEB**:\n- Broadcom \u2192 Apollo (SPV co-owner for AI rack financing)\n- Broadcom \u2190 Unnamed Customer (lease obligor; Broadcom backstops via Apollo arrangement)\n- Broadcom \u2190 Distributors (56% of revenue; highly concentrated; terminable)\n- Broadcom \u2190 Dell (contingent tax liability from VMware acquisition indemnity)\n\n**NOTES FOR MONITOR**:\n- Apollo arrangement is **off-balance and contingent** \u2014 backstop only triggered on customer default\n- No explicit customer name in filing suggests NDA-protected arrangement (typical for hyperscaler deals)\n- The $29B backstop, combined with distributor concentration and alternative financing models, suggests Broadcom is structuring deals to support customer capex while mitigating balance-sheet impact\n- VMware tax tail is unquantified but material enough to disclose as risk factor\n\n[chunk 6/6] Source document is purely an exhibit list (exhibits 4.29-4.66, 10.1-10.2, 31.1-31.2, 32.1-32.2, 101.INS-101.PRE, 104) and signatures page from Broadcom Inc.'s 10-Q filed 2026-06-09. Content consists of: (1) Indentures and Senior Notes issued 2021\u20132026, all with Wilmington Trust National Association as trustee; (2) Registration Rights Agreements with investment banks (BNP Paribas, J.P. Morgan, TD Securities, BofA, HSBC, RBC, Barclays, BBVA) acting as dealer-managers/purchaser representatives; (3) Executive transition/offer letters for Kirsten M. Spears (CFO) and Amie Thuener; (4) Sarbanes-Oxley certifications and XBRL filings. No business narrative, customer/supplier concentration data, investments, acquisitions, related-party arrangements, or SIFI-material relationships are disclosed in this exhibit list. The indenture trustees and investment banks are service providers in routine debt issuance transactions, not SIFI-material counterparties. No extraction of SIFI-material content warranted.\""
+  }
+}

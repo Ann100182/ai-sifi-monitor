@@ -1,0 +1,287 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "aliases": [
+            "Oracle Corporation"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ampere Computing",
+        "fields": {
+          "aliases": [
+            "Ampere Computing Holdings LLC"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "aliases": [
+            "Oracle Corporation"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ampere Computing",
+        "fields": {
+          "aliases": [
+            "Ampere Computing Holdings LLC"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Oracle-Ampere Equity & Convertible",
+        "fields": {
+          "investor": "Oracle",
+          "target": "Ampere Computing",
+          "amount_usd": 1500000000.0,
+          "equity_pct": 29,
+          "disclosed_date": "2024-11-30",
+          "verbatim_quote": "The total carrying value of our investments in Ampere, after accounting for losses under the equity method of accounting, was $1.5 billion as of November 30, 2024. Our equity investments in Ampere represent an ownership interest of approximately 29% as of November 30, 2024."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Ampere Call-Put Option Agreement",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "Oracle",
+          "co_owner": "Ampere co-investors",
+          "purpose": "Conditional equity acquisition rights",
+          "term_yrs": 2.5,
+          "verbatim_quote": "In accordance with the terms of an agreement with other co-investors, we are also a counterparty to certain put (exercisable by a co-investor) and call (exercisable by Oracle) options at prices of approximately $450 million to $1.5 billion, respectively, to acquire additional equity interests in Ampere from our co-investors through January 2027."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Ampere Server Depreciation Life Extension",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "named_counterparties": [
+            "Ampere Computing"
+          ],
+          "numeric_signal": {
+            "duration_yrs": 1,
+            "note": "Servers useful life increased from 5 to 6 years effective FY2025 start"
+          },
+          "verbatim_quote": "During the first quarter of fiscal 2025, we completed an assessment of the useful lives of our servers and increased the estimated useful lives from five years to six years, effective at the beginning of fiscal 2025."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "aliases": [
+            "ORCL"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ampere",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle Financial Services Software Limited",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle Corporation Japan",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-CloudInfra-FY25-Ongoing",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 6300000000,
+          "start_fy": 2025,
+          "purpose": "data center capacity expansion and establishment in new geographic locations",
+          "verbatim_quote": "we expect this trend to continue during fiscal 2025 as we increase our existing data center capacity and establish data centers in new geographic locations in order to meet current and expected customer demand"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-DataCenterLeases-FY25Plus",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 36700000000,
+          "duration_yrs": 15,
+          "start_fy": 2025,
+          "purpose": "operating leases for data center infrastructure",
+          "verbatim_quote": "an increase in our operating lease commitments to $36.7 billion as of November 30, 2024. Our operating lease commitments, which are primarily for data centers, are generally expected to commence between the remainder of fiscal 2025 and fiscal 2027 and for terms of nine to fifteen years"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-CapexROIGap-CloudInfra",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 36700000000,
+            "note": "Operating lease commitments for data centers not yet commenced, totaling $36.7B with 9-15 year terms; capex for cloud infrastructure increasing sharply (55% YoY to $10.7B trailing 4Q) while hardware revenues declining and cloud license contracts are generally 1-4 years"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "we expect this trend to continue during fiscal 2025 as we increase our existing data center capacity and establish data centers in new geographic locations in order to meet current and expected customer demand. Our operating lease commitments, which are primarily for data centers, are generally expected to commence between the remainder of fiscal 2025 and fiscal 2027 and for terms of nine to fifteen years. We have not recorded these lease commitments on our Condensed Consolidated Balance Sheets"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-ExecutionRisk-DataCenterCommitment",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 36700000000,
+            "duration_yrs": 15,
+            "note": "Large, multi-year data center lease commitments not yet recorded on balance sheet; expected to commence in remainder of FY25-FY27"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Our operating lease commitments, which are primarily for data centers, are generally expected to commence between the remainder of fiscal 2025 and fiscal 2027 and for terms of nine to fifteen years. We have not recorded these lease commitments on our Condensed Consolidated Balance Sheets as of November 30, 2024."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-CostOpacity-OperatingLease",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 36700000000,
+            "note": "Material operating lease commitments ($36.7B) not yet capitalized on balance sheet; off-balance-sheet treatment"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We have not recorded these lease commitments on our Condensed Consolidated Balance Sheets as of November 30, 2024."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ampere Computing",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "equity_pct": 0.29,
+          "investment_type": "equity + convertible debt",
+          "investment_value_usd": 1500000000,
+          "context": "29% ownership, equity method accounting, $135M in convertible debt during H1 FY2025, total carrying value $1.5B as of Nov 30, 2024"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ampere Computing",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {
+          "risk_type": "HIDDEN_LEVERAGE",
+          "context": "Put/call options on additional equity interests (exercisable through Jan 2027); call option price up to $1.5B; potential control consolidation triggers"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ampere Computing",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "investment",
+        "source_name": "Oracle-Ampere Equity & Convertible",
+        "target_type": "company",
+        "target_name": "Oracle",
+        "predicate": "NAMES_COUNTERPARTY"
+      },
+      {
+        "source_type": "off_balance_entity",
+        "source_name": "Ampere Call-Put Option Agreement",
+        "target_type": "company",
+        "target_name": "Oracle",
+        "predicate": "NAMES_COUNTERPARTY"
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "Ampere Server Depreciation Life Extension",
+        "target_type": "company",
+        "target_name": "Oracle",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ampere",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "Oracle-CloudInfra-FY25-Ongoing",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "Oracle-DataCenterLeases-FY25Plus",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-CapexROIGap-CloudInfra",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-ExecutionRisk-DataCenterCommitment",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-CostOpacity-OperatingLease",
+        "predicate": "HAS_RISK_SIGNAL"
+      }
+    ],
+    "notes": "[chunk 1/4] EXTRACTED ENTITIES: (1) Oracle Corporation (ticker ORCL, hyperscaler) \u2014 filer of this 10-Q for period ended Nov 30, 2024. (2) Ampere Computing Holdings LLC (supplier/investee) \u2014 Oracle holds ~29% equity stake + convertible debt. KEY SIFI SIGNALS: (A) Hidden Leverage via embedded options: Oracle has put options (exercisable by co-investors at ~$450M) and call options (exercisable by Oracle at up to ~$1.5B) on additional Ampere equity through Jan 2027. If exercised, Oracle would consolidate Ampere results. Ampere has historically generated net losses. This is an off-balance equity option structure that could trigger material control changes. (B) Related-party equity method investment: Oracle's share of Ampere losses is recorded in non-operating expenses (equity method losses of $177M for H1 FY2025 vs $197M prior year, across all equity investments). Ampere comprises majority of Oracle's non-marketable investments ($1.9B total, ~$1.5B in Ampere). (C) Capital commitment: $135M additional convertible debt investment during H1 FY2025; convertible debt matures June 2026. No verbatim quote extracted for hidden options structure because the filing describes functional mechanics but not explicit risk language. Narrative states: \"In accordance with the terms of an agreement with other co-investors, we are also a counterparty to certain put (exercisable by a co-investor) and call (exercisable by Oracle) options at prices of approximately $450 million to $1.5 billion, respectively, to acquire additional equity interests in Ampere from our co-investors through January 2027. If either of such options is exercised by us or our co-investors, we would obtain control of Ampere and consolidate its results with our results of operations.\" This is a HIDDEN_LEVERAGE risk because the put/call structure creates a contingent control obligation that is not fully consolidated. CUSTOMER/SUPPLIER CONCENTRATION: No single-customer or single-supplier concentration thresholds breached in this section. Hardware/cloud/license business segments disclosed, but no named major customers or suppliers identified in narrative. CAPITAL EXPENDITURES: Oracle reports $6.273B capex for H1 FY2025 vs $2.394B in H1 FY2024 \u2014 significant YoY increase (>150%) driven by cloud infrastructure build-out. No specific counterparty capex commitments named in narrative (e.g., no \"OpenAI\" or hyperscaler colocation deals). Cloud services revenue grew 12.1% YoY ($21.324B H1 FY2025 vs $19.186B H1 FY2024). COST OPACITY: Oracle changed depreciation estimate for servers/networking equipment from 5 years to 6 years effective start of FY2025, increasing Q2 FY2025 net income by $149M (+$0.05/share) and H1 net income by $306M (+$0.11/share). This is a material accounting estimate change that reduces reported OpEx by $386M in H1 FY2025, classified as a COST_OPACITY signal. Verbatim: \"During the first quarter of fiscal 2025, we completed an assessment of the useful lives of our servers and networking equipment and increased the estimate of the useful lives from five years to six years, effective at the beginning of fiscal 2025. Based on the carrying value of our servers and networking equipment as of May 31, 2024, this change in accounting estimate decreased our total operating expenses by $189 million and increased our net income by $149 million, or $0.05 per both basic and diluted share, for the second quarter of fiscal 2025...\" DEBT & LEVERAGE: Senior notes outstanding of $88.6B as of Nov 30, 2024 ($6.3B issued Sept 2024 to refinance maturing notes). Total non-current borrowings $80.462B (balance sheet). Interest expense $1.708B for H1 FY2025. No explicit off-balance project finance SPVs or JV debt structures disclosed in this excerpt. RESTRUCTURING: $673M estimated cost for FY2024 Restructuring Plan; $243M accrued/paid through Nov 30, 2024. No SIFI-material related-party or hidden cost implications stated. No other named strategic partnerships, investments in AI labs, or capex commitments to named counterparties extracted from this narrative section.\"\n  }\n]\n[chunk 2/4] ORACLE 10-Q (2024-12-10): Extracted Ampere Computing investment (29% equity stake, $1.5B carrying value post-equity-method losses); convertible debt ($135M new in 6M FY2025); embedded call/put options ($450M\u2013$1.5B) with co-investors (exercisable through Jan 2027, potential consolidation trigger if executed). Key cost-opacity signal: server useful lives increased FY2025 from 5\u21926 years effective start of fiscal 2025, will reduce annual depreciation expense and improve margins. No explicit capex guidance for cloud infrastructure, but MD&A notes heavy investment in cloud capacity and geographic expansion. Deferred cloud services and license support revenues $8.4B (current) and $1.4B (non-current) = $9.8B total, representing customer prepayments for contracts typically 1-4 years. Hardware revenues declining (-4% Q2, -6% H1) despite cloud growth \u2014 strategic emphasis on cloud over hardware noted. Services revenues also declining (-3% Q2, -6% H1). The filing contains standard litigation disclosures (NetSuite derivative, cloud business derivative settled with $700k attorney fee cap, Netherlands GDPR privacy class action ongoing). No explicit counterparty revenue concentration disclosed beyond segment breakdown. No SPVs, JVs, or project-finance structures identified in the narrative sections provided.\n[chunk 3/4] FILING: Oracle 10-Q, FY2025 Q2 (filed 2024-12-10). SECTION: Business narrative and MD&A.\n\nKEY FINDINGS:\n\n1. **CAPEX ROI GAP (Severity 3)**: Oracle has disclosed $36.7B in operating lease commitments for data centers with 9-15 year terms, scheduled to commence in remainder of FY25\u2013FY27. These leases are NOT YET recorded on the balance sheet. Simultaneously, Oracle's capex for cloud infrastructure jumped 55% YoY to $10.7B on a trailing 4-quarter basis, while hardware revenues declined 4\u20136% and cloud subscription contracts are typically 1\u20134 years. The duration mismatch and large uncommenced obligations create execution risk.\n\n2. **EXECUTION RISK (Severity 3)**: The $36.7B data center lease commitments are \"generally expected to commence\" in a 12-month window (remainder of FY25\u2013FY27), but no binding commencement dates or take-or-pay terms are disclosed. This creates uncertainty about operational readiness and demand sustainability.\n\n3. **COST OPACITY (Severity 2)**: Oracle explicitly states \"We have not recorded these lease commitments on our Condensed Consolidated Balance Sheets as of November 30, 2024.\" Under ASC 842 (effective for large accelerated filers in May 2023), operating leases with non-cancellable terms should be recorded as ROU assets. The $36.7B omission suggests either (a) these are cancellable commitments, or (b) lease accounting treatment is deferred pending execution. Either way, the lack of capitalization obscures Oracle's true fixed-cost base.\n\n4. **EQUITY INVESTMENT - AMPERE**: Oracle disclosed $108M in losses from equity investments in Q2 FY25, with \"Ampere\" specifically named as a material equity method investee. No dollar amount disclosed. This likely reflects Oracle's minority stake in Ampere Computing (AI infrastructure play).\n\n5. **SUBSIDIARIES**: Oracle Financial Services Software Limited and Oracle Corporation Japan are majority-owned subsidiaries with noncontrolling interests generating $47M\u2013$90M in income per quarter.\n\nNO SIFI-MATERIAL CIRCULARITY, ROUNDTRIPPING, CUSTOMER CONCENTRATION >10%, OR HIDDEN LEVERAGE identified in this section. The core risk is the capex-lease duration mismatch in cloud infrastructure build-out.\n[chunk 4/4] SOURCE TEXT CONTAINS NO SIFI-MATERIAL ENTITIES. The provided excerpt is a certificate section and exhibit listing from Oracle's 10-Q filing (cover page, signature blocks, and exhibit descriptions only). It contains: (1) Rule 13a-14(a) certification requirements; (2) Section 1350 certification language; (3) Interactive Data Files listing (Regulation S-T); (4) Exhibit index with standard XBRL references; (5) Signature blocks for CEO Safra A. Catz and Chief Accounting Officer Maria Smith. No named counterparties, investments, off-balance-sheet arrangements, capex commitments, or risk disclosures appear in this text. No business relationships, customer concentration metrics, or supplier dependencies are disclosed. This section is purely procedural and administrative boilerplate."
+  }
+}

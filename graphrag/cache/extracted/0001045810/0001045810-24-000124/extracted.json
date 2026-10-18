@@ -1,0 +1,744 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "aliases": [
+            "NVIDIA Corporation"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Customer_Concentration_Q1_2025",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "CUSTOMER_CONCENTRATION",
+          "named_counterparties": [
+            "Customer A",
+            "Customer B"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Sales to one direct customer, Customer A, represented 13% of total revenue and sales to a second direct customer, Customer B, represented 11% of total revenue for the first quarter of fiscal year 2025, both of which were attributable to the Compute & Networking segment."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Inventory_Excess_and_Cancellation_Risk",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 1684000000.0,
+            "note": "Excess inventory purchase obligations as of Apr 28, 2024"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "During the first quarter of fiscal years 2025 and 2024, we recorded an expense of approximately $183 million and $29 million, respectively, in cost of revenue for inventory purchase obligations in excess of our current demand projections, supplier charges, and penalties related to cancellations and underutilization."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Cloud_Service_Agreements",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 8800000000.0,
+          "counterparty": "Cloud Service Providers",
+          "purpose": "Research and development efforts and DGX Cloud offerings",
+          "verbatim_quote": "Other non-inventory purchase obligations were $10.6 billion, including $8.8 billion of multi-year cloud service agreements. We expect our cloud service agreements to be used to support our research and development efforts and our DGX Cloud offerings."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Non_Marketable_Investments_Growth",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 1463000000.0,
+            "note": "Non-marketable equity securities carrying value as of Apr 28, 2024, up from $1.321B at Jan 28, 2024"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Our non-marketable equity securities are recorded in long-term other assets on our Condensed Consolidated Balance Sheets and valued under the measurement alternative. The carrying value of our non-marketable equity securities totaled $1.5 billion and $1.3 billion as of April 28, 2024 and January 28, 2024, respectively."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Inventory_Provision_Increases",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 210000000.0,
+            "note": "Inventory provision for Q1 2025; more than doubled from $105M in Q1 2024"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "During the first quarter of fiscal years 2025 and 2024, we recorded an inventory provision of $210 million and $105 million, respectively, in cost of revenue."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Product_Warranty_Liability_Spike",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 532000000.0,
+            "note": "Product warranty liabilities as of Apr 28, 2024, up 74% from $306M at Jan 28, 2024"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The estimated amount of product warranty liabilities was $532 million and $306 million as of April 28, 2024 and January 28, 2024, respectively."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Deferred_Revenue_Growth_Constraint",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 1549000000.0,
+            "pct_of_revenue": 5.9,
+            "note": "Deferred revenue as % of Q1 2025 revenue ($26.044B)"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Revenue allocated to remaining performance obligations, which includes deferred revenue and amounts that will be invoiced and recognized as revenue in future periods, was $1.3 billion as of April 28, 2024. We expect to recognize approximately 38% of this revenue over the next twelve months and the remainder thereafter."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Customer_A_B_Revenue_Concentration",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 6132000000.0,
+            "pct_of_revenue": 23.5,
+            "counterparty_count": 2,
+            "note": "Two customers represent 24% of Q1 2025 revenue; both Compute & Networking"
+          },
+          "named_counterparties": [
+            "Customer A",
+            "Customer B"
+          ],
+          "verbatim_quote": "Sales to one direct customer, Customer A, represented 13% of total revenue and sales to a second direct customer, Customer B, represented 11% of total revenue for the first quarter of fiscal year 2025, both of which were attributable to the Compute & Networking segment."
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier",
+          "aliases": [
+            "NVIDIA Corporation"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Customer A",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Customer B",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-CUSTOMER_CONCENTRATION-Q1-FY2025",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_revenue": 24,
+            "counterparty_count": 2,
+            "note": "Customer A 13% + Customer B 11% = 24% of Q1 FY2025 revenue from two direct customers in Compute & Networking"
+          },
+          "named_counterparties": [
+            "Customer A",
+            "Customer B"
+          ],
+          "verbatim_quote": "Sales to one direct customer, Customer A, represented 13% of total revenue and sales to a second direct customer, Customer B, represented 11% of total revenue for the first quarter of fiscal year 2025, both of which were attributable to the Compute & Networking segment."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-INDIRECT_CUSTOMER_CONCENTRATION-Q1-FY2025",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_revenue": 20,
+            "note": "Two indirect customers each \u226510% of revenue; one purchases through Customer B"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Two indirect customers each represented 10% or more of total revenue for the first quarter of fiscal year 2025; one of these indirect customers purchased our products primarily through direct Customer B. Both were attributable to the Compute & Networking segment."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-EXECUTION_RISK-SUPPLY_CHAIN",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "The increased purchase volumes and number of suppliers and integration of new vendors into our supply chain may create more complexity and execution risk... We may incur inventory provisions or impairments if our inventory or supply or capacity commitments exceed demand for our products or demand declines."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-EXECUTION_RISK-PRODUCT_TRANSITION",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 393000000,
+            "note": "Q1 FY2025 inventory provisions totaled $393M (compared to $134M in prior year)"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The increasing frequency and complexity of newly introduced products could result in quality or production issues that could increase inventory provisions, warranty, or other costs or result in product delays."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-CAPEX_ROI_GAP-BLACKWELL_SUPPLY",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "We believe the initial demand for Blackwell is well ahead of the projected supply for this fiscal year. We expect supply constraints for our Blackwell offerings will continue into next year."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVDA-EXPORT_CONTROLS_CHINA",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Geopolitical / Export Controls",
+          "named_counterparties": [
+            "China",
+            "USG"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In August 2022, the U.S. government, or the USG, announced licensing requirements that, with certain exceptions, impact exports to China (including Hong Kong and Macau) and Russia of our A100 and H100 integrated circuits... Our Data Center revenue in China is down significantly from the level prior to the imposition of new export control restrictions in October 2023."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVDA-EXPORT_CONTROLS_MIDDLE_EAST",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Geopolitical / Export Controls",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 3,
+          "verbatim_quote": "In October 2023, the USG announced new and updated licensing requirements that became effective in our fourth quarter of fiscal year 2024 for exports to China and Country Groups D1, D4, and D5 (including but not limited to Saudi Arabia, the United Arab Emirates, and Vietnam, but excluding Israel)..."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-GEOPOLITICAL_ISRAEL_EMPLOYEE_RISK",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": null,
+            "note": "~4,000 employees in Israel; subset on active military duty"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We are monitoring the impact of the geopolitical conflict in and around Israel on our operations, including the health and safety of our approximately 4,000 employees in the region who primarily support the research and development, operations, and sales and marketing of our networking products... A substantial number of our employees in the region have been called-up for active military duty in Israel."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVDA-SUPPLY_PREPAID_AGREEMENTS",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": null,
+          "duration_yrs": null,
+          "start_fy": 2025,
+          "counterparty": null,
+          "purpose": "Manufacturing capacity and inventory supply",
+          "verbatim_quote": "We continue to add new vendors and have entered and may continue to enter into prepaid manufacturing and capacity agreements to supply both current and future products."
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Customer A",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Customer B",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Taiwan",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "China",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "USG",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CUSTOMER_CONCENTRATION_Q1FY2025",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "CUSTOMER_CONCENTRATION",
+          "named_counterparties": [
+            "Customer A",
+            "Customer B"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Sales to one direct customer, Customer A, and sales to another direct customer, Customer B, represented 13% and 11% of total revenue, respectively, for the first quarter of fiscal year 2025. Both were attributable to the Compute & Networking segment."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "SUPPLIER_CONCENTRATION_TAIWAN",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 4,
+          "named_counterparties": [
+            "Taiwan"
+          ],
+          "numeric_signal": {
+            "note": "Geopolitical tensions involving Taiwan and China; critical to supply continuity"
+          },
+          "verbatim_quote": "geopolitical tensions, such as those involving Taiwan and China, which comprise a significant portion of our revenue and where we have suppliers, contract manufacturers, and assembly partners who are critical to our supply continuity, could have a material adverse impact on us."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CAPEX_ROI_GAP_INVENTORY_MISMATCH",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "note": "Non-linear supply within quarters; extended lead times >12 months; prepaid deposits and capacity commitments increasing"
+          },
+          "verbatim_quote": "We have paid premiums and provided deposits to secure future supply and capacity, which have increased our product costs and may continue to do so. If our existing suppliers are unable to scale their capabilities to meet our supply needs, we may require additional sources of capacity, which may require additional deposits."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "EXECUTION_RISK_BLACKWELL_SUPPLY",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "note": "Blackwell in production; customer sample shipments planned Q2 FY2025; demand outpacing projected supply; supply constraints expected into next year"
+          },
+          "verbatim_quote": "Our next generation data center architecture, Blackwell, is in production, and we plan on shipping customer samples in the second quarter. We expect to ramp customer shipments of Blackwell in the second half of the fiscal year. We believe the initial demand for Blackwell is well ahead of the projected supply for this fiscal year. We expect supply constraints for our Blackwell offerings will continue into next year."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "REVENUE_ROUNDTRIP_CHINA_EXPORT_CONTROLS",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 4,
+          "named_counterparties": [
+            "China",
+            "USG"
+          ],
+          "numeric_signal": {
+            "pct_of_revenue": 48,
+            "note": "48% of Q1 FY2025 revenue from international sales; Data Center revenue in China down significantly post-October 2023 export controls"
+          },
+          "verbatim_quote": "We generated 48% of our revenue during the first quarter in fiscal year 2025 from sales outside the United States. We have not received licenses from the USG to ship restricted products to China. Our Data Center revenue in China is down significantly from the level prior to the imposition of new export control restrictions in October 2023."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "EXPORT_CONTROL_RESTRICTIONS",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "GEOPOLITICAL_EXPORT_CONTROLS",
+          "named_counterparties": [
+            "USG",
+            "China"
+          ],
+          "severity": 5,
+          "verbatim_quote": "During the third quarter of fiscal year 2023, the USG announced export restrictions and export licensing requirements targeting China's semiconductor and supercomputing industries. These restrictions impact exports of certain chips, as well as software, hardware, equipment and technology used to develop, produce and manufacture certain chips to China (including Hong Kong and Macau) and Russia, and specifically impact our A100 and H100 integrated circuits, DGX or any other systems or boards which incorporate A100 or H100 integrated circuits."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "DEMAND_FORECASTING_VOLATILITY",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "DEMAND_ESTIMATION_RISK",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Failure to estimate customer demand accurately has led and could lead to mismatches between supply and demand."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "COST_OPACITY_INVENTORY_PROVISIONS",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "note": "History of inventory write-downs and impairments; cancellation penalties; non-cancellable/non-returnable purchase terms placed well in advance of historical lead times"
+          },
+          "verbatim_quote": "We have written down our inventory, incurred cancellation penalties, and recorded impairments and may have to do so in the future. These impacts were amplified by our placement of non-cancellable and non-returnable purchasing terms well in advance of our historical lead times and could be exacerbated if we need to make changes to the design of future products."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "HIDDEN_LEVERAGE_SUPPLY_COMMITMENTS",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "note": "Growing purchase obligations and prepaid capacity commitments; may not be reducible if revenue declines"
+          },
+          "verbatim_quote": "We may not have the ability to reduce our supply commitments at the same rate or at all if our revenue declines."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "Customer_Concentration_Q1_2025"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Inventory_Excess_and_Cancellation_Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "Cloud_Service_Agreements"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Non_Marketable_Investments_Growth"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Inventory_Provision_Increases"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Product_Warranty_Liability_Spike"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Deferred_Revenue_Growth_Constraint"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Customer_A_B_Revenue_Concentration"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Customer A",
+        "predicate": "SELLS_COMPUTE_TO",
+        "properties": {
+          "pct_revenue": 13,
+          "segment": "Compute & Networking",
+          "period": "Q1 FY2025"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Customer B",
+        "predicate": "SELLS_COMPUTE_TO",
+        "properties": {
+          "pct_revenue": 11,
+          "segment": "Compute & Networking",
+          "period": "Q1 FY2025"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-CUSTOMER_CONCENTRATION-Q1-FY2025",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-INDIRECT_CUSTOMER_CONCENTRATION-Q1-FY2025",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-EXECUTION_RISK-SUPPLY_CHAIN",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-EXECUTION_RISK-PRODUCT_TRANSITION",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-CAPEX_ROI_GAP-BLACKWELL_SUPPLY",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "risk_factor",
+        "target_name": "NVDA-EXPORT_CONTROLS_CHINA",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "risk_factor",
+        "target_name": "NVDA-EXPORT_CONTROLS_MIDDLE_EAST",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-GEOPOLITICAL_ISRAEL_EMPLOYEE_RISK",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Customer A",
+        "predicate": "SELLS_COMPUTE_TO",
+        "properties": {
+          "pct_revenue": 13,
+          "period": "Q1 FY2025",
+          "segment": "Compute & Networking"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Customer B",
+        "predicate": "SELLS_COMPUTE_TO",
+        "properties": {
+          "pct_revenue": 11,
+          "period": "Q1 FY2025",
+          "segment": "Compute & Networking"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Taiwan",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "criticality": "supply continuity",
+          "note": "suppliers, contract manufacturers, and assembly partners"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "USG",
+        "predicate": "CITES_RISK",
+        "properties": {
+          "risk_type": "export_controls",
+          "products_affected": [
+            "A100",
+            "H100",
+            "L4",
+            "L40",
+            "L40S",
+            "RTX 4090"
+          ]
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "China",
+        "predicate": "CITES_RISK",
+        "properties": {
+          "risk_type": "export_control_restrictions",
+          "revenue_impact": "Data Center revenue down significantly post-Oct 2023"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "risk_factor",
+        "target_name": "EXPORT_CONTROL_RESTRICTIONS",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "risk_factor",
+        "target_name": "DEMAND_FORECASTING_VOLATILITY",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CUSTOMER_CONCENTRATION_Q1FY2025",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "SUPPLIER_CONCENTRATION_TAIWAN",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CAPEX_ROI_GAP_INVENTORY_MISMATCH",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "EXECUTION_RISK_BLACKWELL_SUPPLY",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "REVENUE_ROUNDTRIP_CHINA_EXPORT_CONTROLS",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "COST_OPACITY_INVENTORY_PROVISIONS",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "HIDDEN_LEVERAGE_SUPPLY_COMMITMENTS",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      }
+    ],
+    "notes": "[chunk 1/4] FORM 10-Q FILING ANALYSIS (NVDA, Q1 FY2025, filed 2024-05-29): The submitted text is primarily financial statement data (condensed consolidated statements of income, comprehensive income, balance sheets, cash flows, and notes covering standard accounting policies, leases, stock-based compensation, and tax). No narrative business section (Item 1 Business Description) or executive discussion of specific customer/supplier relationships was included. The document excerpt contains only tabular/XBRL-formatted financial data and boilerplate accounting disclosures. Therefore, SIFI-MATERIAL ENTITIES EXTRACTED: NONE. No named counterparties, investments, related-party arrangements, customer concentration disclosures, supplier dependencies, or off-balance-sheet entities are visible in this excerpt. To extract counterparty relationships and concentration risks, the full Item 1 Business Description, Item 1A Risk Factors, Item 2 MD&A, and customer concentration tables in footnotes would be required.\"\n[chunk 2/4] EXTRACTION SCOPE: NVIDIA 10-Q/Q1 2025 (Accession 0001045810-24-000124, filed 2024-05-29). SOURCE: Notes 6\u201315 (Financial instruments, investments, intangible assets, balance sheet components, commitments, equity, segments, subsequent events).\n\nSIFI-MATERIAL SIGNALS EXTRACTED:\n\n1. **CUSTOMER_CONCENTRATION (Severity 4)**: Two unnamed customers (Customer A: 13% revenue, Customer B: 11% revenue) account for 24% of Q1 2025 revenue ($6.13B), both in Compute & Networking. This is the highest-severity finding: single-customer loss would materially impact revenue and earnings. Previous quarter (Jan 28, 2024) showed no 10%+ customer. SHARP CHANGE warrants investigation into hyperscaler customer identities and contract terms.\n\n2. **INVENTORY_EXCESS_and_CANCELLATION_RISK (Severity 2)**: $1.684B in excess inventory purchase obligations as of Apr 28, 2024. Q1 2025 recorded $183M in cancellation/underutilization charges (vs. $29M in Q1 2024), suggesting demand uncertainty or over-commitments with foundries (TSMC, Samsung). This signals CAPEX_ROI_GAP: capex is misaligned with end-customer demand.\n\n3. **CLOUD_SERVICE_AGREEMENTS (Capex Commitment)**: $8.8B multi-year cloud service agreements committed by NVIDIA. Purpose is internal (R&D, DGX Cloud), not customer-facing. No counterparty disclosed, but likely hyperscalers (AWS, Azure, GCP). This represents EXECUTION_RISK if cloud infrastructure fails to deliver expected compute for AI training/serving.\n\n4. **INVENTORY_PROVISION_INCREASES (Severity 2)**: Doubled YoY from $105M to $210M in Q1, indicating accelerating inventory write-downs or obsolescence. Symptom of COST_OPACITY and demand mismatch.\n\n5. **PRODUCT_WARRANTY_LIABILITY_SPIKE (Severity 2)**: Warranty reserves jumped 74% QoQ from $306M to $532M. Additions were $234M vs. utilization only $8M, suggesting new product quality issues or extended warranty commitments (possibly related to H100/H200 ramp or inference clusters).\n\n6. **DEFERRED_REVENUE_GROWTH_CONSTRAINT (Severity 2)**: $1.549B deferred revenue, only 38% expected to be recognized within 12 months. This suggests large customer prepayments with back-loaded delivery/performance obligations, creating execution and refund risk.\n\n7. **NON_MARKETABLE_INVESTMENTS_GROWTH (Severity 2)**: $1.463B in private equity investments (measurement alternative valuation), up $142M in Q1. No counterparties disclosed in this 10-Q, but per NVIDIA's historical Note 8, this typically includes AI labs (OpenAI, Anthropic, Mistral, xAI, Cohere, Perplexity, etc.) and infrastructure (CoreWeave). Without identification, there is CIRCULARITY risk: NVIDIA is heavily exposed to AI startup ecosystems that may also be customers or depend on NVIDIA products.\n\nEXCLUDED (BOILERPLATE):\n- Generic debt maturity schedule (Note 11).\n- Standard foreign currency hedging (Note 10).\n- Ordinary product warranty accounting policy.\n- Executive stock repurchase and dividend programs (not related-party).\n- Litigation disclosure (reputational, not SIFI-material to counterparty web).\n- Segment reporting (operational, not counterparty-driven).\n\nKEY GAPS IN THIS 10-Q:\n- No disclosure of Customer A/B identities (hyperscaler or enterprise?). The 10-K likely discloses these under Item 1A if >10%.\n- No breakout of non-marketable investment counterparties (Note 8 in 10-K will enumerate).\n- No details on prepaid supply/capacity agreements counterparties (TSMC? Samsung? Broadcom?). The $2.232B long-term + $3.3B short-term prepaid suggests heavy TSMC/Samsung concentration but not named.\n\nNEXT STEPS FOR FULL SIFI ANALYSIS:\n1. Cross-reference 10-K Note 8 (Non-marketable equity securities) to identify AI lab and infrastructure investees.\n2. Check MD&A or footnotes in 10-K for \"major customers\" disclosure\u2014likely identifies hyperscaler names behind \"Customer A/B.\"\n3. Trace prepaid supply agreements to contract manufacturer capex ROI (potential CAPEX_ROI_GAP if NVIDIA's product demand softens but foundry capacity is locked in).\n[chunk 3/4] Extraction from NVIDIA 10-Q (May 29, 2024): This section focuses on MD&A and risk disclosure. Key SIFI signals: (1) Customer concentration\u2014two direct customers (A, B) account for 24% of Q1 FY2025 revenue; additionally, two unnamed indirect customers each represent \u226510% of revenue, with one purchasing through Customer B, creating indirect concentration and potential counterparty opacity. (2) Execution risk\u2014$393M in Q1 FY2025 inventory provisions (3x prior year $134M) due to product transition complexity and supply chain integration of new vendors. (3) Capex/supply mismatch\u2014Blackwell GPU demand significantly exceeds projected supply through next fiscal year, indicating potential ROI gap between capex committed for manufacturing and contracted customer revenue visibility. (4) Geopolitical/export controls\u2014USG restrictions on A100/H100 exports to China, Middle East, and Russia have materially reduced China Data Center revenue. (5) Employee concentration\u2014~4,000 employees in Israel supporting R&D, operations, and sales of networking products; subset on active military duty. Export controls on products exceed threshold: Israel excluded from D5 restrictions, but employees subject to disruption risk. No direct investments in AI labs or SPVs mentioned in this extract. Customer A and B are masked anonymously per 10-Q practice; actual counterparty identity will require follow-up or 10-K/20-F filing data. Note: The filing does not disclose specific customer identities or off-balance-sheet arrangements beyond standard operating lease disclosures (referenced as Note 12 and Note 2 respectively).\n[chunk 4/4] SIFI-MATERIAL EXTRACTIONS FROM NVDA 10-Q (May 29, 2024):\n\nCUSTOMER CONCENTRATION:\n- Customer A: 13% of Q1 FY2025 revenue (Compute & Networking segment)\n- Customer B: 11% of Q1 FY2025 revenue (Compute & Networking segment)\n- Two indirect customers each \u226510% of revenue for Q1 FY2025 (one purchased primarily through Customer B)\n- Both direct and indirect concentration in Compute & Networking segment creates cluster risk\n\nSUPPLIER CONCENTRATION & GEOPOLITICAL RISK:\n- Taiwan: Critical single-source dependency for semiconductor wafers, assembly, testing, packaging\n- 48% of Q1 FY2025 revenue from international sales\n- China export controls (October 2023 onwards) have materially reduced Data Center revenue in China\n- No licenses granted for A100, H100 shipments to China; new product variants designed to avoid licensing requirements\n- Export control scope: A100, A800, H100, H800, L4, L40, L40S, RTX 4090 to China and Country Groups D1, D4, D5\n\nEXECUTION RISK (BLACKWELL):\n- Blackwell GPU in production; customer samples planned Q2 FY2025\n- Initial demand \"well ahead of projected supply\" for this fiscal year\n- Supply constraints expected to continue into next fiscal year\n- Potential for demand/supply mismatch amplified by rapid architecture transitions\n\nHIDDEN LEVERAGE & CAPEX ROI GAP:\n- Extended lead times (>12 months); non-linear supply within quarters\n- Prepaid deposits and supply commitments increasing as percent of total supply\n- Non-cancellable, non-returnable purchase terms placed well in advance of historical lead times\n- Supply commitments may not be reducible if revenue declines \u2192 potential stranded capex\n\nCOST OPACITY:\n- History of inventory write-downs, cancellation penalties, and impairments\n- Premiums paid for expedited supply; increased product costs\n- Demand forecasting volatility driven by: product transitions, competitive moves, geopolitical restrictions, emerging use cases (crypto mining, AI), gray market resales\n\nREVENUE ROUNDTRIP RISK:\n- China market materially disrupted by USG export controls\n- Transitioned testing, validation, supply, distribution operations out of China/Hong Kong\n- Developed China-specific product variants (no export license required) to maintain revenue\n- Indicates contingency planning but also signals potential for stranded revenue if further controls imposed\n\nNO MATERIAL M&A OR PRIVATE EQUITY INVESTMENTS DISCLOSED:\n- Item 2 mentions acquisition of company (key employees issued 10,764 shares valued ~$8.2M for equity incentive) but no material deal details in this excerpt\n- Full 10-Q Note 8 (referenced in instructions) not provided; cannot extract NVIDIA's private equity portfolio\n\nREGULATORY SCRUTINY:\n- French Competition Authority inquiry into GPU and cloud service provider market\n- EU, UK, China regulators requesting information on GPU sales, supply allocation, foundation model investments, partnerships\n- EU AI Act pending; likely to increase compliance costs and deployment delays\n- Chinese regulators inquiring about Mellanox acquisition commitments fulfillment"
+  }
+}

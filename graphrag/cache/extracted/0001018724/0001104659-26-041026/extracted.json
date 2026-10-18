@@ -1,0 +1,577 @@
+{
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "aliases": [
+            "Amazon.com, Inc."
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Project Prometheus",
+        "fields": {
+          "aliases": [
+            "Project Prometheus AI company"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Corning",
+        "fields": {
+          "aliases": [
+            "Corning Incorporated"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "DeepLearning.AI",
+        "fields": {
+          "aliases": [
+            "DeepLearning.AI LLC"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-Bezos-ProjectPrometheus-BoardConflict",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "CIRCULARITY",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Bezos co-founded and serves as co-CEO of AI company Project Prometheus since Feb 2025, while also serving as Executive Chair of Amazon, creating potential competitive/governance conflict"
+          },
+          "named_counterparties": [
+            "Project Prometheus",
+            "Jeffrey P. Bezos"
+          ],
+          "verbatim_quote": "Co-founded AI company Project Prometheus in February 2025 and has served as co-CEO since November 2025"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-NgDeepLearningAI-RelatedParty",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "OTHER",
+          "severity": 1,
+          "numeric_signal": {
+            "note": "Amazon director Andrew Ng receives payments from Amazon to his company DeepLearning.AI; board assessed as not impairing independence"
+          },
+          "named_counterparties": [
+            "DeepLearning.AI",
+            "Andrew Y. Ng"
+          ],
+          "verbatim_quote": "For Dr. Ng, the Board considered payments in the past year in the ordinary course of business from the Company to DeepLearning.AI LLC or its affiliates. All such payments were not significant for any of these companies."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-Weeks-Corning-RelatedParty",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "OTHER",
+          "severity": 1,
+          "numeric_signal": {
+            "note": "Amazon director Wendell Weeks is also CEO/Chairman of Corning, which supplies to Amazon; board assessed as not impairing independence"
+          },
+          "named_counterparties": [
+            "Corning",
+            "Wendell P. Weeks"
+          ],
+          "verbatim_quote": "For Mr. Weeks, the Board considered payments in the past three years in the ordinary course of business from the Company to Corning Incorporated or its affiliates. All such payments were not significant for any of these companies."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "aliases": [
+            "AMZN",
+            "Amazon.com"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "AMZN-DataCenter-$150B-15yr",
+        "fields": {
+          "filer": "Amazon",
+          "amount_usd": 150000000000,
+          "duration_yrs": 15,
+          "purpose": "Data center expansion for AI/cloud computing",
+          "verbatim_quote": "Amazon plans massive data center expansion in the coming years \u2013 reportedly planning to spend almost $150 billion in the coming 15 years \u2013 anticipating a boom in artificial intelligence."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-DataCenter-CapexROIGap",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 150000000000,
+            "duration_yrs": 15,
+            "note": "~$150B data center capex over 15 years; nuclear SMR power supply not available until early 2030s, creating near-term energy/execution gap"
+          },
+          "named_counterparties": [
+            "AWS"
+          ],
+          "verbatim_quote": "Amazon plans massive data center expansion in the coming years \u2013 reportedly planning to spend almost $150 billion in the coming 15 years \u2013 anticipating a boom in artificial intelligence. Cloud computing is Amazon's top source of profits, decisions related to data centers are vital to corporate strategy, and data center power poses particular risks."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-DataCenter-ExecutionRisk-Energy",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Small modular nuclear reactors announced but will not deliver power until early 2030s; utilities expanding fossil/gas to meet near-term data center demand"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Amazon has announced it will invest in small modular nuclear reactors \u2013 but these will not deliver power until the early 2030s, so they cannot help meet Amazon's growing power demands for the remainder of this decade."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Blue Origin",
+        "fields": {
+          "aliases": [
+            "Blue Origin LLC"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Project Prometheus",
+        "fields": {
+          "private": true,
+          "known_backers": [
+            "Jeff Bezos"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "X-energy",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Energy Northwest",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Entergy",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "AMZN-BlueOrigin-Satellite-$2.7B",
+        "fields": {
+          "filer": "AMZN",
+          "amount_usd": 2700000000,
+          "counterparty": "Blue Origin",
+          "purpose": "Satellite launch agreement",
+          "verbatim_quote": "In 2022, our Company entered into a $2.7 billion agreement to launch satellites with Blue Origin, which is owned by Mr. Bezos."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-Bezos-RelatedParty-BlueOrigin",
+        "fields": {
+          "filer": "AMZN",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "named_counterparties": [
+            "Blue Origin",
+            "Project Prometheus",
+            "Jeff Bezos"
+          ],
+          "verbatim_quote": "In 2022, our Company entered into a $2.7 billion agreement to launch satellites with Blue Origin, which is owned by Mr. Bezos. Our Company also has done business with The Washington Post, also owned by Mr. Bezos... Jeff Bezos has become the co-CEO of Project Prometheus, an Artificial Intelligence company that he helped found. As a technology company, Project Prometheus could be a potential competitor or a business partner with our Company, raising potential conflicts of interest.",
+          "numeric_signal": {
+            "amount_usd": 2700000000,
+            "note": "$2.7B satellite launch agreement with Blue Origin (Bezos-owned); Bezos now co-CEO of AI competitor/partner Project Prometheus"
+          }
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-CapexROIGap-AIDataCenter",
+        "fields": {
+          "filer": "AMZN",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "named_counterparties": [
+            "Energy Northwest",
+            "X-energy"
+          ],
+          "verbatim_quote": "AWS will have to make massive investments to remain an industry leader... Amazon has invested in more than 700 carbon-free energy projects across 28 countries, with the capacity to generate more than 40 gigawatts of electricity... enabling the construction of several new small modular reactors ('SMRs')... partnering with Energy Northwest and SMR developer X-energy to build up to 12 new SMRs",
+          "numeric_signal": {
+            "note": "700+ energy projects, 40GW capacity, up to 12 SMRs under construction; incremental capex for climate commitments not separately disclosed vs. lowest-cost alternatives"
+          }
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AMZN-ClimateCapex-Opacity",
+        "fields": {
+          "filer": "AMZN",
+          "category": "COST_OPACITY",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Determining the 'costs relative to the lowest-cost reliable power available in each market' would require complex and imprecise analysis of regional energy markets, grid reliability requirements, transmission costs, and long-term price projections... energy market costs reflect multiple cost components, including capacity charges, transmission fees, renewable energy certificates, and grid stability services, that make simple cost comparisons impractical."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "AMZN-Bezos-ProjectPrometheus-BoardConflict",
+        "target_type": "company",
+        "target_name": "Project Prometheus"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "AMZN-Bezos-ProjectPrometheus-BoardConflict",
+        "target_type": "company",
+        "target_name": "Amazon"
+      },
+      {
+        "predicate": "CIRCULAR_WITH",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "company",
+        "target_name": "Project Prometheus"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-Bezos-ProjectPrometheus-BoardConflict"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-NgDeepLearningAI-RelatedParty"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-Weeks-Corning-RelatedParty"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "AMZN-NgDeepLearningAI-RelatedParty",
+        "target_type": "company",
+        "target_name": "DeepLearning.AI"
+      },
+      {
+        "predicate": "BUYS_COMPUTE_FROM",
+        "source_type": "company",
+        "source_name": "DeepLearning.AI",
+        "target_type": "company",
+        "target_name": "Amazon"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "AMZN-Weeks-Corning-RelatedParty",
+        "target_type": "company",
+        "target_name": "Corning"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Corning",
+        "target_type": "company",
+        "target_name": "Amazon"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "capex_commitment",
+        "target_name": "AMZN-DataCenter-$150B-15yr"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-DataCenter-CapexROIGap"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-DataCenter-ExecutionRisk-Energy"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "capex_commitment",
+        "target_name": "AMZN-BlueOrigin-Satellite-$2.7B"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "capex_commitment",
+        "source_name": "AMZN-BlueOrigin-Satellite-$2.7B",
+        "target_type": "company",
+        "target_name": "Blue Origin"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-Bezos-RelatedParty-BlueOrigin"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "AMZN-Bezos-RelatedParty-BlueOrigin",
+        "target_type": "company",
+        "target_name": "Blue Origin"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "AMZN-Bezos-RelatedParty-BlueOrigin",
+        "target_type": "ailab",
+        "target_name": "Project Prometheus"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-CapexROIGap-AIDataCenter"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "AMZN-CapexROIGap-AIDataCenter",
+        "target_type": "company",
+        "target_name": "X-energy"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "AMZN-CapexROIGap-AIDataCenter",
+        "target_type": "company",
+        "target_name": "Energy Northwest"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Blue Origin",
+        "target_type": "company",
+        "target_name": "Amazon"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "X-energy",
+        "target_type": "company",
+        "target_name": "Amazon"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Energy Northwest",
+        "target_type": "company",
+        "target_name": "Amazon"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Entergy",
+        "target_type": "company",
+        "target_name": "Amazon"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "risk_factor",
+        "target_name": "AMZN-ClimateCapex-Opacity"
+      },
+      {
+        "predicate": "CIRCULAR_WITH",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "ailab",
+        "target_name": "Project Prometheus",
+        "properties": {
+          "note": "Bezos is Executive Chair of Amazon and co-CEO of Project Prometheus; potential conflict as competitor or business partner"
+        }
+      }
+    ],
+    "notes": "[chunk 1/3] This is a DEF 14A proxy filing. The text is primarily boilerplate director bios and governance disclosures. Three SIFI-material signals were identified:\n\n1. HIGHEST PRIORITY: Jeffrey Bezos (Amazon Executive Chair) co-founded and serves as co-CEO of \"Project Prometheus,\" an AI company, as of November 2025 \u2014 creating a direct governance/competitive conflict with Amazon's own AI investments and AWS. This is a circularity/governance risk that should be flagged for further investigation. The filing does not disclose what Project Prometheus does, who backs it, or whether Amazon has any commercial relationship with it.\n\n2. Director Andrew Ng has an Amazon commercial relationship with his company DeepLearning.AI (Amazon pays DeepLearning.AI). Disclosed as immaterial by the board but creates a related-party dynamic worth tracking.\n\n3. Director Wendell Weeks is CEO/Chairman of Corning, which Amazon pays in the ordinary course. Also disclosed as immaterial. Corning is a potential data center materials supplier (fiber, specialty glass).\n\nThe filing does not name any new AI lab investments, capex commitments, SPVs, or major customer/supplier concentration risks beyond these director independence items.\n[chunk 2/3] This is a DEF 14A (proxy statement) for Amazon FY2025. The filing is primarily governance/compensation boilerplate with no SIFI-material named counterparty relationships, investments in AI labs, SPVs, or revenue roundtripping disclosed directly. The only SIFI-material signal surfaced is in Item 5 (a shareholder proposal on data center climate impact), which cites a reported ~$150B / 15-year data center capex figure sourced from Bloomberg and flags a near-term energy execution gap (nuclear SMRs not operational until early 2030s). This figure is attributed to external reporting cited by a shareholder proponent, not directly confirmed by Amazon management in the filing \u2014 noted for verification. No AI lab investments, off-balance-sheet entities, customer/supplier concentration disclosures, or circular dependency relationships were identified in this section. Director compensation is standard RSU grants with no related-party angles. EY audit relationship (since 1996) and $59.3M total fees are noted but not SIFI-material.\n[chunk 3/3] Key SIFI-material findings from AMZN DEF 14A (2026-04-09):\n\n1. RELATED-PARTY / CONFLICT-OF-INTEREST: Jeff Bezos (Executive Chair of Amazon) is co-CEO of Project Prometheus, an AI startup he co-founded (named in shareholder proposal Item 7). This creates potential circularity \u2014 Amazon could become a compute customer or partner of a Bezos-controlled AI lab. Severity elevated to 3 given Bezos's dual role and Amazon's historical pattern of related-party deals.\n\n2. RELATED-PARTY TRANSACTION: $2.7B satellite launch agreement with Blue Origin (Bezos-owned), disclosed in the shareholder proposal. This is a named, quantified related-party capex commitment surfaced in a governance challenge, not routine boilerplate.\n\n3. CAPEX ROI GAP / COST OPACITY: Amazon does not separately disclose the incremental cost of its climate commitments vs. lowest-cost power alternatives. 700+ energy projects, 40GW capacity, 12 planned SMRs (partnered with X-energy and Energy Northwest), plus Entergy's $300M grid campaign \u2014 significant undisclosed incremental capex embedded in sustainability program.\n\n4. Project Prometheus classified as ailab (private:true) per rules, as it is described as an AI startup where Bezos is co-CEO. Known backers: Jeff Bezos.\n\n5. AWS generates >50% of Amazon operating income (stated in shareholder proposal) \u2014 material for concentration analysis but not separately extracted as no new counter-party named."
+  },
+  "beneficial_owners": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] AMZN DEF 14A filing (2026-04-09), beneficial ownership section. This section contains standard shareholder composition data (Bezos 8.8%, Vanguard 7.2%, BlackRock 5.9%, executive officers and directors with de minimis holdings). No SIFI-material business relationships, investments, acquisitions, counterparty dependencies, or related-party arrangements are disclosed in this section. The beneficial ownership roster lists only passive institutional investors and company insiders. No AI lab investments, strategic partnerships, customer/supplier concentration risks, off-balance-sheet entities, or hidden leverage patterns are present. This is pure boilerplate corporate governance disclosure. No extraction warranted.\""
+  },
+  "related_party": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Blue Origin",
+        "fields": {
+          "aliases": [
+            "Blue Origin LLC"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "AMZN-BlueOrigin-SatelliteLaunch-$2.7B",
+        "fields": {
+          "filer": "Amazon",
+          "amount_usd": 2700000000,
+          "duration_yrs": 6,
+          "start_fy": 2022,
+          "counterparty": "Blue Origin",
+          "purpose": "Satellite launch and related services (Kuiper program)",
+          "verbatim_quote": "in 2022, Amazon announced agreements with Blue Origin and a third party pursuant to which it expected to pay approximately $7.4 billion for satellite launch and related services through 2028, of which approximately $2.7 billion was expected to be paid to Blue Origin."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-BlueOrigin-RelatedPartyConcentration",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 2700000000,
+            "note": "~$2.7B of a $7.4B launch services contract awarded to Blue Origin, owned by Amazon Executive Chair Jeff Bezos; $1.8B estimated paid to Blue Origin in 2025 alone"
+          },
+          "named_counterparties": [
+            "Blue Origin"
+          ],
+          "verbatim_quote": "Amazon paid approximately $2.2 billion under the agreements, of which approximately $1.8 billion is estimated to have been paid to Blue Origin. The actual amounts paid to Blue Origin and the third party may be higher or lower based on various factors."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AMZN-BlueOrigin-RelatedPartyLaunchRisk",
+        "fields": {
+          "filer": "Amazon",
+          "category": "Related-Party Conflict of Interest / Supplier Concentration",
+          "named_counterparties": [
+            "Blue Origin"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Jeff Bezos, our founder and Executive Chair, owns Blue Origin...Amazon announced agreements with Blue Origin and a third party pursuant to which it expected to pay approximately $7.4 billion for satellite launch and related services through 2028, of which approximately $2.7 billion was expected to be paid to Blue Origin."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "capex_commitment",
+        "target_name": "AMZN-BlueOrigin-SatelliteLaunch-$2.7B"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "capex_commitment",
+        "source_name": "AMZN-BlueOrigin-SatelliteLaunch-$2.7B",
+        "target_type": "company",
+        "target_name": "Blue Origin"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Blue Origin",
+        "target_type": "company",
+        "target_name": "Amazon"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-BlueOrigin-RelatedPartyConcentration"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "AMZN-BlueOrigin-RelatedPartyConcentration",
+        "target_type": "company",
+        "target_name": "Blue Origin"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "risk_factor",
+        "target_name": "AMZN-BlueOrigin-RelatedPartyLaunchRisk"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "AMZN-BlueOrigin-RelatedPartyLaunchRisk",
+        "target_type": "company",
+        "target_name": "Blue Origin"
+      }
+    ],
+    "notes": "[chunk 1/1] This DEF 14A related-party section is relatively sparse on SIFI-material structures. The dominant signal is the $7.4B satellite launch services contract (2022\u20132028), of which ~$2.7B is directed to Blue Origin \u2014 a company owned by Amazon's Executive Chair Jeff Bezos. In 2025 alone, ~$1.8B was estimated paid to Blue Origin. This is a material related-party supplier concentration with a single-source dependency risk for Amazon's Project Kuiper satellite program. No SPVs, VIEs, AI lab investments, or off-balance-sheet structures are disclosed in this section. Employee family compensation disclosures (Olsavsky family members) are below SIFI materiality threshold. Washington Post transactions ($840K advertising, $1.9M digital content, $800K data licensing) are immaterial. No AI lab investments, hyperscaler compute agreements, or circular dependency structures are present in this filing section."
+  }
+}

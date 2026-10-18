@@ -1,0 +1,977 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "aliases": [],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Seagate",
+        "fields": {
+          "aliases": [],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "role": "acquired"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Seagate",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "KKR",
+        "fields": {
+          "role": "acquirer"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "VMware-Merger-86B",
+        "fields": {
+          "filer": "Broadcom",
+          "amount_usd": 86290000000,
+          "counterparty": "VMware",
+          "purpose": "Acquisition of VMware Inc.",
+          "verbatim_quote": "On November 22, 2023, we completed the VMware Merger. Pursuant to the Agreement and Plan of Merger, each share of VMware common stock issued and outstanding immediately prior to the VMware Merger was indirectly converted into the right to receive, at the election of the holder of such share of VMware common stock, either $142.50 in cash or 2.52 shares of Broadcom common stock"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Remaining-Performance-Obligations-21.2B",
+        "fields": {
+          "filer": "Broadcom",
+          "amount_usd": 21200000000,
+          "purpose": "Remaining performance obligations under contracts as of August 4, 2024",
+          "verbatim_quote": "the remaining performance obligations under these contracts as of August 4, 2024 were approximately $21.2 billion. We expect approximately 44% of this amount to be recognized as revenue over the next 12 months."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "VMware-Integration-Goodwill-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "named_counterparties": [
+            "VMware"
+          ],
+          "numeric_signal": {
+            "amount_usd": 54206000000,
+            "note": "Goodwill from VMware acquisition"
+          },
+          "verbatim_quote": "Goodwill is primarily attributable to the assembled workforce and anticipated synergies and economies of scale expected from the integration of the VMware business. Goodwill is not deductible for tax purposes."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "VMware-Intangible-Impairment-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "named_counterparties": [
+            "VMware"
+          ],
+          "numeric_signal": {
+            "amount_usd": 45572000000,
+            "note": "Intangible assets acquired from VMware with finite and indefinite useful lives"
+          },
+          "verbatim_quote": "As additional information becomes available, we may further revise our preliminary purchase price allocation during the remainder of the measurement period, which will not exceed 12 months from the date of the VMware Merger. Any such revisions or changes may be material."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "VMware-Backlog-Litigation",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "named_counterparties": [
+            "VMware"
+          ],
+          "verbatim_quote": "On March 31, 2020, a securities class action lawsuit was filed against VMware and certain former officers of VMware in the United States District Court for the Northern District of California...alleging that VMware's statements about backlog and the related internal controls during the period from August 2018 through February 2020 were materially misleading. The parties have agreed to settlement terms pending approval by the California Court."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "EUC-Business-Disposal-Contract-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "named_counterparties": [
+            "KKR"
+          ],
+          "numeric_signal": {
+            "amount_usd": 3500000000,
+            "note": "Sale of EUC business to KKR on July 1, 2024"
+          },
+          "verbatim_quote": "On July 1, 2024, we sold the EUC business to KKR & Co. Inc. for cash consideration of $3.5 billion, after working capital adjustments. In connection with the sale, we agreed to provide transitional services to the buyer on a short-term basis."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "VMware-Debt-Assumption-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "named_counterparties": [
+            "VMware"
+          ],
+          "numeric_signal": {
+            "amount_usd": 8250000000,
+            "note": "Assumed VMware senior unsecured notes"
+          },
+          "verbatim_quote": "We assumed $8,250 million of VMware's outstanding senior unsecured notes."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "VMware-Financing-Integration-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [
+            "VMware"
+          ],
+          "numeric_signal": {
+            "amount_usd": 30200000000,
+            "note": "Total debt issuance (2023 Term Loans: $19.195B + July 2024 Senior Notes: $5B) to fund VMware acquisition"
+          },
+          "verbatim_quote": "We funded the cash portion of the VMware Merger with the net proceeds from the issuance of the 2023 Term Loans, as defined and discussed in Note 7. 'Borrowings', as well as cash on hand."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Restructuring-Execution-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "named_counterparties": [
+            "VMware"
+          ],
+          "numeric_signal": {
+            "amount_usd": 1418000000,
+            "note": "Restructuring charges for three fiscal quarters 2024"
+          },
+          "verbatim_quote": "In connection with the VMware Merger, we initiated restructuring activities to integrate the acquired business, align our workforce and improve efficiencies in our operations. We recognized $1,418 million of restructuring charges primarily related to employee termination costs during...three fiscal quarters ended August 4, 2024. We expect these restructuring activities to be substantially completed by the end of fiscal year 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Tax-IP-Transfer-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 4522000000,
+            "note": "Discrete tax provision from IP rights transfer"
+          },
+          "verbatim_quote": "We recognized a discrete tax provision of $4,522 million during the fiscal quarter ended August 4, 2024 from the establishment of a deferred tax liability as a result of the book and tax basis difference on these transferred IP rights...as a result of supply chain realignment and the resulting shift in the jurisdictional mix of income."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Customer-Concentration-Revenue-Contingency",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 21200000000,
+            "pct_of_revenue": 0.565,
+            "note": "Remaining performance obligations of $21.2B represent 56.5% of three-quarter revenue of $37.52B"
+          },
+          "verbatim_quote": "the remaining performance obligations under these contracts as of August 4, 2024 were approximately $21.2 billion. We expect approximately 44% of this amount to be recognized as revenue over the next 12 months. For contracts with termination for convenience rights, our customers generally do not exercise those rights. In addition, the majority of our contracts have a duration of one year or less."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "KKR & Co. Inc.",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Seagate Technology Holdings plc",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "VMware-Merger-Capex",
+        "fields": {
+          "filer": "Broadcom",
+          "amount_usd": 84186000000,
+          "duration_yrs": 1,
+          "counterparty": "VMware",
+          "purpose": "Acquisition of VMware",
+          "verbatim_quote": "The VMware stockholders received approximately $30,788 million in cash and 544 million shares of Broadcom common stock with a fair value of $53,398 million."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Seagate-SoC-Acquisition",
+        "fields": {
+          "filer": "Broadcom",
+          "amount_usd": 600000000,
+          "duration_yrs": 1,
+          "counterparty": "Seagate Technology Holdings plc",
+          "purpose": "Acquisition of SoC operations",
+          "verbatim_quote": "On April 23, 2024, we acquired certain assets related to the design, development, and manufacture of System-on-Chip (\"SoC\") operations of Seagate Technology Holdings plc for $600 million."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "EUC-Business-Sale",
+        "fields": {
+          "filer": "Broadcom",
+          "amount_usd": 3500000000,
+          "counterparty": "KKR & Co. Inc.",
+          "purpose": "Sale of end-user computing business",
+          "verbatim_quote": "We sold the end-user computing (\"EUC\") business to KKR & Co. Inc. for $3.5 billion."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Customer-Concentration-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_revenue": 40,
+            "counterparty_count": 5
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We believe aggregate sales to our top five end customers, through all channels, accounted for approximately 35% and 40% of our net revenue for the fiscal quarter and three fiscal quarters ended August 4, 2024, respectively, and approximately 35% for each of the fiscal quarter and three fiscal quarters ended July 30, 2023. We expect to continue to experience significant customer concentration in future periods."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Distributor-Concentration-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 26,
+            "note": "One distributor customer"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Direct sales to one customer, which is a distributor, accounted for 26% and 27% of our net revenue for the fiscal quarter and three fiscal quarters ended August 4, 2024, respectively, and 21% and 20% of our net revenue for the fiscal quarter and three fiscal quarters ended July 30, 2023, respectively."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "VMware-Integration-Capex-ROI-Gap",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 84186000000,
+            "duration_yrs": 3
+          },
+          "named_counterparties": [
+            "VMware"
+          ],
+          "verbatim_quote": "If VMware customers do not accept our business strategy, the investments we have made or may make to implement our strategy may be of no or limited value, we may lose significant customers, our financial results may be adversely affected and our stock price may suffer. Although we expect significant benefits to result from the VMware Merger, there can be no assurance that we will actually realize these benefits."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Acquisition-Integration-Execution-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [
+            "VMware"
+          ],
+          "verbatim_quote": "If we do not successfully manage these issues and the other challenges inherent in integrating an acquired business, then we may not achieve the anticipated benefits of the VMware Merger within our anticipated timeframe or at all and our revenue, expenses, operating results, financial condition and stock price could be materially adversely affected."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Cost-Opacity-Acquisition-Integration",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "Cost Opacity",
+          "named_counterparties": [
+            "VMware"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Incurring significant restructuring charges and amortization expense, assuming liabilities (some of which may be unexpected) and ongoing or new lawsuits, potential impairment of acquired goodwill and other intangible assets, and increasing our expenses and working capital requirements"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Channel-Partner-Dependency-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "pct_of_revenue": 48
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Sales to distributors accounted for 48% of our net revenue in the three fiscal quarters ended August 4, 2024 and are subject to a number of risks, including: fluctuations in demand based on our distributors' product inventory levels and end customer demand"
+        }
+      },
+      {
+        "type": "company",
+        "name": "AVGO",
+        "fields": {
+          "ticker": "AVGO",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "TSMC",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Dell",
+        "fields": {
+          "role": "related_party"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Singapore Economic Development Board",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "VMware-Dell Tax Indemnity",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "Tax & Contingent Liability",
+          "named_counterparties": [
+            "Dell",
+            "VMware"
+          ],
+          "severity": 3,
+          "verbatim_quote": "If the VMware spin-off from Dell in November 2021 is determined to not be tax-free for any reason, we could be liable for all or a portion of the tax liability, which could have a material adverse effect on our financial condition and operating results. Further, if the VMware Merger results in the spin-off failing to qualify as a tax-free transaction under Section 355 of the Internal Revenue Code, Dell, its affiliates and, potentially, its stockholders would incur significant tax liabilities and we may be required to indemnify Dell and its affiliates for any such tax liabilities, which could be material."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "VMware-Spin Tax Contingency",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Indemnity amount undisclosed; contingent on Section 355 qualification"
+          },
+          "named_counterparties": [
+            "Dell"
+          ],
+          "verbatim_quote": "we may be required to indemnify Dell and its affiliates for any such tax liabilities, which could be material."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "VMware Dell Group Tax Audits",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "Tax & Audit Risk",
+          "named_counterparties": [
+            "Dell",
+            "VMware"
+          ],
+          "severity": 2,
+          "verbatim_quote": "As a result of the VMware Merger, we are subject to tax audits in various jurisdictions for the Dell consolidated group, of which VMware was a member beginning in Dell's fiscal year 2017 until November 2021... pursuant to a tax agreement between VMware and Dell, in the event VMware becomes subject to audits as a member of Dell's consolidated group, Dell has authority to control the audit and represent Dell and our interests, which could limit our ability to affect the outcome of such audits."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "VMware Merger Debt",
+        "fields": {
+          "filer": "Broadcom",
+          "amount_usd": 30390000000,
+          "counterparty": "VMware",
+          "purpose": "VMware Merger financing (2023 Term Loans)",
+          "verbatim_quote": "During the three fiscal quarters ended August 4, 2024, we borrowed $30,390 million in 2023 Term Loans to finance the VMware Merger, and we assumed $8,250 million of VMware's outstanding senior unsecured notes."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "VMware Assumed Debt",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 8250000000,
+            "note": "Assumed VMware senior unsecured notes in merger"
+          },
+          "named_counterparties": [
+            "VMware"
+          ],
+          "verbatim_quote": "we assumed $8,250 million of VMware's outstanding senior unsecured notes"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Floating-Rate Debt Exposure",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 30390000000,
+            "note": "2023 Term Loans at floating rates"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "exposing us to interest rate risk as our 2023 Term Loans bear floating interest rates"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Tax Incentives Expiration",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "Tax Incentive Risk",
+          "named_counterparties": [
+            "Singapore Economic Development Board"
+          ],
+          "severity": 2,
+          "verbatim_quote": "Our operations are currently structured to benefit from the various tax incentives extended to us in various jurisdictions to encourage investment or employment. For example, absent our principal tax incentives from the Singapore Economic Development Board, which is scheduled to expire in 2030, the corporate income tax rate that would apply to our Singapore taxable income would be 17%. We also have a tax holiday on our qualifying income in Malaysia, which is scheduled to expire in fiscal year 2028."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Singapore Tax Incentive Cliff (2030)",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 2104000000,
+            "duration_yrs": 6,
+            "note": "Tax incentives decreased provision by ~$2.1B in FY2023; Singapore EDB incentive expires 2030"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Our tax incentives and tax holiday, before taking into consideration U.S. foreign tax credits, decreased the provision for income taxes by approximately $2,104 million in the aggregate and increased diluted net income per share by $0.49 for fiscal year 2023."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GILTI Regime Deduction Phase-Out",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "Tax Legislation Risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Beginning in fiscal year 2027, the deduction allowable under the GILTI regime will decrease from 50% to 37.5%, which will increase the effective tax rate imposed on our income."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "R&D Expense Capitalization & Amortization",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "Tax & Cash Flow Risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "The 2017 Tax Reform Act also limits our ability to deduct research and development expenses beginning in fiscal year 2023. These expenses are now capitalized and amortized over 5 years (15 years for foreign expenses), which have and may continue to materially increase our cash tax costs."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Leverage & Debt Covenant Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 72319000000,
+            "note": "Total aggregate indebtedness as of Aug 4, 2024"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The instruments governing our indebtedness contain certain covenants imposing restrictions on our business. These restrictions may affect our ability to operate our business... include maintenance of an interest coverage ratio and limitations on our ability to incur certain secured debt, enter into certain sale and lease-back transactions and consolidate, merge, sell or otherwise dispose of all or substantially all of our assets."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Large Shareholder Concentration",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "Equity Concentration",
+          "named_counterparties": [],
+          "severity": 1,
+          "verbatim_quote": "As of June 30, 2024, we believe 10 of our 20 largest holders of common stock were active institutional investors who held 18% of our outstanding shares of common stock in the aggregate."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "VMware",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition",
+          "date": "2023-11-22",
+          "cash_consideration_usd": 30788000000.0,
+          "stock_consideration_shares": 544000000.0,
+          "stock_consideration_usd": 53398000000.0,
+          "total_consideration_usd": 84186000000.0,
+          "rationale": "enhance infrastructure software capabilities"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "VMware",
+        "predicate": "INVESTED_IN",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "capex_commitment",
+        "target_name": "VMware-Merger-86B",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "capex_commitment",
+        "target_name": "Remaining-Performance-Obligations-21.2B",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "VMware-Integration-Goodwill-Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "VMware-Intangible-Impairment-Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "VMware-Backlog-Litigation",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "EUC-Business-Disposal-Contract-Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "VMware-Debt-Assumption-Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "VMware-Financing-Integration-Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Restructuring-Execution-Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Tax-IP-Transfer-Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Customer-Concentration-Revenue-Contingency",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "KKR",
+        "target_type": "company",
+        "target_name": "Broadcom",
+        "predicate": "ROUND_TRIPS_WITH",
+        "properties": {
+          "transaction": "EUC business acquisition for $3.5B"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "Seagate",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "deal_type": "SoC operations acquisition",
+          "amount": "$600M"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "VMware",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition",
+          "deal_value": 84186000000,
+          "date": "2023-11-22"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "KKR & Co. Inc.",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "transaction_type": "divestiture",
+          "asset": "EUC business",
+          "deal_value": 3500000000
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "Seagate Technology Holdings plc",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition",
+          "deal_value": 600000000,
+          "date": "2024-04-23"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "capex_commitment",
+        "target_name": "VMware-Merger-Capex",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "capex_commitment",
+        "target_name": "Seagate-SoC-Acquisition",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "capex_commitment",
+        "target_name": "EUC-Business-Sale",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Customer-Concentration-Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Distributor-Concentration-Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "VMware-Integration-Capex-ROI-Gap",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Acquisition-Integration-Execution-Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Channel-Partner-Dependency-Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "company",
+        "target_name": "TSMC",
+        "predicate": "BUYS_COMPUTE_FROM",
+        "properties": {
+          "dependency_pct": "~95% of wafer manufacturing",
+          "period": "three fiscal quarters ended August 4, 2024"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "company",
+        "target_name": "TSMC",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {
+          "risk_type": "SUPPLIER_CONCENTRATION"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "VMware",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction": "Merger acquisition",
+          "date": "2024"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "capex_commitment",
+        "target_name": "VMware Merger Debt",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "VMware-Spin Tax Contingency",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "VMware Assumed Debt",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Floating-Rate Debt Exposure",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Singapore Tax Incentive Cliff (2030)",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Leverage & Debt Covenant Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "VMware-Dell Tax Indemnity",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "VMware Dell Group Tax Audits",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "Tax Incentives Expiration",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "GILTI Regime Deduction Phase-Out",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "R&D Expense Capitalization & Amortization",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "Large Shareholder Concentration",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "VMware",
+        "target_type": "company",
+        "target_name": "Dell",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "context": "Former parent; spin-off Nov 2021; ongoing tax liability contingency"
+        }
+      },
+      {
+        "source_type": "risk_factor",
+        "source_name": "VMware-Dell Tax Indemnity",
+        "target_type": "company",
+        "target_name": "Dell",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {}
+      }
+    ],
+    "notes": "[chunk 1/5] FILING CONTEXT: AVGO 10-Q (Q3 2024, period ended Aug 4 2024). SOURCE TEXT IS EXTRACTED DATA AND OPENING SECTIONS ONLY\u2014no detailed Item 1A Risk Factors or Item 20-F narrative yet provided. EXTRACTION NOTES: (1) **VMware acquisition** is the dominant SIFI-material event in this Q3 filing. Broadcom acquired VMware on 2023-11-22 for ~$84.2B (cash + stock), materially expanding its infrastructure software footprint. The merger is extensively referenced in the filing's MD&A and financial statements. (2) **Seagate SoC acquisition** is mentioned in the metadata (tag avgo:SeagatesSoCBusinessAcquisitionMember dated 2024-04-23), indicating a second major acquisition in FY2024. Full details require reviewing the acquisition note in the full 10-Q text. (3) **Revenue and customer concentration**: The filing shows VMware integration driving a 187% YoY increase in subscriptions/services revenue (Q3: $5.6B vs. $2.0B prior year). Regional revenue shows Asia-Pacific dominance (54% of Q3 revenue = $7B), which is SIFI-material for supply-chain and customer concentration analysis. (4) **Contract liabilities**: As of Aug 4, 2024, Broadcom reports $15.5B in contract liabilities (vs. $2.8B prior year), with ~50% subject to termination for convenience\u2014a key risk signal for revenue stability post-VMware. (5) **Goodwill and intangibles**: Goodwill increased from $43.7B to $97.9B (+124%); intangible assets from $3.9B to $43.0B (+1,009%). This represents massive acquisition-related intangible loading and depreciation risk. (6) **Debt**: Total long-term debt increased from $37.6B to $66.8B (+78%), reflecting the financing of VMware acquisition and Seagate SoC deal. (7) **Stock dilution**: Common shares increased from 4.139B to 4.671B shares (13% dilution from VMware stock issuance). NEXT STEPS: Full narrative extraction would require Item 1A Risk Factors, MD&A detail on customer contracts, and the full Note 3 on acquisitions. This stub demonstrates the major structural shifts and should be expanded once full 10-Q text is available.\n[chunk 2/5] AVGO 10-Q filing (2024-09-11) extraction focusing on SIFI-material relationships and risk signals. Key findings: (1) VMware acquisition ($86.3B total consideration) represents major balance-sheet integration risk with $54.2B goodwill, $45.6B intangible assets, and unresolved measurement-period adjustments. (2) Assumed $8.25B VMware debt alongside $30.2B new financing creates refinancing and integration execution risk through FY2025. (3) Restructuring ($1.4B YTD) ongoing through end-FY2025 signals protracted integration complexity. (4) $4.5B discrete tax charge from IP transfer to US reflects supply-chain realignment and jurisdiction volatility. (5) $21.2B remaining performance obligations (56.5% of Q3 2024 annualized revenue) with majority contracts \u22641 year maturity and termination-for-convenience rights creates revenue visibility risk. (6) EUC business sale to KKR ($3.5B) and continued transitional service obligations represent execution and operational continuity risk. (7) Inherited VMware backlog litigation (securities class action) settled pending court approval, indicating historical disclosure control weaknesses now absorbed by AVGO. No material off-balance-sheet SPVs, project finance, or circular dependencies identified in this section.\n[chunk 3/5] AVGO 10-Q filing 2024-09-11. Key extractions: (1) VMware merger integration as material capex-ROI gap and execution risk; (2) Customer concentration via top-5 customers (40% of revenue) and one distributor (26-27%); (3) Channel partner dependency (48% of revenue via distributors); (4) Seagate SoC acquisition ($600M) and EUC business divestiture to KKR ($3.5B) noted. Post-VMware, gross margin compression from 69% to 63-64% driven by intangible amortization and product-mix headwinds. No hidden leverage (SPVs/JVs), no circularity, no revenue roundtripping detected in this section. Execution risk elevated due to VMware integration challenges, customer acceptance uncertainty, and integration complexity noted in Risk Factors section.\n[chunk 4/5] FILING ASSESSMENT: AVGO 10-Q filed 2024-09-11. Core SIFI-material findings: (1) **SUPPLIER_CONCENTRATION**: TSMC single-source dependency (95% of wafers) with no long-term capacity commitments. (2) **CUSTOMER_CONCENTRATION**: Top 5 end customers = ~40% revenue; distributors = 48% of net revenue. (3) **EXECUTION_RISK**: Heavy reliance on contract manufacturers (primarily TSMC) with exposure to Taiwan geopolitical/natural disaster risk (April 2024 earthquake mentioned). (4) **COST_OPACITY**: Fixed manufacturing costs at own facilities (Fort Collins, Breinigsville, Singapore) may not be fully absorbed if utilization drops. (5) **HIDDEN_LEVERAGE**: No explicit SPVs or off-balance-sheet structures identified in this excerpt. (6) **CIRCULARITY**: No circular investor-customer-supplier loops identified. No AI lab investments disclosed in this section. No capex commitments to AI counterparties. The filing is risk-focused boilerplate in this section; customer names and specific investment details are absent. Extracted only the material TSMC single-source supplier dependency and customer concentration metrics that appear quantified in the text.\""
+  }
+}

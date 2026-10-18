@@ -1,0 +1,406 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "ADBE Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "Adobe Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Figma",
+        "fields": {
+          "aliases": [],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Adobe_AI_Regulatory_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Regulatory compliance and liability related to AI development and deployment",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Jurisdictions around the world are developing and passing new regulations that apply specifically to the use of AI. For example, the EU AI Act was adopted in 2024 and will be implemented in phases through 2030, and other jurisdictions are considering similarly focused legislation. These regulations and the evolving AI regulatory environment may, among other impacts, result in inconsistencies among AI regulations and frameworks across jurisdictions, increase our compliance, governance and research and development costs, increase our exposure to claims related to our AI models and increase liability related to the use of AI by our customers or users that are beyond our control."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Adobe_Third_Party_AI_Dependencies",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Third-party AI model and data dependency risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "To the extent we rely on third-party AI models in our products, services and solutions, we will face risks inherent in how those models have been developed and deployed, including situations in which the third party may lack a proper license or consent for the training data used for their model."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Adobe_CAPEX_ROI_Gap_AI",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Significant AI investment without clear monetization certainty"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "These costs could adversely impact our margins as we continue to make significant investments in AI development, add AI capabilities to our offerings and scale our AI offerings without assurance that our customers and users will adopt them. Further, as with any new offerings based on new technologies, consumer reception and monetization pathways are uncertain, our strategies may not be successful and our business and financial results could be adversely impacted."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Adobe_Execution_Risk_Cloud_Reliability",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Critical single points of failure in data center architecture"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We do not have redundancy for all our systems, many of our critical applications (\"Apps\") reside in only one of our data centers, and our disaster recovery planning may not account for all eventualities."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Adobe_Third_Party_Service_Provider_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Third-party service provider concentration and dependency",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "If any critical third-party service provider of hosting or content delivery services is negatively affected or becomes unavailable to us for any reason, we may not be able to deliver the corresponding products, services or solutions to our customers and users."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Adobe_Data_Center_Migration_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Operational risk from data center migration and third-party transitions",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Occasionally, we migrate data among data centers and to third-party hosted environments. If a transition among data centers or to third-party service providers encounters unexpected interruptions, unforeseen complexity or unplanned disruptions despite precautions undertaken during the process, this may impair our delivery of products, services and solutions to customers and result in increased costs and liabilities, which may harm our operating results, reputation and our business."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Adobe_Figma_Acquisition_Integration",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Acquisition termination and regulatory barriers"
+          },
+          "named_counterparties": [
+            "Figma"
+          ],
+          "verbatim_quote": "For example, we have experienced difficulties in obtaining regulatory approvals, resulting in the termination of a previously announced acquisition and the incurrence of additional costs."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Adobe_Acquisition_Integration_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Acquisition and integration execution risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Investments and acquisitions involve numerous risks and uncertainties, the occurrence of which may have an adverse effect on our business. These risks and uncertainties include: inability to achieve the financial and strategic goals of the investment or acquisition; difficulty in effectively integrating the operations, technologies, products, services, solutions, culture or personnel of the acquired business; disruption of our ongoing business and distraction of our management and other personnel."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Adobe_Supplier_Commitments",
+        "fields": {
+          "filer": "Adobe",
+          "amount_usd": 1300000000,
+          "duration_yrs": 5,
+          "start_fy": 2025,
+          "counterparty": null,
+          "purpose": "Long-term supplier commitments for goods and services",
+          "verbatim_quote": "Subsequent to February 28, 2025, we executed agreements associated with certain of our long-term supplier commitments that increased our minimum purchase obligations by approximately $1.3 billion through December 2029."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Adobe_Global_Economic_Risks",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Multinational operations and global economic exposure",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We derive a large portion of our total revenue from, and have significant operations, outside of the United States. As a multinational corporation, we are subject to a number of risks, including from global adverse economic conditions, that are uncertain and beyond our control and that make forecasting operating results and decisions about future investments difficult."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Adobe_Cybersecurity_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Cybersecurity incidents and data breach risk",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Our products, services and solutions collect, store, manage and otherwise process third-party data, including our customers' data and our own data. Such products, services and solutions as well as our technologies, systems and networks have been subject to, and may in the future be subject to, cyberattacks, computer viruses, ransomware or other malware, fraud, worms, social engineering, denial-of-service attacks, malicious software programs, insider threats and other cybersecurity incidents that have in the past, and may in the future, result in the unauthorized access, disclosure, acquisition, use, loss or destruction of sensitive personal or business data belonging to us, our employees and our customers."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Adobe_Geopolitical_Risk_Exposure",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "International operations exposure to sanctions, tariffs, and geopolitical conflict"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "costs, potential liability, delays or loss of sales resulting from trade restrictions imposed by the United States and other countries, as well as trade laws, including but not limited to economic sanctions and export controls; costs and delays associated with developing products in multiple languages; and operating in locations with a higher rate of corruption and fraudulent business practices."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "Adobe Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE_data_transfer_restrictions",
+        "fields": {
+          "filer": "Adobe",
+          "category": "regulatory_compliance_data_protection",
+          "named_counterparties": [
+            "EU",
+            "China",
+            "Brazil",
+            "Australia",
+            "New Zealand",
+            "Hong Kong",
+            "Japan",
+            "Kingdom of Saudi Arabia"
+          ],
+          "severity": 3,
+          "verbatim_quote": "If other countries implement more restrictive regulations for cross-border data transfers or do not permit data to leave the country of origin, such developments could adversely impact our business and our enterprise customers' business, our financial condition and our results of operations in those jurisdictions."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE_generative_ai_ip_protection",
+        "fields": {
+          "filer": "Adobe",
+          "category": "intellectual_property_protection",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Moreover, due to challenges in detecting patent infringement pertaining to generative AI technologies, it may be more difficult to protect our generative AI and related innovations with patents. Additionally, if we use generative AI in the creation of our source code, we may not be able to rely on copyright to protect such intellectual property."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE_subscription_revenue_lag",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Most quarterly subscription revenue from prior-period agreements; renewal rates not immediately reflected in current period results"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As a result, most of the subscription revenue we report each quarter is the result of subscription agreements entered into during previous quarters. Lower sales and subscriptions, reduced demand for our products, services and solutions, and increases in our attrition rate in any given period may not be fully reflected in our results of operations until future periods."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE_debt_covenant_restrictions",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 6150000000.0,
+            "note": "Senior unsecured notes outstanding as of Feb 28, 2025"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Our senior unsecured notes, commercial paper program and revolving credit agreement impose restrictions on us and require us to maintain compliance with specified covenants. Our ability to comply with these covenants may be affected by events beyond our control. If we breach any of the covenants and do not obtain a waiver from the noteholders or lenders, then, subject to applicable cure periods, any outstanding debt may be declared immediately due and payable."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE_geographic_concentration_operations",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Critical operations concentrated in seismic and climate-vulnerable zones"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Our corporate headquarters, significant research and development activity, certain of our data centers and other critical business operations are in the San Francisco Bay Area and the Salt Lake Valley Area, both of which are near major earthquake faults. Climate-related catastrophic events that may harm our business are also increasing in frequency and severity."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "company",
+        "target_name": "Figma",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Adobe_AI_Regulatory_Risk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Adobe_Third_Party_AI_Dependencies"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Adobe_CAPEX_ROI_Gap_AI"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Adobe_Execution_Risk_Cloud_Reliability"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Adobe_Third_Party_Service_Provider_Risk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Adobe_Data_Center_Migration_Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Adobe_Figma_Acquisition_Integration"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Adobe_Acquisition_Integration_Risk"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "capex_commitment",
+        "target_name": "Adobe_Supplier_Commitments"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Adobe_Global_Economic_Risks"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Adobe_Cybersecurity_Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Adobe_Geopolitical_Risk_Exposure"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "ADBE_data_transfer_restrictions",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "ADBE_generative_ai_ip_protection",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE_subscription_revenue_lag",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE_debt_covenant_restrictions",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE_geographic_concentration_operations",
+        "predicate": "HAS_RISK_SIGNAL"
+      }
+    ],
+    "notes": "[chunk 1/4] This 10-Q filing contains only standard financial statements and notes. No SIFI-material entities, investments, or related-party arrangements are disclosed in the provided text. The document covers: (1) Balance sheet, income statement, cash flow statement for Q1 FY2025 (ended Feb 28, 2025); (2) Standard notes covering revenue recognition, investments in marketable securities, fair value measurements of derivatives, goodwill and intangibles from prior acquisitions (not new ones named in this filing), and employee equity awards. No new capex commitments, off-balance-sheet entities, counterparty concentrations, or circular dependencies are mentioned. The revenue breakdown shows Digital Media (74%), Digital Experience (25%), and Publishing/Advertising (1%), with geographic split Americas 60%, EMEA 26%, APAC 14%. No named customer or supplier concentration disclosures appear. The only derivative activity is routine FX hedging and one interest rate swap conversion on existing notes. Deferred revenue of $6.49B supports future performance obligations of $19.69B (67% within 12 months). This is boilerplate disclosure with no SIFI-relevance per Hard Rules.\"\n[chunk 2/4] EXTRACTION SUMMARY: This 10-Q filing (Q1 FY2025, filed 2025-03-26) for Adobe Inc. contains primarily boilerplate financial and operational disclosures. SIFI-material content is minimal.\n\nKEY FINDINGS:\n\n1. CUSTOMER CONCENTRATION & SECTOR EXPOSURE:\n   - No single customer concentration >10% identified in text provided.\n   - Revenue composition: 74% Digital Media, 25% Digital Experience, 1% Publishing/Advertising.\n   - Digital Media ARR $17.63B (12.6% YoY growth); Digital Experience revenue $1.41B (10% growth).\n   - Broad customer base (consumers, SMBs, enterprises, creative professionals) reduces concentration risk.\n\n2. LITIGATION & CONTINGENCIES (Moderate Disclosure Risk, Not SIFI-Material):\n   - FTC/DOJ litigation re: subscription cancellation practices under ROSCA; filed June 2024; motion to dismiss briefed Dec 2024. No financial estimate provided.\n   - Securities class action (In Re Adobe Securities Litigation) re: Figma competition disclosure claims; amended Feb 2024; motion to dismiss pending. Unquantified damages.\n   - Multiple derivative actions consolidated and stayed pending securities action resolution.\n   - **Figma Acquisition Termination**: Adobe incurred $1B termination fee in Q1 FY2024 (ended Mar 1, 2024) after deal was blocked/abandoned. This is historical and no longer an active commitment.\n   - Intellectual property indemnification obligations to customers; estimated impact noted as historically immaterial.\n   - These are standard commercial/IP disputes and regulatory matters, not SIFI-level systemic risk.\n\n3. DEBT & LEVERAGE (Standard Corporate Debt, Not SIFI-Material):\n   - Total debt outstanding $6.15B as of Feb 28, 2025 (vs $5.65B Nov 29, 2024).\n   - January 2025 issuances: $800M (2028), $700M (2030), $500M (2035) senior notes at rates 4.75\u20135.30%.\n   - February 2025: $1.5B notes matured and repaid.\n   - Interest rate swaps: ~$36M fair value gain recorded.\n   - Revolving credit facility: $1.5B undrawn; commercial paper program: $3B authorized, $0 outstanding.\n   - Debt/equity profile is healthy for a large-cap SaaS company; no SPVs, VIEs, or off-balance-sheet leverage detected.\n\n4. CAPEX & INVESTMENT:\n   - No disclosed material capex commitments tied to infrastructure or counterparties.\n   - AI/hosting cost increases noted (R&D +9% YoY, cost of subscription +8% YoY), but no quantified multi-year capex plan or strategic commitments disclosed.\n   - Stock repurchases: $3.25B in Q1 (ASR + open market); $25B authorization through March 2028. This is capital allocation, not operational capex.\n\n5. RELATED PARTIES & STRATEGIC PARTNERSHIPS:\n   - No material related-party transactions disclosed.\n   - No equity investments in private AI labs or hyperscalers.\n   - No disclosed strategic partnerships with OpenAI, Anthropic, xAI, CoreWeave, or other AI infrastructure providers.\n   - No mentions of capex commitments to compute providers.\n\n6. FIGMA RISK SIGNAL:\n   - Securities litigation names Figma competition as alleged basis for false/misleading statements (Class Period: Jul 23, 2021\u2013Sep 22, 2022).\n   - This represents a historical disclosure risk related to competitive positioning vis-\u00e0-vis Figma's growth, but is not a SIFI-material operational or financial dependency.\n   - The $1B termination fee is a sunk cost; no ongoing commitment.\n\nCONCLUSION:\nThis filing does not reveal SIFI-material risks in the AI SIFI Monitor sense. Adobe is a mature SaaS company with:\n- Diversified customer base (no major concentration)\n- Stable debt profile (no SPVs, reasonable leverage)\n- No disclosed circularity, off-balance-sheet entities, or hidden leverage\n- Standard commercial litigation (not a systemic risk trigger)\n- No dependency on compute/infrastructure providers that would create CAPEX_ROI_GAP or EXECUTION_RISK\n\nThe only noteworthy item is the Figma litigation, which reflects competitive risk and past disclosure judgment calls, but does not meet the SIFI-material threshold for extraction as a hidden_risk_signal in the AI context.\n\n**EDGE JUSTIFICATION**: The CITES_RISK edge reflects that Adobe faced securities litigation alleging it misrepresented competitive risks from Figma, making Figma a named counterparty in a disclosed risk context.\n\n[chunk 3/4] ADBE 10-Q filing (2025-03-26) contains several SIFI-material risk signals: (1) CAPEX_ROI_GAP around substantial AI investment without assured monetization pathways; (2) EXECUTION_RISK from single data center residency of critical applications and lack of full redundancy; (3) EXECUTION_RISK from failed Figma acquisition and regulatory barriers; (4) $1.3B multi-year supplier commitments with unclear visibility into revenue offsets; (5) Third-party service provider dependencies in cloud hosting and content delivery with no substitutes identified; (6) Cybersecurity exposure as data processor for customers; (7) Geopolitical exposure through international operations and supply chain. No off-balance-sheet entities, circularity patterns, or revenue roundtripping identified in this section. AI regulatory compliance costs are material and ongoing. Filing does not name specific cloud infrastructure providers or AI model vendors, limiting counterparty-web analysis at this stage.\n[chunk 4/4] SIFI-material extraction from Adobe 10-Q (Q1 FY2025). Focus: regulatory/compliance leverage, subscription model revenue recognition lag, debt covenant risk, and geographic concentration. Excluded: standard IP piracy risk (boilerplate), generic market volatility, routine FX hedging, generic ESG compliance, and executive compensation (no related-party angle). No named counterparty concentration > 10% disclosed. No named AI lab or major strategic partnership extracted (none identified in narrative). ASR activities with unnamed \"large financial institutions\" noted but no entity names disclosed for extraction."
+  }
+}

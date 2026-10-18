@@ -1,0 +1,997 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "role": "acquisition"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "role": "acquisition"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "EUC-Divestiture",
+        "fields": {
+          "entity_type": "asset_held_for_sale",
+          "sponsor": "Broadcom",
+          "beneficiary": "Broadcom",
+          "purpose": "Separation of VMware end-user computing business post-acquisition",
+          "verbatim_quote": "VMware's end-user computing (\"EUC\") business and certain other assets and liabilities, which were not aligned with our strategic objectives"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Broadcom-VMware-Capex",
+        "fields": {
+          "filer": "Broadcom",
+          "counterparty": "VMware",
+          "purpose": "VMware infrastructure software integration and R&D completion",
+          "verbatim_quote": "VMware cloud foundation July 2024 releases $810M (67% complete, $38M to complete); VMware cloud foundation March 2025 releases $3,000M (58% complete, $185M to complete); VMware cloud foundation July 2025 releases $780M (43% complete, $65M to complete)"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "VMware-Backlog-Litigation",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "Legal/Litigation",
+          "named_counterparties": [
+            "VMware"
+          ],
+          "severity": 2,
+          "verbatim_quote": "On September 18, 2020, the plaintiffs filed a consolidated amended complaint alleging that VMware's statements about backlog and the related internal controls during the period from August 2018 through February 2020 were materially misleading."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "VMware-Goodwill-IPRnD",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 53933000000,
+            "note": "Goodwill from VMware acquisition; $4.9B IPR&D with multi-year completion timelines"
+          },
+          "named_counterparties": [
+            "VMware"
+          ],
+          "verbatim_quote": "Goodwill is primarily attributable to the assembled workforce and anticipated synergies and economies of scale expected from the integration of the VMware business... In-process research and development ($4,900M) with expected completion dates spanning 2024\u20132025"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-Acquisition-Debt-Spike",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 30390000000,
+            "duration_yrs": 5,
+            "note": "2023 Term Loans for VMware Merger; total debt increased from $40.8B to $78.5B"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We funded the cash portion of the VMware Merger with the net proceeds from the issuance of the 2023 Term Loans... Upon completion of the VMware Merger, we entered an $11,195 million unsecured term A-2 facility... an $11,195 million unsecured term A-3 facility... and an $8,000 million unsecured term A-5 facility"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-Assumed-VMware-Debt",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 8250000000,
+            "note": "Assumed senior unsecured notes from VMware acquisition"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We assumed $8,250 million of VMware's outstanding senior unsecured notes... Upon the occurrence of a change of control and certain downgrades of the ratings, each note holder will have the right to require us to repurchase all or any part of the holders' notes in cash at a price equal to 101% of the principal amount plus accrued and unpaid interest."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-Contract-Liabilities-Growth",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 15451000000,
+            "pct_of_revenue": 129,
+            "note": "Contract liabilities grew from $2.786B to $15.451B, including 39% subject to termination for convenience"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of February 4, 2024, approximately 39% of contract liabilities related to contracts subject to termination for convenience provisions. Contract liabilities balance as of October 29, 2023 was $2,786 million; as of February 4, 2024 was $15,451 million."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-Remaining-Performance-Obligations",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 27700000000,
+            "pct_of_revenue": 232,
+            "duration_yrs": 1,
+            "note": "$27.7B remaining performance obligations, 44% to be recognized within 12 months; multi-year contracts with termination for convenience"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Certain multi-year customer contracts contain firmly committed amounts and the remaining performance obligations under these contracts as of February 4, 2024 were approximately $27.7 billion. We expect approximately 44% of this amount to be recognized as revenue over the next 12 months."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-Restructuring-Execution",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 712000000,
+            "note": "Restructuring charges in Q1 FY2024; expected completion by end of FY2025"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In connection with the VMware Merger, we initiated restructuring activities to integrate the acquired business, align our workforce and improve efficiencies in our operations. We recognized $712 million of restructuring charges primarily related to employee termination costs during the fiscal quarter ended February 4, 2024. We expect these restructuring activities to be substantially completed by the end of fiscal year 2025."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "role": "acquisition"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Apple",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "WT Microelectronics",
+        "fields": {
+          "aliases": [
+            "WT Microelectronics Co., Ltd."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Huawei",
+        "fields": {
+          "aliases": [
+            "Huawei Technologies Co., Ltd."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Broadcom-VMware-Acquisition",
+        "fields": {
+          "investor": "Broadcom",
+          "target": "VMware",
+          "amount_usd": 84188000000,
+          "disclosed_date": "2023-11-22",
+          "verbatim_quote": "On November 22, 2023, we completed the acquisition of VMware, Inc. (\"VMware\"), for approximately $30.8 billion in cash and 54.4 million shares of Broadcom common stock with a fair value of $53.4 billion."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Broadcom-2023-TermLoans",
+        "fields": {
+          "filer": "Broadcom",
+          "amount_usd": 30390000000,
+          "purpose": "VMware acquisition funding",
+          "verbatim_quote": "We funded the cash portion of the consideration with net proceeds from the $30,390 million 2023 Term Loans, as well as cash on hand."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Broadcom-CustomerConcentration",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "customer concentration",
+          "named_counterparties": [
+            "Apple",
+            "WT Microelectronics"
+          ],
+          "severity": 3,
+          "verbatim_quote": "A relatively small number of customers account for a significant portion of our net revenue. Direct sales to WT Microelectronics Co., Ltd., a distributor, accounted for 27% and 22% of our net revenue for the fiscal quarters ended February 4, 2024 and January 29, 2023, respectively. We believe aggregate sales to our top five end customers, through all channels, accounted for approximately 40% and 35% of our net revenue for the fiscal quarters ended February 4, 2024 and January 29, 2023, respectively. We believe aggregate sales to Apple Inc., through all channels, accounted for approximately 17% and 20% of our net revenue for the fiscal quarters ended February 4, 2024 and January 29, 2023, respectively."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-VMware-IntegrationRisk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [
+            "VMware"
+          ],
+          "numeric_signal": {
+            "amount_usd": 84188000000,
+            "note": "Major acquisition integration challenges"
+          },
+          "verbatim_quote": "Although we expect significant benefits to result from the VMware Merger, there can be no assurance that we will actually realize these benefits. Achieving these benefits will depend, in part, on our ability to integrate VMware's business successfully and efficiently. The challenges involved in this integration, which are complex and time consuming, include the following: preserving customer and other important relationships of VMware and attracting new business and operational relationships; integrating financial forecasting and controls, procedures and reporting cycles; consolidating and integrating corporate, information technology, finance and administrative infrastructures; coordinating sales and marketing efforts to effectively position our capabilities; coordinating and integrating operations in countries in which we have not previously operated; reorienting the VMware sales and marketing force to align with the change in strategy and effectively position the business; and integrating the VMware workforce, including managing employee transitions and attrition, maintaining employee morale and retaining key employees."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-HuaweiDependency",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "named_counterparties": [
+            "Huawei"
+          ],
+          "verbatim_quote": "The U.S. government may also add companies to its restricted entity list and/or technologies to its list of prohibited exports to specific countries, which have had and may continue to have an adverse effect on our ability to sell our products and our revenue. For example, Huawei Technologies Co., Ltd., one of our customers, is subject to certain U.S. export restrictions, which has required us to suspend sales to Huawei until we obtain licenses from the U.S. Department of Commerce."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-DistributorConcentration",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "pct_of_revenue": 51,
+            "note": "Sales through distributors represent significant channel concentration"
+          },
+          "verbatim_quote": "Sales to distributors accounted for 51% of our net revenue in the fiscal quarter ended February 4, 2024 and are subject to a number of risks, including: fluctuations in demand based on our distributors' product inventory levels and end customer demand; our distributors and other channel partners are generally not subject to minimum sales requirements or any obligation to market our products to their customers; our distributors and other channel partners agreements are generally nonexclusive and may be terminated at any time without cause; our lack of control over the timing of delivery of our products to end customers; and our distributors and other channel partners may market and distribute competing products and may place greater emphasis on the sale of these products."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-VMwareDebtAssumption",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "named_counterparties": [
+            "VMware"
+          ],
+          "numeric_signal": {
+            "amount_usd": 8250000000,
+            "note": "Assumed VMware debt"
+          },
+          "verbatim_quote": "We also assumed $8,250 million of VMware's outstanding senior unsecured notes."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Broadcom-ExportControlRisk",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "export controls and geopolitical risk",
+          "named_counterparties": [
+            "Huawei",
+            "China",
+            "USG"
+          ],
+          "severity": 3,
+          "verbatim_quote": "An escalation of trade tensions between the U.S. and China has resulted in trade restrictions, increased protectionism and increased tariffs that harm our ability to participate in Chinese markets or compete effectively with Chinese companies."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Broadcom-IndebtednessRisk",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "leverage and debt servicing",
+          "severity": 2,
+          "verbatim_quote": "Our substantial indebtedness could adversely affect our financial health and our ability to execute our business strategy. Servicing our debt requires a significant amount of cash, and we may not have sufficient cash flows from our business to pay our substantial debt."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "TSMC",
+        "fields": {
+          "aliases": [
+            "Taiwan Semiconductor Manufacturing Company"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Apple",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "China",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "TSMC-Single-Source-Dependency",
+        "fields": {
+          "filer": "AVGO",
+          "category": "SUPPLIER_CONCENTRATION",
+          "named_counterparties": [
+            "TSMC"
+          ],
+          "severity": 4,
+          "verbatim_quote": "TSMC, one of our CMs, manufactured approximately 95% of the wafers manufactured by our CMs during the fiscal quarter ended February 4, 2024. We believe our wafer requirements represent a meaningful portion of TSMC's total production capacity. However, TSMC also fabricates wafers for other companies, including some of our competitors, and could choose or be required to prioritize capacity for other customers or reduce or eliminate deliveries to us on short notice. In addition, TSMC has, and may in the future, raise their prices to us."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-TSMC-Single-Source",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_capex": 95,
+            "note": "95% of CM wafer manufacturing from single supplier"
+          },
+          "named_counterparties": [
+            "TSMC"
+          ],
+          "verbatim_quote": "TSMC, one of our CMs, manufactured approximately 95% of the wafers manufactured by our CMs during the fiscal quarter ended February 4, 2024. We believe our wafer requirements represent a meaningful portion of TSMC's total production capacity. However, TSMC also fabricates wafers for other companies, including some of our competitors, and could choose or be required to prioritize capacity for other customers or reduce or eliminate deliveries to us on short notice."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-Customer-Concentration-Apple",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 17,
+            "note": "Apple alone represents approximately 17% of Q1 FY2024 revenue"
+          },
+          "named_counterparties": [
+            "Apple"
+          ],
+          "verbatim_quote": "We believe aggregate sales, through all channels, to Apple and our top five end customers, accounted for approximately 17% and 40%, respectively, of our net revenue for the fiscal quarter ended February 4, 2024."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-Top5-Customer-Concentration",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_revenue": 40,
+            "counterparty_count": 5,
+            "note": "Top 5 end customers represent 40% of Q1 FY2024 revenue"
+          },
+          "named_counterparties": [
+            "top 5 end customers"
+          ],
+          "verbatim_quote": "We believe aggregate sales, through all channels, to Apple and our top five end customers, accounted for approximately 17% and 40%, respectively, of our net revenue for the fiscal quarter ended February 4, 2024. This customer concentration increases the risk of quarterly fluctuations in our operating results and our sensitivity to any material adverse developments experienced by our significant customers."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-Materials-Supplier-Concentration",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_materials_spend": 66.67,
+            "counterparty_count": 5,
+            "note": "Approximately two-thirds of manufacturing materials from 5 suppliers, some single-source"
+          },
+          "named_counterparties": [
+            "5 materials providers"
+          ],
+          "verbatim_quote": "During the fiscal quarter ended February 4, 2024, we purchased approximately two-thirds of our manufacturing materials from five materials providers, some of which are single source suppliers. As certain materials are highly specialized, the lead time needed to identify and qualify a new supplier is typically lengthy and there is often no readily available alternative source."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-Geopolitical-Trade-Tension-China",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "named_counterparties": [
+            "China",
+            "USG"
+          ],
+          "verbatim_quote": "Additionally, the supply of these materials may be negatively impacted by increased trade tensions between the U.S. and its trading partners, particularly China."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-TSMC-Geopolitical-Disruption",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "named_counterparties": [
+            "TSMC"
+          ],
+          "verbatim_quote": "Further, any substantial disruption in the contract manufacturing services that we utilize, including TSMC's supply of wafers to us, as a result of a natural disaster, climate change, water shortages, political unrest, military conflicts, geopolitical turmoil, trade tensions, government orders, labor shortages, medical epidemics, such as the COVID-19 pandemic, economic instability, equipment failure or other cause, could materially harm our business, customer relationships and results of operations."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-Distributor-Channel-Concentration",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 51,
+            "note": "Sales through distributors account for 51% of net revenue in Q1 FY2024"
+          },
+          "named_counterparties": [
+            "distributors"
+          ],
+          "verbatim_quote": "For the fiscal quarter ended February 4, 2024, sales to distributors accounted for 51% of our net revenue."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-Manufacturing-Facility-Concentration",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "named_counterparties": [],
+          "verbatim_quote": "Our Fort Collins and Breinigsville facilities are the sole sources for the FBAR components used in many of our wireless devices and for the indium phosphide-based wafers used in our fibre optics products, respectively. Many of our facilities, and those of our CMs and suppliers, are located in California and the Pacific Rim region, which have above average seismic activity and severe weather activity."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-Cyber-Third-Party-Vendor-Risk",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "An impairment of the confidentiality, integrity, or availability of our IT systems, or those of one or more of our corporate infrastructure vendors could have a material adverse effect on our business. Our business depends on a wide variety of complex IT systems and services, including cloud-based and other critical corporate services relating to, among other things, product research and development, financial reporting, product orders and fulfillment, HR, benefit plan administration, IT network management, and electronic communication and collaboration services. These systems and services are both internally managed and outsourced, and in many cases we rely upon third-party data centers."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO",
+            "Broadcom Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "aliases": [
+            "VMware Inc.",
+            "VMware Corporation"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Dell",
+        "fields": {
+          "aliases": [
+            "Dell Inc.",
+            "Dell Technologies"
+          ],
+          "role": "related_party"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Broadcom-VMware-Merger-2023",
+        "fields": {
+          "filer": "Broadcom",
+          "amount_usd": 30390000000,
+          "counterparty": "VMware",
+          "purpose": "VMware Merger financing",
+          "verbatim_quote": "During the fiscal quarter ended February 4, 2024, we borrowed $30,390 million in 2023 Term Loans to finance the VMware Merger, and we assumed $8,250 million of VMware's outstanding senior unsecured notes."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Broadcom-2023-Term-Loans",
+        "fields": {
+          "entity_type": "project_finance",
+          "sponsor": "Broadcom",
+          "purpose": "VMware Merger acquisition financing",
+          "debt_stack_usd": 30390000000,
+          "verbatim_quote": "During the fiscal quarter ended February 4, 2024, we borrowed $30,390 million in 2023 Term Loans to finance the VMware Merger"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Broadcom-VMware-Tax-Indemnity-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "Tax liability from VMware spin-off failure",
+          "named_counterparties": [
+            "Dell",
+            "VMware"
+          ],
+          "severity": 3,
+          "verbatim_quote": "If the VMware spin-off from Dell in November 2021 is determined to not be tax-free for any reason, we could be liable for all or a portion of the tax liability, which could have a material adverse effect on our financial condition and operating results."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-Substantial-Indebtedness-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 78521000000,
+            "note": "Total senior notes indebtedness plus $30.39B term loans for VMware Merger"
+          },
+          "named_counterparties": [
+            "VMware"
+          ],
+          "verbatim_quote": "As of February 4, 2024, the aggregate indebtedness under our senior notes was $78,521 million. During the fiscal quarter ended February 4, 2024, we borrowed $30,390 million in 2023 Term Loans to finance the VMware Merger, and we assumed $8,250 million of VMware's outstanding senior unsecured notes."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Broadcom-Tax-Incentive-Concentration-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 2104000000,
+            "pct_of_revenue": null,
+            "note": "Tax incentives decreased provision for income taxes by approximately $2,104 million in FY2023 and increased diluted EPS by $4.93"
+          },
+          "named_counterparties": [
+            "Singapore Economic Development Board",
+            "Malaysia"
+          ],
+          "verbatim_quote": "Our tax incentives and tax holiday, before taking into consideration U.S. foreign tax credits, decreased the provision for income taxes by approximately $2,104 million in the aggregate and increased diluted net income per share by $4.93 for fiscal year 2023."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Broadcom-Tax-Incentive-Expiration-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "Tax incentive and tax holiday expiration risk",
+          "named_counterparties": [
+            "Singapore",
+            "Malaysia"
+          ],
+          "severity": 2,
+          "verbatim_quote": "For example, absent our principal tax incentives from the Singapore Economic Development Board, which is scheduled to expire in 2030, the corporate income tax rate that would apply to our Singapore taxable income would be 17%. We also have a tax holiday on our qualifying income in Malaysia, which is scheduled to expire in fiscal year 2028."
+        }
+      },
+      {
+        "type": "company",
+        "name": "D95GT LLC",
+        "fields": {
+          "role": "related_entity",
+          "aliases": [
+            "D95GT"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Samueli Foundation",
+        "fields": {
+          "role": "related_entity"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "VMware",
+        "properties": {
+          "deal_date": "2023-11-22",
+          "status": "acquisition"
+        }
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "VMware"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "capex_commitment",
+        "target_name": "Broadcom-VMware-Capex"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "VMware-Goodwill-IPRnD"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-Acquisition-Debt-Spike"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-Assumed-VMware-Debt"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-Contract-Liabilities-Growth"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-Remaining-Performance-Obligations"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-Restructuring-Execution"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "VMware-Backlog-Litigation"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "off_balance_entity",
+        "target_name": "EUC-Divestiture"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "VMware"
+      },
+      {
+        "predicate": "SELLS_COMPUTE_TO",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "Apple"
+      },
+      {
+        "predicate": "SELLS_COMPUTE_TO",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "WT Microelectronics"
+      },
+      {
+        "predicate": "SELLS_COMPUTE_TO",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "Huawei"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-CustomerConcentration"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-VMware-IntegrationRisk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-HuaweiDependency"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-DistributorConcentration"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-VMwareDebtAssumption"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "Broadcom-ExportControlRisk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "Broadcom-IndebtednessRisk"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "Broadcom-CustomerConcentration",
+        "target_type": "company",
+        "target_name": "Apple"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "Broadcom-CustomerConcentration",
+        "target_type": "company",
+        "target_name": "WT Microelectronics"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "TSMC",
+        "predicate": "BUYS_COMPUTE_FROM",
+        "properties": {
+          "volume_pct": 95,
+          "fiscal_quarter": "Q1 FY2024"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "Apple",
+        "predicate": "SELLS_COMPUTE_TO",
+        "properties": {
+          "revenue_pct": 17,
+          "fiscal_quarter": "Q1 FY2024"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-TSMC-Single-Source",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-Customer-Concentration-Apple",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-Top5-Customer-Concentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-Materials-Supplier-Concentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-Geopolitical-Trade-Tension-China",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-TSMC-Geopolitical-Disruption",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-Distributor-Channel-Concentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-Manufacturing-Facility-Concentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-Cyber-Third-Party-Vendor-Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "Broadcom-TSMC-Single-Source",
+        "target_type": "company",
+        "target_name": "TSMC",
+        "predicate": "NAMES_COUNTERPARTY"
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "Broadcom-Customer-Concentration-Apple",
+        "target_type": "company",
+        "target_name": "Apple",
+        "predicate": "NAMES_COUNTERPARTY"
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "Broadcom-TSMC-Geopolitical-Disruption",
+        "target_type": "company",
+        "target_name": "TSMC",
+        "predicate": "NAMES_COUNTERPARTY"
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "Broadcom-Geopolitical-Trade-Tension-China",
+        "target_type": "company",
+        "target_name": "China",
+        "predicate": "NAMES_COUNTERPARTY"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "capex_commitment",
+        "target_name": "Broadcom-VMware-Merger-2023",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "VMware",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "VMware",
+        "target_type": "company",
+        "target_name": "Dell",
+        "predicate": "NAMES_COUNTERPARTY"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "off_balance_entity",
+        "target_name": "Broadcom-2023-Term-Loans",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-Substantial-Indebtedness-Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Broadcom-Tax-Incentive-Concentration-Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "Broadcom-VMware-Tax-Indemnity-Risk",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "Broadcom-Tax-Incentive-Expiration-Risk",
+        "predicate": "CITES_RISK"
+      }
+    ],
+    "notes": "[chunk 1/5] AVGO 10-Q filing Q1 FY2024 (period ended 2024-02-04). Limited narrative business text; filing is primarily tables and structured data. Source material is predominantly XML/XBRL tags representing balance sheet items (cash, intangibles, debt, equity) and segment reporting (Semiconductor Solutions, Infrastructure Software, geographic regions). VMware acquisition completed Nov 2023; significant debt issuance noted across multiple senior notes tranches to fund deal. No customer concentration, investment relationships, or related-party items disclosed in the provided excerpt. Boilerplate company registration info only. No hidden leverage, circularity, or SIFI-material counterparty patterns extracted because substantive narrative detail is absent from provided text.\"\n[chunk 2/5] AVGO 10-Q Q1 FY2024 (filed 2024-03-14): Broadcom completed the $86.3B acquisition of VMware on 2023-11-22, financed through $30.4B in new term loans + cash on hand + assumption of $8.25B VMware debt. The 10-Q reveals eight material SIFI signals: (1) $53.9B goodwill + $4.9B IPR&D with multi-year completion risk; (2) $30.4B new debt across three tranches (2-, 3-, 5-year maturities) at floating SOFR rates; (3) $8.25B assumed VMware notes with repurchase rights on change-of-control or rating downgrade (101% make-whole); (4) $15.5B contract liabilities (up from $2.8B pre-acquisition), 39% termination-for-convenience; (5) $27.7B remaining performance obligations, only 44% firm within 12 months; (6) $712M restructuring charges in Q1 alone, completion expected by end FY2025; (7) pending securities litigation over VMware's pre-acquisition backlog disclosures; (8) $3.8B divestiture of EUC business (signed Feb 2024, closing TBD). Integration risk is acute: VMware contributed $2.1B revenue in <3 months, yet R&D completion timelines span into 2025. Broadcom's leverage ratio spiked 93% (total debt $78.5B vs. $40.8B pre-deal). This is classic post-M&A solvency + integration execution risk for a supplier to hyperscalers.\n[chunk 3/5] EXTRACTION SUMMARY \u2014 Broadcom (AVGO) 10-Q filed 2024-03-14:\n\nSIFI-MATERIAL ENTITIES EXTRACTED:\n\n1. **MAJOR ACQUISITION**: VMware Merger (Nov 22, 2023)\n   - Deal value: $84.2B ($30.8B cash + $53.4B stock)\n   - Assumed $8.25B of VMware debt\n   - Funded by $30.4B 2023 Term Loans + cash on hand\n   - Integration execution risk flagged as severe (3/5)\n\n2. **CUSTOMER CONCENTRATION**: \n   - Top 5 customers = 40% of revenue (Q1 FY2024), up from 35% prior year\n   - Apple = 17% of revenue (down from 20%)\n   - WT Microelectronics (distributor) = 27% of direct revenue\n   - Distributor channel = 51% of total revenue\n   - Risk severity: 3/5 (material impact if top customer lost)\n\n3. **EXPORT/GEOPOLITICAL RISK**:\n   - Huawei customer: Sales suspended due to U.S. export restrictions; requires DOC licenses to resume\n   - Broader China trade tension risk cited (severity 3/5)\n\n4. **LEVERAGE & DEBT SERVICE RISK**:\n   - Outstanding debt: $78.5B (pre-VMware), increased to ~$87B post-merger\n   - Fixed-rate notes: $48.1B outstanding\n   - Floating-rate term loans: $30.4B (SOFR-based, 1% rate change = $307M interest swing)\n   - Severity: 2/5 (material but manageable given FCF)\n\n5. **VMWARE INTEGRATION EXECUTION RISK**:\n   - Disclosed complex multi-dimensional integration challenges\n   - Management attention diversion flagged\n   - Divesting VMware end-user computing business (~$3.8B expected sale)\n   - Severity: 3/5 (substantial execution uncertainty)\n\n6. **CHANNEL RISK**:\n   - Distributor agreements non-exclusive, terminable at will\n   - No minimum sales obligations\n   - Competitive product stocking risk\n   - Severity: 2/5\n\nNO OFF-BALANCE-SHEET ENTITIES, SPVs, OR PROJECT FINANCE STRUCTURES IDENTIFIED in narrative sections reviewed.\n\nNO PRIVATE AI LAB INVESTMENTS mentioned in this 10-Q excerpt.\n\nKEY COUNTERPARTIES FOR CIRCULARITY ANALYSIS: Apple, WT Microelectronics, Huawei, VMware\n[chunk 4/5] AVGO 10-Q (Mar 2024): Extracted SIFI-material supplier concentration (TSMC 95% of CM wafer manufacturing) and customer concentration (Apple 17%, Top 5 at 40% of Q1 FY2024 revenue). Also captured distributor channel concentration (51%), materials supplier concentration (5 suppliers for ~67% of materials, some single-source), manufacturing facility single-source risk (Fort Collins for FBAR, Breinigsville for InP wafers), and geopolitical execution risk from TSMC's Taiwan exposure to military/trade conflicts. Geopolitical trade tension with China impacts materials supply. Third-party vendor IT infrastructure risk noted but not elevated to critical severity as no material incidents disclosed. All quoted verbatim from 10-Q Item 1A Risk Factors section.\n[chunk 5/5] Extracted key SIFI-material risk signals from Broadcom Q1 FY2024 10-Q filing (filed 2024-03-14). Focus areas: (1) **Hidden Leverage via VMware Merger Debt**: Broadcom incurred $30.39B in 2023 Term Loans plus $8.25B assumed VMware debt for acquisition, now carrying $78.5B+ total senior notes. This substantially increases financial leverage and refinancing risk in a rising rate environment. (2) **Tax Indemnity to Dell**: Broadcom faces potential material tax liability if VMware's 2021 spin-off from Dell fails Section 355 tax-free treatment; Dell controls audit representation. (3) **Tax Incentive Concentration**: ~$2.1B annual EPS impact ($4.93/share) from Singapore and Malaysia tax holidays expiring 2028\u20132030; concentration in Asia-Pacific jurisdictions exposed to geopolitical risk and OECD Pillar Two. (4) **Related-party Equity Gifting**: Chairman Henry Samueli and D95GT LLC gift ~$106M in Broadcom shares to Samueli Foundation under Rule 10b5-1 plan; low SIFI materiality but demonstrates insider liquidity/founder concentration. Not extracted as SIFI: generic ESG compliance costs, standard currency hedging, competitive pricing pressure, routine tax audit risk (covered under materiality threshold)."
+  }
+}

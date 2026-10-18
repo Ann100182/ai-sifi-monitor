@@ -1,0 +1,732 @@
+{
+  "director_comp": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "aliases": [
+            "MSFT"
+          ]
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/1] SOURCE ANALYSIS: This is a DEF 14A Director Compensation section (fiscal year 2025, filed 2025-10-21). The text contains ONLY compensation structure tables and narrative about director retainers, stock awards, deferred compensation plans, and a Compensation Committee letter discussing executive pay alignment with AI leadership positioning. NO SIFI-material entities are disclosed: no named customers, suppliers, strategic partnerships, investments in other entities, related-party arrangements, or off-balance-sheet structures. The sole named entity is Microsoft itself. Director names (Reid Hoffman, Hugh Johnston, etc.) appear but only in compensation tables with no material business relationship context. The letter references Microsoft's 'AI leader' positioning and Nadella's leadership but contains no concrete counterparty names, capex commitments, or risk signals. Standard executive compensation disclosure does not meet SIFI materiality threshold. EXTRACTION RESULT: Single company node (Microsoft); no edges; no risk signals or investments to report.\""
+  },
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "role": "hyperscaler",
+          "aliases": [
+            "MSFT"
+          ]
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "OpenAI",
+        "fields": {
+          "private": true,
+          "known_backers": [
+            "Microsoft"
+          ]
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "xAI",
+        "fields": {
+          "private": true,
+          "aliases": [
+            "Grok"
+          ]
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Mistral",
+        "fields": {
+          "private": true,
+          "aliases": [
+            "Mistral AI"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "DeepSeek",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Black Forest Labs",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "MSFT-Capex-FY25-$88B",
+        "fields": {
+          "filer": "Microsoft",
+          "amount_usd": 88000000000,
+          "start_fy": 2025,
+          "purpose": "Capital expense to support customer demand signals in Cloud and AI infrastructure",
+          "verbatim_quote": "Invested over $88 billion in capital expense to support customer demand signals, driving commercial bookings of over $100 billion in Q4."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-CapexROIGap-FY25",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 88000000000,
+            "note": "$88B capex vs $168.9B cloud revenue; Azure revenue surpassed $75B (+34% YoY); added 2+ gigawatts capacity in FY25"
+          },
+          "named_counterparties": [
+            "OpenAI",
+            "xAI",
+            "Mistral",
+            "DeepSeek",
+            "Meta",
+            "Black Forest Labs"
+          ],
+          "verbatim_quote": "Invested over $88 billion in capital expense to support customer demand signals, driving commercial bookings of over $100 billion in Q4. Strengthened our role in shaping the AI infrastructure wave, adding more than two gigawatts of capacity, increasing our global footprint to over 400 facilities across 70 regions."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-Circularity-OpenAI-Azure",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "CIRCULARITY",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "OpenAI models distributed via Azure AI Foundry; Microsoft is investor in and cloud supplier to OpenAI; 15 new OpenAI models delivered same-day on Foundry; 80% of Fortune 500 using Azure AI Foundry"
+          },
+          "named_counterparties": [
+            "OpenAI"
+          ],
+          "verbatim_quote": "It enables customers to leverage multiple AI models...including from OpenAI, DeepSeek, Meta, xAI's Grok, Black Forest Labs, and Mistral AI, than any other hyperscaler. In its first year, we delivered 15 new OpenAI models on Foundry with same-day availability."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-ExecutionRisk-AIFoundry-DataCenters",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 88000000000,
+            "note": "$88B capex committed in FY25; 2+ gigawatts added; 400+ data centers across 70 regions; Azure AI Foundry first year with 70,000+ customers"
+          },
+          "named_counterparties": [
+            "OpenAI",
+            "xAI",
+            "Mistral",
+            "DeepSeek"
+          ],
+          "verbatim_quote": "In fiscal year 2025, Azure revenue surpassed $75 billion, up 34% year-over-year driven by growth across all workloads...We have built a global footprint, with 70 operating regions and over 400 data centers, and we added over two gigawatts of capacity in fiscal year 2025."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "ailab",
+        "source_name": "OpenAI",
+        "target_type": "company",
+        "target_name": "Microsoft"
+      },
+      {
+        "predicate": "SELLS_COMPUTE_TO",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "ailab",
+        "target_name": "OpenAI"
+      },
+      {
+        "predicate": "SELLS_COMPUTE_TO",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "ailab",
+        "target_name": "xAI"
+      },
+      {
+        "predicate": "SELLS_COMPUTE_TO",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "ailab",
+        "target_name": "Mistral"
+      },
+      {
+        "predicate": "CIRCULAR_WITH",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "ailab",
+        "target_name": "OpenAI"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "capex_commitment",
+        "target_name": "MSFT-Capex-FY25-$88B"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-CapexROIGap-FY25"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-Circularity-OpenAI-Azure"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-ExecutionRisk-AIFoundry-DataCenters"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "MSFT-Circularity-OpenAI-Azure",
+        "target_type": "ailab",
+        "target_name": "OpenAI"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "MSFT-CapexROIGap-FY25",
+        "target_type": "ailab",
+        "target_name": "OpenAI"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "MSFT-CapexROIGap-FY25",
+        "target_type": "ailab",
+        "target_name": "xAI"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "MSFT-CapexROIGap-FY25",
+        "target_type": "ailab",
+        "target_name": "Mistral"
+      }
+    ],
+    "notes": "[chunk 1/3] Source is a DEF 14A Compensation Discussion & Analysis \u2014 primarily a comp governance document. SIFI-material signals extracted:\n\n1. CAPEX ROI GAP (Severity 3): Amy Hood's operational review explicitly names $88B in FY25 capex tied to \"customer demand signals\" in Cloud/AI infrastructure. Commercial bookings exceeded $100B in Q4, but the durability of that demand \u2014 particularly given OpenAI dependency \u2014 is unverified. Azure revenue of $75B+ on $88B capex spend implies capital-intensity is high and rising.\n\n2. CIRCULARITY (Severity 3): Microsoft is simultaneously (a) a major investor in OpenAI, (b) OpenAI's primary cloud compute provider via Azure, and (c) the distributor of OpenAI models via Azure AI Foundry to 80% of Fortune 500. This three-way investor/supplier/distributor loop is explicitly named in the comp narrative. The \"same-day\" model delivery commitment deepens operational lock-in.\n\n3. EXECUTION RISK (Severity 2): Azure AI Foundry launched in FY25 with 70,000+ enterprise customers and processed 500 trillion tokens \u2014 scale ramp is real but the infrastructure buildout ($88B capex, 2+ GW added, 400+ DCs) precedes full revenue realization and depends on multi-model AI supply chain including OpenAI, xAI/Grok, Mistral, DeepSeek, and Black Forest Labs \u2014 all private labs without guaranteed supply continuity.\n\n4. Named AI lab model partners on Azure AI Foundry: OpenAI, DeepSeek, Meta (Llama), xAI (Grok), Black Forest Labs, Mistral AI \u2014 establishing supplier concentration risk on the model layer.\n\nNo off-balance-sheet vehicles, SPVs, or investment disclosures were named in this section. No explicit equity stake amounts disclosed here.\n[chunk 2/3] This DEF 14A section covers Microsoft's Compensation Discussion & Analysis, compensation tables, equity plan information, and principal shareholders. The content is entirely standard executive compensation disclosure: PSA/SA equity grants, incentive plan payout calculations, CEO pay ratio, pay-versus-performance tables, nonqualified deferred compensation, severance plan terms, stock ownership requirements, hedging/pledging policy, and principal shareholders (Vanguard 8.95%, BlackRock 7.30%). There are no SIFI-material entities to extract: no named AI lab relationships, no SPVs or off-balance-sheet entities, no capex commitments, no named customer/supplier concentrations, no investments in private companies, no related-party arrangements beyond standard compensation. The performance metrics referenced (Azure revenue growth, Microsoft Cloud, LinkedIn, Xbox, Search/Advertising) are standard business segment disclosures without counterparty specificity. This section contains zero extractable SIFI-material nodes or edges under the stated hard rules.\n[chunk 3/3] Source text is a standard Stock Ownership Information table from Microsoft's DEF 14A (proxy statement), describing beneficial ownership of common stock by directors, nominees, and Named Executives as of September 30, 2025. No SIFI-material entities are present: no named business relationships, customer/supplier concentrations, investments, acquisitions, off-balance-sheet arrangements, AI lab relationships, capex commitments, or related-party arrangements of systemic significance. Pure boilerplate proxy/compensation disclosure \u2014 skipped per Hard Rule 3."
+  },
+  "beneficial_owners": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "aliases": [
+            "MSFT"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Deloitte",
+        "fields": {
+          "aliases": [
+            "Deloitte & Touche LLP"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "aliases": [
+            "MSFT"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "OpenAI",
+        "fields": {
+          "aliases": [
+            "OpenAI"
+          ],
+          "private": true,
+          "known_backers": [
+            "Microsoft"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "CyberPeace Institute",
+        "fields": {
+          "role": "nonprofit"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Mastercard",
+        "fields": {
+          "role": "partner"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Hewlett Foundation",
+        "fields": {
+          "role": "partner"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Global Network Initiative",
+        "fields": {
+          "aliases": [
+            "GNI"
+          ],
+          "role": "nonprofit"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Europol",
+        "fields": {
+          "role": "government"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ESP_Censorship_Risk",
+        "fields": {
+          "filer": "Microsoft",
+          "category": "Geopolitical / Content Moderation",
+          "named_counterparties": [
+            "EU",
+            "UK",
+            "Europol",
+            "CyberPeace Institute"
+          ],
+          "severity": 2,
+          "verbatim_quote": "Microsoft announced the launch of the European Security Program (ESP) that, among other things, focuses on 'expanding cybercrime reporting' within partnered countries by putting 'AI at the center.' Microsoft is 'making this program available to European governments, free of charge, including all 27 European Union member states, as well as \u2026 the U.K.' ESP includes collaboration with Europol's European Cybercrime Centre and the CyberPeace Institute, which reference combatting 'online hate speech' and 'harmful content' online."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GenAI_Moderation_Bias",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "named_counterparties": [
+            "OpenAI"
+          ],
+          "numeric_signal": {
+            "note": "Subjective content moderation policies on 'misinformation' and 'hate speech' with undefined enforcement mechanisms"
+          },
+          "verbatim_quote": "Microsoft prohibits its AI from generating 'hate speech' or 'content that insults, targets, or excludes individuals or groups' based on 'gender identity, sexual orientation,' or 'any other characteristic that is associated with systemic prejudice or marginalization.' These vague and subjective terms invite censorship of legitimate views on contested but critical topics."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AI_Data_Ethics_Gap",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "named_counterparties": [
+            "OpenAI"
+          ],
+          "numeric_signal": {
+            "note": "Data sourcing practices for AI training lack transparent disclosure and measurable KPIs"
+          },
+          "verbatim_quote": "The Company has been light on disclosures regarding what user data may be retained by itself or its partners for training purposes. Further, the Company has no publicly available metrics to measure the success of its AI data ethics efforts."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Recall_Privacy_Execution_Risk",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "note": "Feature delayed due to security/privacy concerns before eventual release"
+          },
+          "verbatim_quote": "Microsoft received pushback against its proposed AI 'Recall' feature, which screenshots everything a Windows and Copilot user sees or does and turns it into searchable data. The feature was delayed due to the resistance, but then was eventually released."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Saudi_Arabia_Datacenter_HRDD",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "OTHER",
+          "severity": 4,
+          "named_counterparties": [
+            "Saudi Arabia"
+          ],
+          "numeric_signal": {
+            "note": "Datacenter operations in human rights hotspot without disclosed human rights due diligence"
+          },
+          "verbatim_quote": "The company has provided no evidence that it has conducted a human rights impact assessment, or engaged impacted stakeholders as required under the United Nations Guiding Principles on Business and Human Rights (UNGPs). There has been no disclosure of an assessment or mitigation plans. The company's decisions to locate cloud datacenters in human rights hot spots occur behind closed doors."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Israel Ministry of Defense",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Saudi Arabia",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "ExxonMobil",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Chevron",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Schlumberger",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Covington & Burling",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Gaza_Conflict_Misuse",
+        "fields": {
+          "filer": "Microsoft",
+          "category": "customer_misuse_of_technology_for_potential_war_crimes",
+          "named_counterparties": [
+            "Israel Ministry of Defense"
+          ],
+          "severity": 4,
+          "verbatim_quote": "several reports have alleged Israel's use of Microsoft's AI and cloud services and technologies in its attacks against Palestinian civilians and civilian objects, which have been labeled war crimes and crimes against humanity"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "China_Startup_Surveillance",
+        "fields": {
+          "filer": "Microsoft",
+          "category": "customer_misuse_for_human_rights_violations",
+          "named_counterparties": [
+            "China"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Microsoft provides AI and cloud computing services and mentorship to Chinese startups, through its incubator program. After graduating the program, some companies have subsequently partnered with the Xinjiang police where their surveillance tools and support have reportedly been used by the Chinese government in its brutal oppression of the Uyghur population"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Fossil_Fuel_Customer_Concentration",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_market": 60,
+            "note": "Microsoft controls nearly 60 percent of all cloud services contracts with the oil and gas industry"
+          },
+          "named_counterparties": [
+            "ExxonMobil",
+            "Chevron",
+            "Schlumberger"
+          ],
+          "verbatim_quote": "A 2022 study found that Microsoft controls nearly 60 percent of all cloud services contracts with the oil and gas industry"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Fossil_Fuel_Enabled_Emissions",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Oil and gas contracts' emissions impact exceeds Microsoft's entire Scope 1-3 emissions"
+          },
+          "named_counterparties": [
+            "ExxonMobil",
+            "Chevron",
+            "Schlumberger"
+          ],
+          "verbatim_quote": "independent analyses show that just two of these contracts had a greater emissions impact than Microsoft's entire Scope 1 \u2013 3 emissions"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Human_Rights_HRDD_Gaps",
+        "fields": {
+          "filer": "Microsoft",
+          "category": "insufficient_customer_due_diligence",
+          "named_counterparties": [
+            "Israel Ministry of Defense"
+          ],
+          "severity": 4,
+          "verbatim_quote": "Microsoft does not have visibility into how customers use our software on their own servers or other devices"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Greenwashing_Exposure",
+        "fields": {
+          "filer": "Microsoft",
+          "category": "climate_disclosure_and_reputational_risk",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Microsoft consistently heralds its efforts to 'accelerate sustainability with AI,' without providing material information about its fossil fuel partnerships in its sustainability reporting, raising legal and reputational risks associated with greenwashing"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "ailab",
+        "target_name": "OpenAI",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "verbatim_quote": "Microsoft's extensive partnership with OpenAI"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "company",
+        "target_name": "CyberPeace Institute",
+        "predicate": "SPONSORS",
+        "properties": {
+          "note": "Founded in partnership 2019; renewed three-year partnership"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Mastercard",
+        "target_type": "company",
+        "target_name": "CyberPeace Institute",
+        "predicate": "SPONSORS",
+        "properties": {
+          "note": "Co-founder partnership"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Hewlett Foundation",
+        "target_type": "company",
+        "target_name": "CyberPeace Institute",
+        "predicate": "SPONSORS",
+        "properties": {
+          "note": "Co-founder partnership"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "company",
+        "target_name": "Global Network Initiative",
+        "predicate": "BENEFITS",
+        "properties": {
+          "note": "Founding member; undergoes periodic GNI assessments on freedom of expression"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "company",
+        "target_name": "Europol",
+        "predicate": "CIRCULAR_WITH",
+        "properties": {
+          "note": "ESP collaboration with Europol's European Cybercrime Centre"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "risk_factor",
+        "target_name": "ESP_Censorship_Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GenAI_Moderation_Bias",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AI_Data_Ethics_Gap",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Recall_Privacy_Execution_Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Saudi_Arabia_Datacenter_HRDD",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "SELLS_COMPUTE_TO",
+        "target_type": "company",
+        "target_name": "Israel Ministry of Defense"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "SELLS_COMPUTE_TO",
+        "target_type": "company",
+        "target_name": "ExxonMobil"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "SELLS_COMPUTE_TO",
+        "target_type": "company",
+        "target_name": "Chevron"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "SELLS_COMPUTE_TO",
+        "target_type": "company",
+        "target_name": "Schlumberger"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Gaza_Conflict_Misuse"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "China_Startup_Surveillance"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Fossil_Fuel_Customer_Concentration"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Fossil_Fuel_Enabled_Emissions"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "Gaza_Conflict_Misuse"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "China_Startup_Surveillance"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "Human_Rights_HRDD_Gaps"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "Greenwashing_Exposure"
+      }
+    ],
+    "notes": "[chunk 1/4] This beneficial ownership section of Microsoft's DEF 14A contains no SIFI-material entities or relationships beyond boilerplate governance and audit arrangements. The document lists director and executive shareholdings, audit committee operations, and auditor fees. Notable: (1) Reid Hoffman (Greylock Partners) appears as a director but this is disclosed separately; no hidden leverage, circularity, or concentration risk is evident in this section. (2) The auditor relationship with Deloitte (since 1986 IPO) is disclosed and routine. (3) The stock plan section describes standard equity compensation mechanics with no counterparty relationships or off-balance-sheet arrangements. (4) No private AI labs, SPVs, capex commitments, or investments in AI companies are mentioned in this excerpt. The filing excerpt provided does not contain material SIFI-relevant information beyond standard corporate governance.\"\n[chunk 2/4] EXTRACTION SUMMARY: Microsoft DEF 14A (2025-10-21) \u2014 Beneficial Owners section reveals four SIFI-material risk signals tied to AI governance, data ethics, and geopolitical exposure. (1) ESP_Censorship_Risk (severity 2): Microsoft's European Security Program partnerships with EU governments and Europol for AI-powered cybercrime reporting create vague \"hate speech\" / \"harmful content\" risk surfaces. Proposal 5 shareholder concern explicitly cites potential censorship weaponization. (2) GenAI_Moderation_Bias (severity 3): Copilot/Azure OpenAI content moderation policies contain undefined, subjective terms (\"gender identity,\" \"systemic prejudice\") with no disclosed metrics\u2014COST_OPACITY pattern. (3) Recall_Privacy_Execution_Risk (severity 3): Windows Recall screenshot-to-searchable-data feature delayed post-security backlash, then released\u2014execution risk on privacy controls. (4) Saudi_Arabia_Datacenter_HRDD (severity 4, CRITICAL): Datacenter expansion into Saudi Arabia (completed Dec 2024) lacks disclosed human rights due diligence per UN Guiding Principles; State Dept reports Saudi surveillance/censorship capabilities; Microsoft claims Trusted Cloud Principles suffice but provides no enforcement mechanism\u2014reputational + regulatory + operational risk. OpenAI Partnership: While mentioned (extensive partnership, co-development of models), OpenAI appears as separate legal entity managing own data practices; Microsoft discloses arm's-length relationship but inherits reputational/regulatory exposure from OpenAI litigation (NYT copyright suit) and data sourcing allegations. No capex commitments or off-balance SPVs identified in this section. GNI membership provides some third-party assurance on freedom of expression but does not address AI bias or data ethics gaps.\n[chunk 3/4] This DEF 14A (2025-10-21) from Microsoft discloses four SIFI-material risk signals: (1) Gaza conflict\u2014Microsoft has confirmed that the Israeli Ministry of Defense violated its ToS via mass surveillance; Covington & Burling performed a review (2) China Uyghur surveillance\u2014Microsoft accelerator program graduates partnered with Xinjiang police (3) Fossil fuel customer concentration\u2014Microsoft controls ~60% of oil & gas cloud contracts; (4) Enabled emissions\u2014just 2 oil & gas contracts have emissions exceeding Microsoft's total Scope 1-3. The filing admits a critical HRDD gap: Microsoft has no visibility into customer use of its software on their own servers. Microsoft commissioned Covington & Burling for third-party reviews but the scope and methodology remain opaque. No new capex commitments or off-balance-sheet entities are disclosed in this narrative section.\n[chunk 4/4] FILING: MSFT DEF 14A (2025-10-21). SECTION: Beneficial Owners / Stock Plan Rules. ASSESSMENT: This excerpt is purely technical boilerplate defining stock plan administration, eligibility criteria (employees, non-employee directors, consultants), award mechanics (options, SARs, restricted stock), vesting, clawback provisions, and governance. It contains NO SIFI-material business relationships, counterparty concentrations, investments in AI labs, off-balance entities, capex commitments, or hidden leverage. The document makes no mention of: (1) customer or supplier dependencies, (2) investments in private companies or AI labs, (3) related-party transactions, (4) off-balance-sheet entities (SPVs, JVs, leases), (5) capex commitments to third parties, (6) circularity or round-tripping. The references to \"Parent,\" \"Subsidiary,\" and merger/acquisition mechanics are standard plan-administration language with no named counterparties. The single acquisition reference (Section 6(c) re: Conversion Options) is procedural\u2014no specific acquisition is named. CONCLUSION: Zero SIFI-material extraction. Return empty nodes and edges."
+  }
+}

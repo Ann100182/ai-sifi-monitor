@@ -1,0 +1,251 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "aliases": [
+            "ORCL"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Cerner",
+        "fields": {
+          "aliases": [
+            "Cerner Corporation"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ampere Computing",
+        "fields": {
+          "aliases": [
+            "Ampere Computing Holdings LLC"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ampere Computing",
+        "fields": {
+          "role": "supplier",
+          "aliases": [
+            "Ampere Computing Holdings LLC"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Cerner Corporation",
+        "fields": {
+          "aliases": [
+            "Cerner"
+          ]
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Oracle-Ampere-Equity-29pct",
+        "fields": {
+          "investor": "Oracle",
+          "target": "Ampere Computing",
+          "equity_pct": 29,
+          "amount_usd": 1400000000,
+          "disclosed_date": "2024-02-29",
+          "verbatim_quote": "Our equity investments in Ampere represent an ownership interest of approximately 29% as of February 29, 2024."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Oracle-Ampere-ConvertibleDebt-125M",
+        "fields": {
+          "investor": "Oracle",
+          "target": "Ampere Computing",
+          "amount_usd": 125000000,
+          "disclosed_date": "2024-02-29",
+          "verbatim_quote": "During the three months ended February 29, 2024, we invested an additional $125 million in convertible debt instruments issued by Ampere."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Ampere-PutCall-Options",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "Oracle",
+          "co_owner": "Ampere Computing",
+          "purpose": "equity acquisition options",
+          "term_yrs": 3,
+          "verbatim_quote": "we are also a counterparty to certain put (exercisable by a co-investor) and call (exercisable by Oracle) options at prices of approximately $400 million to $1.5 billion, respectively, to acquire additional equity interests in Ampere from our co-investors through January 2027."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-Ampere-LossesRisk",
+        "fields": {
+          "filer": "Oracle",
+          "category": "SUPPLIER_CONCENTRATION",
+          "named_counterparties": [
+            "Ampere Computing"
+          ],
+          "severity": 2,
+          "verbatim_quote": "We currently expect Ampere to continue to generate net losses in future periods but we remain confident in the long-term potential of Ampere's server chips."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Ampere-ConvertibleDebtMaturityRisk",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 1400000000,
+            "duration_yrs": 2,
+            "note": "Convertible debt matures June 2026; potential for conversion to equity or continued losses"
+          },
+          "named_counterparties": [
+            "Ampere Computing"
+          ],
+          "verbatim_quote": "under the terms of an agreement with Ampere and other co-investors, as amended on March 5, 2024, will mature in June 2026 and are convertible into equity securities at the holder's option under certain circumstances."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ampere",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle Financial Services Software Limited",
+        "fields": {
+          "aliases": [
+            "OFSSL"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle Corporation Japan",
+        "fields": {
+          "role": "subsidiary"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Cerner",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "amount_usd": 28200000000,
+          "acquired_date": "2022-06-08",
+          "verbatim_quote": "On June 8, 2022, we completed our acquisition of Cerner Corporation (Cerner), a provider of digital information systems used within hospitals and health systems"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ampere Computing",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "equity_pct": 0.29,
+          "carrying_value_usd": 1400000000,
+          "additional_investment_q3_2024": 125000000,
+          "verbatim_quote": "The majority of the non-marketable investments held as of these dates were with Ampere Computing Holdings LLC (Ampere), a related party entity in which we have an ownership interest of approximately 29% as of February 29, 2024"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ampere Computing",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "verbatim_quote": "Under the terms of an agreement with Ampere and other co-investors, as amended on March 5, 2024, we are also a counterparty to certain put (exercisable by a co-investor) and call (exercisable by Oracle) options at prices of approximately $400 million to $1.5 billion, respectively, to acquire additional equity interests in Ampere from our co-investors through January 2027. If either of such options is exercised by us or our co-investors, we would obtain control of Ampere and consolidate its results with our results of operations."
+        }
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ampere Computing"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Ampere Computing",
+        "target_type": "company",
+        "target_name": "Oracle"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Ampere-ConvertibleDebtMaturityRisk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "Oracle-Ampere-LossesRisk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ampere",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Oracle Financial Services Software Limited",
+        "predicate": "NAMES_COUNTERPARTY"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Oracle Corporation Japan",
+        "predicate": "NAMES_COUNTERPARTY"
+      }
+    ],
+    "notes": "[chunk 1/3] EXTRACTION SUMMARY for Oracle 10-Q (2024-03-12):\n\n**Key SIFI-Material Findings:**\n\n1. **Cerner Acquisition (Jun 2022):**\n   - Total: $28.2B ($28.2B cash + $55M in stock awards)\n   - Recorded $18.6B goodwill, $12.0B intangible assets, $2.4B net tangible liabilities\n   - Integrated into Cloud and License segment\n   - Represents ~21% of total assets (~$137B)\n\n2. **Ampere Computing Investment:**\n   - Oracle holds ~29% equity stake\n   - Carrying value: $1.4B as of Feb 29, 2024\n   - Q3 2024 additional investment: $125M in convertible debt (matures June 2026)\n   - Co-investor options: Put/call options at $400M\u2013$1.5B through Jan 2027 for control\n   - **Consolidated control risk**: If options exercised, Ampere consolidates onto Oracle balance sheet\n   - Historical: Ampere has \"generated net losses\"\n   - Equity method losses recorded in \"Non-Operating Expenses, net\" ($290M nine-month equity investment losses)\n\n3. **Financial Metrics:**\n   - Total goodwill: $62.2B (45% of total assets)\n   - Intangible assets: $7.6B net\n   - Remaining performance obligations: $80.2B\n   - Debt: $87.98B ($5.51B current + $82.47B non-current)\n   - Stockholders' equity: $6.2B (only 4.5% of assets \u2014 highly leveraged)\n\n4. **Risks Noted but NOT Extracted (Boilerplate):**\n   - Generic R&D investment, market competition, tax audit outcomes, standard FX hedging, routine legal proceedings, international operations exposure\n   - These are disclosed but not SIFI-material at this filing\n\n**Excluded Entities:**\n   - Oracle Financial Services Software Limited (noncontrolling interest noted, but immaterial subsidiary)\n   - Oracle Corporation Japan (noncontrolling interest, immaterial)\n   - Generic \"customers\" and \"partners\" without specific naming or concentration data\n\n**No Hidden Leverage SPVs Detected:**\n   - No project finance, VIEs, or operating leases with residual value guarantees explicitly disclosed in this excerpt\n   - Financing receivable sales ($1.1B for 9 months) are standard securitization (non-recourse to Oracle within 90 days)\n\n**Severity Justification:**\n- Ampere options risk = Severity 2 (CONCERN): Embedded leverage (if options trigger, consolidation adds $1.5B+ contingent liability); co-investor veto rights; ongoing losses\n[chunk 2/3] FILING CONTEXT: Oracle 10-Q filed 2024-03-12. SOURCE: Item 1 Business narrative and MD&A sections on investments and related-party arrangements. EXTRACTION NOTES: (1) Ampere Computing is a critical supplier relationship \u2014 Oracle holds 29% equity stake + convertible debt ($1.4B total carrying value as of 2024-02-29) + embedded put/call options. (2) Convertible debt matures June 2026; potential consolidation trigger if Oracle exercises call options or co-investor exercises put. (3) Ampere expected to continue generating losses \u2014 raises execution risk on Oracle's infrastructure stack (server chips). (4) Cerner acquisition is mentioned but no material supplier/customer details extracted. (5) No circular revenue or off-balance SPV structures identified in this section. (6) Deferred revenues ($10.2B as of 2024-02-29) represent prepaid cloud/support contracts \u2014 standard SaaS accounting, not a SIFI signal. (7) Stock buyback program ($7.1B remaining authorization) and dividend declarations are routine capital allocation, not extracted as SIFI entities.\"\n[chunk 3/3] EXTRACTION SUMMARY: Oracle 10-Q (2024-03-12). This 10-Q is a narrative business update focused on segment performance (cloud/license, hardware, services) and does NOT contain SIFI-material risk signals. Key findings: (1) OPERATING LEASES: Oracle discloses $18.8B in operating lease commitments for data centers with 9-15 year terms, but these are NOT accounted as RVGs (residual value guarantees) \u2014 they are genuine operational leases for capacity, not SPVs. (2) CAPEX SIGNAL: Oracle reduced capex from $8.2B (trailing 4Q FY2023) to $5.98B (trailing 4Q FY2024), a 27% decrease. The filing states \"unconditional purchase obligations\" of $4.4B mostly expected to settle within 12 months \u2014 this is routine procurement, NOT a hidden capex commitment. (3) INVESTMENTS: Oracle names only Ampere as an equity investment with losses (\"net losses related to equity investments, including losses attributable to equity method investments (primarily Ampere)\"). No dollar amount disclosed, and Ampere is a known semiconductor design/CPU vendor, not an AI lab. No evidence of circularity, revenue roundtripping, or customer concentration >10%. (4) SUBSIDIARIES: Oracle Financial Services Software Limited and Oracle Corporation Japan are disclosed as majority-owned, with noncontrolling interest items (~$51M and $130M net income) \u2014 boilerplate consolidation accounting. (5) RISK: The filing references Note 11 for \"legal contingencies\" but does not quote any SIFI-specific risks; Item 1A defers to FY2023 10-K, so no new risks are disclosed here. (6) RELATED PARTIES: No evidence of circular revenue arrangements, round-tripping, or undisclosed counterparty dependencies. Cloud/license revenue of $32.4B (9M FY2024) is split across geographies (Americas 63%, EMEA 24%, APAC 13%) with no single customer concentration mentioned. CONCLUSION: This 10-Q contains NO SIFI-material entities beyond the baseline hyperscaler profile. The operating leases are routine data center commitments (not off-balance-sheet leverage), capex is declining (not a ROI gap), and the only investment named is Ampere (non-SIFI, equity-method only). No risk factors, hidden leverage, circularity, or execution risk signals warrant extraction as risk_factor or hidden_risk_signal nodes."
+  }
+}

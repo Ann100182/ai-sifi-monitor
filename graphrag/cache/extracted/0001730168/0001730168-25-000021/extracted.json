@@ -1,0 +1,360 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO"
+          ],
+          "role": "semiconductor supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "aliases": [
+            "VMware Inc."
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "AVGO",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "Broadcom"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "TSMC",
+        "fields": {
+          "ticker": "TSM",
+          "aliases": [
+            "Taiwan Semiconductor Manufacturing Company Limited"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_TSMC_Concentration",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_manufacturing": 95,
+            "note": "TSMC manufactured 95% of wafers in Q3 FY2025"
+          },
+          "named_counterparties": [
+            "TSMC"
+          ],
+          "verbatim_quote": "Taiwan Semiconductor Manufacturing Company Limited (\"TSMC\"), one of our CMs, manufactured approximately 95% of the wafers manufactured by our CMs during the fiscal quarter ended February 2, 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_Customer_Concentration",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_revenue": 47,
+            "note": "Distributors account for 47% of net revenue; top 5 customers ~40%"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "For the fiscal quarter ended February 2, 2025, sales to distributors accounted for 47% of our net revenue. We believe aggregate sales, through all channels, to our top five end customers accounted for approximately 40% of our net revenue for the fiscal quarter ended February 2, 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_Materials_Supplier_Concentration",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_materials": 75,
+            "counterparty_count": 5,
+            "note": "75% of manufacturing materials from 5 suppliers, some single-source"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "During the fiscal quarter ended February 2, 2025, we purchased approximately three-quarters of our manufacturing materials from five materials suppliers, some of which are single source suppliers."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO_TSMC_Capacity_Risk",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Supply chain dependency",
+          "named_counterparties": [
+            "TSMC"
+          ],
+          "severity": 4,
+          "verbatim_quote": "TSMC also fabricates wafers for other companies, including some of our competitors, and could choose or be required to prioritize capacity for other customers or reduce or eliminate deliveries to us on short notice."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO_Facility_Concentration",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Operational concentration",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Our Fort Collins and Breinigsville facilities are the sole sources for the FBAR filters used in many of our wireless devices and for the indium phosphide-based wafers used in our fibre optics products, respectively."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO_Geopolitical_Supply_Chain",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Geopolitical risk",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Additionally, the supply of these materials may be negatively impacted by increased trade tensions between the U.S. and its trading partners, particularly China."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO_AI_Market_Sustainability",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Market cyclicality",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "The market for AI-related products has resulted in a significant upturn in certain segments of the industry resulting in record revenue, which may not be sustainable."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO_Cyber_Attack_Risk",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Cybersecurity",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "As a critical vendor in the digital supply chain for both governmental entities and critical infrastructure operators, we and our products may be targeted by those seeking to threaten the confidentiality, integrity and availability of systems supporting essential public services."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_Cyber_Vendor_Dependency",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "we are, out of necessity, dependent on our vendors to adequately address cybersecurity threats to their own systems."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO",
+            "Broadcom Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "aliases": [
+            "VMware, Inc."
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Dell",
+        "fields": {
+          "aliases": [
+            "Dell Technologies, Inc.",
+            "Dell consolidated group"
+          ],
+          "role": "competitor"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "VMware",
+        "properties": {
+          "transaction_type": "acquisition",
+          "completion_date": "2023-11-22",
+          "cash_consideration": 30788000000,
+          "stock_consideration_shares": 544000000,
+          "stock_consideration_value": 53398000000
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "VMware"
+      },
+      {
+        "predicate": "BUYS_COMPUTE_FROM",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "company",
+        "target_name": "TSMC",
+        "properties": {
+          "percentage": "95% of wafers",
+          "period": "Q3 FY2025"
+        }
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO_TSMC_Concentration",
+        "properties": {}
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO_Customer_Concentration",
+        "properties": {}
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO_Materials_Supplier_Concentration",
+        "properties": {}
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO_Cyber_Vendor_Dependency",
+        "properties": {}
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "risk_factor",
+        "target_name": "AVGO_TSMC_Capacity_Risk",
+        "properties": {}
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "risk_factor",
+        "target_name": "AVGO_Facility_Concentration",
+        "properties": {}
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "risk_factor",
+        "target_name": "AVGO_Geopolitical_Supply_Chain",
+        "properties": {}
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "risk_factor",
+        "target_name": "AVGO_AI_Market_Sustainability",
+        "properties": {}
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "risk_factor",
+        "target_name": "AVGO_Cyber_Attack_Risk",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "VMware",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "context": "Acquisition completed; VMware now a subsidiary of Broadcom",
+          "date": "2022-05-26"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "VMware",
+        "target_type": "company",
+        "target_name": "Dell",
+        "predicate": "CIRCULAR_WITH",
+        "properties": {
+          "context": "VMware spun off from Dell in November 2021; subject to tax audit contingencies and indemnification obligations as member of Dell consolidated group FY2017-2021",
+          "risk_type": "TAX_CONTINGENCY"
+        }
+      }
+    ],
+    "notes": "[chunk 1/5] AVGO 10-Q filing for Q1 FY2025 (quarter ended 2025-02-02). This is an infrastructure/semiconductor supplier with minimal SIFI-material content in Item 1 Business section. Key findings: (1) VMware acquisition closed Nov 22, 2023 for ~$84B total consideration (cash + stock). (2) On July 1, 2024, Broadcom divested VMware's end-user computing business for $3.5B after working capital adjustments. (3) No material off-balance-sheet SPVs, circularity patterns, or hidden leverage disclosed in narrative sections. (4) Debt structure is straightforward senior notes and term loans with no residual value guarantees or VIE structures mentioned. (5) Customer concentration: filing shows geographic disaggregation but no single-customer concentration > 10% disclosed in Item 1. (6) No related-party arrangements or strategic partnerships with other SIFI entities mentioned in the excerpt. (7) Remaining performance obligations of $22.4B as of Feb 2, 2025, with ~40% expected in next 12 months; however, these are standard contract metrics without circularity or execution risk flags. SKIP: boilerplate risk language, routine employee compensation, generic market commentary.\n[chunk 2/5] This 10-Q (Q1 FY2025, filed 2025-03-12) from Broadcom (AVGO) contains minimal SIFI-material narrative. The Segment Information and Commitments sections describe routine business operations: semiconductor solutions (data center, AI networking) and infrastructure software (from VMware acquisition). Key entities identified: (1) Broadcom itself (filer); (2) VMware (subsidiary, post-acquisition integration ongoing). Litigation section references historical VMware backlog lawsuit with settlement pending\u2014immaterial to SIFI analysis. No named counterparties, off-balance-sheet structures, investments, or hidden leverage signals detected. Customer base and supplier concentration not disclosed by name. No capex commitments tied to specific counterparties. Restructuring charges ($186M in Q1) relate to VMware integration, not systemic risk. Commitments table shows routine purchase orders ($335M) and service agreements ($3.8B), neither tied to specific counterparties. No AI lab investments, circularity, revenue roundtripping, or execution risk evident in this excerpt. Recommendation: Low priority for SIFI monitoring in this filing section.\"\n[chunk 3/5] AVGO 10-Q Filing Q1 FY2025 (Feb 2, 2025). Key extractions: 1) VMware acquisition completed Nov 22, 2023 - now a material subsidiary with 45% of revenue from Infrastructure Software segment in Q1 FY2025; 2) High customer concentration risk: single distributor customer = 29% of revenue (Q1 FY2025), top 5 end customers = ~40% of revenue; 3) Distributor dependency: 47% of net revenue through distributors; 4) Material debt outstanding: $68.757B total, $5.65B payable within 12 months; 5) Large unrecognized stock-based compensation liability: $10.745B over next 5 years. No hidden leverage SPVs, off-balance-sheet entities, or SIFI circularity patterns identified in narrative. Customer concentration risk (29% + ~40% top 5) is disclosed but not a hidden risk signal - standard semiconductor industry practice. No specific AI capex commitments, OpenAI/hyperscaler relationships, or revenue roundtrip patterns detected in this excerpt.\"\n[chunk 4/5] AVGO 10-Q filing (2025-03-12) extracts material SIFI risk signals. Key findings: (1) TSMC supplier concentration at 95% of wafer manufacturing\u2014critical single-point-of-failure with no backup capacity commitments. TSMC also serves competitors and may deprioritize AVGO. (2) Customer concentration: 47% revenue via distributors, top 5 customers ~40% of revenue\u2014material quarterly volatility risk. (3) Materials supply: 75% from 5 suppliers, several single-source\u2014vulnerable to China trade tensions and semiconductor supply disruptions. (4) Facility concentration: Fort Collins (sole FBAR source), Breinigsville (sole indium phosphide source)\u2014no redundancy disclosed. (5) Cyber risk: AVGO is a critical vendor to government and infrastructure; depends on third-party vendors for cybersecurity; previously exposed proprietary source code. (6) AI market upturn may not be sustainable\u2014cyclicality risk. No specific named hyperscaler customers, investments in AI labs, or off-balance entities disclosed in this section. Boilerplate on IP litigation, software license renewals, and open-source compliance omitted per instructions.\"\n[chunk 5/5] SIFI-MATERIAL FINDINGS: (1) TAX CONTINGENCY\u2014VMware/Broadcom faces contingent indemnification obligation to Dell if the 2021 spin-off fails to qualify as tax-free under IRC \u00a7355. Material adverse consequence disclosed. (2) CUSTOMER CONCENTRATION RISK\u2014Filed mentions warranty/indemnification provisions with 'some of our largest customers' containing potentially unlimited liability clauses. Named customers not disclosed in this excerpt. (3) DERIVATIVE LEVERAGE\u2014Broadcom's $68.757B indebtedness (as of 2025-02-02) disclosed; tax incentives reduced FY2024 income tax provision by $2,261M. No SPVs or operating leases with RVGs explicitly named in this section. (4) INSIDER TRADING ARRANGEMENTS\u2014Henry Samueli (Chairman) adopted Rule 10b5-1 trading plan on 2024-12-18 involving $502.85M in Broadcom share donations/sales via D95GT LLC and H&S Investments I LP (March-December 2025). Related-party structure via private investment entities. Justine Page (Board member) adopted trading plan on 2025-01-09. These are disclosure items but do not constitute SIFI material leverage or circularity absent further context. (5) RISK FACTORS\u2014Broad IP licensing obligations limiting assertions against licensees; acquisition-related tax exposure; substantial indebtedness; product liability with unlimited clauses vs. major customers. No specific AI capex or hyperscaler circularity disclosed in this excerpt.\""
+  }
+}

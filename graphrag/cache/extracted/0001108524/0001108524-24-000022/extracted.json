@@ -1,0 +1,361 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Slack",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Spiff",
+        "fields": {
+          "role": "customer",
+          "aliases": []
+        }
+      },
+      {
+        "type": "investment",
+        "name": "CRM-Strategic-Portfolio",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Multiple Private Companies",
+          "amount_usd": null,
+          "equity_pct": null,
+          "round": null,
+          "disclosed_date": "2024-07-31",
+          "verbatim_quote": "The Company is also exposed to concentrations of risk in its strategic investment portfolio, including within specific industries, as the Company primarily invests in enterprise cloud companies, technology startups and system integrators."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-Investment-Concentration",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Strategic Investment Portfolio Concentration",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "As of July 31, 2024, the Company held two investments, both privately held, with carrying values that were individually greater than five percent of its total strategic investments portfolio and represented approximately 15 percent of the portfolio in the aggregate."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Investment-Valuation-Opacity",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 5017000000,
+            "note": "Privately held equity and debt securities valued on non-recurring basis using Level 3 unobservable inputs"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The estimation of fair value for these investments requires the use of significant unobservable inputs, and as a result, the Company deems these assets as Level 3 within the fair value measurement framework."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Intangible-Goodwill",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 48941000000,
+            "pct_of_assets": null,
+            "note": "Goodwill increased by $323M from Spiff acquisition; generally not deductible for tax purposes"
+          },
+          "named_counterparties": [
+            "Spiff"
+          ],
+          "verbatim_quote": "Goodwill represents the excess of the purchase price in a business combination over the fair value of net assets acquired."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "SFDC"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Slack",
+        "fields": {
+          "aliases": [
+            "Slack Technologies, Inc."
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Spiff",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM",
+            "Salesforce.com"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Salesforce-Strategic-Portfolio",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Various private and public companies",
+          "equity_pct": null,
+          "round": null,
+          "disclosed_date": "2024-07-31",
+          "verbatim_quote": "Our ten largest privately held equity securities represent 38 percent of our total strategic investments as of July 31, 2024. If the enterprise value of the companies in which we hold those securities decreased by ten percent, the carrying value of our investment portfolio would decline by approximately $124 million."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Investment-Concentration",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 124000000,
+            "pct_of_revenue": null,
+            "pct_of_assets": null,
+            "counterparty_count": 10,
+            "note": "Top 10 private investments represent 38% of strategic investment portfolio; 10% decline in enterprise value correlates to ~$124M portfolio impact"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Our ten largest privately held equity securities represent 38 percent of our total strategic investments as of July 31, 2024. If the enterprise value of the companies in which we hold those securities decreased by ten percent, the carrying value of our investment portfolio would decline by approximately $124 million."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-AI-Development-Cost-Opacity",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": null,
+            "pct_of_revenue": null,
+            "pct_of_assets": null,
+            "duration_yrs": null,
+            "counterparty_count": null,
+            "note": "Unquantified costs for AI licensing, development, testing, and compute infrastructure"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Uncertainty around new and emerging AI applications such as generative AI content creation will require additional investment in the licensing or development of proprietary datasets, machine learning models and systems to test for accuracy, bias and other variables, which are often complex, may be costly and could impact our profit margin."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Third-Party-Data-Center-Dependency",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": null,
+            "pct_of_revenue": null,
+            "pct_of_assets": null,
+            "duration_yrs": null,
+            "counterparty_count": null,
+            "note": "Reliance on third-party cloud computing platforms for production environment and customer data"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We currently rely on third-party data center hosting facilities and cloud computing platform providers located in the United States and other countries to deliver our products, services and business operations and to operate critical business systems... As we increase our reliance on these third-party systems, particularly with respect to third-party cloud computing platforms, our exposure to damage from service interruptions or other performance or quality issues may increase."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Acquisition-Integration-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": null,
+            "pct_of_revenue": null,
+            "pct_of_assets": null,
+            "duration_yrs": null,
+            "counterparty_count": null,
+            "note": "Slack acquisition and other M&A activity expose Salesforce to integration complexity and inherited liabilities"
+          },
+          "named_counterparties": [
+            "Slack"
+          ],
+          "verbatim_quote": "Our exposure to risks associated with various claims, including claims related to the use of intellectual property as well as securities and related stockholder derivative claims, may be increased as a result of acquisitions of other companies. For example, we are subject to ongoing securities class action litigation and related stockholder derivative claims brought against Slack that remain outstanding, and as to which we may ultimately be subject to liability or settlement costs."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Revenue-Concentration-Subscription-Model",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": null,
+            "pct_of_revenue": null,
+            "pct_of_assets": null,
+            "duration_yrs": null,
+            "counterparty_count": null,
+            "note": "Majority of revenue from CRM subscriptions; delays in revenue recognition for enterprise customers"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We derive a majority of our revenue from subscriptions to our CRM enterprise cloud computing application services, and we expect this will continue for the foreseeable future... larger customers and governmental entities often demand more configuration, integration services and features... these sales opportunities often require us to devote greater sales support and professional services resources to individual customers, driving up costs and time required to complete sales and diverting our own sales and professional services resources to a smaller number of larger transactions, while potentially requiring us to delay revenue recognition on some of these transactions until the technical or implementation requirements have been met."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "CITES_RISK",
+        "target_type": "company",
+        "target_name": "Slack",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Spiff",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "amount_usd": 419000000,
+          "date": "2024-02",
+          "structure": "acquisition"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "risk_factor",
+        "target_name": "CRM-Investment-Concentration",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Investment-Valuation-Opacity",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Intangible-Goodwill",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "predicate": "SPONSORS",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Slack"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Spiff",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition",
+          "amount_usd": 338000000.0,
+          "period": "six months ended July 31, 2024"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "investment",
+        "target_name": "Salesforce-Strategic-Portfolio",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Investment-Concentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-AI-Development-Cost-Opacity",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Third-Party-Data-Center-Dependency",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Acquisition-Integration-Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Revenue-Concentration-Subscription-Model",
+        "predicate": "HAS_RISK_SIGNAL"
+      }
+    ],
+    "notes": "[chunk 1/6] CRM 10-Q filing (2024-08-29) examined for SIFI-material entities and relationships. Filing is primarily numeric XBRL data with limited narrative text. The provided source text is predominantly XML/XBRL taxonomy tags and financial statement line items with no readable business narrative, Item 1 Business description, related-party arrangements, customer concentration data, or investment details. Minimal extractable SIFI content: only reference found is a litigation member tag 'crm:SlackLitigationMember' (dated 2019-09) indicating a past lawsuit between Salesforce and Slack, but this is dated and does not reflect active SIFI material relationships. No customer concentration >10%, no significant investments in private AI labs disclosed, no off-balance-sheet entities, no capex commitments to counterparties, no revenue roundtripping, no circular dependencies detected in the provided text excerpt. No material supplier or customer concentration risks disclosed. No strategic partnerships or related-party transactions at SIFI scale identified in this excerpt. The full narrative sections (Item 1 Business, risk factors, MD&A) are not provided in the source text; only structural metadata and financial tables are present.\"\n[chunk 2/6] EXTRACTION SUMMARY FOR SALESFORCE 10-Q (2024-08-29):\n\nKey SIFI-material findings:\n\n1. **STRATEGIC INVESTMENT CONCENTRATION (Risk)**: Salesforce holds a concentrated portfolio of private cloud/tech startups. Two investments individually exceed 5% of portfolio value, representing ~15% in aggregate as of July 31, 2024 ($5.0B total). This creates concentration risk but no single customer/supplier dependency is disclosed.\n\n2. **VALUATION OPACITY \u2013 Level 3 Unobservable Inputs**: $5.0B in privately held debt and equity securities measured on non-recurring basis using significant unobservable inputs (Level 3 fair value hierarchy). The company acknowledges reliance on \"market approach and option pricing models\" with subjective assumptions (volatility, time-to-liquidity). Impairments of $190M recorded in 6M FY2025 indicate material mark-downs.\n\n3. **GOODWILL ACCUMULATION**: $48.9B in consolidated goodwill (up $323M from Spiff acquisition in Feb 2024). Goodwill is non-deductible for U.S. tax purposes. Recent Spiff acquisition added $323M goodwill on $419M purchase price, suggesting 77% of deal value is goodwill/intangibles\u2014typical for SaaS M&A but material opacity risk.\n\n4. **NO CUSTOMER/SUPPLIER CONCENTRATION**: Explicitly disclosed \"No single customer accounted for ten percent or more of accounts receivable\" and \"No single customer accounted for ten percent or more of total revenue.\" Geographic concentration: 93% of Americas revenue is U.S.; assets 83% U.S.-located. No SIFI-material supplier dependencies identified.\n\n5. **NO HIDDEN LEVERAGE SIGNALS**: Operating and finance leases are disclosed; total operating lease liabilities $2.963B as of July 31, 2024. No SPVs, VIEs with consolidation issues, or residual value guarantees identified. Note 3 mentions $429M in VIEs (non-consolidated), but these are strategic investments, not operating SPVs.\n\n6. **REVENUE RECOGNITION COMPLEXITY**: Noncancellable subscription contracts with ratable revenue recognition over contract term. Remaining performance obligation $53.5B (current $26.5B, noncurrent $27.0B). No revenue roundtripping or circularity detected.\n\n7. **RESTRUCTURING COSTS**: $107M in restructuring charges (H1 FY2025), primarily workforce reduction. Liability of $69M accrued. Immaterial to SIFI analysis.\n\nENTITIES EXTRACTED:\n- **Salesforce** (company, hyperscaler): Primary filer; $18.5B revenue (6M FY2025); multi-tenant SaaS platform.\n- **Spiff** (company, acquired): $419M acquisition (Feb 2024); incentive compensation platform; now fully consolidated.\n- **Strategic Investment Portfolio** (investment note): ~15% concentration in two unnamed private companies; no names disclosed in this excerpt.\n\nNO AI LABS, CAPEX COMMITMENTS, CIRCULAR RELATIONSHIPS, or MATERIAL REVENUE ROUNDTRIPS identified in this section.\n\nSEVERITY RATINGS:\n- Investment portfolio concentration: **2/5** (watch) \u2014 15% in two names is material but below 25% threshold typical for SIFI concern.\n- Valuation opacity (Level 3): **2/5** (concern) \u2014 $5.0B requires ongoing impairment testing; recent impairments ($190M) show mark-downs are occurring.\n- Goodwill opacity: **2/5** (watch) \u2014 $48.9B non-deductible goodwill is typical for mature SaaS company but creates P&L risk if impairment required.\n\"\n[chunk 3/6] This 10-Q excerpt contains minimal SIFI-material content. The document primarily focuses on routine quarterly financial performance (revenues, operating expenses, cash flows) and standard equity compensation disclosures. The Slack litigation is disclosed (Item 13) but represents standard IP/securities litigation risk, not a SIFI-material hidden leverage, circularity, or concentration pattern. No major related-party transactions, off-balance-sheet arrangements, strategic partnerships with hyperscalers or AI labs, capex commitments to specific counterparties, or customer/supplier concentrations > 10% are identified in the provided excerpt. The 'Losses on strategic investments, net' line items ($37M Q1 loss, $190M impairments in H1 2025) suggest Salesforce holds a portfolio of private equity investments, but the filer does not disclose named investees or amounts in this section. The excerpt does not reference any counterparty dependencies, circular relationships, or execution risks tied to infrastructure, AI capex, or compute procurement. The Restructuring Plan (2023 onward) and ongoing workforce/real estate optimization are routine operational adjustments, not SIFI-material leverage or contingency risks.\"\n[chunk 4/6] ANALYSIS: The filing reveals minimal SIFI-material exposure in this narrative section. Salesforce explicitly discloses: \"We do not have any special purpose entities and we do not engage in off-balance sheet financing arrangements.\" This eliminates hidden leverage as a concern. The company maintains a $3.0B revolving credit facility (undrawn) and $8.4B in senior unsecured debt with maturities extending to 2061\u2014routine capital structure. Share repurchase programs ($30B authorization) and dividend payments are disclosed in standard format with no related-party complexity. No customer or supplier concentration risk is named; the text references \"offices, information technology and data centers, as well as investments with infrastructure service providers\" but provides no counterparty names or materiality thresholds. Foreign currency hedging is explicitly non-speculative (forward contracts, short-term, no accounting hedge designations). The strategic investment portfolio of 400+ companies totaling $5.0B is diversified; two privately held positions exceed 5% individually but are not named in the excerpt. The only transaction of note is the Spiff acquisition ($338M), which appears to be a standard bolt-on acquisition without off-balance-sheet mechanics. No AI lab relationships, circularity, or revenue roundtripping are disclosed. No executive compensation related-party issues are mentioned in this excerpt. Result: Below SIFI threshold. Extract only the acquisition as an edge; no risk signals warrant elevation.\"\n\n[chunk 5/6] Filing: Salesforce 10-Q (CRM), filed 2024-08-29. Extracted SIFI-material risks from Items 1A (Risk Factors) and Item 1 (Business). Key findings: (1) Top 10 private investments = 38% of strategic portfolio (~$124M at-risk from 10% valuation decline) \u2014 concentration risk signal. (2) AI development and compute costs remain unquantified but described as 'complex, may be costly and could impact profit margin' \u2014 cost opacity. (3) Heavy reliance on third-party cloud providers (AWS, Azure, GCP) for production environment and customer data replication \u2014 execution/dependency risk. (4) Slack acquisition litigation and ongoing securities class actions create inherited liability exposure \u2014 M&A integration risk. (5) Revenue heavily concentrated in CRM subscriptions with delayed recognition for large enterprise customers \u2014 creates timing misalignment between cost incurrence and revenue recognition. No disclosed capex commitments to specific AI infrastructure counterparties or off-balance-sheet entities identified in this filing section. No circularity detected between Salesforce and major AI labs or compute providers. Note: This extraction focuses only on the provided 'general section' (Business, Risk Factors, Controls & Procedures, Legal Proceedings); full 10-Q would require review of footnotes, MD&A, and financial statements for capex details, lease terms, and investment roster.\"\n[chunk 6/6] No SIFI-material entities extracted. The provided text contains only routine administrative disclosures: (1) three Rule 10b5-1 trading arrangements by executives (Sabastian Niles, Maynard Webb, David Schmaier) for share sales \u2014 standard insider trading compliance mechanics with no counterparty or circularity relevance; (2) exhibit index and signature pages \u2014 boilerplate SEC filing closure. No named business relationships, customer/supplier concentrations, related-party arrangements, investments, acquisitions, or counterparty dependencies are present. The filing section provided does not include substantive narrative from Item 1 (Business), Item 1A (Risk Factors), or MD&A that would typically surface SIFI-material information."
+  }
+}

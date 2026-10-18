@@ -1,0 +1,449 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier",
+          "aliases": [
+            "International Business Machines Corporation"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "HashiCorp",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "aliases": [
+            "International Business Machines Corporation"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "HashiCorp",
+        "fields": {
+          "aliases": [
+            "HashiCorp, Inc."
+          ],
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "HashiCorp-Acquisition-$7.4B",
+        "fields": {
+          "filer": "IBM",
+          "amount_usd": 7433000000,
+          "counterparty": "HashiCorp",
+          "purpose": "Acquisition of infrastructure and application management platform for hybrid cloud and AI strategy",
+          "verbatim_quote": "IBM's and HashiCorp's combined portfolios will help clients manage growing application and infrastructure complexity and create a comprehensive end-to-end hybrid cloud platform designed for the AI era."
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Software AG",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "IBM International Capital Pte. Ltd.",
+        "fields": {
+          "entity_type": "SPV",
+          "sponsor": "IBM",
+          "beneficiary": "IBM",
+          "debt_stack_usd": 5500000000,
+          "term_yrs": 30,
+          "purpose": "Finance subsidiary to borrow money for IBM and affiliates",
+          "verbatim_quote": "IBM International Capital Pte. Ltd (IIC), a wholly owned finance subsidiary of the company, issued $5.5 billion of U.S. dollar fixed-rate notes (IIC Notes) in tranches with maturities ranging from 2 to 30 years and coupons ranging from 4.6 to 5.3 percent. IIC is a 100 percent owned finance subsidiary of IBM, as described by the SEC in Rule 13-01(a)(4)(vi) of Regulation S-X, the primary purpose of which is to borrow money to be made available for the benefit of IBM and its affiliates. The IIC Notes are fully and unconditionally guaranteed by IBM"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "HashiCorp",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Software AG",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "StreamSets",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "webMethods",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "HashiCorp",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Software AG",
+        "fields": {
+          "role": "divestor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Red Hat",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "IBM-Financing",
+        "fields": {
+          "entity_type": "VIE",
+          "sponsor": "IBM",
+          "beneficiary": "IBM",
+          "debt_stack_usd": 10022000000,
+          "term_yrs": null,
+          "purpose": "Client and commercial financing for IBM hardware, software and services",
+          "verbatim_quote": "Financing provides financing solutions predominantly for IBM's external client assets, and the debt used to fund Financing assets is primarily comprised of intercompany loans."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-Consulting-Discretionary-Exposure",
+        "fields": {
+          "filer": "IBM",
+          "category": "customer_spending_sensitivity",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "There are areas of our portfolio that could see greater variability in the event that the macroeconomic environment deteriorates. This includes Consulting which is more sensitive to discretionary pullbacks and DOGE related initiatives, consumption-based services in Software, including in Red Hat, and areas of Distributed Infrastructure."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Financing-Credit-Deterioration",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 10022000000,
+            "pct_of_assets": null,
+            "duration_yrs": null,
+            "counterparty_count": null,
+            "note": "Financing receivables quality declining; credit loss reserves increasing; segment profit margin compressed from 47.7% to 35.8% YoY"
+          },
+          "named_counterparties": [
+            "IBM"
+          ],
+          "verbatim_quote": "Segment profit decreased 25.5 percent to $69 million and segment profit margin decreased (11.8) points to 35.8 percent, respectively, compared to the prior-year period driven primarily by higher unallocated credit loss reserve requirements in the current year which reflects current economic conditions."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-IRS-Transfer-Pricing-Exposure",
+        "fields": {
+          "filer": "IBM",
+          "category": "tax_contingency",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 3,
+          "verbatim_quote": "The U.S. Internal Revenue Service (IRS) has proposed adjustments related to certain cross-border transactions with respect to the company's 2013-2014 and 2015-2016 U.S. income tax returns, which if sustained, would increase the company's income subject to tax by approximately $4.2 billion for the 2013-2014 audit cycle and approximately $1.2 billion for the 2015-2016 audit cycle."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-India-Tax-Disputes",
+        "fields": {
+          "filer": "IBM",
+          "category": "tax_contingency",
+          "named_counterparties": [
+            "India"
+          ],
+          "severity": 2,
+          "verbatim_quote": "The company is involved in a number of income tax-related matters in India challenging tax assessments issued by the India Tax Authorities. As of March 31, 2025, the company had recorded approximately $430 million as prepaid income taxes in India."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Tax-Contingency-Unrecognized",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 8905000000,
+            "pct_of_revenue": null,
+            "duration_yrs": null,
+            "counterparty_count": null,
+            "note": "Unrecognized tax benefits; $5.7B in timing and transfer pricing adjustments; $430M India prepaid taxes"
+          },
+          "named_counterparties": [
+            "USG",
+            "India"
+          ],
+          "verbatim_quote": "The amount of unrecognized tax benefits at March 31, 2025 is $8,905 million which can be reduced by $617 million associated with timing adjustments, potential transfer pricing adjustments, and state income taxes."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "IBM-z17-Launch-Capex",
+        "fields": {
+          "filer": "IBM",
+          "amount_usd": null,
+          "duration_yrs": null,
+          "start_fy": 2025,
+          "counterparty": null,
+          "purpose": "z17 infrastructure launch with supply chain buildout",
+          "verbatim_quote": "Given the current global trade dynamics, we proactively took actions to bolster our supply chain ahead of our z17 launch, resulting in higher inventory levels."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "HashiCorp",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition",
+          "close_date": "2025-02-27",
+          "form": "10-Q",
+          "section": "Note on Acquisitions"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "HashiCorp",
+        "predicate": "INVESTED_IN",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "capex_commitment",
+        "target_name": "HashiCorp-Acquisition-$7.4B",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "company",
+        "target_name": "Software AG",
+        "properties": {
+          "transaction": "Acquisition of StreamSets and webMethods",
+          "date": "2024-07-01"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "BENEFITS",
+        "target_type": "off_balance_entity",
+        "target_name": "IBM International Capital Pte. Ltd.",
+        "properties": {
+          "structure": "Finance subsidiary guarantee"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "HashiCorp",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "timing": "Q1 2025",
+          "description": "Acquisition closing"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "StreamSets",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "timing": "December 2023",
+          "description": "Acquired from Software AG"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "webMethods",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "timing": "December 2023",
+          "description": "Acquired from Software AG"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Software AG",
+        "target_type": "company",
+        "target_name": "StreamSets",
+        "predicate": "SUPPLIES",
+        "properties": {
+          "timing": "Pre-acquisition"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Software AG",
+        "target_type": "company",
+        "target_name": "webMethods",
+        "predicate": "SUPPLIES",
+        "properties": {
+          "timing": "Pre-acquisition"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "HashiCorp",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "amount_usd": 7098000000,
+          "disclosed_date": "Q1 2025",
+          "context": "acquisition completed in Q1 2025"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Software AG",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "context": "Prior acquisition of StreamSets and webMethods; foreign exchange derivative contracts incurred pre-acquisition"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Red Hat",
+        "predicate": "SUPPLIES",
+        "properties": {
+          "context": "Red Hat subsidiary subject to consumption-based service variability in downturn"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "off_balance_entity",
+        "target_name": "IBM-Financing",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {
+          "context": "Intercompany financing debt supporting client/commercial receivables"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "risk_factor",
+        "target_name": "IBM-Consulting-Discretionary-Exposure",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Financing-Credit-Deterioration",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "risk_factor",
+        "target_name": "IBM-IRS-Transfer-Pricing-Exposure",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "risk_factor",
+        "target_name": "IBM-India-Tax-Disputes",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Tax-Contingency-Unrecognized",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "capex_commitment",
+        "target_name": "IBM-z17-Launch-Capex",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      }
+    ],
+    "notes": "[chunk 1/5] Q1 2025 10-Q filing shows IBM acquired HashiCorp on 2025-02-27. The filing documents this as a 2025 acquisition with intangible asset allocation (customer relationships, developed technology rights, trademarks) attributed to Software and Consulting segments. No explicit purchase price disclosed in the available excerpt. No other SIFI-material entities identified in the narrative section provided (primarily cover page, index, and consolidated financial statements). The filing shows IBM has significant goodwill ($66.1B at March 31, 2025, up from $60.7B at Dec 31, 2024) and intangible assets ($12.4B, up from $10.7B), consistent with acquisition activity, but no specific counterparty concentration, SPV arrangements, or hidden leverage signals in the sections extracted.\n[chunk 2/5] This 10-Q excerpt contains primarily financial statement boilerplate and standard accounting disclosures. The only SIFI-material entity identified is HashiCorp, acquired by IBM in Q1 2025 for $7.4B, which strengthens IBM's hybrid cloud and AI portfolio. The acquisition adds $4.9B in goodwill and $2.1B in intangible assets (client relationships, completed technology, trademarks). No hidden leverage structures, circular arrangements, revenue roundtripping, capex-ROI gaps, or customer/supplier concentration above 10% thresholds are evident in this section. The supplier finance program mentioned is immaterial and uses standard terms (90-120 days). The financing receivables portfolio is standard client lease/loan business with no exotic structures. No private AI labs, SPVs, or off-balance-sheet entities are disclosed here.\"\n  }\n\n[chunk 3/5] The 10-Q filing contains primarily debt structure disclosures and routine financial hedging arrangements. The key SIFI-material extraction is the wholly-owned finance subsidiary (IIC) used for debt issuance with a $5.5B debt stack fully guaranteed by IBM (disclosed Q1 2024 issuance). This is a standard corporate finance subsidiary structure but qualifies as an off-balance entity under SPV classification due to its explicit designation under SEC Regulation S-X Rule 13-01(a)(4)(vi). The StreamSets/webMethods acquisition from Software AG (July 1, 2024) is noted as a discrete M&A event but carries minimal SIFI significance without counterparty concentration or leverage detail. The document contains extensive derivative hedging disclosures (interest rate swaps $6.7B notional, foreign exchange forwards $10.4B notional, net investment hedges $7.2B notional) but these are routine risk management, not SIFI-material hidden leverage. The company has $10B in undrawn revolving credit facilities, $1.9B in committed lines of credit to third parties, and $2.1B in committed future financing to clients\u2014these are disclosed and immaterial. No AI lab investments, hidden circularity, revenue roundtripping, capex-ROI gaps, or material customer/supplier concentration signals are present in this section.\"\n  }\n]\n[chunk 4/5] SIFI-material extraction from IBM 10-Q Q1 2025: This section (Notes 18\u201319 and MD&A) contains limited SIFI-material content. The document discusses routine retirement benefits accounting, segment performance, and operational metrics. Key relationships identified: (1) HashiCorp acquisition closed in Q1 2025, adding $7.1B to capex; (2) StreamSets and webMethods acquired from Software AG in December 2023 with FX hedging derivative contracts (expired June 2024); (3) Consulting signings declined 10.5% YoY, impacting forward revenue visibility; (4) Geographic concentration\u2014China revenue down 26.8% YoY, reflecting geopolitical headwinds. No material off-balance-sheet entities, hidden leverage structures, or circularity patterns detected in this narrative section. Segment margins stable with productivity gains offsetting AI investment spend. No specific SIFI-material risk signals (hidden leverage, ROI gaps, concentration > 10% of revenue) disclosed in this excerpt.\"\n[chunk 5/5] EXTRACTION SUMMARY \u2014 IBM 10-Q Q1 2025:\n\nSIFI-MATERIAL FINDINGS:\n\n1. **HIDDEN_LEVERAGE via IBM-Financing VIE**: IBM's captive financing arm carries $10.022B debt (intercompany) supporting $10.635B in financing receivables. Segment profit compressed 25.5% YoY (47.7% \u2192 35.8% margin) due to elevated credit loss reserves reflecting \"current economic conditions.\" This is a leverage multiplier on IBM's balance sheet; the Financing segment operates at ~9:1 debt-to-equity.\n\n2. **TAX CONTINGENCY / COST_OPACITY**: \n   - IRS proposed adjustments of $5.4B in transferred income (2013-2016) for cross-border transfer pricing. IBM disputes but outcome uncertain.\n   - India tax disputes with $430M prepaid taxes held.\n   - Unrecognized tax benefits of $8.905B; $617M attributable to timing/transfer pricing adjustments.\n   - Risk of multi-year adverse settlement; not fully reserved.\n\n3. **CUSTOMER_CONCENTRATION via Consulting Segment**: Disclosed that Consulting is \"more sensitive to discretionary pullbacks\" and DOGE initiatives in downturns. No specific customer name disclosed but implies concentration risk in government/discretionary services.\n\n4. **CAPEX_ROI_GAP / EXECUTION_RISK**: z17 launch in April 2025 triggered proactive supply chain buildout and elevated inventory. Capex amount not quantified, but execution risk on z17 ramp disclosed. Infrastructure play \"enabling hybrid cloud environments for mission-critical transactions and AI workloads.\"\n\n5. **ACQUISITIONS**: HashiCorp ($7.098B Q1 2025) and prior StreamSets/webMethods from Software AG. Pre-acquisition FX derivatives on StreamSets deal created $50M loss in prior year\u2014suggests hidden acquisition-related liabilities.\n\n6. **RELATED_PARTY**: Red Hat subsidiary (acquired 2019) is material revenue source and noted as subject to \"consumption-based services\" variability in downturns.\n\nNO MATERIAL AI LAB INVESTMENTS, CIRCULARITY, OR ROUNDTRIPPING DETECTED in this Q1 filing. IBM's AI strategy focuses on watsonx (proprietary) and hybrid cloud, not disclosed equity stakes in OpenAI, Anthropic, or other AILAB entities.\n\nSEVERITY CALIBRATION:\n- Financing credit deterioration: **2** (sector-wide issue, manageable reserves)\n- IRS transfer pricing exposure: **3** (multi-billion contingency, litigation risk)\n- Tax unrecognized benefits: **3** (opaque reserve, audit uncertainty)\n"
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "software-as-a-service",
+          "aliases": [
+            "ADBE Inc."
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Semrush",
+        "fields": {
+          "ticker": "SEMRUSH",
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Figma",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Adobe_Figma_Competition_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Competitive Risk - Market Position",
+          "named_counterparties": [
+            "Figma"
+          ],
+          "severity": 2,
+          "verbatim_quote": "The complaint, which was amended on February 23, 2024, alleges that certain public statements made by Adobe during the Class Period related to competition from Figma and the adequacy of Adobe's existing offerings to counter harms Adobe may have faced due to Figma's growing market position were materially false and misleading."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Adobe_IP_Litigation_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Intellectual Property Disputes",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "In connection with disputes relating to the validity or alleged infringement of third-party intellectual property rights, including patent rights, we have been, are currently and may in the future be subject to claims, negotiations or complex, protracted litigation. Intellectual property disputes and litigation may be very costly and can be disruptive to our business operations by diverting the attention and energies of management and key technical personnel."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Adobe_FTC_Settlement_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Regulatory & Compliance Risk",
+          "named_counterparties": [
+            "FTC",
+            "DOJ"
+          ],
+          "severity": 2,
+          "verbatim_quote": "On March 12, 2026, we reached an agreement to settle the action, and on March 13, 2026, we filed a stipulation of dismissal with the Court. The DOJ sought injunctive relief, civil penalties, equitable monetary relief and other relief."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Adobe_Shareholder_Litigation_Signal",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "counterparty_count": 5,
+            "note": "Five separate shareholder derivative actions and one securities class action filed"
+          },
+          "named_counterparties": [
+            "Pembroke Pines Firefighters & Police Officers Pension Fund"
+          ],
+          "verbatim_quote": "On October 20, 2023, a securities class action captioned Pembroke Pines Firefighters & Police Officers Pension Fund et al v. Adobe, Inc. et al, renamed as In Re Adobe Inc. Securities Litigation, Case No. 1:23-cv-09260, was filed in the U.S. District Court for the Southern District of New York (the 'Securities Action') naming Adobe and certain of our current and former officers as defendants."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "ADBE"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Semrush",
+        "fields": {
+          "aliases": [
+            "Semrush Holdings, Inc."
+          ],
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "ADBE Inc."
+          ],
+          "role": "supplier"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "company",
+        "target_name": "Semrush",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "deal_type": "acquisition",
+          "amount_usd": 1900000000,
+          "date": "2025-11-18",
+          "status": "announced, pending close Q2 FY2026"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Adobe_Figma_Competition_Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Adobe_IP_Litigation_Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Adobe_FTC_Settlement_Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Adobe_Shareholder_Litigation_Signal",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Figma",
+        "target_type": "company",
+        "target_name": "Adobe",
+        "predicate": "CIRCULAR_WITH",
+        "properties": {
+          "relationship": "competitive market position dispute"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "company",
+        "target_name": "Semrush",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition",
+          "amount_usd": 1900000000.0,
+          "announced_date": "2025-11-18",
+          "expected_close": "Q2 FY2026",
+          "financing": "cash on hand",
+          "status": "pending regulatory approval"
+        }
+      }
+    ],
+    "notes": "[chunk 1/4] ANALYSIS: This 10-Q filing (Q1 FY2026, filed 2026-03-25) is primarily financial statement tables and standard accounting disclosures. The narrative sections (Notes 1-10) contain minimal SIFI-material entities or relationships. KEY FINDINGS: 1) NO significant customer or supplier concentration disclosed. Revenue is diversified across: Creative & Marketing Professionals ($4.39B), Business Professionals & Consumers ($1.78B), and geographic regions (Americas 59%, EMEA 27%, APAC 14%) \u2014 no single customer >10%. 2) NO named strategic counterparties, investments, or acquisition activity in this excerpt. 3) NO off-balance-sheet arrangements, SPVs, or hidden leverage structures disclosed. 4) Deferred revenue of $7.37B is normal for SaaS (subscription pre-payment); non-cancellable enterprise commitments comprise only ~4% of total. Remaining performance obligations of $22.22B have normal amortization (~67% within 12 months). 5) Debt: $6.228B total ($849M current + $5.379B long-term), consisting of senior notes with fixed and floating rates; interest rate swaps ($116M asset, $14M liability) for fair-value hedging. No exotic structures, no residual value guarantees, no project finance. 6) Stock repurchase program ($25B authorization through March 2028; $3.89B remaining) is standard capital allocation, not a SIFI signal. 7) Foreign exchange and interest rate derivatives ($169M asset, $162M liability) are routine hedging, not circular or leveraged. 8) No mention of AI lab investments, venture bets, or compute partnerships in this excerpt. 9) Goodwill $12.87B and intangibles $454M reflect past acquisitions but are amortizing normally; no impairment signals. CONCLUSION: This is a stable, mature SaaS company filing with normal operating metrics, standard hedging, and no identified SIFI-material leverage, circularity, or concentration risks. There are no named high-risk counterparties, no hidden entities, and no execution gaps requiring graph extraction beyond the company itself.\n[chunk 2/4] ADBE 10-Q filed 2026-03-25. Section extracted: NOTE 11\u2013NOTE 14 and MD&A Item 2. Focus: Business relationships, acquisitions, legal/regulatory matters, and competitive positioning. Key findings: (1) **Semrush Acquisition** (~$1.9B announced Nov 2025, expected close Q2 FY2026) \u2014 material M&A commitment but not yet closed. (2) **Figma Competition Dispute** \u2014 Securities class action alleges Adobe made false/misleading statements about Figma competition and Adobe's ability to counter market share loss. Significant reputational/competitive risk. Derivative actions followed citing same facts. (3) **FTC/DOJ ROSCA Settlement** \u2014 Reached March 2026 on subscription cancellation practices, settled with injunctive and monetary relief. (4) **IP Litigation Exposure** \u2014 Generic but acknowledged risk of costly patent/IP disputes. Not SIFI-material in isolation but noted. (5) **Shareholder Derivative Consolidation** \u2014 Five separate derivative actions plus securities class action; majority stayed but plaintiff pursuing appeal on securities claim. No quantified financial exposure disclosed. No hidden leverage, off-balance-sheet SPVs, or circularity patterns detected in this filing section. No material supplier/customer concentration disclosed beyond geographic breakout (Americas 59%, EMEA 27%, APAC 14%). Revenue composition: subscription 97% (strong recurring base). Capex/commitments not detailed in this excerpt. AI mentions (Adobe Firefly, GenStudio) are product references, not SIFI-material partnership or capex commitments.\n[chunk 3/4] This 10-Q section contains limited SIFI-material content. Primary finding is the Semrush acquisition announced at $1.9B, which is a standard M&A transaction without apparent circularity, hidden leverage, or off-balance-sheet structures. The document discusses routine operational risks (talent retention, competition, cybersecurity, geopolitical exposure, litigation), but none trigger the 8 SIFI risk patterns. Revenue concentration, customer/supplier dependencies, and capex commitments are not quantified in this excerpt. No AI lab relationships, SPVs, or material related-party transactions are disclosed. The filing shows strong cash generation ($2.96B operating cash flow in Q1 FY2026) and modest debt ($6.15B senior notes with no financial covenants). This section does NOT contain hidden leverage, circularity, revenue roundtripping, capex ROI gaps, execution risks, cost opacity, or concentration risks that would warrant risk_factor or hidden_risk_signal nodes.\"\n[chunk 4/4] ADBE 10-Q filed 2026-03-25: This is a narrative business and risk disclosure section (Item 1A, Part II) containing standard regulatory and operational risk factors (privacy/data protection, IP infringement, tax compliance, government procurement, FX exposure, goodwill impairment, debt covenants, climate/business continuity). No named counterparties, no hidden leverage, no circularity, no concentration signals, no material SIFI-relevant transactions are disclosed in this excerpt. The section discusses:\n\n1. Regulatory & Compliance Risks (GDPR, CCPA, DSA, Data Act, export controls, etc.) - boilerplate privacy/regulatory risk, non-SIFI-material\n2. IP Protection & Generative AI - mentions risk of infringement and piracy, not concentration or counterparty risk\n3. Tax Risk - standard multinational tax exposure, no unusual arrangements\n4. Government Procurement - standard government contracting risk\n5. Subscription Revenue Recognition - standard SaaS revenue timing risk, no concentration signal\n6. FX Hedging - routine hedging activity with statement that hedges do not offset all adverse movement (boilerplate)\n7. Goodwill/Intangible Asset Impairment - routine accounting risk\n8. Debt Obligations - routine leverage disclosure: $6.15B senior unsecured notes, $3B CP program (undrawn), $1.5B revolver (undrawn). No SPVs, no off-balance-sheet obligations, no material constraints\n9. Catastrophic Events (Climate, Earthquakes) - geographic concentration (San Francisco Bay Area, Salt Lake Valley) mentioned but no quantitative impact\n10. Stock Price Volatility - boilerplate market risk\n\nNo named AI labs, no material customer/supplier concentration disclosed, no related-party transactions, no investments or acquisitions mentioned, no M&A activity. Section 2 shows routine stock repurchases and Section 5 shows one executive (Anil Chakravarthy, President Customer Experience Orchestration Business) with a Rule 10b5-1 plan to sell up to 10,047 shares (immaterial).\n\nConclusion: No SIFI-material nodes or edges to extract. This is standard regulatory/operational risk boilerplate for a mature enterprise software company.\""
+  }
+}

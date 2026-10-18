@@ -1,0 +1,441 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "aliases": [
+            "NVIDIA Corporation"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA_Customer_Concentration_Q2_FY2026",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "counterparty_count": 3,
+            "pct_of_revenue": null,
+            "note": "Top 3 customers represent 56% of accounts receivable (23%, 19%, 14%)"
+          },
+          "named_counterparties": [
+            "Customer A",
+            "Customer B",
+            "Customer C"
+          ],
+          "verbatim_quote": "Three direct customers accounted for 23%, 19% and 14% of our accounts receivable balance as of July 27, 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA_Inventory_Writedown_Risk_H1_FY2026",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 3200000000.0,
+            "duration_yrs": 0.5,
+            "note": "Inventory provision of $3.2B in first half FY2026 vs $555M in H1 FY2025"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We recorded an inventory provision of $886 million and $345 million for the second quarter of fiscal years 2026 and 2025, respectively, and $3.2 billion and $555 million for the first half of fiscal years 2026 and 2025, respectively, in cost of revenue."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "NVDA_NonMarketableEquityInvest_Portfolio",
+        "fields": {
+          "investor": "NVIDIA",
+          "target": "Private AI Companies Portfolio",
+          "amount_usd": 3799000000.0,
+          "disclosed_date": "2025-07-27",
+          "verbatim_quote": "Non-marketable equity securities had cumulative gross unrealized gains of $661 million and cumulative gross unrealized losses and impairments of $93 million on securities held as of July 27, 2025."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVDA_PropertyEquipment_H1_FY2026",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 3122000000.0,
+          "duration_yrs": 0.5,
+          "start_fy": 2026,
+          "purpose": "property and equipment and intangible assets",
+          "verbatim_quote": "Purchases related to property and equipment and intangible assets ($3,122 million)"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "aliases": [
+            "NVIDIA Corporation"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Customer A",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Customer B",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "TSMC",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Micron",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "USG",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVDA-Supply-Capacity-Agreements",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 3500000000.0,
+          "counterparty": "Multiple suppliers",
+          "purpose": "Long-term supply and capacity agreements",
+          "verbatim_quote": "Prepaid supply and capacity agreements $1.8 billion and $3.3 billion were included in short-term Prepaid expenses and other current assets as of July 27, 2025 and January 26, 2025, respectively."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVDA-Future-Commitments",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 45774000000.0,
+          "duration_yrs": 6,
+          "start_fy": 2026,
+          "purpose": "Component purchases, software licenses, investments, long-lived assets, supply agreements, cloud services",
+          "verbatim_quote": "Total future commitments as of July 27, 2025 are as follows: Fiscal Year 2026 (excluding the first half) $30,930 million; 2027 $6,573 million; 2028 $3,915 million; 2029 $2,736 million; 2030 $1,402 million; 2031 and thereafter $218 million; Total $45,774 million"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVDA-Data-Center-Leases",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 7100000000.0,
+          "duration_yrs": 15,
+          "start_fy": 2026,
+          "purpose": "Data center leases",
+          "verbatim_quote": "Between the third quarter of fiscal year 2026 and fiscal year 2030, we expect to commence leases with future obligations of $7.1 billion primarily of data center leases, with lease terms of 2 to 15 years."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "NVDA-Operating-Leases",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "NVIDIA",
+          "debt_stack_usd": 2132000000.0,
+          "residual_value_guarantee": false,
+          "term_yrs": 7.5,
+          "purpose": "Offices and data centers",
+          "verbatim_quote": "Our lease obligations primarily consist of operating leases for our offices and data centers, with lease periods expiring between fiscal years 2026 and 2041. Present value of net future minimum lease payments 2,132"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVDA-Export-Control-H20",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Geopolitical/Export Controls",
+          "named_counterparties": [
+            "USG",
+            "China"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In April 2025, the U.S. government, or USG, informed us that a license is required for exports of our H20 product into the China market. As a result of these new requirements, we incurred a $4.5 billion charge in the first quarter of fiscal year 2026 associated with H20 for excess inventory and purchase obligations, as the demand for H20 diminished."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVDA-Export-Control-AI-Diffusion",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Geopolitical/Export Controls",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In January 2025, the USG published the 'AI Diffusion' IFR in the Federal Register. The IFR would have imposed a worldwide licensing requirement on our most popular data center products, such as our H200, GB200 and GB300. In May 2025, the USG announced that it would rescind the AI Diffusion IFR and implement a replacement rule. The scope, timing, and requirements of the forthcoming rule remain uncertain."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVDA-H20-License-Revenue-Share",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Regulatory/Revenue Uncertainty",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 3,
+          "verbatim_quote": "USG officials have expressed an expectation that the USG will receive 15% of the revenue generated from licensed H20 sales, but to date, the USG has not published a regulation codifying such requirement. Any request for a percentage of the revenue by the USG may subject us to litigation, increase our costs, and harm our competitive position."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-Customer-Concentration",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_revenue": 39,
+            "counterparty_count": 2
+          },
+          "named_counterparties": [
+            "Customer A",
+            "Customer B"
+          ],
+          "verbatim_quote": "For the second quarter of fiscal year 2026, sales to one direct customer, Customer A, represented 23% of total revenue; and sales to a second direct customer, Customer B, represented 16% of total revenue, respectively, both of which were attributable to the Compute & Networking segment."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-Inventory-Provisions",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 6300000000.0,
+            "pct_of_revenue": 6.9,
+            "note": "First half of fiscal 2026"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Provisions for inventory and excess inventory purchase obligations totaled $1.0 billion and $6.3 billion for the second quarter and first half of fiscal year 2026, respectively, including $4.5 billion associated with H20 excess inventory and purchase obligations for the first quarter of fiscal year 2026."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-Supply-Chain-Geopolitical",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 4,
+          "named_counterparties": [
+            "TSMC",
+            "Taiwan",
+            "South Korea"
+          ],
+          "verbatim_quote": "Finally, our business depends on our ability to receive consistent and reliable supply from our overseas partners, especially in Taiwan and South Korea. Any new restrictions that negatively impact our ability to receive supply of components, parts, or services from Taiwan and South Korea, would negatively impact our business and financial results."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-Export-Control-Competitive",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "named_counterparties": [
+            "USG",
+            "China",
+            "Israel",
+            "Europe"
+          ],
+          "verbatim_quote": "Over the past three years, we have been subject to a series of shifting and expanding export control restrictions, impacting our ability to serve customers outside the United States. Export controls have in the past and may in the future negatively impact demand for our products and services not only in China, but also in other markets, such as Europe, Latin America, and Southeast Asia."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-Deferred-Revenue-Concentration",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 2035000000.0,
+            "pct_of_revenue": 2.2,
+            "note": "As of July 27, 2025"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Deferred revenue additions included $7.5 billion of customer advances for the first half of fiscal year 2026, with $7.5 billion related to customer advances revenue recognized. Balance at end of period $2,035 million for the first half ended July 27, 2025."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA_Customer_Concentration_Q2_FY2026",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA_Inventory_Writedown_Risk_H1_FY2026",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "investment",
+        "target_name": "NVDA_NonMarketableEquityInvest_Portfolio",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "capex_commitment",
+        "target_name": "NVDA_PropertyEquipment_H1_FY2026",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Customer A",
+        "predicate": "SELLS_COMPUTE_TO"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Customer B",
+        "predicate": "SELLS_COMPUTE_TO"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "TSMC",
+        "predicate": "BUYS_COMPUTE_FROM"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Micron",
+        "predicate": "BUYS_COMPUTE_FROM"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "capex_commitment",
+        "target_name": "NVDA-Supply-Capacity-Agreements",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "capex_commitment",
+        "target_name": "NVDA-Future-Commitments",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "capex_commitment",
+        "target_name": "NVDA-Data-Center-Leases",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "off_balance_entity",
+        "target_name": "NVDA-Operating-Leases",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "risk_factor",
+        "target_name": "NVDA-Export-Control-H20",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "risk_factor",
+        "target_name": "NVDA-Export-Control-AI-Diffusion",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "risk_factor",
+        "target_name": "NVDA-H20-License-Revenue-Share",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-Customer-Concentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-Inventory-Provisions",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-Supply-Chain-Geopolitical",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-Export-Control-Competitive",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-Deferred-Revenue-Concentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "USG",
+        "target_type": "company",
+        "target_name": "NVIDIA",
+        "predicate": "NAMES_COUNTERPARTY"
+      }
+    ],
+    "notes": "[chunk 1/2] NVIDIA 10-Q Q2 FY2026 (ended 2025-07-27). The provided document is primarily XML metadata and financial tables. Key SIFI-material findings: (1) CUSTOMER CONCENTRATION: Three direct customers represent 56% of accounts receivable (23%+19%+14%), a material concentration risk for a supplier to hyperscalers. (2) INVENTORY_WRITEDOWN: Massive inventory provision of $3.2B in H1 FY2026 vs $555M in H1 FY2025 (5.8x increase), signaling execution or demand forecasting risk. (3) NON-MARKETABLE EQUITY: Portfolio of $3.8B in non-marketable securities (held in other assets), with $661M unrealized gains\u2014likely AI lab investments per HARD RULE 4, but specific investee names are not disclosed in this excerpt. (4) CAPEX: $3.1B in property/equipment capex in 6 months suggests ongoing infrastructure investment. The document excerpt does NOT contain narrative text from Item 1 (Business) or detailed risk disclosures, limiting counterparty identification. No explicit related-party arrangements, SPVs, or off-balance-sheet entities are identified in the provided text. Further sections of the 10-Q (Item 1A Risk Factors, Management's Discussion) would be required to extract capex commitments to specific AI labs (e.g., OpenAI, Anthropic) or supply agreements with hyperscalers."
+  }
+}

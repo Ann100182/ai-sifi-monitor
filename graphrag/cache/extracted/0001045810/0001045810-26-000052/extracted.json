@@ -1,0 +1,479 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Groq",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Manufacturing-Supply-Capacity-$119B",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 119000000000,
+          "duration_yrs": 4,
+          "start_fy": 2027,
+          "purpose": "Manufacturing, supply, and capacity commitments for data center-scale production and future product architectures",
+          "verbatim_quote": "As of April 26, 2026, these commitments were $119 billion for which $95 billion will be paid in the remainder of fiscal year 2027 and the remaining balance will be paid in fiscal years 2028 through 2031."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Cloud-Service-$30B",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 30000000000,
+          "duration_yrs": 6,
+          "start_fy": 2027,
+          "purpose": "Multi-year cloud service agreements to support research and development efforts",
+          "verbatim_quote": "Multi-year cloud service agreement commitments as of April 26, 2026, were $30 billion for which $6 billion, $7 billion, $7 billion, $5 billion, $3 billion, and $2 billion will be paid in the remainder of fiscal year 2027, each fiscal year from 2028 through 2031, and fiscal year 2032 and thereafter, respectively. Cloud service capacity may be reduced or terminated. Cloud service agreements will be primarily used to support our research and development efforts."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Other-Vendor-Commitments-$6B",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 6000000000,
+          "start_fy": 2027,
+          "purpose": "Other vendor commitments",
+          "verbatim_quote": "Other vendor commitments were $6 billion as of April 26, 2026, of which the majority will be paid through fiscal year 2027."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-Customer-Concentration",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 30,
+            "counterparty_count": 3
+          },
+          "named_counterparties": [
+            "Unknown Customer A",
+            "Unknown Customer B",
+            "Unknown Customer C"
+          ],
+          "verbatim_quote": "Three direct customers accounted for 30%, 18%, and 16% of our accounts receivable balance as of April 26, 2026."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-Capex-ROI-Gap",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 155000000000,
+            "duration_yrs": 6,
+            "note": "Total committed capex ($119B manufacturing + $30B cloud + $6B other) with variable cloud capacity termination rights and cancellable/reschedulable manufacturing orders"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of April 26, 2026, these commitments were $119 billion for which $95 billion will be paid in the remainder of fiscal year 2027 and the remaining balance will be paid in fiscal years 2028 through 2031. Cloud service capacity may be reduced or terminated. We enter into agreements with our supply vendors that allow them to procure inventory based upon our defined criteria, and in certain instances, these agreements are cancellable, able to be rescheduled, or adjustable for our business needs prior to placing firm orders."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-Execution-Risk",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 1100000000,
+            "note": "Property, equipment and intangible assets acquired but not yet paid for"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Property, equipment and intangible assets acquired but not paid for the first quarter of fiscal years 2027 and 2026 were $1.1 billion and $408 million, respectively."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-Cost-Opacity",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 20800000000,
+            "duration_yrs": 2.6,
+            "note": "Unearned stock-based compensation with no detailed breakdown of future vesting by role or beneficiary"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of April 26, 2026, aggregate unearned stock-based compensation expense was $20.8 billion, which is expected to be recognized over a weighted average period of 2.6 years for RSUs, PSUs, and market-based PSUs, and one year for ESPP."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA-Facility-Lease-Guarantee",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 3500000000,
+            "duration_yrs": 6.5,
+            "note": "Maximum gross exposure; reduced by partner escrow of $712M and lease payments over 5-7 year terms"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In fiscal year 2026, we entered into agreements to guarantee partners' facility lease obligations in the event of their default in exchange for warrants. The maximum gross exposure under all agreements is $3.5 billion, which is reduced as the partners make payments to the lessors over terms ranging from 5 to 7 years. The partners have placed $712 million in escrow to mitigate our potential exposure."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "NVDA-Lease-Guarantee-Portfolio",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "NVIDIA",
+          "beneficiary": "Unnamed Partners",
+          "debt_stack_usd": 3500000000,
+          "residual_value_guarantee": true,
+          "term_yrs": 6.5,
+          "purpose": "Facility lease guarantees in exchange for warrants",
+          "verbatim_quote": "In fiscal year 2026, we entered into agreements to guarantee partners' facility lease obligations in the event of their default in exchange for warrants. The maximum gross exposure under all agreements is $3.5 billion, which is reduced as the partners make payments to the lessors over terms ranging from 5 to 7 years."
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA_customer_concentration_Q1FY2027",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_revenue": 54,
+            "counterparty_count": 3,
+            "note": "Three direct customers = 21%, 17%, 16% of Q1FY2027 revenue; one indirect AI research/deployment company = meaningful revenue from cloud services"
+          },
+          "named_counterparties": [
+            "Unnamed Direct Customer 1",
+            "Unnamed Direct Customer 2",
+            "Unnamed Direct Customer 3",
+            "Unnamed AI Research/Deployment Company"
+          ],
+          "verbatim_quote": "For the first quarter of fiscal year 2027, three direct customers represented 21%, 17%, and 16% of total revenue, all of which was primarily attributable to the Compute & Networking segment. We estimate that one AI research and deployment company contributed to a meaningful amount of our revenue by purchasing cloud services from our customers in the first quarter of fiscal year 2027."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA_capex_roi_gap_datacenter_leases",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 32400000000.0,
+            "duration_yrs": 20,
+            "note": "Expected datacenter lease commencement Q2 FY2027 - FY2033; large commitment without matched customer capex guarantees"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Between the second quarter of fiscal year 2027 and fiscal year 2033, we expect to commence leases with future obligations of $32.4 billion, primarily for data center leases to support our research and development efforts, with lease terms of 3 to 20 years."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA_execution_risk_rubin_platform",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": null,
+          "named_counterparties": [],
+          "verbatim_quote": "We expect our Rubin platform to start shipping in the second half of fiscal year 2027. The complexity of bringing up our product architecture and sophisticated system configurations has caused and may in the future cause delays in production and create challenges in managing supply and demand. This could further result in revenue volatility, quality issues, increased inventory provisions, decreases in product yields and higher material costs, and/or increased warranty costs."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA_capex_roi_gap_ecosystem_investments",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 18600000000.0,
+            "note": "Q1 FY2027 private company and infrastructure fund investments; indirect revenue linkage via AI model makers"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "$18.6 billion in private companies and infrastructure funds. Some of these investments include AI model makers that may indirectly purchase or use our products in the cloud."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA_execution_risk_export_controls_china",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 5,
+          "numeric_signal": {
+            "pct_of_revenue": 22,
+            "note": "International revenue 22% of Q1 FY2027 vs 42% in Q1 FY2026; China market effectively foreclosed for data center products"
+          },
+          "named_counterparties": [
+            "USG",
+            "China"
+          ],
+          "verbatim_quote": "As of the end of the first quarter of fiscal year 2027, while we were able to ship uncontrolled products to China, such as gaming and workstation GPUs, we were effectively foreclosed from competing in China's data center computing/compute market, and our effective foreclosure from the China market helped our competitors build larger developer and customer ecosystems to challenge us worldwide. Unless we are able to return with a data center system that meets the approval of both the USG and the Chinese government, our lost opportunity and the benefit to our competitors will have a material and adverse impact on our business, operating results, and financial condition."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVDA_circular_dependency_open_source_ai",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CIRCULARITY",
+          "severity": 2,
+          "numeric_signal": null,
+          "named_counterparties": [],
+          "verbatim_quote": "The recent rise in high-quality, open-source foundation models is making advanced AI capabilities broadly accessible. Open-source AI is dependent on developer adoption, and if deployed on our competitors' platforms, it could reduce demand for our products and services."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "NVDA_private_companies_Q1FY2027",
+        "fields": {
+          "investor": "NVIDIA",
+          "target": "Portfolio of Private AI Companies & Infrastructure Funds",
+          "amount_usd": 18600000000.0,
+          "equity_pct": null,
+          "round": null,
+          "disclosed_date": "2026-05-20",
+          "verbatim_quote": "In the first quarter of fiscal year 2027, we made the following investments: $18.6 billion in private companies and infrastructure funds. Some of these investments include AI model makers that may indirectly purchase or use our products in the cloud."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "NVDA_operating_leases_datacenter",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "NVIDIA",
+          "co_owner": null,
+          "beneficiary": null,
+          "debt_stack_usd": 5604000000.0,
+          "residual_value_guarantee": false,
+          "term_yrs": 20,
+          "purpose": "Data center and office space, with future obligations for R&D data centers",
+          "verbatim_quote": "Our lease obligations primarily consist of operating leases for our data centers and offices, with lease periods expiring between fiscal years 2027 and 2075. Between the second quarter of fiscal year 2027 and fiscal year 2033, we expect to commence leases with future obligations of $32.4 billion, primarily for data center leases to support our research and development efforts, with lease terms of 3 to 20 years."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVDA_lease_commitment_datacenter",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 32400000000.0,
+          "duration_yrs": 20,
+          "start_fy": 2027,
+          "counterparty": null,
+          "purpose": "Data center leases to support R&D efforts",
+          "verbatim_quote": "Between the second quarter of fiscal year 2027 and fiscal year 2033, we expect to commence leases with future obligations of $32.4 billion, primarily for data center leases to support our research and development efforts, with lease terms of 3 to 20 years."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVDA_supply_chain_complexity_risk",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Supply Chain & Manufacturing",
+          "named_counterparties": [
+            "TSMC",
+            "Taiwan",
+            "South Korea"
+          ],
+          "severity": 4,
+          "verbatim_quote": "Our business depends on our ability to receive consistent and reliable supply from our overseas partners, especially in Taiwan and South Korea. Any new restrictions that negatively impact our ability to receive supply of components, parts, or services from Taiwan and South Korea, would negatively impact our business and financial results."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVDA_export_controls_broad_scope",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Export Controls & Geopolitical Risk",
+          "named_counterparties": [
+            "USG",
+            "China",
+            "EU",
+            "Middle East"
+          ],
+          "severity": 5,
+          "verbatim_quote": "Controls could negatively impact our cost and/or ability to provide services such as NVIDIA AI cloud services and could impact the cost and/or ability for our CSPs and customers to provide services to their end customers, even outside China."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Groq",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "context": "Non-exclusive license agreement with accrued purchase consideration of $3.957B as of Apr 26, 2026"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "capex_commitment",
+        "target_name": "Manufacturing-Supply-Capacity-$119B",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "capex_commitment",
+        "target_name": "Cloud-Service-$30B",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "capex_commitment",
+        "target_name": "Other-Vendor-Commitments-$6B",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-Customer-Concentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-Capex-ROI-Gap",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-Execution-Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-Cost-Opacity",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA-Facility-Lease-Guarantee",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "off_balance_entity",
+        "target_name": "NVDA-Lease-Guarantee-Portfolio",
+        "predicate": "SPONSORS"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA_customer_concentration_Q1FY2027",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA_capex_roi_gap_datacenter_leases",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA_execution_risk_rubin_platform",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA_capex_roi_gap_ecosystem_investments",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA_execution_risk_export_controls_china",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVDA_circular_dependency_open_source_ai",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "investment",
+        "target_name": "NVDA_private_companies_Q1FY2027",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "off_balance_entity",
+        "target_name": "NVDA_operating_leases_datacenter",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "capex_commitment",
+        "target_name": "NVDA_lease_commitment_datacenter",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "risk_factor",
+        "target_name": "NVDA_supply_chain_complexity_risk",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "risk_factor",
+        "target_name": "NVDA_export_controls_broad_scope",
+        "predicate": "CITES_RISK"
+      }
+    ],
+    "notes": "[chunk 1/3] FILING: NVIDIA 10-Q for Q1 FY2027 (ended April 26, 2026). SOURCE TEXT IS UNAUDITED FINANCIAL STATEMENTS AND BOILERPLATE DISCLOSURES ONLY. No narrative business sections (Item 1 Business, MD&A Item 2 risk factors Item 1A, etc.) provided in source. Extraction is limited to structured financial tables and accounting policy notes. RESULT: No SIFI-material entities, counterparties, or risk signals identifiable in this data. Pure accounting disclosures do not contain: \u2014 Named customer/supplier relationships (only generic \"Customer One/Two/Three\" placeholder tags visible in XBRL metadata) \u2014 Specific investment targets or amounts \u2014 Off-balance-sheet arrangements or SPVs \u2014 Capex commitments with counterparties \u2014 Circular dependencies or related-party deals \u2014 Depreciation/cost accounting changes \u2014 Lease terms or residual value guarantees. RECOMMENDATION: To extract meaningful SIFI signals from NVIDIA 10-Q, provide sections containing: Item 1 Business narrative, Item 1A Risk Factors, MD&A (Item 2), Notes to Financial Statements (esp. Note 8 on Non-Marketable Securities, Note 15+ on Commitments), Subsequent Events, Related Parties. Current submission is non-narrative financial table markup only.\"\n[chunk 2/3] EXTRACTION SUMMARY:\\n\\n1. CUSTOMER CONCENTRATION (Severity 3): Three direct customers represent 30%, 18%, and 16% of accounts receivable as of Apr 26, 2026. Unnamed but material concentration risk. Accounts receivable is near-term revenue proxy.\\n\\n2. CAPEX COMMITMENTS (Total $155B over 6 years): \\n   - Manufacturing/supply: $119B ($95B in FY2027 remainder, balance FY2028\u20132031)\\n   - Cloud services: $30B (with early termination/reduction rights)\\n   - Other vendors: $6B (mostly FY2027)\\n   Both manufacturing and cloud agreements have cancellation/rescheduling clauses, creating CAPEX_ROI_GAP risk. No explicit revenue contracts disclosed to offset.\\n\\n3. HIDDEN LEVERAGE: $3.5B facility lease guarantee portfolio from FY2026, covering 5\u20137 year terms. Warrants received in exchange; $712M partner escrow reduces net exposure. Classified as credit derivative with fair value changes in Other income (expense).\\n\\n4. COST OPACITY (Severity 2): $20.8B unearned stock-based compensation over 2.6-year weighted average vesting. No breakdown by executive, role, or vesting schedule detail.\\n\\n5. EXECUTION RISK (Severity 2): $1.1B of property, equipment, and intangible assets acquired but not yet paid (accrual vs. cash timing gap).\\n\\n6. COUNTERPARTY: Groq, Inc. \u2014 Non-exclusive license agreement with $3.957B accrued purchase consideration as of Apr 26, 2026.\\n\\n7. INVESTMENT COMMITMENTS: $27B total investment commitments (Note 6) expected through remainder of FY2027. Includes $1.0B equity-method infrastructure fund investments with $2.3B maximum loss exposure (including future committed amounts). High infrastructure fund exposure suggests potential indirect leverage via JVs or fund-level debt.\\n\\nNOTE: The text is heavy on accounting footnote mechanics (stock compensation, debt instruments, tax positions, litigation) but limited new SIFI-material business relationships or off-balance structures beyond the lease guarantee and investment commitments. The Groq license is named but lacks financial detail. No mention of OpenAI, Anthropic, or other AI labs in contracts or investments in this excerpt (though Note 6 references are absent from this extraction text). Deferred revenue is modest ($3.1B short + long-term); revenue from contracts > 1 year is $2.6B with ~40% recognized in next 12 months, indicating limited long-duration revenue visibility.\""
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "ADBE Inc.",
+            "Adobe Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Figma",
+        "fields": {
+          "aliases": [
+            "Figma, Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "ADOBE INC"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Figma",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "ADBE"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Figma",
+        "fields": {
+          "aliases": [],
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "ADBE Inc."
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Figma",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "company",
+        "target_name": "Figma",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "context": "Merger termination",
+          "date": "2023-12-17",
+          "termination_fee_usd": 1000000000
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "company",
+        "target_name": "Figma",
+        "predicate": "CITES_RISK",
+        "properties": {
+          "risk_context": "competitive threat"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Figma",
+        "properties": {
+          "context": "Terminated merger agreement; $1B termination fee incurred"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "company",
+        "target_name": "Figma",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "context": "Terminated merger agreement",
+          "date": "December 17, 2023"
+        }
+      }
+    ],
+    "notes": "[chunk 1/4] FILING CONTEXT: Adobe Inc. (ADBE) 10-Q for Q1 FY2024 (filed 2024-03-27). NARRATIVE EXTRACTION: This 10-Q filing contains primarily financial statements and accounting policy disclosures. The only SIFI-material counterparty relationship identified is the Figma merger termination. In NOTE 3 (ACQUISITIONS), Adobe disclosed that it entered into a mutual termination agreement with Figma on December 17, 2023, and paid a $1 billion termination fee. This is material from a cash flow and strategic perspective but does not indicate hidden leverage, circularity, or other systemic risks. NO SIFI-RISK SIGNALS DETECTED in this filing. Adobe's business model (subscription SaaS for Digital Media, Digital Experience, and Publishing) shows diversified revenue streams with no disclosed customer concentration > 10%, no off-balance-sheet financing structures, no related-party roundtripping, and no evidence of execution risk tied to uncontracted capex. Deferred revenue of $6.11B (as of March 1, 2024) is a normal SaaS balance sheet item indicating advance customer payment for future services. The filing does not mention any AI lab investments, strategic partnerships with hyperscalers, or infrastructure dependencies that would trigger SIFI monitoring. CONCLUSION: Extract only the Figma termination as a named counterparty reference. No risk factors warrant escalation.\"\n[chunk 2/4] This Q1 FY2024 10-Q filing (filed 2024-03-27) from Adobe contains no SIFI-material entities, investments, or risk signals meeting the SIFI Monitor scope. The document is focused on routine equity-plan accounting, stock repurchases via ASRs with unnamed large financial institutions, and legal proceedings. Key observations: (1) Stock repurchase agreements with unnamed 'large financial institutions' are standard treasury management, not SIFI-material unless structured in off-balance ways (e.g., SPVs, VIEs, or RVGs); the ASRs are indexed to Adobe's own stock and properly classified in equity, so no hidden leverage. (2) FTC investigation (June 2022\u2013present) re: subscription cancellation practices is a consumer-protection matter, not SIFI-related. (3) Securities and derivative litigation re: Figma competition (2021\u20132022 period) alleges disclosure failures but no material financial estimate is disclosed; the case outcome is uncertain. (4) Debt schedule shows $3.65B senior notes, with $1.5B due Feb 2025 (reclassified to current); no off-balance-sheet financing or SPVs. (5) No customer/supplier concentration, related-party transactions, or circular investments mentioned. Figma is named as a competitive concern in the securities litigation, but this is standard market-rivalry litigation, not a SIFI counterparty web element. Conclusion: No hidden leverage, circularity, revenue roundtripping, capex ROI gaps, execution risks, cost opacity, or material concentration triggers extracted.\"\n\n[chunk 3/4] ADBE 10-Q filing dated 2024-03-27 (Q1 FY2024). EXTRACTION NOTES: This is a standard enterprise SaaS software company filing with subscription-based business model. No SIFI-material relationships, hidden leverage structures, or circularity patterns identified. Key observations: (1) Figma transaction terminated in Q1 2024 with $1B non-deductible termination fee\u2014this is a one-time corporate event, not a systemic risk. The associated $3.5B term loan credit agreement was terminated with zero draws. (2) Adobe maintains $1.5B revolving credit facility (undrawn as of March 1, 2024), $3B commercial paper program (undrawn), and $3.65B senior unsecured notes outstanding. Debt levels are modest relative to ~$40B market cap and strong free cash flow generation (~$1.17B in Q1). (3) Revenue model: 95% subscription-based across Digital Media (Creative Cloud, Document Cloud) and Digital Experience segments. Strong ARR growth and predictable cash flows. No off-balance-sheet SPVs, project finance, or operating leases with residual value guarantees mentioned. (4) Customer concentration: Text explicitly states distribution partners are \"none of which are individually responsible for a material amount of our total net revenue in any recent period.\" No single customer concentration risk disclosed. (5) Supplier dependencies: Text mentions reliance on third-party hosting, data centers, and service providers but states these are diverse and no single provider is critical. (6) AI/generative AI exposure: Adobe discloses investment in generative AI (Adobe Firefly, integration into Creative Cloud). Risk factors discuss AI regulation and competitive risk from text-to-image generative AI, but this is standard technology risk, not SIFI-material. (7) Geographic and FX: 60% Americas, 25% EMEA, 15% APAC revenue. FX hedging disclosed; minimal net FX impact in Q1 ($1M). (8) M&A activity: No active acquisitions beyond terminated Figma deal. No strategic investments in AI labs mentioned. (9) Related-party transactions: Standard officer/director indemnification; no material related-party arrangements. SKIP: Generic AI regulation risk, competitive pressure from other SaaS vendors, standard cybersecurity risk disclosures, FX hedging, employee retention challenges, tax law changes\u2014all routine for large tech companies and do not meet SIFI materiality threshold.\"\n  }\n]\n[chunk 4/4] FILING: Adobe 10-Q filed 2024-03-27. SIFI-MATERIAL FINDINGS: Minimal. The section provided contains routine executive compensation, Rule 10b5-1 trading plans, and exhibit listings. The only material business relationship mentioned is the TERMINATED Figma merger agreement (Termination Agreement dated December 17, 2023), which is not an active relationship and therefore not SIFI-relevant for counterparty-web or operational risk analysis. No investments, off-balance-sheet entities, hidden leverage, circularity, revenue roundtrips, capex commitments, or customer/supplier concentration is disclosed in this excerpt. The share repurchase program ($2B ASR with unnamedfinanc institution and $150M residual) involves capital allocation but is standard corporate finance, not SIFI-material leverage. DECISION: Extract only the terminated Figma relationship as a historical data point; no risk signals warrant elevation to the 8-pattern hidden_risk_signal schema. No verbatim quotes required for non-risk nodes.\""
+  }
+}

@@ -1,0 +1,470 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "AVGO",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "Broadcom",
+            "Broadcom Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "ticker": null,
+          "aliases": [],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_CUSTOMER_CONCENTRATION",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_revenue": 42,
+            "counterparty_count": 1,
+            "note": "One semiconductor distributor accounted for 42% of Q2 FY2026 revenue (vs 29% prior year)"
+          },
+          "named_counterparties": [
+            "Unnamed Distributor"
+          ],
+          "verbatim_quote": "Direct sales to one semiconductor solutions customer, which is a distributor, accounted for 42% and 29% of our net revenue for the fiscal quarters ended February 1, 2026 and February 2, 2025, respectively."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_TOP5_CONCENTRATION",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 50,
+            "counterparty_count": 5,
+            "note": "Top 5 end customers through all channels accounted for 50% of Q2 FY2026 revenue (vs 40% prior year)"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We believe aggregate sales to our top five end customers, through all channels, accounted for approximately 50% and 40% of our net revenue for the fiscal quarters ended February 1, 2026 and February 2, 2025, respectively."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_CAPEX_ROI_GAP",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": null,
+            "duration_yrs": null,
+            "note": "Capex increased in Q2 FY2026 vs prior year but no multi-year committed amounts disclosed; revenue growth concentrated in AI products suggests execution risk on capex deployment"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The cash flows from investing activities during the fiscal quarter ended February 1, 2026 was relatively flat compared to the prior year fiscal period as an increase in net proceeds from investments in the current year fiscal period was substantially offset by higher capital expenditures compared to the prior year fiscal period."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_STOCK_COMP_EXPENSE",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 21971000000.0,
+            "duration_yrs": 3.2,
+            "note": "Unrecognized stock-based compensation of $21.97B with average service period 3.2 years; Two-Year Equity Awards granted at higher fair values drive expense volatility"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Total stock-based compensation expense was $2,176 million and $1,280 million for the fiscal quarters ended February 1, 2026 and February 2, 2025, respectively. The increase was due to the Two-Year Equity Awards granted at higher grant-date fair values."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_LEVERAGE_DEBT",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 67970000000.0,
+            "pct_of_assets": null,
+            "note": "$67.97B outstanding indebtedness; $2.25B due within 12 months; refinancing and debt management ongoing"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "our short-term and long-term liquidity requirements primarily arise from: (i) working capital requirements, (ii) research and development and capital expenditure needs, (iii) cash dividend payments (if and when declared by our Board of Directors), (iv) interest and principal payments related to our $67,970 million of outstanding indebtedness with $2,252 million principal amounts payable within 12 months"
+        }
+      },
+      {
+        "type": "company",
+        "name": "AVGO",
+        "fields": {
+          "ticker": "AVGO",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "TSMC",
+        "fields": {
+          "aliases": [
+            "Taiwan Semiconductor Manufacturing Company Limited"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_TSMC_SUPPLIER_CONCENTRATION",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_wafers": 95,
+            "note": "95% of wafers manufactured by contract manufacturers sourced from TSMC in Q1 FY2026"
+          },
+          "named_counterparties": [
+            "TSMC"
+          ],
+          "verbatim_quote": "During the fiscal quarter ended February 1, 2026, approximately 95% of the wafers manufactured by our CMs were produced by Taiwan Semiconductor Manufacturing Company Limited (\"TSMC\"). We believe our wafer requirements represent a meaningful portion of TSMC's total production capacity. However, TSMC also fabricates wafers for other companies, including some of our competitors, and could choose or be required to materially prioritize capacity for other customers or reduce or eliminate deliveries to us on short notice. In addition, TSMC has raised, and may in the future raise, their prices to manufacture our wafers."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_CUSTOMER_CONCENTRATION",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_revenue": 50,
+            "counterparty_count": 5,
+            "note": "Top 5 end customers represent ~50% of net revenue in Q1 FY2026"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We believe aggregate sales, through all channels, to our top five end customers accounted for approximately 50% of our net revenue for the fiscal quarter ended February 1, 2026. This customer concentration increases the risk of quarterly fluctuations in our operating results and our sensitivity to any material adverse developments experienced by these customers."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_DISTRIBUTOR_CHANNEL_CONCENTRATION",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 55,
+            "note": "Distributor channel represents 55% of net revenue; increasingly limited number of distributors"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "For fiscal quarter ended February 1, 2026, sales to distributors accounted for 55% of our net revenue... In addition, we sell our semiconductor products through an increasingly limited number of distributors, which exposes us to additional customer concentration and related credit risks."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_MATERIALS_SUPPLIER_CONCENTRATION",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_materials": 75,
+            "counterparty_count": 5,
+            "note": "More than three-quarters of manufacturing materials purchased from 5 suppliers in Q1 FY2026; some are single-source"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "During the fiscal quarter ended February 1, 2026, we purchased more than three-quarters of our manufacturing materials from five materials suppliers, some of which are single source suppliers. The lead time needed to identify and qualify a new supplier is typically lengthy and there is often no readily available alternative source."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_AI_CUSTOMER_CREDIT_RISK",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "named_counterparties": [],
+          "verbatim_quote": "Some of these AI customers may have constrained resources or capital and may be unable to pay for their required AI infrastructure and/or seek alternative financings or novel or deferred payment models from their vendors and suppliers, which could result in credit or customer default risks and negatively impact our business, financial condition or results of operations. If our AI customers substantially reduce their expansion plans, cancel, reduce or delay their orders, are unable to generate the profit required to offset their spending or are otherwise unable to meet their obligations and we cannot offset the downturn in their business, it could have a material adverse effect on our business, operating results, financial condition and stock price."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_LEASING_FINANCIAL_OBLIGATIONS",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "Our top customers, including our AI solutions customers, may make and have made greater demands on us with regards to pricing and contractual terms, such as seeking to lease AI racks or systems based on our XPUs instead of purchasing, as well as alternative financings for such leases or other novel or deferred payment models... such arrangements may impose financial obligations, including guarantees, upon us or increase our exposure to credit or customer default risks, and failure to mitigate these risks could negatively impact our business, financial condition or results of operations."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_XPU_DESIGN_WIN_EXECUTION_RISK",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "The timing of design wins is unpredictable and implementing production for a particular design win or multiple design wins at the same time, such as for our custom AI accelerators or XPUs, network switches and other AI-related products, may strain our resources and those of our CMs. Some of our customers who have selected us may also have constrained resources or capital but require immediate availability of our custom XPUs."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_GROSS_MARGIN_COMPRESSION_XPU_LEASING",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "The sale or leasing of AI racks or systems based on our XPUs will likely increase our operating margin but compress or lower future gross margin, which would adversely impact our stock price."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_GEOGRAPHIC_SUPPLY_CONCENTRATION",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Manufacturing and R&D concentrated in California, Pacific Rim, US, India; primary warehouse in Malaysia"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Many of our facilities, and those of our CMs and suppliers, are concentrated in the same geographic regions of California and the Pacific Rim, which have above average seismic, wildfire, and severe weather activity, and increases the risk of natural disasters impacting multiple suppliers. In addition, a significant majority of our research and development personnel are located in the U.S. and India, and our primary warehouse is in Malaysia."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO_GEOPOLITICAL_TRADE_RISK",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Geopolitical and Trade",
+          "named_counterparties": [
+            "China",
+            "USG"
+          ],
+          "severity": 3,
+          "verbatim_quote": "These restrictive governmental actions and any similar measures that may be imposed on U.S. companies by other governments, especially in light of ongoing trade tensions with U.S. trading partners, will likely limit or prevent us from doing business with certain of our customers or suppliers and harm our ability to compete effectively or otherwise negatively affect our ability to sell our products and services."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO_CHINA_TAIWAN_GEOPOLITICAL_RISK",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Geopolitical",
+          "named_counterparties": [
+            "China",
+            "Taiwan"
+          ],
+          "severity": 4,
+          "verbatim_quote": "changes in political, regulatory, legal or economic conditions, geopolitical turmoil or conflict (including China-Taiwan relations), including terrorism, war or political or military coups, state-sponsored or politically motivated cyber-attacks, civil disturbances, or political instability (foreign and domestic)"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO_CYBERSECURITY_THREAT",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Cybersecurity",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "As a critical vendor in the digital supply chain for both governmental entities and critical infrastructure operators, we and our products may be targeted by those seeking to threaten the confidentiality, integrity and availability of systems supporting essential public services. Geopolitical instability may increase the likelihood that we will experience direct or collateral consequences from cyber conflicts between nation-states or other politically motivated actors targeting critical technology infrastructure."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO_REGULATORY_INVESTIGATION_RISK",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Regulatory",
+          "named_counterparties": [
+            "Korea",
+            "Japan",
+            "EU",
+            "USG"
+          ],
+          "severity": 2,
+          "verbatim_quote": "We have been, and may in the future be, involved or required to participate in regulatory investigations or inquiries from regulatory authorities in Korea, Japan and the European Union into certain of our contracting and business practices, which have and may in the future evolve into legal or other administrative proceedings."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Dell",
+        "fields": {
+          "role": "related_party"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "VMware",
+        "properties": {
+          "note": "VMware acquisition \u2014 senior notes assumed by Broadcom as of Feb 2026"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "company",
+        "target_name": "VMware",
+        "predicate": "BENEFITS",
+        "properties": {
+          "context": "AVGO acquired VMware; excise tax reversal generated $315M gain in Q2 FY2026 from IRA regulatory exemption"
+        }
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "AVGO_CUSTOMER_CONCENTRATION",
+        "target_type": "company",
+        "target_name": "AVGO",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "AVGO_TOP5_CONCENTRATION",
+        "target_type": "company",
+        "target_name": "AVGO",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "AVGO_CAPEX_ROI_GAP",
+        "target_type": "company",
+        "target_name": "AVGO",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "AVGO_STOCK_COMP_EXPENSE",
+        "target_type": "company",
+        "target_name": "AVGO",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "AVGO_LEVERAGE_DEBT",
+        "target_type": "company",
+        "target_name": "AVGO",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "company",
+        "target_name": "TSMC",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "relationship_type": "contract manufacturing",
+          "capacity_pct": 95
+        }
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "AVGO_TSMC_SUPPLIER_CONCENTRATION",
+        "target_type": "company",
+        "target_name": "TSMC",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {}
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "AVGO_AI_CUSTOMER_CREDIT_RISK",
+        "target_type": "company",
+        "target_name": "AVGO",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "AVGO_LEASING_FINANCIAL_OBLIGATIONS",
+        "target_type": "company",
+        "target_name": "AVGO",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "risk_factor",
+        "source_name": "AVGO_CHINA_TAIWAN_GEOPOLITICAL_RISK",
+        "target_type": "company",
+        "target_name": "AVGO",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "predicate": "CITES_RISK",
+        "target_type": "company",
+        "target_name": "Dell",
+        "properties": {
+          "risk_context": "VMware spin-off tax indemnification"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "predicate": "DEPENDS_ON",
+        "target_type": "company",
+        "target_name": "VMware",
+        "properties": {
+          "context": "subsidiary operations"
+        }
+      }
+    ],
+    "notes": "[chunk 1/4] FILING EXTRACTION SUMMARY (Broadcom 10-Q Q1 FY2026, filed 2026-03-11):\n\n**Primary Finding:** This 10-Q is a PURE FINANCIAL STATEMENT & ACCOUNTING FOOTNOTE DOCUMENT. The entire source text consists of:\n  1. Cover page (form type, filing date, company identification)\n  2. Balance sheet, income statement, cash flow, equity statement (condensed, unaudited)\n  3. Detailed accounting notes (14+ notes covering revenue recognition, intangible assets, debt structure, segment reporting, etc.)\n\n**No Item 1 Business or Item 1A Risk Factors narrative sections are present in the supplied text.** The filing jumps directly to financial statements after the cover page.\n\n**SIFI-MATERIAL ENTITIES IDENTIFIED:**\n\n1. **Broadcom Inc. (AVGO)** \u2014 The filer\n   - Role: Semiconductor and infrastructure software supplier\n   - Serves enterprise AI data centers, networking, storage, connectivity, telecom, wireless base stations, factory automation, power generation, displays\n   - No material customer concentration or supplier dependencies disclosed in this excerpt\n\n2. **VMware** \u2014 Subsidiary/acquisition\n   - Assumed by Broadcom; senior notes issued by VMware remain on Broadcom's balance sheet\n   - $5.75B in VMware-assumed senior notes outstanding as of Feb 1, 2026\n   - Notes mature Aug 2026\u2013Aug 2031\n   - This represents HIDDEN_LEVERAGE via acquisition debt stack, but no specific new risk narrative in this Q1 filing\n\n**NOTABLE OBSERVATIONS (Not SIFI-level per Hard Rules):**\n\n- **Intangible asset concentration:** $97.8B goodwill + $30.3B intangible assets = 75% of total assets ($169.9B). Mostly from prior acquisitions. Amortization schedules show $29.6B in intangible amortization remaining over 6+ years. This is accounting standard for semiconductor acquirers; no NEW risk signal in this Q1.\n\n- **Contract liabilities & remaining performance obligations:** $45.0B in firmly committed multi-year contracts (mostly non-termination), 33% expected to recognize in next 12 months. This is HEALTHY contracted revenue, not a gap. No execution risk disclosed.\n\n- **Debt structure:** $67.0B total debt principal, mostly senior notes with maturities 2026\u20132051. No covenant violations. Debt service appears manageable relative to operating cash flow ($8.3B in Q1). No circularity or off-balance-sheet SPVs disclosed.\n\n- **Factoring of receivables:** $1.75B in accounts receivable sold to third parties on non-recourse basis in Q1 (routine supply-chain finance, not SIFI-material).\n\n- **Customer/supplier concentration:** Not disclosed in this excerpt. Revenue breakdown by geography (Americas 26%, Asia Pacific 60%, EMEA 14%), but no named customer concentration >10%.\n\n**SIFI EXTRACTION DECISION:**\n\nThe ONLY material entity relationship disclosed is Broadcom's VMware acquisition, where debt assumed creates leverage (VMware notes on balance sheet). However:\n  - No new risk narrative in Q1 filing\n  - VMware is fully consolidated subsidiary, not an off-balance-sheet SPV/VIE\n  - No circular counterparty web mentioned\n  - No revenue roundtripping with VMware disclosed\n  - No capex-ROI gap\n\nGiven Hard Rule #3 (skip routine items not SIFI-material), and Hard Rule #1 (never fabricate), I am extracting only the two entities (Broadcom as filer, VMware as acquired subsidiary) with a single edge showing the acquisition relationship. No risk signals meet the bar for hidden leverage, circularity, or execution risk on the basis of this Q1 filing alone.\n\nThe lack of Item 1A Risk Factors means no verbatim risk quotes are available for extraction.\"\n[chunk 2/4] AVGO (Broadcom) 10-Q Q2 FY2026 extract. Key SIFI signals: (1) CUSTOMER_CONCENTRATION\u2014single unnamed distributor grew to 42% of net revenue (Q1: 29%), with top-5 customers at 50% (Q1: 40%). Loss of either entity poses material revenue cliff. (2) COST_OPACITY\u2014$21.97B unrecognized stock-based comp with 3.2yr avg vesting creates earnings volatility; Two-Year Equity Awards granted at higher valuations drive 70% YoY jump in SBC expense ($2.18B vs $1.28B). (3) HIDDEN_LEVERAGE\u2014$68B debt stack with $2.25B due in 12mo; refinancing risk in higher-rate environment. (4) CAPEX_ROI_GAP\u2014higher capex vs prior year with no multi-year committed spend disclosed; strong AI revenue growth suggests capex deployed into custom accelerators/networking but no explicit capex guidance or utilization metrics disclosed. (5) VMware acquisition integration: $315M IRA excise tax reversal in Q2 but ongoing tax liabilities mentioned as risk (Note 10). No related-party arrangements, SPVs, or off-balance-sheet entities identified in narrative sections provided. No AI lab investments or circularity patterns detected in this extract. Distributor concentration is primary material risk\u2014unnamed entity represents single-point-of-failure in top-line execution.\n[chunk 3/4] AVGO 10-Q Q1 FY2026 (filed 2026-03-11) extracts critical SIFI signals:\n\n**Key SIFI-Material Findings:**\n\n1. **SUPPLIER_CONCENTRATION (CRITICAL, Severity 4):** 95% of wafers from TSMC with no long-term capacity commitments. AVGO acknowledges TSMC fabricates for competitors and can deprioritize AVGO on short notice. Single-point-of-failure in foundry access.\n\n2. **CUSTOMER_CONCENTRATION (CRITICAL, Severity 4):** Top 5 customers = ~50% of revenue. Distributor channel alone = 55% of revenue through \"increasingly limited number of distributors.\"\n\n3. **HIDDEN_LEVERAGE (EMERGING, Severity 3):** New leasing model for AI racks/XPU systems with \"alternative financings\" and \"novel deferred payment models\" shifts revenue recognition and introduces guarantees/credit risk not yet quantified in balance sheet.\n\n4. **CAPEX_ROI_GAP (ELEVATED, Severity 4):** Significant R&D spend on custom XPUs and AI accelerators targeted at customers with \"constrained resources or capital.\" Filing explicitly states some AI customers \"may be unable to pay\" and \"seek alternative financings.\" This is credit risk disguised as revenue.\n\n5. **EXECUTION_RISK (ELEVATED, Severity 3):** Multiple design win timelines for XPUs/AI accelerators may strain AVGO and CM capacity simultaneously. No minimum purchase commitments from customers despite heavy upfront engineering investment.\n\n6. **GROSS_MARGIN_COMPRESSION (ELEVATED, Severity 3):** Leasing model \"will likely increase operating margin but compress or lower future gross margin\"\u2014suggests lower per-unit economics vs. outright sales.\n\n7. **GEOPOLITICAL_CONCENTRATION (ELEVATED, Severity 4):** 95% TSMC dependence means AVGO exposed to China-Taiwan geopolitical risk. Taiwan conflict would cripple AVGO's supply chain within weeks.\n\n**Related-Party & Channel Risk:** VMware acquisition has expanded AVGO's distributor/channel dependence. Some distributors now have \"sole distribution relationships by region\" for Accelerate Program and Catalyst Initiative.\n\n**Noticeably Absent:** No named AI lab partnerships, investments, or off-balance SPVs disclosed in this section. AVGO mentions \"AI racks/systems based on XPUs\" and custom accelerators for AI customers but does not name hyperscalers or OpenAI-type counterparties here (may appear in MD&A or footnotes).\n[chunk 4/4] SIFI-MATERIAL EXTRACTION \u2014 BROADCOM 10-Q (2026-03-11): The source text is predominantly boilerplate risk language (IP litigation, warranty claims, tax, debt, stock volatility). One MATERIAL entity relationship identified: (1) BROADCOM-DELL CONTINGENT TAX LIABILITY: Broadcom acquired VMware (formerly a Dell subsidiary). The VMware spin-off from Dell in Nov 2021 was structured as a tax-free transaction under IRC Sec. 355. If the spin-off is later determined to be non-tax-free, or if Broadcom's acquisition of VMware causes the spin-off to lose tax-free status, Broadcom may be required to indemnify Dell for material tax liabilities. This is a HIDDEN_LEVERAGE risk\u2014a contingent obligation not quantified on-balance. (2) INSIDER TRADING PLAN: Chairman Henry Samueli's entities (D95GT LLC, H&S Investments LP) adopted Rule 10b5-1 trading plans on Dec 16, 2025, involving donations to Samueli Foundation, The Rinks Foundation, and charity, plus direct sales of ~$1B in Broadcom stock through Dec 31, 2026. This is a large insider disposition signal but does not constitute SIFI counterparty risk unless combined with other factors. (3) STOCK REPURCHASE: Broadcom has $11B cumulative authorization through Dec 31, 2026; $700M remained undeployed as of Feb 1, 2026. Not SIFI-material in isolation. CONCLUSION: Limited SIFI material content in this 10-Q excerpt. No AI lab investments named. No major customer concentration data. No SPV or off-balance-sheet financing disclosed. The Dell-VMware-Broadcom contingent tax indemnity is the only credible hidden-leverage signal.\""
+  }
+}

@@ -1,0 +1,1673 @@
+{
+  "item_1": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce, Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "MuleSoft",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Informatica",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Slack",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Tableau",
+        "fields": {
+          "role": "subsidiary"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Slack",
+        "predicate": "SUPPLIES",
+        "properties": {
+          "description": "Slack serves as the primary conversational interface for Agentforce-embedded applications and autonomous agents"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "MuleSoft",
+        "predicate": "SUPPLIES",
+        "properties": {
+          "description": "MuleSoft provides unified Integration, Automation, and API Management offerings powering the Agentforce 360 Platform"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Informatica",
+        "predicate": "SUPPLIES",
+        "properties": {
+          "description": "Informatica acquisition closed in Q4 fiscal 2026, providing enterprise-grade data management platform capabilities"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Tableau",
+        "predicate": "SUPPLIES",
+        "properties": {
+          "description": "Tableau provides advanced analytics offerings built on the Agentforce 360 Platform"
+        }
+      }
+    ],
+    "notes": "[chunk 1/1] Item 1 Business section of Salesforce 10-K filing for FY2026. No SIFI-material hidden leverage, circularity, concentration dependencies, or risk signals identified in this narrative section. The filing describes Salesforce's organic cloud platform architecture (multi-tenant SaaS on third-party IaaS with Hyperforce infrastructure), core service offerings (Agentforce, Slack, MuleSoft, Informatica, Tableau), and customer/partner ecosystem. Key observations: (1) No single customer >10% revenue \u2014 explicitly stated. (2) No material supplier or product concentration disclosed. (3) Acquisitions (Informatica, Slack, Tableau, MuleSoft) are integrated subsidiaries, not off-balance-sheet SPVs or hidden leverage. (4) No equity investments, capex commitments, or related-party transactions mentioned in this section. (5) Infrastructure delivered via multi-tenant cloud on third-party IaaS partners and Hyperforce \u2014 no capex-heavy concentration signal. (6) Partner ecosystem (ISVs, SIs, consulting firms) is diffuse and revenue is via direct sales, not roundtrip structures. No risk_factor or hidden_risk_signal nodes warranted for Item 1 alone.\""
+  },
+  "item_1a": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-RF-Informatica-Debt",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Hidden Leverage / Acquisition Debt",
+          "named_counterparties": [
+            "Informatica"
+          ],
+          "severity": 3,
+          "verbatim_quote": "in connection with our acquisition of Informatica, we entered into the Informatica Credit Agreements on an unsecured basis. In November 2025, the Company borrowed the full $6.0 billion available under the Informatica Credit Agreements to finance a portion of the cash consideration for the acquisition, repay existing indebtedness of Informatica and its subsidiaries, and pay related fees, costs, and expenses."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-HRS-Informatica-Leverage",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 6000000000,
+            "note": "$6.0B unsecured borrowing under Informatica Credit Agreements drawn November 2025; plus $5.0B revolving credit facility undrawn"
+          },
+          "named_counterparties": [
+            "Informatica"
+          ],
+          "verbatim_quote": "In November 2025, the Company borrowed the full $6.0 billion available under the Informatica Credit Agreements to finance a portion of the cash consideration for the acquisition, repay existing indebtedness of Informatica and its subsidiaries, and pay related fees, costs, and expenses."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Informatica",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": [
+            "Informatica Inc."
+          ]
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-RF-OffBS-Leases",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Off-Balance-Sheet Obligations / Hidden Leverage",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "We also have significant other contractual commitments, including leases that have not yet commenced and commitments with infrastructure service providers, which are not reflected on our consolidated balance sheets."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-HRS-OffBS-Commitments",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Uncommenced leases and infrastructure service provider commitments explicitly disclosed as off-balance-sheet; quantum not stated in this section"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We also have significant other contractual commitments, including leases that have not yet commenced and commitments with infrastructure service providers, which are not reflected on our consolidated balance sheets."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-RF-StrategicInvestments",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Strategic Investment Portfolio / Fair Value Volatility",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We are exposed to volatility in our operating results due to changes in market prices, observable price changes and impairments of our strategic investments. The measurement of our non-marketable equity securities at fair value is inherently subjective and requires management judgment and estimation. The resulting gains or losses could be material depending on market conditions and events."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-HRS-InvestmentPortfolio-CostOpacity",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Non-marketable equity securities valued using inherently subjective management judgment; fair value changes can be material"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The measurement of our non-marketable equity securities at fair value is inherently subjective and requires management judgment and estimation. The resulting gains or losses could be material depending on market conditions and events, particularly in periods with economic uncertainty, inflation, geopolitical conflict, volatile public equity markets or unsettled global market conditions."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-RF-ThirdPartyInfra-Dependency",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Supplier Concentration / Third-Party Infrastructure Dependency",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "The hardware, software, data and cloud computing platforms that we rely on, including, for example, the large language models leveraged in our AI offerings, may not continue to be available at reasonable prices, on commercially reasonable terms or at all. Any loss of the right to use such hardware, software, data or cloud computing platforms could significantly increase our expenses and disrupt or delay the provision of our services."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-HRS-LLM-SupplierConcentration",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Salesforce AI offerings depend on third-party large language models and cloud computing platforms; no named single source but single-point-of-failure risk for AI product delivery"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The hardware, software, data and cloud computing platforms that we rely on, including, for example, the large language models leveraged in our AI offerings, may not continue to be available at reasonable prices, on commercially reasonable terms or at all. Any loss of the right to use such hardware, software, data or cloud computing platforms could significantly increase our expenses and disrupt or delay the provision of our services until equivalent technology is either developed internally or obtained from third parties."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-RF-Agentforce-ExecutionRisk",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Execution Risk / New Product Monetization",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "the markets and monetization strategies for certain offerings, including Agentforce and Data 360, remain relatively new and uncertain and may present additional risks and challenges. For example, we offer certain products, including Agentforce and Data 360, through a consumption-based business model... We have limited experience with determining optimal pricing for our consumption-based contracts and may have lower levels of customer consumption of our products than we expect which may result in suboptimal pricing."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-HRS-Agentforce-CapexROIGap",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Significant investments in Agentforce and Data 360 with unproven monetization; consumption-based model with uncertain revenue yield"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "the markets and monetization strategies for certain offerings, including Agentforce and Data 360, remain relatively new and uncertain and may present additional risks and challenges. We have limited experience with determining optimal pricing for our consumption-based contracts and may have lower levels of customer consumption of our products than we expect which may result in suboptimal pricing."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-RF-AIThirdPartyModels",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Execution Risk / AI Third-Party Model Dependency",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "We may rely in part on third-party models, datasets, cloud infrastructure or other technologies in developing or offering certain AI applications. Our reliance on such third parties exposes us to risks relating to performance, availability, security vulnerabilities, intellectual property claims, licensing restrictions, cost increases or changes in terms of service. If a third-party provider modifies, suspends or terminates access to its models, data or infrastructure... our ability to offer, scale or support certain AI applications may be adversely affected."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-HRS-AIModelDependency-ExecutionRisk",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Salesforce AI product delivery (Agentforce) depends on third-party models and infrastructure; termination or modification by providers could impair product delivery at scale"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "If a third-party provider modifies, suspends or terminates access to its models, data or infrastructure, or if such technologies fail to perform as expected, our ability to offer, scale or support certain AI applications may be adversely affected, and we may incur additional costs to mitigate such impacts."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-RF-ChinaGeopolitical",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Geopolitical / Export Control",
+          "named_counterparties": [
+            "China",
+            "Russia"
+          ],
+          "severity": 2,
+          "verbatim_quote": "Sanctions and export and import control regulations in the United States and other countries are subject to change and uncertainty, including as a result of tariff policy changes, rapidly evolving technology, increased government regulation of AI and cloud service solutions, and geopolitical developments such as events affecting relations between the United States and China, multi-jurisdictional sanctions on Russia, the war in Ukraine and regional conflict in the Middle East."
+        }
+      },
+      {
+        "type": "company",
+        "name": "China",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Russia",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "EU",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-RF-EUAIAct-Compliance",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Regulatory / AI Compliance",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 2,
+          "verbatim_quote": "Regulatory frameworks such as the EU Digital Services Act ('DSA'), the EU AI Act and other rapidly evolving and sometimes conflicting global laws and regulations related to AI, privacy and consumer protection could increase compliance costs, restrict features or data flows, delay launches and expose us to penalties or litigation."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-RF-CrossBorderDataTransfer",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Regulatory / Data Sovereignty",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 2,
+          "verbatim_quote": "recent governmental actions and geopolitical developments have increased the perceived risk that our services, particularly in the EU, could be disrupted, suspended or terminated... Certain countries outside of the EEA have enacted or are considering enacting laws that require varying degrees of local data residency or localization."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-RF-DebtCovenants",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Financial / Debt Service and Covenant Risk",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "The indentures governing our Senior Notes and the Revolving Loan Credit Agreement impose restrictions on us and require us to maintain compliance with specified covenants... A failure to comply with the covenants and other provisions of our outstanding debt could result in events of default under such instruments, which could permit acceleration of all of our debt and borrowings."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-RF-AIEnergy-CapexPressure",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Operational / AI Infrastructure Cost Escalation",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "increased energy consumption, including as a result of AI adoption, climate-related events, energy market volatility, and power grid disruptions may increase the operational costs related to inputs across our value chain, including for data centers. If we experience significant strains on our data center capacity... our customers could experience performance degradation or service outages that may subject us to financial liabilities."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-HRS-AIEnergy-HiddenLeverage",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "AI-driven infrastructure scaling requires significant investment; cost increases for compute and energy not offset by contracted revenue commitments"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Developing, testing and deploying AI technologies may also increase the cost profile of our offerings due to the computing costs required. If we are unable to effectively mitigate these risks, or if our mitigation efforts result in excessive costs, our reputation, business, operating results and financial condition may be adversely affected."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-RF-AcquisitionIntegration",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Operational / M&A Integration Risk",
+          "named_counterparties": [
+            "Informatica"
+          ],
+          "severity": 2,
+          "verbatim_quote": "negative impact to our results of operations because of the depreciation and amortization of acquired intangible assets, fixed assets and operating lease right-of-use assets... the tax effects related to integration and business operation changes, realizability of our deferred tax assets, and uncertain tax liabilities."
+        }
+      }
+    ],
+    "edges": [],
+    "notes": null
+  },
+  "item_1b": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM"
+          ],
+          "role": "hyperscaler"
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/1] Item 1C (Cybersecurity) from Salesforce 10-K (filed 2026-03-02). This section is primarily governance and policy narrative with no SIFI-material counterparty relationships, investments, off-balance-sheet arrangements, or concentration risks disclosed. The text describes Salesforce's internal cybersecurity program, board oversight through a dedicated Cybersecurity and Privacy Committee, management roles (CITO, CISO), and standard risk controls (technical safeguards, incident response, third-party risk management). No specific customer concentration metrics, supplier dependencies, capex commitments, circular dependencies, or hidden leverage are named. Item 1B explicitly states 'None' for unresolved staff comments. No extractable SIFI-material entities beyond Salesforce itself identified in this section.\""
+  },
+  "item_3": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Informatica",
+        "fields": {
+          "role": "supplier",
+          "aliases": [
+            "Informatica Inc."
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Regrello",
+        "fields": {
+          "role": "supplier",
+          "aliases": [
+            "Regrello Corp."
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Celonis",
+        "fields": {
+          "role": "competitor",
+          "aliases": [
+            "Celonis"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SAP",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Slack",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": [
+            "Slack Technologies"
+          ]
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Informatica-Acquisition-2025",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 9600000000.0,
+          "counterparty": "Informatica",
+          "purpose": "acquisition of AI-powered enterprise cloud data management platform",
+          "verbatim_quote": "In November 2025, we completed our acquisition of Informatica, an AI-powered enterprise cloud data management platform, for approximately $9.6 billion."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-CAPEX_ROI_GAP-Informatica",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 9600000000.0,
+            "note": "Informatica acquisition $9.6B with only $0.4B revenue in fiscal 2026 (11 months post-acquisition)"
+          },
+          "named_counterparties": [
+            "Informatica"
+          ],
+          "verbatim_quote": "In November 2025, we completed our acquisition of Informatica, an AI-powered enterprise cloud data management platform, for approximately $9.6 billion. Informatica contributed approximately $0.4 billion of revenue in fiscal 2026."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-CUSTOMER_CONCENTRATION",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 1,
+          "numeric_signal": {
+            "pct_of_revenue": 5,
+            "note": "Professional services and other revenues declined 4% YoY to $2.1B (5% of total), driven by lower demand for transformation engagements"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The decrease in professional services and other revenues for fiscal 2026 was primarily due to less demand for larger, multi-year transformation engagements, which may continue in the near term."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-COST_OPACITY-Strategic-Investments",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 1500000000.0,
+            "note": "$1.2B gain from single privately-held equity investment; $496M impairments on private investments in FY2026"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "For fiscal 2026, the gain on our strategic investment portfolio was primarily driven by unrealized gains on privately held equity investments of $1.5 billion partially offset by impairments on privately held investments of $496 million. Our mark-to-market unrealized gains in fiscal 2026 were driven largely by $1.2 billion in gains from one privately held equity investment."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-EXECUTION_RISK-Agentforce",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "pct_of_revenue": 23,
+            "note": "23% of subscription revenue from Agentforce, a product launched Q3 FY2025 with high execution risk"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "During the third quarter of fiscal 2025, we introduced Agentforce, a new layer of our trusted platform that enables companies to build and deploy AI agents that can respond to inputs, make decisions and take action autonomously across business functions."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "CRM-Strategic-Investment-Undisclosed",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Undisclosed",
+          "amount_usd": 1200000000.0,
+          "verbatim_quote": "Our mark-to-market unrealized gains in fiscal 2026 were driven largely by $1.2 billion in gains from one privately held equity investment."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Informatica",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Bank of America",
+        "fields": {
+          "role": "lender"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Salesforce-Cloud-Capex-FY2026-Ongoing",
+        "fields": {
+          "filer": "Salesforce",
+          "counterparty": "infrastructure service providers",
+          "purpose": "enterprise cloud computing services capacity and security measures",
+          "verbatim_quote": "During fiscal 2026 and in future years, we have made, and expect to continue to make, additional investments in enterprise cloud computing services to allow us to scale with our customers and continue to evolve our security measures."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-CAPEX-ROI-Infrastructure-Gap",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "named_counterparties": [
+            "infrastructure service providers"
+          ],
+          "numeric_signal": {
+            "amount_usd": 16700000000,
+            "note": "Total contractual commitments to infrastructure service providers; strategy may change and pace of investments may slow"
+          },
+          "verbatim_quote": "While we continue to make investments in our infrastructure service providers to provide capacity for the growth of our business, our strategy may continue to change related to these investments and we may slow the pace of our investments."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Informatica-Debt-Refinance-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "named_counterparties": [
+            "Informatica"
+          ],
+          "numeric_signal": {
+            "amount_usd": 6000000000,
+            "note": "Full draw on acquisition financing in November 2025; $4B 364-day facility due June 2026"
+          },
+          "verbatim_quote": "In November 2025, as part of the acquisition of Informatica, we borrowed the full $6.0 billion available under the credit facilities associated with the Informatica Credit Agreements, which was outstanding as of January 31, 2026."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Informatica",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition",
+          "date": "2025-11",
+          "amount_usd": 9600000000.0
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Regrello",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition",
+          "date": "2025-10"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Slack",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "relationship": "subsidiary",
+          "note": "Parker Harris serves as CTO of Slack"
+        }
+      },
+      {
+        "source_type": "capex_commitment",
+        "source_name": "Informatica-Acquisition-2025",
+        "target_type": "company",
+        "target_name": "Informatica",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "CRM-CAPEX_ROI_GAP-Informatica",
+        "target_type": "capex_commitment",
+        "target_name": "Informatica-Acquisition-2025",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-CAPEX_ROI_GAP-Informatica",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Informatica",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition",
+          "amount_usd": 8100000000,
+          "date": "November 2025"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Bank of America",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "role": "administrative agent for revolving credit facility and Informatica acquisition financing"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "capex_commitment",
+        "target_name": "Salesforce-Cloud-Capex-FY2026-Ongoing",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "capex_commitment",
+        "source_name": "Salesforce-Cloud-Capex-FY2026-Ongoing",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-CAPEX-ROI-Infrastructure-Gap",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Informatica-Debt-Refinance-Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      }
+    ],
+    "notes": "[chunk 1/2] SIFI-MATERIAL EXTRACTIONS from Salesforce 10-K Item 3, 4, 4A, 5, 7:\n\n1. **INFORMATICA ACQUISITION ($9.6B)**: Large capex commitment with immediate ROI gap. Acquired Nov 2025 for $9.6B but contributed only $0.4B revenue in FY2026 (11 months of revenue). This is a CAPEX_ROI_GAP signal (severity 2) \u2014 high upfront investment with uncertain payback timeline.\n\n2. **STRATEGIC INVESTMENT OPACITY**: Salesforce reports $1.5B unrealized gains on privately-held equity securities in FY2026, but discloses only a single $1.2B gain from one unnamed investment. The fund reports $496M in impairments. This is COST_OPACITY (severity 2) \u2014 lack of transparency on investee identities and valuations.\n\n3. **AGENTFORCE EXECUTION RISK**: 23% of subscription revenue (FY2026) now comes from Agentforce, a product launched Q3 FY2025. This is EXECUTION_RISK (severity 2) \u2014 nascent product with high revenue concentration risk; customers could switch if competitors deliver better AI agents.\n\n4. **SLACK SUBSIDIARY**: Slack remains strategic subsidiary; Parker Harris now CTO of Slack (moved from CTO of Salesforce in Jan 2024). Slack contributed $388M revenue via \"Agentforce 360 Platform, Slack and Other\" bucket in FY2026.\n\n5. **CUSTOMER CONCENTRATION \u2014 PROFESSIONAL SERVICES DECLINE**: Professional services revenue fell 4% YoY to $2.1B ($2.2B prior year), now only 5% of revenue. Driven by \"less demand for larger, multi-year transformation engagements, which may continue in the near term.\" This signals customer consolidation or shift to self-serve/partner-led channels.\n\n6. **RELATED-PARTY: MIGUEL MILANO**: CRO/President was Co-Owner and CRO at Celonis (competitor) from Apr 2020 to Jul 2023. No indication of related-party arrangements, but notable competitor background.\n\n7. **ROBIN WASHINGTON BOARD LINKS**: CFO/COO sits on board of Alphabet (GOOGL). No material related-party transactions disclosed.\n\nEXCLUDED (BOILERPLATE):\n- Generic IP indemnity obligations to customers (standard SaaS risk)\n- Executive compensation details (no related-party financial arrangements disclosed)\n- Dividend program and share repurchases (routine capital allocation)\n- Risk Factors section references (Item 3 is legal proceedings, not risk disclosures)\n- Tax provisions and OBBBA changes (operational, not SIFI-material counterparty risk)\n- Sales/marketing expense breakdown (routine operational).\n\nNO HIDDEN LEVERAGE, CIRCULARITY, or REVENUE ROUNDTRIP detected in this Item 3/4/4A/5/7 excerpt.\n\n[chunk 2/2] SIFI-material signals extracted from CRM FY2026 10-K Item 3 section: (1) $8.1B Informatica acquisition with $6B borrowed in Nov 2025, including $4B 364-day facility maturing June 2026 \u2014 short-term refinance execution risk. (2) $16.7B contractual commitments to 'infrastructure service providers' for cloud scaling; disclosed strategy flexibility to 'slow the pace of investments' signals potential CAPEX ROI mismatch or demand softness. (3) No SPV or off-balance-sheet financing disclosed. (4) Debt covenants in compliance as of Jan 31, 2026. (5) $50B authorized share repurchase program FY2026 ($12.7B executed) indicates capital allocation prioritizes buybacks over debt reduction post-Informatica.\""
+  },
+  "item_7a": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Informatica",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Salesforce-Informatica-Acquisition",
+        "fields": {
+          "filer": "Salesforce",
+          "counterparty": "Informatica",
+          "purpose": "acquisition financing",
+          "amount_usd": 6000000000,
+          "start_fy": 2026,
+          "verbatim_quote": "364-day Informatica Credit Agreement and Three-year Informatica Credit Agreement were drawn in November 2025 upon the acquisition of Informatica... total principal outstanding of $6.0 billion"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Salesforce-Strategic-Portfolio",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Multiple Private Companies",
+          "amount_usd": 7600000000,
+          "disclosed_date": "2026-01-31",
+          "verbatim_quote": "strategic investment portfolio consisted of investments in over 450 companies with a combined carrying value of $7.6 billion"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Salesforce-FX-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Foreign Currency Exchange Risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "The expanding global scope of our business exposes us to the risk of fluctuations in foreign currency markets, including emerging markets... results of operations and cash flows are subject to fluctuations in the following currencies: the Euro, British Pound Sterling, Japanese Yen, Canadian Dollar, Australian Dollar and Brazilian Real against the United States Dollar"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Salesforce-Interest-Rate-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Interest Rate Sensitivity",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "An immediate increase or decrease in interest rates of 100 basis points at January 31, 2026 could result in a $31 million market value reduction or increase of the same amount"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Salesforce-Strategic-Concentration-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 3500000000,
+            "pct_of_assets": 46.1,
+            "note": "five largest privately held equity securities represent $3.5 billion of $7.6 billion portfolio"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "our five largest privately held equity securities represent $3.5 billion in total strategic investments as of January 31, 2026. If the enterprise value of the companies in which we hold those securities decreased by ten percent, the carrying value of our investment portfolio would decline by approximately $292 million"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Salesforce-Investment-Liquidity-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 7600000000,
+            "note": "illiquid private equity portfolio subject to lock-up restrictions"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In certain cases, our ability to sell these investments may be impacted by contractual obligations to hold the securities for a set period of time after a public offering. All of our investments, particularly those in privately held companies, are therefore subject to a risk of partial or total loss of invested capital"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Salesforce-Counterparty-Credit-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Counterparty Credit Risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "The bank counterparties to our derivative contracts potentially expose us to credit-related losses in the event of their nonperformance"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Informatica"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "investment",
+        "target_name": "Salesforce-Strategic-Portfolio"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Salesforce-Strategic-Concentration-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Salesforce-Investment-Liquidity-Risk"
+      }
+    ],
+    "notes": null
+  },
+  "financial_statements_and_notes": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce, Inc.",
+            "CRM"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "CRM-StrategicInvestments-FY2026",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Various enterprise cloud / technology startups / system integrators",
+          "amount_usd": 7591000000,
+          "disclosed_date": "2026-01-31",
+          "verbatim_quote": "As of January 31, 2026, two of the Company's privately held investments had carrying values that were individually greater than five percent of its total strategic investments portfolio and represented approximately 35 percent of the portfolio in the aggregate."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-StrategicInvestments-Concentration",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 7591000000,
+            "pct_of_assets": 6.76,
+            "note": "Two unnamed privately held investments represent ~35% of $7.6B strategic investment portfolio (~$2.66B). Portfolio grew from $4.85B to $7.59B YoY, a 57% increase driven by $1.017B gains and $1.958B purchases."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of January 31, 2026, two of the Company's privately held investments had carrying values that were individually greater than five percent of its total strategic investments portfolio and represented approximately 35 percent of the portfolio in the aggregate."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-StrategicInvestments-ValuationOpacity",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 7591000000,
+            "note": "Privately held strategic investments carried at $7.591B subject to 'measurement alternative' or equity method \u2014 no market prices. Valuation described as 'inherently complex and require judgment due to lack of readily available market data.'"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Valuations of privately held securities are inherently complex and require judgment due to the lack of readily available market data. In determining the estimated fair value of its strategic investments in privately held companies, the Company utilizes the most recent data available to the Company."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-StrategicInvestments-GainVolatility",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 1017000000,
+            "note": "Gains on strategic investments of $1.017B in FY2026 vs. losses of $121M in FY2025 and $277M in FY2024. These non-operating swings flow through P&L and inflated pre-tax income by ~10.7% in FY2026."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Gains (losses) on strategic investments, net 1,017 (121) (277)"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Informatica-Acquisition-ExecutionRisk",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 9600000000,
+            "note": "Informatica acquired for $9.6B net consideration in FY2026. $3.5B allocated to customer relationship and developed technology intangibles, $6.658B implied goodwill increment. Intangible fair value 'sensitive to changes in assumptions for revenue growth and operating expenses.' Internal controls of Informatica excluded from management assessment."
+          },
+          "named_counterparties": [
+            "Informatica"
+          ],
+          "verbatim_quote": "The Company completed the acquisition of Informatica, Inc. during fiscal year 2026 for total net consideration of $9.6 billion. In connection with this acquisition, management recognized customer relationship and developed technology intangible assets of $3.5 billion. The valuation...is sensitive to changes in assumptions for revenue growth and operating expenses."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Goodwill-Opacity",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 57941000000,
+            "pct_of_assets": 51.6,
+            "note": "Goodwill of $57.941B represents ~51.6% of total assets of $112.3B. Grew from $51.283B to $57.941B in FY2026, primarily from Informatica. Tested annually but no segment-level disclosure; single operating segment structure limits visibility."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The Company evaluates and tests the recoverability of its goodwill for impairment annually during its fourth quarter of each fiscal year or more often if and when circumstances indicate that goodwill may not be recoverable."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-CapexROIGap",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 594000000,
+            "note": "Capital expenditures of $594M in FY2026 against $41.5B revenue (~1.4% ratio) suggest asset-light model, but $4B current debt + $10.4B noncurrent debt raised in FY2026 (net $6B new proceeds) while treasury stock buybacks consumed $12.7B \u2014 leverage raised not for infrastructure investment but for financial engineering."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Capital expenditures (594) (658) (736)... Proceeds from issuance of debt, net of issuance costs 6,000 0 0... Repurchases of common stock (12,596) (7,829) (7,620)"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-OperatingLease-HiddenLeverage",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 2737000000,
+            "note": "Operating lease ROU assets $2.003B + current operating lease liabilities $548M + noncurrent operating lease liabilities $2.189B = $2.737B total operating lease liability. Finance lease obligations reflected as 'financing obligations' with $584M principal payments in FY2026. Combined off-balance leverage meaningful relative to $594M capex."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The Company has entered into operating and finance leases for corporate offices, data centers, and equipment... Operating lease right-of-use assets, net 2,003... Operating lease liabilities, current 548... Noncurrent operating lease liabilities 2,189"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "CRM-DebtFunded-Buyback-FY2026",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 6000000000,
+          "start_fy": 2026,
+          "purpose": "Issued $6B net new debt in FY2026 while repurchasing $12.7B in stock \u2014 debt proceeds used to fund shareholder returns, not infrastructure investment",
+          "verbatim_quote": "Proceeds from issuance of debt, net of issuance costs 6,000 0 0... Repurchases of common stock (12,596) (7,829) (7,620)"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "CRM-VIE-Strategic-Investments",
+        "fields": {
+          "entity_type": "VIE",
+          "sponsor": null,
+          "beneficiary": "Salesforce",
+          "debt_stack_usd": null,
+          "residual_value_guarantee": false,
+          "purpose": "Strategic equity investments in variable interest entities not consolidated by Salesforce",
+          "verbatim_quote": "The Company holds investments in, or management agreements with, variable interest entities (\"VIEs\") which the Company does not consolidate because it is not considered the primary beneficiary of these entities. The carrying value of VIEs within strategic investments was $160 million and $484 million, as of January 31, 2026 and January 31, 2025, respectively."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "CRM-Strategic-PrivateEquity-Portfolio",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Privately Held Equity (Portfolio)",
+          "amount_usd": 7591000000,
+          "verbatim_quote": "The Company's privately held equity securities and other investments amounted to $7.6 billion and $4.8 billion as of January 31, 2026 and January 31, 2025, respectively."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "CRM-SingleInvestee-$1.2B-Gain",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Unnamed Privately Held Investee",
+          "amount_usd": null,
+          "verbatim_quote": "Upward adjustments to measurement alternative investments in fiscal 2026 included $1.2 billion in gains from one privately held equity investment."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "CRM-Lease-DataCenter-Office-$4.4B",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 4400000000,
+          "duration_yrs": 20,
+          "start_fy": 2026,
+          "purpose": "Operating and finance leases for corporate offices, data centers and equipment; ~$3.8B related to office space and data center facilities",
+          "verbatim_quote": "Of the total lease commitment balance, including leases not yet commenced, of $4.4 billion, approximately $3.8 billion is related to office space and data center facilities. The remaining commitment amount is primarily related to equipment."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "CRM-Informatica-Acquisition-$9.6B",
+        "fields": {
+          "filer": "Salesforce",
+          "amount_usd": 9636000000,
+          "start_fy": 2026,
+          "counterparty": "Informatica",
+          "purpose": "Acquisition of all outstanding stock of Informatica, Inc., a leader in enterprise AI-powered cloud data management",
+          "verbatim_quote": "The acquisition date fair value of the consideration transferred for Informatica was approximately $9.6 billion, which consisted of the following...Cash 9,538"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Informatica",
+        "fields": {
+          "aliases": [
+            "Informatica, Inc."
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-VIE-NonConsolidation-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 160000000,
+            "note": "Carrying value of non-consolidated VIEs dropped from $484M (Jan 2025) to $160M (Jan 2026) within strategic investments"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The Company holds investments in, or management agreements with, variable interest entities (\"VIEs\") which the Company does not consolidate because it is not considered the primary beneficiary of these entities. The carrying value of VIEs within strategic investments was $160 million and $484 million, as of January 31, 2026 and January 31, 2025, respectively."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-PrivateEquity-Concentration-$7.6B",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 7591000000,
+            "note": "$1.2B gain from a single unnamed privately held equity investment in FY2026; $7.6B total private equity portfolio vs $4.8B prior year \u2014 58% YoY increase; significant Level 3 fair value estimation risk"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Upward adjustments to measurement alternative investments in fiscal 2026 included $1.2 billion in gains from one privately held equity investment...The Company's privately held equity securities and other investments amounted to $7.6 billion and $4.8 billion as of January 31, 2026 and January 31, 2025, respectively."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Informatica-Goodwill-Opacity",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 57941000000,
+            "note": "Total goodwill grew to $57.9B as of Jan 31, 2026, including $5.3B from Informatica. Goodwill is not deductible for U.S. tax and preliminary fair values subject to change."
+          },
+          "named_counterparties": [
+            "Informatica"
+          ],
+          "verbatim_quote": "The fair values assigned to assets acquired and liabilities assumed are preliminary based on management's estimates and assumptions and may be subject to change as additional information is received and certain tax matters are finalized...Balance as of January 31, 2026 $57,941"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Informatica-Debt-$6B-364Day",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 6000000000,
+            "duration_yrs": 0.27,
+            "note": "$4B 364-day credit facility matures Nov 2026; $2B 3-year facility matures Nov 2028; both drawn in full to finance Informatica acquisition. Short-dated $4B balloon creates near-term refinancing risk."
+          },
+          "named_counterparties": [
+            "Informatica"
+          ],
+          "verbatim_quote": "In November 2025, as part of the acquisition of Informatica, the Company borrowed the full $6.0 billion available under the credit facilities associated with the Informatica Credit Agreements, which was outstanding as of January 31, 2026."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM",
+            "Salesforce.com",
+            "Salesforce, Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-Backpage-Litigation-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Legal / Regulatory \u2014 Third-Party Customer Liability",
+          "named_counterparties": [
+            "Website Technologies",
+            "Backpage.com"
+          ],
+          "severity": 3,
+          "verbatim_quote": "The Company has been named as a defendant in a number of state and federal actions relating to the activities of one of its former customers, Website Technologies, LLC, an affiliate of Backpage.com, LLC. Plaintiffs in these actions generally allege that they were victims of sex trafficking... All of the foregoing actions seek unspecified monetary damages, attorneys' fees, and costs."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-Unrecognized-Tax-Benefits-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Tax \u2014 Unrecognized Tax Benefits / Audit Exposure",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 2,
+          "verbatim_quote": "total unrecognized tax benefits in an amount of $1.9 billion, $1.7 billion and $1.7 billion, respectively, if recognized, would have reduced income tax expense and the Company's effective tax rate... Certain prior year tax returns are currently being examined by various taxing authorities in major tax jurisdictions including the United States, India, Germany and Israel."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-UTB-Hidden-Leverage",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 2639000000,
+            "note": "Unrecognized tax benefits balance of $2.639B as of Jan 31, 2026; $1.9B if recognized would reduce tax expense; Interest and penalties accrued $294M"
+          },
+          "named_counterparties": [
+            "USG"
+          ],
+          "verbatim_quote": "End of period $2,639 [million unrecognized tax benefits]... total unrecognized tax benefits in an amount of $1.9 billion... if recognized, would have reduced income tax expense... Interest and penalties accrued as of January 31, 2026... were $294 million."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-DeferredTax-Valuation-Allowance",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 1,
+          "numeric_signal": {
+            "amount_usd": 967000000,
+            "note": "Valuation allowance of $967M against deferred tax assets as of Jan 31, 2026, up from $786M; primarily state NOLs, state/foreign tax credits not expected to be realized"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The Company had a valuation allowance of $967 million and $786 million as of January 31, 2026 and January 31, 2025, respectively... The increase in the valuation allowance during fiscal 2026 was primarily due to state tax credits and certain U.S foreign tax credits that are not expected to be realized."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "investment",
+        "target_name": "CRM-StrategicInvestments-FY2026"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-StrategicInvestments-Concentration"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-StrategicInvestments-ValuationOpacity"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-StrategicInvestments-GainVolatility"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Informatica-Acquisition-ExecutionRisk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Goodwill-Opacity"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-CapexROIGap"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-OperatingLease-HiddenLeverage"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "capex_commitment",
+        "target_name": "CRM-DebtFunded-Buyback-FY2026"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "off_balance_entity",
+        "target_name": "CRM-VIE-Strategic-Investments"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "investment",
+        "target_name": "CRM-Strategic-PrivateEquity-Portfolio"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "investment",
+        "target_name": "CRM-SingleInvestee-$1.2B-Gain"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "capex_commitment",
+        "target_name": "CRM-Lease-DataCenter-Office-$4.4B"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "capex_commitment",
+        "target_name": "CRM-Informatica-Acquisition-$9.6B"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "capex_commitment",
+        "source_name": "CRM-Informatica-Acquisition-$9.6B",
+        "target_type": "company",
+        "target_name": "Informatica"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-VIE-NonConsolidation-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-PrivateEquity-Concentration-$7.6B"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Informatica-Goodwill-Opacity"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Informatica-Debt-$6B-364Day"
+      },
+      {
+        "predicate": "DEPENDS_ON",
+        "source_type": "hidden_risk_signal",
+        "source_name": "CRM-VIE-NonConsolidation-Risk",
+        "target_type": "off_balance_entity",
+        "target_name": "CRM-VIE-Strategic-Investments"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "CRM-Informatica-Goodwill-Opacity",
+        "target_type": "company",
+        "target_name": "Informatica"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "CRM-Informatica-Debt-$6B-364Day",
+        "target_type": "company",
+        "target_name": "Informatica"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "risk_factor",
+        "target_name": "CRM-Backpage-Litigation-Risk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "risk_factor",
+        "target_name": "CRM-Unrecognized-Tax-Benefits-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-UTB-Hidden-Leverage"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-DeferredTax-Valuation-Allowance"
+      }
+    ],
+    "notes": "[chunk 1/3] SOURCE SECTION: Financial Statements & Notes (10-K, CRM, FY2026 ending Jan 31 2026). Key observations:\n\n1. STRATEGIC INVESTMENTS ($7.591B, up 57% YoY): The filing discloses a large and growing portfolio of privately-held investments but DOES NOT name specific investees in this section. Two unnamed holdings exceed 5% each and together = ~35% of portfolio (~$2.65B). The prior year had four such holdings at ~24%. The investee roster may appear in a later note (e.g., Note 4 Fair Value or Note on Strategic Investments) not included in this extract. Flagged as concentration + opacity risk.\n\n2. INFORMATICA ACQUISITION ($9.6B): Largest acquisition in the extract. $3.5B intangibles recognized; goodwill increment substantial. Internal controls excluded from management scope for Informatica and Regrello \u2014 execution integration risk flagged.\n\n3. GOODWILL ($57.941B = 51.6% of assets): Extremely large relative to total assets. Single operating segment structure means no sub-segment goodwill allocation transparency. Flagged as COST_OPACITY.\n\n4. OPERATING LEASES (data centers + offices): $2.737B total lease liability on balance sheet under ASC 842, but no residual value guarantees mentioned in this section. Not an off-balance-sheet structure per se under current GAAP.\n\n5. DEBT STRUCTURE: $6B new debt issued in FY2026; $4B current + $10.4B noncurrent = $14.4B total debt. $584M financing obligation payments suggest finance leases for data center equipment. Debt raised to fund $12.7B buyback program \u2014 leverage for financial engineering, not infrastructure.\n\n6. NO SIFI-MATERIAL CIRCULARITY OR ROUNDTRIPPING detected in this section. No named AI lab counterparties, no SPVs, no VIEs, no named compute suppliers. The filing's investee names (if any) are not disclosed in this extract.\n[chunk 2/3] KEY FINDINGS FROM CRM FY2026 10-K FINANCIAL NOTES:\n\n1. HIDDEN LEVERAGE \u2013 INFORMATICA SHORT-DATED $4B DEBT: Salesforce drew $6B in full under two credit agreements to acquire Informatica (Nov 2025). The $4B 364-day tranche matures Nov 2026, creating a near-term refinancing balloon. Total debt jumped from $8.4B to $14.4B YoY. Severity: 3.\n\n2. VIE NON-CONSOLIDATION: Salesforce holds investments in/management agreements with VIEs it does not consolidate (not primary beneficiary). Carrying value fell sharply from $484M to $160M in one year \u2014 warrants monitoring for derecognition events or structure changes. Severity: 2.\n\n3. PRIVATE EQUITY CONCENTRATION / VALUATION OPACITY: $7.6B strategic investment portfolio (up 58% YoY) heavily weighted toward Level 3 measurement-alternative privately held equities. A single unnamed investee generated $1.2B in upward fair value adjustments in FY2026 \u2014 but total impairments were $496M. The identity of the $1.2B gain investee is not disclosed, preventing counterparty-web tracing. Severity: 3.\n\n4. GOODWILL OPACITY: Goodwill reached $57.9B (Jan 2026), including $5.3B from Informatica whose fair value allocations remain PRELIMINARY. Goodwill is not tax-deductible. If integration underperforms, impairment risk is material. Severity: 2.\n\n5. NO NAMED AI-LAB INVESTEES DISCLOSED: Unlike NVIDIA's Note 8, Salesforce's Note 3 does not individually name its privately held investees. The single $1.2B-gain investment could be an AI lab (plausible given CRM's Agentforce strategy and known Anthropic/OpenAI ecosystem adjacency), but this cannot be confirmed from the filing text \u2014 no fabrication per Rule 1.\n\n6. LEASE COMMITMENTS: $4.4B total lease commitments ($3.8B data center/office), with operating leases running up to 20 years. Finance lease cost of $400M in FY2026. No residual value guarantees disclosed.\n[chunk 3/3] This section (Notes 12\u201314 + Item 9) covers income taxes, EPS, legal proceedings, and accounting disclosures. No off-balance-sheet entities, capex commitments, or equity investments in private companies were disclosed in this section. Key SIFI-material items extracted:\n\n1. UNRECOGNIZED TAX BENEFITS ($2.639B): A large and growing contingent liability \u2014 up from $2.083B in FY2024 to $2.639B in FY2026 \u2014 representing de facto hidden leverage. $1.9B of this, if recognized, would reduce taxes. $294M in accrued interest/penalties adds further overhang. Flagged as HIDDEN_LEVERAGE severity 2.\n\n2. VALUATION ALLOWANCE ($967M, up from $786M): Growing realization risk on deferred tax assets, primarily California R&D credits ($1.1B) and foreign tax credits \u2014 flagged as COST_OPACITY severity 1.\n\n3. BACKPAGE LITIGATION: Material open-ended liability with 300+ plaintiffs across ~20+ federal and state actions, unspecified damages, many still pending. Severity 3 given scale and reputational exposure, though no reserve amount is disclosed (management believes no material adverse impact \u2014 standard qualifier).\n\n4. SLACK SECURITIES LITIGATION (State Court Action): Federal action concluded Nov 2025 (judgment for defendants); state court action In re Slack Technologies, Inc. still pending class certification. Not flagged as material given federal resolution.\n\nNo SPVs, VIEs, operating leases with RVGs, capex commitments to named counterparties, or equity investments in AI labs were present in this filing section."
+  },
+  "item_9a": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce, Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Regrello",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Informatica",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ernst & Young",
+        "fields": {
+          "aliases": [
+            "EY"
+          ],
+          "role": "supplier"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "Regrello",
+        "properties": {
+          "date": "October 2025",
+          "type": "acquisition",
+          "materiality": "less than 1% of consolidated revenues, operating expenses, total assets, and net assets"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "Informatica",
+        "properties": {
+          "date": "November 2025",
+          "type": "acquisition",
+          "materiality": "less than 1% of consolidated revenues, operating expenses, total assets, and net assets"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "SUPPLIES",
+        "target_type": "company",
+        "target_name": "Ernst & Young",
+        "properties": {
+          "service": "independent registered public accounting firm audit services"
+        }
+      }
+    ],
+    "notes": "[chunk 1/1] Item 9A is a controls and procedures disclosure with minimal SIFI-material content. The section covers: (1) evaluation of disclosure controls (boilerplate); (2) management's report on internal control over financial reporting (standard framework); (3) changes to internal controls (none material); (4) inherent limitations on controls (generic risk disclaimers). Item 9B and 9C cover Rule 10b5-1 trading arrangements and foreign jurisdiction inspections. Item 10\u201314 cross-reference proxy statement disclosures on directors, compensation, and related-party transactions (not provided in this excerpt).\n\nEXTRACTED ENTITIES: Only two acquisitions and one audit firm are named with sufficient specificity for counterparty-web tracking:\n- Regrello (acquired Oct 2025, immaterial <1% of revenues/assets)\n- Informatica (acquired Nov 2025, immaterial <1% of revenues/assets)  \n- Ernst & Young (auditor)\n\nNO SIFI-MATERIAL RISKS IDENTIFIED: The control environment disclosures are routine statutory language. There are no hidden leverage, off-balance-sheet arrangements, concentration risks, circularity patterns, or execution gaps disclosed in this section. The acquisitions are noted as immaterial and fully consolidated. No related-party transactions or counterparty dependencies are described.\n\nThe filing references Parker Harris (Co-Founder & CTO, Slack) and Srinivas Tallapragada (President) stock trading arrangements, but these are routine insider trading disclosures with no SIFI relevance.\""
+  },
+  "item_15": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce, Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Traction",
+        "fields": {
+          "aliases": [
+            "Traction Sales and Marketing Inc."
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Tenyx",
+        "fields": {
+          "aliases": [
+            "Tenyx, Inc."
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Regrello",
+        "fields": {
+          "aliases": [
+            "Regrello Corp."
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Informatica",
+        "fields": {
+          "aliases": [
+            "Informatica Inc."
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Bank of America",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "JPMorgan Chase",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "U.S. Bank",
+        "fields": {
+          "aliases": [
+            "U.S. Bank National Association"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Transbay Tower LLC",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "50 Fremont Tower LLC",
+        "fields": {
+          "role": "supplier"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Traction",
+        "predicate": "SPONSORS",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Tenyx",
+        "predicate": "SPONSORS",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Regrello",
+        "predicate": "SPONSORS",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Informatica",
+        "predicate": "SPONSORS",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Bank of America",
+        "predicate": "BUYS_COMPUTE_FROM",
+        "properties": {
+          "contract_type": "Credit Agreement",
+          "date": "2024-10-31"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "JPMorgan Chase",
+        "predicate": "BUYS_COMPUTE_FROM",
+        "properties": {
+          "contract_type": "364-Day and Three-Year Credit Agreements",
+          "date": "2025-06-20"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "U.S. Bank",
+        "predicate": "BUYS_COMPUTE_FROM",
+        "properties": {
+          "contract_type": "Indenture (debt trustee)",
+          "date": "2018-04-11"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Transbay Tower LLC",
+        "predicate": "BUYS_COMPUTE_FROM",
+        "properties": {
+          "contract_type": "Office Lease",
+          "date": "2014-04-10"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "50 Fremont Tower LLC",
+        "predicate": "BUYS_COMPUTE_FROM",
+        "properties": {
+          "contract_type": "Purchase and Sale Agreement",
+          "date": "2014-11-10"
+        }
+      }
+    ],
+    "notes": "[chunk 1/1] Item 15 of Salesforce 10-K filing (2026-03-02) contains the Index to Exhibits. The only SIFI-material entities identified are:\n\n1. **Acquisitions/Subsidiaries**: Traction Sales and Marketing Inc., Tenyx Inc., Regrello Corp., and Informatica Inc.\u2014each with equity incentive plans incorporated by S-8 filings, indicating these are Salesforce-controlled subsidiaries or acquired entities.\n\n2. **Debt/Credit Facilities**: Three material financing arrangements disclosed:\n   - October 31, 2024 Credit Agreement with Bank of America N.A. as Administrative Agent\n   - June 20, 2025 364-Day Credit Agreement with JPMorgan Chase N.A. as Administrative Agent\n   - June 20, 2025 Three-Year Credit Agreement with JPMorgan Chase N.A. as Administrative Agent\n   - Indenture arrangements with U.S. Bank National Association as trustee (April 11, 2018, and amendments)\n\n3. **Real Estate**: Office Lease with Transbay Tower LLC and Purchase and Sale Agreement with 50 Fremont Tower LLC (likely San Francisco HQ operations).\n\nNo circular counterparty dependencies, off-balance-sheet SPVs, hidden leverage, or material customer/supplier concentration signals are evident from the exhibit index itself. The section is primarily administrative disclosure of filed documents and does not reveal substantive SIFI-material business relationships beyond the debt and subsidiary relationships noted above.\n\nThe text contains no verbatim risk quotations or undisclosed material obligations that would trigger risk_factor or hidden_risk_signal extraction.\""
+  }
+}

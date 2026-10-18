@@ -1,0 +1,593 @@
+{
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "CoreWeave",
+        "fields": {
+          "ticker": "CRWV",
+          "role": "hyperscaler",
+          "aliases": [
+            "CRWV"
+          ]
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-Revenue-Concentration-Risk",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "named_counterparties": [],
+          "verbatim_quote": "We reached $5 billion in annual revenue for the year ended December 31, 2025, representing growth of 168% year-over-year and reflecting strong demand for our platform.",
+          "numeric_signal": {
+            "amount_usd": 5000000000,
+            "note": "168% YoY revenue growth; customer concentration not individually named in this section but contract-length deepening noted"
+          }
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-Capex-Execution-Risk",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "Our cloud footprint now spans more than 850MW of active power across 43 data centers globally... We grew alongside our customers, expanding our platform, including through a series of strategic acquisitions, to match their rapidly evolving needs.",
+          "numeric_signal": {
+            "note": "850MW active power across 43 data centers; strategic acquisitions unspecified; rapid infrastructure scaling with execution dependency"
+          }
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-HSR-RelatedParty-Signal",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "named_counterparties": [
+            "Michael Intrator",
+            "Brian Venturo",
+            "Brannin McBee"
+          ],
+          "verbatim_quote": "$1,893,738 for the filing fees relating to Hart-Scott-Rodino (\"HSR\") filings required with respect to Mr. Intrator's equity holdings, of which $1,043,738 was provided as a related tax gross-up... $863,230 for the filing fees relating to HSR filings required with respect to Mr. Venturo's equity holdings... $773,120 for the filing fees relating to HSR filings required with respect to Mr. McBee's equity holdings",
+          "numeric_signal": {
+            "amount_usd": 3530128,
+            "note": "Company paid ~$3.5M in HSR filing fees + gross-ups for co-founder equity holdings, signaling very large personal equity positions triggering antitrust review thresholds"
+          }
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-EquityDilution-RiskSignal",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "named_counterparties": [],
+          "verbatim_quote": "Assuming achievement of the liquidity-based vesting condition, the aggregate grant-date fair values of the RSU awards for each of Mr. Intrator, Mr. Agrawal, Mr. Venturo, and Mr. McBee granted in 2025 would have been $19,999,074, $7,372,710, $11,227,791 and $7,578,537, respectively... granted in 2024 would have been $83,230,875",
+          "numeric_signal": {
+            "amount_usd": 129408987,
+            "note": "~$129M in RSU grant-date fair values (2024+2025) excluded from SCT due to liquidity condition not deemed probable at grant; large off-SCT equity overhang"
+          }
+        }
+      },
+      {
+        "type": "company",
+        "name": "CoreWeave",
+        "fields": {
+          "ticker": "CRWV",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Magnetar Financial",
+        "fields": {
+          "aliases": [
+            "Magnetar Capital Partners",
+            "Magnetar Financial LLC"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Jane Street",
+        "fields": {
+          "aliases": [
+            "Jane Street Group LLC",
+            "Jane Street Capital LLC",
+            "Jane Street Global Trading LLC"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-NVIDIA-Equity-Circularity",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "CIRCULARITY",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_revenue": null,
+            "note": "NVIDIA holds 47,213,353 shares (10.66%) of CoreWeave Class A common stock as of Jan 23, 2026, making it the second-largest outside shareholder while simultaneously being CoreWeave's primary GPU supplier"
+          },
+          "named_counterparties": [
+            "NVIDIA"
+          ],
+          "verbatim_quote": "NVIDIA Corporation reported having sole dispositive and voting power over 47,213,353 shares, shared dispositive and voting power over no shares of our Class A common stock."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-NVIDIA-Supplier-Concentration",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "counterparty_count": 1,
+            "note": "NVIDIA is both the dominant GPU supplier to CoreWeave and its second-largest Class A stockholder at 10.66% \u2014 single-source dependency with equity entanglement"
+          },
+          "named_counterparties": [
+            "NVIDIA"
+          ],
+          "verbatim_quote": "NVIDIA Corporation\n47,213,353 \n10.66%\n\u2014\n\u2014\n3.27%"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-DualClass-Control-Concentration",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Three founders (Intrator, McBee, Venturo) collectively hold 100% of Class B common stock (10 votes/share) and 72.32% of total voting power, creating near-absolute insider control post-IPO"
+          },
+          "named_counterparties": [
+            "Michael Intrator",
+            "Brannin McBee",
+            "Brian Venturo"
+          ],
+          "verbatim_quote": "All executive officers and directors as a group (12 persons) 23,912,505 5.38% 107,470,864 100.00% 72.32%"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "NVIDIA-CRWV-Equity-Stake",
+        "fields": {
+          "investor": "NVIDIA",
+          "target": "CoreWeave",
+          "equity_pct": 10.66,
+          "disclosed_date": "2026-01-26",
+          "verbatim_quote": "As reported on Amendment Number 1 to the statement on Schedule 13G filed with the SEC on January 26, 2026 by NVIDIA Corporation, reporting beneficial ownership as of January 23, 2026. NVIDIA Corporation reported having sole dispositive and voting power over 47,213,353 shares"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Magnetar-CRWV-Equity-Stake",
+        "fields": {
+          "investor": "Magnetar Financial",
+          "target": "CoreWeave",
+          "equity_pct": 17.07,
+          "disclosed_date": "2025-10-07",
+          "verbatim_quote": "Funds or accounts managed or advised by Magnetar Financial LLC 77,684,206 17.07%"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "JaneStreet-CRWV-Equity-Stake",
+        "fields": {
+          "investor": "Jane Street",
+          "target": "CoreWeave",
+          "equity_pct": 6.53,
+          "disclosed_date": "2026-02-12",
+          "verbatim_quote": "Jane Street may be deemed to exercise investment and voting discretion with respect to an aggregate 28,913,099 shares of our Class A common stock."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRWV-Revenue-Concentration-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRWV-Capex-Execution-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRWV-HSR-RelatedParty-Signal"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRWV-EquityDilution-RiskSignal"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "CoreWeave",
+        "properties": {
+          "equity_pct": 10.66,
+          "shares": 47213353,
+          "share_class": "Class A"
+        }
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "CoreWeave",
+        "properties": {
+          "note": "Primary GPU supplier; CoreWeave's infrastructure is NVIDIA-GPU dependent"
+        }
+      },
+      {
+        "predicate": "CIRCULAR_WITH",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "CoreWeave",
+        "properties": {
+          "note": "NVIDIA is simultaneously CoreWeave's largest GPU supplier and 10.66% Class A equity holder"
+        }
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Magnetar Financial",
+        "target_type": "company",
+        "target_name": "CoreWeave",
+        "properties": {
+          "equity_pct": 17.07,
+          "shares": 77684206,
+          "share_class": "Class A"
+        }
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Jane Street",
+        "target_type": "company",
+        "target_name": "CoreWeave",
+        "properties": {
+          "equity_pct": 6.53,
+          "shares": 28913099,
+          "share_class": "Class A"
+        }
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRWV-NVIDIA-Equity-Circularity"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRWV-NVIDIA-Supplier-Concentration"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRWV-DualClass-Control-Concentration"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "CRWV-NVIDIA-Equity-Circularity",
+        "target_type": "company",
+        "target_name": "NVIDIA"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "CRWV-NVIDIA-Supplier-Concentration",
+        "target_type": "company",
+        "target_name": "NVIDIA"
+      }
+    ],
+    "notes": "[chunk 1/2] This DEF 14A Compensation Discussion & Analysis section is largely standard executive compensation boilerplate. SIFI-material signals extracted:\n\n1. REVENUE SCALE: $5B revenue at 168% YoY growth confirms CoreWeave as a hyperscaler-class entity with rapidly scaling infrastructure obligations.\n\n2. EXECUTION RISK: 850MW / 43 data centers globally + \"series of strategic acquisitions\" (unnamed) signals material unspecified M&A and infrastructure scaling risk. Acquisitions are not named in this section \u2014 would require cross-referencing the 10-K.\n\n3. HSR FILING FEES AS RELATED-PARTY SIGNAL: CoreWeave paid ~$3.53M in Hart-Scott-Rodino filing fees and tax gross-ups on behalf of co-founders (Intrator: $1.89M, Venturo: $0.86M, McBee: $0.77M). HSR filings are required when equity holdings cross DOJ/FTC antitrust thresholds (currently ~$119M for 2025), confirming co-founders hold individually enormous equity stakes. Company funding these fees is a related-party perquisite. Severity=2.\n\n4. COST OPACITY / OFF-SCT EQUITY: ~$129M in RSU fair values were excluded from the Summary Compensation Table due to IPO liquidity condition not being \"probable\" at grant date. This is a legitimate accounting treatment but creates opacity around true compensation cost and dilution impact on shareholders. Severity=2.\n\nNo named customer counterparties, supplier dependencies, SPVs, or off-balance-sheet entities are disclosed in this section. Cross-reference 10-K Item 1 and Item 1A for those disclosures.\n[chunk 2/2] This DEF 14A section (Security Ownership + Equity Plan table) reveals three SIFI-material signals:\n\n1. NVIDIA-CoreWeave circularity (severity 4): NVIDIA holds 10.66% of CoreWeave Class A shares while being CoreWeave's dominant GPU supplier. This is the classic investor\u21c4supplier circularity that can mask arm's-length pricing, create conflict-of-interest in supply negotiations, and amplify contagion if either party faces distress.\n\n2. Magnetar Financial is the largest outside Class A holder at 17.07% (77.7M shares) via a complex web of special-purpose funds (CW Opportunity, CW Opportunity 2, Magnetar SCF, etc.) \u2014 some holding warrants in addition to shares, suggesting pre-IPO structured credit exposure that converted to equity.\n\n3. Dual-class control: The three co-founders hold 100% of Class B stock (10 votes/share), controlling 72.32% of all voting power despite owning a minority of economic shares. This materially concentrates governance risk.\n\nJane Street (6.53%) is also noted as entering a securities purchase agreement (Form 8-K Apr 15, 2026), worth monitoring for potential ROUND_TRIPS if Jane Street also has compute-related dealings with CoreWeave."
+  },
+  "related_party": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "CoreWeave",
+        "fields": {
+          "ticker": "CRWV",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Magnetar",
+        "fields": {
+          "aliases": [
+            "Magnetar Financial LLC",
+            "MagAI Ventures",
+            "MAIV"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Jane Street",
+        "fields": {
+          "aliases": [
+            "Jane Street Group, LLC",
+            "Jane Street Global Trading LLC"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Blackstone",
+        "fields": {
+          "aliases": [
+            "Blackstone Alternative Credit Advisors LP",
+            "Blackstone Tactical Opportunities Advisors L.L.C."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "CoreWeave-CAC-IV-DDTL2.0",
+        "fields": {
+          "entity_type": "SPV",
+          "sponsor": "CoreWeave",
+          "co_owner": "Blackstone",
+          "beneficiary": "CoreWeave",
+          "debt_stack_usd": 5000000000,
+          "term_yrs": 5,
+          "purpose": "GPU server acquisition and infrastructure financing for customer contracts; $7.6B facility, $5.0B drawn as of Dec 31 2025",
+          "verbatim_quote": "CoreWeave Compute Acquisition Co. IV, LLC, our direct, wholly-owned subsidiary, as borrower, entered into a credit agreement...providing for a $7.6 billion delayed draw term loan facility...Our DDTL 2.0 Facility was entered into primarily to finance capital expenditures required to perform customer contracts, including the acquisition of GPU servers."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "CoreWeave-CAC-IV-DDTL2.1",
+        "fields": {
+          "entity_type": "SPV",
+          "sponsor": "CoreWeave",
+          "co_owner": "Blackstone",
+          "beneficiary": "CoreWeave",
+          "debt_stack_usd": 2700000000,
+          "term_yrs": 5,
+          "purpose": "Additional GPU server acquisition tranche; $3.0B facility, $2.7B drawn as of Dec 31 2025",
+          "verbatim_quote": "In September 2025, we further amended the DDTL 2.0 Facility (as so amended, the 'DDTL 2.1 Facility') to create a new tranche of delayed draw term loan facility up to $3.0 billion...As of December 31, 2025, $2.7 billion of our DDTL 2.1 Facility was drawn and $0.3 billion remained available for borrowing."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "CoreWeave-CAC-II-DDTL1.0",
+        "fields": {
+          "entity_type": "SPV",
+          "sponsor": "CoreWeave",
+          "co_owner": "Blackstone",
+          "beneficiary": "CoreWeave",
+          "debt_stack_usd": 1600000000,
+          "term_yrs": 5,
+          "purpose": "GPU server acquisition and infrastructure financing for customer contracts; $2.3B facility, $1.6B outstanding as of Dec 31 2025; matures March 2028",
+          "verbatim_quote": "CoreWeave Compute Acquisition Co. II, LLC, our direct, wholly-owned subsidiary, as borrower, entered into a credit agreement...providing for a $2.3 billion delayed draw term loan facility...The maturity date of our DDTL 1.0 Facility is March 28, 2028. As of December 31, 2025, our DDTL 1.0 Facility was fully drawn, and we had $1.6 billion outstanding."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "MagAI-Capacity-Deposit",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "Magnetar",
+          "beneficiary": "CoreWeave",
+          "debt_stack_usd": 273000000,
+          "residual_value_guarantee": true,
+          "term_yrs": 4,
+          "purpose": "Refundable $230M compute capacity deposit from Magnetar fund (MagAI Ventures); classified as $273M debt on CoreWeave balance sheet including $43M redemption premiums; breakup fee multiplier 1.06x-1.73x",
+          "verbatim_quote": "We received a refundable deposit of approximately $230 million in connection with the MagAI Capacity Agreement...As of December 31, 2025, we had $273 million classified as debt, current, including $43 million of redemption premiums, on the consolidated balance sheets, related to this arrangement."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "NVIDIA-CoreWeave-$2B",
+        "fields": {
+          "investor": "NVIDIA",
+          "target": "CoreWeave",
+          "amount_usd": 2000000000,
+          "disclosed_date": "2026-01-23",
+          "round": "Common Stock Financing",
+          "verbatim_quote": "On January 23, 2026, we entered into a Securities Purchase Agreement...with NVIDIA and completed the issuance and sale of 22,935,780 shares of our Class A common stock to NVIDIA...at a price of $87.20 per share for an aggregate purchase price of $2 billion in cash."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Jane-Street-CoreWeave-$1B",
+        "fields": {
+          "investor": "Jane Street",
+          "target": "CoreWeave",
+          "amount_usd": 1000000000,
+          "disclosed_date": "2026-04-15",
+          "round": "Common Stock Financing",
+          "verbatim_quote": "On April 15, 2026, we entered into a Securities Purchase Agreement...with Jane Street GT and completed the issuance and sale of 9,174,311 shares of our Class A common stock to Jane Street GT...at a price of $109.00 per share for an aggregate purchase price of approximately $1.0 billion in cash."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "CoreWeave-MAIV-$50M",
+        "fields": {
+          "investor": "CoreWeave",
+          "target": "Magnetar",
+          "amount_usd": 50000000,
+          "disclosed_date": "2024-06-14",
+          "round": "Preferred Stock",
+          "verbatim_quote": "On June 14, 2024, we contributed an aggregate amount of $50 million to a fund managed by Magnetar ('MAIV') in connection with MAIV's purchase of shares of preferred stock in a private company."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-NVIDIA-Circularity",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "CIRCULARITY",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 2000000000,
+            "note": "NVIDIA is simultaneously CoreWeave's largest GPU supplier (17% of total purchases), a $2B equity investor, and a paying compute customer ($326M paid in FY2025 + $59.6M Q1 2026)"
+          },
+          "named_counterparties": [
+            "NVIDIA"
+          ],
+          "verbatim_quote": "NVIDIA beneficially owns more than 5% of our outstanding capital stock...NVIDIA accounted for 17% of our total purchases from suppliers...NVIDIA has paid us an aggregate of approximately $326.3 million and $59.6 million, respectively, pursuant to the Master Services Agreement."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-Magnetar-Circularity",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "CIRCULARITY",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 230000000,
+            "note": "Magnetar is simultaneously a >5% equity holder, lead lender on $7.6B DDTL 2.0 and $2.3B DDTL 1.0 facilities, compute capacity deposit counterparty ($230M), and recipient of $50M CoreWeave investment; two former Magnetar executives hired into strategic financing roles"
+          },
+          "named_counterparties": [
+            "Magnetar"
+          ],
+          "verbatim_quote": "Magnetar beneficially owns more than 5% of our outstanding capital stock...Magnetar, as a co-lead investor...providing for a $7.6 billion delayed draw term loan facility...We received a refundable deposit of approximately $230 million in connection with the MagAI Capacity Agreement."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-DDTL-HiddenLeverage",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 9300000000,
+            "note": "Three subsidiary SPV debt facilities totaling ~$9.3B drawn ($5.0B DDTL2.0 + $2.7B DDTL2.1 + $1.6B DDTL1.0), all secured by subsidiary assets and GPU collateral; $457M interest paid on DDTL2.0 alone with zero principal repaid; high interest spreads 6%-13% over SOFR"
+          },
+          "named_counterparties": [
+            "Blackstone",
+            "Magnetar"
+          ],
+          "verbatim_quote": "As of December 31, 2025, $5.0 billion of our DDTL 2.0 Facility was drawn...As of December 31, 2025, $2.7 billion of our DDTL 2.1 Facility was drawn...As of December 31, 2025, our DDTL 1.0 Facility was fully drawn, and we had $1.6 billion outstanding...we have paid $457 million in interest on outstanding amounts under our DDTL 2.0 Facility and have made no principal payments."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-MagAI-RevenueRoundtrip",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 230000000,
+            "note": "Magnetar deposited $230M classified as CoreWeave debt; no services consumed as of Dec 31 2025 and Mar 31 2026; unused deposit earns a 12% annual return via breakup fee multiplier; structure resembles prepaid compute that generates guaranteed return regardless of actual usage"
+          },
+          "named_counterparties": [
+            "Magnetar"
+          ],
+          "verbatim_quote": "As of December 31, 2025 and March 31, 2026, the $230 million refundable deposit remains available for cloud computing services for MagAI Ventures' portfolio companies, as no services had yet been provided under this arrangement. Upon termination by either party, the unused portion of the $230 million deposit will be refunded along with a specified multiplier...that equates to a 12% annual rate of return."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-NVIDIA-SupplierConcentration",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 5,
+          "numeric_signal": {
+            "pct_of_revenue": 0.17,
+            "note": "NVIDIA is sole GPU supplier (100% of GPU fleet) and accounted for 17% of total purchases; no substitute GPU supplier within 2 years given contractual obligations"
+          },
+          "named_counterparties": [
+            "NVIDIA"
+          ],
+          "verbatim_quote": "As a result of our obligations in our current customer contracts, all of the Graphics Processing Units ('GPUs') used in our infrastructure today are NVIDIA GPUs. For the year ended December 31, 2025, NVIDIA accounted for 17% of our total purchases from suppliers."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-Jane-Street-CustomerConcentration",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 320600000,
+            "note": "Jane Street paid $100M FY2025 + $220.6M Q1 2026; rapid acceleration in Q1 2026 and Jane Street also invested $1B equity in April 2026, creating investor-customer dynamic"
+          },
+          "named_counterparties": [
+            "Jane Street"
+          ],
+          "verbatim_quote": "Jane Street has paid us an aggregate of approximately $100.0 million and $220.6 million, respectively, pursuant to the Jane Street MSA and related order forms...On April 15, 2026, we...completed the issuance and sale of 9,174,311 shares of our Class A common stock to Jane Street GT...for an aggregate purchase price of approximately $1.0 billion in cash."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-Magnetar-GovernanceCapture",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Magnetar held board nomination rights, is a lead lender, compute customer, and equity holder; two former Magnetar executives (former COO and former CFO) hired into CoreWeave strategic financing roles in June 2025"
+          },
+          "named_counterparties": [
+            "Magnetar"
+          ],
+          "verbatim_quote": "Ernie Rogers, a former member of our Board of Directors and the former Chief Operating Officer of Magnetar, was appointed our Chief Architect, Strategic Financing in June 2025...Jessica Damrat, the former Chief Financial Officer, Management Company, of Magnetar, was appointed our SVP, Strategic Financing in June 2025."
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 2/2] The source text is the boilerplate/procedural section of CoreWeave's DEF 14A proxy filing (Annual Meeting logistics, proxy voting instructions, stockholder proposal deadlines, Section 16(a) delinquency disclosures, and the proxy card itself). There are NO SIFI-material disclosures in this section: no off-balance-sheet entities, no capex commitments, no investments, no related-party transactions, no hidden leverage, no circularity, no revenue roundtripping, no concentration risks, and no other extractable financial-structure content. All content is routine proxy/governance boilerplate. Nothing meets the materiality threshold for extraction per the hard rules."
+  }
+}

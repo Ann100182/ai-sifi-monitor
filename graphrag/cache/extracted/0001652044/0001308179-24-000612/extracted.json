@@ -1,0 +1,349 @@
+{
+  "related_party": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google",
+            "GV"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "GOOGL-KleinerPerkins-Portfolio-2023-2024",
+        "fields": {
+          "investor": "Alphabet",
+          "target": "Kleiner Perkins portfolio companies",
+          "amount_usd": 12338300,
+          "disclosed_date": "2024-04-26",
+          "verbatim_quote": "Google and GV directly invested, or committed to invest, an aggregate of approximately $12,338,300 in certain private companies from the beginning of 2023 through March 31, 2024, in which Kleiner Perkins was a co-investor or existing investor."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-KleinerPerkins-CoInvestor-Conflict",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Related Party / Conflict of Interest",
+          "named_counterparties": [
+            "Kleiner Perkins",
+            "L. John Doerr"
+          ],
+          "severity": 1,
+          "verbatim_quote": "Google and GV directly invested, or committed to invest, an aggregate of approximately $12,338,300 in certain private companies from the beginning of 2023 through March 31, 2024, in which Kleiner Perkins was a co-investor or existing investor. KPCB Holdings, Inc., as nominee for certain funds of Kleiner Perkins and several of the managers of the fund, holds more than 10% of the outstanding shares of such private companies."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-MoffettAirfield-RelatedParty",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Related Party Transaction / Insider Use of Company-Operated Asset",
+          "named_counterparties": [
+            "Larry Page",
+            "Sergey Brin",
+            "Eric E. Schmidt",
+            "Ram Shriram",
+            "LTA Research & Exploration LLC"
+          ],
+          "severity": 1,
+          "verbatim_quote": "From the beginning of 2023 through March 31, 2024, we charged the Founder Entities approximately $995,300... In December 2015, we entered into an agreement to license a portion of our hangar space at the Airfield to LTA Research & Exploration LLC (LTA), which is owned by an entity affiliated with Sergey. From the beginning of 2023 through March 31, 2024, we charged LTA approximately $9,309,450."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-BCH-SanJose-RelatedParty",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Related Party Transaction / Insider-Owned Lessor",
+          "named_counterparties": [
+            "BCH San Jose LLC",
+            "Larry Page",
+            "Sergey Brin",
+            "Eric E. Schmidt"
+          ],
+          "severity": 1,
+          "verbatim_quote": "In November 2015, we entered into an agreement with BCH San Jose LLC (BCH) to license the use of a portion of BCH's hangar space at the Mineta San Jose International Airport to hold Google's corporate aircraft. Larry, Sergey, and Eric each own one-third interests in BCH, through their respective affiliated entities. From the beginning of 2023 through March 31, 2024, we paid approximately $1,655,650 to BCH."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "investment",
+        "target_name": "GOOGL-KleinerPerkins-Portfolio-2023-2024"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-KleinerPerkins-CoInvestor-Conflict"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-KleinerPerkins-CoInvestor-Conflict",
+        "target_type": "company",
+        "target_name": "Alphabet"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-MoffettAirfield-RelatedParty"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-BCH-SanJose-RelatedParty"
+      }
+    ],
+    "notes": "[chunk 1/1] This DEF 14A related-party section for Alphabet (GOOGL) is LOW in SIFI-material content. Key findings:\n\n1. INVESTMENT: Google/GV co-invested ~$12.3M alongside Kleiner Perkins in private companies (2023\u2013Q1 2024). Dollar amount is immaterial at the SIFI level but the co-investor relationship with a board member (John Doerr of Kleiner Perkins) is a governance flag worth tracking.\n\n2. RELATED-PARTY LEASES (non-material): Moffett Airfield fees charged to founder-affiliated entities (~$995K) and LTA Research (~$9.3M hangar license to Sergey Brin affiliate) are routine and small. BCH San Jose LLC (owned 1/3 each by Page, Brin, Schmidt) received ~$1.66M from Google for hangar space \u2014 Google is the PAYER here, creating a mild conflict.\n\n3. NO off-balance-sheet SPVs, no large capex commitments, no AI-lab equity stakes, no hyperscaler compute agreements, and no SIFI-level circularity were disclosed in this section.\n\n4. The $9.3M LTA hangar license stands out as the largest single related-party dollar flow and involves a Brin-affiliated entity using Google-operated NASA infrastructure \u2014 flagged as a governance watch item (severity 1).\n\nNo hidden_risk_signal nodes were emitted because no transaction here rises to the 8 SIFI risk pattern thresholds (leverage, circularity, roundtripping, capex ROI gap, execution risk, cost opacity, or concentration)."
+  },
+  "director_comp": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Compensia Inc.",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Semler Brossy Consulting Group LLC",
+        "fields": {
+          "role": "supplier"
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/1] Director Compensation section (DEF 14A, 2024-04-26) contains no SIFI-material entities, counterparty relationships, investments, or hidden leverage signals. The section discusses standard non-employee director compensation (cash retainers, GSU grants), compensation consultants (Compensia Inc. and Semler Brossy Consulting Group LLC), and individual director holdings/compensation amounts. No customer concentration, supplier dependencies, related-party transactions, or capital commitments are disclosed. No off-balance-sheet entities, circular dependencies, or execution risks are mentioned. Skipped boilerplate compensation governance language. The consultant retainers and director compensation are routine administrative items, not SIFI-material.\""
+  },
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "aliases": [
+            "Amazon.com, Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Apple",
+        "fields": {
+          "ticker": "AAPL",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "aliases": [
+            "Meta Platforms, Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intel",
+        "fields": {
+          "ticker": "INTC",
+          "aliases": [
+            "Intel Corporation"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "aliases": [
+            "International Business Machines Corporation"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce, Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "role": "hyperscaler",
+          "aliases": [
+            "Google"
+          ]
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-GenAI-Misinformation-Risk",
+        "fields": {
+          "filer": "GOOGL",
+          "category": "Generative AI misinformation / reputational and legal risk",
+          "named_counterparties": [
+            "OpenAI"
+          ],
+          "severity": 2,
+          "verbatim_quote": "Shareholders are concerned that Alphabet incurs significant legal, financial, and reputational risks because of its rapid development and deployment of gAI products, absent parallel assessments of the threats they pose to the Company and society."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-AdvertisingConcentration-Risk",
+        "fields": {
+          "filer": "GOOGL",
+          "category": "Customer/revenue concentration in advertising",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Google advertising accounted for approximately 80% of Alphabet's revenue in 2022. Alphabet's ad business, including Google Search, YouTube Ads and Google Network, has grown substantially lately, reaching $224 billion in 2022."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-AdvertisingRevenue-Concentration",
+        "fields": {
+          "filer": "GOOGL",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "pct_of_revenue": 0.8,
+            "note": "Google advertising ~80% of Alphabet revenue in 2022; $224B ad revenue"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Google advertising accounted for approximately 80% of Alphabet's revenue in 2022. Alphabet's ad business, including Google Search, YouTube Ads and Google Network, has grown substantially lately, reaching $224 billion in 2022."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-Section230-GenAI-Legal-Risk",
+        "fields": {
+          "filer": "GOOGL",
+          "category": "Legal liability \u2014 Section 230 inapplicability to AI-generated content",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "legal experts believe content generated by Alphabet's own technology is unlikely to be shielded by Section 230 (Communications Decency Act), which has historically provided legal protection when third-party content is posted."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-ChildSafety-Regulatory-Risk",
+        "fields": {
+          "filer": "GOOGL",
+          "category": "Child safety regulatory and legal exposure \u2014 FTC fine, DSA, UK Online Safety Act, KOSA",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Alphabet has faced legacy issues stemming from YouTube's record $170 million fine paid to the Federal Trade Commission response to allegations that YouTube illegally harvested children's data."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-AdvertisingRevenue-Concentration"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-GenAI-Misinformation-Risk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-AdvertisingConcentration-Risk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-Section230-GenAI-Legal-Risk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-ChildSafety-Regulatory-Risk"
+      }
+    ],
+    "notes": "[chunk 1/5] This filing is Alphabet's DEF 14A Compensation Discussion and Analysis for FY2023. The section is almost entirely standard executive compensation boilerplate \u2014 salary tables, PSU/GSU vesting schedules, pay-ratio disclosures, and peer group benchmarking. There are NO SIFI-material signals present: no off-balance-sheet SPVs, no AI lab investments named, no customer/supplier concentration disclosures, no capex commitments, no circular dependencies, no revenue roundtripping, and no hidden leverage. The only named external entities are the 12 compensation peer group companies (Amazon, Apple, Cisco, Comcast, Intel, IBM, Meta, Microsoft, Netflix, Oracle, Salesforce, Walt Disney), which are cited solely as talent and compensation benchmarks \u2014 not as business counterparties, customers, investors, or suppliers. Cisco, Comcast, Netflix, and Walt Disney are omitted as they have no material SIFI relevance in this context. The most notable compensation-related facts for the record: Sundar Pichai's 2023 total comp was $8.8M (no new equity grant); the 2022 multi-year equity package (~$218M grant date fair value) drove $235M Compensation Actually Paid in 2023 due to stock price appreciation. No related-party arrangements, acquisitions, or strategic investments are disclosed in this section.\n[chunk 2/5] The source text is a DEF 14A proxy statement section covering: (1) auditor fees for Ernst & Young LLP, (2) director election proposals, (3) stockholder proposals on EEO policy, electromagnetic radiation, director compensation bylaws, and other governance topics. No SIFI-material entities are present. There are no disclosures of: hidden leverage/SPVs, circular investment relationships, revenue roundtripping, capex commitments, AI lab investments, customer/supplier concentration, named counterparty dependencies, or any other pattern matching the 8 SIFI risk categories. Ernst & Young LLP as auditor is routine and not SIFI-material. All content is standard proxy statement boilerplate (governance, compensation policy, stockholder proposals on ESG/political topics). Nothing qualifies for extraction under the hard rules.\n[chunk 3/5] This section of Alphabet's 2024 DEF 14A covers stockholder proposals 5\u201311, including topics on electromagnetic radiation, director political/charitable transparency, climate risks in retirement plans, lobbying disclosure, equal shareholder voting, reproductive healthcare misinformation, and AI principles/board oversight. None of these sections contain SIFI-material entities as defined by the project criteria: no named business relationships involving customer concentration or supplier dependencies, no investments or acquisitions, no related-party financial arrangements, no off-balance-sheet entities, no capex commitments, no revenue roundtripping, no hidden leverage, and no counterparty-web relevant disclosures. The lobbying spend figure ($119M federal lobbying 2015\u20132022) and trade association memberships (Chamber of Commerce, Business Roundtable) are advocacy/governance boilerplate, not SIFI-material financial relationships. The multi-class share structure disclosure (Page/Brin control >51% voting power with <12% economic interest) is a governance structural fact but does not constitute a hidden leverage, circularity, or concentration risk under the defined SIFI patterns. Extracting zero nodes and edges is the correct result for this filing section.\n[chunk 4/5] Source is a DEF 14A proxy statement (comp_disc_analysis section), primarily containing stockholder proposals and board opposing statements \u2014 not a 10-K Item 1A. SIFI-material extractions are limited. Key signals:\n\n1. CUSTOMER_CONCENTRATION: Advertising is ~80% of Alphabet 2022 revenue ($224B) \u2014 a material single-revenue-stream concentration risk cited verbatim by a shareholder proposal filer (Proposal 13). Severity kept at 2 because this is structural and well-disclosed, not hidden.\n\n2. GenAI legal/reputational risks: Section 230 inapplicability, hallucination rates, and misinformation liability are cited in stockholder proposal language (Proposal 12). Severity 2 \u2014 watch-level given early-stage legal doctrine.\n\n3. Child safety legacy liability: The $170M FTC fine for YouTube COPPA violations and ongoing DSA/UK OSA/KOSA regulatory exposure are cited (Proposal 14). Severity 2.\n\n4. No named strategic counterparties, SPVs, equity investments, capex commitments, or circular dependencies are disclosed in this section. OpenAI is cited only in a third-party quote from Sam Altman, not as a business counterparty of Alphabet.\n\nBoilerplate governance and proxy voting mechanics were skipped per instructions.\n[chunk 5/5] This section of Alphabet's DEF 14A (2024-04-26) covers purely procedural proxy mechanics: voting procedures, broker non-votes, annual meeting logistics, stockholder proposal deadlines, and transfer agent/inspector-of-elections contacts. The only named third parties are Broadridge Financial Solutions (vote tabulation, ~$13K fee) and Computershare (transfer agent) \u2014 both routine service relationships with immaterial fees. There are zero SIFI-material entities: no strategic investments, no customer/supplier concentrations, no SPVs, no AI lab relationships, no capex commitments, no circularity signals, and no hidden leverage disclosures. Extraction is intentionally empty per Hard Rule 3."
+  }
+}

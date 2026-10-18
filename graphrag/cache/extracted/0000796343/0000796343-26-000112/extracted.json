@@ -1,0 +1,281 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "ADBE Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Semrush",
+        "fields": {
+          "aliases": [
+            "Semrush Holdings, Inc."
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "ADBE",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "Adobe",
+            "Adobe Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Semrush",
+        "fields": {
+          "aliases": [
+            "Semrush Holdings Inc."
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "software company"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Semrush",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "Adobe Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ADBE_Global_Regulatory_Compliance",
+        "fields": {
+          "filer": "Adobe",
+          "category": "regulatory_and_compliance",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We are a global company subject to varied and complex laws, regulations, government actions and customs, both domestically and internationally. These local, state, federal and international laws and regulations relate to a number of aspects of our business, including trade laws such as import and export controls, anti-boycott, economic sanctions and embargoes, data and transaction processing security, payment card industry data security standards, antitrust and competition, consumer protection, records management, user-generated content hosted on websites we operate, privacy practices, data residency and transfer, AI, corporate governance, employment practices, immigration, employee and third-party complaints, anti-corruption, conflicts of interest, securities regulations, sustainability and other regulatory requirements affecting trade and investment."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE_Data_Transfer_Regulatory_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": null,
+            "note": "Cost impact of evolving cross-border data transfer restrictions unknown; compliance burden undisclosed"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "If these or other countries implement more restrictive regulations for cross-border data transfers or do not permit data to leave the country of origin, such developments could adversely impact our business and our enterprise customers' business, our financial condition and our results of operations in those jurisdictions."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE_AI_Innovation_Regulatory_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "AI regulatory impact on product roadmap and customer adoption uncertain; timeline and cost unknown"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The laws, regulations and codes above may impact our innovation and business drivers in developing new and emerging technologies (for example, AI and machine learning) and may impact demand for our solutions and has resulted in more onerous obligations in our contracts and changes to our business practices, and may require us to bear additional burdensome contractual obligations and make additional changes to our business practices in the future."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE_Customer_Data_Liability",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Contingent liability for customer data compliance failures; magnitude undisclosed"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Additionally, we collect and store information on behalf of our business customers and if our customers fail to comply with contractual obligations or applicable laws, it could result in litigation or reputational harm to us."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE_Generative_AI_IP_Protection",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Loss of trade secret protection for AI-generated source code; revenue impact unquantified"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Moreover, due to challenges in detecting patent infringement pertaining to generative AI technologies, it may be more difficult to protect our generative AI and related innovations with patents. Additionally, if we use generative AI in the creation of our source code or other materials or inventions, we may not be able to rely on copyrights or patents to protect such intellectual property."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE_Goodwill_Impairment",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Publishing & Advertising unit goodwill already impaired Q2 FY2026; additional impairments possible"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In the second quarter of fiscal 2026, we recorded a goodwill impairment charge related to our Publishing & Advertising reporting unit. We may be required to record additional charges to earnings in our consolidated financial statements during the period in which any impairment of our goodwill or intangible assets is determined, negatively impacting our results of operations."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE_Revenue_Recognition_Lag",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "duration_yrs": 3,
+            "note": "Subscription revenue recognized ratably over 1\u201336 month terms; renewal rate changes not immediately reflected in period results"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We generally recognize revenue from our subscription solutions ratably over the terms of their subscription agreements, which typically range from 1 to 36 months. As a result, most of the subscription revenue we report each quarter is the result of subscription agreements entered into during previous quarters. Lower sales and subscriptions, reduced demand for our solutions, and increases in our attrition rate in any given period may not be fully reflected in our results of operations until future periods."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ADBE_Government_Customer_Execution_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Unquantified up-front investment in government security certifications with uncertain contract award timelines"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We have made, and may continue to make, significant investments to support future sales opportunities in various government sectors, including to obtain various security authorizations and certifications. Such processes are complex, lengthy and can often be delayed. Furthermore, requirements may change, or we may be unable to achieve or sustain one or more government authorizations or certifications, which could affect our ability to sell to government entities until we meet any new or revised requirements."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "company",
+        "target_name": "Semrush",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition",
+          "amount_usd": 1870000000.0,
+          "date": "2026-04-28",
+          "deal_structure": "primarily cash consideration"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "ADBE",
+        "target_type": "company",
+        "target_name": "Semrush",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "acquisition_date": "Q2 FY2026 (April 2026)",
+          "context": "ADBE acquired Semrush to enhance Adobe Experience Manager offerings with search engine optimization and generative engine optimization solutions"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "company",
+        "target_name": "Semrush",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition",
+          "timing": "Q2 FY2026",
+          "note": "Acquisition of Semrush mentioned in cash flow investing activities"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "ADBE_Global_Regulatory_Compliance",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE_Data_Transfer_Regulatory_Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE_AI_Innovation_Regulatory_Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE_Customer_Data_Liability",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE_Generative_AI_IP_Protection",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE_Goodwill_Impairment",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE_Revenue_Recognition_Lag",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ADBE_Government_Customer_Execution_Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      }
+    ],
+    "notes": "[chunk 1/4] Extraction from Adobe 10-Q (Q2 FY2026, filed 2026-06-15). IDENTIFIED: (1) Semrush acquisition completed 2026-04-28 for $1.87B cash, integrated into Adobe operations. Purchase price allocation: $582M identifiable intangibles (purchased technology $415M, customer contracts $107M, trademarks $60M), $1.251B goodwill (non-deductible). Rationale: brand visibility platform for marketers. No SIFI-material hidden leverage, circularity, or execution risk disclosed. The goodwill size ($1.251B, ~67% of purchase price) is notable but within Adobe's scale ($29.9B assets). No related-party arrangements, off-balance-sheet entities, or counterparty concentration issues identified in this filing excerpt. Standard M&A disclosures only.\n[chunk 2/4] EXTRACTION NOTES FOR ADBE 10-Q (2026-06-15):\n\nSCOPE & OMISSIONS:\nThis 10-Q excerpt contains primarily financial statement notes (derivatives, goodwill, intangibles, debt, segment info, MD&A) with NO SIFI-material counterparty relationships, hidden leverage, circularity, or concentration risks that meet extraction thresholds.\n\nEXTRACTED ENTITIES:\n1. **Semrush (acquisition, Q2 FY2026)**: Acquired in April 2026 for SEO/GEO capabilities to enhance Adobe Experience Manager. Contributed ~$480M to ARR. This is a business combination with identifiable intangibles but NO OFF-BALANCE-SHEET LEVERAGE disclosed.\n\nMATERIAL FACTS REVIEWED BUT NOT EXTRACTED (below SIFI threshold or boilerplate):\n- **Derivative hedges** (FX contracts, interest rate swaps): Routine hedging, immaterial to operations. No embedded leverage or counterparty concentration.\n- **Goodwill impairment ($70M)** in Publishing & Advertising: One-time charge on prior acquisition, no ongoing SIFI risk signal.\n- **Debt structure** ($6.15B senior notes, no financial covenants, $1.5B revolver undrawn, $500M CP program): Standard corporate debt. No hidden leverage. No project finance or SPVs mentioned.\n- **Stock repurchase program** ($50B total authority, $26.78B remaining): Capital allocation, not SIFI-material.\n- **FTC settlement (March 2026)** re: ROSCA subscription cancellation: Legal contingency, settled. No counterparty risk material to system.\n- **Securities/derivative litigation**: Multiple shareholder actions on Figma competitive disclosure (2023\u20132025). Settled or stayed. No SIFI signal.\n- **Revenue concentration by geography** (Americas 59%, EMEA 27%, APAC 14%): No single customer >10% disclosed. No customer concentration risk flagged.\n- **Business model**: Subscription-based (97% of revenue). Recurring. No roundtripping or circular revenue patterns identified.\n- **Operating leases & lease commitments**: Not detailed in this excerpt. No off-balance-sheet SPV, JV, or VIE structure disclosed.\n- **Customer concentration**: The filing mentions \"Creative & Marketing Professionals\" and \"Business Professionals & Consumers\" as two customer groups, but provides NO breakdown by individual customer or by top-N concentration. Cannot verify if any customer exceeds 10% of revenue.\n- **Supplier concentration**: No disclosed material suppliers. Hosting/data center costs noted as rising (16% QTD, 15% YTD) but no single counterparty named.\n- **Related-party transactions**: Only mentioned in boilerplate indemnification language re: officers & directors. No material RPT.\n- **AI investment or capex commitments**: R&D includes \"AI training costs\" but no specific capex commitment to external AI labs (OpenAI, Anthropic, etc.) disclosed in this section.\n\nREASON FOR MINIMAL EXTRACTION:\nThis 10-Q excerpt is heavily weighted toward financial statement **notes** (derivatives, debt, intangibles, compensation, segment disclosure) and standard **MD&A** commentary. It lacks the narrative detail (Item 1 Business, Risk Factors, Related-Party section) where SIFI material would typically surface. The Semrush acquisition is the only new material transaction, but it is a standard business combination with no hidden leverage, no SPV, and no undisclosed concentration risk.\n\nRECOMMENDATION FOR ANALYST:\nPull the **full 10-Q Item 1A (Risk Factors)** section to surface any disclosed SIFI risks (customer concentration, supplier dependencies, execution risks tied to AI infrastructure, etc.). This excerpt's Item 1A reference is truncated.\"\n[chunk 3/4] SIFI EXTRACTION ASSESSMENT: This Adobe 10-Q does not contain material SIFI leverage, circularity, or concentration risks meeting the threshold for extraction. SPECIFIC FINDINGS: 1) CAPEX PROFILE: Adobe reports normal operating cash flows ($5.1B for 6M FY2026) and typical business investments (servers, hosting). No multi-year capex commitments to strategic counterparties identified. 2) LEVERAGE & DEBT: $6.15B senior notes outstanding; $1.35B current portion due 2027. These are vanilla unsecured debt; no SPVs, off-balance entities, or residual value guarantees disclosed. $1.5B revolving credit facility undrawn. This is standard public-company debt. 3) ACQUISITION: Adobe acquired Semrush in Q2 FY2026 (mentioned in cash flows investing activities). No purchase price, terms, or financing structure disclosed in this excerpt. Insufficient data to flag as SIFI-material. 4) CUSTOMER CONCENTRATION: No single customer or customer concentration metrics disclosed in this excerpt. Generic risk language about enterprise sales cycles present but no material concentration flagged. 5) THIRD-PARTY DEPENDENCIES: Adobe mentions reliance on cloud infrastructure, data center providers, third-party AI models, and distribution partners. These are standard operational dependencies; no single-source or >10% revenue concentration identified. 6) RISK FACTORS: Item 1A discusses generalized risks (AI regulation, competition, cybersecurity, geopolitical). No SIFI-material risk signals (hidden leverage, execution gaps, cost opacity) meeting the 8-category threshold. The cybersecurity risk disclosure is boilerplate. 7) OFF-BALANCE ENTITIES: No SPVs, JVs, operating leases with residual guarantees, or project finance disclosed. 8) INVESTMENT PORTFOLIO: Adobe holds money market funds, corporate bonds, Treasuries, time deposits. No material equity stakes in AI labs or strategic counterparties disclosed in this excerpt. CONCLUSION: This section is primarily financial and operational boilerplate. The Semrush acquisition is the only transaction entity identified, but lacks sufficient detail for SIFI classification. No evidence of hidden leverage, circularity, or concentration breaching SIFI thresholds.\"\n[chunk 4/4] ADOBE 10-Q EXTRACTION (June 15, 2026). This filing contains no explicit named customer concentration (no single customer >10% of revenue disclosed in the excerpt), no strategic partnerships or investments with other named entities, and no off-balance-sheet structures (SPVs, JVs, operating leases with RVGs). The debt obligations ($6.15B senior notes + $500M CP outstanding) are standard unsecured instruments with no hidden leverage signal. However, EIGHT SIFI-material hidden risk signals were identified: (1) cross-border data transfer regulatory risk that may force business model changes with unquantified cost impact; (2) AI regulatory execution risk affecting innovation roadmap and customer adoption; (3) contingent liability from customer data compliance failures (Adobe processes customer data on behalf of enterprise clients); (4) generative AI IP protection erosion (cannot rely on patents/copyrights for AI-generated source code); (5) goodwill impairment already recorded in Q2 FY2026 for Publishing & Advertising unit with risk of further charges; (6) revenue recognition lag inherent to 1\u201336 month subscription terms creates earnings timing opacity; (7) government customer execution risk requiring material unquantified capex for security certifications with uncertain ROI; and (8) standard disclosure risks (stock volatility, FX exposure, tax uncertainty) that do not meet SIFI threshold. No counterparty web or circularity identified in this excerpt.\""
+  }
+}

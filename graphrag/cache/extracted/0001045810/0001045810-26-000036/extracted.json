@@ -1,0 +1,277 @@
+{
+  "related_party": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] The provided source text is the DEF 14A Related Party Transactions section for NVIDIA (filing date 2026-05-12), but the actual content is entirely composed of standard corporate governance boilerplate: board structure, ERM process descriptions, code of conduct, insider trading policy, director attendance, sustainability reporting, board self-assessments, and stockholder communications procedures. There are zero SIFI-material disclosures in this text. Specifically: no SPVs, VIEs, or off-balance-sheet entities are named; no capex commitments or multi-year compute agreements are described; no equity investments or named investees appear; no related-party transactions with counterparties (e.g., OpenAI, CoreWeave, Microsoft) are disclosed; no revenue roundtripping, circularity, hidden leverage, or customer/supplier concentration signals are present. The only named external entity of any note is The Goldman Sachs Group (in connection with new director Suzanne Nora Johnson's prior employment) and The Brookings Institution/Broad Foundation/USC (her board memberships) \u2014 none of which are SIFI-material in this context. Per Hard Rule 3, boilerplate governance disclosures are excluded. No nodes or edges are emitted."
+  },
+  "director_comp": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "CoreWeave",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Semler Brossy",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "BlackRock",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Vanguard",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Huang Foundation",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "Jen-Hsun Huang",
+          "beneficiary": "NVIDIA",
+          "purpose": "charitable organization for GPU compute donation to university and non-profit research institutes",
+          "verbatim_quote": "The Jen-Hsun and Lori Huang Foundation, or the Huang Foundation, a charitable organization, has entered into an agreement with CoreWeave, Inc., a third-party cloud services provider, to purchase GPU compute time for donation to university and other non-profit research institutes to develop open science and AI research, of which $108.3 million has been donated to date."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Huang Trust Holdings",
+        "fields": {
+          "investor": "Jen-Hsun Huang",
+          "target": "NVIDIA",
+          "equity_pct": 3.58,
+          "verbatim_quote": "Includes (a) 528,531,547 shares of common stock held by Jen-Hsun Huang and Lori Huang, as co-trustees of the Jen-Hsun and Lori Huang Living Trust, u/a/d May 1, 1995, or the Huang Trust"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Related-Party Family Employment",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Related-Party Transaction Risk",
+          "named_counterparties": [
+            "Jen-Hsun Huang",
+            "Aarti Shah"
+          ],
+          "severity": 2,
+          "verbatim_quote": "The daughter and son of Jen-Hsun Huang, our President and CEO and a member of our Board, are employed by the Company. Neither of them shares a household with Mr. Huang, is one of our executive officers, or reports directly to Mr. Huang. Additionally, the son of Dr. Shah, one of our directors, is employed by the Company."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Huang Foundation GPU Roundtrip",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 108300000.0,
+            "note": "GPU compute time purchased via CoreWeave and donated; NVIDIA provides engineering services for no charge"
+          },
+          "named_counterparties": [
+            "Jen-Hsun Huang",
+            "CoreWeave",
+            "Huang Foundation"
+          ],
+          "verbatim_quote": "The Jen-Hsun and Lori Huang Foundation, or the Huang Foundation, a charitable organization, has entered into an agreement with CoreWeave, Inc., a third-party cloud services provider, to purchase GPU compute time for donation to university and other non-profit research institutes to develop open science and AI research, of which $108.3 million has been donated to date. NVIDIA routinely offers engineering services for no charge in the ordinary course of business to developers of NVIDIA accelerated computing and we plan to offer similar engineering services for no charge to certain recipients of GPU compute time grants from the Huang Foundation."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "off_balance_entity",
+        "target_name": "Huang Foundation"
+      },
+      {
+        "predicate": "SPONSORED_BY",
+        "source_type": "off_balance_entity",
+        "source_name": "Huang Foundation",
+        "target_type": "company",
+        "target_name": "Jen-Hsun Huang"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "off_balance_entity",
+        "target_name": "Huang Foundation"
+      },
+      {
+        "predicate": "ROUND_TRIPS_WITH",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "off_balance_entity",
+        "target_name": "Huang Foundation"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Jen-Hsun Huang",
+        "target_type": "company",
+        "target_name": "NVIDIA"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "company",
+        "target_name": "Semler Brossy"
+      }
+    ],
+    "notes": "[chunk 1/1] This DEF 14A Director Compensation section contains limited SIFI-material content. Primary extractions: (1) The Huang Foundation structure\u2014CEO Jen-Hsun Huang and wife control a charitable entity that purchases $108.3M in GPU compute time via CoreWeave and donates it, with NVIDIA providing free engineering services to recipients. This is a REVENUE_ROUNDTRIP risk (severity 2) given the related-party structure and potential reputational/valuation flow to NVIDIA. (2) Related-party family employment (Huang's children, Shah's son) with disclosed compensation totaling ~$2.8M, subject to standard NCGC review\u2014severity 2, standard practice. (3) Huang Trust structure holding 870M+ NVIDIA shares (3.58% beneficial ownership)\u2014disclosed but notable for founder control concentration. BlackRock (7.43%) and Vanguard (7.31%) are major institutional holders but pose no SIFI signal in this section. Semler Brossy is named as independent compensation consultant\u2014routine vendor relationship. No hidden leverage, circularity, capex gaps, or supplier/customer concentration > 10% disclosed in this section. The Huang Foundation GPU roundtrip is the only material SIFI pattern in the text.\""
+  },
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVIDIA-H20-ExportControl-GoalAdj",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 30000000000,
+            "note": "Stretch revenue goal auto-reduced by $30B (from $190B to $160B) and Non-GAAP OI goal reduced by $24B (from $120B to $96B) due to H20 export controls on China"
+          },
+          "named_counterparties": [
+            "USG",
+            "China"
+          ],
+          "verbatim_quote": "In April 2025, the U.S. government informed NVIDIA that a license would be required for exports of H20 products into the China market. Accordingly, the Fiscal 2026 Stretch Compensation Plan goals for revenue and Non-GAAP Operating Income were automatically adjusted."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVIDIA-H20-China-ExportControl-Risk",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Export Controls / China Revenue Concentration",
+          "named_counterparties": [
+            "USG",
+            "China"
+          ],
+          "severity": 3,
+          "verbatim_quote": "our original Fiscal 2026 Stretch Compensation Plan revenue goal of $190.0 billion was automatically adjusted to $160.0 billion, and our original Fiscal 2026 Stretch Compensation Plan Non-GAAP Operating Income goal of $120.0 billion was automatically adjusted to $96.0 billion, due to the imposition of additional export controls on the Company's H20 products during the first half of Fiscal 2026."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVIDIA-CustomerConcentration-DataCenter",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Revenue driven by cloud providers, hyperscalers, AI model makers, enterprises, startups and sovereigns \u2014 Blackwell architecture demand cited as primary driver of $215.9B FY2026 revenue"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "record performance on strength across all market platforms, led by Data Center demand for our Blackwell architecture and across a diverse and expanding set of customers including cloud providers, hyperscalers, AI model makers, enterprises, startups and sovereigns"
+        }
+      },
+      {
+        "type": "company",
+        "name": "USG",
+        "fields": {
+          "role": "regulator",
+          "aliases": [
+            "U.S. government",
+            "United States Government"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "China",
+        "fields": {
+          "role": "regulator",
+          "aliases": [
+            "China market"
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVIDIA-H20-ExportControl-GoalAdj"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "hidden_risk_signal",
+        "target_name": "NVIDIA-CustomerConcentration-DataCenter"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "target_type": "risk_factor",
+        "target_name": "NVIDIA-H20-China-ExportControl-Risk"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "NVIDIA-H20-ExportControl-GoalAdj",
+        "target_type": "company",
+        "target_name": "USG"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "NVIDIA-H20-ExportControl-GoalAdj",
+        "target_type": "company",
+        "target_name": "China"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "NVIDIA-H20-China-ExportControl-Risk",
+        "target_type": "company",
+        "target_name": "USG"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "NVIDIA-H20-China-ExportControl-Risk",
+        "target_type": "company",
+        "target_name": "China"
+      }
+    ],
+    "notes": "[chunk 1/3] This is a DEF 14A Compensation Discussion & Analysis section. The vast majority of the text is standard executive compensation boilerplate (PSU/RSU structures, peer benchmarking, pay mix philosophy) with no SIFI-material content. Two SIFI-material signals were extracted:\n\n1. H20 EXPORT CONTROL / CHINA REVENUE RISK (Severity 3): The CC pre-embedded an automatic downward adjustment mechanism into FY2026 performance goals anticipating potential H20 export restrictions. The trigger fired in April 2025 when USG required a license for H20 exports to China. Revenue stretch goal was cut $30B (190\u2192160B) and Non-GAAP OI goal cut $24B (120\u219296B). This is a quantified, disclosed regulatory revenue impact embedded in a compensation filing \u2014 SIFI-material because it sizes the China revenue dependency for NVIDIA's H20 product line.\n\n2. CUSTOMER CONCENTRATION SIGNAL (Severity 2, watch): The CD&A narrative explicitly attributes FY2026's record $215.9B revenue to \"Data Center demand for our Blackwell architecture\" from cloud providers, hyperscalers, AI model makers \u2014 confirming continued concentration in a narrow set of large infrastructure buyers. No specific counterparty names or percentages are given in this section; those would need to be cross-referenced from the 10-K.\n\nPeer group additions (Alphabet, Amazon, Apple, Microsoft) are compensation benchmarking boilerplate \u2014 not SIFI-material relationships. The Semler Brossy compensation consultant engagement is disclosed and cleared of conflicts \u2014 no related-party issue. No SPVs, JVs, investments, or off-balance-sheet entities are mentioned in this section.\n[chunk 2/3] This section is NVIDIA's DEF 14A Compensation Discussion & Analysis, covering: (1) NEO summary compensation tables (salary, RSU/PSU grants, variable cash); (2) grants of plan-based awards; (3) outstanding equity awards; (4) stock vesting tables; (5) change-in-control arrangements (no severance agreements); (6) pay ratio (CEO 129:1 vs. median employee at $282,050); (7) Pay vs. Performance tables (Non-GAAP Operating Income as company-selected measure); (8) PwC auditor ratification (fees $13.4M FY2026 vs $10.0M FY2025); (9) stockholder proposals on supermajority voting, faith-based ERGs, and DEI workforce reporting. No SIFI-material entities are present: there are no named customer/supplier relationships, no investments in AI labs or SPVs, no off-balance-sheet structures, no counterparty concentration disclosures, no related-party transactions, and no hidden leverage signals. All content is routine executive compensation disclosure, governance proposals, and auditor ratification \u2014 all explicitly excluded from SIFI-material extraction criteria. Nothing in this section meets the threshold for extraction under the AI SIFI Monitor rules.\n[chunk 3/3] This DEF 14A section (Compensation Discussion & Analysis / proxy appendix) covers stockholder proposals on DEI reporting and GHG emissions disclosure, board opposing statements, and equity compensation plan tables. No SIFI-material entities were identified: no named customer/supplier concentrations, no SPVs or off-balance-sheet vehicles, no investments in AI labs, no related-party arrangements, no capex commitments, no revenue roundtripping, and no hidden leverage. The GHG emissions content is generic ESG/climate boilerplate. The equity compensation tables are standard proxy disclosures. Nothing in this section meets the SIFI-materiality threshold under the hard rules."
+  }
+}

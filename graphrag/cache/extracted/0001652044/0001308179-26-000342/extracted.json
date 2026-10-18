@@ -1,0 +1,750 @@
+{
+  "related_party": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google",
+            "GOOGL"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "LTA Research",
+        "fields": {
+          "aliases": [
+            "LTA Research & Exploration LLC",
+            "LTA"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "BCH San Jose",
+        "fields": {
+          "aliases": [
+            "BCH San Jose LLC",
+            "BCH"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Waymo",
+        "fields": {
+          "aliases": [
+            "Waymo LLC"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "KPCB",
+        "fields": {
+          "aliases": [
+            "Kleiner Perkins Caufield & Byers",
+            "Kleiner Perkins"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "GV-CapitalG-KPCB-CoInvest-2025",
+        "fields": {
+          "investor": "Alphabet",
+          "target": "KPCB Co-Invested Private Companies",
+          "amount_usd": 42430000,
+          "disclosed_date": "2026-04-24",
+          "verbatim_quote": "GV and CapitalG directly invested, or committed to invest, an aggregate of approximately $42,430,000 in certain private companies (including their investment in Waymo LLC described below) from the beginning of 2025 through March 31, 2026, in which funds affiliated with Kleiner Perkins Caufield & Byers, LLC (KPCB) were co-investors or existing investors."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "GV-CapitalG-Waymo-KPCB-Round-2025",
+        "fields": {
+          "investor": "Alphabet",
+          "target": "Waymo",
+          "amount_usd": null,
+          "disclosed_date": "2026-04-24",
+          "verbatim_quote": "GV and CapitalG also participated in the recent funding round for Waymo LLC in which KPCB funds invested approximately $120,000,000. KPCB funds hold less than 0.10% of the outstanding shares of Waymo LLC."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-RelatedParty-FounderAffiliatedEntities",
+        "fields": {
+          "filer": "GOOGL",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "named_counterparties": [
+            "LTA Research",
+            "BCH San Jose"
+          ],
+          "verbatim_quote": "Larry, Sergey, and Eric E. Schmidt each own one-third interests in BCH, through their respective affiliated entities... we paid approximately $1,582,762 to BCH... we charged LTA approximately $8,430,140. LTA... is owned by an entity affiliated with Sergey.",
+          "numeric_signal": {
+            "amount_usd": 10012902,
+            "note": "Combined payments to/from founder-affiliated entities: ~$8.43M to LTA + ~$1.58M to BCH, Jan 2025\u2013Mar 2026"
+          }
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Alphabet-KPCB-Circularity",
+        "fields": {
+          "filer": "GOOGL",
+          "risk_type": "CIRCULARITY",
+          "severity": 2,
+          "named_counterparties": [
+            "KPCB",
+            "Waymo"
+          ],
+          "verbatim_quote": "GV and CapitalG directly invested, or committed to invest, an aggregate of approximately $42,430,000 in certain private companies... in which funds affiliated with Kleiner Perkins Caufield & Byers, LLC (KPCB) were co-investors or existing investors... From time to time, we sell to and purchase products and services from these companies in the ordinary course of our business.",
+          "numeric_signal": {
+            "amount_usd": 42430000,
+            "note": "Alphabet co-invests alongside KPCB (whose chair sits on Alphabet board) and simultaneously transacts commercially with the same portfolio companies \u2014 investor/director/commercial-partner triangle"
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "investment",
+        "target_name": "GV-CapitalG-KPCB-CoInvest-2025"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "investment",
+        "target_name": "GV-CapitalG-Waymo-KPCB-Round-2025"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "investment",
+        "source_name": "GV-CapitalG-KPCB-CoInvest-2025",
+        "target_type": "company",
+        "target_name": "KPCB"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "investment",
+        "source_name": "GV-CapitalG-Waymo-KPCB-Round-2025",
+        "target_type": "company",
+        "target_name": "Waymo"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "investment",
+        "source_name": "GV-CapitalG-Waymo-KPCB-Round-2025",
+        "target_type": "company",
+        "target_name": "KPCB"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-RelatedParty-FounderAffiliatedEntities"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Alphabet-KPCB-Circularity"
+      },
+      {
+        "predicate": "CIRCULAR_WITH",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "KPCB"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Alphabet-RelatedParty-FounderAffiliatedEntities",
+        "target_type": "company",
+        "target_name": "LTA Research"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Alphabet-RelatedParty-FounderAffiliatedEntities",
+        "target_type": "company",
+        "target_name": "BCH San Jose"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Alphabet-KPCB-Circularity",
+        "target_type": "company",
+        "target_name": "KPCB"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Alphabet-KPCB-Circularity",
+        "target_type": "company",
+        "target_name": "Waymo"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "BCH San Jose",
+        "target_type": "company",
+        "target_name": "Alphabet"
+      },
+      {
+        "predicate": "SELLS_COMPUTE_TO",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "LTA Research"
+      }
+    ],
+    "notes": "[chunk 1/1] FILING: GOOGL DEF 14A, 2026-04-24. Section: Related Party Transactions.\n\nKEY FINDINGS:\n\n1. FOUNDER-AFFILIATED ENTITY PAYMENTS (severity=2): Alphabet paid ~$1.58M to BCH San Jose LLC (hangar at SJC), owned equally by Larry Page, Sergey Brin, and Eric Schmidt through affiliated entities. Alphabet also received ~$8.43M from LTA Research & Exploration LLC (hangar at Moffett Airfield), owned by a Sergey Brin-affiliated entity. Total founder-affiliated cash flow: ~$10.01M (Jan 2025\u2013Mar 2026). Audit Committee reviewed both; deemed arm's-length. SIFI-material for governance optics but dollar amounts are immaterial to Alphabet's financials.\n\n2. KPCB CIRCULARITY (severity=2): GV and CapitalG co-invested ~$42.43M alongside KPCB funds in private companies where Alphabet also commercially transacts (\"we sell to and purchase products and services from these companies\"). L. John Doerr (KPCB Chair) is an Alphabet board director. This creates a board-member / co-investor / commercial-counterparty triangle \u2014 a textbook circularity pattern. KPCB also co-invested in Waymo's recent funding round ($120M from KPCB).\n\n3. NO large off-balance-sheet entities, SPVs, or multi-billion capex commitments disclosed in this section. No AI lab investments individually named in this filing excerpt. Waymo is a known Alphabet subsidiary/affiliate; its funding round participation is noted but terms not disclosed.\n\nOMITTED AS NON-MATERIAL: Standard indemnification agreements; generic \"certain transactions with affiliated parties\" boilerplate."
+  },
+  "director_comp": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Compensia Inc.",
+        "fields": {
+          "role": "consultant"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Semler Brossy",
+        "fields": {
+          "role": "consultant"
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/1] SECTION: Director Compensation (DEF 14A, 2026-04-24)\nFINDING: This section contains no SIFI-material entities or relationships. The content is standard director compensation disclosure:\n- Board retainers and equity grants ($75k cash + $350k GSU annually for standard directors)\n- Additional compensation for Chair (John Hennessy) and Committee Chairs (Roger Ferguson)\n- GSU vesting schedule (48-month cliff/ramp structure)\n- Director stock ownership requirement ($1.0M minimum)\n- Compensation consultants engaged (Compensia Inc., Semler Brossy)\n- Named directors (Frances Arnold, Sergey Brin, Marty Ch\u00e1vez, John Doerr, Roger Ferguson, John Hennessy, Larry Page, Ram Shriram, Robin Washington)\n\nSIFI RELEVANCE: None detected. No hidden leverage, off-balance-sheet obligations, customer/supplier concentration, investments in AI labs, circularity, or execution risk. Director compensation is routine governance disclosure. Consultants (Compensia, Semler Brossy) are identified only as service providers with no counterparty SIFI material.\n\nACTION: Extract only the minimal entity roster. No risk signals, no capex commitments, no investments, no off-balance-sheet structures. This section does not support counterparty-web analysis or AI SIFI monitoring.\""
+  },
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "aliases": [
+            "Amazon.com, Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "aliases": [
+            "Meta Platforms, Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "aliases": [
+            "Oracle Corporation"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "aliases": [
+            "Microsoft Corporation"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "aliases": [
+            "Nvidia"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce, Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "aliases": [
+            "International Business Machines Corporation"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Apple",
+        "fields": {
+          "ticker": "AAPL",
+          "aliases": [
+            "Apple Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Cisco",
+        "fields": {
+          "ticker": "CSCO",
+          "aliases": [
+            "Cisco Systems, Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Netflix",
+        "fields": {
+          "ticker": "NFLX",
+          "aliases": [
+            "Netflix, Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Walt Disney",
+        "fields": {
+          "ticker": "DIS",
+          "aliases": [
+            "The Walt Disney Company"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-AI-Capex-Climate-Gap",
+        "fields": {
+          "filer": "GOOGL",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 93000000000,
+            "note": "2025 capex ~$93B, nearly double 2024; total GHG emissions up 51% over 2019 baseline by 2024, threatening 2030 net-zero commitments"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Alphabet's capital expenditures for 2025, which are driven largely by investment in AI technology and services, are expected to reach up to $93 billion, nearly double those reported in 2024... By 2024, Alphabet's total emissions had increased by 51% over its 2019 baseline."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "GOOGL-AI-Capex-2025",
+        "fields": {
+          "filer": "GOOGL",
+          "amount_usd": 93000000000,
+          "start_fy": 2025,
+          "purpose": "AI technology and services infrastructure including data centers",
+          "verbatim_quote": "Alphabet has committed to 'expanding [its] investment in AI across the entire company,' investing more than $75 billion in capital expenditures to advance AI development across the business in 2025 alone."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-AI-Governance-Rollback",
+        "fields": {
+          "filer": "GOOGL",
+          "category": "AI governance / oversight gap",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "In October 2025, Alphabet amended its Audit Committee Charter and Risk and Compliance Committee Charter to remove oversight of civil and human rights, which was formally integrated in 2020. As the company ramps up its investment in AI, this rollback leaves an accountability gap around responsible AI governance addressing human rights risks."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-Immigration-Talent-Risk",
+        "fields": {
+          "filer": "GOOGL",
+          "category": "Key personnel / supplier concentration \u2014 AI talent",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 2,
+          "verbatim_quote": "Alphabet was one of the top 10 sponsors of H-1B worker visas in the fiscal year 2025, employing over 4,000 workers with the visa... President Trump issued a proclamation raising the annual fee for skilled foreign workers on H-1B visas from $215 to $100,000. The Company has not disclosed to shareholders how it plans to either move forward without these skilled workers or plan to bear the economic strain from the new fees."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-Project-Nimbus-Cloud-Gov",
+        "fields": {
+          "filer": "GOOGL",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Google Cloud Project Nimbus: potential conflict between government-access contract terms and Alphabet's own Acceptable Use Policy; GDPR fines up to 4% of global revenue; $425M jury verdict in 2025 privacy case"
+          },
+          "named_counterparties": [
+            "EU"
+          ],
+          "verbatim_quote": "Google's participation in Project Nimbus may not align with its data governance principles that prohibit uses that 'violate, or encourage the violation of, the legal rights of others,' or for any 'invasive' purpose... By accepting alert mechanisms and contract terms that limit Google's ability to restrict governmental use of its cloud services, the Company appears to conflict with its acceptable use policy."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-AI-Misinformation-Litigation",
+        "fields": {
+          "filer": "GOOGL",
+          "category": "AI product liability / litigation",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Google has been sued in Delaware, Washington DC, Minnesota, and Brazil for harms allegedly incurred as a result of falsehoods produced by Google's generative AI. Google's generative AI models have stirred controversy that could threaten its business; in October 2025, the Gemma model was removed from Google's AI Studio platform after a U.S. senator alleged that it fabricated 'serious criminal allegations' about her."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-DualClass-Governance-Risk",
+        "fields": {
+          "filer": "GOOGL",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "pct_of_revenue": null,
+            "note": "Page and Brin control 52% voting power with <11% economic ownership via Class B 10:1 super-voting shares; 98% of unaffiliated Class A shareholders voted FOR one-share-one-vote in 2025"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Mr. Page and Mr. Brin currently control 52% of our company's total voting power while owning less than 11% of outstanding voting stock, and will continue to retain voting control even though they have stepped down from leading the company."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-Energy-Demand-DataCenter",
+        "fields": {
+          "filer": "GOOGL",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "AI/DC power demand growth creating execution risk on 2030 24/7 carbon-free energy goal; emissions +51% vs 2019 baseline by 2024; BloombergNEF raised US DC power demand forecast 36% to 106 GW in 7 months"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Alphabet identifies the growing demand for its digital services, including AI, as 'putting pressure on the amount of power that [it] need[s],' and acknowledges facing challenges and complexities in meeting its climate commitments... By 2024, Alphabet's total emissions had increased by 51% over its 2019 baseline."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Anthropic",
+        "fields": {
+          "role": "competitor",
+          "aliases": [
+            "Anthropic PBC"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Cohere",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intel",
+        "fields": {
+          "ticker": "INTC",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "OpenAI",
+        "fields": {
+          "private": true,
+          "known_backers": [
+            "Microsoft"
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Amazon",
+        "properties": {
+          "context": "compensation peer group 2025"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Meta",
+        "properties": {
+          "context": "compensation peer group 2025"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Oracle",
+        "properties": {
+          "context": "compensation peer group 2025"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Microsoft",
+        "properties": {
+          "context": "compensation peer group 2025"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "NVIDIA",
+        "properties": {
+          "context": "compensation peer group 2025"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Salesforce",
+        "properties": {
+          "context": "compensation peer group 2025"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "IBM",
+        "properties": {
+          "context": "compensation peer group 2025"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Apple",
+        "properties": {
+          "context": "compensation peer group 2025"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Cisco",
+        "properties": {
+          "context": "compensation peer group 2025"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Netflix",
+        "properties": {
+          "context": "compensation peer group 2025"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Walt Disney",
+        "properties": {
+          "context": "compensation peer group 2025"
+        }
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "capex_commitment",
+        "target_name": "GOOGL-AI-Capex-2025"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-AI-Capex-Climate-Gap"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-Project-Nimbus-Cloud-Gov"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-DualClass-Governance-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-Energy-Demand-DataCenter"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-AI-Governance-Rollback"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-Immigration-Talent-Risk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-AI-Misinformation-Litigation"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "GOOGL-Project-Nimbus-Cloud-Gov",
+        "target_type": "company",
+        "target_name": "EU"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-Immigration-Talent-Risk",
+        "target_type": "company",
+        "target_name": "USG"
+      }
+    ],
+    "notes": "[chunk 1/3] This is a DEF 14A Compensation Discussion & Analysis section for Alphabet (GOOGL) for FY2025. The filing contains minimal SIFI-material content. Key extractions:\n\n1. PEER GROUP: Alphabet's 2025 compensation peer group explicitly names 11 companies \u2014 Amazon, Meta, Oracle, Apple, Microsoft, Salesforce, Cisco, Netflix, Walt Disney, IBM, and NVIDIA. This is notable for the AI SIFI Monitor because it confirms Alphabet treats NVIDIA as a direct talent and market peer, not merely a supplier \u2014 potentially masking a deeper supplier-concentration dependency that could appear benign in peer-group framing.\n\n2. WAYMO/WING BPUs: The 2026 CEO compensation package includes Bet Performance Units (BPUs) tied to Waymo LLC and Wing Aviation LLC valuations (~$130M and ~$45M target value respectively for Sundar). These are off-subsidiary equity instruments pegged to unlisted entity valuations \u2014 a potential cost-opacity/hidden-leverage signal if Waymo's per-unit valuation methodology is opaque. However, the filing provides no valuation methodology detail, so a full hidden_risk_signal node cannot be supported with a verbatim quote meeting the severity threshold.\n\n3. No investments, acquisitions, SPVs, customer concentration data, or supplier dependencies are disclosed in this section \u2014 it is standard executive compensation boilerplate. No SIFI-material risk factors, circular relationships, or revenue roundtripping patterns are present.\n\nThe peer group edges are extracted for counterparty-web completeness, as Alphabet's explicit naming of NVIDIA as a compensation peer is relevant context for the NVIDIA counterparty web query.\n[chunk 2/3] This DEF 14A section covers Alphabet's Compensation Discussion & Analysis, pay-versus-performance tables, equity plan details, auditor ratification, and shareholder proposals. No SIFI-material entities were identified: no named business counterparties, no SPVs or off-balance-sheet entities, no AI lab investments, no customer/supplier concentration disclosures, no capex commitments to specific counterparties, and no hidden leverage signals. The content is standard executive compensation boilerplate (CAP tables, GSU/PSU mechanics, stock plan share reserve increase, Ernst & Young audit fees, and generic shareholder proposals on climate/AI/voting). Ernst & Young audit fees (~$68.7M total) are routine and not SIFI-material. The shareholder proposals reference AI energy/water usage and data governance risks but contain no specific numeric commitments or named counterparties that meet the SIFI-material threshold. Nothing extracted per Hard Rule 3.\n[chunk 3/3] This DEF 14A section covers shareholder proposals (Proposals 5\u201314) and stock plan appendix. SIFI-material extractions:\n\n1. CAPEX_ROI_GAP: $93B 2025 capex (nearly 2x 2024) with emissions up 51% vs 2019 \u2014 execution risk on 2030 net-zero commitment is a credible capex-ROI gap signal (stranded asset / regulatory risk on data center buildout).\n\n2. Coalition for Secure AI (named in Proposal 14 opposition): Alphabet cites co-founding with Anthropic, Amazon, Cisco, Cohere, IBM, Intel, Microsoft, NVIDIA, OpenAI, et al. \u2014 this is a disclosed industry coordination relationship but not a direct financial exposure; members listed for counterparty-web completeness.\n\n3. Project Nimbus: Named in Proposal 11 supporting statement as a potential AUP conflict with Israeli government cloud contract \u2014 SIFI-material as it surfaces a hidden legal/regulatory/reputational exposure from government cloud contract terms that may override Alphabet's own acceptable use policies.\n\n4. Dual-class governance: Page/Brin 52% vote / <11% equity creates a structural governance risk that could impair capital allocation discipline at scale \u2014 flagged as severity 2.\n\n5. AI governance rollback: Removal of civil/human rights oversight from Audit and Risk Committee charters in October 2025 during a period of accelerating AI investment ($75B+ capex) creates a disclosed accountability gap \u2014 severity 2.\n\n6. Immigration/talent: H-1B fee increase from $215 to $100,000 per worker; Alphabet is top-10 H-1B sponsor with 4,000+ visa holders \u2014 material cost/talent concentration risk for AI operations.\n\nNo off-balance-sheet SPVs, no direct investment disclosures, no revenue roundtripping identified in this section. The stock plan appendix (Appendix A) is standard boilerplate with no SIFI-material content."
+  }
+}

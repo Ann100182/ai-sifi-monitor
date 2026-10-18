@@ -1,0 +1,297 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "aliases": [
+            "NVIDIA Corporation"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Groq",
+        "fields": {
+          "aliases": [
+            "Groq, Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "OpenAI",
+        "fields": {
+          "aliases": [
+            "OpenAI Group PBC"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SB Energy",
+        "fields": {
+          "role": "partner"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "PORTS-Technology-Campus-Lease",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "SB Energy",
+          "beneficiary": "OpenAI",
+          "debt_stack_usd": 105000000000,
+          "residual_value_guarantee": true,
+          "term_yrs": 20,
+          "purpose": "Land, power, shell and data center capacity for AI infrastructure; 4.25 GW IT load across 9 phases at PORTS Technology Campus, Pike County, Ohio",
+          "verbatim_quote": "In August 2026, we entered into guarantees, capped at a total of $105 billion, to provide credit support on a land, power, and shell buildout with affiliates of SB Energy Corp. (SB Energy) on behalf of a customer, an affiliate of OpenAI Group PBC (OpenAI), related to leases for approximately 4.25 gigawatts of IT load in the aggregate at SB Energy's PORTS Technology Campus in Pike County, Ohio."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVIDIA-Supply-Commitments",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 279000000000,
+          "duration_yrs": 6,
+          "start_fy": 2027,
+          "purpose": "Supply and capacity for data center infrastructure systems, primarily memory and manufacturing facilities, to produce products for current and future architectures",
+          "verbatim_quote": "We have significantly increased our supply and capacity commitments from $119 billion last quarter to $279 billion as of July 26, 2026 to meet future demand. These supply commitments are for our data center infrastructure systems, primarily memory and manufacturing facilities, to produce our products for long-term demand across current and future product architectures."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVIDIA-Cloud-Service-Agreements",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": 36000000000,
+          "duration_yrs": 6,
+          "start_fy": 2027,
+          "purpose": "Cloud service agreements with AI cloud partners to enable broader access to NVIDIA data center infrastructure products",
+          "verbatim_quote": "In the second quarter of fiscal year 2027, we introduced a new business model with certain select AI cloud partners, to enable broader access to our data center infrastructure products to serve AI startups, model builders, enterprises, research organizations, and sovereign customers. Our commitments, which are typically six years in duration, totaled $36 billion as of July 26, 2026, and decrease as capacity is used by third-party customers or by us for our research and development efforts."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "NVIDIA-Data-Center-Leases-Third-Party",
+        "fields": {
+          "filer": "NVIDIA",
+          "amount_usd": null,
+          "duration_yrs": 15,
+          "start_fy": 2028,
+          "purpose": "Data center leases expected to be reassigned to third parties; used for AI infrastructure support",
+          "verbatim_quote": "Data center leases not commenced for third party \u2013 We have entered into data center leases with terms of approximately fifteen years that are expected to commence between fiscal year 2028 and fiscal year 2029. The expected lease start dates are subject to and dependent on timing of construction completion. We expect to reassign these data center leases to third parties."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "NVIDIA-NonMarketable-Equity-Portfolio",
+        "fields": {
+          "investor": "NVIDIA",
+          "target": "Private AI companies and infrastructure financiers",
+          "amount_usd": 99000000000,
+          "disclosed_date": "2026-07-26",
+          "verbatim_quote": "We have made, and may continue to make, investments and commitments in our ecosystem to enhance our growth opportunities, cultivate our ecosystem, and strengthen our competitive position. These include equity investments of $99 billion and equity investment commitments of $25 billion as of July 26, 2026."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVIDIA-Export-Control-Risk",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Export restrictions and geopolitical risk",
+          "named_counterparties": [
+            "China",
+            "USG",
+            "European Union"
+          ],
+          "severity": 4,
+          "verbatim_quote": "As of the end of the second quarter of fiscal year 2027, while we were able to ship uncontrolled products to China, such as gaming and workstation GPUs, we were effectively foreclosed from competing in China's data center computing/compute market, and our effective foreclosure from the China market helped our competitors build larger developer and customer ecosystems to challenge us worldwide."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVIDIA-Customer-Concentration-Risk",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Customer concentration",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Our revenue is concentrated among a limited number of direct and indirect customers and this trend may continue. We generate a significant amount of our revenue from a limited number of indirect customers, some individually representing 10% or more of our revenue."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVIDIA-CAPEX-ROI-Gap",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 366000000000,
+            "duration_yrs": 6,
+            "note": "Total commitments including $279B supply, $36B AI cloud agreements, $25B third-party data center leases, and $25B equity investments as of Q2 FY2027"
+          },
+          "named_counterparties": [
+            "SB Energy",
+            "OpenAI",
+            "AI cloud partners"
+          ],
+          "verbatim_quote": "To support our operations and growth, we commit capital to secure supply and capacity, obtain cloud services, and lease data center capacity. These arrangements require substantial payments over many years. If future demand, our needs or plans differ from our expectations, we may be unable to reduce these commitments."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVIDIA-Hidden-Leverage-SB-Energy-Guarantee",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 5,
+          "numeric_signal": {
+            "amount_usd": 105000000000,
+            "duration_yrs": 20,
+            "note": "Credit guarantee on behalf of OpenAI for PORTS Technology Campus; capped but exposure includes full lease and power payments during tenant default"
+          },
+          "named_counterparties": [
+            "OpenAI",
+            "SB Energy"
+          ],
+          "verbatim_quote": "In August 2026, we entered into guarantees, capped at a total of $105 billion, to provide credit support on a land, power, and shell buildout with affiliates of SB Energy Corp. (SB Energy) on behalf of a customer, an affiliate of OpenAI Group PBC (OpenAI), related to leases for approximately 4.25 gigawatts of IT load in the aggregate at SB Energy's PORTS Technology Campus in Pike County, Ohio. Each guarantee generally becomes effective upon commencement of the applicable lease, with corresponding guarantee amounts increasing, as each of the nine phases of data center construction is completed, the first of which is expected in fiscal year 2029."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVIDIA-Circularity-OpenAI-Infrastructure",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "CIRCULARITY",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 105000000000,
+            "counterparty_count": 1,
+            "note": "NVIDIA guarantees lease for OpenAI at PORTS campus; OpenAI is primary indirect customer purchasing compute via cloud partners and direct channels"
+          },
+          "named_counterparties": [
+            "OpenAI",
+            "SB Energy"
+          ],
+          "verbatim_quote": "We estimate that one AI research and deployment company contributed a meaningful amount of our revenue by purchasing cloud services from our customers in the second quarter and first half of fiscal year 2027. In August 2026, we entered into guarantees, capped at a total of $105 billion, to provide credit support on a land, power, and shell buildout...on behalf of a customer, an affiliate of OpenAI Group PBC (OpenAI)."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "NVIDIA-Execution-Risk-Guarantee-Conditions",
+        "fields": {
+          "filer": "NVIDIA",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 105000000000,
+            "duration_yrs": 20,
+            "note": "Guarantee effective upon commencement of leases beginning FY2029; dependent on SB Energy completing construction of 9 phases and OpenAI fulfilling lease obligations"
+          },
+          "named_counterparties": [
+            "SB Energy",
+            "OpenAI"
+          ],
+          "verbatim_quote": "SB Energy may not complete or deliver the infrastructure as expected or on schedule, which may delay or reduce anticipated benefits. If OpenAI does not perform its obligations or becomes subject to an insolvency event, and a guarantee is triggered, we may assume the applicable lease, require the landlord to seek a replacement tenant, initiate a sale process or choose to pursue other remedies."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVIDIA-Infrastructure-Buildout-Risk",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Land, power, shell availability and execution",
+          "named_counterparties": [
+            "SB Energy",
+            "OpenAI"
+          ],
+          "severity": 3,
+          "verbatim_quote": "The availability of land, power, shell, and capital is crucial to support the buildout of a full data center inclusive of NVIDIA AI infrastructure by our customers and partners, and any shortage of these or other necessary resources could impact our future revenue and financial performance. Expanding land, power, shell, and energy needs to meet demand is a complex, multi-year process that involves significant regulatory, technical, and construction challenges."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "NVIDIA-Inventory-Risk-H20-H200",
+        "fields": {
+          "filer": "NVIDIA",
+          "category": "Inventory and export control writedowns",
+          "named_counterparties": [
+            "China",
+            "USG"
+          ],
+          "severity": 3,
+          "verbatim_quote": "During the first half of fiscal year 2027, we incurred a $0.4 billion charge associated with H200 for excess inventory and purchase obligations, as the demand for H200 products diminished. After incurring that charge, we have made a fraction of the allowed shipments under the USG's H200 licensing program. Those shipments account for less than 1% of Data Center revenue in our most recent quarter."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Blue Owl",
+        "fields": {
+          "role": "partner"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Groq",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "aliases": [
+            "NVIDIA Corporation"
+          ]
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "NVDA-RVG-2028-2056",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "NVIDIA",
+          "residual_value_guarantee": true,
+          "term_yrs": 30,
+          "purpose": "Multi-tranche debt financing with residual value guarantees on lease financing arrangements",
+          "verbatim_quote": "Form of Residual Value Guaranty"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "SELLS_COMPUTE_TO",
+        "target_type": "company",
+        "target_name": "Groq"
+      },
+      {
+        "source_type": "company",
+        "source_name": "NVIDIA",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "off_balance_entity",
+        "target_name": "NVDA-RVG-2028-2056"
+      }
+    ],
+    "notes": "[chunk 1/3] FILING SUMMARY: NVIDIA Q2 FY2027 10-Q (filing date 2026-08-26, for quarter ended July 26, 2026). Document provided is mostly XML metadata and financial tables without narrative business or risk sections. Primary extraction opportunity: Cash flow statement line item 'Groq, Inc.' as a financing outflow (-$2,944M in the first six months of FY2027), and the document references customer concentration analysis with customer revenue tables showing multiple hyperscaler customers (Customer 1\u2013Customer 8 in Compute & Networking segment). However, specific customer names are redacted in the tables provided. The document shows generic investment securities disclosures (public and non-marketable equity securities holdings) but without itemized counterparties in this excerpt. No detailed Item 1 narrative (business description), Item 1A (risk factors), or Investment details from Note 8 were provided in this excerpt\u2014only XML header, financial statements, and accounting policy summary. Recommend requesting full narrative sections and note disclosures to extract meaningful counterparty relationships, investments in AI labs, capex commitments, and SPV/off-balance-sheet arrangements. Groq payment appears to be a financing/investment-related activity but context is unclear from this excerpt alone.\"\n[chunk 3/3] Item 6 (Exhibits) contains minimal narrative business content. The key SIFI-material signal is the presence of a 'Form of Residual Value Guaranty' (Exhibit 10.1) coupled with multiple tranched notes (2028, 2029, 2031, 2033, 2036, 2046, 2056). This pattern suggests NVIDIA has structured multi-year lease financing with residual value guarantees\u2014a classic off-balance-sheet leverage mechanism. The 30-year span (2026\u20132056) and RVG structure indicates potential hidden leverage tied to equipment or infrastructure leases. However, the actual financial terms, counterparties, and debt stack are redacted (Reg S-K Item 601(b)(10)). The exhibit list alone does not disclose the amount or the specific counterparty (likely a leasing company or infrastructure fund). This is flagged as a HIDDEN_LEVERAGE signal but cannot be quantified from this section alone. No customer concentration, supplier concentration, circularity, or other SIFI patterns are evident in Item 6.\""
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google",
+            "GOOG"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Wiz",
+        "fields": {
+          "aliases": [
+            "Wiz, Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Wiz",
+        "fields": {
+          "role": "customer",
+          "aliases": [
+            "Wiz (cloud security)"
+          ]
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "GOOGL-2025-DataCenterLeases",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 17300000000.0,
+          "purpose": "Data center leases not yet commenced",
+          "duration_yrs": "1-25",
+          "start_fy": 2025,
+          "verbatim_quote": "As of March 31, 2025, we have entered into leases primarily related to data centers that have not yet commenced with future lease payments of $17.3 billion, that are not yet recorded on our Consolidated Balance Sheets. These leases will commence between 2025 and 2031 with non-cancelable lease terms between one and 25 years."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "GOOGL-2025-ContentLicensing",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 8600000000.0,
+          "purpose": "Content licensing agreements with future fixed or minimum guaranteed commitments",
+          "duration_yrs": 5,
+          "start_fy": 2025,
+          "verbatim_quote": "We have content licensing agreements with future fixed or minimum guaranteed commitments of $8.6 billion as of March 31, 2025, of which the majority is paid quarterly through the first quarter of 2030."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "GOOGL-Consolidated-VIEs",
+        "fields": {
+          "entity_type": "VIE",
+          "sponsor": "Alphabet",
+          "beneficiary": "Alphabet",
+          "debt_stack_usd": 2000000000.0,
+          "purpose": "Various operations primarily within Other Bets",
+          "verbatim_quote": "As of December 31, 2024 and March 31, 2025, liabilities for which creditors only have recourse to the VIEs were $2.3 billion and $2.0 billion, respectively."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "GOOGL-Unconsolidated-VIEs",
+        "fields": {
+          "entity_type": "VIE",
+          "sponsor": "Alphabet",
+          "purpose": "Private companies (early stage) and renewable energy entities",
+          "verbatim_quote": "We have investments in VIEs in which we are not the primary beneficiary. These VIEs include private companies that are primarily early stage companies and certain renewable energy entities in which activities involve power generation using renewable sources."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "GOOGL-Investment-Wiz",
+        "fields": {
+          "investor": "Alphabet",
+          "target": "Wiz",
+          "amount_usd": 32000000000.0,
+          "disclosed_date": "2025-03-01",
+          "verbatim_quote": "In March 2025, we entered into a definitive agreement to acquire Wiz, a leading cloud security platform, for $32.0 billion, subject to closing adjustments, in an all-cash transaction."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-ExecutionRisk-DataCenters",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 17300000000.0,
+            "duration_yrs": 25,
+            "note": "Off-balance-sheet data center leases not yet commenced; operations contingent on timely deployment"
+          },
+          "verbatim_quote": "As of March 31, 2025, we have entered into leases primarily related to data centers that have not yet commenced with future lease payments of $17.3 billion, that are not yet recorded on our Consolidated Balance Sheets. These leases will commence between 2025 and 2031 with non-cancelable lease terms between one and 25 years."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-CapexROIGap-CloudInfrastructure",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 150992000000.0,
+            "pct_of_assets": null,
+            "note": "Technical infrastructure assets grew from $139.6B to $151.0B in Q1 2025; $55.6B in assets not yet in service"
+          },
+          "verbatim_quote": "Technical infrastructure $150,992 million as of March 31, 2025... Add: assets not yet in service $55,641 million"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-AntitrusRisk-Search",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Regulatory/Antitrust",
+          "named_counterparties": [
+            "DOJ",
+            "US Government"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In August 2024, the U.S. District Court for the District of Columbia ruled that Google violated such U.S. antitrust laws. A separate proceeding is being held to determine remedies, the range of which vary widely. The DOJ has proposed a high level remedy framework, which includes alterations to our products and services and our business models and operations, including structural remedies, and/or our distribution arrangements, among other changes, some of which could have a material adverse effect on our business."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-AntitrusRisk-Play",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Regulatory/Antitrust",
+          "named_counterparties": [
+            "Epic Games"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In December 2023, a California jury delivered a verdict in Epic Games v. Google finding that Google violated U.S. antitrust laws related to Google Play's business. Epic did not seek monetary damages. The presiding judge issued a remedies decision in October 2024, ordering a variety of alterations to our business models and operations and contractual agreements for Android and Google Play."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-AntitrusRisk-AdvertisingTech",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Regulatory/Antitrust",
+          "named_counterparties": [
+            "DOJ",
+            "State AGs"
+          ],
+          "severity": 3,
+          "verbatim_quote": "In April 2025, the U.S. District Court for the Eastern District of Virginia issued a mixed decision in the DOJ case against Google, ruling that the DOJ failed to show that Google's advertiser tools or acquisitions of DoubleClick and AdMeld were anticompetitive, but that Google's publisher tools violated antitrust laws by excluding rivals."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Wiz",
+        "fields": {
+          "role": "customer"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Wiz",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition",
+          "status": "pending",
+          "note": "Wiz acquisition expected to close; benefits realization dependent on successful integration"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "investment",
+        "target_name": "GOOGL-Investment-Wiz",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "investment",
+        "source_name": "GOOGL-Investment-Wiz",
+        "target_type": "company",
+        "target_name": "Wiz",
+        "predicate": "NAMES_COUNTERPARTY"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "capex_commitment",
+        "target_name": "GOOGL-2025-DataCenterLeases",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "capex_commitment",
+        "target_name": "GOOGL-2025-ContentLicensing",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-ExecutionRisk-DataCenters",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-CapexROIGap-CloudInfrastructure",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-AntitrusRisk-Search",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-AntitrusRisk-Play",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-AntitrusRisk-AdvertisingTech",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Alphabet",
+        "properties": {
+          "amount_usd": 17200000000,
+          "duration_yrs": null,
+          "start_fy": 2025,
+          "purpose": "technical infrastructure including servers, network equipment, and data centers, to support the growth of business and long-term initiatives, in particular in support of AI products and services",
+          "verbatim_quote": "We expect to increase, relative to 2024, our investment in our technical infrastructure, including servers, network equipment, and data centers, to support the growth of our business and our long-term initiatives, in particular in support of AI products and services."
+        }
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Wiz",
+        "properties": {
+          "amount_usd": 32000000000,
+          "disclosed_date": "2025-03",
+          "verbatim_quote": "In March 2025, we entered into a definitive agreement to acquire Wiz, a leading cloud security platform, for $32.0 billion, subject to closing adjustments, in an all-cash transaction."
+        }
+      }
+    ],
+    "notes": "[chunk 1/3] FILING CONTEXT: Alphabet Inc. 10-Q Q1 2025 (filed 2025-04-25). EXTRACTED ENTITIES: (1) Alphabet Inc. \u2014 primary filer, hyperscaler, NASDAQ-listed (GOOGL, GOOG). (2) Wiz, Inc. \u2014 referenced in forward-looking statements as a pending acquisition target. RELATIONSHIP: Forward-looking statement explicitly mentions 'our expectations regarding the timing and successful closing and integration of the Wiz, Inc. (\\\"Wiz\\\") acquisition, including the realization of anticipated benefits.' No SIFI-material details on deal consideration, counterparty leverage, or circular dependencies disclosed in this excerpt. The source text is primarily XBRL taxonomy metadata and boilerplate 10-Q headers/statements of income and equity\u2014no narrative business description, customer concentration analysis, supplier dependencies, related-party transactions, or investments footnotes containing specific counterparty or amount details. Standard forward-looking statements and consolidated financial statements only. No named customers, suppliers, or strategic partnerships identified. No off-balance-sheet entities, debt vehicles, or capex commitments disclosed in this section. Conclusion: Minimal SIFI-material extraction warranted; only Wiz acquisition noted as a material corporate action in pending status.\"\n}\n]\n[chunk 2/3] EXTRACTION SUMMARY \u2013 GOOGL 10-Q Q1 2025 (Filed 2025-04-25)\n\nSIFI-MATERIAL FINDINGS:\n\n1. **EXECUTION RISK \u2013 Off-Balance Data Center Leases ($17.3B)**\n   - Alphabet has committed to $17.3B in data center lease payments with terms of 1\u201325 years, commencing 2025\u20132031\n   - These leases are OFF-BALANCE-SHEET as of Q1 2025 (not yet recorded)\n   - Severity 3: Large committed capex contingent on deployment and customer ramp\n\n2. **CAPEX ROI GAP \u2013 Technical Infrastructure Build-Out**\n   - Technical infrastructure grew from $139.6B (Dec 2024) to $151.0B (Mar 2025)\n   - $55.6B in assets NOT YET IN SERVICE as of Q1 2025 (29% of gross infrastructure)\n   - Content licensing commitments ($8.6B through Q1 2030) add fixed cost burden\n   - Severity 2: Large deployed and in-progress capex; need to monitor revenue backlog realization vs. depreciation life\n\n3. **STRATEGIC ACQUISITION \u2013 Wiz ($32B)**\n   - Definitive agreement (March 2025) to acquire cloud security platform\n   - Expected close in 2026; will be folded into Google Cloud segment\n   - No SIFI concentration risk identified; strategic tuck-in acquisition\n\n4. **VIE STRUCTURES & UNCONSOLIDATED INVESTMENTS**\n   - Consolidated VIEs: Assets $7.8B (unavailable to Alphabet), liabilities $2.0B (VIE-only recourse)\n   - Unconsolidated VIEs: Private/early-stage companies + renewable energy; future funding commitments $1.5B\n   - Note: Alphabet's $48.6B non-marketable equity portfolio includes private companies/AI labs (see Note 3)\u2014names not enumerated in this Q1 10-Q\n\n5. **ANTITRUST RISKS \u2013 MATERIAL HEADWINDS**\n   - **Search**: DOJ won August 2024 ruling; remedies hearing scheduled April 2025; decision expected H2 2025. Severity 4 (structural remedies possible)\n   - **Google Play / Epic Games**: Judge ordered remedies (October 2024); Alphabet appealing; implementation paused pending appeal. Severity 4\n   - **Advertising Tech**: Mixed court ruling (April 2025); Google's publisher tools ruled anticompetitive. Severity 3\n   - **Android**: EC appeal still pending with European Court of Justice (\u20ac4.1B reduced fine)\n   - **Digital Markets Act (EU)**: EC issued preliminary non-compliance findings (March 2025) on Google Play and Search\n\n6. **REVENUE BACKLOG & DEFERRED REVENUE**\n   - $92.4B remaining performance obligations (mostly Google Cloud)\n   - Expected to recognize 55% over next 24 months (i.e., ~$51B over 24 months)\n   - Deferred revenue $6.6B (Q1 2025), up from $6.0B (Dec 2024)\n   - NOT SIFI-material by concentration alone, but execution risk on capex-heavy cloud infrastructure is relevant\n\n7. **NO SIGNIFICANT HIDDEN LEVERAGE OR CIRCULARITY**\n   - Debt: $12.0B face value; short-term commercial paper $2.5B; $10.0B revolving credit (undrawn)\n   - No off-balance SPVs with material leverage or residual value guarantees\n   - No named counterparty round-tripping or circular ownership identified\n\n8. **NOTES NOT EXTRACTED (IMMATERIAL FOR THIS FILING)**\n   - Generic foreign exchange hedging (24-month maturities; routine market risk)\n   - Standard lease accounting disclosures\n   - Routine indemnifications, legal settlements (EC fines accrued and paid)\n   - Stock-based compensation ($5.5B/quarter) \u2013 no related-party angle\n   - Share repurchases ($15.3B in Q1 2025; $70B authorization) \u2013 capital allocation, not SIFI risk\n\nCOUNTERPARTY WEB:\n- Google Cloud is the primary revenue backlog driver ($92.4B); acquisition of Wiz (security platform) is a tuck-in to strengthen cloud offerings\n- No major customer concentration disclosed in Note 2 (revenue disaggregated by type/geography, not by customer)\n- Content licensing ($8.6B) is a supply-chain fixed cost, not a circular or concentration risk\n\nACTION ITEMS FOR AI SIFI MONITOR:\n1. Track Alphabet's remedies proposal and April 2025 DOJ hearing outcome (Search antitrust)\n2. Monitor Google Play remedies implementation and appeal timeline (Epic Games)\n3. Verify capex realization against revenue backlog as data center leases commence (2025\u20132031)\n4. Flag any future AI lab investments or partnerships in next quarterly/annual filing (Note 3 / non-marketable securities roster not detailed here)\n\n[chunk 3/3] SIFI-material extractions from Alphabet 10-Q (Q1 2025):\n\n1. **CAPEX COMMITMENT**: Alphabet spent $17.2B in Q1 2025 on capital expenditures, primarily technical infrastructure (servers, network equipment, data centers). The filing explicitly signals intention to *increase* this investment relative to 2024, with AI products/services as a key driver. This is material for AI infrastructure buildup monitoring.\n\n2. **WIZ ACQUISITION**: Announced March 2025, $32B all-cash acquisition of Wiz cloud security platform. Expected close 2026 subject to regulatory approval. Will be part of Google Cloud segment post-close. This is material as a SIFI-scale capex commitment and represents strategic expansion into enterprise security.\n\n3. **OPERATING LEASE COMMITMENTS**: As of March 31, 2025, Alphabet has:\n   - $17.0B in future operating lease payments (commenced)\n   - $2.5B in finance lease payments\n   - $17.3B in non-cancelable lease payments for data centers not yet commenced (commence 2025\u20132031, 1\u201325 year terms)\n   - Total lease exposure: ~$36.8B\n   \n   The uncommenced datacenter leases are particularly significant as they represent committed capacity buildout for AI workloads with multi-year lock-in.\n\n4. **PURCHASE COMMITMENTS**: $62.1B in material purchase commitments as of March 31, 2025 ($41.5B short-term), primarily for technical infrastructure, licenses, inventory, and network capacity. This is a major hidden leverage signal if tied to AI infrastructure procurement and not yet contracted for specific customer revenue.\n\n5. **REVENUE CONCENTRATION & MONETIZATION**: \n   - Google Services: $77.3B (85% of revenue), dominated by advertising\n   - Google Cloud: $12.3B (13% of revenue), growing 28% YoY\n   - Google Cloud operating margin improved significantly (900M \u2192 2,177M Q1 24\u219225)\n   - No customer concentration >10% disclosed in this section\n\n6. **GEOGRAPHIC CONCENTRATION**:\n   - US: 49% of revenues\n   - EMEA: 29% of revenues\n   - APAC: 16% of revenues\n   - Other Americas: 6% of revenues\n   - No material country-level concentration\n\n7. **INVESTMENT PORTFOLIO**: Note 3 mentions $8.0B unrealized gain on non-marketable equity securities in Q1 2025 OI&E. This suggests significant venture equity exposure not broken out by counterparty in this section. (Note 8 referenced but full roster not provided in this extract.)\n\n**ITEMS NOT EXTRACTED** (boilerplate/non-SIFI):\n- Executive compensation, tax disputes, general market risk, routine competition, generic currency hedging, standard depreciation policy changes, routine dividend and buyback programs, sales/marketing expense mix, content acquisition cost trends (all standard operating expenses).\n\n**NODES INTENTIONALLY OMITTED**:\n- Distribution partners, Google Network partners: named only generically (\"browser providers,\" \"mobile carriers,\" \"software developers\"), no specific counterparty named.\n- Content providers: mentioned generically, no SIFI-material concentration disclosed.\n- Contract manufacturers: mentioned for server assembly but no counterparty named or material dependency signaled.\n"
+  }
+}

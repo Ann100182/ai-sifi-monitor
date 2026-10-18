@@ -1,0 +1,167 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Figma",
+        "fields": {
+          "role": "target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "Adobe Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Adobe-Supplier-$2.3B",
+        "fields": {
+          "filer": "Adobe",
+          "amount_usd": 2300000000,
+          "duration_yrs": 4.67,
+          "start_fy": 2024,
+          "counterparty": "Long-term suppliers (unspecified)",
+          "purpose": "Goods and services in ordinary course of business",
+          "verbatim_quote": "During the first quarter of fiscal 2024, we executed agreements associated with certain of our long-term supplier commitments that increased our minimum purchase obligations by $2.3 billion through December 2028."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Adobe-AI-Innovation-Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Technology Innovation & AI",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "For example, generative artificial intelligence technologies provide new ways of marketing, creating content and interacting with documents that could disrupt industries in which we operate, and our business may be harmed if we fail to invest or adapt. While we have released new generative artificial intelligence products, such as Adobe Firefly, and are focused on enhancing the artificial intelligence capabilities of such products and incorporating AI into existing products, services and solutions, there can be no assurance that our products will be successful or that we will innovate effectively to keep pace with the rapid evolution of AI."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Adobe-AI-Capex-Gap",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "R&D spending on AI and hosting/data center costs increasing without explicit AI revenue contracts disclosed"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Research and development expenses consist primarily of compensation and contracted costs associated with software development, third-party hosting services and data center costs... Investments in research and development, including the recruiting and hiring of software developers, are critical to remain competitive... We will continue to focus on long-term opportunities available in our end markets and make significant investments in the development of our subscription and service offerings, apps and tools."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Adobe-Supply-Chain-Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Supplier & Third-Party Dependencies",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "If we are unable to develop, manage and maintain critical third-party relationships, such as our sales, partner and distribution channels, suppliers and service providers, our revenue and business may be adversely affected... If such third parties are negatively affected, if we fail to effectively develop, manage and maintain our relationships with such third parties, or if we are unable to renew our agreements with them on favorable terms or at all, our expenses could significantly increase."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Adobe-Figma-Acquisition-Execution",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 1000000000
+          },
+          "named_counterparties": [
+            "Figma"
+          ],
+          "verbatim_quote": "During the six months ended May 31, 2024, we entered into a mutual termination agreement with Figma to terminate the previously announced merger agreement. Consequently, the Term Loan Credit Agreement was terminated... Payment of the $1 billion Figma termination fee during the six months ended May 31, 2024 had an adverse impact on net income and cash flows from operations."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Figma",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "ADBE Inc."
+          ],
+          "role": "software"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "company",
+        "target_name": "Figma"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "capex_commitment",
+        "target_name": "Adobe-Supplier-$2.3B",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Adobe-AI-Innovation-Risk",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Adobe-AI-Capex-Gap",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Adobe-Supply-Chain-Risk",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "company",
+        "target_name": "Figma",
+        "predicate": "CIRCULAR_WITH"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Adobe-Figma-Acquisition-Execution",
+        "predicate": "HAS_RISK_SIGNAL"
+      }
+    ],
+    "notes": "[chunk 1/4] FILING: Adobe 10-Q Q2 2024 (May 31, 2024). SOURCE TEXT NOTES: The filing is primarily XBRL segment data, balance sheet, income statement, and cash flow statements with minimal narrative. The substantive narrative sections provided are NOTE 3 (Acquisitions - Figma) and boilerplate accounting policies. KEY EXTRACTION: (1) Figma Acquisition Termination (Sept 15, 2022 merger agreement; Dec 17, 2023 termination; $1B termination fee paid in Q2 2024). This is documented but represents a CONCLUDED transaction, not ongoing counterparty exposure. The termination fee is a sunk cost in the filing period. (2) No ongoing strategic partnerships or supply relationships named. (3) No hidden leverage, SPVs, or off-balance-sheet entities identified in this section. (4) No material customer or supplier concentration disclosed in the narrative. (5) Revenue segments are: Digital Media ($3.9B Q2), Digital Experience ($1.3B Q2), Publishing & Advertising ($74M Q2). These are Adobe's internal segments, not named external counterparties. (6) Geographic segments (Americas, EMEA, APAC) do not name specific counterparties. ASSESSMENT: This excerpt lacks SIFI-material counterparty relationships. The Figma deal is a terminated M&A event (not active). No circularity, roundtripping, hidden leverage, or concentration risks are visible in the provided text. The document is primarily financial statement tables and accounting policy boilerplate\u2014typical for a 10-Q's first section. A full Item 1A (Risk Factors) or Item 7 (MD&A) would likely reveal material relationships; however, the user's source text ends after NOTE 5 (Fair Value Measurements). CONCLUSION: Only one minor node-edge pair can be credibly extracted: Adobe and the Figma termination. No SIFI-material risk signals are evident in the provided excerpt.\"\n[chunk 2/4] Adobe 10-Q (Jun 26, 2024) - Notes to Condensed Consolidated Financial Statements (Notes 6-14). This section contains routine accounting disclosures on derivatives, goodwill, intangibles, accrued expenses, stock-based compensation, comprehensive income, stock repurchases, EPS, commitments, legal proceedings, and debt. No SIFI-material entities, undisclosed related-party arrangements, or counterparty concentrations identified. Derivative instruments are standard FX hedges with immaterial P&L impact. Goodwill is stable ($12.8B) with no impairment. Customer/supplier concentration is not disclosed in this section. FTC litigation (ROSCA/subscription cancellation disclosure practices) and securities class actions (Figma competition allegations) are operational/regulatory risks, not SIFI-material leverage or circularity. Stock repurchase programs ($4.5B-$5.7B ASRs with unnamed large financial institutions) and debt issuances ($2B in Apr 2024) are standard financing activities. No hidden leverage, off-balance-sheet structures, circular dependencies, or AI infrastructure partnerships mentioned. Skipping boilerplate.\n[chunk 3/4] SIFI-Material Extractions from Adobe 10-Q Q2 FY2024:\n\n1. **Capex Commitment**: Adobe disclosed $2.3B in minimum purchase obligations to long-term suppliers through Dec 2028 (FY2024\u20132028). This is a material contractual commitment but lacks named counterparties and explicit purpose transparency\u2014typical of supplier consolidation moves.\n\n2. **AI/Innovation Risk (Severity 3)**: Adobe explicitly cites generative AI disruption as a core strategic uncertainty. While Adobe has launched Firefly and AI-powered products (Acrobat AI Assistant, GenStudio), there is no contractual offset or guarantee of revenue uptake. This is a classic CAPEX_ROI_GAP pattern: R&D spend and hosting costs rising without locked-in customer revenue.\n\n3. **Figma Acquisition Failure**: Adobe paid $1B termination fee after failing to close the Figma acquisition. This signals execution risk and poor M&A due diligence discipline\u2014a SIFI signal for companies with large capex ambitions (Adobe has $5.65B in debt outstanding). The failure also hints at regulatory/competitive headwinds in design software markets.\n\n4. **Supplier Concentration & Opacity**: Adobe lists third-party hosting, data center costs, and supplier dependencies as material risks but does not name counterparties. The $2.3B commitment is significant relative to Adobe's gross margin structure (91% subscription margin in Q2) and could indicate hidden leverage if any supplier fails.\n\n5. **Debt & Refinancing Risk**: Adobe issued $2B in senior notes in April 2024, bringing total debt to $5.65B. Current debt of $1.5B matures Feb 2025 and is marked for refinancing. Interest expense rose 58% QoQ due to new notes. This is not SIFI-critical (debt-to-ARR ~0.3x) but signals rising cost of capital and refinancing execution risk in a volatile rate environment.\n\n6. **Foreign Currency Exposure**: Adobe derives 40% of revenue from EMEA+APAC; hedging program only offset ~$15M in FX headwinds in H1 2024. This is operational but not systemic.\n\n**Key SIFI Gaps**: No hidden leverage vehicles (SPVs, VIEs, operating leases with RVGs), no customer concentration disclosures >10%, and no evidence of revenue roundtripping. Adobe is operationally sound but faces strategic execution risk around AI product monetization and supplier concentration opaqueness.\n[chunk 4/4] The filing excerpt contains only boilerplate financial disclosure sections (share repurchase activity, exhibits index, trademark summary, and signature). No SIFI-material entities identified. The ASR agreements with unnamed 'large financial institutions' are routine financing mechanics and do not meet the materiality threshold for counterparty-web extraction (the counterparties are not named, amounts are modest relative to scale, and there is no concentration or circularity risk signal). No customer concentration, supplier dependencies, strategic partnerships, investments, acquisitions, related-party arrangements, or hidden leverage structures are disclosed in this excerpt.\""
+  }
+}

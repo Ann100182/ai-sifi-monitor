@@ -1,0 +1,373 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Confluent",
+        "fields": {
+          "role": "investment"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Confluent",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Confluent",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Confluent-Acquisition-Q1-2026",
+        "fields": {
+          "filer": "IBM",
+          "amount_usd": 3834000000,
+          "counterparty": "Confluent",
+          "purpose": "Acquisition of Confluent for intangible assets (completed technology, client relationships)",
+          "verbatim_quote": "additions of acquired intangibles from Confluent of $3,834 million in the first quarter of 2026"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Confluent",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Red Hat",
+        "fields": {
+          "aliases": [
+            "Hybrid Cloud"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Confluent",
+        "fields": {
+          "role": "acquired"
+        }
+      },
+      {
+        "type": "company",
+        "name": "HashiCorp",
+        "fields": {
+          "role": "acquired"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "IBM-Quantum-$10B-5yr",
+        "fields": {
+          "filer": "IBM",
+          "amount_usd": 10000000000.0,
+          "duration_yrs": 5,
+          "start_fy": 2026,
+          "purpose": "quantum R&D, capital expenditures, manufacturing scaling, M&A and ecosystem expansion",
+          "verbatim_quote": "we disclosed our plans to invest more than $10 billion in quantum over the next five years, spanning R&D, capital expenditures, manufacturing scaling, M&A and ecosystem expansion"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "IBM-Anderton-CHIPS-$2B",
+        "fields": {
+          "filer": "IBM",
+          "amount_usd": 2000000000.0,
+          "start_fy": 2026,
+          "counterparty": "U.S. Department of Commerce",
+          "purpose": "pure-play quantum wafer foundry",
+          "verbatim_quote": "a letter of intent to build Anderton, a pure-play quantum wafer foundry supported by $1 billion in CHIPS Act incentives provided by the DoC and a $1 billion cash contribution by IBM"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-CAPEX_ROI_GAP-Infrastructure",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 10000000000.0,
+            "duration_yrs": 5,
+            "note": "Large quantum capex commitment without disclosed contracted customer revenue or ROI pathway"
+          },
+          "verbatim_quote": "we disclosed our plans to invest more than $10 billion in quantum over the next five years, spanning R&D, capital expenditures, manufacturing scaling, M&A and ecosystem expansion. This quarter, we announced with the U.S. Department of Commerce (DoC), a letter of intent to build Anderton, a pure-play quantum wafer foundry supported by $1 billion in CHIPS Act incentives"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-EXECUTION_RISK-Z17",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": null,
+            "pct_of_revenue": -42.0,
+            "note": "IBM Z revenue declined 42% YoY in Q2 2026 vs historically strong z17 launch in prior year"
+          },
+          "verbatim_quote": "Within Hybrid Infrastructure, IBM Z decreased 42.0 percent as reported (41.8 percent adjusted for currency) reflecting performance below expectations in the current period, and also comparing to a historically strong prior-year z17 launch"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-COST_OPACITY-Goodwill",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "named_counterparties": [
+            "Confluent"
+          ],
+          "numeric_signal": {
+            "amount_usd": 8765000000.0,
+            "note": "Noncurrent assets increased $8.8B primarily from Confluent goodwill/intangibles; no amortization policy changes disclosed"
+          },
+          "verbatim_quote": "Noncurrent assets increased $8,765 million ($9,437 million adjusted for currency) primarily due to an increase in goodwill and intangible assets from the Confluent acquisition"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "IBM-Confluent-Acquisition",
+        "fields": {
+          "investor": "IBM",
+          "target": "Confluent",
+          "amount_usd": 10480000000.0,
+          "disclosed_date": "2026-Q1",
+          "verbatim_quote": "we completed the acquisition of Confluent"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM_Financing_Segment_Deterioration",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 12131000000,
+            "pct_of_revenue": 2985,
+            "note": "Client financing receivables $12.1B as of June 30 2026; segment profit margin collapsed 13.6 pts YTD and 49.9 pts in Q2 2026"
+          },
+          "named_counterparties": [
+            "IBM Infrastructure"
+          ],
+          "verbatim_quote": "Segment profit decreased 39.7 percent to $108 million and segment profit margin decreased 49.9 points to 58.0 percent, respectively, in the second quarter of 2026 compared to the prior-year period... The decrease in segment profit was primarily driven by lower intercompany financing net other income for sales of returned leased equipment to Infrastructure, which is eliminated in IBM's consolidated financial results and reflects IBM Z product cycle dynamics."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM_Receivables_Coverage_Opacity",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 12131000000,
+            "pct_of_assets": 0.9,
+            "note": "Allowance for credit losses coverage remained flat at 0.9% despite portfolio contraction and Z product cycle volatility"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The percentage of Financing segment receivables reserved was 0.9 percent at both June 30, 2026 and December 31, 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM_Client_Concentration_Risk",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 12131000000,
+            "pct_of_revenue": 80,
+            "note": "80% of external portfolio concentrated in investment-grade clients; any downgrade cascade could trigger receivables impairment"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Approximately 80 percent of the total external portfolio was with investment grade clients, an increase of 1 point as compared to December 31, 2025. This investment grade percentage is based on the credit ratings of the companies in the portfolio and reflects certain mitigating actions taken to reduce the risk to IBM."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "Confluent"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "Confluent",
+        "properties": {
+          "transaction_type": "acquisition",
+          "completion_date": "2026-03-17"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Confluent",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "capex_commitment",
+        "target_name": "Confluent-Acquisition-Q1-2026",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "Confluent",
+        "properties": {
+          "context": "Q1 2026 acquisition"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Red Hat",
+        "predicate": "OWNS"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Confluent",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "capex_commitment",
+        "target_name": "IBM-Quantum-$10B-5yr",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "capex_commitment",
+        "target_name": "IBM-Anderton-CHIPS-$2B",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-CAPEX_ROI_GAP-Infrastructure",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-EXECUTION_RISK-Z17",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-COST_OPACITY-Goodwill",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "capex_commitment",
+        "source_name": "IBM-Anderton-CHIPS-$2B",
+        "target_type": "company",
+        "target_name": "USG",
+        "predicate": "SPONSORS"
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "IBM_Financing_Segment_Deterioration",
+        "target_type": "company",
+        "target_name": "IBM",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "IBM_Receivables_Coverage_Opacity",
+        "target_type": "company",
+        "target_name": "IBM",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "IBM_Client_Concentration_Risk",
+        "target_type": "company",
+        "target_name": "IBM",
+        "predicate": "HAS_RISK_SIGNAL"
+      }
+    ],
+    "notes": "[chunk 1/6] IBM 10-Q filing Q2 2026 (dated 2026-07-23) contains minimal narrative SIFI-material content. The source text provided is primarily XBRL tag metadata with boilerplate SEC cover page. Key extracted entity: IBM acquired or holds interest in Confluent (visible in intangible asset tagging: 'ibm:ConfluentMember' dated 2026-03-17 with customer relationships and trademark intangibles). No narrative disclosure of capex commitments, off-balance entities, circularity, or concentration risks in the excerpt provided. Standard debt structure with maturity schedule across 2026-2096 (routine leverage, not SIFI-material). No AI lab partnerships, revenue round-tripping, or hidden leverage signals detected in this section. Recommend review of full Item 1 Business and Risk Factors sections for additional entities and dependencies.\"\n[chunk 2/6] IBM 10-Q filing (2026-07-23) contains limited SIFI-material content in this section. Primary findings: 1) Confluent acquisition closed March 17, 2026, for $11.6B total consideration ($11.3B equity value at $31/share). Goodwill of $7.2B was recognized, with $7.1B assigned to Software segment and $89M to Consulting. Intangible assets of $3.8B (client relationships, completed technology, trademarks) on weighted-average amortization life of 9.7 years. The acquisition added $1.165B cash and $917M securities to IBM's balance sheet, while $1.1B in Confluent convertible notes were assumed and settled April 15, 2026. 2) No material SIFI-relevant counterparty concentrations, off-balance-sheet arrangements, or circularity identified in this general section. 3) Financing receivables totaled $13.8B net at June 30, 2026 (down from $16.2B at year-end 2025), primarily client loans and leases. No material impairments, credit losses, or residual value guarantee risks detected. 4) Operating leases recognized $3.1B in ROU assets and $3.3B in lease liabilities (combined), consistent with standard corporate real estate practices. 5) The document mentions acquisition of \"a business\" with signing on July 22, 2026, but no counterparty named; this is not yet closed and therefore not extractable without further detail. 6) No material equity investments in AI labs, private compute providers, or strategic venture stakes disclosed in this section.\"\n  }\n]\n[chunk 3/6] SIFI-MATERIAL EXTRACTION SUMMARY for IBM 10-Q Q2 2026:\n\nKEY FINDINGS:\n1. **Confluent Acquisition (~$3.8B, Q1 2026)**: IBM acquired Confluent, which contributed $3.834B in acquired intangibles recorded in Q1 2026. This is a material capex event for integration of streaming/event-driven data platform technology.\n\n2. **Intangible Asset Concentration**: IBM's gross intangible assets grew from $22.2B (Dec 2025) to $26.0B (Jun 2026), with client relationships representing the largest component at $13.3B gross ($7.1B net). This indicates customer stickiness and revenue dependency on acquired customer bases, particularly post-Confluent.\n\n3. **Goodwill Accumulation**: Goodwill additions of $7.2B in H1 2026 (primarily Confluent), bringing total goodwill to $74.6B (up from $67.7B at year-end 2025). Software segment goodwill is the largest at $59.9B, signaling customer concentration risk in enterprise software.\n\n4. **Debt Structure & Finance Subsidiary**: IBM issued $4.9B via IBM International Capital Pte. Ltd (IIC), a 100%-owned finance subsidiary, with full guarantee from IBM. This is a potential hidden leverage signal - debt layering through operating entities that could complicate recovery in stress scenarios.\n\n5. **Intangible Amortization Opacity**: Amortization expense jumped to $1.535B for H1 2026 (vs. $1.328B in H1 2025). Future estimated amortization extends decades (\"Thereafter\" bucket: $3.673B), indicating long-lived client relationships and completed technology acquired in M&A that are difficult to verify or impair.\n\n6. **Operating Lease Obligations**: Finance lease obligations of $1.1B (weighted-average 5.0% interest rate, 2026-2035 maturity). These are operational but on-balance-sheet so not flagged as hidden risk.\n\n7. **Client Concentration & Customer Relationship Assets**: The $7.1B net carrying amount of client relationships suggests material revenue concentration among acquired customer bases. Amortization of $2.4B + $2.7B forecast for 2027 indicates customer churn or revenue decline expectations embedded in the asset base.\n\n8. **Foreign Exchange & Currency Risk**: $16.4B in debt designated as net investment hedges (currency-denominated to offset foreign subsidiary translation risk). Large FX derivatives notional ($7.6B net investment hedges, $11.1B royalty/cost hedges, $9.2B foreign debt hedges) suggest complex intercompany structures with embedded FX volatility.\n\nNOT EXTRACTED (Boilerplate or Below Threshold):\n- Standard debt covenants (net interest expense ratio 2.20:1, secured debt limit 10% of tangible assets) - routine\n- Litigation/contingencies in Item 14 - generic (IP, employment, environmental) with no material reserve changes\n- Pension plan components - standard actuarial reporting, no hidden obligations flagged\n- Stock-based compensation ($1B pre-tax for H1 2026) - disclosed and standard\n- Derivative hedging programs - all hedges are economic hedges of known exposures, not speculative leverage\n\nSEVERITY ASSESSMENT (if any hidden risk signals were present):\n- **Intangible asset concentration & goodwill amortization cliff**: This is not a SIFI risk in isolation for IBM (pure customer/technology integration), but the $74.6B goodwill + $13.9B intangibles = ~$88.5B or ~15-20% of likely total assets suggests customer concentration and asset valuation risk. If Confluent or prior acquisitions underperform, impairments could be material.\n- **Finance subsidiary debt**: IBM IIC's $4.9B issuance with full guarantee is not off-balance-sheet leverage (already consolidated) but is a structural feature that could complicate resolution in a severe downturn.\n\nThis excerpt does NOT contain SIFI-material risk signals (hidden leverage, circularity, revenue roundtripping, capex ROI gaps, execution risk, or extreme customer concentration >10% of revenue from undisclosed single counterparties). IBM's operations are transparent on a consolidated basis.\"\n\n[chunk 4/6] Reviewed IBM 10-Q/A for Q2 2026 (filed 2026-07-23). The provided source text (Item 2 MD&A, notes on pension costs, and subsequent events) contains primarily financial performance commentary, earnings reconciliation, and cash flow discussion. No SIFI-material relationships, off-balance entities, hidden leverage, circularity patterns, capex commitments to AI labs, or customer/supplier concentration signals were identified in this excerpt. Confluent acquisition mentioned as completed in Q1 2026; insufficient detail in source text to extract investment node with amount or equity %. Pension plan contributions ($144M H1 2026) and dividend announcements are routine, non-SIFI. No references to named AI labs (OpenAI, Anthropic, etc.), counterparty web exposure, or concentration risk above threshold.\"\n\n[chunk 5/6] This 10-Q excerpt is primarily segment reporting and financial commentary. Key SIFI-material findings: (1) IBM Z infrastructure declined 42% YoY\u2014execution risk on legacy franchise. (2) $10B quantum investment over 5 years lacks disclosed ROI pathway or customer contracts\u2014capex ROI gap. (3) Confluent acquisition added $8.8B in goodwill/intangibles; no policy disclosures on amortization\u2014cost opacity. (4) Red Hat (OpenShift ARR $2B+) is a key subsidiary; Hybrid Cloud revenue growing 11-12% but still down from product mix headwinds. (5) Financing segment (captive leasing) carries $13B debt but margins compressed. (6) No material related-party arrangements or off-balance-sheet entities disclosed in this excerpt. (7) Consulting backlog $30.8B is well-signed but conversion risk noted. (8) Currency headwinds muted in Q2 but geopolitical/macro uncertainty cited. No CIRCULARITY or REVENUE_ROUNDTRIP signals detected in narrative.\"\n[chunk 6/6] IBM 10-Q (July 23, 2026) contains three SIFI-material signals in the Financing segment: (1) Sharp Q2 segment profit collapse (39.7% YoY, margin down 49.9 pts) tied to IBM Z product cycle and intercompany returned leased equipment sales to IBM Infrastructure\u2014indicating cyclical revenue concentration and ROI mismatch on financing assets; (2) Static 0.9% credit loss allowance coverage despite portfolio contraction and product-cycle volatility, suggesting cost opacity in provisioning methodology; (3) 80% portfolio concentration in investment-grade clients creates single rating-action dependency. The financing receivables balance ($12.1B) is substantial and declining; the intercompany dynamics with IBM Infrastructure create internal circularity risk but are eliminated in consolidated results. The forward-looking statement acknowledges \"customer financing risks\" and \"impacts of relationships with critical suppliers\" but does not isolate the Z-cycle dependency or the allowance adequacy question. No explicit off-balance-sheet arrangements or AI/hyperscaler relationships detected in this excerpt.\""
+  }
+}

@@ -1,0 +1,593 @@
+{
+  "director_comp": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "Avago Technologies Limited"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta Platforms",
+        "fields": {
+          "ticker": "META",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intel",
+        "fields": {
+          "ticker": "INTC",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Silver Lake",
+        "fields": {
+          "aliases": [
+            "Silver Lake Partners"
+          ],
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Benchmark Electronics",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NewSmith Capital Partners",
+        "fields": {
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Anaheim Ducks",
+        "fields": {
+          "role": "other"
+        }
+      },
+      {
+        "type": "company",
+        "name": "National Instruments",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Emerson Electric",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Flowserve",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Littelfuse",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SolarWinds",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Splunk",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NortonLifeLock",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SMART Global Holdings",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Singapore Telecommunications Limited",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IonQ",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Coupang",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Genius Sports Limited",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Rain Enhancement Technologies Holdco",
+        "fields": {
+          "role": "investment"
+        }
+      },
+      {
+        "type": "company",
+        "name": "GTY Technology Holdings",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "EMC Corporation",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "BearingPoint",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Accenture",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Haemonetics",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Jacobs Solutions",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Integrated Device Technology",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Integrated Circuit Systems",
+        "fields": {
+          "aliases": [
+            "ICS"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NovaSignal Corp",
+        "fields": {
+          "role": "investment"
+        }
+      },
+      {
+        "type": "company",
+        "name": "PricewaterhouseCoopers LLP",
+        "fields": {
+          "aliases": [
+            "PwC"
+          ],
+          "role": "supplier"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "Meta Platforms",
+        "predicate": "SELLS_COMPUTE_TO",
+        "properties": {
+          "note": "Hock E. Tan serves as director of Meta Platforms, Inc."
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "PricewaterhouseCoopers LLP",
+        "predicate": "SUPPLIES",
+        "properties": {
+          "note": "PwC serves as independent auditor since 2006"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Silver Lake",
+        "target_type": "company",
+        "target_name": "Broadcom",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "note": "Kenneth Y. Hao serves as Chairman and Managing Partner of Silver Lake and joined Broadcom board in 2024"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "Intel",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "note": "Diane M. Bryant held executive positions at Intel Corporation"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "Alphabet",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "note": "Diane M. Bryant served as Chief Operating Officer of Google Cloud at Alphabet Inc."
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "Oracle",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "note": "Harry L. You served as Executive Vice President and Chief Financial Officer of Oracle Corporation"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "Benchmark Electronics",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "note": "Gayla J. Delly served as President and CEO of Benchmark Electronics Inc."
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "Accenture",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "note": "Harry L. You held position of Chief Financial Officer at Accenture Ltd."
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "IonQ",
+        "predicate": "CIRCULAR_WITH",
+        "properties": {
+          "note": "Harry L. You served as director of IonQ, Inc. from September 2021 to February 2025 while on Broadcom board"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "Rain Enhancement Technologies Holdco",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "note": "Harry L. You serves as Chairman of the Board of Rain Enhancement Technologies Holdco, Inc."
+        }
+      }
+    ],
+    "notes": "[chunk 1/1] FILING: AVGO DEF 14A (2026-03-02). DIRECTOR COMPENSATION SECTION. SIFI-MATERIAL ENTITIES EXTRACTED: (1) Related-party director roles: Hock E. Tan (Broadcom President & CEO) sits on Meta Platforms board \u2014 signaling customer-supplier tie; (2) Kenneth Y. Hao from Silver Lake (major tech VC) joined Broadcom board in 2024 \u2014 signals potential investor influence/conflict; (3) Harry L. You held multiple simultaneous board roles at IonQ (quantum/AI), rain tech, and SPACs while director \u2014 time commitment/conflict risk; (4) Diane M. Bryant: previous CTO/exec at Intel, Google Cloud COO, NOvAsignal CEO \u2014 competitor/customer exposure; (5) Gayla J. Delly: prior CEO of Benchmark Electronics (contract manufacturing) \u2014 supplier/customer network; (6) Multiple directors hold concurrent board seats at tech/semiconductor peers (SolarWinds, Splunk, NortonLifeLock, National Instruments, Flowserve, Littelfuse) \u2014 no single SIFI-material concentration but indicates director bandwidth dilution. AUDIT: PwC has been auditor since 2006 with no rotation discussion except lead partner every 5 years \u2014 potential auditor tenure risk but disclosed transparently. NO material capex commitments, off-balance entities, or hidden leverage found in this compensation/governance section. NOTES: This section is primarily governance/compensation boilerplate with director biographical sketches. The key extraction value is mapping the director network (especially Tan-Meta, Hao-Silver Lake, You-IonQ) for counterparty-web analysis in AI/hyperscaler context."
+  },
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "role": "supplier",
+          "aliases": [
+            "AVGO"
+          ]
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "AVGO-AI-Revenue-PSU-2025",
+        "fields": {
+          "filer": "Broadcom",
+          "purpose": "CEO 2025 Tan PSU Award tied to AI Revenue performance metric ($60B threshold to $120B maximum over any 4 consecutive fiscal quarters in FY2028-FY2030 Performance Period)",
+          "start_fy": 2028,
+          "duration_yrs": 3,
+          "verbatim_quote": "The target number of shares subject to the 2025 Tan PSU Award is 610,521 shares... Mr. Tan may earn between 0% and 300% of the Target PSUs contingent on both (i) the attainment of challenging and ambitious performance goals based on AI Revenue during a three-year performance period from the start of fiscal 2028 through the end of fiscal 2030"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-AI-Revenue-Concentration-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 0.55,
+            "amount_usd": 20200000000,
+            "note": "AI semiconductor revenue $20.2B = 55% of semiconductor revenue ($36.9B) in FY2025, up 65% YoY; entire CEO compensation tied to AI Revenue reaching $60B-$120B threshold"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "our AI semiconductor revenue increased 65% from $12.2 billion in fiscal 2024 to $20.2 billion in fiscal 2025 and represented 55% of our fiscal 2025 semiconductor revenue of $36.9 billion... AI Revenue was selected as the performance metric of the 2025 Tan PSU Award given that Broadcom must successfully compete in a highly competitive technology industry"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-CAPEX-ROI-AI-Revenue-PSU",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 120000000000,
+            "note": "Maximum AI Revenue performance target of $120B in any 4 consecutive quarters within FY2028-FY2030 equals ~2x Broadcom total FY2025 net revenue of $63.9B; threshold of $60B requires >3x FY2025 AI Revenue of $20B with no contracted revenue disclosed"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Achievement at the 'Maximum' level requires attainment of at least $120 billion in Applicable AI Revenue during the Performance Period \u2013 an increase of $100 billion over the forecasted fiscal 2025 AI Revenue. The 'Maximum' achievement level also represents approximately two times our total net revenue in fiscal 2025, underscoring the formidable performance required"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Execution-Risk-AI-Custom-Accelerator",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 60000000000,
+            "note": "AI Revenue threshold for any CEO payout is $60B in 4-quarter window vs $20.2B in FY2025; requires 3x+ growth in custom AI accelerators/XPUs/ASICs that are not yet at scale"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Implemented expansion of existing and new business models and strategies to maximize our ability to provide custom AI accelerators or XPUs, connectivity solutions, and racks or systems based on our XPUs to meet the unprecedented demand for compute and AI infrastructure... for Mr. Tan to earn any shares under the 2025 Tan PSU Award, the Applicable AI Revenue must be more than three times the $20 billion of fiscal 2025 AI Revenue"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO-VMware-Revenue-Integration",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "Acquisition Integration / Revenue Dependency",
+          "named_counterparties": [
+            "VMware"
+          ],
+          "severity": 2,
+          "verbatim_quote": "our infrastructure software revenue increased 26% from $21.5 billion in fiscal 2024 to $27.0 billion in fiscal 2025... driven by our AI semiconductor solutions and infrastructure software solutions from our acquisition of VMware. With the strong adoption of VMware Cloud Foundation"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO-Supply-Chain-Semiconductor-Pressure",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "Supplier Concentration / Supply Chain",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Drove supply chain diversification and resiliency in supply continuity, cost management and risk mitigation as the semiconductor industry undergoes immense pressure for compute and the rapid build-out of AI infrastructure"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-AI-Revenue-PSU-Target-Gap",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 60000000000,
+            "note": "CEO PSU threshold requires $60B AI Revenue in any 4 consecutive fiscal quarters FY2028-FY2030; maximum requires $120B. Performance period does not start until FY2028, creating a multi-year execution gap with no contracted revenue evidence disclosed."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The performance goal of the 2025 Tan PSU Award is achieved when the highest aggregate AI Revenue for a period of any four consecutive fiscal quarters from the start of fiscal 2028 through the end of fiscal 2030 exceeds at least $60 billion. \"Maximum\" achievement of the performance goal requires attainment of at least $120 billion in AI Revenue."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-CEO-PSU-Key-Person-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 607053241,
+            "note": "2025 Tan PSU Award max grant date fair value $607M; forfeited entirely if change-in-control or covered termination occurs before start of FY2028. Extreme key-person concentration: if Tan departs before FY2028, the entire AI revenue execution thesis loses its governing incentive structure."
+          },
+          "named_counterparties": [
+            "Hock E. Tan"
+          ],
+          "verbatim_quote": "Under the terms of the 2025 Tan PSU Award, if the change in control occurs prior to the end of the first quarter of fiscal 2028, the PSU award will be forfeited in its entirety immediately prior to the change in control."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "AVGO-2025-Tan-PSU-AI-Revenue-$60B-$120B",
+        "fields": {
+          "filer": "Broadcom",
+          "amount_usd": 120000000000,
+          "start_fy": 2028,
+          "duration_yrs": 3,
+          "purpose": "AI Revenue performance target for CEO PSU award; threshold $60B, maximum $120B in any 4 consecutive fiscal quarters FY2028-FY2030",
+          "verbatim_quote": "The performance goal of the 2025 Tan PSU Award is achieved when the highest aggregate AI Revenue for a period of any four consecutive fiscal quarters from the start of fiscal 2028 through the end of fiscal 2030 exceeds at least $60 billion. \"Maximum\" achievement of the performance goal requires attainment of at least $120 billion in AI Revenue."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-AI-Revenue-Concentration-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-CAPEX-ROI-AI-Revenue-PSU"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Execution-Risk-AI-Custom-Accelerator"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "capex_commitment",
+        "target_name": "AVGO-AI-Revenue-PSU-2025"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "AVGO-VMware-Revenue-Integration"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "risk_factor",
+        "target_name": "AVGO-Supply-Chain-Semiconductor-Pressure"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-AI-Revenue-PSU-Target-Gap"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-CEO-PSU-Key-Person-Risk"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "capex_commitment",
+        "target_name": "AVGO-2025-Tan-PSU-AI-Revenue-$60B-$120B"
+      }
+    ],
+    "notes": "[chunk 1/3] This is a DEF 14A Compensation Discussion & Analysis section. Pure executive pay mechanics (salary tables, RSU vesting schedules, governance checklists) are boilerplate and excluded. Three SIFI-material signals extracted: (1) AI Revenue customer concentration \u2014 AI semiconductor = 55% of semiconductor revenue with rapid growth and unnamed hyperscaler customers implied by \"custom AI accelerators or XPUs\"; (2) Capex/ROI gap signal embedded in the 2025 Tan PSU Award \u2014 the maximum performance target of $120B AI Revenue is ~2x total FY2025 company revenue of $63.9B, with no contracted revenue backing this trajectory disclosed in this section; (3) Execution risk on custom AI accelerator ramp \u2014 PSU threshold requires 3x+ FY2025 AI Revenue with new business models (racks/systems/XPUs) not yet at scale. VMware integration revenue dependency also flagged. Compensation peer group listed (Alphabet, Apple, IBM, Oracle, Meta, NVIDIA, etc.) is standard benchmarking boilerplate \u2014 not extracted as counterparty relationships. No SPVs, circular investments, or off-balance-sheet entities disclosed in this section.\n[chunk 2/3] This is a DEF 14A Compensation Discussion & Analysis section. Almost all content is routine executive compensation boilerplate (PSU vesting schedules, TSR performance periods, RSU modifications, severance tables). SIFI-material extractions are limited to: (1) The 2025 Tan PSU Award AI Revenue targets ($60B threshold / $120B maximum) covering FY2028-FY2030 \u2014 these are the first public quantification of Broadcom management's internal AI revenue ambitions and represent a meaningful CAPEX_ROI_GAP / EXECUTION_RISK signal since no contracted revenue backstop is disclosed and the performance period hasn't started. (2) Key-person forfeiture risk: the entire $607M max award and the AI revenue execution thesis are forfeited if Tan departs before FY2028 starts. No named AI lab counterparties, no SPVs, no off-balance-sheet entities, no investment disclosures appear in this section.\n[chunk 3/3] Source text is a DEF 14A Compensation Discussion & Analysis section for Broadcom (AVGO), covering: executive compensation tables (CEO pay ratio 543:1, NEO termination payouts, RSU/PSU acceleration values), equity compensation plan information (VMware Plan assumed via acquisition, Inducement Plan), and security ownership table (Vanguard 9.9%, BlackRock 7.3%, Henry Samueli 1.8% with pledged shares). No SIFI-material entities are present: no named AI lab relationships, no customer/supplier concentration data, no off-balance-sheet SPVs, no circular investment relationships, no capex commitments, no revenue roundtripping, and no hidden leverage arrangements. The VMware acquisition is historical and the equity plan assumption is routine post-M&A boilerplate. The Samueli share pledge (16,175,000 shares as collateral) is notable but sub-threshold for SIFI materiality at ~0.3% of shares outstanding. The 5%+ holders (Vanguard, BlackRock) are passive index investors with no strategic relationship to Broadcom's AI/compute business. Nothing in this section meets the SIFI-material threshold defined in the extraction rules."
+  },
+  "related_party": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO",
+            "Broadcom Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO-RelatedParty-ArmsLength",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "Related Party Transactions \u2014 Governance Only",
+          "named_counterparties": [],
+          "severity": 1,
+          "verbatim_quote": "From time to time in the ordinary course of business, on an arms' length basis, Broadcom purchases from and/or sells to certain entities where one of our directors or management may have relationships as directors, executive officers or beneficial owners."
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/1] This DEF 14A filing for Broadcom (AVGO) contains no SIFI-material disclosures in the related-party transactions section. The filing discloses only: (1) a boilerplate Audit Committee review procedure for related-party transactions, and (2) a generic arms-length statement about directors/management having relationships with counterparties in the ordinary course of business \u2014 with no named counterparties, dollar amounts, SPVs, equity investments, capex commitments, or off-balance-sheet structures disclosed. The Non-GAAP appendix shows FY2025 capex (PP&E purchases) of only $623M \u2014 well below hyperscaler thresholds and no counterparty named. No hidden-risk signals of the 8 SIFI types are extractable from this document. The filing is a routine proxy statement (DEF 14A) focused on director elections, say-on-pay, and auditor ratification. Analysts should refer to Broadcom's 10-K (Form 10-K for FY2025) for investment portfolio, debt structure, and material related-party disclosures."
+  }
+}

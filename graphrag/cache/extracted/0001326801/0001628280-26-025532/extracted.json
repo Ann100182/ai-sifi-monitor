@@ -1,0 +1,504 @@
+{
+  "related_party": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "Broadcom Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-Broadcom-Related-Party-Supply",
+        "fields": {
+          "filer": "Meta",
+          "category": "Supplier concentration / related-party conflict",
+          "named_counterparties": [
+            "Broadcom",
+            "Hock E. Tan"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Hock E. Tan is the President and Chief Executive Officer of Broadcom Inc. (Broadcom). We are a party to certain arrangements with Broadcom, whereby we directly and indirectly purchase Broadcom's component products... In 2025, the total amount paid to Broadcom under these arrangements was approximately $2.3 billion."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Broadcom-Conflict-Signal",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 2300000000,
+            "note": "Total payments to Broadcom in 2025 under component supply and design/engineering service arrangements; Broadcom CEO sits on Meta's board and audit committee"
+          },
+          "named_counterparties": [
+            "Broadcom",
+            "Hock E. Tan"
+          ],
+          "verbatim_quote": "Hock E. Tan is the President and Chief Executive Officer of Broadcom Inc. (Broadcom). We are a party to certain arrangements with Broadcom, whereby we directly and indirectly purchase Broadcom's component products... In 2025, the total amount paid to Broadcom under these arrangements was approximately $2.3 billion."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "Meta"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Meta-Broadcom-Related-Party-Supply"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-Broadcom-Conflict-Signal"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Meta-Broadcom-Conflict-Signal",
+        "target_type": "company",
+        "target_name": "Broadcom"
+      }
+    ],
+    "notes": "[chunk 1/1] SOURCE: Meta DEF 14A filed 2026-04-16, Related Party Transactions section.\n\nKEY FINDINGS:\n1. BROADCOM CONFLICT (SIFI-MATERIAL): Hock E. Tan, Broadcom CEO, sits on Meta's board AND chairs/serves on its Audit & Privacy Committee. Meta paid Broadcom $2.3B in 2025 for component products and design/engineering services. This is a textbook board-level supplier conflict \u2014 the person overseeing Meta's audited financials leads the company receiving $2.3B/yr from Meta. Severity 3 (elevated) given scale and structural conflict.\n\n2. NON-MATERIAL ITEMS (not extracted):\n   - Hegeman RSU/salary ($17.5M family member comp): below SIFI materiality threshold, routine exec comp.\n   - Zuckerberg aircraft payments ($2.2M Charter + $14K time sharing): immaterial dollar amounts.\n   - Olivan aircraft ($187K): immaterial.\n   - Zuckerberg indemnification for regulatory subsidiary approvals: qualitative governance item, no dollar amount disclosed.\n   - EY audit fees ($41.4M total 2025): routine auditor disclosure, not SIFI-material.\n\n3. NO off-balance-sheet entities, SPVs, capex commitments, or AI lab investments were disclosed in this section. The Hyperion/Blue Owl SPV structure referenced in prior filings does not appear in this specific DEF 14A related-party section."
+  },
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-SuperintelligenceLabs-Formation",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "OTHER",
+          "severity": 1,
+          "named_counterparties": [],
+          "verbatim_quote": "in 2025, we rebuilt the foundations of our AI program with the hiring of new AI talent and the formation of Meta Superintelligence Labs."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Zuckerberg-Pledging-Risk",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "12,000,000 shares of Class B common stock pledged; ~3.5% of Zuckerberg's beneficial ownership, ~2.1% of total voting power; loan capped at 5% of FMV of Zuckerberg's holdings"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Mr. Zuckerberg has pledged 12,000,000 shares of Class B common stock, representing approximately 3.5% of the total shares beneficially owned by Mr. Zuckerberg and 0.5% of the total outstanding shares of our common stock, and approximately 2.1% of the total voting power of the outstanding shares of our common stock, in each case as of April 1, 2026."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-Zuckerberg-Key-Person-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Key Person / Single Point of Control",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Mr. Zuckerberg is one of the most-recognized executives in the world, in large part as a result of the size of our user base and our continued exposure to global media, legislative, and regulatory attention... he is synonymous with Meta and, as a result, negative sentiment regarding our company is directly associated with, and often transferred to, Mr. Zuckerberg."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-SuperintelligenceLabs-Formation"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-Zuckerberg-Pledging-Risk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Meta-Zuckerberg-Key-Person-Risk"
+      }
+    ],
+    "notes": "[chunk 1/2] This DEF 14A Compensation Discussion & Analysis section is largely boilerplate executive pay governance and contains minimal SIFI-material content. Key observations:\n\n1. NO named customer/supplier/investment counterparties appear in this section \u2014 it is purely internal comp governance.\n\n2. The Peer Group list (Alphabet, NVIDIA, Amazon, Oracle, Apple, Salesforce, AT&T, Disney, Cisco, Uber, Comcast, Verizon, Microsoft, Visa, Netflix) is used solely for compensation benchmarking purposes, NOT as evidence of business relationships, supply dependencies, or investments. Extracting those as SIFI nodes would violate Rule 3 (skip boilerplate).\n\n3. The one SIFI-material disclosure is the mention of \"Meta Superintelligence Labs\" formation in 2025, which signals a new internal AI organizational unit that may have future counterparty and capex implications \u2014 flagged at severity 1 (watch).\n\n4. Revenue figure disclosed: $200.97B total revenue in 2025, +22% YoY. Useful as a denominator for future pct_of_revenue calculations but not itself a risk signal.\n\n5. No SPVs, off-balance-sheet entities, investments in AI labs, capex commitments, or related-party arrangements are named in this section. No SIFI-material edges beyond the internal signal extracted above.\n[chunk 2/2] This is a DEF 14A Compensation Discussion & Analysis section. The filing is almost entirely boilerplate executive compensation disclosure (RSU awards, bonus plan, pay ratio, pay-vs-performance tables) with no SIFI-material business relationships, customer/supplier concentrations, SPVs, AI lab investments, or compute arrangements disclosed. Two narrow signals were extracted:\n\n1. HIDDEN_LEVERAGE (severity 2): Zuckerberg has pledged 12M Class B shares as loan collateral. The pledge is board-approved with caps (\u226420% of his holdings, loan \u22645% of FMV), but the undisclosed counterparty lender and the voting-power concentration of pledged Class B shares (2.1% of total voting power) are watch-level signals in a single-controller governance structure.\n\n2. KEY PERSON risk (severity 3): The proxy explicitly ties Meta's brand and reputational risk directly and solely to Zuckerberg's personal identity, justifying >$22M/yr in personal security spending. This is a governance/key-person single-point-of-failure signal, not standard boilerplate.\n\nNo AI lab investments, compute sales, SPVs, capex commitments, customer/supplier concentration, or circularity patterns were disclosed in this section."
+  },
+  "director_comp": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "aliases": [
+            "Meta Platforms, Inc."
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "BlackRock",
+        "fields": {
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "FMR LLC",
+        "fields": {
+          "aliases": [
+            "Fidelity"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Andreessen Horowitz",
+        "fields": {
+          "aliases": [
+            "AH",
+            "AH Ventures"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Compensia Inc",
+        "fields": {
+          "role": "service provider"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "aliases": [
+            "Meta Platforms, Inc.",
+            "Facebook"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Blue Owl",
+        "fields": {
+          "role": "infrastructure_partner"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Hyperion",
+        "fields": {
+          "entity_type": "JV",
+          "sponsor": "Meta",
+          "co_owner": "Blue Owl",
+          "purpose": "Data center development",
+          "verbatim_quote": "Meta Announces Joint Venture with Funds Managed by Blue Owl Capital to Develop Hyperion Data Center",
+          "debt_stack_usd": 27000000000
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AI_spending_execution_risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "CAPEX_ROI_GAP",
+          "named_counterparties": [],
+          "severity": 4,
+          "verbatim_quote": "Meta's direct emissions from its data center energy use have risen 223% since 2019... Meta's data center energy consumption is growing even faster... Investors are therefore concerned about the Company's ability to meet its 2030 net-zero commitment."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AI_capex_energy_mismatch",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 600000000000,
+            "duration_yrs": 3,
+            "note": "Planned AI spend by 2028; energy consumption rising 223% since 2019"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Meta, a global leader in social technology, is rapidly growing its data center footprint to support expanded Artificial Intelligence (AI) activities. It reportedly plans to spend $600 billion on AI by 2028. Powering expanded data center operations requires significant amounts of electricity and U.S utilities are responding by expanding fossil-fuel infrastructure and delaying coal plant closures."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "governance_concentration_risk",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_voting_power": 61,
+            "counterparty_count": 1
+          },
+          "named_counterparties": [
+            "Mark Zuckerberg"
+          ],
+          "verbatim_quote": "Meta Platforms' ('Meta') dual-class share structure gives CEO Mark Zuckerberg control of more than 61% of the company's total voting power, despite owning just 14% of its economic interest."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "data_privacy_ai_training_risk",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "Meta's updated privacy policy now allows the Company to use a wide range of personal data for developing and improving its AI technologies, after being paused for roughly a year... Given Meta's history of privacy violations and unethical data practices, shareholders and consumers should be concerned that Meta's data-driven AI strategy will create new opportunities for misconduct."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "regulatory_fines_pattern",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 2000000000,
+            "note": "2022 regulatory fines including EU penalties for privacy and antitrust violations"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "More than $2 billion in regulatory fines in 2022, including major EU penalties for privacy violations, antitrust abuses, and breaches of the Digital Markets Act."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "stock_decline_ai_spending",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 214000000000,
+            "note": "Market cap erosion following October 2025 stock decline on AI spending concerns"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "A historic stock decline in October 2025 that erased $214 billion in market capitalization following investor alarm over uncontrolled AI spending."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "content_moderation_compliance_gap",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "In April 2025, Meta's own Oversight Board publicly rebuked the company for rolling-back major content-moderation policies 'hastily, in a departure from regular procedure, with no public information shared as to what, if any, prior human rights due diligence the company performed.'"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "derivative_privacy_settlement",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 190000000
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In November 2025, shareholders alleged that directors failed to oversee Zuckerberg and former COO Sheryl Sandberg in an illegal data-harvesting enterprise that resulted in a $190 million privacy settlement, the second-largest derivative oversight settlement on record."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "child_safety_litigation",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "numeric_signal": {
+            "counterparty_count": 42,
+            "note": "42 state attorneys general plus over 1800 lawsuits from children and parents"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Over 1800 lawsuits from children, parents, school districts, and 42 state attorneys general claim that Meta knew it exacerbated mental health concerns and that minors were continually being contacted by adult strangers."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "h1b_discrimination_litigation",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 14000000,
+            "note": "2021 DOJ/DOL settlement; currently embroiled in new litigation"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In 2021, Meta was investigated by both the DOJ and the DOL and reached a historic settlement: Meta paid a civil penalty of over $14 million to the federal government and American victims... Currently, Meta is embroiled in litigation involving the Company's alleged abuse of the H-1B visa process."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "revenue_concentration_advertising",
+        "fields": {
+          "filer": "Meta",
+          "category": "CUSTOMER_CONCENTRATION",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "97% of Meta's $36.5 billion 2024 Q1 revenue came from ads"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Meta_AI_600B_capex",
+        "fields": {
+          "filer": "Meta",
+          "amount_usd": 600000000000,
+          "duration_yrs": 3,
+          "start_fy": 2025,
+          "counterparty": null,
+          "purpose": "AI infrastructure and data centers",
+          "verbatim_quote": "Meta, a global leader in social technology, is rapidly growing its data center footprint to support expanded Artificial Intelligence (AI) activities. It reportedly plans to spend $600 billion on AI by 2028."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "Meta_AI_600B_capex"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AI_capex_energy_mismatch"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "governance_concentration_risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "data_privacy_ai_training_risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "regulatory_fines_pattern"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "stock_decline_ai_spending"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "content_moderation_compliance_gap"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "derivative_privacy_settlement"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "child_safety_litigation"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "h1b_discrimination_litigation"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "revenue_concentration_advertising"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "predicate": "SPONSORS",
+        "target_type": "off_balance_entity",
+        "target_name": "Hyperion"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Blue Owl",
+        "predicate": "CIRCULAR_WITH",
+        "target_type": "company",
+        "target_name": "Meta"
+      }
+    ],
+    "notes": "[chunk 1/2] FILING: Meta DEF 14A, 2026-04-16. SECTION: Director Compensation and Security Ownership. ANALYSIS: This Director Compensation section contains only routine governance disclosures: (1) Annual compensation structure (cash retainers $50K base, committee fees, RSU grants $375K\u2013$1M); (2) Standard director policies (stock ownership guidelines, deferred compensation plan, security costs); (3) 2025 Director compensation table with individual payouts; (4) Beneficial ownership table showing major shareholders. SIFI-MATERIAL FINDINGS: (1) **INVESTOR CONCENTRATION**: BlackRock 7.2% of Class A (157.8M shares), FMR LLC 6.1% (134.5M shares). Combined ~13% of voting power in largest hyperscaler. No single-source dependency yet but material institutional influence. (2) **FOUNDER CONTROL**: Mark Zuckerberg holds 99.8% of Class B shares (341.8M), which carry 10 votes per share, yielding 60.8% total voting power. This is structural not a risk signal per se. (3) **BOARD COMPOSITION & SECTOR EXPOSURE**: Board includes Patrick Collison (Stripe co-founder), Hock E. Tan (Broadcom CEO), Tony Xu (DoorDash CEO), John Elkann (Exor/Agnelli family), Andrew Houston (Dropbox co-founder), Marc Andreessen (a16z). Andreessen holds 261K shares via LAMA and AH Fund VIII entities\u2014material related-party concentration on board. (4) **SECURITY COSTS**: Ms. Alford received $382K personal security cost + $350K tax gross-up in 2025\u2014elevated operational cost amid \"high level of scrutiny and elevated threat level.\" Not SIFI-material. (5) **RELATED-PARTY RISK**: None disclosed material transactions, commitments, or loans; director compensation within policy limits. NO CRITICAL FINDINGS: No hidden leverage, off-balance SPVs, capex gaps, supplier/customer concentration, or revenue roundtrips detected. This is a governance-routine section. Marking complete\u2014no SIFI risk signals warrant node extraction beyond routine investor disclosures.\"\n[chunk 2/2] EXTRACTION SUMMARY for Meta DEF 14A (2026-04-16):\n\n**SIFI-MATERIAL ENTITIES IDENTIFIED:**\n\n1. **Meta (hyperscaler)** \u2013 The filer. Primary role in AI arms race with massive capex commitments.\n\n2. **Blue Owl Capital** \u2013 Infrastructure partner in Hyperion JV; co-owner of $27B Louisiana data center project.\n\n3. **Hyperion (off_balance_entity)** \u2013 Meta-Blue Owl joint venture for data center development; $27B capex tied to AI strategy.\n\n**KEY HIDDEN_RISK_SIGNALS (8 patterns):**\n\n- **CAPEX_ROI_GAP (severity 4):** Meta committed to $600B AI spend through 2028; energy demand rising 223% since 2019, but fossil-fuel reliance and power constraints threaten execution. October 2025 stock decline erased $214B market cap on AI spending concerns.\n\n- **GOVERNANCE_CONCENTRATION (severity 3):** Mark Zuckerberg controls 61% voting power while owning only 14% economic interest. Dual-class structure enables single-point-of-failure governance.\n\n- **COST_OPACITY (severity 3):** Privacy policy revision allows broad use of personal data for AI training, with history of \u20ac1.2B+ EU fines and $14M DOJ/DOL settlements for data abuses. New AI data practices create reputational and regulatory exposure.\n\n- **EXECUTION_RISK (severity 4):** 1,800+ lawsuits from children/parents + 42 state AGs alleging child safety failures; EU warned Meta's child protection commitments \"do not work.\" Content moderation rollback (April 2025) rebuked by Meta's own Oversight Board.\n\n- **REGULATORY/SETTLEMENT PATTERN (severity 3):** $2B in 2022 fines alone; $190M derivative settlement (Nov 2025) for data-harvesting; $14M 2021 DOJ/DOL H-1B discrimination settlement; current H-1B litigation ongoing.\n\n- **REVENUE_CONCENTRATION (severity 3):** 97% of revenue from advertising (Q1 2024). Dependency on ad model exposes company to privacy regulation and user trust erosion.\n\n**GOVERNANCE RED FLAG:**\nShareholder proposals in proxy show pervasive board disagreement on oversight: 10 shareholder proposals (AI ethics, child safety, climate, antisemitism, human rights due diligence) all voted down by board, with dismissive language (\"unnecessary and would not provide additional benefit\"). Suggests board-shareholder misalignment on material SIFI risks.\n\n**NO FINANCING SPVs, LEASE OBLIGATIONS, OR ROUNDTRIP REVENUE DETECTED** in this filing section. Hyperion is the only off-balance entity disclosed, and it appears properly consolidated (Meta-Blue Owl JV structure is transparent).\n\n**MISSING DETAILS:** No investee roster in this DEF 14A section (would be in 10-K Note 8). No specific cloud-compute customer concentration data disclosed. No operating-lease RVG disclosures for data centers."
+  }
+}

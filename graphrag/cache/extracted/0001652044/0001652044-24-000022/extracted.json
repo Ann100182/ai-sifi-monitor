@@ -1,0 +1,1485 @@
+{
+  "item_15": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/1] Item 15 (Exhibits/Financial Statement Schedules) and the forward-looking statements preamble contain no SIFI-material entities, counterparty relationships, investments, or related-party arrangements. The text is purely boilerplate: (1) standard SEC forward-looking statement disclaimers (PSLRA safe harbor); (2) generic risk acknowledgments (regulatory scrutiny, FX hedging, TAC variability, capex increases for AI); (3) trademark disclaimers. No named business counterparties, no customer concentration data, no supplier dependencies, no off-balance-sheet vehicles, no investments disclosed. Only the Alphabet corporate entity itself is mentioned. The reference to 'capital expenditures will increase, including the expected increase in your technical infrastructure investment to support... artificial intelligence (AI)' is a generic forward-looking statement, not a specific capex commitment with amount, duration, or counterparty. No extraction of risk_factor or hidden_risk_signal warranted at this level of abstraction.\""
+  },
+  "item_1": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "YouTube",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": [
+            "YouTube"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Android",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": [
+            "Android OS"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Chrome",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": [
+            "Chrome browser"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Google Cloud",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "DeepMind",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": [
+            "Google DeepMind"
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "YouTube",
+        "predicate": "SUPPLIES"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Android",
+        "predicate": "SUPPLIES"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Chrome",
+        "predicate": "SUPPLIES"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "Google Cloud",
+        "predicate": "SUPPLIES"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "company",
+        "target_name": "DeepMind",
+        "predicate": "SUPPLIES"
+      }
+    ],
+    "notes": "[chunk 1/1] ITEM 1 BUSINESS (Alphabet 10-K, filed 2024-01-31): This section describes Alphabet's structure, strategic divisions (Google Services, Google Cloud, Other Bets), and core business model. Key observations: (1) No named counterparty customer concentration disclosures in Item 1; (2) No material equity investments or M&A in named private AI labs mentioned; (3) Internal R&D focus ('$150B invested in R&D over 5 years') with in-house AI models (Gemini, BERT, MUM); (4) YouTube, Android, Chrome, and DeepMind are subsidiaries, not external partners requiring SIFI-level edge mapping; (5) Google Cloud is a growing business segment offering AI infrastructure to external customers but no specific large customer contracts named here; (6) Mentions of Duet AI, Vertex AI platform, and enterprise services suggest a supplier role to businesses but no named hyperscaler or AI lab dependencies; (7) Competition section is boilerplate (search, ads, cloud, hardware, AI) with no specific named competitor analysis relevant to systemic risk. CONCLUSION: This narrative section contains no SIFI-material risks, hidden leverage, circularity patterns, or material related-party relationships. The structure is conventional holding company disclosure with internal subsidiary relationships. No capex commitments to external counterparties are quantified. Deferring to Item 1A Risk Factors and financial footnotes for leverage, investment, and concentration analysis.\""
+  },
+  "item_1a": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google",
+            "GOOGL"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-AdvertisingConcentration",
+        "fields": {
+          "filer": "GOOGL",
+          "category": "Customer/Revenue Concentration",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "We generated more than 75% of total revenues from online advertising in 2023. Many of our advertisers, companies that distribute our products and services, digital publishers, and content providers can terminate their contracts with us at any time."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-AdvertisingConcentration-Signal",
+        "fields": {
+          "filer": "GOOGL",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 0.75,
+            "note": "Online advertising >75% of total revenues in 2023; advertisers can terminate at will"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We generated more than 75% of total revenues from online advertising in 2023. Many of our advertisers, companies that distribute our products and services, digital publishers, and content providers can terminate their contracts with us at any time."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-AIInfraSupplierDependency",
+        "fields": {
+          "filer": "GOOGL",
+          "category": "Supplier Concentration / AI Infrastructure",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Our ability to deploy certain AI technologies critical for our products and services and for our business strategy may depend on the availability and pricing of third-party equipment and technical infrastructure."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-AIInfraSupplierDependency-Signal",
+        "fields": {
+          "filer": "GOOGL",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Single-source or limited-source components for technical infrastructure and AI hardware; supply disruption could delay critical data center upgrades"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Some of the components we use in our technical infrastructure and our devices are available from only one or limited sources, and we may not be able to find replacement vendors on favorable terms in the event of a supply chain disruption. A significant supply interruption that affects us or our vendors could delay critical data center upgrades or expansions."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-CapexROIGap-Cloud",
+        "fields": {
+          "filer": "GOOGL",
+          "category": "Capex ROI Gap / Cloud Infrastructure",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "We are incurring costs to build and maintain infrastructure to support cloud computing services, invest in cybersecurity, and hire talent, particularly to support and scale our sales force... we may not attain sufficient scale and profitability to achieve our business objectives."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-CapexROIGap-Cloud-Signal",
+        "fields": {
+          "filer": "GOOGL",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Significant infrastructure spend on Google Cloud with explicit admission profitability/scale targets may not be achieved"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We are incurring costs to build and maintain infrastructure to support cloud computing services, invest in cybersecurity, and hire talent, particularly to support and scale our sales force... we may not attain sufficient scale and profitability to achieve our business objectives."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-HardwareVolumeCommitments",
+        "fields": {
+          "filer": "GOOGL",
+          "category": "Hidden Leverage / Supply Contract Obligations",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "certain of our hardware supply contracts have volume-based pricing or minimum purchase requirements, if the volume of sales of our devices decreases or does not reach projected targets, we could face increased materials and manufacturing costs or other financial liabilities that could make our products more costly per unit to manufacture."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-HardwareVolumeCommitments-Signal",
+        "fields": {
+          "filer": "GOOGL",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Hardware supply contracts with minimum purchase requirements create off-P&L contingent liabilities if device volumes disappoint"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "certain of our hardware supply contracts have volume-based pricing or minimum purchase requirements, if the volume of sales of our devices decreases or does not reach projected targets, we could face increased materials and manufacturing costs or other financial liabilities that could make our products more costly per unit to manufacture."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-NonMarketableEquityValuation",
+        "fields": {
+          "filer": "GOOGL",
+          "category": "Cost Opacity / Fair Value Subjectivity",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We measure certain of our non-marketable equity and debt securities... at fair value on a nonrecurring basis, which is inherently subjective and requires management judgment and estimation. All gains and losses on non-marketable equity securities are recognized in OI&E, which increases the volatility of our OI&E."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-NonMarketableEquityValuation-Signal",
+        "fields": {
+          "filer": "GOOGL",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Non-marketable equity securities (including AI lab stakes) valued on nonrecurring subjective basis; gains/losses flow through OI&E creating earnings volatility"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We measure certain of our non-marketable equity and debt securities... at fair value on a nonrecurring basis, which is inherently subjective and requires management judgment and estimation. All gains and losses on non-marketable equity securities are recognized in OI&E, which increases the volatility of our OI&E."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-GeopoliticalExportControls",
+        "fields": {
+          "filer": "GOOGL",
+          "category": "Geopolitical / Export Controls",
+          "named_counterparties": [
+            "China"
+          ],
+          "severity": 3,
+          "verbatim_quote": "sanctions, import and export controls, other market access barriers, political unrest, geopolitical tensions, changes in regimes, or armed conflict (such as ongoing conflicts in the Middle East and Ukraine), any of which may affect our business continuity, increase our operating costs, limit demand for our products and services, limit our ability to source components or final products."
+        }
+      },
+      {
+        "type": "company",
+        "name": "China",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-AIRegulatoryRisk",
+        "fields": {
+          "filer": "GOOGL",
+          "category": "AI Regulatory / Legal Liability",
+          "named_counterparties": [
+            "EU",
+            "USG"
+          ],
+          "severity": 3,
+          "verbatim_quote": "provisional political agreement on a proposed EU AI Act was reached between co-legislators in December 2023... the White House's Executive Order on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence devises a framework for the U.S. government, among other things, to regulate private sector use and development of certain foundation models."
+        }
+      },
+      {
+        "type": "company",
+        "name": "EU",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "USG",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-InternationalRevenueCurrency",
+        "fields": {
+          "filer": "GOOGL",
+          "category": "International Revenue Exposure",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "International revenues accounted for approximately 53% of our consolidated revenues in 2023... significant fluctuations in exchange rates between the U.S. dollar and foreign currencies have in the past and may in the future adversely affect our revenues and earnings."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-MarginCompressionOtherBets",
+        "fields": {
+          "filer": "GOOGL",
+          "category": "Capex ROI Gap / Margin Compression",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "we may experience downward pressure on our operating margin resulting from a variety of factors, such as an increase in the mix of lower-margin products and services, in particular from the continued expansion of our business into new fields, including products and services such as our devices, Google Cloud, and consumer subscription products, as well as significant investments in Other Bets, all of which may have margins lower than those we generate from advertising."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Epic Games",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "USG",
+        "fields": {
+          "role": "regulator",
+          "aliases": [
+            "U.S. Department of Justice"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "EU",
+        "fields": {
+          "role": "regulator",
+          "aliases": [
+            "European Union"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "OECD",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-Antitrust-Litigation",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Antitrust / Regulatory Enforcement",
+          "named_counterparties": [
+            "Epic Games",
+            "USG",
+            "EU"
+          ],
+          "severity": 4,
+          "verbatim_quote": "in December 2023, a California jury delivered a verdict in Epic Games v. Google finding that Google violated antitrust laws related to Google Play's billing practices. The presiding judge will determine remedies in 2024 and the range of potential remedies vary widely... the U.S. Department of Justice, various U.S. states, and other plaintiffs have filed several antitrust lawsuits about various aspects of our business, including our advertising technologies and practices, the operation and distribution of Google Search, and the operation and distribution of the Android operating system and Play Store."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-Antitrust-Divestiture-Risk",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "named_counterparties": [
+            "Epic Games",
+            "USG",
+            "EU"
+          ],
+          "verbatim_quote": "Various laws, regulations, investigations, enforcement lawsuits, and regulatory actions have involved in the past, and may in the future result in substantial fines and penalties, injunctive relief, ongoing monitoring and auditing obligations, changes to our products and services, alterations to our business models and operations, including divestiture, and collateral related civil litigation or other adverse consequences."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-AI-Regulatory-Liability",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "AI Regulatory / Legal Liability",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Our development, use, and commercialization of AI products and services (including our implementation of AI in our offerings and internal systems) could subject us to regulatory action and legal liability, including under specific legislation regulating AI, as well as new applications of existing data protection, cybersecurity, privacy, intellectual property, and other laws."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-Data-Privacy-Regulatory",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Data Privacy / Cross-Border Transfer Risk",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "we are subject to evolving laws and regulations that dictate whether, how, and under what circumstances we can transfer, process and/or receive personal data, as well as ongoing enforcement actions from supervisory authorities related to cross-border transfers of personal data. The validity of various data transfer mechanisms we currently rely upon remains subject to legal, regulatory, and political developments in both Europe and the U.S."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-SafeHarbor-Legislative-Risk",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Safe Harbor / Platform Liability",
+          "named_counterparties": [
+            "USG",
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "There are legislative proposals and pending litigation in the U.S., EU, and around the world that could diminish or eliminate safe harbor protection for websites and online platforms."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-International-Tax-Risk",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Tax / Global Minimum Tax",
+          "named_counterparties": [
+            "OECD"
+          ],
+          "severity": 3,
+          "verbatim_quote": "The Organization for Economic Cooperation and Development (OECD) is coordinating negotiations among more than 140 countries with the goal of achieving consensus around substantial changes to international tax policies, including the implementation of a minimum global effective tax rate of 15%. Our effective tax rate and cash tax payments could increase in future years as a result of these changes."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-Global-MinTax-Signal",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "named_counterparties": [
+            "OECD"
+          ],
+          "verbatim_quote": "various jurisdictions around the world have enacted or are considering revenue-based taxes such as digital services taxes and other targeted taxes, which could lead to inconsistent and potentially overlapping international tax regimes... implementation of a minimum global effective tax rate of 15%. Our effective tax rate and cash tax payments could increase in future years as a result of these changes."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-Voting-Concentration",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Governance / Founder Voting Control",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "As of December 31, 2023, Larry Page and Sergey Brin beneficially owned approximately 86.5% of our outstanding Class B stock, which represented approximately 51.5% of the voting power of our outstanding common stock. Through their stock ownership, Larry and Sergey have significant influence over all matters requiring stockholder approval, including the election of directors and significant corporate transactions, such as a merger or other sale of our company or our assets."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-KeyPerson-Sundar",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Key Person / Executive Dependency",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Sundar Pichai is critical to the overall management of Alphabet and its subsidiaries and plays an important role in the development of our technology, maintaining our culture, and setting our strategic direction."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-IP-Indemnification",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Intellectual Property / Indemnification Exposure",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Many of our agreements with our customers and partners, including certain suppliers, require us to defend against certain intellectual property infringement claims and in some cases indemnify them for certain intellectual property infringement claims against them, which could result in increased costs for defending such claims or significant damages if there were an adverse ruling in any such claims."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-AdvertisingConcentration-Signal"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-AIInfraSupplierDependency-Signal"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-CapexROIGap-Cloud-Signal"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-HardwareVolumeCommitments-Signal"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-NonMarketableEquityValuation-Signal"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-AdvertisingConcentration",
+        "target_type": "company",
+        "target_name": "Alphabet"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-AIInfraSupplierDependency",
+        "target_type": "company",
+        "target_name": "Alphabet"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-CapexROIGap-Cloud",
+        "target_type": "company",
+        "target_name": "Alphabet"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-HardwareVolumeCommitments",
+        "target_type": "company",
+        "target_name": "Alphabet"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-NonMarketableEquityValuation",
+        "target_type": "company",
+        "target_name": "Alphabet"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-GeopoliticalExportControls",
+        "target_type": "company",
+        "target_name": "China"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-AIRegulatoryRisk",
+        "target_type": "company",
+        "target_name": "EU"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-AIRegulatoryRisk",
+        "target_type": "company",
+        "target_name": "USG"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-Antitrust-Litigation"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-Antitrust-Divestiture-Risk"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-Antitrust-Litigation",
+        "target_type": "company",
+        "target_name": "Epic Games"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-Antitrust-Litigation",
+        "target_type": "company",
+        "target_name": "USG"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-Antitrust-Litigation",
+        "target_type": "company",
+        "target_name": "EU"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "GOOGL-Antitrust-Divestiture-Risk",
+        "target_type": "company",
+        "target_name": "USG"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "GOOGL-Antitrust-Divestiture-Risk",
+        "target_type": "company",
+        "target_name": "EU"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-AI-Regulatory-Liability"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-AI-Regulatory-Liability",
+        "target_type": "company",
+        "target_name": "EU"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-Data-Privacy-Regulatory"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-Data-Privacy-Regulatory",
+        "target_type": "company",
+        "target_name": "EU"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-SafeHarbor-Legislative-Risk"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-SafeHarbor-Legislative-Risk",
+        "target_type": "company",
+        "target_name": "USG"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-SafeHarbor-Legislative-Risk",
+        "target_type": "company",
+        "target_name": "EU"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-International-Tax-Risk"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-International-Tax-Risk",
+        "target_type": "company",
+        "target_name": "OECD"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-Global-MinTax-Signal"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "GOOGL-Global-MinTax-Signal",
+        "target_type": "company",
+        "target_name": "OECD"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-Voting-Concentration"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-KeyPerson-Sundar"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-IP-Indemnification"
+      }
+    ],
+    "notes": "[chunk 1/2] GOOGL 10-K 2024-01-31 Item 1A extraction. Key SIFI-material findings:\n\n1. CUSTOMER_CONCENTRATION (sev 3): >75% revenue from online advertising with at-will termination rights for advertisers.\n2. SUPPLIER_CONCENTRATION (sev 3): Single/limited-source components for AI hardware and technical infrastructure; supply disruption could delay data center upgrades.\n3. CAPEX_ROI_GAP (sev 3): Google Cloud infrastructure build-out with explicit admission that \"sufficient scale and profitability\" may not be achieved.\n4. HIDDEN_LEVERAGE (sev 3): Hardware supply contracts with minimum purchase requirements create contingent liabilities not clearly on-balance-sheet.\n5. COST_OPACITY (sev 2): Non-marketable equity securities (likely including AI lab stakes in Anthropic etc.) valued on subjective nonrecurring basis, with all gains/losses flowing through OI&E.\n6. AI regulatory risk named EU AI Act and White House EO as material regulatory overhangs.\n7. International revenue 53% of total with FX and geopolitical exposure.\n8. Margin compression from Cloud, Devices, Other Bets diluting high-margin advertising mix.\n\nNote: No SPV/JV/off-balance-sheet entities were named in this section. Anthropic investment (known from other filings) not explicitly named in this text excerpt.\n[chunk 2/2] Extraction from GOOGL 10-K (2024-01-31), Item 1A. This section is the tail end of the risk factors \u2014 governance, legal, tax, and general risks. Notably absent from this excerpt: cloud/compute capex commitments, customer/revenue concentration disclosures, and AI lab investment details (likely in other sections). Top signals: (1) Severity-4 antitrust exposure across DOJ Search, DOJ AdTech, Epic/Play Store with divestiture as a named remedy \u2014 genuine EXECUTION_RISK to Alphabet's core business models. (2) AI regulatory liability is named but not yet quantified \u2014 severity 3. (3) OECD 15% global minimum tax is a COST_OPACITY signal given Alphabet's historically low effective tax rates driven by offshore structures. (4) 51.5% founder voting block (Page/Brin) is a governance concentration worth flagging at severity 2. No CIRCULARITY, REVENUE_ROUNDTRIP, CAPEX_ROI_GAP, HIDDEN_LEVERAGE, or SUPPLIER/CUSTOMER CONCENTRATION signals are present in this specific excerpt."
+  },
+  "item_1b": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ]
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/1] ITEM 1B (Unresolved Staff Comments) is empty \u2014 'Not applicable.' ITEM 1C discusses Alphabet's cybersecurity governance framework: VP of Privacy, Safety, and Security Engineering leads teams; Audit and Compliance Committee has oversight; Internal Audit maintains dedicated cybersecurity team. The text is boilerplate governance disclosure and does not identify SIFI-material counterparties, investments, acquisitions, related-party arrangements, or concentration risks. No vendors, suppliers, customers, or third parties are named. Statement 'previously identified cybersecurity incidents' with no specifics does not trigger hidden_risk_signal extraction per the rule that risk signals must cite specific material facts, not generic forward-looking disclaimers. The disclosure 'have not been materially affected by risks from cybersecurity threats...but we cannot provide assurance' is standard risk commentary and does not meet the threshold for SIFI-material risk extraction. No entity extraction warranted beyond the filer itself.\""
+  },
+  "item_3": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] ITEM 3 (Legal Proceedings) contains only a cross-reference to Note 10 of consolidated financial statements (not provided in this excerpt). ITEM 4 (Mine Safety) is not applicable. ITEM 5 (Market for Registrant's Common Equity) and ITEM 6 (Reserved) contain only routine shareholder/equity disclosures: stock listing information, dividend policy (no dividends paid), share repurchase activity in Q4 2023, and 5-year total return performance graphs. No SIFI-material business relationships, counterparty dependencies, investments in AI labs, related-party arrangements, off-balance-sheet entities, capex commitments, or hidden leverage structures are disclosed in this section. All content is boilerplate corporate governance and capital allocation routine. No extraction warranted.\""
+  },
+  "item_7": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google",
+            "GOOGL"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "GOOGL-Capex-2023",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 32300000000,
+          "start_fy": 2023,
+          "purpose": "Technical infrastructure (servers, network equipment, data centers), primarily in support of AI products and services",
+          "verbatim_quote": "Capital expenditures, which primarily reflected investments in technical infrastructure, were $32.3 billion for the year ended December 31, 2023. We expect to increase, relative to 2023, our investment in our technical infrastructure, including servers, network equipment, and data centers, to support the growth of our business and our long-term initiatives, in particular in support of AI products and services."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "GOOGL-PurchaseObligations-2023",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 45900000000,
+          "start_fy": 2023,
+          "purpose": "Purchase commitments for technical infrastructure, content licenses, inventory, and network capacity",
+          "verbatim_quote": "As of December 31, 2023, we had material purchase commitments and other contractual obligations of $45.9 billion, of which $31.6 billion was short-term. These amounts primarily consist of purchase orders for certain technical infrastructure as well as the non-cancelable portion or the minimum cancellation fee in certain agreements related to commitments to purchase licenses, including content licenses, inventory and network capacity."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "GOOGL-UncommencedLeases",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Alphabet",
+          "purpose": "Future data center and office operating leases not yet commenced, not recorded on balance sheet",
+          "debt_stack_usd": 3957000000,
+          "term_yrs": 25,
+          "residual_value_guarantee": false,
+          "verbatim_quote": "As of December 31, 2023, we have entered into leases that have not yet commenced with future short-term and long-term lease payments of $657 million and $3.3 billion, that are not yet recorded on our Consolidated Balance Sheets. These leases will commence between 2024 and 2026 with non-cancelable lease terms of one to 25 years."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "GOOGL-OperatingLeasePortfolio",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Alphabet",
+          "purpose": "Data centers and office operating leases, weighted average remaining term 8 years",
+          "debt_stack_usd": 17700000000,
+          "term_yrs": 8,
+          "residual_value_guarantee": false,
+          "verbatim_quote": "As of December 31, 2023, the amount of total future lease payments under operating leases, which had a weighted average remaining lease term of eight years, was $17.7 billion, of which $3.2 billion is short-term."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-CostOpacity-DeprecLifeChange",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 3900000000,
+            "note": "Reduction in depreciation expense from extending server and network equipment useful life from implied prior period to 6 years, effective FY2023"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In January 2023, we completed an assessment of the useful lives of our servers and network equipment, resulting in a change in the estimated useful life of our servers and certain network equipment to six years. The effect of this change was a reduction in depreciation expense of $3.9 billion for the year ended December 31, 2023, recognized primarily in cost of revenues and R&D expenses."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-CapexROIGap-AIInfra",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 45900000000,
+            "note": "Total purchase commitments of $45.9B ($31.6B short-term) for technical infrastructure and licenses, against FY2023 capex of $32.3B, with forward guidance to increase capex further for AI \u2014 without matched contracted revenue disclosed"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of December 31, 2023, we had material purchase commitments and other contractual obligations of $45.9 billion, of which $31.6 billion was short-term. These amounts primarily consist of purchase orders for certain technical infrastructure... We expect to increase, relative to 2023, our investment in our technical infrastructure, including servers, network equipment, and data centers, to support the growth of our business and our long-term initiatives, in particular in support of AI products and services."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-HiddenLeverage-UncommencedLeases",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 3957000000,
+            "note": "$657M short-term + $3.3B long-term in leases signed but not yet on balance sheet as of Dec 31, 2023; commencing 2024-2026"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of December 31, 2023, we have entered into leases that have not yet commenced with future short-term and long-term lease payments of $657 million and $3.3 billion, that are not yet recorded on our Consolidated Balance Sheets. These leases will commence between 2024 and 2026 with non-cancelable lease terms of one to 25 years."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-Risk-NonMarketableEquity",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Investment Valuation / Private Equity",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We measure certain financial instruments at fair value on a nonrecurring basis, consisting primarily of our non-marketable equity securities. These investments are accounted for under the measurement alternative method and are measured at cost, less impairment, subject to upward and downward adjustments resulting from observable price changes for identical or similar investments of the same issuer. These adjustments require quantitative assessments of the fair value of our securities, which may require the use of unobservable inputs."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-Risk-AIMonetizationUncertainty",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "AI Revenue/Monetization Execution Risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We also expect to continue to incorporate AI innovations into our products, such as AI in Search, that could affect our monetization trends. When developing new products and services we generally focus first on user experience and then on monetization."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-Risk-RegulatoryLegal",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Regulatory / Antitrust / Legal Liability",
+          "named_counterparties": [
+            "USG",
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Examples include the antitrust complaints filed by the U.S. Department of Justice and a number of state Attorneys General; legislative proposals and pending litigation in the U.S., EU, and around the world that could diminish or eliminate safe harbor protection for websites and online platforms; and the Digital Markets Act and Digital Services Act in Europe."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "capex_commitment",
+        "target_name": "GOOGL-Capex-2023"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "capex_commitment",
+        "target_name": "GOOGL-PurchaseObligations-2023"
+      },
+      {
+        "predicate": "SPONSORS",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "off_balance_entity",
+        "target_name": "GOOGL-UncommencedLeases"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "off_balance_entity",
+        "target_name": "GOOGL-UncommencedLeases"
+      },
+      {
+        "predicate": "SPONSORS",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "off_balance_entity",
+        "target_name": "GOOGL-OperatingLeasePortfolio"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "off_balance_entity",
+        "target_name": "GOOGL-OperatingLeasePortfolio"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-CostOpacity-DeprecLifeChange"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-CapexROIGap-AIInfra"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-HiddenLeverage-UncommencedLeases"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "hidden_risk_signal",
+        "source_name": "GOOGL-HiddenLeverage-UncommencedLeases",
+        "target_type": "off_balance_entity",
+        "target_name": "GOOGL-UncommencedLeases"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "hidden_risk_signal",
+        "source_name": "GOOGL-CapexROIGap-AIInfra",
+        "target_type": "capex_commitment",
+        "target_name": "GOOGL-PurchaseObligations-2023"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-Risk-NonMarketableEquity"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-Risk-AIMonetizationUncertainty"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-Risk-RegulatoryLegal"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-Risk-RegulatoryLegal",
+        "target_type": "company",
+        "target_name": "USG"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "GOOGL-Risk-RegulatoryLegal",
+        "target_type": "company",
+        "target_name": "EU"
+      }
+    ],
+    "notes": "[chunk 1/1] Filing: Alphabet (GOOGL) 10-K, FY2023, Item 7 MD&A.\n\nKEY EXTRACTIONS:\n\n1. CAPEX & PURCHASE OBLIGATIONS: FY2023 capex was $32.3B (up from $31.5B in 2022), with explicit forward guidance to increase further for AI infrastructure. Separately, $45.9B in non-cancellable purchase commitments as of Dec 31, 2023 ($31.6B short-term), primarily for technical infrastructure \u2014 a material CAPEX_ROI_GAP signal given no matched contracted revenue is disclosed.\n\n2. COST OPACITY \u2014 DEPRECIATION LIFE CHANGE: In Jan 2023, Alphabet extended server and network equipment useful lives to 6 years, reducing depreciation by $3.9B in FY2023. This is a Severity 3 COST_OPACITY signal \u2014 it materially flattered operating income (Google Cloud turned profitable in 2023, partly aided by this change) and distorts YoY comparability.\n\n3. HIDDEN LEVERAGE \u2014 OFF-BALANCE-SHEET LEASES: $3.957B in signed-but-not-yet-commenced leases (not on balance sheet), commencing 2024\u20132026, with terms up to 25 years. Total on-balance-sheet operating lease obligations are $17.7B at 8-year weighted avg term.\n\n4. NON-MARKETABLE EQUITY: The MD&A references non-marketable equity securities measured under the \"measurement alternative\" with unobservable inputs, including performance fee compensation tied to realized returns. The specific investee roster is not named in this Item 7 section \u2014 it would appear in Note 3/Note 8 of Item 8, not extracted here per source text scope.\n\n5. NO NAMED AI LAB COUNTERPARTIES: This Item 7 excerpt does not name specific AI lab investments (e.g., Anthropic) or cloud compute customers. Those would appear in Item 1A Risk Factors or financial statement notes. No fabricated counterparties have been added.\n\n6. REGULATORY: EC fines totaling ~$9.5B equivalent across 2017\u20132019 decisions are accrued (bank guarantees in lieu of cash), plus active DOJ antitrust litigation \u2014 Severity 3 legal risk flagged."
+  },
+  "item_7a": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "GOOGL",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Alphabet Inc.",
+            "Alphabet"
+          ]
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/1] ITEM 7A (Market Risk Disclosures) from GOOGL 10-K (2024-01-31, acc. 0001652044-24-000022) contains only standard commodity hedging and investment portfolio risk analysis. No SIFI-material off-balance-sheet entities, capex commitments, counterparty-specific investments, or hidden-risk signals are disclosed in this section. The text discusses: (1) Foreign currency hedging via standard FX forwards/options/collars (routine cash flow and net investment hedges); (2) Interest rate VaR analysis on marketable debt portfolio (~$256\u2013296M notional sensitivity); (3) Equity investment risk on marketable securities ($5.2\u20136.0B) and non-marketable equity securities ($28.5\u201328.8B measured at fair value), but with NO NAMED INVESTEES, investment amounts, or counterparty concentrations disclosed. HARD RULE violation check: Item 7A does not identify specific private-company or AI-lab investments, no SPVs or project finance, no capex commitments, no related-party transactions. The non-marketable equity portfolio is noted as a risk class but not itemized\u2014without named counterparties or amounts, no investment nodes can be emitted per HARD RULE 1 (no fabrication). Recommend cross-referencing NOTE 1 and NOTE 3 (Notes to Consolidated Financial Statements, Item 8) for detailed investment roster and off-balance-sheet entity disclosures.\""
+  },
+  "financial_statements_and_notes": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google",
+            "Alphabet Inc."
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-DepreciationLifeExtension-2023",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 3900000000,
+            "note": "Depreciation expense reduced by $3.9B in FY2023 due to server useful-life extension from 4 to 6 years and network equipment from 5 to 6 years; net income boosted by $3.0B ($0.24/share)"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In January 2023, we completed an assessment of the useful lives of our servers and network equipment and adjusted the estimated useful life of our servers from four years to six years and the estimated useful life of certain network equipment from five years to six years... the effect of this change in estimate was a reduction in depreciation expense of $3.9 billion and an increase in net income of $3.0 billion, or $0.24 per basic and $0.24 per diluted share"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-InvestmentCommercialArrangement-CircularRisk",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "CIRCULARITY",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Alphabet holds debt and equity investments in companies with which it also entered into commercial arrangements at or near the same time; impairment of investment could reduce recognized revenue obligations"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Our financial instruments also include debt and equity investments in companies with which we also entered into commercial arrangements at or near the same time. For these transactions, judgment is required in assessing the substance of the arrangements... Additionally, if our investment in such companies becomes impaired, any remaining performance obligations would be reassessed and may be reduced."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-CloudBacklog-ExecutionRisk",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 74100000000,
+            "duration_yrs": 2,
+            "note": "Revenue backlog of $74.1B as of Dec 31 2023, primarily Google Cloud; ~half expected within 24 months, remainder beyond; recognition contingent on delivery and customer utilization"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of December 31, 2023, we had $74.1 billion of remaining performance obligations (\"revenue backlog\"), primarily related to Google Cloud... We expect to recognize approximately half of the revenue backlog as revenues over the next 24 months with the remaining to be recognized thereafter."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "GOOGL-PPE-Capex-2023",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 32251000000,
+          "start_fy": 2023,
+          "purpose": "Purchases of property and equipment including data centers and technical infrastructure",
+          "verbatim_quote": "Purchases of property and equipment (32,251) [for year ended December 31, 2023]"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-NonMarketableSecurities-ImpairmentRisk",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Investment Impairment / Commercial Arrangement Entanglement",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "For non-marketable equity securities, including equity method investments, we consider whether impairment indicators exist by evaluating the companies' financial and liquidity position and access to capital resources, among other indicators. If the assessment indicates that the investment is impaired, we write down the investment to its fair value by recording the corresponding charge as a component of OI&E."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-VIE-ConsolidationRisk",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Variable Interest Entity / Off-Balance-Sheet Consolidation",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We determine at the inception of each arrangement whether an entity in which we have made an investment or in which we have other variable interests is considered a variable interest entity (VIE). We consolidate VIEs when we are the primary beneficiary. We are the primary beneficiary of a VIE when we have the power to direct activities that most significantly affect the economic performance of the VIE and have the obligation to absorb the majority of their losses or benefits."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-LossContingencies-LegalRisk",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Regulatory / Legal Loss Contingencies",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "The Company is regularly subject to claims, lawsuits, regulatory and government investigations, other proceedings, and consent orders involving competition, intellectual property, data privacy and security, tax and related compliance, labor and employment, commercial disputes, content generated by its users, goods and services offered by advertisers or publishers using their platforms, personal injury, consumer protection, and other matters."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google",
+            "GOOGL"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "GOOGL-Consolidated-VIEs-2023",
+        "fields": {
+          "entity_type": "VIE",
+          "sponsor": "Alphabet",
+          "beneficiary": "Alphabet",
+          "debt_stack_usd": 2500000000,
+          "purpose": "Other Bets subsidiaries and consolidated VIEs with ring-fenced assets and liabilities",
+          "verbatim_quote": "assets that can only be used to settle obligations of these VIEs were $4.1 billion and $4.9 billion, respectively, and the liabilities for which creditors only have recourse to the VIEs were $2.6 billion and $2.5 billion, respectively."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "GOOGL-Unconsolidated-VIEs-2023",
+        "fields": {
+          "entity_type": "VIE",
+          "sponsor": "Alphabet",
+          "beneficiary": "Alphabet",
+          "purpose": "Unconsolidated VIEs: early-stage private companies and renewable energy entities; not consolidated because Alphabet is not primary beneficiary",
+          "verbatim_quote": "The maximum exposure and carrying value of these unconsolidated VIEs were $2.8 billion and $2.7 billion, respectively, as of December 31, 2022 and $5.7 billion and $4.0 billion, respectively, as of December 31, 2023. The difference between the maximum exposure and the carrying value relates primarily to future funding commitments."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "GOOGL-Uncommenced-Leases",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Alphabet",
+          "purpose": "Data center and office leases signed but not yet commenced, not yet on balance sheet",
+          "term_yrs": 25,
+          "verbatim_quote": "we have entered into leases that have not yet commenced with short-term and long-term future lease payments of $657 million and $3.3 billion that are not yet recorded on our Consolidated Balance Sheets. These leases will commence between 2024 and 2026 with non-cancelable lease terms between one and 25 years."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "GOOGL-Content-Licensing-Commitments",
+        "fields": {
+          "filer": "Alphabet",
+          "amount_usd": 10600000000,
+          "duration_yrs": 7,
+          "start_fy": 2023,
+          "purpose": "Content licensing agreements with fixed or minimum guaranteed commitments",
+          "verbatim_quote": "We have content licensing agreements with future fixed or minimum guaranteed commitments of $10.6 billion as of December 31, 2023, of which the majority is paid over seven years ending in the first quarter of 2030."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "GOOGL-NonMarketable-Equity-Portfolio-2023",
+        "fields": {
+          "investor": "Alphabet",
+          "target": "Various private companies (non-marketable equity securities)",
+          "amount_usd": 28800000000,
+          "verbatim_quote": "As of December 31, 2023, the carrying value of our non-marketable equity securities was $28.8 billion, of which $13.7 billion were remeasured at fair value during the year ended December 31, 2023, and primarily classified within Level 2 of the fair value hierarchy at the time of measurement."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "GOOGL-Equity-Method-Investments-2023",
+        "fields": {
+          "investor": "Alphabet",
+          "target": "Equity method investees (private and public)",
+          "amount_usd": 1700000000,
+          "verbatim_quote": "As of December 31, 2022 and 2023, equity securities accounted for under the equity method had a carrying value of approximately $1.5 billion and $1.7 billion, respectively."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-UnconsolidatedVIE-FundingGap-Risk",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 5700000000,
+            "note": "Max exposure $5.7B vs carrying value $4.0B as of Dec 31 2023; $1.7B gap represents unfunded future commitments to unconsolidated VIEs"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The maximum exposure and carrying value of these unconsolidated VIEs were $2.8 billion and $2.7 billion, respectively, as of December 31, 2022 and $5.7 billion and $4.0 billion, respectively, as of December 31, 2023. The difference between the maximum exposure and the carrying value relates primarily to future funding commitments."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-NonMarketableEquity-Concentration-Risk",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 28800000000,
+            "note": "Non-marketable equity portfolio of $28.8B in privately held companies; $13.7B remeasured in 2023; $6.9B cumulative impairments/downward adjustments through 2023"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "the carrying value of our non-marketable equity securities was $28.8 billion, of which $13.7 billion were remeasured at fair value during the year ended December 31, 2023... Non-marketable equity securities cumulative net gain (loss) is comprised of $18.1 billion gains and $6.9 billion losses (including impairments) as of December 31, 2023."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-OffBalanceSheet-Lease-Risk",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 3957000000,
+            "note": "Total uncommenced lease obligations of $3.957B ($657M short-term + $3.3B long-term) not yet on balance sheet; on-balance-sheet lease liability is $15.251B"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "we have entered into leases that have not yet commenced with short-term and long-term future lease payments of $657 million and $3.3 billion that are not yet recorded on our Consolidated Balance Sheets. These leases will commence between 2024 and 2026 with non-cancelable lease terms between one and 25 years."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-EC-Fines-Contingent-Liability-Risk",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 9525000000,
+            "note": "EC antitrust fines accrued at $9.525B as of Dec 31 2023, secured by bank guarantees (not cash). Multiple active appeals; advertising technology trial scheduled March 2025."
+          },
+          "named_counterparties": [
+            "EU"
+          ],
+          "verbatim_quote": "European Commission fines... $9,106 [2022] $9,525 [2023]... the fines are included in accrued expenses and other current liabilities on our Consolidated Balance Sheets, as we provided bank guarantees (in lieu of a cash payment) for the fines. Amounts include the effects of foreign exchange and interest."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-DOJ-Antitrust-Search-Risk",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Regulatory / Antitrust",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 3,
+          "verbatim_quote": "The DOJ and a number of state Attorneys General filed a lawsuit in the U.S. District Court for the District of Columbia on October 20, 2020 alleging that Google violated U.S. antitrust laws relating to Search and Search advertising. The trial ended on November 16, 2023, and we expect a decision in 2024."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-AdTech-Antitrust-Risk",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Regulatory / Antitrust \u2014 Advertising Technology",
+          "named_counterparties": [
+            "USG",
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "On January 24, 2023, the DOJ, along with a number of state Attorneys General, filed an antitrust complaint...alleging that Google's digital advertising technology products violate U.S. antitrust laws... On June 14, 2023, the EC issued a Statement of Objections (SO) informing Google of its preliminary view that Google violated European antitrust laws relating to its advertising technology."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google",
+            "GOOGL"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GOOGL-Uncertain-Tax-Positions-2023",
+        "fields": {
+          "filer": "Alphabet",
+          "category": "Tax / Regulatory",
+          "named_counterparties": [
+            "IRS",
+            "Ireland"
+          ],
+          "severity": 2,
+          "verbatim_quote": "The total amount of gross unrecognized tax benefits was $9.4 billion as of December 31, 2023, of which $7.4 billion, if recognized, would affect our effective tax rate. We have also received tax assessments in multiple foreign jurisdictions asserting transfer pricing adjustments or permanent establishment."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-Alphabet-Level-AI-RD-Cost-Opacity",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 9186000000,
+            "note": "Alphabet-level activities operating loss of $9.186B in 2023, including unallocated AI-focused shared R&D costs for general AI models (Google DeepMind), not attributed to any segment"
+          },
+          "named_counterparties": [
+            "Google DeepMind"
+          ],
+          "verbatim_quote": "Certain costs are not allocated to our segments because they represent Alphabet-level activities. These costs primarily include AI-focused shared R&D activities, including development costs of our general AI models... Alphabet-level activities operating loss: $(9,186) [million] in 2023."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-Capitalized-RD-DTA-Signal",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 17757000000,
+            "note": "Capitalized R&D deferred tax asset ballooned from $10.4B (2022) to $17.8B (2023) due to mandatory R&D capitalization under TCJA 2017; creates large deferred benefit that may not be realized"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Capitalized research and development [deferred tax asset]: $10,381 [2022], $17,757 [2023]... effective January 1, 2022, our research and development expenditures were capitalized and amortized which resulted in substantially higher cash taxes starting in 2022 with an equal amount of deferred tax benefit."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GOOGL-Valuation-Allowance-DTA",
+        "fields": {
+          "filer": "Alphabet",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 10999000000,
+            "note": "Valuation allowance of $11.0B against gross DTA of $37.1B (2023) \u2014 includes Other Bets deferred tax assets and significant state/foreign NOL carryforwards deemed not realizable"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of December 31, 2023, we maintained a valuation allowance with respect to California deferred tax assets, certain federal net operating losses, certain state net operating losses and tax credits, net deferred tax assets relating to Other Bets companies, and certain foreign net operating losses that we believe are not likely to be realized."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-DepreciationLifeExtension-2023"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-InvestmentCommercialArrangement-CircularRisk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-CloudBacklog-ExecutionRisk"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "capex_commitment",
+        "target_name": "GOOGL-PPE-Capex-2023"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-NonMarketableSecurities-ImpairmentRisk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-VIE-ConsolidationRisk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-LossContingencies-LegalRisk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-Alphabet-Level-AI-RD-Cost-Opacity"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-Capitalized-RD-DTA-Signal"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GOOGL-Valuation-Allowance-DTA"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Alphabet",
+        "target_type": "risk_factor",
+        "target_name": "GOOGL-Uncertain-Tax-Positions-2023"
+      }
+    ],
+    "notes": "[chunk 1/3] FILING SECTION COVERAGE: This section covers the auditor reports, consolidated financial statements (balance sheets, income statements, cash flows, stockholders' equity), and the beginning of the Notes to Financial Statements (Notes 1\u20132 and the opening of Note 3). Key observations:\n\n1. COST_OPACITY (Severity 3): Alphabet extended server useful lives from 4\u21926 years and network equipment from 5\u21926 years in January 2023, reducing FY2023 depreciation by $3.9B and boosting net income by $3.0B ($0.24/share). This is a material accounting estimate change that inflates reported profitability. With $134B of PP&E on balance sheet, the longer depreciation schedule also masks true asset aging and replacement cadence risk.\n\n2. CIRCULARITY / REVENUE_ROUNDTRIP (Severity 3): Note 1 explicitly discloses that Alphabet holds \"debt and equity investments in companies with which we also entered into commercial arrangements at or near the same time,\" requiring judgment on whether components should be separate transactions and noting that investment impairment could reduce performance obligations. This is a textbook revenue-roundtrip / circularity signal. No specific counterparties are named in this section \u2014 they would appear in Note 3 (Financial Instruments) or Note 8 (non-marketable securities), which are not included in this excerpt.\n\n3. EXECUTION_RISK (Severity 2): $74.1B Google Cloud revenue backlog as of Dec 31 2023, with only ~half expected within 24 months. Recognition is contingent on Alphabet's delivery capability and customer utilization, creating substantial execution risk given the scale of cloud infrastructure investment underway.\n\n4. CAPEX: $32.25B in PP&E purchases in FY2023 (vs $31.5B in FY2022), with no named counterparty commitments disclosed in this section. Total non-marketable securities balance of $31.0B (up from $30.5B) suggests continued private-company investment activity.\n\n5. No SPV/off-balance-sheet entities, named AI lab investments, or specific counterparty capex commitments were disclosed in this section. Note 3 (Financial Instruments, including non-marketable equity securities detail) and Note 10 (Commitments and Contingencies) would be required to complete the counterparty web. These sections are not included in the provided excerpt.\n\n6. The filing explicitly states no individual customer or group represented more than 10% of revenues in 2021, 2022, or 2023 \u2014 no CUSTOMER_CONCENTRATION signal applicable.\n[chunk 3/3] This section (Notes 14\u201315 + Item 9) is primarily income tax disclosures and segment financials. No off-balance-sheet SPVs, capex commitments to named counterparties, or equity investments are disclosed here. SIFI-material signals extracted: (1) $9.4B gross unrecognized tax benefits with $7.4B rate-affecting (severity 2 \u2014 IRS exam of 2016-2021 returns + multi-jurisdiction transfer pricing claims); (2) $17.8B capitalized R&D deferred tax asset \u2014 TCJA-driven, creates deferred benefit dependent on future taxable income realization; (3) $11.0B valuation allowance against $37.1B gross DTA including Other Bets entities; (4) Alphabet-level activities $9.2B operating loss in 2023 driven by unallocated AI R&D (Google DeepMind general model development) \u2014 cost opacity signal as these are carved out of segment reporting with no counterparty-level breakdown. No capex commitments, SPVs, or private investment disclosures appear in this filing section."
+  },
+  "item_9a": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "aliases": [
+            "Google"
+          ]
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/1] ITEM 9A (Controls & Procedures) contains no SIFI-material entities, counterparty relationships, investments, or related-party arrangements. The section is entirely boilerplate compliance disclosure regarding: (1) effectiveness of disclosure controls and procedures as of Dec 31, 2023; (2) no material changes to internal control over financial reporting; (3) management's assessment of internal control effectiveness audited by Ernst & Young LLP; (4) limitations language on control design. ITEM 9B discloses routine Section 16 trading plans for executives (John Hennessy, Ann Mather, Ruth M. Porat) and a Section 13(r) notification reference regarding Russian encryption compliance filed by Google LLC subsidiary\u2014neither constitutes SIFI-material leverage, circularity, or counterparty dependency. ITEMS 10\u201314 are incorporation-by-reference boilerplate to the Proxy Statement. No extraction warranted.\""
+  }
+}

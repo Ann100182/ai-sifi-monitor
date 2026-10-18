@@ -1,0 +1,240 @@
+{
+  "beneficial_owners": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "The Vanguard Group",
+        "fields": {
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "BlackRock",
+        "fields": {
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "State Street Corporation",
+        "fields": {
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "PricewaterhouseCoopers",
+        "fields": {
+          "aliases": [
+            "PwC"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "HashiCorp",
+        "fields": {
+          "aliases": [
+            "HashiCorp, Inc."
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "PricewaterhouseCoopers Consulting",
+        "fields": {
+          "aliases": [
+            "PwCC"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Semler Brossy",
+        "fields": {
+          "role": "consultant"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "The Heritage Foundation",
+        "fields": {
+          "role": "shareholder"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Computershare Trust Company",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadridge Corporate Issuer Solutions",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "First Coast Results",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Innisfree M&A Incorporated",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "hyperscaler"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "DEPENDS_ON",
+        "target_type": "company",
+        "target_name": "PricewaterhouseCoopers",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Semler Brossy",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "context": "independent consultant to the Committee on 2026 LTPP design"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "HashiCorp",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "deal_date": "2025-02-27",
+          "context": "acquisition"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "PricewaterhouseCoopers Consulting",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "deal_date": "2002-10-01",
+          "context": "acquisition from PricewaterhouseCoopers LLP"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "The Heritage Foundation",
+        "target_type": "company",
+        "target_name": "IBM",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "context": "Shareholder proposal submission"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Computershare Trust Company",
+        "predicate": "SUPPLIES",
+        "properties": {
+          "context": "Transfer agent services"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Broadridge Corporate Issuer Solutions",
+        "predicate": "SUPPLIES",
+        "properties": {
+          "context": "Vote tabulation services"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "First Coast Results",
+        "predicate": "SUPPLIES",
+        "properties": {
+          "context": "Election inspection services"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Innisfree M&A Incorporated",
+        "predicate": "SUPPLIES",
+        "properties": {
+          "context": "Proxy solicitation assistance, estimated fee $50,000"
+        }
+      }
+    ],
+    "notes": "[chunk 1/8] IBM DEF 14A (2026-03-10) - Beneficial Ownership Section. Extracted the three institutional shareholders holding >5% of IBM common stock as of 2025-12-31: Vanguard (10.03%, 92.8M shares), BlackRock (8.3%, 75.5M shares), State Street (6.03%, 55.0M shares). These are passive index holders per Schedule 13Gs and do not represent SIFI-material counterparty relationships, customer concentration, supplier dependencies, or strategic partnerships. Remainder of document contains standard executive compensation disclosure, governance practices, and performance metrics with no SIFI-material entities, off-balance-sheet arrangements, circularity, or risk signals relevant to AI/cloud infrastructure spending. The document does not disclose material business relationships, capex commitments, investments in AI labs, or structured finance arrangements. No edges extracted.\n[chunk 2/8] DEF 14A 2026 (IBM) Beneficial Owners & Compensation Section: This filing excerpt focuses exclusively on IBM's executive compensation policies, equity awards, and related governance disclosures. It contains no SIFI-material information suitable for the AI SIFI Monitor framework. Specifically: (1) No named business relationships, customer/supplier dependencies, or strategic partnerships involving external counterparties are disclosed\u2014only internal IBM compensation structures. (2) No investments, acquisitions, or investments in private AI labs or other entities are mentioned. (3) No off-balance-sheet entities, SPVs, JVs, or hidden leverage structures are referenced. (4) No circularity, revenue roundtripping, capex commitments to external parties, execution risk on infrastructure contracts, or cost opacity patterns are present. (5) The named executive officers (A. Krishna, J.J. Kavanaugh, R.D. Thomas, G. Cohn, A. Robinson) and their compensation are internal governance matters\u2014not counterparty relationships. (6) References to \"certain competitors,\" \"outside board participation,\" and \"related-party arrangements\" are generic/boilerplate (e.g., noncompetition clauses, personal aircraft/security) and do not identify SIFI-material external dependencies or circularity. (7) The sole external entity mentioned is the \"Performance Team\" (internal leadership structure) and outside board memberships (unspecified organizations\u2014not material to AI SIFI analysis). No quotes support extraction of risk factors or hidden signals. **Conclusion:** Zero SIFI-material nodes or edges. This section is pure compensation disclosure and does not warrant extraction under the SIFI Monitor framework.\n[chunk 3/8] DEF 14A beneficial owners section on executive compensation and deferred compensation plans. The source text contains exclusively internal IBM employee benefit plan narratives: retention plan (1995 Retention Plan), pension benefits (IBM Personal Pension Plan, Qualified Plan, Nonqualified Plan, Excess Savings Plan, RBA), and termination benefits. No named business relationships, customer/supplier dependencies, strategic partnerships, investments, acquisitions, or related-party arrangements are disclosed. No off-balance-sheet entities, capex commitments, or equity investments in third parties mentioned. The section discusses compensation structures, plan mechanics, vesting schedules, and termination scenarios for named executive officers (Krishna, Kavanaugh, Thomas, Cohn, Robinson) but contains no SIFI-material counterparty data. Pay-versus-performance table references peer group (includes Broadcom, Elevance Health, and removes VMware and General Electric) but this is for benchmark purposes only, not a business relationship. No hidden leverage, circularity, revenue roundtripping, capex ROI gap, execution risk, cost opacity, or concentration signals detected. This section is boilerplate HR disclosure with no SIFI extraction required.\"\n[chunk 4/8] This DEF 14A beneficial owners / proxy section contains standard Audit Committee disclosures, executive compensation discussion, and auditor engagement ratification. No SIFI-material entities, counterparty concentrations, or circular dependencies are present. The only business relationship mentioned is IBM's long-standing audit engagement with PwC (continuous since 1958), which is routine operational reliance, not a SIFI-material counterparty exposure. No investments, acquisitions, SPVs, off-balance-sheet arrangements, capex commitments to specific counterparties, or customer/supplier concentrations are disclosed. The pension settlement charges ($3.1B in 2024, $4.4B in 2022) are one-time accounting adjustments, not structural leverage or hidden risks. Compensation metrics and board governance are boilerplate proxy statement content with no related-party SIFI angles.\n[chunk 5/8] This DEF 14A section on the 2026 Long-Term Performance Plan (2026 LTPP) is primarily focused on equity compensation governance and does not contain SIFI-material risk signals. The filing discusses: (1) approval of a new equity compensation plan replacing four prior plans, (2) vesting terms and clawback provisions for executive and employee awards, and (3) board governance matters. Key acquisitions mentioned are HashiCorp (Feb 27, 2025) and the historical PwCC acquisition (Oct 1, 2002), both integrated into IBM's equity award plans. Semler Brossy is named as the independent consultant. No off-balance-sheet entities, hidden leverage, circularity, roundtripping, capex commitments, or material counterparty concentration issues are disclosed in this narrative section. The section lacks customer/supplier concentration metrics, strategic partnership details, or SIFI-relevant counterparty exposures.\"\n[chunk 6/8] No SIFI-material entities identified in this DEF 14A beneficial_owners section. The text contains three shareholder proposals (Proposal 6: written consent rights, Proposal 7: AI bias audit, Proposal 8: charitable discrimination report) and IBM's board recommendations against them. The content is pure governance/procedural boilerplate with no:\n- Named customer or supplier relationships\n- Material investment positions or acquisitions\n- Related-party arrangements\n- Strategic partnerships\n- Counterparty web elements\n- Off-balance-sheet entities\n- Revenue concentration risks\n- Capex commitments\n\nJohn Chevedden and National Center for Public Policy Research are identified as proponents of shareholder proposals but are not SIFI-material counterparties. References to Stanford researchers, White House executive orders, and generic AI fairness frameworks (Granite models, AI Fairness 360 toolkit) do not constitute material business relationships or leverage signals. The only operational context is IBM's AI model transparency practices and charitable governance\u2014neither rises to SIFI materiality. No extraction warranted.\n[chunk 7/8] Filing is IBM DEF 14A proxy statement (2026-03-10). The \"Beneficial Owners\" section primarily contains a shareholder proposal from The Heritage Foundation regarding IBM's charitable giving and diversity policies. This is not SIFI-material; it addresses corporate governance and HR policy matters, not hidden leverage, circularity, revenue roundtripping, capex ROI gaps, execution risk, cost opacity, or customer/supplier concentration that would affect systemic financial stability. The operational entities identified (transfer agent, vote tabulators, proxy solicitors) are routine service providers and immaterial to SIFI analysis. No investments, capex commitments, off-balance-sheet entities, or related-party transactions of SIFI significance are disclosed in this section.\"\n[chunk 8/8] The provided section is from IBM's 2026 DEF 14A proxy statement, specifically Appendix B (Long-Term Performance Plan). This excerpt contains technical provisions governing equity awards, including: (1) adjustment mechanics for corporate transactions (Section 16); (2) Change in Control treatment (Section 17); (3) clawback policies (Section 18); (4) Section 409A tax compliance (Section 19); (5) data privacy (Section 20); and (6) miscellaneous administrative provisions (Section 21). The text is pure boilerplate plan administration language with no named counterparties, customer/supplier relationships, investments, acquisitions, related-party arrangements, or SIFI-material business disclosures. No entities besides IBM are mentioned. No financial metrics, capital commitments, or concentration risks are disclosed. This section does not rise to SIFI-relevance under the extraction mandate.\""
+  }
+}

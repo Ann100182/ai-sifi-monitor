@@ -1,0 +1,1059 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Seagate",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "AVGO",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "Broadcom",
+            "Broadcom Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "aliases": [
+            "VMware, Inc."
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Seagate",
+        "fields": {
+          "aliases": [
+            "Seagate Technology Holdings plc"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "VMware-EUC-HFS",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "AVGO",
+          "beneficiary": "AVGO",
+          "purpose": "Assets and liabilities held-for-sale in connection with VMware Merger",
+          "verbatim_quote": "we classified VMware's EUC business and certain other assets and liabilities, which were not aligned with our strategic objectives, as assets and liabilities held-for-sale"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "AVGO-SoC-600M",
+        "fields": {
+          "filer": "AVGO",
+          "amount_usd": 600000000,
+          "counterparty": "Seagate",
+          "purpose": "acquisition of System-on-Chip operations",
+          "verbatim_quote": "we acquired certain assets related to the design, development, and manufacture of System-on-Chip (SoC) operations of Seagate Technology Holdings plc for $600 million"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Customer-Concentration",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 29,
+            "counterparty_count": 1,
+            "note": "Direct sales to one distributor customer"
+          },
+          "named_counterparties": [
+            "Distributor (unnamed)"
+          ],
+          "verbatim_quote": "Direct sales to one customer, which is a distributor, accounted for 29% and 28% of our net revenue for the fiscal quarter and two fiscal quarters ended May 5, 2024, respectively"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Top5-Concentration",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 40,
+            "counterparty_count": 5,
+            "note": "Aggregate sales through all channels"
+          },
+          "named_counterparties": [
+            "Top 5 end customers (unnamed)"
+          ],
+          "verbatim_quote": "aggregate sales to our top five end customers, through all channels, accounted for approximately 40% of our net revenue for each of the fiscal quarter and two fiscal quarters ended May 5, 2024"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-VMware-Integration-Costs",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 1057000000,
+            "duration_yrs": 1,
+            "note": "Restructuring charges in first two quarters post-acquisition"
+          },
+          "named_counterparties": [
+            "VMware"
+          ],
+          "verbatim_quote": "In connection with the VMware Merger, we initiated restructuring activities to integrate the acquired business, align our workforce and improve efficiencies in our operations. We recognized $345 million and $1,057 million of restructuring charges primarily related to employee termination costs during the fiscal quarter and two fiscal quarters ended May 5, 2024, respectively. We expect these restructuring activities to be substantially completed by the end of fiscal year 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Goodwill-Impairment-Risk",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 54206000000,
+            "note": "Goodwill from VMware Merger acquisition"
+          },
+          "named_counterparties": [
+            "VMware"
+          ],
+          "verbatim_quote": "Acquisition of VMware: \u2014   54,206   54,206. Balance as of May 5, 2024: $26,015   $71,858   $97,873"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Debt-Assumption-Risk",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 8250000000,
+            "note": "VMware senior notes assumed in merger"
+          },
+          "named_counterparties": [
+            "VMware"
+          ],
+          "verbatim_quote": "In connection with the VMware Merger, we assumed $8,250 million of VMware's outstanding senior unsecured notes (the 'Assumed VMware Senior Notes'). Upon the occurrence of a change of control and certain downgrades of the ratings, each note holder will have the right to require us to repurchase all or any part of the holders' notes in cash at a price equal to 101% of the principal amount plus accrued and unpaid interest."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Intangible-Amortization",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 40607000000,
+            "duration_yrs": 7,
+            "note": "Net intangible assets subject to amortization with weighted-average remaining period of 7 years"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Intangible assets subject to amortization: 62,174 ... Accumulated Amortization (21,567) ... Net Book Value 40,607. Based on the amount of intangible assets subject to amortization as of May 5, 2024, the expected amortization expense was as follows: 2024 (remainder) $4,728 ... Thereafter $10,124"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Tax-Liability-Risk",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 4900000000,
+            "note": "Discrete tax expense expected in Q3 FY2024 from IP transfer"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We estimate that we will recognize a discrete tax expense of up to $4.9 billion during the fiscal quarter ending August 4, 2024 from the establishment of a deferred tax liability as a result of the book and tax basis difference on these IP rights. We are continuing to evaluate the impact of the intra-group transfer on our estimated annual effective tax rate and income tax provision."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO-Customer-Loss-Risk",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Customer Concentration",
+          "named_counterparties": [
+            "Distributor (unnamed)",
+            "Top 5 end customers"
+          ],
+          "severity": 4,
+          "verbatim_quote": "The loss of, or significant decrease in demand from, any of our top five end customers could have a material adverse effect on our business, results of operations and financial condition."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO-Revenue-Volatility-Risk",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Demand and Revenue Volatility",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "From time to time, some of our key semiconductor customers place large orders or delay orders, causing our quarterly net revenue to fluctuate significantly. This is particularly true of our wireless products as fluctuations may be magnified by the timing of launches, and seasonal variations in sales, of mobile devices."
+        }
+      },
+      {
+        "type": "company",
+        "name": "AVGO",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "Broadcom"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "aliases": [],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "TSMC",
+        "fields": {
+          "aliases": [
+            "Taiwan Semiconductor Manufacturing Company Limited"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Dell",
+        "fields": {
+          "aliases": [],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Huawei",
+        "fields": {
+          "aliases": [
+            "Huawei Technologies Co., Ltd."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "VMware-Merger",
+        "fields": {
+          "filer": "AVGO",
+          "amount_usd": 32058000000.0,
+          "counterparty": "VMware",
+          "purpose": "Acquisition and integration of VMware business",
+          "verbatim_quote": "completed the VMware Merger...cash and cash equivalents decreased primarily due to $32,058 million paid for the VMware Merger"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "VMware-Divestiture",
+        "fields": {
+          "filer": "AVGO",
+          "amount_usd": 3800000000.0,
+          "counterparty": "VMware",
+          "purpose": "Sale of VMware end-user computing business",
+          "verbatim_quote": "signed a definitive agreement to sell VMware's end-user computing business for approximately $3.8 billion"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "VMware-Debt-Assumed",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "AVGO",
+          "co_owner": "VMware",
+          "debt_stack_usd": 8250000000.0,
+          "purpose": "Financing from VMware Merger assumption",
+          "verbatim_quote": "assumed $8,250 million of VMware's outstanding senior unsecured notes"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "AVGO-2023-TermLoans",
+        "fields": {
+          "filer": "AVGO",
+          "amount_usd": 30390000000.0,
+          "purpose": "Financing of VMware Merger",
+          "verbatim_quote": "funded the cash portion of the consideration with net proceeds from the issuance of $30,390 million in term loans (the '2023 Term Loans')"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "VMware-Integration-Risk",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Integration execution",
+          "named_counterparties": [
+            "VMware"
+          ],
+          "severity": 4,
+          "verbatim_quote": "Failure to realize the benefits expected from the VMware Merger could adversely affect our business...If we do not successfully manage these issues...we may not achieve the anticipated benefits of the VMware Merger within our anticipated timeframe or at all and our revenue, expenses, operating results, financial condition and stock price could be materially adversely affected."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Customer-Concentration",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 40,
+            "counterparty_count": 5,
+            "note": "Top 5 end customers account for approximately 40% of net revenue"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We believe aggregate sales, through all channels, to our top five end customers, accounted for approximately 40% of our net revenue for the two fiscal quarters ended May 5, 2024."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Distributor-Concentration",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "pct_of_revenue": 50,
+            "note": "Sales through distributors represent 50% of net revenue with limited control"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Sales to distributors accounted for 50% of our net revenue in the two fiscal quarters ended May 5, 2024...our distributors and other channel partners' agreements are generally nonexclusive and may be terminated at any time without cause"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-TSMC-Supplier-Concentration",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_revenue": 95,
+            "note": "TSMC manufactures approximately 95% of wafers from contract manufacturers"
+          },
+          "named_counterparties": [
+            "TSMC"
+          ],
+          "verbatim_quote": "Taiwan Semiconductor Manufacturing Company Limited ('TSMC'), one of our CMs, manufactured approximately 95% of the wafers manufactured by our CMs during the two fiscal quarters ended May 5, 2024."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Materials-Supplier-Concentration",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 66.67,
+            "counterparty_count": 5,
+            "note": "Approximately two-thirds of manufacturing materials from five materials providers, some single-source"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "During the two fiscal quarters ended May 5, 2024, we purchased approximately two-thirds of our manufacturing materials from five materials providers, some of which are single source suppliers."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Huawei-Export-Risk",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "named_counterparties": [
+            "Huawei"
+          ],
+          "verbatim_quote": "Huawei Technologies Co., Ltd., one of our customers, is subject to certain U.S. export restrictions, which has required us to suspend sales to Huawei until we obtain licenses from the U.S. Department of Commerce."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO-Debt-Leverage-Risk",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Indebtedness and leverage",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Our substantial indebtedness could adversely affect our financial health and our ability to execute our business strategy...Servicing our debt requires a significant amount of cash, and we may not have sufficient cash flows from our business to pay our substantial debt."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO-Cybersecurity-Risk",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Cybersecurity and IT infrastructure",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Cyber security threats or other security breaches, or any other impairment of the confidentiality, integrity or availability of our IT systems, or those of one or more of our corporate infrastructure vendors, could have a material adverse effect on our business."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO-Geopolitical-Risk",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Geopolitical and trade tensions",
+          "named_counterparties": [
+            "China"
+          ],
+          "severity": 3,
+          "verbatim_quote": "An escalation of trade tensions between the U.S. and China has resulted in trade restrictions, increased protectionism and increased tariffs that harm our ability to participate in Chinese markets or compete effectively with Chinese companies."
+        }
+      },
+      {
+        "type": "company",
+        "name": "AVGO",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "Broadcom",
+            "Broadcom Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "TSMC",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intel",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_CUSTOMER_CONCENTRATION",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Large customers driving design-win dependency; stated risk of single design-win loss materially affecting revenue"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "These selection processes are typically lengthy and can require us to dedicate significant development expenditures and scarce engineering resources in pursuit of a single customer opportunity. Failure to obtain a particular design win may prevent us from obtaining design wins in subsequent generations of a particular product. This can result in lost revenue and can weaken our position in future selection processes."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_SUPPLIER_CONCENTRATION",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "note": "Single-source dependency for critical components; Taiwan/TSMC seismic risk materializing"
+          },
+          "named_counterparties": [
+            "TSMC"
+          ],
+          "verbatim_quote": "Our Fort Collins and Breinigsville facilities are the sole sources for the FBAR components used in many of our wireless devices and for the indium phosphide-based wafers used in our fibre optics products, respectively. Many of our facilities, and those of our CMs and suppliers, are located in California and the Pacific Rim region, which have above average seismic activity and severe weather activity. For example, in April 2024, Taiwan experienced an earthquake, which is where TSMC is located."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_EXECUTION_RISK",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Design-to-revenue cycle risk; qualification delays can block revenue realization"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Winning a product design does not guarantee sales to a customer. A delay or cancellation of a customer's plans could materially and adversely affect our financial results, as we incur significant expense in the design process and may generate little or no revenue from it. In addition, the timing of design wins is unpredictable and implementing production for a major design win, or multiple design wins at the same time, may strain our resources and those of our CMs."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_CAPEX_ROI_GAP",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Facility expansions require substantial capex with no guarantee of sufficient capacity or timeliness to capture demand"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We must maintain appropriate capacity and product yields at our own manufacturing facilities to meet anticipated customer demand. From time to time, this requires us to invest in expansion or improvements of those facilities, which often involves substantial cost and other risks. Such expanded manufacturing capacity may still be insufficient, or may not come online soon enough, to meet customer demand and we may have to put customers on product allocation, forgo sales or lose customers as a result."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO_AI_DEMAND_VOLATILITY",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Demand Forecasting & AI Workload Uncertainty",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Many factors could impact our estimates of customers' demands, including changes in product development cycles, competing technologies and product releases, new or unexpected end-user products, such as demand for AI-related products, and changes in business and economic conditions."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AVGO_CLOUD_MIGRATION",
+        "fields": {
+          "filer": "AVGO",
+          "category": "Shift to Cloud / Hyperscale Computing",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "If businesses build new or shift existing compute workloads off-premises to public cloud providers, this could limit the market for on-premises deployments of our data center virtualization products. Although we have developed, and will continue to develop, products to extend our product offerings to the public cloud, if demand for our server virtualization products is significantly less than anticipated, our business, financial condition, results of operations and cash flows may be adversely affected."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO_GEOGRAPHIC_CONCENTRATION",
+        "fields": {
+          "filer": "AVGO",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "note": "Critical engineering talent concentrated in Czech Republic, India, Israel; single geographic expertise per location"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "a significant majority of our research and development personnel are located in the Czech Republic, India, Israel, and the U.S., with the expertise of the personnel at each such location tending to be focused on one or two specific areas, and our primary warehouse is in Malaysia."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO",
+            "Broadcom Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {
+          "aliases": [
+            "VMware, Inc."
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Dell",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Singapore Economic Development Board",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Tax_Incentive_Expiration_Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "Tax and Regulatory Risk",
+          "named_counterparties": [
+            "Singapore Economic Development Board"
+          ],
+          "severity": 2,
+          "verbatim_quote": "Absent our principal tax incentives from the Singapore Economic Development Board, which is scheduled to expire in 2030, the corporate income tax rate that would apply to our Singapore taxable income would be 17%."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Tax_Benefit_Dependency",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 2104000000,
+            "note": "Tax incentives and holidays decreased provision for income taxes by ~$2.104B in FY2023 and increased diluted EPS by $4.93"
+          },
+          "named_counterparties": [
+            "Singapore Economic Development Board"
+          ],
+          "verbatim_quote": "Our tax incentives and tax holiday, before taking into consideration U.S. foreign tax credits, decreased the provision for income taxes by approximately $2,104 million in the aggregate and increased diluted net income per share by $4.93 for fiscal year 2023."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "VMware_Tax_Liability_Contingency",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "named_counterparties": [
+            "VMware",
+            "Dell"
+          ],
+          "verbatim_quote": "If the VMware Merger results in the spin-off failing to qualify as a tax-free transaction under Section 355 of the Internal Revenue Code, Dell, its affiliates and, potentially, its stockholders would incur significant tax liabilities and we may be required to indemnify Dell and its affiliates for any such tax liabilities, which could be material."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "VMware_Spin_Off_Tax_Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "Tax and Acquisition-Related Risk",
+          "named_counterparties": [
+            "VMware",
+            "Dell"
+          ],
+          "severity": 3,
+          "verbatim_quote": "If the VMware spin-off from Dell in November 2021 is determined to not be tax-free for any reason, we could be liable for all or a portion of the tax liability, which could have a material adverse effect on our financial condition and operating results."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Substantial_Indebtedness_Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "Debt and Liquidity Risk",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "As of May 5, 2024, the aggregate indebtedness under our senior notes was $76,521 million. During the two fiscal quarters ended May 5, 2024, we borrowed $30,390 million in 2023 Term Loans to finance the VMware Merger, and we assumed $8,250 million of VMware's outstanding senior unsecured notes."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "VMware_Merger_Debt_Leverage",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 38640000000,
+            "note": "$30.390B in 2023 Term Loans plus $8.25B assumed VMware debt = $38.64B total debt for VMware Merger financing"
+          },
+          "named_counterparties": [
+            "VMware"
+          ],
+          "verbatim_quote": "During the two fiscal quarters ended May 5, 2024, we borrowed $30,390 million in 2023 Term Loans to finance the VMware Merger, and we assumed $8,250 million of VMware's outstanding senior unsecured notes."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Institutional_Ownership_Concentration",
+        "fields": {
+          "filer": "Broadcom",
+          "category": "Equity and Ownership Risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "As of March 31, 2024, we believe 9 of our 20 largest holders of common stock were active institutional investors who held 19% of our outstanding shares of common stock in the aggregate."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "VMware",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "deal_type": "acquisition",
+          "deal_date": "2024-11-22",
+          "consideration": "$84.186 billion (cash + stock)"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "Seagate",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "deal_type": "asset_acquisition",
+          "deal_date": "2024-04-23",
+          "amount_usd": 600000000,
+          "target_business": "SoC operations"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "VMware"
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "AVGO-SoC-600M"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Seagate",
+        "predicate": "SUPPLIES",
+        "target_type": "capex_commitment",
+        "target_name": "AVGO-SoC-600M"
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Customer-Concentration"
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Top5-Concentration"
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-VMware-Integration-Costs"
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Goodwill-Impairment-Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Debt-Assumption-Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Intangible-Amortization"
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Tax-Liability-Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "AVGO-Customer-Loss-Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "AVGO-Revenue-Volatility-Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "company",
+        "target_name": "VMware",
+        "predicate": "INVESTED_IN",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "capex_commitment",
+        "target_name": "VMware-Merger",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "capex_commitment",
+        "target_name": "AVGO-2023-TermLoans",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "company",
+        "target_name": "TSMC",
+        "predicate": "DEPENDS_ON",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "company",
+        "target_name": "Huawei",
+        "predicate": "SELLS_COMPUTE_TO",
+        "properties": {}
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "AVGO-TSMC-Supplier-Concentration",
+        "target_type": "company",
+        "target_name": "TSMC",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {}
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "AVGO-Huawei-Export-Risk",
+        "target_type": "company",
+        "target_name": "Huawei",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Customer-Concentration",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Distributor-Concentration",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-TSMC-Supplier-Concentration",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Materials-Supplier-Concentration",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "risk_factor",
+        "target_name": "AVGO-Debt-Leverage-Risk",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "risk_factor",
+        "target_name": "AVGO-Cybersecurity-Risk",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "risk_factor",
+        "target_name": "AVGO-Geopolitical-Risk",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "VMware",
+        "target_type": "company",
+        "target_name": "Dell",
+        "predicate": "CIRCULAR_WITH",
+        "properties": {
+          "note": "VMware was formerly controlled by Dell; now divested to AVGO"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "company",
+        "target_name": "TSMC",
+        "predicate": "DEPENDS_ON",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO_SUPPLIER_CONCENTRATION",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO_CUSTOMER_CONCENTRATION",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO_EXECUTION_RISK",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO_CAPEX_ROI_GAP",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO_GEOGRAPHIC_CONCENTRATION",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "risk_factor",
+        "target_name": "AVGO_AI_DEMAND_VOLATILITY",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "AVGO",
+        "target_type": "risk_factor",
+        "target_name": "AVGO_CLOUD_MIGRATION",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "VMware"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "Tax_Incentive_Expiration_Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Tax_Benefit_Dependency"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "VMware_Tax_Liability_Contingency"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "VMware_Merger_Debt_Leverage"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "VMware_Spin_Off_Tax_Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "Substantial_Indebtedness_Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "Institutional_Ownership_Concentration"
+      },
+      {
+        "source_type": "company",
+        "source_name": "VMware",
+        "predicate": "CIRCULAR_WITH",
+        "target_type": "company",
+        "target_name": "Dell"
+      }
+    ],
+    "notes": "[chunk 1/5] AVGO 10-Q filing, fiscal Q2 2024 (period ended May 5, 2024). Extracted two major acquisitions: (1) VMware acquisition on Nov 22, 2023 \u2014 $30.788B cash + 54.4M shares worth $53.398B = $84.186B total; assumed $8.25B VMware debt. (2) Seagate SoC acquisition on Apr 23, 2024 \u2014 $600M for design/development/manufacture assets. No SIFI-material circularity, leverage, or revenue roundtripping detected in narrative sections. VMware merged into Broadcom; results included from Nov 22 forward. Strong revenue growth from subscriptions/services post-VMware (from $1.992B to $5.295B Q-on-Q). Customer concentration and supplier dependencies not quantified in this section. No off-balance-sheet entities, SPVs, or hidden leverage disclosed beyond standard acquisition debt.\n[chunk 2/5] SIFI-MATERIAL FINDINGS FROM AVGO 10-Q (2024-06-13):\n\n1. **CUSTOMER CONCENTRATION (Severity 3\u20134)**: One distributor = 29% of Q2 FY2024 revenue (up from 17% YoY). Top 5 end customers = 40% of revenue. Loss of any top-5 customer could be material.\n\n2. **VMware ACQUISITION INTEGRATION RISK (Severity 3\u20134)**:\n   - Assumed $8.25B of VMware debt with change-of-control triggers (101% repurchase price).\n   - Added $54.2B goodwill (now 71% of total goodwill).\n   - $1.06B restructuring charges in first 2 quarters; expects completion by end FY2025.\n   - Stock-based compensation spike: $1.4B in Q2 (up from $513M YoY) due to assumed VMware awards + higher grant-date FVs.\n   - Unrecognized compensation cost $13.8B over 3.3-year vesting period.\n\n3. **COST OPACITY (Severity 3)**:\n   - $40.6B in net intangible assets subject to 7-year amortization (customer contracts, purchased technology, trade names).\n   - Expected $4.9B discrete tax expense in Q3 FY2024 from intra-group IP transfer (unresolved; tax rate impact TBD).\n\n4. **FACTORING ARRANGEMENT**: $2.5B of accounts receivable sold on non-recourse basis to third-party financial institutions (Q1\u2013Q2 FY2024). Not a SIFI-material disclosure on its face, but indicates liquidity management.\n\n5. **VMWARE BACKLOG LAWSUIT**: Ongoing securities class action in Northern District of California alleging materially misleading statements about VMware backlog (2018\u20132020). Material adverse outcome possible but range not reasonably estimable. AVGO assumes liabilities; exposure unquantified.\n\n6. **DEBT PROFILE**: Total debt $76.5B (+87% YoY), including $28.4B 2023 Term Loans (SOFR+) and $8.25B assumed VMware notes. Strong covenant compliance reported, but interest expense doubled YoY ($1.97B vs $811M in first 2 quarters).\n\n7. **CAPEX / ASSET SALES**: Acquired Seagate SoC operations for $600M (April 2024). Classified VMware EUC business + other assets ($5.2B) as held-for-sale post-acquisition.\n\nNO MENTION of: AI labs, off-balance SPVs beyond held-for-sale, circular counterparty relationships, or revenue roundtripping. This is a standard M&A integration filing.\n[chunk 3/5] AVGO (Broadcom) 10-Q filing (June 13, 2024) extraction focuses on SIFI-material relationships and risks. Key findings: (1) VMware Merger: $32.058B acquisition completed Nov 2023, funded by $30.39B term loans + cash; $8.25B VMware debt assumed. (2) Extreme supplier concentration: TSMC manufactures 95% of AVGO's wafer requirements with no long-term capacity commitments\u2014single point of failure. (3) Customer concentration: Top 5 end customers = 40% revenue; distributors = 50% revenue, nonexclusive and terminable at will. (4) Materials supplier concentration: ~67% from 5 providers, some single-source, with no long-term contracts. (5) Geopolitical exposure: Huawei sales suspended due to U.S. export controls; elevated China trade tension risk. (6) Debt burden: $76.521B outstanding indebtedness; floating-rate 2023 Term Loans ($28.4B) expose to rate risk ($287M per 1% move). (7) Integration execution risk: Post-merger cost structure, asset sales (VMware end-user computing for $3.8B), potential goodwill impairment. No evidence of off-balance-sheet SPVs or revenue roundtripping detected in this section. VMware asset held-for-sale ($5.221B) suggests rapid divestiture strategy. AVGO's reliance on TSMC amid geopolitical tension and TSMC capacity constraints (shared with competitors including NVIDIA) creates systemic vulnerability.\n[chunk 4/5] AVGO (Broadcom) 10-Q filing dated 2024-06-13. Extracted 8 SIFI-material risk signals from Item 1A Business Risk Factors section. Key findings: (1) SUPPLIER_CONCENTRATION (severity 4): Single-source internal fabs for FBAR and indium phosphide wafers; Taiwan/TSMC earthquake risk materialized Apr 2024; (2) CUSTOMER_CONCENTRATION (severity 3): Design-win dependency model creates asymmetric revenue risk; large customers require substantial pre-sales R&D investment with no revenue guarantee; (3) CAPEX_ROI_GAP (severity 3): Manufacturing capacity expansions require substantial investment but may arrive too late or exceed demand, causing allocation risk; (4) EXECUTION_RISK (severity 3): Design-to-qualification cycle creates revenue realization risk; delays block commercialization; (5) GEOGRAPHIC_CONCENTRATION (severity 4): Engineering talent concentrated by location/expertise in Czech Republic, India, Israel, Malaysia warehouse; loss of single location blocks specific product areas; (6) AI_DEMAND_VOLATILITY (severity 2): Acknowledged uncertainty in AI product demand forecasting; (7) CLOUD_MIGRATION (severity 3): On-premises data center virtualization threatened by hyperscale cloud shift; stated dependency on product adaptation to public cloud. No material related-party arrangements, capex commitments, or investments disclosed in this section. No named counterparties for customer concentration (likely include hyperscalers but not named). Filing does not mention OpenAI, Anthropic, or other AI labs, nor off-balance-sheet entities.\n[chunk 5/5] SIFI-MATERIAL FINDINGS from Broadcom 10-Q (2024-06-13): (1) **VMware Merger Leverage**: Broadcom financed the VMware acquisition with $30.39B in 2023 Term Loans (floating-rate, interest-rate risk) plus $8.25B of assumed VMware debt, totaling $38.64B in merger-related debt. This is material hidden leverage tied to the acquisition. (2) **Tax Contingency Liability**: Broadcom faces material indemnification exposure if the VMware spin-off from Dell (Nov 2021) is determined to be non-tax-free under IRC \u00a7355, potentially requiring Broadcom to indemnify Dell for significant tax liabilities\u2014a hidden tax liability contingency. (3) **Tax Benefit Dependency**: Broadcom's earnings are materially dependent on tax incentives from Singapore EDB (exp. 2030) and Malaysia (exp. FY2028). FY2023 impact: ~$2.104B reduction in tax provision and $4.93/share EPS benefit. Loss of incentives would materially reduce earnings. (4) **Institutional Ownership Concentration**: 9 of 20 largest shareholders are active institutional investors holding 19% in aggregate\u2014creates potential for rapid stock price pressure from coordinated selling. (5) **Dell-VMware Tax Audit Authority**: Pursuant to tax agreement, Dell retains control authority over tax audits for VMware's periods as Dell consolidated group member (FY2017\u2013Nov 2021)\u2014limits Broadcom's audit outcome control. All entities and risks extracted; no private AI labs, no capex commitments with counterparties, no SPVs disclosed in this narrative section.\""
+  }
+}

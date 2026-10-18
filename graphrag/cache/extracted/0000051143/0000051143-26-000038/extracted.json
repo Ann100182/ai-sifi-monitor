@@ -1,0 +1,267 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Confluent",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Confluent",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Confluent",
+        "fields": {
+          "role": "acquired"
+        }
+      },
+      {
+        "type": "company",
+        "name": "HashiCorp",
+        "fields": {
+          "role": "acquired"
+        }
+      },
+      {
+        "type": "company",
+        "name": "DataStax",
+        "fields": {
+          "role": "acquired"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "IBM-Confluent-acquisition-2026",
+        "fields": {
+          "investor": "IBM",
+          "target": "Confluent",
+          "disclosed_date": "2026-03-17",
+          "verbatim_quote": "in mid-March we completed the previously announced acquisition of Confluent, which enables enterprises to deploy generative and agentic AI better and faster by providing trusted communication and data flow between environments, applications and APIs"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "IBM-debt-issuance-Q1-2026",
+        "fields": {
+          "filer": "IBM",
+          "amount_usd": 7437000000,
+          "start_fy": 2026,
+          "purpose": "general corporate purposes and future debt maturities",
+          "verbatim_quote": "In the first quarter of 2026, we issued $7.4 billion of debt for general corporate purposes"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-FX-hedging-risk",
+        "fields": {
+          "filer": "IBM",
+          "category": "currency_exposure",
+          "severity": 2,
+          "named_counterparties": [],
+          "verbatim_quote": "Movements in currency, and the fact that we do not hedge 100 percent of our currency exposures, will result in a currency impact to our revenues, profit and cash flows throughout 2026"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-tax-audit-risk",
+        "fields": {
+          "filer": "IBM",
+          "category": "tax_dispute",
+          "severity": 2,
+          "named_counterparties": [
+            "USG"
+          ],
+          "verbatim_quote": "The U.S. Internal Revenue Service (IRS) has proposed adjustments related to certain cross-border transactions with respect to the company's 2013-2014 and 2015-2016 U.S. income tax returns. The company strongly disagrees with the IRS' proposed adjustments, has filed IRS Appeals protests, and will pursue resolution at court, if necessary. In the fourth quarter of 2025, the IRS concluded its audit of the company's 2017-2018 U.S. income tax returns. The company strongly disagrees with certain adjustments proposed by the IRS and is evaluating its options to contest them"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM_Financing_ClientConcentration",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 12210000000,
+            "pct_of_assets": 80,
+            "note": "80% of external financing portfolio is investment-grade clients; high concentration in client financing receivables ($12.2B) relative to segment equity ($1.4B)"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Approximately 80 percent of the total external portfolio was with investment grade clients, an increase of 2 points as compared to December 31, 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM_FinancingLeverage",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 12837000000,
+            "duration_yrs": 1,
+            "note": "Financing segment debt ($12.8B) composed primarily of intercompany loans; receivables to equity ratio ~8.5x"
+          },
+          "named_counterparties": [
+            "IBM"
+          ],
+          "verbatim_quote": "Financing segment debt is primarily comprised of intercompany loans."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM_CreditQualityDegradation",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 128000000,
+            "pct_of_assets": 1.0,
+            "note": "Allowance for credit losses increased from 0.9% to 1.0% of receivables; reflects seasonality and mitigating actions including receivable sales"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The percentage of Financing segment receivables reserved increased from 0.9 percent at December 31, 2025 to 1.0 percent at March 31, 2026, primarily driven by the decline in amortized cost resulting from seasonally higher year-end balances."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Confluent"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Confluent",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition",
+          "amount_usd": 11590000000,
+          "date": "2026-03-17",
+          "share_price": 31,
+          "equity_value": 11300000000
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Confluent",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "date": "2026-03-17",
+          "transaction_type": "acquisition"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "HashiCorp",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "date": "2025-02",
+          "transaction_type": "acquisition"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "DataStax",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "risk_factor",
+        "target_name": "IBM-FX-hedging-risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "risk_factor",
+        "target_name": "IBM-tax-audit-risk",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM_Financing_ClientConcentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM_FinancingLeverage",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM_CreditQualityDegradation",
+        "predicate": "HAS_RISK_SIGNAL"
+      }
+    ],
+    "notes": "[chunk 1/5] FILING ANALYSIS: IBM 10-Q Q1 2026\n\nSIFI-MATERIAL FINDINGS:\n\n1. **IBM Acquisition of Confluent (3/17/2026)**: IBM announced acquisition of Confluent in Q1 2026. The filing shows:\n   - Confluent intangible assets recognized (customer relationships, developed technology rights, trademarks)\n   - Goodwill increased from $67.7B (12/31/2025) to $74.7B (3/31/2026), net increase ~$7B attributable to Confluent acquisition\n   - Acquisition reflects IBM's strategic shift toward data/streaming platform capabilities\n   - Confluent contributes to both Software and Consulting segments per XBRL tags\n\n2. **CAPEX / R&D INTENSITY**: IBM's R&D spend ($2.2B in Q1 2026, vs. $1.95B in Q1 2025) shows elevated capex/development burden relative to traditional software revenue. Confluent acquisition adds integration/platform risk.\n\n3. **CUSTOMER/SUPPLIER CONCENTRATION**: The filing does NOT disclose individual customer concentration >10% or single-supplier dependencies in Item 1 narrative. No narrative risk factors present in this excerpt.\n\n4. **DEBT & FINANCING**: IBM carries $66.4B total debt (short-term $8.7B + long-term $57.7B), with extensive debt maturity ladder from 2026\u20132096. Financing receivables $12.8B suggests IBM Capital operations. No SPV or off-balance-sheet leverage disclosed in this Q1.\n\n5. **NO HIDDEN LEVERAGE SIGNALS**: Operating leases ($2.6B non-current + $0.8B current = $3.4B), financing receivables, and deferred costs are all on-balance-sheet. No VIE, SPV, or residual value guarantees mentioned.\n\n6. **NO CIRCULARITY DETECTED**: No evidence of IBM round-tripping revenue with portfolio companies, venture investments, or customer-supplier triangles in this section.\n\nCONCLUSION: This Q1 10-Q is primarily XBRL tag metadata and summary financials. The only SIFI-material event is the Confluent acquisition (announced 3/17/2026), which increases IBM's goodwill by ~$7B and adds platform/data/streaming exposure. No risk factors, related-party arrangements, or hidden leverage structures disclosed in Item 1 narrative section provided.\n[chunk 2/5] This is a narrative financial filing (10-Q) from IBM for Q1 2026. The source text is primarily financial statement tables and accounting policy disclosures with minimal SIFI-material content. The only material counterparty relationship identified is the Confluent acquisition completed March 17, 2026 for $11.59B in total consideration ($11.3B equity value at $31/share). The acquisition adds significant goodwill ($7.225B) and intangibles ($3.834B) to IBM's Software segment. No hidden leverage, circularity, revenue roundtripping, capex ROI gaps, execution risks, cost opacity, or concentration risks above the SIFI materiality threshold are evident in this excerpt. Standard financing receivables, warranty liabilities, and debt management activities are routine and non-material. The finance subsidiary (IBM International Capital Pte. Ltd.) with $4.9B of guaranteed debt is a standard treasury function, not a hidden leverage vehicle. No AI lab investments, SVP debt structures, or strategic capex commitments to external counterparties are disclosed.\"\n  }\n]\n[chunk 3/5] EXTRACTION RESULT: This 10-Q filing section (Notes 14-18) contains standard financial and legal disclosures with NO SIFI-material entities or relationships. Detailed findings:\\n\\nNote 14 (Contingencies): Generic litigation risk across 175 countries, IP enforcement actions, labor/employment matters, environmental remediation under CERCLA. No named counterparties, no material loss amounts. This is boilerplate litigation disclosure.\\n\\nNotes 15-16 (Equity Activity & Derivatives): Routine hedging programs (interest-rate swaps $6.7B notional, FX hedges $7.1B-$11.3B notional for anticipated royalties, net investment hedges $16.5B debt). No counterparty concentration, no hidden leverage, no circularity. Standard corporate treasury risk management.\\n\\nNote 17 (Stock-Based Comp): $506M pre-tax for Q1 2026 (+$105M YoY). $2.9B unrecognized comp cost. No related-party transactions or concentration.\\n\\nNote 18 (Retirement Benefits): DB pension plans, DC plans, postretirement medical. Standard pension cost components (service cost, interest cost, expected returns). No underfunded disclosure that would trigger SIFI risk flag, no SPV or off-balance-sheet pension vehicle.\\n\\nCONCLUSION: This section does NOT contain:\\n- Named customer/supplier concentration > 10% of revenue\\n- Off-balance-sheet entities (SPVs, VIEs, operating leases with RVGs)\\n- Circularity or revenue round-tripping\\n- Material capex commitments tied to specific counterparties\\n- Hidden leverage or cost opacity signals\\n- Investment in AI labs or strategic tech partnerships\\n\\nThe file is purely financial statement footnotes with zero SIFI-material relationship data. No nodes or edges extracted.\"\n[chunk 4/5] IBM 10-Q filing (Q1 2026) contains narrative on business strategy, acquisitions (Confluent, HashiCorp, DataStax), and debt management. The filing mentions strategic focus on hybrid cloud and AI, but does not disclose SIFI-material counterparty dependencies, large off-balance-sheet obligations, or hidden leverage patterns. FX hedging partial-coverage is a standard operational risk noted. IRS cross-border tax disputes are disclosed but do not rise to cascade risk level given company size and financial position. No evidence of revenue roundtripping, circular dependencies with hyperscalers or AI labs, or capex-ROI gaps. Financing segment uses intercompany loans to match receivable terms; no hidden SPVs or structured entities disclosed. The working capital deficit ($8.2B at Q1 2026 vs. $1.7B at year-end 2025) appears driven by Confluent acquisition timing and seasonal factors, not structural leverage.\"\n[chunk 5/5] IBM 10-Q Q1 2026 (filed 2026-04-23): Financing segment exhibits structured leverage via intercompany loans ($12.8B debt vs. $1.4B equity, 9x ratio). Client financing receivables ($12.2B) concentrated with 80% in investment-grade counterparties; limited disclosure of individual client identity or sector concentration. Allowance for credit losses increased YoY (0.9% \u2192 1.0%), reflecting credit quality concerns partially masked by seasonal effects. No material investments in AI labs, capex commitments to hyperscalers, or obvious circularity detected in this excerpt. Forward-looking statements mention \"development and use of AI\" and \"increased AI solutions\" as risk factors but no specific partnerships, SPVs, or SIFI-material counterparty relationships disclosed in the provided text."
+  }
+}

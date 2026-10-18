@@ -1,0 +1,596 @@
+{
+  "director_comp": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "PricewaterhouseCoopers",
+        "fields": {
+          "aliases": [
+            "PwC"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Fidelity National Information Services",
+        "fields": {
+          "aliases": [
+            "FIS"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "AXA",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Emerson Electric",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Johnson & Johnson",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Apple",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "JPMorgan Chase",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Federal Reserve Bank of New York",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Northrop Grumman",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Dow Chemical",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "DowDuPont",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Worley",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Saudi Aramco",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Lucid Motors",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "NOVONIX",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "The Vanguard Group",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "UnitedHealth Group",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Mastercard",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Barclays Bank",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "CitiBank",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Metropolitan Opera",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "World Resources Institute",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Cornell University",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Royal Dutch Shell",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "ABB Ltd",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Temasek",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "PSA International",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Roche",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Northern Trust",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "AbbVie",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Siris Capital Group",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Red Hat",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Nasdaq",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Bank of New York Mellon",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Public Service Enterprise Group",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Charles Schwab",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Akamai Technologies",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "VMware",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Bertelsmann",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "Delphi Corporation",
+        "fields": {}
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "XL Specialty Insurance Company",
+        "fields": {
+          "role": "supplier"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "PricewaterhouseCoopers",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "role": "independent registered public accounting firm"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Red Hat",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "note": "IBM acquired Red Hat, described as the largest acquisition in the Company's history"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "DEPENDS_ON",
+        "target_type": "company",
+        "target_name": "XL Specialty Insurance Company",
+        "properties": {
+          "context": "D&O indemnification insurance coverage",
+          "contract_value": "$6.2 million",
+          "term": "June 30, 2023 through June 30, 2024"
+        }
+      }
+    ],
+    "notes": "[chunk 1/2] This DEF 14A (proxy statement) is a director compensation and governance document. It contains minimal SIFI-material information beyond board composition and standard governance practices. The document lists IBM's directors and their affiliations with other companies and institutions, but none of these represent material operational relationships for SIFI purposes. The director affiliations (e.g., directors serving on boards of Apple, JPMorgan Chase, AXA, Johnson & Johnson, etc.) are disclosures of potential conflicts of interest, not material business dependencies or counterparty relationships. IBM's acquisition of Red Hat is mentioned as a historical fact (the largest acquisition in Company's history) but no current operational or financial metrics are disclosed in this section. PricewaterhouseCoopers is named as the independent auditor to be ratified, which is standard disclosure. The related-person transactions section states that IBM applies standard policies and does not disclose material related-party transactions. Overall, this section contains no hidden leverage, circularity, revenue roundtripping, capex commitments, execution risk, or cost opacity signals that would trigger SIFI risk classification.\"\n  }\n]\n[chunk 2/2] SIFI-MATERIAL ASSESSMENT: MINIMAL.\n\nThis DEF 14A director compensation section contains boilerplate corporate governance content with no SIFI-material risks or relationships. Specifically:\n\n1. **No SIFI-Relevant Business Relationships**: The section details director independence, meeting attendance, Board structure, and compensation mechanics. No customer concentration, supplier dependencies, or strategic partnerships are disclosed.\n\n2. **No Hidden Leverage or Off-Balance-Sheet Entities**: The Deferred Compensation and Equity Award Plan (DCEAP) is a standard equity deferral arrangement for directors, not a hidden liability or SPV.\n\n3. **No Circularity or Revenue Roundtrips**: Director compensation is routine remuneration with no related-party transactions creating circular dependencies.\n\n4. **No Investments in AI Labs or Strategic Counterparties**: No disclosures of equity stakes in OpenAI, Anthropic, xAI, or other AI labs.\n\n5. **Single Counterparty Noted**: XL Specialty Insurance Company is named as the D&O insurance carrier (~$6.2M annually), but this is routine operational risk management, not SIFI-material concentration.\n\n6. **No Capex Commitments or Execution Risk**: No capital expenditure commitments or infrastructure deployment risks are disclosed in this section.\n\n**Conclusion**: This is a governance and director compensation disclosure section. It contains no material counterparty relationships, hidden liabilities, or AI/compute infrastructure dependencies that would elevate IBM's SIFI risk profile. No risk factors, hidden risk signals, or strategic investments are identifiable from this text alone.\n\nThe extraction includes only the identified counterparty (XL Specialty Insurance) via a DEPENDS_ON edge for transparency, but this does not constitute a SIFI-material relationship.\""
+  },
+  "beneficial_owners": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "The Vanguard Group",
+        "fields": {
+          "aliases": [
+            "Vanguard"
+          ],
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "BlackRock Inc.",
+        "fields": {
+          "aliases": [
+            "BlackRock"
+          ],
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "State Street Corporation",
+        "fields": {
+          "aliases": [
+            "State Street"
+          ],
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "PricewaterhouseCoopers",
+        "fields": {
+          "aliases": [
+            "PwC"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Business Roundtable",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "US Chamber of Commerce",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Responsible Business Alliance",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Accenture",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Hewlett Packard Enterprise",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SAP",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Climate Leadership Council",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Science Based Targets initiative",
+        "fields": {
+          "aliases": [
+            "SBTi"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "China",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Computershare Trust Company",
+        "fields": {
+          "role": "service_provider"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadridge Corporate Issuer Solutions",
+        "fields": {
+          "role": "service_provider"
+        }
+      },
+      {
+        "type": "company",
+        "name": "PricewaterhouseCoopers LLP",
+        "fields": {
+          "role": "service_provider"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Software AG",
+        "fields": {
+          "role": "target_acquisition"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM_Supplier_Scope3_Emissions_Control",
+        "fields": {
+          "filer": "IBM",
+          "category": "Supply Chain & Supplier Concentration",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "IBM does not, however, include in its operational goals estimates of its global suppliers' and global clients' emissions (Scope 3) that it does not control."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM_Supplier_Engagement_Requirement",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Broad first-tier supplier base with mandatory environmental management requirements since 2010"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Since 2010, IBM has required all of its first-tier suppliers to implement an environmental management system, measure and set goals to reduce their GHG emissions, and publicly disclose their results."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "The Vanguard Group",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "IBM",
+        "properties": {
+          "shares_beneficially_owned": 82604056,
+          "percent_of_class": "9.05%",
+          "filing_date": "2024-02-13",
+          "voting_power": "shared over 1,120,906 shares",
+          "dispositive_power": "sole over 78,726,445 shares, shared over 3,877,611 shares",
+          "purpose": "ordinary course of business"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "BlackRock Inc.",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "IBM",
+        "properties": {
+          "shares_beneficially_owned": 75479656,
+          "percent_of_class": "8.3%",
+          "filing_date": "2024-01-25",
+          "voting_power": "sole over 68,491,656 shares",
+          "dispositive_power": "sole over all shares",
+          "purpose": "ordinary course of business"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "State Street Corporation",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "IBM",
+        "properties": {
+          "shares_beneficially_owned": 55035821,
+          "percent_of_class": "6.03%",
+          "filing_date": "2024-01-30",
+          "voting_power": "shared over 32,946,835 shares",
+          "dispositive_power": "shared over 54,961,927 shares",
+          "purpose": "ordinary course of business"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "DEPENDS_ON",
+        "target_type": "company",
+        "target_name": "PricewaterhouseCoopers"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "CIRCULAR_WITH",
+        "target_type": "company",
+        "target_name": "Business Roundtable"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "CIRCULAR_WITH",
+        "target_type": "company",
+        "target_name": "US Chamber of Commerce"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "SUPPLIES",
+        "target_type": "company",
+        "target_name": "Responsible Business Alliance"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "DEPENDS_ON",
+        "target_type": "company",
+        "target_name": "Computershare Trust Company"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "DEPENDS_ON",
+        "target_type": "company",
+        "target_name": "Broadridge Corporate Issuer Solutions"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "DEPENDS_ON",
+        "target_type": "company",
+        "target_name": "PricewaterhouseCoopers LLP"
+      }
+    ],
+    "notes": "[chunk 1/5] This DEF 14A beneficial ownership section discloses three institutional passive shareholders with combined holdings of ~23.4% of IBM's common stock as of Dec 31, 2023. None represents a SIFI-material risk signal in themselves\u2014all three report holdings in ordinary course of business with no change-of-control intent, and voting/dispositive power is either shared or limited. No hidden leverage, circularity, revenue roundtripping, capex ROI gaps, execution risks, cost opacity, or single-point-of-failure dependencies are present. The compensation discussion reflects standard market-competitive practices tied to financial performance (revenue, operating cash flow, operating EPS, free cash flow) without disclosed related-party arrangements or off-balance-sheet entities. The benchmark group (Accenture, Boeing, Microsoft, UPS, Adobe, Cisco, Oracle, Verizon, Alphabet, GE, PepsiCo, Visa, Amazon, HPE, Qualcomm, VMware, AT&T, Honeywell, Raytheon, BofA, Intel, Salesforce) reflects competitive talent market dynamics, not material counterparty dependencies or SIFI risks. No AI lab investments, capex commitments to hyperscalers, or strategic supplier/customer concentration issues are disclosed in this section.\"\n[chunk 2/5] The DEF 14A filing (IBM 2024 Notice of Annual Meeting & Proxy Statement, filed 2024-03-11) is primarily a compensation disclosure document. The section provided covers executive compensation decisions, equity awards, and compensation program governance for the 2023 fiscal year.\n\nSIFI-MATERIAL FINDINGS: None identified in this excerpt.\n\nThe document contains:\n1. Executive compensation tables (salary, bonuses, stock awards, options) for named executive officers (NEOs): A. Krishna (Chairman/CEO), J.J. Kavanaugh (SVP Finance & Operations/CFO), R.D. Thomas (SVP Software), G. Cohn (Vice Chairman), M.H. Browdy (SVP General Counsel).\n2. Business highlights mentioning: IBM 2023 revenue of $61.9 billion; Software revenue growth of 5% YoY; Consulting revenue growth of 6% YoY; 9 strategic acquisitions closed in 2023; $7B invested in R&D focused on Hybrid Cloud and AI; watsonx AI platform delivery; quantum-centric supercomputing; free cash flow of $11.2B; $6B returned via dividends; $5B+ used to acquire companies.\n3. Compensation governance practices (clawbacks, hedging restrictions, tax considerations).\n\nASSESSMENT FOR SIFI RELEVANCE:\n- No customer concentration > 10% disclosed for any counterparty.\n- No named strategic partnerships disclosed (only references to \"strategic partnerships\" in general and \"ecosystem\").\n- No off-balance-sheet entities (SPVs, JVs, VIEs) mentioned.\n- No circular counterparty relationships identified.\n- No revenue roundtripping arrangements disclosed.\n- No capex commitments to specific counterparties.\n- No hidden leverage signals.\n- The acquisitions and R&D spending on AI are operational investments typical of IT services companies; no SIFI-material structure disclosed.\n- Related-party transactions are limited to executive compensation and equity awards (standard for public companies).\n- No mention of material customer concentration, supplier dependencies, or related-party credit arrangements.\n\nCONCLUSION: This compensation-focused section of a DEF 14A contains no SIFI-material entities or relationships. It is primarily administrative disclosure required by SEC proxy rules. IBM is extracted as a node only for completeness in the knowledge graph, but no edges or risk signals warrant extraction under the SIFI framework.\"\n\n[chunk 3/5] FILING ANALYSIS: IBM DEF 14A (2024-03-11, Accession 0001104659-24-032641). Section analyzed: Beneficial Owners / Executive Compensation narrative. RESULT: No SIFI-material entities or relationships extracted. RATIONALE: This section is purely executive compensation disclosure (pension benefits, deferred compensation, termination payments, pay-versus-performance). It contains no material business relationships, counterparty dependencies, investments, or hidden leverage structures relevant to SIFI monitoring. The text discusses IBM's internal retirement plans (Personal Pension Plan, Retention Plan, Excess 401(k) Plus Plan, LTPP), executive officer benefits, and pay ratios\u2014all routine governance disclosures. No named third-party counterparties, customer concentration, supplier dependencies, off-balance-sheet entities, related-party arrangements, or circularity patterns are mentioned. The section explicitly states: 'IBM does not have any plans, programs, or agreements under which payments to any of the named executive officers are triggered by a change of control of IBM.' This confirms no material contingent liabilities or systemic risk exposures in this compensation section. No risk signals or hidden leverage detected.\"\n[chunk 4/5] DEF 14A filing for IBM (2024-03-11). The document is primarily focused on executive compensation, audit committee matters, and shareholder proposals. No SIFI-material relationships with hidden leverage, circularity, revenue roundtripping, capex commitments tied to counterparties, or off-balance-sheet entities were identified in this section. IBM's China operations are mentioned in a shareholder proposal context but are described as accounting for 'only a small fraction of IBM's total global revenue,' so no SIFI materiality threshold is crossed. The long-term audit relationship with PwC (since 1958) is disclosed but represents routine third-party audit services. Membership in Business Roundtable and US Chamber of Commerce is disclosed but the filing notes IBM does not make political contributions and prohibits these organizations from using IBM funds for political expenditures. No customer or supplier concentration > 10% of revenue was identified in this narrative section. The document contains substantial discussion of climate and ESG commitments, but these are governance and disclosure matters rather than SIFI-material financial risks.\"\n[chunk 5/5] Extraction from IBM DEF 14A (2024-03-11, Accession 0001104659-24-032641) focused on the beneficial owners section and general narrative. The filing is primarily procedural/governance-focused with minimal SIFI-material content. Key findings: (1) Supplier concentration risk signal identified around IBM's mandatory environmental management requirements for first-tier suppliers since 2010, indicating significant supply chain dependency. (2) Risk disclosure regarding lack of direct control over Scope 3 emissions from global suppliers and clients. (3) Service provider dependencies identified for proxy administration (Broadridge, Computershare) and external audit (PwC). (4) No significant hidden leverage, off-balance-sheet entities, circular dependencies, capex commitments, or revenue roundtripping detected in this section. (5) Acquisition target Software AG mentioned in context of foreign exchange hedging contracts but no material details provided. (6) No AI lab investments or significant counterparty web material identified in this filing section.\""
+  }
+}

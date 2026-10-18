@@ -1,0 +1,454 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Salesforce Strategic Investments",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "<UNKNOWN>",
+          "amount_usd": 4978000000,
+          "disclosed_date": "2024-04-30",
+          "verbatim_quote": "Strategic investments 4,978"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Spiff",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce Inc."
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Slack",
+        "fields": {
+          "aliases": [
+            "Slack Technologies"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "MuleSoft",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Tableau",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Spiff",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Slack-IPO-Securities-Litigation",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Litigation / IP Risk",
+          "named_counterparties": [
+            "Slack"
+          ],
+          "severity": 2,
+          "verbatim_quote": "Beginning in September 2019, seven purported class action lawsuits were filed against Slack, its directors, certain of its officers and certain investment funds associated with certain of its directors, each alleging violations of securities laws in connection with Slack's registration statement on Form S-1"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Slack-Litigation-Material-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "named_counterparties": [
+            "Slack"
+          ],
+          "verbatim_quote": "In general, the resolution of a legal matter could prevent the Company from offering its service to others, could be material to the Company's financial condition or cash flows, or both, or could otherwise adversely affect the Company's reputation and future operating results."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Customer-Concentration-Elongated-Sales-Cycles",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "note": "Elongated sales cycles and deal compression observed in Q1 FY2025; attrition rate approximately 8% as of April 30, 2024"
+          },
+          "verbatim_quote": "In the first quarter of fiscal 2025, we continued to experience elongated sales cycles, additional deal approval layers and deal compression. Slower growth in new and renewal business, particularly if sustained, impacts our remaining performance obligation, revenues and our ability to meet financial guidance and long-term targets."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Foreign-Currency-Exposure",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "pct_of_revenue": 1,
+            "note": "FX impact on Q1 revenues approximately 1%, strengthening USD against EUR, GBP, JPY"
+          },
+          "verbatim_quote": "During fiscal 2024 and the first quarter of fiscal 2025, the United States Dollar strengthened significantly against certain foreign currencies in the markets in which operate, particularly against the Euro, British Pound Sterling and Japanese Yen. The impact of foreign currency fluctuations could impact our near-term results and ability to accurately predict our future results and earnings."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM_LEASE_CONCENTRATION",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 4400000000,
+            "duration_yrs": 1,
+            "note": "Noncancellable minimum lease payments of $4.4B; $780M due in 9 months"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of April 30, 2024, the future noncancellable minimum payments under these commitments were approximately $4.4 billion, with payments of $780 million due in the next nine months and $3.6 billion due thereafter."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM_INFRA_CAPEX_OPACITY",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Infrastructure capex plans flexible; 'strategy may continue to change' with potential slowdown"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "While we continue to make investments in our infrastructure, including offices, information technology and data centers, as well as investments with infrastructure service providers, to provide capacity for the growth of our business, our strategy may continue to change related to these investments and we may slow the pace of our investments."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM_STRATEGIC_INVESTMENTS_CONCENTRATION",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 5000000000,
+            "pct_of_assets": 15,
+            "counterparty_count": 400,
+            "note": "Two private investments >5% of portfolio, 15% in aggregate; carrying value $5B"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of April 30, 2024, our strategic investment portfolio consisted of investments in over 400 companies with a combined carrying value of $5.0 billion, including two privately held investments with carrying values that were individually greater than five percent of the total strategic investments portfolio and represented 15 percent of the portfolio in aggregate."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM_PRIVATE_EQUITY_IMPAIRMENT_RISK",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 4762000000,
+            "note": "Privately held securities carrying value $4.76B; $617M cumulative unrealized losses"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Fluctuations in the value of our privately held equity securities are only recorded when there is an observable transaction for a same or similar security of the same issuer, or in the event of impairment. We anticipate future volatility in our condensed consolidated statement of operations due to changes in market prices, observable price changes and impairments of our strategic investments."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Slack",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Salesforce-Strategic-Portfolio",
+        "fields": {
+          "investor": "Salesforce",
+          "target": "Multiple Private Companies",
+          "equity_pct": null,
+          "amount_usd": null,
+          "verbatim_quote": "Our ten largest privately held equity securities represent 38 percent of our total strategic investments as of April 30, 2024."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Salesforce-Investment-Concentration",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": null,
+            "amount_usd": 124000000,
+            "note": "Top 10 private investments represent 38% of total strategic investment portfolio; 10% decline in enterprise value would result in ~$124M impairment"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Our ten largest privately held equity securities represent 38 percent of our total strategic investments as of April 30, 2024. If the enterprise value of the companies in which we hold those securities decreased by ten percent, the carrying value of our investment portfolio would have declined by approximately $124 million."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Salesforce-Investment-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Strategic Investment Portfolio Risk",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "All of our investments, particularly those in privately held companies, are therefore subject to a risk of partial or total loss of invested capital."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Salesforce-Acquisition-Integration-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Acquisition Integration and Execution Risk",
+          "named_counterparties": [
+            "Slack"
+          ],
+          "severity": 4,
+          "verbatim_quote": "In July 2021, we completed our acquisition of Slack, our largest acquisition to date. Slack is a relatively new category of business technology in a rapidly evolving market for software, programs and tools used by knowledge workers. We may not succeed in enhancing and improving the features, integrations and capabilities of Slack, or effectively introduce compelling new features, integrations and capabilities that reflect or anticipate the changing nature of the market which may result in an inability to attract new users and organizations and increase revenue from existing paid customers."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Salesforce-Third-Party-Dependency",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Third-Party Service Provider Dependency",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Any interruptions or delays in services from third parties, including data center hosting facilities, cloud computing platform providers and other hardware and software vendors, or from our inability to adequately plan for and manage service interruptions or infrastructure capacity requirements, could impair the delivery of our services and harm our business."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Salesforce-Cybersecurity-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Cybersecurity and Data Breach Risk",
+          "named_counterparties": [],
+          "severity": 4,
+          "verbatim_quote": "If our security measures or those of our third-party data center hosting facilities, cloud computing platform providers or third-party service partners, or the underlying infrastructure of the Internet are breached, and unauthorized access is obtained to a customer's data, our data or our IT systems, or authorized access is blocked or disabled, our services may be perceived as not being secure, customers may curtail or stop using our services, and we may incur significant reputational harm, legal exposure and liabilities, or a negative financial impact."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Salesforce-AI-Ethics-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "AI Ethics and Regulatory Risk",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "We are increasingly building AI into many of our offerings, including generative AI. As with many innovations, AI and our Customer 360 platform present additional risks and challenges that could affect their adoption and therefore our business. For example, the development of AI and Customer 360, the latter of which provides information regarding our customers' customers, presents emerging ethical issues."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Salesforce-AI-Cost-Opacity",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Unquantified incremental costs for AI development, testing, licensing, and deployment"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Uncertainty around new and emerging AI applications such as generative AI content creation will require additional investment in the licensing or development of proprietary datasets, machine learning models and systems to test for accuracy, bias and other variables, which are often complex, may be costly and could impact our profit margin."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Salesforce-Regulatory-Data-Transfer-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Regulatory and Data Transfer Risk",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "On July 16, 2020, the Court of Justice of the European Union (CJEU) invalidated the EU-U.S. Privacy Shield Framework, one of the mechanisms that allowed companies, including Salesforce, to transfer personal data from the European Economic Area (EEA) to the United States."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Salesforce-Debt-Service-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Debt Service and Leverage Risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "As of April 30, 2024, we had a substantial level of outstanding debt, including our Senior Notes. We are also party to the Revolving Loan Credit Agreement, which provides for our $3.0 billion Credit Facility."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Spiff",
+        "fields": {
+          "role": "subsidiary"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Spiff",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "amount_usd": 419000000,
+          "acquisition_date": "February 2024",
+          "consideration_form": "primarily cash ($374M) plus stock consideration"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Slack",
+        "predicate": "SPONSORS"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "MuleSoft",
+        "predicate": "SPONSORS"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Tableau",
+        "predicate": "SPONSORS"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Spiff",
+        "predicate": "SPONSORS"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "risk_factor",
+        "target_name": "Slack-IPO-Securities-Litigation",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Slack-Litigation-Material-Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Customer-Concentration-Elongated-Sales-Cycles",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Foreign-Currency-Exposure",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Slack",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Spiff",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Salesforce-Investment-Concentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Salesforce-AI-Cost-Opacity",
+        "predicate": "HAS_RISK_SIGNAL"
+      }
+    ],
+    "notes": "[chunk 1/5] FILING REVIEW: Salesforce 10-Q (Q1 FY2025, filed 2024-05-30). This is a CRM company 10-Q with primarily financial statement data and minimal narrative content in the provided section. The document contains standard business description (cloud CRM platform), segment information (one consolidated operating segment), and standard financial information sections. NO SIFI-material entities extracted because: (1) No customer concentration >10% named; (2) No supplier concentration identified; (3) No circularity or roundtripping relationships disclosed; (4) No off-balance-sheet SPVs, VIEs, or project finance arrangements mentioned; (5) No capex commitments to specific counterparties; (6) Strategic investments footnote references $4.978B in 'Strategic investments' on balance sheet (line item) but does NOT enumerate individual portfolio companies or private lab stakes in the provided text. The note to line item mentions 'crm:StrategicInvestmentsMember crm:InvestmentConcentrationRiskMember crm:TwoPrivatelyHeldInvestmentsMember' but actual company names and amounts are not in the excerpt provided. Without explicit investment roster (like NVIDIA's Note 8), cannot extract individual investment nodes. Slack litigation is a named lawsuit (crm:SlackLitigationMember) but is routine IP/competition dispute, not SIFI-material. Recommend re-submission of full Item 8 Notes to Consolidated Financial Statements (especially investment footnote) for complete counterparty mapping.\"\n[chunk 2/5] Salesforce 10-Q filing (May 30, 2024) extraction. This is a largely benign narrative section with minimal SIFI-material content. Key findings: (1) No customer concentration >10% of revenue or accounts receivable \u2014 baseline healthy diversification. (2) Strategic investment portfolio concentration flagged: TWO investments each >5% of portfolio, ~15% in aggregate as of April 30, 2024 \u2014 but NO NAMES OR COUNTERPARTIES disclosed for these investments. (3) Spiff acquisition ($419M, February 2024) is routine tuck-in, immaterial to financials, no leverage or counterparty risk. (4) Operating leases ~$3.5B total maturities, finance leases ~$922M \u2014 standard real estate and equipment commitments, no RVGs or unusual terms disclosed. (5) Goodwill $48.9B (94% non-deductible) \u2014 large but within normal range for software/SaaS acquirer; no impairment signals in this Q. (6) Debt $9.5B (ladder maturity, investment-grade spreads, $3B undrawn revolver) \u2014 no concerning leverage. (7) Strategic investment portfolio $4.9B marked-to-market, mostly unobservable (Level 3); $436M in unconsolidated VIEs noted but no detail on VIE sponsors, terms, or residual guarantees. RISK SIGNALS NOT EXTRACTED: The two unnamed strategic investments >5% each are potential CUSTOMER_CONCENTRATION or SUPPLIER_CONCENTRATION issues if they are cloud infrastructure providers or AI labs, but without names we cannot flag. Standard boilerplate on warranties, indemnification, taxation, currency hedging \u2014 all skipped. Real estate restructuring ($2B+ charges across FY24\u201326) is operational, not SIFI-material.\"\n  }\n]\n[chunk 3/5] SIFI-Material Extraction Summary: Salesforce 10-Q (2024-05-30). Identified subsidiary relationships (Slack, MuleSoft, Tableau, Spiff) and three SIFI-material risk signals: (1) Slack IPO securities litigation with potential material impact to reputation/operations, ongoing since 2019 with Supreme Court ruling in June 2023 remanding to Ninth Circuit; (2) Customer concentration risk evidenced by elongated sales cycles, deal compression, and additional approval layers in Q1 FY2025\u2014metrics include 8% attrition rate and slowdown in new/renewal business impacting RPO; (3) Foreign currency exposure with USD strength reducing FX-sensitive revenue by ~1% in Q1 and potential to impact future results significantly given 24% of revenue from Europe and 10% from Asia Pacific. Remaining Performance Obligation (RPO) of $53.9B (up 15% YoY) is a key metric but not SIFI-material in isolation. Stock repurchases ($2.1B in Q1) and dividend initiation ($388M paid in April 2024) noted but not SIFI-level concentration. No off-balance-sheet arrangements disclosed. Slack litigation is the most material issue\u2014unresolved since 2019 with cascading legal exposure across federal and state proceedings, though currently stayed pending Ninth Circuit ruling post-SCOTUS remand.\"\n[chunk 4/5] Salesforce 10-Q filing (2024-05-30) Item 1 Business and Item 3 Market Risk sections. Key SIFI signals: (1) $4.4B noncancellable lease obligations with lumpy payment schedule ($780M in 9 months) suggests infrastructure capex tied to uncertain ROI; (2) Flexible capex strategy with potential slowdown signals execution risk; (3) $5B strategic investment portfolio with concentration risk: two unnamed private investments represent 15% in aggregate, above 10% material threshold\u2014these may include AI labs but are not named in this excerpt; (4) Privately held securities use mark-to-observable-transaction accounting, creating impairment cliff risk ($617M cumulative losses on $4.76B carrying value). No named strategic investments (OpenAI, Anthropic, xAI, etc.) are disclosed in this excerpt, so no investment edges can be extracted. No supplier/customer concentration disclosed beyond the lease obligations.\"\n[chunk 5/5] Extracted SIFI-material entities from Salesforce Q1 FY2025 10-Q (filed May 30, 2024). Key findings: (1) Investment Concentration Risk: Salesforce's top 10 private equity holdings represent 38% of total strategic investment portfolio, with estimated $124M impairment risk on 10% valuation decline. Named investees not disclosed in this excerpt, but portfolio includes early-to-late stage companies in enterprise cloud and system integration. (2) Slack Integration Risk: Largest acquisition (July 2021) in rapidly evolving category; execution risk on feature development and revenue growth. (3) Cost Opacity - AI: Unquantified incremental costs for AI licensing, dataset development, and deployment (\"may be costly and could impact our profit margin\"). (4) Third-party Dependency: Revenue recognition depends on successful integration of third-party applications, data, and content; no warranty provided for third-party components. (5) Debt Service: $3.0B revolving credit facility available in addition to Senior Notes; fixed lease and infrastructure costs limit flexibility. (6) Regulatory Risk: EU data transfer framework uncertainty post-CJEU Privacy Shield invalidation; GDPR and emerging DSA/AI Act compliance burden. No hidden leverage (SPVs, off-balance leases) identified in this excerpt. No evidence of circular dependencies or revenue roundtripping with specific counterparties named in narrative sections provided.\""
+  }
+}

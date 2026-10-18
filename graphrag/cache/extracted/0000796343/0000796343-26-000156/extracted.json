@@ -1,0 +1,336 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Semrush",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Adobe-Semrush-Acquisition",
+        "fields": {
+          "investor": "Adobe",
+          "target": "Semrush",
+          "amount_usd": 1870000000,
+          "disclosed_date": "2026-04-28",
+          "verbatim_quote": "On April 28, 2026, we completed the acquisition of Semrush Holdings, Inc. (\"Semrush\"), a publicly held brand visibility platform company, for $1.87 billion, primarily in cash consideration."
+        }
+      },
+      {
+        "type": "company",
+        "name": "ADBE",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "Adobe Inc.",
+            "Adobe"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Topaz Labs",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Semrush",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Figma",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Topaz_Labs_340M",
+        "fields": {
+          "filer": "ADBE",
+          "amount_usd": 340000000,
+          "counterparty": "Topaz Labs",
+          "purpose": "Acquisition of AI company specializing in video and image enhancement models",
+          "verbatim_quote": "we entered into a definitive agreement to acquire Topaz Labs Inc., a privately-held AI company specializing in video and image enhancement models, for approximately $340 million, primarily in cash consideration"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Semrush_Acquisition",
+        "fields": {
+          "filer": "ADBE",
+          "counterparty": "Semrush",
+          "purpose": "Acquisition completed in Q2 fiscal 2026",
+          "verbatim_quote": "our acquisition of Semrush in the second quarter of fiscal 2026"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Semrush",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Topaz Labs",
+        "fields": {
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "aliases": [
+            "ADBE Inc.",
+            "Adobe Inc."
+          ]
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Privacy_Data_Protection_Compliance",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Regulatory & Compliance Risk",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "We are subject to global data protection, privacy and security laws, regulations and codes of conduct that relate to our various business units and data processing activities, which may include sensitive, confidential, and personal information. These laws, regulations and codes are increasing in number, expanding in scope, inconsistent across jurisdictions and subject to evolving and differing (sometimes conflicting) interpretations."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "EU_Cross_Border_Data_Transfer_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Regulatory & Operational Risk",
+          "named_counterparties": [
+            "EU",
+            "European Commission",
+            "UK"
+          ],
+          "severity": 3,
+          "verbatim_quote": "European data transfers outside the European Economic Area are highly regulated and litigated. The mechanisms that we and many other companies rely upon for European data transfers (for example, Standard Contractual Clauses and the EU - US Data Privacy Framework) are the subject of legal challenge, regulatory interpretation and judicial decisions by the Court of Justice of the European Union."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Government_Procurement_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Operational & Compliance Risk",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 2,
+          "verbatim_quote": "We provide solutions, directly and indirectly, to a variety of domestic and foreign government entities, which introduces certain risks and challenges not present in private commercial agreements, including varying governmental budgeting processes; changes in governmental administrations and policies; fluctuations due to government spending cuts and shutdowns; and highly competitive and lengthy bidding process that may be subject to political influence."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Intellectual_Property_Generative_AI_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "IP & Technology Risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Due to challenges in detecting patent infringement pertaining to generative AI technologies, it may be more difficult to protect our generative AI and related innovations with patents. Additionally, if we use generative AI in the creation of our source code or other materials or inventions, we may not be able to rely on copyrights or patents to protect such intellectual property."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Goodwill_Impairment_Signal",
+        "fields": {
+          "filer": "Adobe",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {},
+          "named_counterparties": [],
+          "verbatim_quote": "In the second quarter of fiscal 2026, we recorded a goodwill impairment charge related to our Publishing & Advertising reporting unit."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Subscription_Revenue_Decline_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Revenue & Financial Performance Risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "If our customers do not renew their subscriptions or if they renew on terms less favorable to us, our revenue may decline. Further, such impact on our revenue may not be immediately reflected in our financial results in the period in which our renewal rates changed and may adversely affect our financial results in future periods."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Debt_Covenant_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Financial Risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Our senior unsecured notes, commercial paper program and revolving credit agreement impose restrictions on us and require us to maintain compliance with specified covenants. Our ability to comply with these covenants may be affected by events beyond our control. If we breach any of the covenants and do not obtain a waiver from the noteholders or lenders, then, subject to applicable cure periods, any outstanding debt may be declared immediately due and payable."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Geopolitical_FX_Risk",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Market & Geopolitical Risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Geopolitical and economic events, including war, trade disputes, tariffs, economic sanctions and emerging market volatility, and associated uncertainty have caused, and may in the future cause, currencies to fluctuate."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Data_Center_Geographic_Concentration",
+        "fields": {
+          "filer": "Adobe",
+          "category": "Operational Risk",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Our corporate headquarters, significant research and development activity, certain of our data centers and other critical business operations are in the San Francisco Bay Area and the Salt Lake Valley Area, both of which are near major earthquake faults."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "company",
+        "target_name": "Semrush",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "ADBE",
+        "target_type": "capex_commitment",
+        "target_name": "Topaz_Labs_340M"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "ADBE",
+        "target_type": "capex_commitment",
+        "target_name": "Semrush_Acquisition"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "company",
+        "target_name": "Semrush",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition",
+          "date": "April 2026",
+          "consideration": "not specified"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "company",
+        "target_name": "Topaz Labs",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "transaction_type": "acquisition_announced",
+          "date": "June 24, 2026",
+          "amount_usd": 340000000,
+          "status": "expected to close Q4 FY2026"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Privacy_Data_Protection_Compliance",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "EU_Cross_Border_Data_Transfer_Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Government_Procurement_Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Intellectual_Property_Generative_AI_Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Goodwill_Impairment_Signal",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Subscription_Revenue_Decline_Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Debt_Covenant_Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Geopolitical_FX_Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Adobe",
+        "target_type": "risk_factor",
+        "target_name": "Data_Center_Geographic_Concentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      }
+    ],
+    "notes": "[chunk 1/4] This 10-Q (filed 2026-09-22 for period ending 2026-08-28) contains Adobe's Q3 FY2026 financial statements. The source text provided is primarily XBRL metadata and the opening pages of the 10-Q form (cover page, table of contents, and Notes 1-6 to the condensed consolidated financial statements). Note 3 discloses the Semrush acquisition completed on 2026-04-28 for $1.87B in cash. The acquisition is material (goodwill of $1.25B, intangible assets of $582M). No other SIFI-material counterparties, investments, or hidden leverage structures are visible in the provided text excerpt. The document shows standard business segments (Creative & Marketing Professionals, Business Professionals & Consumers) with no concentration risk >10%, standard derivative hedging activities (FX forwards, interest rate swaps), and routine debt/capital structure disclosures. No off-balance-sheet entities, circular dependencies, revenue roundtripping, or execution gaps are disclosed in this excerpt.\"\n[chunk 2/4] ADBE 10-Q filing (2026-09-22) extract from Notes to Consolidated Financial Statements. The source text contains primarily routine derivative hedging disclosures, goodwill/intangibles accounting, stock-based compensation, and legal proceedings. Two acquisitions are disclosed as SIFI-material capex commitments: (1) Topaz Labs ($340M, pending close Q4 FY2026), an AI company for video/image enhancement\u2014material to monitor as part of ADBE's AI strategy expansion; (2) Semrush (completed Q2 FY2026)\u2014adds to disclosed goodwill of $14.04B as of Aug 28, 2026, up from $12.86B. Goodwill impairment of $70M was recorded in Publishing & Advertising segment. Legal risk noted: FTC/DOJ subscription disclosure settlement (settled Mar 2026); securities class action vs. officers/board re: Figma competition disclosures (motion to dismiss granted Mar 2025, under appeal); multiple derivative actions alleging breach of fiduciary duty. These legal matters do not meet SIFI materiality threshold (no counterparty concentration, leverage, or systemic risk vectors). No hidden leverage, off-balance-sheet entities, circularity, or revenue roundtripping detected in this excerpt. Derivative hedging activity ($104M asset / $95M liability derivatives) is routine FX and interest-rate management, not SIFI-material.\"\n[chunk 3/4] FILING ANALYSIS: Adobe 10-Q Q3 FY2026 (filed Sept 22, 2026). SIFI-MATERIAL FINDINGS: Limited direct SIFI signals in this narrative section. Adobe is a pure SaaS/software-as-a-service provider with subscription-heavy model (97% of revenue from subscriptions). No major hidden leverage, off-balance entities, or circularity patterns evident. PRIMARY MATERIAL ITEMS EXTRACTED: (1) Semrush acquisition (April 2026) \u2013 enhances Adobe Experience Manager with SEO/GEO capabilities. No deal value disclosed in narrative. (2) Topaz Labs acquisition (June 24, 2026) \u2013 announced $340M cash deal for AI video/image enhancement, expected Q4 closing. (3) Commercial paper program \u2013 $250M outstanding (of $3B facility) as of Aug 28, 2026, weighted avg rate 3.77%. (4) Senior notes \u2013 $6.15B outstanding; $1.35B classified as current (due Feb 1, 2027 & Apr 4, 2027); Adobe states intent to refinance. RISK SIGNALS NOTED (but not SIFI-critical): (a) Heavy AI/generative AI capex (mentioned as increasing hosting and data center costs 22% QoQ for subscriptions); (b) Competitive pressure from generative AI entrants; (c) Regulatory risk (EU AI Act compliance, evolving AI regs); (d) Reputational risk around AI content misuse; (e) Goodwill impairment ($70M) in Publishing & Advertising unit suggests prior M&A integration challenges. CUSTOMER CONCENTRATION: Not explicitly disclosed in this section; revenue split: Creative & Marketing Professionals 69% ($4.65B Q3), Business Professionals & Consumers 29% ($1.91B Q3). No single customer > 10% disclosed. NO MATERIAL OFF-BALANCE ENTITIES, SPVS, JVS, OR OPERATING LEASES WITH RVGs identified in this narrative. CASH POSITION: $4.36B cash + $1.28B short-term investments = $5.64B liquidity. Operating cash flow strong ($7.65B YTD). Stock repurchase active ($6.82B in 9M). Overall financial position solid. VERDICT: Adobe represents LOW SIFI risk from this filing section. The company is not a hyperscaler, not deeply embedded in AI infrastructure funding circularity, and shows no hidden leverage or material counterparty concentration with SIFI actors. Acquisitions (Semrush, Topaz Labs) are tuck-in strategic adds, not transformative. Monitoring recommendation: Track AI capex scaling and any future partnerships with hyperscalers (NVIDIA, Microsoft, etc.) that could create revenue roundtripping or execution risk.\n[chunk 4/4] Adobe 10-Q (Q3 FY2026, filed 2026-09-22). Extraction focuses on SIFI-material risks and operational factors. Key findings: (1) Goodwill impairment charge in Publishing & Advertising segment indicates valuation pressure; (2) Heavy exposure to EU data transfer regulations with legal/operational implications; (3) Geographic concentration of critical infrastructure (Bay Area + Salt Lake Valley) near earthquake faults introduces catastrophic operational risk; (4) Subscription business model with renewal attrition exposure creates forward revenue visibility risk; (5) Generative AI IP protection challenges noted as material; (6) Government contracting exposure with procurement complexity. Debt position: $6.15B senior notes + $250M commercial paper outstanding. No major counterparty dependencies, customer concentration, or hidden leverage structures apparent in this excerpt. The filing is primarily boilerplate risk disclosures and does not contain specific related-party arrangements, investments, or SPV structures that would trigger SIFI monitoring flags. The goodwill impairment signal is the most substantive SIFI indicator, suggesting prior acquisition(s) have not delivered expected returns and may warrant deeper investigation into the Publishing & Advertising segment's viability."
+  }
+}

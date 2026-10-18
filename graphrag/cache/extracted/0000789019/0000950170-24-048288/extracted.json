@@ -1,0 +1,926 @@
+{
+  "part1_item1": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "aliases": [
+            "MSFT"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Inflection",
+        "fields": {
+          "aliases": [
+            "Inflection AI",
+            "Inflection AI, Inc."
+          ],
+          "private": true,
+          "known_backers": [
+            "Microsoft",
+            "Greylock Ventures"
+          ]
+        }
+      },
+      {
+        "type": "investment",
+        "name": "MSFT-Inflection-IP-License",
+        "fields": {
+          "investor": "Microsoft",
+          "target": "Inflection",
+          "round": "IP license / strategic",
+          "disclosed_date": "2024-03",
+          "verbatim_quote": "In March 2024, we entered into an agreement with Inflection AI, Inc. (\"Inflection\"), pursuant to which we obtained a non-exclusive license to Inflection's intellectual property. Reid Hoffman, a member of our Board of Directors, is a co-founder of and serves on the board of directors of Inflection."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "MSFT-Capex-9M-FY2024",
+        "fields": {
+          "filer": "Microsoft",
+          "amount_usd": 30604000000,
+          "duration_yrs": 0.75,
+          "start_fy": 2024,
+          "purpose": "Additions to property and equipment (data center, AI infrastructure build-out)",
+          "verbatim_quote": "Additions to property and equipment (10,952) (6,607) (30,604) (19,164)"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-Capex-ROI-Gap",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 30604000000,
+            "note": "PP&E additions of $30.6B in 9M FY2024 vs $19.2B prior-year period, a 60% YoY surge, driven by AI infrastructure build-out; depreciation/amortization also jumped from $10.0B to $15.9B over the same 9M period"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Additions to property and equipment (30,604) (19,164) ... Depreciation, amortization, and other 15,907 9,987"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-Inflection-Related-Party-Circularity",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "CIRCULARITY",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Board member Reid Hoffman is co-founder and board member of Inflection; Reprogrammed Interchange LLC and Greylock Ventures (entities Hoffman may beneficially own) each held <10% equity in Inflection at deal close"
+          },
+          "named_counterparties": [
+            "Inflection"
+          ],
+          "verbatim_quote": "Reid Hoffman, a member of our Board of Directors, is a co-founder of and serves on the board of directors of Inflection. As of the date of the agreement with Inflection, Reprogrammed Interchange LLC (\"Reprogrammed\") and entities affiliated with Greylock Ventures (\"Greylock\") each held less than a 10% equity interest in Inflection."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-VIE-Non-Consolidation",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 10225000000,
+            "note": "Equity investments without readily determinable fair values ('Other' category) were $10.2B as of March 31, 2024 (up from $7.2B at June 30, 2023); Microsoft states it is not the primary beneficiary of any VIE investments and does not consolidate them"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We have determined we are not the primary beneficiary of any of our VIE investments. Therefore, our VIE investments are not consolidated and the majority are accounted for under the equity method of accounting."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-Server-Component-Receivables",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 10100000000,
+            "note": "Other receivables related to activities to facilitate the purchase of server components were $10.1B at March 31, 2024 (up from $9.2B at June 30, 2023) \u2014 likely supplier financing / back-to-back supply intermediation that may obscure true capex and supply-chain concentration"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of March 31, 2024 and June 30, 2023, other receivables related to activities to facilitate the purchase of server components were $10.1 billion and $9.2 billion, respectively, and are included in other current assets in our consolidated balance sheets."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "MSFT-Activision-Goodwill-Opacity",
+        "fields": {
+          "filer": "Microsoft",
+          "category": "COST_OPACITY",
+          "named_counterparties": [
+            "Activision Blizzard"
+          ],
+          "severity": 2,
+          "verbatim_quote": "Goodwill was assigned to our More Personal Computing segment... Includes goodwill of $51.0 billion related to Activision Blizzard... The primary areas that remain preliminary relate to the fair values of goodwill, intangible assets, and income taxes."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-Equity-Investment-Impairments",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 199000000,
+            "note": "Equity investment impairments of $199M in 9M FY2024 vs $16M prior-year period \u2014 12x increase; combined with $792M 'Other, net' loss in OI&E primarily from equity-method investment losses"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Impairments of investments (199) (16) ... Other, net (486) (93) (792) (162) ... Other, net primarily reflects net recognized losses on equity method investments."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "MSFT-Finance-Leases-Datacenter",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Microsoft",
+          "beneficiary": "Microsoft",
+          "debt_stack_usd": 22905000000,
+          "term_yrs": 12,
+          "purpose": "Datacenter finance leases (on-balance sheet) plus $87.8B uncommenced finance leases primarily for datacenters",
+          "verbatim_quote": "As of March 31, 2024, we had additional operating and finance leases, primarily for datacenters, that had not yet commenced of $8.4 billion and $87.8 billion, respectively. These operating and finance leases will commence between fiscal year 2024 and fiscal year 2030 with lease terms of 1 year to 20 years."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "MSFT-Operating-Leases-Uncommenced",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Microsoft",
+          "beneficiary": "Microsoft",
+          "debt_stack_usd": 8400000000,
+          "term_yrs": 20,
+          "purpose": "Uncommenced operating leases primarily for datacenters, commencing FY2024\u2013FY2030",
+          "verbatim_quote": "As of March 31, 2024, we had additional operating and finance leases, primarily for datacenters, that had not yet commenced of $8.4 billion and $87.8 billion, respectively. These operating and finance leases will commence between fiscal year 2024 and fiscal year 2030 with lease terms of 1 year to 20 years."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-Uncommenced-Finance-Lease-Hidden-Leverage",
+        "fields": {
+          "filer": "MSFT",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 87800000000,
+            "note": "$87.8B uncommenced finance leases (primarily datacenters) not yet on balance sheet as of March 31, 2024; current on-balance finance lease liabilities are $22.9B. Total prospective finance lease obligation ~$110B+."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of March 31, 2024, we had additional operating and finance leases, primarily for datacenters, that had not yet commenced of $8.4 billion and $87.8 billion, respectively. These operating and finance leases will commence between fiscal year 2024 and fiscal year 2030 with lease terms of 1 year to 20 years."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-Capex-ROI-Gap-Datacenter",
+        "fields": {
+          "filer": "MSFT",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 87800000000,
+            "note": "$87.8B in uncommenced finance leases for datacenters represent contracted future obligations without matched disclosed contracted revenue. Remaining performance obligations of $242B provide partial offset but are not specifically matched to datacenter capacity."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of March 31, 2024, we had additional operating and finance leases, primarily for datacenters, that had not yet commenced of $8.4 billion and $87.8 billion, respectively. These operating and finance leases will commence between fiscal year 2024 and fiscal year 2030 with lease terms of 1 year to 20 years."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-IRS-Tax-Liability-Signal",
+        "fields": {
+          "filer": "MSFT",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 28900000000,
+            "note": "IRS seeking $28.9B additional tax payment plus penalties and interest for tax years 2004\u20132013 related to intercompany transfer pricing. Unrecognized tax benefits of $23.8B on balance sheet as of March 31, 2024."
+          },
+          "named_counterparties": [
+            "USG"
+          ],
+          "verbatim_quote": "In the NOPAs, the IRS is seeking an additional tax payment of $28.9 billion plus penalties and interest. As of March 31, 2024, we believe our allowances for income tax contingencies are adequate. We disagree with the proposed adjustments and will vigorously contest the NOPAs through the IRS's administrative appeals office."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "MSFT-IRS-Transfer-Pricing-Risk",
+        "fields": {
+          "filer": "MSFT",
+          "category": "Tax / Transfer Pricing",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 3,
+          "verbatim_quote": "With respect to the audit for tax years 2004 to 2013, on September 26, 2023, we received Notices of Proposed Adjustment (\"NOPAs\") from the IRS. The primary issues in the NOPAs relate to intercompany transfer pricing. In the NOPAs, the IRS is seeking an additional tax payment of $28.9 billion plus penalties and interest."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "MSFT-Uncommenced-Finance-Leases-$87.8B",
+        "fields": {
+          "filer": "MSFT",
+          "amount_usd": 87800000000,
+          "duration_yrs": 20,
+          "start_fy": 2024,
+          "purpose": "Uncommenced finance leases primarily for datacenters, commencing FY2024\u2013FY2030",
+          "verbatim_quote": "As of March 31, 2024, we had additional operating and finance leases, primarily for datacenters, that had not yet commenced of $8.4 billion and $87.8 billion, respectively. These operating and finance leases will commence between fiscal year 2024 and fiscal year 2030 with lease terms of 1 year to 20 years."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "MSFT-Uncommenced-Operating-Leases-$8.4B",
+        "fields": {
+          "filer": "MSFT",
+          "amount_usd": 8400000000,
+          "duration_yrs": 20,
+          "start_fy": 2024,
+          "purpose": "Uncommenced operating leases primarily for datacenters, commencing FY2024\u2013FY2030",
+          "verbatim_quote": "As of March 31, 2024, we had additional operating and finance leases, primarily for datacenters, that had not yet commenced of $8.4 billion and $87.8 billion, respectively. These operating and finance leases will commence between fiscal year 2024 and fiscal year 2030 with lease terms of 1 year to 20 years."
+        }
+      },
+      {
+        "type": "company",
+        "name": "USG",
+        "fields": {
+          "role": "regulator"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "ailab",
+        "target_name": "Inflection"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "investment",
+        "source_name": "MSFT-Inflection-IP-License",
+        "target_type": "ailab",
+        "target_name": "Inflection"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "capex_commitment",
+        "target_name": "MSFT-Capex-9M-FY2024"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-Capex-ROI-Gap"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-Inflection-Related-Party-Circularity"
+      },
+      {
+        "predicate": "CIRCULAR_WITH",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "ailab",
+        "target_name": "Inflection"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-VIE-Non-Consolidation"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-Server-Component-Receivables"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "risk_factor",
+        "target_name": "MSFT-Activision-Goodwill-Opacity"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-Equity-Investment-Impairments"
+      },
+      {
+        "predicate": "SPONSORS",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "off_balance_entity",
+        "target_name": "MSFT-Finance-Leases-Datacenter"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "off_balance_entity",
+        "target_name": "MSFT-Finance-Leases-Datacenter"
+      },
+      {
+        "predicate": "SPONSORS",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "off_balance_entity",
+        "target_name": "MSFT-Operating-Leases-Uncommenced"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "off_balance_entity",
+        "target_name": "MSFT-Operating-Leases-Uncommenced"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-Uncommenced-Finance-Lease-Hidden-Leverage"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-Capex-ROI-Gap-Datacenter"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-IRS-Tax-Liability-Signal"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "capex_commitment",
+        "target_name": "MSFT-Uncommenced-Finance-Leases-$87.8B"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "capex_commitment",
+        "target_name": "MSFT-Uncommenced-Operating-Leases-$8.4B"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "risk_factor",
+        "target_name": "MSFT-IRS-Transfer-Pricing-Risk"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "MSFT-IRS-Transfer-Pricing-Risk",
+        "target_type": "company",
+        "target_name": "USG"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "MSFT-IRS-Tax-Liability-Signal",
+        "target_type": "company",
+        "target_name": "USG"
+      }
+    ],
+    "notes": "[chunk 1/2] Filing: MSFT 10-Q for Q3 FY2024 (period ending March 31, 2024). Key extractions:\n\n1. INFLECTION RELATED-PARTY: Microsoft obtained a non-exclusive IP license from Inflection AI in March 2024. Board member Reid Hoffman co-founded Inflection and sits on its board; entities he may beneficially own held <10% equity. Classic governance/circularity risk \u2014 board member's portfolio company becomes a Microsoft IP licensor. Severity 3.\n\n2. CAPEX SURGE: PP&E additions of $30.6B in 9M FY2024 vs $19.2B prior-year period (+60% YoY). Depreciation, amortization & other jumped from $10.0B to $15.9B over the same period. No specific named counterparty for the bulk of capex in this filing section (OpenAI commitment details not restated here). Severity 3.\n\n3. VIE NON-CONSOLIDATION: Microsoft explicitly states it is not the primary beneficiary of any VIE investment and does not consolidate them. Equity investments \"Other\" category (equity method + measurement alternative) grew from $7.2B to $10.2B \u2014 a $3B increase in 9 months, likely including the OpenAI equity stake at cost/equity method. Severity 2.\n\n4. SERVER-COMPONENT RECEIVABLES: $10.1B in \"other receivables related to activities to facilitate the purchase of server components\" \u2014 an unusual balance sheet item that likely represents MSFT acting as intermediary/guarantor for supplier financing, obscuring true capex and concentration. Severity 2.\n\n5. ACTIVISION GOODWILL OPACITY: $51B of goodwill from Activision remains \"preliminary\" as of this filing. Substantially all non-deductible for tax. Severity 2.\n\n6. EQUITY IMPAIRMENTS: $199M in equity investment impairments in 9M FY2024 vs $16M prior year, plus $792M in \"Other, net\" losses primarily from equity-method losses \u2014 signals stress in private portfolio. Severity 2.\n\nNo SPVs or off-balance-sheet project finance structures were explicitly named in this section of the filing. The OpenAI $13B+ investment is not restated as a specific line item in this quarterly note but is embedded in the equity investments \"Other\" category ($10.2B measurement-alternative bucket).\n[chunk 2/2] Key findings from MSFT 10-Q (filed 2024-04-25, period ending March 31, 2024):\n\n1. HIDDEN LEVERAGE (Severity 4): $87.8B in uncommenced finance leases + $8.4B uncommenced operating leases, primarily for datacenters, not yet on balance sheet. Existing on-balance finance lease liabilities are $22.9B and operating lease liabilities are $17.9B. Combined future datacenter lease obligations exceed $116B. These leases commence FY2024\u2013FY2030 with terms up to 20 years.\n\n2. CAPEX ROI GAP (Severity 3): The $87.8B uncommenced finance leases represent locked-in future obligations with no specifically matched contracted revenue disclosed. Remaining performance obligations of $242B (45% recognized in next 12 months) provide partial macro-level offset but are not contract-matched to specific capacity.\n\n3. IRS TRANSFER PRICING (Severity 3): IRS seeking $28.9B additional tax payment plus penalties and interest for tax years 2004\u20132013. Unrecognized tax benefits of $23.8B on balance sheet. No near-term resolution expected.\n\n4. No named AI lab investments, OpenAI-related disclosures, or SPV/JV structures were present in this specific section of the filing. The OpenAI investment relationship would appear in other notes (e.g., Note 8 investments) not included in this excerpt.\n\n5. Commercial paper: $20.5B outstanding at 5.4% weighted average rate \u2014 routine short-term liquidity, not extracted as SIFI-material on its own."
+  },
+  "part1_item2": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "aliases": [
+            "MSFT"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Activision Blizzard",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": [
+            "Activision Blizzard Inc."
+          ]
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "MSFT-AI-Datacenter-Capex",
+        "fields": {
+          "filer": "Microsoft",
+          "purpose": "Cloud and AI infrastructure expansion, datacenter buildouts, GPU procurement for AI services",
+          "verbatim_quote": "We expect capital expenditures to increase in coming years to support growth in our cloud offerings and our investments in AI infrastructure and training."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-Capex-ROI-Gap-AI",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "The investments we are making in cloud and AI infrastructure and devices will continue to increase our operating costs and may decrease our operating margins. We expect capital expenditures to increase in coming years to support growth in our cloud offerings and our investments in AI infrastructure and training."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-GPU-Supplier-Concentration",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "Our datacenters depend on the availability of permitted and buildable land, predictable energy, networking supplies, and servers, including graphics processing units (\"GPUs\") and other components... some of our products contain certain components for which there are very few qualified suppliers. Extended disruptions at these suppliers could impact our ability to manufacture devices on time to meet consumer demand."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-Cost-Opacity-Depreciation",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "named_counterparties": [],
+          "verbatim_quote": "Gross margin percentage increased slightly. Excluding the impact of the prior year change in accounting estimate for the useful lives of our server and network equipment, gross margin percentage increased 1 point... Microsoft Cloud gross margin percentage decreased slightly to 72%. Excluding the impact of the change in accounting estimate, Microsoft Cloud gross margin percentage increased slightly."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "MSFT-IRS-Transfer-Pricing-Risk",
+        "fields": {
+          "filer": "Microsoft",
+          "category": "Tax / Legal Contingency",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 3,
+          "verbatim_quote": "On September 26, 2023, we received Notices of Proposed Adjustment (\"NOPAs\") from the IRS. The primary issues in the NOPAs relate to intercompany transfer pricing. In the NOPAs, the IRS is seeking an additional tax payment of $28.9 billion plus penalties and interest."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-Equity-Method-Losses",
+        "fields": {
+          "filer": "Microsoft",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "note": "Net recognized losses on equity method investments recognized in Other, net line; equity and other investments grew from $9.9B to $14.8B in 9 months, alongside rising impairments"
+          },
+          "verbatim_quote": "Other, net primarily reflects net recognized losses on equity method investments... Equity and other investments were $14.8 billion and $9.9 billion as of March 31, 2024 and June 30, 2023, respectively. Net recognized losses on investments increased primarily due to higher equity impairments."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "MSFT-FX-Revenue-Risk",
+        "fields": {
+          "filer": "Microsoft",
+          "category": "Foreign Currency Revenue Exposure",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Foreign currency \u2013 Revenue: 10% decrease in foreign exchange rates $(9,528) Earnings"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "MSFT-Equity-Price-Risk",
+        "fields": {
+          "filer": "Microsoft",
+          "category": "Equity Investment Price Risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Equity: Securities held in our equity investments portfolio are subject to price risk. 10% decrease in equity market prices $(1,082) Earnings"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "MSFT-Platform-Competition-Risk",
+        "fields": {
+          "filer": "Microsoft",
+          "category": "Platform Ecosystem Competition",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We face significant competition from firms that provide competing platforms... A competing vertically-integrated model, in which a single firm controls the software and hardware elements of a product and related services, has succeeded with some consumer products."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "MSFT-Windows-PC-Risk",
+        "fields": {
+          "filer": "Microsoft",
+          "category": "Windows PC Revenue Concentration & Platform Displacement",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We derive substantial revenue from licenses of Windows operating systems on PCs. We face significant competition from competing platforms developed for new devices and form factors such as smartphones and tablet computers... Competing with operating systems licensed at low or no cost may decrease our PC operating system margins."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "capex_commitment",
+        "target_name": "MSFT-AI-Datacenter-Capex"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-Capex-ROI-Gap-AI"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-GPU-Supplier-Concentration"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-Cost-Opacity-Depreciation"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-Equity-Method-Losses"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "risk_factor",
+        "target_name": "MSFT-IRS-Transfer-Pricing-Risk"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "MSFT-IRS-Transfer-Pricing-Risk",
+        "target_type": "company",
+        "target_name": "USG"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "risk_factor",
+        "target_name": "MSFT-FX-Revenue-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "risk_factor",
+        "target_name": "MSFT-Equity-Price-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "risk_factor",
+        "target_name": "MSFT-Platform-Competition-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "risk_factor",
+        "target_name": "MSFT-Windows-PC-Risk"
+      }
+    ],
+    "notes": "[chunk 1/2] \nSOURCE: Microsoft 10-Q, filed 2024-04-25 (Q3 FY2024, period ending March 31, 2024), Part I Item 2 MD&A.\n\nKEY FINDINGS:\n\n1. CAPEX ROI GAP (severity 3): Microsoft explicitly signals that capex will \"increase in coming years\" for AI infrastructure and training, but provides no committed revenue offset. Cloud gross margin already compressed slightly to 72%. No specific dollar commitment is quantified in this section (the Notes to Financial Statements were not included in this extract).\n\n2. SUPPLIER CONCENTRATION \u2013 GPUs (severity 3): Microsoft discloses datacenter dependency on GPUs from \"very few qualified suppliers\" \u2014 a clear single-source dependency signal pointing to NVIDIA dominance, though NVIDIA is not named explicitly in this section.\n\n3. COST OPACITY \u2013 Depreciation Life Change (severity 2): Multiple references to \"change in accounting estimate for the useful lives of our server and network equipment\" that flattered gross margin and operating income. The actual life-extension parameters are in the 10-K; this MD&A repeatedly strips out its effect in its \"excluding\" commentary, signaling it was material to headline numbers.\n\n4. IRS TAX CONTINGENCY (severity 3): $28.9B proposed IRS adjustment for tax years 2004\u20132013 on intercompany transfer pricing. While Microsoft disputes it, the magnitude (>40% of quarterly revenue) is SIFI-material.\n\n5. EQUITY METHOD LOSSES & INVESTMENT GROWTH: Equity and other investments surged from $9.9B to $14.8B (+$4.9B) in 9 months \u2014 likely driven by the OpenAI equity stake expansion \u2014 while \"Other, net\" shows net recognized losses on equity method investments ($486M in Q3 alone, $792M YTD). This signals the OpenAI investment may be accounted for as equity method with losses flowing through the P&L, but OpenAI is not named in this MD&A section.\n\n6. OFF-BALANCE-SHEET DISCLOSURE: Microsoft explicitly states \"We have not engaged in any related party transactions or arrangements with unconsolidated entities or other persons that are reasonably likely to materially affect liquidity or the availability of capital resources.\" This is a clean negative assertion \u2014 no off-balance-sheet SPVs extracted.\n\n7. ACTIVISION BLIZZARD: $75.4B acquisition completed October 13, 2023. Not a hidden leverage signal \u2014 fully consolidated and on-balance-sheet.\n\nLIMITATIONS: This extract covers only the MD&A narrative (Part I, Item 2). The Notes to Financial Statements (Part I, Item 1) \u2014 which would contain the OpenAI investment details, operating lease schedules, purchase obligations table, and debt note \u2014 were not provided. A complete extraction would require those notes, particularly Note 8 (investments), Note 10 (debt), and the purchase obligations footnote.\n\n[chunk 2/2] This section (MD&A Items 3\u20134, Part II Items 1\u20131A) is primarily a market risk sensitivity table and early competitive risk factor disclosure. No off-balance-sheet entities, capex commitments, SPVs, or named AI-lab/compute-provider investments are disclosed in this excerpt. Key quantitative signals extracted: FX revenue sensitivity $9.5B (10% move), equity portfolio sensitivity $1.08B (10% move), interest rate sensitivity $1.47B (100bp move), credit sensitivity $334M (100bp move). No SIFI-material hidden leverage, circularity, revenue roundtripping, or named counterparty concentration signals appear in this text block. The filing sections covering OpenAI investment, Azure capex buildout, and off-balance-sheet obligations would appear in other sections (Notes to Financial Statements, Part I Item 1) not included here."
+  },
+  "part2_item1a": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "OpenAI",
+        "fields": {
+          "private": true,
+          "known_backers": [
+            "Microsoft"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Activision Blizzard",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": [
+            "Activision"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Nuance Communications",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": [
+            "Nuance"
+          ]
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "MSFT-OpenAI-Strategic-Partnership-Risk",
+        "fields": {
+          "filer": "MSFT",
+          "category": "Strategic Partnership / AI Dependency",
+          "named_counterparties": [
+            "OpenAI"
+          ],
+          "severity": 3,
+          "verbatim_quote": "In January 2023 we announced the third phase of our OpenAI strategic partnership. Acquisitions and other transactions and arrangements involve significant challenges and risks, including that they do not advance our business strategy, that we get an unsatisfactory return on our investment... If an arrangement fails to adequately anticipate changing circumstances and interests of a party, it may result in early termination or renegotiation of the arrangement."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "MSFT-Activision-FTC-Challenge-Risk",
+        "fields": {
+          "filer": "MSFT",
+          "category": "Regulatory / Acquisition Unwind Risk",
+          "named_counterparties": [
+            "Activision Blizzard"
+          ],
+          "severity": 3,
+          "verbatim_quote": "the Federal Trade Commission continues to challenge our Activision Blizzard acquisition and could, if successful, alter or unwind the transaction. These events could adversely affect our consolidated financial statements."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "MSFT-IRS-Transfer-Pricing-Risk",
+        "fields": {
+          "filer": "MSFT",
+          "category": "Tax Liability / Transfer Pricing",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 4,
+          "verbatim_quote": "We are currently under Internal Revenue Service (\"IRS\") audit for prior tax years and have received Notices of Proposed Adjustment (\"NOPAs\") from the IRS for the tax years 2004 to 2013. The primary issues in the NOPAs relate to intercompany transfer pricing. In the NOPAs, the IRS is seeking an additional tax payment of $28.9 billion plus penalties and interest."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-NationState-Cyberattack-2023",
+        "fields": {
+          "filer": "MSFT",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "beginning in late November 2023, a nation-state associated threat actor used a password spray attack to compromise a legacy test account and, in turn, gain access to Microsoft email accounts. The threat actor used and continues to use information it obtained to gain, or attempt to gain, unauthorized access to some of our source code repositories and internal systems."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-GPU-Datacenter-SupplyConcentration",
+        "fields": {
+          "filer": "MSFT",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "Our datacenters depend on the availability of permitted and buildable land, predictable energy, networking supplies, and servers, including graphics processing units (\"GPUs\") and other components. The cost or availability of these dependencies could be adversely affected by a variety of factors... There are limited suppliers for certain device and datacenter components. Our competitors use some of the same suppliers and their demand for hardware components can affect the capacity available to us."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-Capex-AI-CloudInfraROIGap",
+        "fields": {
+          "filer": "MSFT",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [
+            "OpenAI"
+          ],
+          "verbatim_quote": "Besides software development costs, we are incurring costs to build and maintain infrastructure to support cloud computing and AI services. These costs will reduce the operating margins we have previously achieved... If we are not effective in executing organizational and technical changes to increase efficiency and accelerate innovation, or if we fail to generate sufficient usage of our new products and services, we may not grow revenue in line with the infrastructure and development investments described above."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-OpenAI-Circularity",
+        "fields": {
+          "filer": "MSFT",
+          "risk_type": "CIRCULARITY",
+          "severity": 3,
+          "named_counterparties": [
+            "OpenAI"
+          ],
+          "verbatim_quote": "This AI may be developed by Microsoft or others, including our strategic partner, OpenAI. We expect these elements of our business to grow... Ineffective or inadequate AI development or deployment practices by Microsoft or others could result in incidents that impair the acceptance of AI solutions or cause harm to individuals, customers, or society."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "MSFT-IRS-28B-HiddenLiability",
+        "fields": {
+          "filer": "MSFT",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 28900000000,
+            "note": "IRS proposed adjustment for tax years 2004-2013, intercompany transfer pricing; $28.9B plus penalties and interest"
+          },
+          "named_counterparties": [
+            "USG"
+          ],
+          "verbatim_quote": "In the NOPAs, the IRS is seeking an additional tax payment of $28.9 billion plus penalties and interest. The final resolution of the proposed adjustments, and other audits or litigation, may differ from the amounts recorded in our consolidated financial statements."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "ailab",
+        "target_name": "OpenAI",
+        "properties": {}
+      },
+      {
+        "predicate": "CIRCULAR_WITH",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "ailab",
+        "target_name": "OpenAI",
+        "properties": {}
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "risk_factor",
+        "target_name": "MSFT-OpenAI-Strategic-Partnership-Risk",
+        "properties": {}
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "MSFT-OpenAI-Strategic-Partnership-Risk",
+        "target_type": "ailab",
+        "target_name": "OpenAI",
+        "properties": {}
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "risk_factor",
+        "target_name": "MSFT-Activision-FTC-Challenge-Risk",
+        "properties": {}
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "MSFT-Activision-FTC-Challenge-Risk",
+        "target_type": "company",
+        "target_name": "Activision Blizzard",
+        "properties": {}
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "risk_factor",
+        "target_name": "MSFT-IRS-Transfer-Pricing-Risk",
+        "properties": {}
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-NationState-Cyberattack-2023",
+        "properties": {}
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-GPU-Datacenter-SupplyConcentration",
+        "properties": {}
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-Capex-AI-CloudInfraROIGap",
+        "properties": {}
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-OpenAI-Circularity",
+        "properties": {}
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "MSFT-OpenAI-Circularity",
+        "target_type": "ailab",
+        "target_name": "OpenAI",
+        "properties": {}
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "MSFT-Capex-AI-CloudInfraROIGap",
+        "target_type": "ailab",
+        "target_name": "OpenAI",
+        "properties": {}
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "hidden_risk_signal",
+        "target_name": "MSFT-IRS-28B-HiddenLiability",
+        "properties": {}
+      },
+      {
+        "predicate": "DEPENDS_ON",
+        "source_type": "company",
+        "source_name": "Microsoft",
+        "target_type": "ailab",
+        "target_name": "OpenAI",
+        "properties": {}
+      }
+    ],
+    "notes": "[chunk 1/2] Filing: MSFT 10-Q 2024-04-25 (Part II Item 1A). Key SIFI-material extractions:\n\n1. CIRCULARITY / DEPENDENCY: Microsoft explicitly names OpenAI as its \"strategic partner\" for AI capabilities underpinning Azure, Copilot, Bing, and other products. Microsoft is simultaneously OpenAI's largest investor, cloud infrastructure provider, and distribution channel \u2014 a classic investor\u21c4customer\u21c4supplier triangle. Severity 3 (elevated).\n\n2. CAPEX ROI GAP: Microsoft acknowledges escalating datacenter/infrastructure costs for AI that \"will reduce the operating margins we have previously achieved,\" without disclosing matched contracted revenue to cover the build-out. Severity 3.\n\n3. SUPPLIER CONCENTRATION: GPU and datacenter component supply is called out as limited-supplier risk, implicitly flagging NVIDIA dependency, though NVIDIA is not named by name in this section. Severity 3.\n\n4. HIDDEN LEVERAGE / TAX: The IRS NOPAs for $28.9B plus penalties and interest for transfer pricing (2004-2013) represent a contingent liability not fully reflected on-balance-sheet. This is material at SIFI scale. Severity 4 (critical).\n\n5. EXECUTION RISK: The November 2023 nation-state password-spray breach of Microsoft email accounts and source code repositories is an ongoing, unresolved operational risk with cascading customer impacts. Severity 3.\n\n6. M&A RISK: Activision Blizzard acquisition ($68.7B, completed Oct 2023) remains subject to active FTC challenge that could alter or unwind the transaction. Goodwill impairment risk also flagged. Severity 3.\n\nNo off-balance-sheet SPVs or revenue roundtripping arrangements were named in this section. No individual capex dollar commitments tied to specific counterparties were disclosed in this section (those appear in financial statements/MD&A).\n[chunk 2/2] Section reviewed: Microsoft 10-Q filed 2024-04-25, Part II Item 1A (Risk Factors interim) and Item 2 (Share Repurchases). No SIFI-material entities were identified. The risk factors present are generic/boilerplate in nature: macroeconomic conditions, geopolitical risk (Ukraine conflict mentioned generically), climate change, workforce/unionization, and investment portfolio risks (U.S. government securities). No named counterparties with concentration risk, no SPVs/off-balance-sheet entities, no AI lab investments, no capex commitments, no circularity patterns, no revenue roundtripping, and no supplier/customer concentration disclosures meeting the SIFI-material threshold. Item 2 covers routine share repurchases and dividends \u2014 no related-party angle. Nothing extracted per hard rules: do not fabricate, skip boilerplate."
+  },
+  "part2_item5": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] FILING CONTEXT: MSFT 10-Q Item 5 (Other Information) & Item 6 (Exhibits), filed 2024-04-25. ASSESSMENT: This section contains only boilerplate administrative disclosures\u2014insider Rule 10b5-1 trading arrangements and exhibit listings. NO SIFI-MATERIAL entities identified. Takeshi Numoto's trading plan is routine executive equity vesting/sale activity (not a related-party transaction, not a material business relationship, not a counterparty arrangement). Exhibits are procedural SEC filings. This content does not trigger any of the 8 SIFI risk patterns (hidden leverage, circularity, roundtripping, capex gap, execution risk, cost opacity, or customer/supplier concentration). No named counterparties, investments, partnerships, or strategic relationships disclosed in this section. EXTRACTION: EMPTY GRAPH. This is correct handling of boilerplate text per instructions."
+  }
+}

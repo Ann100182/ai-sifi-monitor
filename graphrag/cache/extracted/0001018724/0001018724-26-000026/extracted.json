@@ -1,0 +1,765 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "aliases": [
+            "Amazon.com, Inc."
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "OpenAI",
+        "fields": {
+          "aliases": [
+            "OpenAI Group PBC"
+          ],
+          "private": true
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Anthropic",
+        "fields": {
+          "aliases": [
+            "Anthropic, PBC"
+          ],
+          "private": true
+        }
+      },
+      {
+        "type": "company",
+        "name": "Globalstar",
+        "fields": {
+          "aliases": [
+            "Globalstar Inc."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "AWS-OpenAI-$138B",
+        "fields": {
+          "filer": "Amazon",
+          "amount_usd": 138000000000,
+          "duration_yrs": 8.0,
+          "start_fy": 2026,
+          "counterparty": "OpenAI",
+          "purpose": "cloud compute and AWS chips",
+          "verbatim_quote": "In Q1 2026, AWS and OpenAI Group PBC announced an expansion of the existing $38.0 billion multi-year commitment and commercial arrangement with OpenAI by $100.0 billion over 8.0 years, which includes contractual obligations related to the performance of AWS chips."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "AWS-Anthropic-$100B",
+        "fields": {
+          "filer": "Amazon",
+          "amount_usd": 100000000000,
+          "duration_yrs": 10.0,
+          "start_fy": 2026,
+          "counterparty": "Anthropic",
+          "purpose": "cloud compute and AWS chips",
+          "verbatim_quote": "In Q2 2026, AWS and Anthropic announced an expansion of the strategic collaboration and existing multi-year commitment by more than $100.0 billion over 10.0 years, which includes contractual obligations related to the performance of AWS chips."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Amazon-Anthropic-Investment",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Anthropic",
+          "verbatim_quote": "convertible notes investments in Anthropic, PBC (\"Anthropic\") that were converted to nonvoting preferred stock during Q1 2025 and Q1 2026. The upward adjustments relating to equity investments in private companies of $50.5 billion in Q2 2026 and $62.8 billion for the six months ended June 30, 2026 reflect observable changes in prices, primarily from our nonvoting preferred stock in Anthropic."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-OpenAI-Capex-ROI-Gap",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "named_counterparties": [
+            "OpenAI"
+          ],
+          "numeric_signal": {
+            "amount_usd": 138000000000,
+            "duration_yrs": 8.0
+          },
+          "verbatim_quote": "In Q1 2026, AWS and OpenAI Group PBC announced an expansion of the existing $38.0 billion multi-year commitment and commercial arrangement with OpenAI by $100.0 billion over 8.0 years, which includes contractual obligations related to the performance of AWS chips."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-Anthropic-Capex-ROI-Gap",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "named_counterparties": [
+            "Anthropic"
+          ],
+          "numeric_signal": {
+            "amount_usd": 100000000000,
+            "duration_yrs": 10.0
+          },
+          "verbatim_quote": "In Q2 2026, AWS and Anthropic announced an expansion of the strategic collaboration and existing multi-year commitment by more than $100.0 billion over 10.0 years, which includes contractual obligations related to the performance of AWS chips."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-Anthropic-Circularity",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "CIRCULARITY",
+          "severity": 3,
+          "named_counterparties": [
+            "Anthropic"
+          ],
+          "numeric_signal": {
+            "amount_usd": 100000000000
+          },
+          "verbatim_quote": "In Q2 2026, AWS and Anthropic announced an expansion of the strategic collaboration and existing multi-year commitment by more than $100.0 billion over 10.0 years, which includes contractual obligations related to the performance of AWS chips."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "aliases": [
+            "AMZN",
+            "Amazon.com, Inc."
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Anthropic",
+        "fields": {
+          "private": true,
+          "known_backers": [
+            "Amazon",
+            "Google",
+            "Salesforce"
+          ]
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "OpenAI",
+        "fields": {
+          "private": true,
+          "known_backers": [
+            "Microsoft",
+            "Amazon",
+            "Thrive Capital"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Apple",
+        "fields": {
+          "ticker": "AAPL",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Globalstar",
+        "fields": {
+          "ticker": "GSAT",
+          "role": "acquisition_target"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Amazon-Anthropic-$8B-Convertible",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Anthropic",
+          "amount_usd": 8000000000.0,
+          "equity_pct": null,
+          "round": "convertible notes",
+          "disclosed_date": "Q3 2023 to Q4 2025",
+          "verbatim_quote": "From Q3 2023 to Q4 2025, we invested $8.0 billion in convertible notes from Anthropic, which are classified as available-for-sale and reported at fair value"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Amazon-Anthropic-Series-G-$5B",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Anthropic",
+          "amount_usd": 5000000000.0,
+          "equity_pct": null,
+          "round": "Series G nonvoting preferred stock",
+          "disclosed_date": "Q2 2026",
+          "verbatim_quote": "In Q2 2026, we invested $5.0 billion in Anthropic Series G nonvoting preferred stock."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Amazon-Anthropic-Series-H-$5B",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Anthropic",
+          "amount_usd": 5000000000.0,
+          "equity_pct": null,
+          "round": "Series H nonvoting preferred stock",
+          "disclosed_date": "Q2 2026",
+          "verbatim_quote": "In Q2 2026, we exercised our option to participate in subsequent Anthropic equity financings by investing $5.0 billion in Anthropic Series H nonvoting preferred stock"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Amazon-OpenAI-Series-C-$15B",
+        "fields": {
+          "investor": "Amazon",
+          "target": "OpenAI",
+          "amount_usd": 15000000000.0,
+          "equity_pct": null,
+          "round": "Series C Preferred Stock",
+          "disclosed_date": "Q1 2026",
+          "verbatim_quote": "We also invested $15.0 billion in Series C Preferred Stock of OpenAI"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Amazon-OpenAI-Commitment-$35B",
+        "fields": {
+          "investor": "Amazon",
+          "target": "OpenAI",
+          "amount_usd": 35000000000.0,
+          "equity_pct": null,
+          "round": "Series C Preferred Stock commitment",
+          "disclosed_date": "Q1 2026",
+          "verbatim_quote": "we agreed to purchase additional shares of Series C Preferred Stock (the \"Commitment Shares\") with an aggregate purchase price of $35.0 billion"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Amazon-Anthropic-Capex-AWS",
+        "fields": {
+          "filer": "Amazon",
+          "amount_usd": null,
+          "duration_yrs": null,
+          "counterparty": "Anthropic",
+          "purpose": "AWS cloud services and compute capacity delivery",
+          "verbatim_quote": "We also amended our commercial arrangement primarily for the provision of AWS cloud services, which includes contractual obligations related to the performance of AWS chips."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Amazon-OpenAI-Capex-AWS",
+        "fields": {
+          "filer": "Amazon",
+          "amount_usd": null,
+          "duration_yrs": null,
+          "counterparty": "OpenAI",
+          "purpose": "AWS cloud services and use and performance of AWS chips",
+          "verbatim_quote": "we and OpenAI entered into (i) a commercial arrangement primarily for the provision of AWS cloud services, which includes the use and performance of AWS chips"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Amazon-Anthropic-Financing-$20B",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "Amazon",
+          "co_owner": null,
+          "beneficiary": "Anthropic",
+          "debt_stack_usd": 20000000000.0,
+          "residual_value_guarantee": false,
+          "term_yrs": null,
+          "purpose": "financing arrangement tied to compute capacity delivery milestones",
+          "verbatim_quote": "entered into a financing arrangement to make available to Anthropic an aggregate facility not to exceed $20.0 billion that will expire 30 months after an Anthropic liquidity event, including an initial public offering (\"IPO\"). At inception, there is no amount available to be drawn against and as we reach certain delivery milestones of compute capacity under the amended commercial arrangement, amounts under this facility are made available for Anthropic to draw upon at its discretion."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Amazon-Globalstar-Acquisition",
+        "fields": {
+          "filer": "Amazon",
+          "amount_usd": 10900000000.0,
+          "duration_yrs": null,
+          "counterparty": "Globalstar",
+          "purpose": "Globalstar acquisition including satellite replacement milestones",
+          "verbatim_quote": "As of the date of the merger agreement, the acquisition implied a value for Globalstar of approximately $10.9 billion, including its debt."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-Anthropic-Circularity",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "CIRCULARITY",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 18000000000.0,
+            "pct_of_revenue": null,
+            "counterparty_count": 1,
+            "note": "Amazon is investor ($18B in convertible notes + preferred stock), service provider (AWS cloud/chips), and lender (up to $20B draw facility tied to delivery milestones)"
+          },
+          "named_counterparties": [
+            "Anthropic"
+          ],
+          "verbatim_quote": "In Q2 2026, we invested $5.0 billion in Anthropic Series G nonvoting preferred stock. We also amended our commercial arrangement primarily for the provision of AWS cloud services, which includes contractual obligations related to the performance of AWS chips. Additionally, we entered into a financing arrangement to make available to Anthropic an aggregate facility not to exceed $20.0 billion that will expire 30 months after an Anthropic liquidity event"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-OpenAI-Circularity",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "CIRCULARITY",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 50000000000.0,
+            "pct_of_revenue": null,
+            "counterparty_count": 1,
+            "note": "Amazon is investor ($50B committed), service provider (AWS cloud services), and partner (collaboration agreement for OpenAI model services)"
+          },
+          "named_counterparties": [
+            "OpenAI"
+          ],
+          "verbatim_quote": "In Q1 2026, we and OpenAI entered into (i) a commercial arrangement primarily for the provision of AWS cloud services, which includes the use and performance of AWS chips, and (ii) a joint collaboration agreement pursuant to which certain services using OpenAI models will be made available to the Company and on AWS. We also invested $15.0 billion in Series C Preferred Stock of OpenAI and entered into an equity commitment letter agreement (the \"Letter Agreement\"), pursuant to which we agreed to purchase additional shares of Series C Preferred Stock (the \"Commitment Shares\") with an aggregate purchase price of $35.0 billion"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-Anthropic-Valuation-Fair-Value",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 92500000000.0,
+            "pct_of_revenue": null,
+            "note": "Nonvoting preferred stock balance sheet value as of June 30, 2026; unrealized gains of $62.8B recorded in H1 2026"
+          },
+          "named_counterparties": [
+            "Anthropic"
+          ],
+          "verbatim_quote": "As of December 31, 2025 and June 30, 2026, the amounts recorded on our consolidated balance sheets for nonvoting preferred stock were approximately $14.8 billion and $92.5 billion... We recorded upward adjustments of approximately $50.5 billion in Q2 2026 and $62.8 billion for the six months ended June 30, 2026 to our nonvoting preferred stock in \"Other income (expense), net\" to reflect observable changes in price related to Anthropic's fundings. In making these Level 3 fair value measurements, we utilized valuation methods based on information available, including the rights and obligations of the nonvoting preferred stock, other outstanding classes of securities, estimates of expected time to and type of liquidity events and anticipated securities offerings, and discounts for lack of marketability."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-Anthropic-Capex-ROI-Gap",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 20000000000.0,
+            "duration_yrs": 2.5,
+            "counterparty_count": 1,
+            "note": "$20B financing facility tied to AWS compute delivery milestones, but no fixed revenue guarantee from Anthropic disclosed"
+          },
+          "named_counterparties": [
+            "Anthropic"
+          ],
+          "verbatim_quote": "entered into a financing arrangement to make available to Anthropic an aggregate facility not to exceed $20.0 billion that will expire 30 months after an Anthropic liquidity event... as we reach certain delivery milestones of compute capacity under the amended commercial arrangement, amounts under this facility are made available for Anthropic to draw upon at its discretion. Draws against the facility will be in the form of new Anthropic convertible notes or, after an IPO or other liquidity event and subject to our ownership cap, Anthropic common stock"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-Globalstar-Execution-Risk",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 10900000000.0,
+            "duration_yrs": 1,
+            "note": "Acquisition closing dependent on Globalstar satellite replacement milestones and regulatory approvals"
+          },
+          "named_counterparties": [
+            "Globalstar"
+          ],
+          "verbatim_quote": "The acquisition is expected to close in 2027, subject to the satisfaction of certain closing conditions, including receipt of regulatory approvals and Globalstar's achievement of certain satellite replacement milestones."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-Apple-Globalstar-Related-Party",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "counterparty_count": 2,
+            "note": "Apple is Globalstar's largest customer; Amazon entered into service and equity redemption agreements with Apple contingent on Globalstar acquisition"
+          },
+          "named_counterparties": [
+            "Apple",
+            "Globalstar"
+          ],
+          "verbatim_quote": "On the date of the merger agreement, we also entered into agreements with Apple Inc. (\"Apple\"), Globalstar's largest customer, to provide certain services after the acquisition and to redeem certain equity interests held by Apple in a Globalstar special purpose entity."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "OpenAI",
+        "fields": {
+          "private": true
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Anthropic",
+        "fields": {
+          "private": true
+        }
+      },
+      {
+        "type": "investment",
+        "name": "AMZN-OpenAI-Series-C",
+        "fields": {
+          "investor": "Amazon",
+          "target": "OpenAI",
+          "amount_usd": 49000000000,
+          "round": "Series C",
+          "disclosed_date": "2026-06-30",
+          "verbatim_quote": "We invested $28.7 billion in OpenAI's Series C Preferred Stock for the six months ended June 30, 2026, including $13.7 billion invested in Q2 2026. Subsequent to June 30, 2026, we funded the remaining Commitment Amount of $21.3 billion."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "AMZN-Anthropic-Convertible",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Anthropic",
+          "amount_usd": 1300000000,
+          "round": "Convertible Notes",
+          "disclosed_date": "2025-06-30",
+          "verbatim_quote": "In Q2 2025, we invested $1.3 billion in convertible notes from Anthropic."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "AMZN-Anthropic-Preferred",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Anthropic",
+          "amount_usd": 10000000000,
+          "round": "Nonvoting Preferred Stock",
+          "disclosed_date": "2026-06-30",
+          "verbatim_quote": "In Q2 2026, we also invested $10.0 billion in Anthropic nonvoting preferred stock."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "AMZN-AWS-Capex-2025-2026",
+        "fields": {
+          "filer": "Amazon",
+          "amount_usd": 169007000000,
+          "purpose": "technology infrastructure, AWS business growth, and fulfillment network capacity",
+          "verbatim_quote": "Cash capital expenditures were $31.4 billion and $53.1 billion during Q2 2025 and Q2 2026, and $55.6 billion and $96.3 billion for the six months ended June 30, 2025 and 2026, which primarily reflect investments in technology infrastructure (the majority of which is to support AWS business growth) and in additional capacity to support our fulfillment network"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-CAPEX_ROI_GAP",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 169007000000,
+            "pct_of_assets": 15.4,
+            "duration_yrs": 1,
+            "note": "Free cash flow turned negative ($7.6B for TTM June 2026) despite $161.4B operating cash flow, driven by $169B capex. AWS revenue growth (33% YoY) lags capex acceleration (147% increase in AWS capex YoY for 6M 2026)."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Free cash flow has declined to negative $(7,604) million for the twelve months ended June 30, 2026, compared to positive $18,184 million in the prior year, with Purchases of property and equipment, net of proceeds from sales and incentives of $(169,007) million."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-EXECUTION_RISK",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 96300000000,
+            "duration_yrs": 1,
+            "note": "AWS capex surged $54.1B YoY in 6M 2026 (147% increase). Amazon explicitly states 'we expect spending in technology and infrastructure to increase over time as we continue to add infrastructure and employees, including to support our artificial intelligence and machine learning initiatives' but does not disclose signed long-term contracts backing these investments."
+          },
+          "named_counterparties": [
+            "OpenAI",
+            "Anthropic"
+          ],
+          "verbatim_quote": "We expect spending in technology and infrastructure to increase over time as we continue to add infrastructure and employees, including to support our artificial intelligence and machine learning initiatives."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-CUSTOMER_CONCENTRATION",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 10300000000,
+            "pct_of_revenue": 2.7,
+            "note": "OpenAI investment is $49B total; Anthropic is $11.3B. No disclosed contractual commitments binding OpenAI or Anthropic to purchase AWS services in the filing. AWS represents 21% of consolidated revenue (Q2 2026); large AI lab customer dependency undisclosed."
+          },
+          "named_counterparties": [
+            "OpenAI",
+            "Anthropic"
+          ],
+          "verbatim_quote": "We invested $28.7 billion in OpenAI's Series C Preferred Stock for the six months ended June 30, 2026... We expect to continue making additional investments in our artificial intelligence initiatives."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AMZN-AI-Revenue-Visibility",
+        "fields": {
+          "filer": "Amazon",
+          "category": "AI adoption and revenue realization",
+          "named_counterparties": [
+            "OpenAI",
+            "Anthropic"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Profitability or other intended benefits, if any, in our newer activities (including development and adoption of automation, artificial intelligence, and machine learning technologies for customer and internal use), may not meet our expectations, and we may not be successful enough in these newer activities to recoup our investments in them, which investments are often significant."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AMZN-Supplier-Concentration-Chips",
+        "fields": {
+          "filer": "Amazon",
+          "category": "Semiconductor supply concentration",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "We rely on a limited group of suppliers for semiconductor products, including products related to artificial intelligence infrastructure such as graphics processing units. Constraints on the availability of these products could adversely affect our ability to develop and operate artificial intelligence technologies, products, or services."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "aliases": [
+            "Amazon.com, Inc."
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "AWS",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": [
+            "Amazon Web Services"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Citibank",
+        "fields": {
+          "role": "supplier",
+          "aliases": [
+            "Citibank N.A."
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "ailab",
+        "target_name": "OpenAI",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {
+          "amount_usd": 138000000000,
+          "duration_yrs": 8.0
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "ailab",
+        "target_name": "Anthropic",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {
+          "amount_usd": 100000000000,
+          "duration_yrs": 10.0
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "ailab",
+        "target_name": "Anthropic",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "note": "nonvoting preferred stock via converted convertible notes"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "capex_commitment",
+        "target_name": "AWS-OpenAI-$138B",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "capex_commitment",
+        "target_name": "AWS-Anthropic-$100B",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-OpenAI-Capex-ROI-Gap",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-Anthropic-Capex-ROI-Gap",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-Anthropic-Circularity",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "company",
+        "target_name": "Globalstar",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "note": "satellite network services"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "predicate": "INVESTED_IN",
+        "target_type": "ailab",
+        "target_name": "OpenAI"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "predicate": "INVESTED_IN",
+        "target_type": "ailab",
+        "target_name": "Anthropic"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "AMZN-AWS-Capex-2025-2026"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-CAPEX_ROI_GAP"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-EXECUTION_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-CUSTOMER_CONCENTRATION"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "AMZN-AI-Revenue-Visibility"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "AMZN-Supplier-Concentration-Chips"
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "AMZN-EXECUTION_RISK",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "ailab",
+        "target_name": "OpenAI"
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "AMZN-EXECUTION_RISK",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "ailab",
+        "target_name": "Anthropic"
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "AMZN-CUSTOMER_CONCENTRATION",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "ailab",
+        "target_name": "OpenAI"
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "AMZN-CUSTOMER_CONCENTRATION",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "ailab",
+        "target_name": "Anthropic"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "company",
+        "target_name": "Citibank",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "arrangement_type": "credit_facility",
+          "note": "Term Loan Agreement (June 8, 2026) and revolving credit agreements (364-day and 5-year facilities)"
+        }
+      }
+    ],
+    "notes": "[chunk 1/4] Key SIFI-material findings from Amazon Q2 2026 10-Q:\n\n1. **Massive AI Capex Commitments**: Amazon has committed $138B (8yr) to OpenAI and $100B (10yr) to Anthropic for cloud compute and AWS chip performance. These are multi-year contractual obligations with no disclosed matched revenue streams.\n\n2. **Circularity & Investor-Customer Overlap**: Amazon holds nonvoting preferred stock in Anthropic (converted from convertible notes) AND has committed $100B in capex to the same entity. This creates a potential circularity where Amazon is simultaneously:\n   - An investor (equity holder)\n   - A customer/counterparty (paying for compute)\n   - A supplier (AWS chips)\n\n3. **Execution Risk**: The capex commitments are tied to \"performance of AWS chips\" \u2014 infrastructure not yet operational or tested at scale. Q2 2026 energy contract fair value adjustments added $599M unrealized gains, suggesting significant mark-to-market exposure.\n\n4. **Valuation Mark-ups**: Amazon recorded $50.5B in Q2 2026 and $62.8B for H1 2026 in \"upward adjustments relating to equity investments in private companies, primarily from our nonvoting preferred stock in Anthropic.\" These are non-cash gains that inflate reported income.\n\n5. **Energy Contract Exposure**: ~270M MWh of electricity contracts with 15-year weighted-average duration and derivative accounting create Level 3 fair value measurement risk. Changes in assumptions drive material P&L volatility.\n\n6. **Off-Balance Sheet**: $496B in unrecognized AWS contract commitments (not yet on balance sheet) with 6.4-year weighted-average life represent contingent obligations.\n\n7. **Capex Intensity**: $173B in capex for H1 2026 (vs. $161B operating cash flow), with capex rising sharply YoY ($98.4B vs $57.2B H1 2025).\n\nCRITICAL: The Anthropic commitment structure appears to be revenue roundtripping via preferred equity + massive capex to the same entity, with mark-to-market gains driving reported profitability.\n[chunk 3/4] AMZN 10-Q (2026-07-31): \n\nKEY SIFI-MATERIAL FINDINGS:\n\n1. **CAPEX ROI GAP (Severity 3)**: Free cash flow turned negative ($-7.6B TTM June 2026) despite $161.4B operating cash. AWS capex surged $54.1B YoY (+147% for 6M 2026 to $90.1B). AWS revenue growth (33% YoY, $42.2B Q2) lags capex acceleration. No disclosed long-term customer contracts binding OpenAI or Anthropic to AWS spending.\n\n2. **EXECUTION RISK (Severity 3)**: $96.3B capex (6M 2026) committed with explicit AI/ML mandate but no visibility into end-user demand signals. Amazon states \"profitability or other intended benefits, if any, in our newer activities (including...artificial intelligence and machine learning technologies)...may not meet our expectations, and we may not be successful enough...to recoup our investments.\"\n\n3. **CUSTOMER CONCENTRATION (Severity 2)**: Amazon invested $49B in OpenAI Series C and $11.3B in Anthropic (convertible + nonvoting preferred). No disclosed AWS contracts with these investees. If either company (or their funding model) fails, AWS demand from them evaporates.\n\n4. **SUPPLIER CONCENTRATION**: Amazon relies on \"limited group of suppliers for semiconductor products, including products related to artificial intelligence infrastructure such as graphics processing units.\" This is a critical input risk for the AI capex ramp.\n\n5. **CAPEX STRUCTURE**: AWS segment assets doubled from $252.6B (Dec 2025) to $350.2B (June 2026). Property & equipment in AWS jumped from $190.1B to $263.8B. Finance leases added $1.7B (6M 2026). Infrastructure is building rapidly but customer lockdown (contracts) is opaque.\n\nNOTABLE: No SPVs, operating lease RVGs, or off-balance-sheet debt disclosed in this filing. Amazon is financing capex through operating cash ($71.4B, 6M 2026) + debt issuances ($82.4B debt proceeds 6M 2026). The risk is execution\u2014not hidden leverage.\n\nCIRCULARITY SIGNAL: Amazon holds equity in OpenAI and Anthropic, but also sells them cloud compute. No formal revenue roundtrip or service-for-equity swap disclosed, but implicit customer concentration. This creates latent circularity if either lab pivots to a competitor's cloud or if Amazon's AI lab strategy (which is competing with OpenAI/Anthropic) fractures the customer relationship.\n\n[chunk 4/4] This section contains only boilerplate filing exhibits, executive trading plans under Rule 10b5-1, and standard credit facility disclosures. No SIFI-material business relationships, customer/supplier concentration, investments, off-balance-sheet entities, or strategic partnerships are disclosed. Matthew Garman's role as CEO of AWS is noted but no material Amazon-specific AI relationships, capex commitments, or third-party strategic dependencies beyond standard banking relationships are mentioned. The credit facilities with Citibank as administrative agent are standard corporate debt arrangements, not indicative of concentration risk or hidden leverage.\""
+  }
+}

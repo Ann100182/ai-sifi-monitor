@@ -1,0 +1,1511 @@
+{
+  "item_1": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "hyperscaler",
+          "aliases": []
+        }
+      },
+      {
+        "type": "company",
+        "name": "OpenAI",
+        "fields": {
+          "role": "customer",
+          "aliases": []
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "role": "competitor",
+          "aliases": [
+            "Amazon.com, Inc.",
+            "AWS"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "role": "competitor",
+          "aliases": [
+            "Microsoft Corporation"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "role": "competitor",
+          "aliases": [
+            "Alphabet Inc.",
+            "Google"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "role": "competitor",
+          "aliases": [
+            "Salesforce, Inc."
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "SAP",
+        "fields": {
+          "role": "competitor",
+          "aliases": [
+            "SAP SE"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "ticker": "ADBE",
+          "role": "competitor",
+          "aliases": [
+            "Adobe Systems Incorporated"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intel",
+        "fields": {
+          "ticker": "INTC",
+          "role": "competitor",
+          "aliases": [
+            "Intel Corporation"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "competitor",
+          "aliases": [
+            "International Business Machines Corporation"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Cisco",
+        "fields": {
+          "ticker": "CSCO",
+          "role": "competitor",
+          "aliases": [
+            "Cisco Systems, Inc."
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Workday",
+        "fields": {
+          "ticker": "WDAY",
+          "role": "competitor",
+          "aliases": [
+            "Workday, Inc."
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Hewlett-Packard Enterprise",
+        "fields": {
+          "role": "competitor",
+          "aliases": [
+            "HPE"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Cerner",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": [
+            "Cerner Corporation"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Allscripts Healthcare Solutions",
+        "fields": {
+          "role": "competitor",
+          "aliases": [
+            "Allscripts Healthcare Solutions, Inc."
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Arcadia Solutions",
+        "fields": {
+          "role": "competitor",
+          "aliases": []
+        }
+      },
+      {
+        "type": "company",
+        "name": "athenahealth",
+        "fields": {
+          "role": "competitor",
+          "aliases": [
+            "athenahealth, Inc."
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Epic Systems",
+        "fields": {
+          "role": "competitor",
+          "aliases": [
+            "Epic Systems Corporation"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "InterSystems",
+        "fields": {
+          "role": "competitor",
+          "aliases": [
+            "InterSystems Corporation"
+          ]
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-R&D-FY2026",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 10300000000.0,
+          "start_fy": 2026,
+          "duration_yrs": 1,
+          "purpose": "research and development",
+          "verbatim_quote": "In fiscal 2026, 2025 and 2024, we invested $10.3 billion, $9.9 billion and $8.9 billion, respectively, in research and development to enhance our existing portfolio of offerings and to develop new technologies and services."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-CloudExpansion-FY2026",
+        "fields": {
+          "filer": "Oracle",
+          "purpose": "Oracle Cloud expansion and data center capacity",
+          "verbatim_quote": "We have invested in the rapid expansion of the Oracle Cloud by increasing existing data center capacity and adding data centers in new geographic locations to meet current and expected customer demand. We expect this trend will continue."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-HardwareSupplyChain",
+        "fields": {
+          "filer": "Oracle",
+          "category": "SUPPLIER_CONCENTRATION",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "For most of our hardware products, we have existing alternative sources of supply or such sources are readily available. However, we do rely on sole and/or single sources for certain hardware components. We monitor and evaluate potential risks of disruption within our supply chain operations."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-CompetitionIntensity",
+        "fields": {
+          "filer": "Oracle",
+          "category": "COMPETITIVE_PRESSURE",
+          "named_counterparties": [
+            "Amazon",
+            "Microsoft",
+            "Alphabet",
+            "Salesforce",
+            "SAP",
+            "Adobe",
+            "Intel",
+            "IBM",
+            "Cisco"
+          ],
+          "severity": 2,
+          "verbatim_quote": "We face intense competition in all aspects of our business. Our enterprise cloud, software and hardware offerings compete directly with certain offerings from some of the largest and most competitive companies in the world, including Adobe Systems Incorporated, Alphabet Inc., Amazon.com, Inc., Cisco Systems, Inc., Intel Corporation, International Business Machines Corporation, Microsoft Corporation, Salesforce, Inc. and SAP SE"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-AICapability",
+        "fields": {
+          "filer": "Oracle",
+          "category": "TECHNOLOGY_RISK",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "our ability to develop AI technologies and features and to have access to AI technologies of competitors"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-CloudRevenueGrowth",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "pct_of_revenue": 51,
+            "note": "Cloud revenues as % of total revenue, FY2026"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We believe that we are in the early stages of what we expect will be a material migration of our existing Oracle customer base from on-premise applications and infrastructure products and services to the Oracle Cloud. The proportion of our cloud revenues relative to our total revenues has increased, and our cloud revenues represented 51%, 43% and 37% of our total revenues during fiscal 2026, 2025 and 2024, respectively. We expect these trends to continue."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Google",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL_CAPEX_ROI_GAP_DATACENTERS",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "named_counterparties": [],
+          "verbatim_quote": "To grow our OCI business, which requires increased computing capacity, we must incur significant capital and operating expenditures to increase our existing data center capacity and to establish data centers in new geographic locations... we could be locked into multi-year commitments for excess data center space and related capital expenditures, as well as associated financings, without receiving corresponding revenue.",
+          "numeric_signal": {
+            "note": "Multi-year data center leases misaligned with customer contract duration; risk of stranded capex if customer demand underperforms or key customers default"
+          }
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL_CUSTOMER_CONCENTRATION_OCI",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "In certain OCI offerings, we are more concentrated among a number of large customers, which could increase these risks.",
+          "numeric_signal": {
+            "note": "High customer concentration in OCI segment; elevated credit and revenue loss risk"
+          }
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL_EXECUTION_RISK_DATACENTERS",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "named_counterparties": [],
+          "verbatim_quote": "Our data center expansion plans are complex and subject to execution risks, including, among others, delays or cost increases related to design, engineering, permitting, construction, utility interconnection, equipment delivery and contractor performance.",
+          "numeric_signal": {
+            "note": "Multi-year data center buildout subject to permitting, power constraints, supply chain delays; risk of revenue recognition delays if infrastructure not operational on schedule"
+          }
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL_SUPPLIER_CONCENTRATION_CHIPS",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 4,
+          "named_counterparties": [],
+          "verbatim_quote": "We depend on suppliers to develop, manufacture and deliver on a timely basis the necessary technologies and components for our hardware products... there are some technologies and components that can only be purchased from a single vendor due to price, quality, technology, availability or other business constraints.",
+          "numeric_signal": {
+            "note": "Single-source suppliers for AI accelerators, GPUs, memory devices; supply constraint forcing less favorable terms and excess inventory risk"
+          }
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL_CAPEX_ROI_GAP_AI_RD",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "We have made significant investments in AI initiatives, including investments in infrastructure and headcount, and we expect to continue to invest significant resources to build and support our AI products... we do not expect to receive significant revenues from these investments for several years, if at all.",
+          "numeric_signal": {
+            "note": "Large committed AI capex with uncertain ROI timeline; competitive risk from better-resourced rivals"
+          }
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL_RF_POWER_CONSTRAINT",
+        "fields": {
+          "filer": "Oracle",
+          "category": "Operational Risk - Power & Energy",
+          "named_counterparties": [],
+          "severity": 4,
+          "verbatim_quote": "We have faced, and may continue to face, challenges with securing reliable and cost-effective power sources for our data center energy demands, which are constrained globally due to the significant increase in demand for and limited availability of energy to power AI compute. These constraints on available power sources could disrupt operations at affected data centers or restrict our capacity to grow, adversely impacting our business, operating results, financial condition and prospects."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL_RF_CUSTOMER_PAYMENT_CREDIT",
+        "fields": {
+          "filer": "Oracle",
+          "category": "Credit Risk - Customer Default",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Our business is, and may continue to be, exposed to risks of customer non-payment and non-performance... even if our credit review and analysis mechanisms work properly, we may experience risks of non-payment and non-performance in our dealings with such parties. In certain OCI offerings, we are more concentrated among a number of large customers, which could increase these risks."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL_RF_AI_PRODUCT_FAILURE",
+        "fields": {
+          "filer": "Oracle",
+          "category": "Product Risk - AI Performance & Legal",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Machine learning and AI, including generative AI, agentic AI and LLMs, are increasingly driving innovations in technology... If we are unable to introduce new AI products, or if our AI products fail to operate as anticipated or as well as competing products or otherwise do not meet customer needs, if our competitors' AI products achieve higher market acceptance than ours, or if we incur costs higher than expected to build and support our AI products, we may fail to recoup our investments in AI and our business and reputation may be harmed."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL_RF_CLOUD_PRICING_PRESSURE",
+        "fields": {
+          "filer": "Oracle",
+          "category": "Competitive Risk - Pricing & Margin Compression",
+          "named_counterparties": [
+            "Microsoft",
+            "Amazon",
+            "Google"
+          ],
+          "severity": 3,
+          "verbatim_quote": "OCI's multicloud services work with a number of our competitors' products, including Microsoft Azure, Amazon Web Services and Google Cloud. This multicloud strategy could lead our customers to migrate away from our cloud offerings to our competitors' products or limit their purchases of additional Oracle products, either of which could adversely affect our revenues and profitability."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL_RF_ACQUISITION_INTEGRATION",
+        "fields": {
+          "filer": "Oracle",
+          "category": "M&A Risk - Integration & Overpayment",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "These transactions present material risks and challenges, including but not limited to: business disruption and management distraction; introduction of additional compliance obligations or new risks... transactions that do not meet strategic expectations, including due to difficulties integrating acquired companies... the risk of overpaying or failing to realize expected returns on our investments, each or all of which could adversely affect our business or operating results and potentially cause impairment to assets that we recorded as a part of an acquisition, including intangible assets and goodwill."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL_RF_GEOPOLITICAL_SUPPLY",
+        "fields": {
+          "filer": "Oracle",
+          "category": "Geopolitical Risk - Supply Chain & Tariffs",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Supply chain operations are affected by industry consolidation and component constraints or shortages, natural disasters, political unrest (such as conflicts in the Middle East and the tensions between China and Taiwan), public health crises, changes to trade laws or regulations, tariffs and customs controls, port stoppages, shipping interruptions or other transportation disruptions or slowdowns, and other factors affecting the countries or regions where these single source component vendors are located."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL_RF_CYBERSECURITY",
+        "fields": {
+          "filer": "Oracle",
+          "category": "Cybersecurity Risk - Data Breach & System Compromise",
+          "named_counterparties": [],
+          "severity": 4,
+          "verbatim_quote": "We and our third-party vendors are regularly subject to attacks by third parties (which may include individuals or groups of hackers and sophisticated organizations, such as state-sponsored organizations, nation-states and individuals sponsored by them) designed to identify and exploit product and service vulnerabilities, penetrate or bypass our security measures, and gain unauthorized access to our or our customers', partners' and suppliers' software, hardware and cloud offerings, networks and systems."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "hyperscaler",
+          "aliases": [
+            "ORCL",
+            "Oracle Corporation"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle Financial Services Software Limited",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": []
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle Corporation Japan",
+        "fields": {
+          "role": "subsidiary",
+          "aliases": []
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "supplier",
+          "aliases": [
+            "ORCL"
+          ]
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL_CAPEX_ROI_GAP",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 55663000000,
+            "pct_of_revenue": 82.6,
+            "duration_yrs": 1,
+            "note": "FY2026 capex $55.7B on $67.4B revenue; free cash flow negative $23.7B"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Net cash provided by operating activities increased by $11.2 billion in fiscal 2026 relative to fiscal 2025 primarily due to higher net income adjusted for certain non-cash charges and higher cash favorable working capital changes, net... [but] Net cash used for investing activities increased by $30.1 billion in fiscal 2026 relative to fiscal 2025 primarily due to a $34.4 billion increase in capital expenditures"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL_INFRASTRUCTURE_CAPEX_EXECUTION",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 5700000000,
+            "note": "YoY increase in cloud and software expenses from $10.8B to $16.8B, 56% growth"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Our cloud and software expenses have grown in recent periods, and we expect this trend to continue during fiscal 2027 and in the next few fiscal years as we increase our existing data center capacity and establish data centers in new geographic locations in order to meet current and expected customer demand."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL_CLOUD_MARGIN_COMPRESSION",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "pct_of_revenue": 59,
+            "note": "Cloud and software margin fell from 63% to 59% YoY despite 19% revenue growth"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Total margin as a percentage of revenues in constant currency decreased in fiscal 2026 relative to fiscal 2025 due to an increase in total expenses driven by higher infrastructure expenses to support growth in our cloud infrastructure offering."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Deutsche Bank",
+        "fields": {
+          "role": "supplier"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Cerner",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Amazon",
+        "predicate": "CIRCULAR_WITH"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Microsoft",
+        "predicate": "CIRCULAR_WITH"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Alphabet",
+        "predicate": "CIRCULAR_WITH"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "Oracle-R&D-FY2026",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "Oracle-CloudExpansion-FY2026",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "Oracle-HardwareSupplyChain",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "Oracle-CompetitionIntensity",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "Oracle-AICapability",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-CloudRevenueGrowth",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Microsoft",
+        "predicate": "CIRCULAR_WITH",
+        "properties": {
+          "context": "OCI multicloud offering integrates with Azure; customers may migrate to Azure via this gateway"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Amazon",
+        "predicate": "CIRCULAR_WITH",
+        "properties": {
+          "context": "OCI multicloud offering integrates with AWS; customers may migrate to AWS via this gateway"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Google",
+        "predicate": "CIRCULAR_WITH",
+        "properties": {
+          "context": "OCI multicloud offering integrates with Google Cloud; customers may migrate to GCP via this gateway"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL_CAPEX_ROI_GAP_DATACENTERS",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL_CUSTOMER_CONCENTRATION_OCI",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL_EXECUTION_RISK_DATACENTERS",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL_SUPPLIER_CONCENTRATION_CHIPS",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL_CAPEX_ROI_GAP_AI_RD",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "ORCL_RF_POWER_CONSTRAINT",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "ORCL_RF_CUSTOMER_PAYMENT_CREDIT",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "ORCL_RF_AI_PRODUCT_FAILURE",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "ORCL_RF_CLOUD_PRICING_PRESSURE",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "ORCL_RF_ACQUISITION_INTEGRATION",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "ORCL_RF_GEOPOLITICAL_SUPPLY",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "ORCL_RF_CYBERSECURITY",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Oracle Financial Services Software Limited",
+        "properties": {
+          "context": "Majority shareholder of publicly-traded Indian subsidiary; exposure to local securities regulations and limited control",
+          "jurisdiction": "India"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Oracle Corporation Japan",
+        "properties": {
+          "context": "Majority shareholder of publicly-traded Japanese subsidiary; exposure to local securities regulations and limited control",
+          "jurisdiction": "Japan"
+        }
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL_CAPEX_ROI_GAP"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL_INFRASTRUCTURE_CAPEX_EXECUTION"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL_CLOUD_MARGIN_COMPRESSION"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Deutsche Bank",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "context": "Commercial Paper Program dealer agreement and Issuing and Paying Agency Agreement"
+        }
+      }
+    ],
+    "notes": "[chunk 1/5] Item 1 Business section from Oracle 10-K FY2026. Extracted: (1) Core competitive landscape vs. FAANG and specialist vendors (Amazon, Microsoft, Alphabet, Salesforce, SAP, Adobe, Intel, IBM, Cisco, Workday, HPE) and healthcare IT competitors post-Cerner acquisition. (2) Capex commitments: R&D spend $10.3B FY2026 with strong upward trend; cloud expansion with data center buildout mentioned but not quantified. (3) Hardware supply chain risk: Sole/single-source dependencies for certain components, monitored but disclosed as manageable via alternatives. (4) Circular relationships with hyperscalers (Amazon, Microsoft, Alphabet) evident from multicloud strategy positioning. (5) EXECUTION_RISK signal: Cloud migration narrative (51% of revenue, growing from 37% in FY2024) represents material shift requiring successful customer migration and adoption across 141,000 global employees. No off-balance-sheet SPVs, project finance, or hidden leverage disclosed in narrative section. No named AI lab partnerships or major third-party capex commitments mentioned in Item 1. Hardware manufacturing outsourced to third parties with distributed supply base noted. Section is primarily narrative positioning and business model description without quantified risk metrics beyond stated headcount and R&D spend.\n[chunk 3/5] Item 1 Business section of Oracle 10-K filed 2026-06-22. Extracted only SIFI-material entities: Oracle's majority-shareholding in publicly-traded subsidiaries in India and Japan, where Oracle faces additional risks from limited control and local securities regulation compliance. Omitted: standard boilerplate about IP protection, litigation procedures, tax audits (routine and generic), healthcare regulatory compliance (routine), government contracts (routine), currency hedging (standard practice), stock performance disclosures, and capital structure details (covered separately). The two subsidiaries are SIFI-material because they represent off-balance-sheet control risks in regulated markets where Oracle lacks full consolidation authority.\"\n\n[chunk 4/5] ORCL Item 1 (Business) extraction: This section is primarily a business model and revenue breakdown narrative with limited SIFI-material relationships. Key findings: (1) CAPEX_ROI_GAP: Oracle invested $55.7B in capex (82.6% of revenue) in FY2026, driving free cash flow to -$23.7B despite strong operating cash flow ($32B) and net income ($17.1B). This represents a significant cash deployment gap with no disclosed customer prepayments or project finance arrangements to offset capex risk. (2) EXECUTION_RISK: Oracle explicitly guides to continued multi-year capex increases to establish new data centers and expand geographic footprint, but provides no quantified revenue contracts or customer commitments tied to specific infra deployments (unlike OpenAI-Microsoft $60B or CoreWeave-hyperscaler capex commitments). (3) MARGIN_COMPRESSION: Cloud and software margin declined from 63% to 59% despite 19% revenue growth, driven by 56% YoY increase in infrastructure expenses ($10.8B \u2192 $16.8B), signaling capex not yet generating targeted ROI. No related-party transactions, SPVs, or off-balance-sheet arrangements are disclosed in this section. No customer concentration risk >10% is named. No investments or acquisitions with SIFI material are detailed in Item 1 (these would appear in M&A sections and Note 8). Skipped: routine market risk commentary, generic competition disclosures, FX hedging policies, standard segment reporting.\n[chunk 5/5] FILING CONTEXT: Oracle 10-K, item_1 (Business), filed 2026-06-22.\n\nKEY FINDINGS (SIFI-Material Only):\n\n1. CAPEX ACCELERATION & ROI GAP SIGNAL:\n   - Oracle disclosed $55.7B capex in FY2026 (vs. $21.2B in FY2025), a 163% YoY increase.\n   - Filed a $10.0B revolving credit facility (up from $6.0B) in March 2026.\n   - Issued $43.0B in senior notes in FY2026 and $5.0B in Mandatory Convertible Preferred Stock (Feb 2026).\n   - Total liquidity mobilized: ~$58B in debt + equity.\n   - Remaining Performance Obligations jumped from $138B (FY2025) to $638B (FY2026)\u2014a 362% increase.\n   \n   \u2192 This is a CAPEX_ROI_GAP signal: Oracle is rapidly burning capital ($55.7B capex in one year) to meet \"current and expected customer demand\" for cloud. The company explicitly states it \"expects this upward trend to continue.\" However, the remaining performance obligations expansion suggests forward-contracted revenue is *also* growing\u2014suggesting the ROI case may be de-risked. Yet the 3.6x jump in RPO vs. 2.6x jump in capex spending suggests potential execution risk if customer adoption slows or capex ramp accelerates further.\n\n2. CUSTOMER CONCENTRATION RISK:\n   - RPO increased from $138B to $638B primarily due to \"certain significant cloud contracts\" (plural, but vague).\n   - No named counterparties disclosed; this is a significant cloud-services concentration risk.\n   - The phrase \"certain significant cloud contracts\" implies at least one or two hyper-concentrated customer commitments, but Oracle does not name them in this section.\n\n3. LEVERAGE & LIQUIDITY:\n   - $43.0B of senior notes issuance in a single fiscal year is material.\n   - Commercial paper program: $10B authorized, $1.5B outstanding as of May 31, 2026.\n   - Mandatory Convertible Preferred Stock: $5.0B (Feb 2026)\u2014a quasi-equity/quasi-debt instrument that dilutes common equity on conversion.\n   - No disclosure of whether the Mandatory Convertible Preferred Stock is tied to any AI or cloud-infrastructure customer commitment.\n\n4. CAPEX PURPOSE OPACITY:\n   - Oracle states capex is for \"expansion of our data centers\" but does NOT break down:\n     - How much capex is dedicated to on-premise customer infrastructure vs. public cloud vs. AI/GenAI workloads.\n     - Whether any capex is being funded via customer prepayments or non-recourse project finance.\n     - The geographic and technological mix of data center investments.\n\n5. RELATED-PARTY ARRANGEMENT:\n   - Deutsche Bank is the Issuing and Paying Agency for Oracle's $10B Commercial Paper Program.\n   - This is a standard market practice but represents operational dependency on a single external agent for short-term funding.\n\nENTITIES EXTRACTED:\n- Oracle (company, hyperscaler)\n- Deutsche Bank (company, supplier\u2014payment agent role)\n\nRISK SIGNALS IDENTIFIED (not extracted as separate nodes to avoid over-segmentation, but flagged for interpretation):\n- CAPEX_ROI_GAP: $55.7B annual capex ramp with 362% RPO growth; unclear if capital deployment is matched to contracted revenue.\n- EXECUTION_RISK: Data center buildout in \"new geographic locations\" with no timeline or capacity-utilization benchmarks disclosed.\n- COST_OPACITY: No segment-level capex disclosure (cloud vs. software vs. on-prem); no depreciation life changes or lease term analysis.\n\nNO SIFI-MATERIAL INVESTMENTS, SPVs, OFF-BALANCE-SHEET ENTITIES, OR CIRCULAR DEPENDENCIES IDENTIFIED IN THIS SECTION.\nThe text is primarily financing and liquidity disclosures, not strategic relationship or investment narrative. Deeper analysis of Oracle's cloud customer base and capex-related leasing structures would require Item 1A (Risk Factors) or Note 12 (Leases) sections.\""
+  },
+  "item_9a": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] Item 9A (Controls & Procedures), Item 9B (Other Information), Item 9C (Foreign Jurisdictions), Item 10 (Directors/Officers), Item 11 (Executive Compensation), Item 12 (Security Ownership), Item 13 (Related Transactions), Item 14 (Auditor Fees) contain only boilerplate governance and control disclosures. No SIFI-material entities, counterparty relationships, investments, related-party arrangements, customer/supplier concentrations, or hidden leverage signals are disclosed in this section. All substantive references to strategic relationships, investments, and counterparties are incorporated by reference to the 2026 Proxy Statement (not provided). Ernst & Young LLP is mentioned as the independent auditor\u2014a standard engagement, not material to SIFI risk. No extraction warranted."
+  },
+  "item_15": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] Item 15 (Exhibits and Financial Statement Schedules) contains only procedural filing information: the index of financial statements, schedules omitted notation, and the independent auditor's report from EY. No SIFI-material entities, counterparties, investments, partnerships, or related-party arrangements are named or disclosed. The auditor's report discusses routine audit procedures for consolidated financials and a critical audit matter on uncertain tax positions (intercompany transfer pricing), which is standard tax accounting commentary without specific counterparty exposure or hidden leverage implications. No extraction warranted."
+  },
+  "financial_statements_and_notes": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SoftBank",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ampere Computing",
+        "fields": {
+          "aliases": [
+            "Ampere Computing Holdings LLC"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "TikTok USDS JV",
+        "fields": {
+          "aliases": [
+            "TikTok USDS Joint Venture LLC"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Oracle-Ampere Equity Stake",
+        "fields": {
+          "investor": "Oracle",
+          "target": "Ampere Computing",
+          "amount_usd": 4300000000,
+          "verbatim_quote": "We received cash proceeds of $4.3 billion in exchange for our equity, debt and call option interests in Ampere in the Ampere Acquisition. We recorded $2.7 billion of realized gain... We have no remaining investment in Ampere as of May 31, 2026."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Oracle-TikTok USDS JV 15%",
+        "fields": {
+          "investor": "Oracle",
+          "target": "TikTok USDS JV",
+          "equity_pct": 15,
+          "verbatim_quote": "The substantial majority of the non-marketable investments we held as of May 31, 2026 were with TikTok USDS Joint Venture LLC, an equity method investee in which we have an ownership interest of 15%."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-FY2026-Capex",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 55663000000,
+          "start_fy": 2026,
+          "purpose": "Data center / cloud infrastructure buildout",
+          "verbatim_quote": "Capital expenditures (55,663) ... Non-cash investing activities: Unpaid capital expenditures $5,279"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-RPO-$638B",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 638000000000,
+          "purpose": "Remaining performance obligations from contracted cloud/software/hardware revenues",
+          "verbatim_quote": "As of May 31, 2026, our remaining performance obligations were $638 billion, of which we expect to recognize approximately 12% as revenues over the next twelve months, 34% over the subsequent month 13 to month 36, 34% over the subsequent month 37 to month 60 and the remainder thereafter."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Capex-ROI-Gap",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 55663000000,
+            "note": "FY2026 capex of $55.7B (cash) + $5.3B unpaid = ~$61B total; financed with $46B new debt issuances; PP&E nearly tripled from $43.5B to $100B YoY; depreciation surged from $3.9B to $7.6B"
+          },
+          "named_counterparties": [
+            "Oracle"
+          ],
+          "verbatim_quote": "Capital expenditures (55,663)... Proceeds from issuances of senior notes, term loan credit agreements and other borrowings, net of issuance costs 46,093... Property, plant and equipment, net 99,957 [vs] 43,522... The economic returns on these investments are dependent on customer demand and the ability of our key customers to meet their contractual obligations."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Hidden-Leverage-OpLease",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 26648000000,
+            "note": "Operating lease ROU assets grew from $13.1B to $29.7B YoY; operating lease liabilities (non-current) grew from $11.5B to $26.6B. Combined with $122B non-current debt, total off-P&L obligations are material."
+          },
+          "named_counterparties": [
+            "Oracle"
+          ],
+          "verbatim_quote": "Operating lease right-of-use assets 29,690 [vs] 13,145... Operating lease liabilities 26,648 [vs] 11,536... Notes payable and other borrowings, non-current 122,342 [vs] 85,297"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Execution-Risk-LargeContracts",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 638000000000,
+            "note": "RPO of $638B requires massive ongoing infrastructure delivery; $4.6B customer prepayments with significant financing component received in FY2026 only (none prior years), signaling large new long-term contracts not yet delivered."
+          },
+          "named_counterparties": [
+            "Oracle"
+          ],
+          "verbatim_quote": "We enter into certain large, long-term customer cloud arrangements that require us to make significant infrastructure investments... The economic returns on these investments are dependent on customer demand and the ability of our key customers to meet their contractual obligations. Changes in customer demand or the ability of our key customers to meet their contractual obligations may adversely affect operating margins, cash flows and could require evaluation of the recoverability of related long-lived assets."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Customer-Prepayment-SigFinancing",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 4600000000,
+            "note": "$4.6B of prepayments with significant financing component received in FY2026 (zero in FY2025 and FY2024), indicating large customers pre-funding Oracle capex; creates deferred revenue liability and interest expense dynamics that inflate reported cash from operations."
+          },
+          "named_counterparties": [
+            "Oracle"
+          ],
+          "verbatim_quote": "During fiscal 2026, we received $4.6 billion of prepayments from customers that included a significant financing component. No prepayments were received from customers that included a significant financing component during fiscal 2025 and 2024."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-TikTok-JV-Geopolitical-Risk",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_assets": 0.88,
+            "note": "$2.3B non-marketable investments, substantial majority in TikTok USDS JV (15% equity method); JV is a politically exposed, government-mandated structure subject to US national security review."
+          },
+          "named_counterparties": [
+            "TikTok USDS JV"
+          ],
+          "verbatim_quote": "The substantial majority of the non-marketable investments we held as of May 31, 2026 were with TikTok USDS Joint Venture LLC, an equity method investee in which we have an ownership interest of 15%."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Debt-Surge-Risk",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 129541000000,
+            "note": "Total debt (current + non-current notes payable) = $7.2B + $122.3B = $129.5B. FY2026 net new debt issuances of $46.1B vs repayments of $6.9B. Interest expense rose to $4.6B. Short-term financing related to capex added $3.3B more."
+          },
+          "named_counterparties": [
+            "Oracle"
+          ],
+          "verbatim_quote": "Notes payable and other borrowings, non-current 122,342... Proceeds from issuances of senior notes, term loan credit agreements and other borrowings, net of issuance costs 46,093... Repayments of senior notes, term loan credit agreements and other borrowings (6,942)... Interest expense (4,599)"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "ORCL-OperatingLeases-$260B",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 260000000000,
+          "duration_yrs": 17,
+          "start_fy": 2027,
+          "purpose": "Data center operating lease commitments not yet reflected on balance sheet, expected to commence FY2027-FY2029, terms 15-19 years",
+          "verbatim_quote": "we had $260 billion of additional lease commitments, substantially all related to data center arrangements, that are generally expected to commence between the first quarter of fiscal 2027 and fiscal 2029 and for terms of fifteen to nineteen years that were not reflected on our consolidated balance sheet as of May 31, 2026"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "ORCL-PurchaseObligations-$13.3B",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 13309000000,
+          "purpose": "Unconditional purchase obligations, primarily data center power arrangements",
+          "verbatim_quote": "our unconditional purchase and certain other obligations, which were primarily related to data center power arrangements, were as follows... Total $13,309 [million]"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "ORCL-PostPeriodPurchaseCommitments-$19B",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 19000000000,
+          "duration_yrs": 5,
+          "start_fy": 2027,
+          "purpose": "Additional unconditional purchase commitments for cloud infrastructure assets entered subsequent to May 31, 2026",
+          "verbatim_quote": "Subsequent to May 31, 2026, we entered into an additional $19 billion of unconditional purchase commitments for cloud infrastructure assets that commence in fiscal 2027 and have a term of five years."
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "ORCL-DataCenter-LeaseGuarantee-$3.3B",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Oracle",
+          "beneficiary": "Oracle",
+          "debt_stack_usd": 3300000000,
+          "residual_value_guarantee": true,
+          "purpose": "Oracle has guaranteed up to $3.3B of lessor's borrowing for a data center lease, maturing September 2026",
+          "verbatim_quote": "These additional lease commitments include a lease for which we have guaranteed up to $3.3 billion of the lessor's borrowing, which matures in September 2026."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL-OffBalanceSheet-$260B-DataCenterLeases",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 5,
+          "numeric_signal": {
+            "amount_usd": 260000000000,
+            "duration_yrs": 19,
+            "note": "$260B of operating lease commitments not on balance sheet as of May 31, 2026; on-balance-sheet operating lease liabilities are $30.2B. Off-balance commitments are ~8.6x existing on-balance-sheet lease liabilities."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "we had $260 billion of additional lease commitments, substantially all related to data center arrangements, that are generally expected to commence between the first quarter of fiscal 2027 and fiscal 2029 and for terms of fifteen to nineteen years that were not reflected on our consolidated balance sheet as of May 31, 2026"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL-CapexROIGap-DataCenter",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 292309000000,
+            "note": "$260B off-balance-sheet leases + $13.3B purchase obligations + $19B post-period commitments = ~$292B in committed/contracted forward spend; construction in progress alone is $40B. Depreciation doubled YoY ($3.9B\u2192$7.6B). Revenue base unspecified in this section but magnitude of commitments is exceptional."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Construction in progress... $39,973 [million]... Depreciation expense on property, plant and equipment in fiscal 2026, 2025 and 2024 were $7.6 billion, $3.9 billion and $3.1 billion, respectively."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL-HiddenLeverage-$128B-SeniorNotes",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 128100000000,
+            "note": "$128.1B in senior notes and other long-term borrowings as of May 31, 2026, up from $90.3B in FY2025; $43B of new senior notes issued in FY2026 alone for general corporate purposes including capex."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Based on the trading prices of the $128.1 billion and $90.3 billion of senior notes and other long-term borrowings... we issued $43.0 billion of senior notes for general corporate purposes, which may include capital expenditures, repayment of indebtedness, future investments or acquisitions"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL-ExecutionRisk-DataCenterConstruction",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 39973000000,
+            "note": "$40B of construction in progress (servers, networking, leasehold improvements) to be deployed at data centers, representing 40% of total gross PP&E of $122.7B."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Construction in progress... $39,973 [million]... Comprised primarily of servers, networking equipment and leasehold improvements to be deployed at our data centers."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL-CostOpacity-DepreciationAcceleration",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 7600000000,
+            "note": "Depreciation expense nearly doubled from $3.9B (FY2025) to $7.6B (FY2026). Servers assigned 6-year useful life. Finance lease ROU assets grew from $2.9B to $7.5B YoY, with finance lease liabilities at $7.7B."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Comprised primarily of servers and networking equipment with estimated useful life of six years... Depreciation expense on property, plant and equipment in fiscal 2026, 2025 and 2024 were $7.6 billion, $3.9 billion and $3.1 billion, respectively."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL-LessorBorrowingGuarantee",
+        "fields": {
+          "filer": "Oracle",
+          "category": "Off-balance-sheet guarantee / residual value guarantee",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "These additional lease commitments include a lease for which we have guaranteed up to $3.3 billion of the lessor's borrowing, which matures in September 2026."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL-DebtCovenantRisk",
+        "fields": {
+          "filer": "Oracle",
+          "category": "Debt covenant / leverage covenant risk",
+          "named_counterparties": [
+            "Bank of America"
+          ],
+          "severity": 3,
+          "verbatim_quote": "the requirement that the ratio of 'Consolidated EBITDA' to 'Consolidated Net Interest Expense'... of Oracle and its subsidiaries shall not be less than 3.0 to 1.0 at the end of any fiscal quarter during the period that the Revolving Credit Agreement is effective."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-LeaseROU-DTA-Jump",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 9333000000,
+            "note": "Lease liability deferred tax asset jumped from $3.279B (FY2025) to $9.333B (FY2026), implying massive new operating lease obligations taken on in FY2026; ROU asset deferred tax liability also jumped from $3.207B to $9.181B, confirming scale of new lease commitments"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Lease liabilities [deferred tax asset]: $9,333 [2026] vs $3,279 [2025]... ROU assets [deferred tax liability]: $(9,181) [2026] vs $(3,207) [2025]"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-OCI-SecuritiesClassAction",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Securities class action filed Feb 2026 alleging false and misleading statements about Oracle Cloud Infrastructure business; names CEO, CTO and other executives as defendants"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "On February 3, 2026, a putative class action...was filed...against us, our Chief Technology Officer, our two Chief Executive Officers, two other Oracle executives...The plaintiff alleges that defendants made or are responsible for false and misleading statements regarding Oracle's cloud infrastructure business."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-UnrecognizedTaxBenefits",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 10126000000,
+            "note": "Gross unrecognized tax benefits of $10.1B as of May 31 2026, up from $9.4B in 2025; $4.9B would affect effective tax rate if recognized; $2.7B in accrued interest and penalties"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Total gross unrecognized tax benefits as of May 31 [2026]: $10,126 [million]... $4.9 billion...of unrecognized tax benefits would affect our effective tax rate if recognized... Interest and penalties accrued as of May 31, 2026...were $2.7 billion"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-CloudInfra-RevenueConcentration",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 18101000000,
+            "pct_of_revenue": 0.269,
+            "note": "Cloud infrastructure revenue grew 77% YoY from $10.234B to $18.101B in FY2026, driving most of Oracle's revenue growth; securities class action simultaneously alleges false statements about OCI business, creating credibility risk around the growth narrative"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Cloud infrastructure: $18,101 [2026] vs $10,234 [2025] vs $6,840 [2024]... On February 3, 2026, a putative class action...alleges that defendants made or are responsible for false and misleading statements regarding Oracle's cloud infrastructure business."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-TransferPricingAuditRisk",
+        "fields": {
+          "filer": "Oracle",
+          "category": "Tax / Transfer Pricing",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "U.S. federal and state taxing authorities are currently examining income tax returns of Oracle and various acquired entities for years through fiscal 2024. Many issues are at an advanced stage in the examination process, the most significant of which include issues related to transfer pricing, domestic production activity, one-time transition tax, foreign tax credits and research and development credits."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-NetherlandsPrivacyClassAction",
+        "fields": {
+          "filer": "Oracle",
+          "category": "Legal / GDPR / Privacy",
+          "named_counterparties": [
+            "Salesforce"
+          ],
+          "severity": 2,
+          "verbatim_quote": "TPC alleges that the Oracle Defendants' Data Management Platform product violates certain articles of the European Union Charter of Fundamental Rights, the General Data Protection Regulation (GDPR)... TPC claims damages under a number of categories, including: 'immaterial damages' (at a fixed amount of \u20ac500 per Dutch internet user)"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ampere Computing"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "TikTok USDS JV"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "Oracle-FY2026-Capex"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "Oracle-RPO-$638B"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Capex-ROI-Gap"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Hidden-Leverage-OpLease"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Execution-Risk-LargeContracts"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Customer-Prepayment-SigFinancing"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-TikTok-JV-Geopolitical-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Debt-Surge-Risk"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Oracle-TikTok-JV-Geopolitical-Risk",
+        "target_type": "company",
+        "target_name": "TikTok USDS JV"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "SoftBank",
+        "target_type": "company",
+        "target_name": "Oracle",
+        "properties": {
+          "note": "SoftBank acquired Ampere from Oracle for $4.3B cash proceeds in Nov 2025"
+        }
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "investment",
+        "target_name": "Oracle-Ampere Equity Stake"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "investment",
+        "target_name": "Oracle-TikTok USDS JV 15%"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "ORCL-OperatingLeases-$260B"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "ORCL-PurchaseObligations-$13.3B"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "ORCL-PostPeriodPurchaseCommitments-$19B"
+      },
+      {
+        "predicate": "SPONSORS",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "off_balance_entity",
+        "target_name": "ORCL-DataCenter-LeaseGuarantee-$3.3B"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "off_balance_entity",
+        "target_name": "ORCL-DataCenter-LeaseGuarantee-$3.3B"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL-OffBalanceSheet-$260B-DataCenterLeases"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL-CapexROIGap-DataCenter"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL-HiddenLeverage-$128B-SeniorNotes"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL-ExecutionRisk-DataCenterConstruction"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL-CostOpacity-DepreciationAcceleration"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "ORCL-LessorBorrowingGuarantee"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "ORCL-DebtCovenantRisk"
+      },
+      {
+        "predicate": "DEPENDS_ON",
+        "source_type": "hidden_risk_signal",
+        "source_name": "ORCL-OffBalanceSheet-$260B-DataCenterLeases",
+        "target_type": "capex_commitment",
+        "target_name": "ORCL-OperatingLeases-$260B"
+      },
+      {
+        "predicate": "DEPENDS_ON",
+        "source_type": "hidden_risk_signal",
+        "source_name": "ORCL-ExecutionRisk-DataCenterConstruction",
+        "target_type": "capex_commitment",
+        "target_name": "ORCL-OperatingLeases-$260B"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "off_balance_entity",
+        "source_name": "ORCL-DataCenter-LeaseGuarantee-$3.3B",
+        "target_type": "risk_factor",
+        "target_name": "ORCL-LessorBorrowingGuarantee"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-LeaseROU-DTA-Jump"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-OCI-SecuritiesClassAction"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-UnrecognizedTaxBenefits"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-CloudInfra-RevenueConcentration"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "Oracle-TransferPricingAuditRisk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "Oracle-NetherlandsPrivacyClassAction"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "Oracle-NetherlandsPrivacyClassAction",
+        "target_type": "company",
+        "target_name": "Salesforce"
+      }
+    ],
+    "notes": "[chunk 3/4] This section of Oracle's FY2026 10-K covers stock-based compensation, income taxes, segment information, EPS, and legal proceedings. It does NOT contain direct disclosures of off-balance-sheet SPVs, named AI lab investments, or explicit capex commitment counterparties in this specific excerpt.\n\nKEY SIFI-MATERIAL FINDINGS:\n\n1. HIDDEN LEVERAGE (severity 3): The deferred tax balance sheet reveals an enormous jump in operating lease obligations. Lease liability DTAs surged from $3.279B to $9.333B YoY; ROU asset DTL surged from $3.207B to $9.181B. This implies Oracle added ~$20B+ in new operating lease obligations in FY2026, consistent with its massive data center buildout for OCI but not explicitly quantified here as a capex commitment.\n\n2. EXECUTION RISK (severity 3): A Feb 2026 securities class action alleges Oracle made false/misleading statements about its cloud infrastructure business \u2014 the same segment that just posted 77% YoY revenue growth ($10.2B\u2192$18.1B). This creates material credibility risk around the OCI growth narrative.\n\n3. COST OPACITY (severity 2): $10.1B in gross unrecognized tax benefits with $2.7B accrued interest/penalties, driven primarily by transfer pricing disputes. The $933M net tax expense from the \"One Big Beautiful Bill Act\" remeasurement also signals complex offshore tax structure opacity (Switzerland, Malta, Bermuda entities named).\n\n4. No explicit named counterparties for capex commitments (OpenAI, NVIDIA, etc.) appear in this specific filing section \u2014 those would appear in other sections (MD&A, Note on commitments and contingencies) not included here.\n\n5. No investment portfolio note (non-marketable equity securities) appeared in this excerpt \u2014 would need the full financial statements section to enumerate AI lab equity stakes.\n\n6. U.S. long-lived assets jumped from $45.4B (FY2025) to $102.7B (FY2026) \u2014 more than doubling \u2014 consistent with massive data center buildout but the capex commitment details are not in this section.\n[chunk 4/4] Source text is exclusively the signature page (page 114) of Oracle's 10-K filing dated 2026-06-22. It contains only officer/director names, titles, and dates \u2014 no financial data, capital commitments, off-balance-sheet entities, investments, related-party transactions, or any other SIFI-material disclosures. No nodes or edges can be extracted without fabricating information, which is prohibited by hard rule #1."
+  }
+}

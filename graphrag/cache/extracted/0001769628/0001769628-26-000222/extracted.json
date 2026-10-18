@@ -1,0 +1,1311 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "CoreWeave",
+        "fields": {
+          "ticker": "CRWV",
+          "aliases": [
+            "CRWV",
+            "CoreWeave, Inc."
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Weights and Biases",
+        "fields": {
+          "aliases": [
+            "W&B"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Joint-Venture-NewJersey-DataCenter",
+        "fields": {
+          "entity_type": "JV",
+          "sponsor": "CoreWeave",
+          "purpose": "acquire and develop a data center campus in New Jersey",
+          "verbatim_quote": "our estimates of the maximum funding exposure to fund potential construction and development costs for our joint venture to acquire and develop a data center campus in New Jersey"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "CoreWeave-NJ-DataCenter-Capex",
+        "fields": {
+          "filer": "CoreWeave",
+          "counterparty": "Joint-Venture-NewJersey-DataCenter",
+          "purpose": "data center construction and development",
+          "verbatim_quote": "our estimates of the maximum funding exposure to fund potential construction and development costs for our joint venture to acquire and develop a data center campus in New Jersey"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CoreWeave-Customer-Concentration-Risk",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "pct_of_revenue": 45,
+            "counterparty_count": 1
+          },
+          "named_counterparties": [
+            "Customer A"
+          ],
+          "verbatim_quote": "Customer A accounted for 45% of total revenue for the three months ended March 31, 2026"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CoreWeave-CAPEX-ROI-Gap",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 7695000000,
+            "duration_yrs": 0.25,
+            "note": "Property and equipment capex of $7.7B in Q1 2026 against quarterly revenue of $2.1B"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Purchase of property and equipment, including capitalized internal-use software $7,695 million for the three months ended March 31, 2026; Revenue $2,078 million for the three months ended March 31, 2026"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CoreWeave-Operating-Lease-ROU",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 10182000000,
+            "pct_of_assets": 18.3,
+            "note": "Operating lease ROU assets of $10.2B as of March 31, 2026; total assets $55.6B"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Operating lease right-of-use assets $10,182 million as of March 31, 2026; Total assets $55,573 million"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CoreWeave-Deferred-Revenue-Concentration",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 7500000000,
+            "pct_of_assets": 13.5,
+            "note": "Deferred revenue of $7.5B represents customer advance payments; $98.8B RPO expected over next 7 years"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Deferred revenue, including current and non-current balances as of March 31, 2026 and December 31, 2025 was $7.5 billion and $8.2 billion, respectively. As of March 31, 2026, the Company had $98.8 billion of unsatisfied RPO"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CoreWeave-Debt-Composition",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 24859000000,
+            "pct_of_assets": 44.7,
+            "note": "Total debt $24.9B (current $7.5B + non-current $17.3B) as of March 31, 2026"
+          },
+          "named_counterparties": [
+            "Magnetar"
+          ],
+          "verbatim_quote": "Debt, current $7,547 million and Debt, non-current $17,312 million as of March 31, 2026; includes Senior Secured Notes involving Magnetar"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CoreWeave-IPO-Lock-Up",
+        "fields": {
+          "filer": "CoreWeave",
+          "category": "equity_dilution",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "In March 2025, the Company completed its initial public offering (IPO), in which the Company issued and sold 37 million shares of its Class A common stock at a public offering price of $40.00 per share, which resulted in net proceeds of $1.4 billion"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "CoreWeave-Weights-and-Biases-Acquisition",
+        "fields": {
+          "investor": "CoreWeave",
+          "target": "Weights and Biases",
+          "disclosed_date": "2025-05-05",
+          "verbatim_quote": "Weights and Biases Inc. Member dated 2025-05-05"
+        }
+      },
+      {
+        "type": "company",
+        "name": "CoreWeave",
+        "fields": {
+          "ticker": "CRWV",
+          "aliases": [
+            "CRWV"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Weights & Biases",
+        "fields": {
+          "aliases": [
+            "W&B"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "New Jersey JV",
+        "fields": {
+          "entity_type": "JV",
+          "sponsor": "Data Center Developer (third party)",
+          "co_owner": "CoreWeave",
+          "purpose": "Acquisition and development of multi-phase data center campus in New Jersey",
+          "term_yrs": 15,
+          "verbatim_quote": "the Company entered into a joint venture (the \"JV\") with a data center developer and operator to support the acquisition and development of a multi-phase data center campus in New Jersey. Upon formation, the third-party infrastructure developer obtained an 85% equity interest in the JV, while the Company held the remaining 15% equity interest"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Two Data Center Development VIEs",
+        "fields": {
+          "entity_type": "VIE",
+          "sponsor": "Unspecified",
+          "beneficiary": "CoreWeave",
+          "purpose": "Data center development projects",
+          "verbatim_quote": "during the three months ended March 31, 2026, the Company committed to invest up to $1.2 billion to acquire equity interests in two separate joint ventures that each hold a data center development project"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "New Jersey JV Capex",
+        "fields": {
+          "filer": "CoreWeave",
+          "amount_usd": 200000000.0,
+          "counterparty": "New Jersey JV",
+          "purpose": "Construction and development of data center campus",
+          "verbatim_quote": "the Company estimates that the maximum funding exposure to fund construction and development costs is up to $200 million"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Two VIEs Capex",
+        "fields": {
+          "filer": "CoreWeave",
+          "amount_usd": 1200000000.0,
+          "start_fy": 2026,
+          "purpose": "Equity interests in data center development joint ventures",
+          "verbatim_quote": "the Company committed to invest up to $1.2 billion to acquire equity interests in two separate joint ventures that each hold a data center development project. These funding commitments are expected to be satisfied during 2026"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Uncommenced Leases Capex",
+        "fields": {
+          "filer": "CoreWeave",
+          "amount_usd": 40700000000.0,
+          "duration_yrs": 5,
+          "purpose": "Data center and office building leases not yet commenced",
+          "verbatim_quote": "The aggregate amount of estimated future undiscounted lease payments associated with such leases is $40.7 billion. These leases will commence between 2026 and 2029 with estimated lease terms of five to sixteen years"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Single-Site Data Center Lease",
+        "fields": {
+          "filer": "CoreWeave",
+          "amount_usd": 19150000000.0,
+          "duration_yrs": 16,
+          "purpose": "Single-site data center with 525 MW electrical power access",
+          "verbatim_quote": "The agreement provides access to 525 MW of electrical power, which is expected to be delivered in phases in 2026 and 2028. The Company will make contractual rent payments based on construction costs incurred by the lessor, subject to a contractual maximum. The total contractual rent payments range from $18.7 billion to $19.6 billion over the sixteen year term"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Lessee-Owned Equipment Commitments",
+        "fields": {
+          "filer": "CoreWeave",
+          "amount_usd": 1250000000.0,
+          "purpose": "Procurement and installation of equipment at leased data center premises",
+          "verbatim_quote": "the Company estimates that it will incur between $900 million and $1.6 billion to fulfill these commitments, with expenditures expected to be incurred in phases through 2028"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "DCSP Financing Arrangement",
+        "fields": {
+          "entity_type": "project_finance",
+          "sponsor": "Data Center Service Provider (DCSP)",
+          "beneficiary": "CoreWeave",
+          "purpose": "Design, purchase, build, and manage data center with up to 78 MW electrical power access",
+          "term_yrs": 7,
+          "verbatim_quote": "In June 2023, the Company entered into a service agreement (the \"DCSP Service Agreement\") with a data center service provider (the \"DCSP\"). Under the DCSP Service Agreement, the DCSP will design, purchase, build, and manage a data center providing access to up to 78 MW of electrical power to be delivered in phases"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Weights & Biases Acquisition",
+        "fields": {
+          "investor": "CoreWeave",
+          "target": "Weights & Biases",
+          "amount_usd": 1029000000.0,
+          "disclosed_date": "2025-05-05",
+          "verbatim_quote": "On May 5, 2025, the Company acquired all of the outstanding equity interests of Weights and Biases, Inc. (\"Weights & Biases\"), an AI developer platform. The aggregate purchase consideration was $1.0 billion"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Magnetar",
+        "fields": {
+          "aliases": [
+            "Magnetar Financial LLC"
+          ],
+          "role": "investor"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CoreWeave Off-Balance Leverage",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 4,
+          "named_counterparties": [
+            "DCSP",
+            "New Jersey JV",
+            "Two Data Center Development VIEs"
+          ],
+          "numeric_signal": {
+            "amount_usd": 40700000000.0,
+            "note": "Uncommenced leases with $40.7B future payments plus $1.2B VIE investments; lease payments tied to construction costs with contingencies"
+          },
+          "verbatim_quote": "As of March 31, 2026, the Company executed additional lease agreements, primarily for data centers and office buildings, that had not yet commenced. The aggregate amount of estimated future undiscounted lease payments associated with such leases is $40.7 billion. These leases will commence between 2026 and 2029 with estimated lease terms of five to sixteen years. Not included in the preceding amounts are the following lease arrangements, which include significant uncertainties regarding the amount of future lease payments."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CoreWeave Execution Risk",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "named_counterparties": [
+            "DCSP",
+            "Data Center Lessor (525 MW site)",
+            "Data Center Lessor (363 MW sites)"
+          ],
+          "numeric_signal": {
+            "amount_usd": 40700000000.0,
+            "duration_yrs": 5,
+            "note": "Power delivery phased 2026-2029; lease payments contingent on construction completion"
+          },
+          "verbatim_quote": "As of March 31, 2026, the Company also entered into a lease agreement for various buildings located at a single site intended to be used as a data center. The agreement provides access to 525 MW of electrical power, which is expected to be delivered in phases in 2026 and 2028. The Company will make contractual rent payments based on construction costs incurred by the lessor, subject to a contractual maximum."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CoreWeave JV Maximum Exposure",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "named_counterparties": [
+            "New Jersey JV"
+          ],
+          "numeric_signal": {
+            "amount_usd": 327000000.0,
+            "note": "Contingent guarantees ($95M), lease prepayments ($32M), construction funding ($200M)"
+          },
+          "verbatim_quote": "The Company's maximum exposure to loss with respect to the JV includes (i) the carrying value of the Company's investment, (ii) up to $95 million related to a guarantee for certain contingent consideration payable to a third-party by the JV upon the achievement of certain milestones, (iii) lease prepayment of $32 million, and (iv) potential requirements to fund the construction and development of the data center campus"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CoreWeave Contingent Lease Payments",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "named_counterparties": [
+            "Data Center Lessor (363 MW)"
+          ],
+          "numeric_signal": {
+            "amount_usd": null,
+            "note": "363 MW power access with variable lease payments tied to construction costs during construction period"
+          },
+          "verbatim_quote": "the Company has lease agreements where the lease payments are based on a portion of the construction costs incurred by the lessor, including during the construction period. The payments during the construction period are variable and subject to contingencies, which are expected to be resolved at or near the lease commencement date. As of March 31, 2026, these lease agreements provide access to 363 MW of electrical power, which is expected to be delivered in phases between 2026 and 2028."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CoreWeave Goodwill & Intangible Concentration",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "named_counterparties": [
+            "Weights & Biases"
+          ],
+          "numeric_signal": {
+            "amount_usd": 793000000.0,
+            "pct_of_assets": null,
+            "note": "Goodwill of $793M allocated to Weights & Biases acquisition, primarily workforce and synergies; none tax-deductible"
+          },
+          "verbatim_quote": "The excess of the purchase price over the fair value of the net assets acquired was allocated to goodwill, none of which is expected to be deductible for tax purposes. Goodwill is primarily attributable to the assembled workforce as well as the anticipated synergies from the integration of Weights & Biases' technology with the Company's technology."
+        }
+      },
+      {
+        "type": "company",
+        "name": "CoreWeave",
+        "fields": {
+          "ticker": "CRWV",
+          "aliases": [
+            "CoreWeave Inc.",
+            "CRWV"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Magnetar",
+        "fields": {
+          "role": "investor"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Magnetar-CoreWeave-2021",
+        "fields": {
+          "investor": "Magnetar",
+          "target": "CoreWeave",
+          "amount_usd": 15000000,
+          "disclosed_date": "2021-10",
+          "verbatim_quote": "In connection with the issuance of the 2021 Convertible Senior Secured Notes in October 2021, the Company granted Magnetar an option to purchase up to $15 million of the Company's Class A common stock at the IPO price"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Magnetar-CoreWeave-2022",
+        "fields": {
+          "investor": "Magnetar",
+          "target": "CoreWeave",
+          "amount_usd": 125000000,
+          "disclosed_date": "2022-10",
+          "verbatim_quote": "In October 2022, the Company executed a note issuance agreement and a note purchase agreement (the \"2022 Senior Secured Notes\") and between October 2022 and April 2023, the Company issued $125 million of 2022 Senior Secured Notes with maturity dates between October 2025 and April 2026 to funds or accounts managed or advised by Magnetar"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "CoreWeave-JV-June2025",
+        "fields": {
+          "entity_type": "JV",
+          "sponsor": "CoreWeave",
+          "term_yrs": null,
+          "purpose": "Forward-starting lease and development management",
+          "verbatim_quote": "In June 2025, the Company entered into a forward-starting lease and a development management agreement in connection with an unconsolidated joint venture, which is an unconsolidated joint venture of the Company and a related party."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "CoreWeave-Capex-2026",
+        "fields": {
+          "filer": "CoreWeave",
+          "purpose": "GPU fleet, networking equipment, servers, switches, data center infrastructure",
+          "verbatim_quote": "During the three months ended March 31, 2026 and 2025, cash paid for property and equipment was $7.7 billion and $1.4 billion, respectively. We expect to increase, relative to 2025, our investment in our technology and infrastructure, including servers, network equipment, and data center related expenses, to support the growth of our business"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CoreWeave-CAPEX_ROI_GAP-Risk",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 7700000000,
+            "duration_yrs": 1
+          },
+          "verbatim_quote": "Net cash used in investing activities was $7.7 billion for the three months ended March 31, 2026, as compared to $1.4 billion for the three months ended March 31, 2025. The increase was driven by higher capital investments in our infrastructure, including our GPU fleet, networking equipment, servers, switches and other necessary equipment for infrastructure asset security compared to the three months ended March 31, 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CoreWeave-EXECUTION_RISK-Datacenter",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "note": "Timing of datacenter deployment and cost of revenue volatility"
+          },
+          "verbatim_quote": "We anticipate that cost of revenue may fluctuate as a percentage of revenue in the future due to the timing of when data centers go live, including due to any delays in the availability of data centers that we lease or own, and when we achieve economies of scale and operational efficiencies."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CoreWeave-COST_OPACITY-Depreciation",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 642000000,
+            "note": "Significant increase in depreciation and amortization quarter-over-quarter"
+          },
+          "verbatim_quote": "This increase was primarily attributable to an increase in depreciation and amortization of approximately $642 million, from $429 million for the three months ended March 31, 2025, to $1.1 billion for the three months ended March 31, 2026. These increases in depreciation and amortization were related to investments in our platform and servers, switches, and other networking equipment fixed assets within our infrastructure that were placed in service."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CoreWeave-Debt-RiskFactor",
+        "fields": {
+          "filer": "CoreWeave",
+          "category": "Debt Obligations and Interest Expense",
+          "named_counterparties": [
+            "Magnetar"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Interest expense, net for the three months ended March 31, 2026 increased by $272 million, or 103%, compared to the three months ended March 31, 2025. These increases were attributable to increased borrowing levels and total debt obligations."
+        }
+      },
+      {
+        "type": "company",
+        "name": "CoreWeave",
+        "fields": {
+          "ticker": "CRWV",
+          "role": "hyperscaler",
+          "aliases": [
+            "CoreWeave Cloud Platform"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "OpenAI",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "aliases": [
+            "AWS"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Google",
+        "fields": {
+          "aliases": [
+            "Google Cloud Platform"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "aliases": [
+            "Azure"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "TSMC",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "OpenAI-CoreWeave-$6.5B",
+        "fields": {
+          "filer": "CoreWeave",
+          "amount_usd": 6500000000.0,
+          "counterparty": "OpenAI",
+          "duration_yrs": 6,
+          "start_fy": 2025,
+          "purpose": "AI cloud infrastructure services",
+          "verbatim_quote": "in May 2025, we entered into a master services agreement with OpenAI OpCo, LLC (\"OpenAI\") and in September 2025, we entered into an order form under this master services agreement pursuant to which OpenAI has committed to pay us up to approximately $6.5 billion through May 31, 2031"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Meta-CoreWeave-$21B",
+        "fields": {
+          "filer": "CoreWeave",
+          "amount_usd": 21000000000.0,
+          "counterparty": "Meta",
+          "duration_yrs": 7,
+          "start_fy": 2026,
+          "purpose": "AI cloud infrastructure services and computing capacity",
+          "verbatim_quote": "in March 2026, we entered into an order form under an existing master services agreement pursuant to which Meta Platforms, Inc. (\"Meta\") initially committed to pay us up to approximately $21 billion (inclusive of access to new computing capacity through December 20, 2032 and the exercise of an existing option to access additional computing capacity through April 10, 2032)"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "NVIDIA-CoreWeave-$2B",
+        "fields": {
+          "investor": "NVIDIA",
+          "target": "CoreWeave",
+          "amount_usd": 2000000000.0,
+          "equity_pct": null,
+          "round": "Private Placement",
+          "disclosed_date": "2026-01",
+          "verbatim_quote": "In January 2026, we entered into a securities purchase agreement with NVIDIA Corporation for a private placement of approximately 23 million shares of our Class A common stock at a purchase price of $87.20 per share, for aggregate gross proceeds of $2.0 billion."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-CUSTOMER_CONCENTRATION-OpenAI-Meta",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "named_counterparties": [
+            "OpenAI",
+            "Meta"
+          ],
+          "numeric_signal": {
+            "pct_of_revenue": 65,
+            "counterparty_count": 2
+          },
+          "verbatim_quote": "A substantial portion of our revenue is driven by a limited number of customers. We recognized an aggregate of approximately 65% of our revenue from our top two customers for the three months ended March 31, 2026, with no other customer representing 10% or more of our revenue for that period."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-SUPPLIER_CONCENTRATION-NVIDIA",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 4,
+          "named_counterparties": [
+            "NVIDIA"
+          ],
+          "numeric_signal": {
+            "amount_usd": null,
+            "pct_of_revenue": null,
+            "counterparty_count": 1
+          },
+          "verbatim_quote": "For example, as a result of our obligations in our current customer contracts, all of the GPUs used in our infrastructure today are NVIDIA GPUs."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-CAPEX_ROI_GAP",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": null,
+            "duration_yrs": null,
+            "note": "Asymmetric capex commitment vs. contracted revenue timing"
+          },
+          "verbatim_quote": "For our potential new data centers and expansion sites, we expect to commit substantial operational and financial resources, including long-term power supply contracts, in advance of securing customer contracts for those data centers. This asymmetric dynamic could adversely affect our business, financial position, results from operations and prospects."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-EXECUTION_RISK-DataCenter",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "duration_yrs": null,
+            "note": "Multi-phase data center construction projects with complex dependencies"
+          },
+          "verbatim_quote": "In order to meet the demand for cloud infrastructure, we have expanded, and may continue to expand existing data center campuses, lease new data center facilities or acquire suitable land to build new data centers. These development and construction projects are highly complex, capital-intensive and require a combination of scale, speed and advanced technology. Execution of these projects is extremely difficult and has multiple potential failure points that expose us to many risks, either directly or indirectly through delays or increased partner costs that are passed on to us, which could have a material, adverse effect on our operating results, financial condition, and prospects."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-HIDDEN_LEVERAGE-DebtStack",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 18200000000.0,
+            "note": "Total debt: $11.8B delayed draw term loans + $6.4B notes outstanding"
+          },
+          "verbatim_quote": "As of March 31, 2026, we had $11.8 billion outstanding under our delayed draw term loan facilities. These delayed draw term loan facilities are collateralized with the assets underlying the contributed contracts and the pledged contractual cash flows, generally from investment grade counterparties. They are drawn as we build infrastructure to support customer requirements, and amortize over time as contracted cash flows are generated in a regular and predictable manner."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRWV-SUPPLIER_DEPENDENCY_NVDA",
+        "fields": {
+          "filer": "CoreWeave",
+          "category": "Single-source supplier risk",
+          "named_counterparties": [
+            "NVIDIA",
+            "TSMC"
+          ],
+          "severity": 4,
+          "verbatim_quote": "Moreover, our suppliers themselves rely on a complex network of third-party suppliers for semiconductor manufacturing, hardware components, and other critical inputs, which introduces additional risks to our supply chain. For example, NVIDIA relies on suppliers such as Taiwan Semiconductor Manufacturing Company for semiconductor fabrication and other manufacturers for compute and networking components."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRWV-GEOPOLITICAL_TAIWAN",
+        "fields": {
+          "filer": "CoreWeave",
+          "category": "Geopolitical supply chain risk",
+          "named_counterparties": [
+            "NVIDIA",
+            "TSMC"
+          ],
+          "severity": 4,
+          "verbatim_quote": "Any disruption in the operations of these upstream suppliers, whether due to equipment failures, geopolitical factors such as the growing potential for military conflict between China and Taiwan, or subcomponent or raw material supply chain constraints, could affect our suppliers' ability to supply the significant components of the equipment we use to operate our platform and provide our solutions and services to our customers, which would, in turn, affect the availability of our solutions and services, lead times, and our financial results."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRWV-DATA_CENTER_PROVIDER",
+        "fields": {
+          "filer": "CoreWeave",
+          "category": "Third-party data center dependency",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Those third parties could fail to deliver on their contractual obligations under those agreements, including agreements to provide us with certain data, equipment, and utilities information required to run our business, such as the delays that we announced in November 2025 with respect to the delivery of certain data centers to be provided by a third-party data center provider."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRWV-POWER_SUPPLY",
+        "fields": {
+          "filer": "CoreWeave",
+          "category": "Power supply and cost risk",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Our inability to secure sufficient power on terms that are acceptable to us could have an adverse effect on our business, results of operation, ability to operate, financial condition, and prospects."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRWV-MATERIAL_WEAKNESS",
+        "fields": {
+          "filer": "CoreWeave",
+          "category": "Internal control deficiency",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Based on the evaluation of our disclosure controls and procedures, our Chief Executive Officer and Chief Financial Officer concluded that our disclosure controls and procedures were not effective at the reasonable assurance level as of March 31, 2026 due to the material weaknesses in our internal control over financial reporting described below."
+        }
+      },
+      {
+        "type": "company",
+        "name": "CoreWeave",
+        "fields": {
+          "ticker": "CRWV",
+          "aliases": [
+            "CRWV"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "OpenAI",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "role": "partner"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Kenilworth-JV",
+        "fields": {
+          "entity_type": "JV",
+          "sponsor": "CoreWeave",
+          "purpose": "multi-phase data center campus in Kenilworth, New Jersey",
+          "verbatim_quote": "in June 2025, we entered into a joint venture with a third-party infrastructure developer, to support the acquisition and development of a multi-phase data center campus in Kenilworth, New Jersey"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Monolith AI",
+        "fields": {
+          "role": "acquired_subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Marimo Inc",
+        "fields": {
+          "role": "acquired_subsidiary"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-CustomerConcentration",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 4,
+          "named_counterparties": [
+            "OpenAI",
+            "Microsoft",
+            "Meta"
+          ],
+          "numeric_signal": {
+            "pct_of_revenue": 98,
+            "counterparty_count": 3,
+            "note": "For three months ended March 31 2026 and 2025, committed contracts accounted for 98% of revenue from limited number of customers"
+          },
+          "verbatim_quote": "Although we currently generate the majority of our revenue from large, established customers in the AI industry... a substantial portion of our revenue is currently, and is expected for the foreseeable future to be, driven by a limited number of customers"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "OpenAI-Services-$11.9B",
+        "fields": {
+          "filer": "CoreWeave",
+          "amount_usd": 11900000000,
+          "counterparty": "OpenAI",
+          "purpose": "AI infrastructure services",
+          "duration_yrs": 5,
+          "start_fy": 2025,
+          "verbatim_quote": "in March 2025, we entered into a master services agreement with OpenAI, a private company, pursuant to which OpenAI has committed to pay us up to approximately $11.9 billion through October 2030"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-CapexROIGap",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [
+            "OpenAI"
+          ],
+          "numeric_signal": {
+            "amount_usd": 25100000000,
+            "note": "Total indebtedness of $25.1B as of March 31 2026 to fund infrastructure with concentrated customer base"
+          },
+          "verbatim_quote": "we may have excess capacity and may remain responsible for expenditures for components, infrastructure, and data center leases and build-outs, as well as related financing that we have undertaken for which we may not receive corresponding revenue"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-ExecutionRisk-Rubin",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [
+            "NVIDIA"
+          ],
+          "verbatim_quote": "we face the risk that customers may not value or be willing to adopt these newer offerings... such as our expected deployment of the NVIDIA Rubin platform in the second half of 2026"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-LimitedOperatingHistory",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "We were founded in September 2017 and launched our CoreWeave Cloud Platform in 2020. Moreover, prior to 2022, we had limited revenue, most of which was derived from our past crypto mining offerings, which were discontinued"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-CustomerCreditRisk",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "named_counterparties": [
+            "OpenAI"
+          ],
+          "verbatim_quote": "Although we currently generate the majority of our revenue from large, established customers in the AI industry, we intend to increase the number of our customers over time, including customers in their early stages and/or private companies that may have increased risk of insolvency"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-AccumulatedDeficit",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 3400000000,
+            "note": "Accumulated deficit as of March 31 2026"
+          },
+          "verbatim_quote": "We incurred net losses of $740 million and $315 million for the three months ended March 31, 2026 and 2025, respectively... As of March 31, 2026, we had an accumulated deficit of $3.4 billion"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-HighLeverage",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 4,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 35100000000,
+            "note": "Total debt $25.1B plus operating lease liabilities $10.1B as of March 31 2026"
+          },
+          "verbatim_quote": "As of March 31, 2026, our total indebtedness was $25.1 billion... we recorded operating lease liabilities of $10.1 billion, which represents our obligation to make lease payments under those lease arrangements"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRWV-MaterialWeaknesses",
+        "fields": {
+          "filer": "CoreWeave",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "named_counterparties": [],
+          "verbatim_quote": "we identified material weaknesses in our internal control over financial reporting... pertained to the lack of effectively designed, implemented, and maintained IT general controls... insufficient segregation of duties... lack of sufficient number of qualified personnel"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRWV-IntegratedAcquisitions",
+        "fields": {
+          "filer": "CoreWeave",
+          "category": "Integration Risk",
+          "named_counterparties": [
+            "Monolith AI"
+          ],
+          "severity": 2,
+          "verbatim_quote": "in November 2025, we acquired Monolith AI Limited... There can be no assurance that we will be able to successfully integrate Monolith AI Limited, its employees, and its products into our platform"
+        }
+      },
+      {
+        "type": "company",
+        "name": "CoreWeave",
+        "fields": {
+          "ticker": "CRWV",
+          "aliases": [
+            "CoreWeave, Inc."
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "MUFG Bank",
+        "fields": {
+          "aliases": [
+            "MUFG Bank, Ltd."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "U.S. Bank",
+        "fields": {
+          "aliases": [
+            "U.S. Bank Trust Company, National Association"
+          ],
+          "role": "supplier"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "SELLS_COMPUTE_TO",
+        "target_type": "company",
+        "target_name": "Weights and Biases"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "off_balance_entity",
+        "target_name": "Joint-Venture-NewJersey-DataCenter"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CoreWeave-Customer-Concentration-Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CoreWeave-CAPEX-ROI-Gap"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CoreWeave-Operating-Lease-ROU"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CoreWeave-Deferred-Revenue-Concentration"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CoreWeave-Debt-Composition"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "CoreWeave-IPO-Lock-Up"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "Weights and Biases"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "Two VIEs Capex"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "New Jersey JV Capex"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "Uncommenced Leases Capex"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "Single-Site Data Center Lease"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "Lessee-Owned Equipment Commitments"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "INVESTED_IN",
+        "target_type": "investment",
+        "target_name": "Weights & Biases Acquisition"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "DEPENDS_ON",
+        "target_type": "off_balance_entity",
+        "target_name": "DCSP Financing Arrangement"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "CIRCULAR_WITH",
+        "target_type": "off_balance_entity",
+        "target_name": "New Jersey JV"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CoreWeave Off-Balance Leverage"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CoreWeave Execution Risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CoreWeave JV Maximum Exposure"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CoreWeave Contingent Lease Payments"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CoreWeave Goodwill & Intangible Concentration"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Magnetar",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "CoreWeave"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Magnetar",
+        "target_type": "company",
+        "target_name": "CoreWeave"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "capex_commitment",
+        "target_name": "CoreWeave-Capex-2026"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CoreWeave-CAPEX_ROI_GAP-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CoreWeave-EXECUTION_RISK-Datacenter"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CoreWeave-COST_OPACITY-Depreciation"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "risk_factor",
+        "target_name": "CoreWeave-Debt-RiskFactor"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "company",
+        "target_name": "OpenAI",
+        "predicate": "SELLS_COMPUTE_TO"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "company",
+        "target_name": "Microsoft",
+        "predicate": "SELLS_COMPUTE_TO"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "company",
+        "target_name": "Meta",
+        "predicate": "SELLS_COMPUTE_TO"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "company",
+        "target_name": "NVIDIA",
+        "predicate": "CIRCULAR_WITH"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "capex_commitment",
+        "target_name": "OpenAI-Services-$11.9B",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "capex_commitment",
+        "source_name": "OpenAI-Services-$11.9B",
+        "target_type": "company",
+        "target_name": "OpenAI",
+        "predicate": "NAMES_COUNTERPARTY"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "off_balance_entity",
+        "target_name": "Kenilworth-JV",
+        "predicate": "SPONSORS"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "company",
+        "target_name": "Monolith AI",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "company",
+        "target_name": "Marimo Inc",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRWV-CustomerConcentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRWV-CapexROIGap",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRWV-ExecutionRisk-Rubin",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRWV-HighLeverage",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "CoreWeave",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRWV-MaterialWeaknesses",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "MUFG Bank",
+        "target_type": "company",
+        "target_name": "CoreWeave",
+        "predicate": "SUPPLIES",
+        "properties": {
+          "context": "Coordinating lead arranger and joint bookrunner for debt financing",
+          "date": "March 30, 2026"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "U.S. Bank",
+        "target_type": "company",
+        "target_name": "CoreWeave",
+        "predicate": "SUPPLIES",
+        "properties": {
+          "context": "Trustee for lenders under Limited Guarantee arrangement",
+          "date": "March 30, 2026"
+        }
+      }
+    ],
+    "notes": "[chunk 1/6] EXTRACTION SUMMARY:\n\n**Company:** CoreWeave (CRWV) \u2014 AI infrastructure hyperscaler, recently IPO'd (March 2025).\n\n**SIFI-Material Findings:**\n\n1. **CUSTOMER_CONCENTRATION (Severity 4):** Customer A = 45% of Q1 2026 revenue ($936M of $2.1B). This is extreme single-point-of-failure risk. Prior period (Q1 2025) showed 72% concentration with same customer. Slight improvement but still critical.\n\n2. **CAPEX_ROI_GAP (Severity 3):** Q1 2026 capex $7.7B, quarterly revenue $2.1B. Annualized capex ~$31B vs. revenue ~$8.3B. Company has committed to a New Jersey data center JV with unspecified but material capex exposure. No matched customer contracts visible for new build-out capacity.\n\n3. **HIDDEN_LEVERAGE (Severity 3):** Total debt $24.9B (45% of assets). Includes Senior Secured Notes involving Magnetar (related-party lender). Multiple debt facilities (DDTL 1.0\u20134.0, convertible notes, OEM financing). Operating leases add $10.2B ROU, another 18% of assets.\n\n4. **DEFERRED_REVENUE & RPO (Severity 2):** $7.5B deferred revenue + $98.8B RPO over 7 years. While large, it provides revenue visibility. However, if Customer A's contract unwinds or scales back, the realized RPO would collapse.\n\n5. **Weights & Biases Acquisition (May 2025):** CoreWeave acquired W&B (intangible assets recognized). W&B is likely a customer and/or strategic asset for AI model training/ML ops. Circular with CoreWeave selling compute to W&B and then owning W&B post-acquisition.\n\n6. **IPO Dynamics:** $1.4B net proceeds in March 2025, but company has burned cash and needs aggressive refinancing. Q1 2026 debt issuance of $3.3B vs. $1.3B repayments.\n\n**Key Risks Extracted:**\n- Single customer (A) at 45% revenue = execution risk if customer contract terminates, renegotiates pricing, or shifts to competitor.\n- Massive capex burn ($7.7B/quarter) with only $2.1B revenue \u2014 path to profitability unclear unless RPO is realized and Customer A stays locked in.\n- Related-party Magnetar debt (structured credit, typically illiquid and high-cost).\n- Operating leases and finance leases add $9.8B liabilities; potential residual value guarantees not explicitly disclosed but typical in infrastructure deals.\n- W&B acquisition creates circular dynamic: CoreWeave sells compute to W&B, then acquires it. Could signal an attempt to lock in customer revenue.\n\n**Omitted (Boilerplate):**\n- Generic forward-looking statements.\n- Standard stock-based comp, employee equity grants.\n- Routine FX hedging, interest rate swaps.\n- Standard segment reporting (all one segment).\n- General IT service provider relationships without specificity.\n[chunk 3/6] Extracted from CoreWeave 10-Q (Q1 2026, filed 2026-05-08). Key findings: (1) Magnetar is a significant debt investor ($125M+ in 2022 Senior Secured Notes, $15M warrant in 2021 convertible notes). (2) CoreWeave exhibits material CAPEX_ROI_GAP: $7.7B invested in Q1 2026 alone (vs. $1.4B in Q1 2025), with revenue of only $2.1B for the quarter. (3) EXECUTION_RISK: Significant datacenter deployment timing risk and economies-of-scale dependencies stated explicitly. (4) COST_OPACITY: Depreciation/amortization jumped 50% YoY ($642M increase) with minimal granularity on useful lives or asset mix changes. (5) Debt service pressure: Interest expense doubled YoY to $536M (Q1 2026). (6) Unconsolidated JV with unnamed related party entered June 2025; immaterial P&L impact in 2026 but structure warrants monitoring. No customer concentration data disclosed in this section; geographic revenue shows ~92% US-derived but no customer-level concentration. Stock-based comp is significant ($153M in Q1 2026) but co-founder equity exchange (Sept 2024) does not introduce new SIFI material risk. Subsequent events (April 2026): $4.0B convertible notes, $2.8B senior notes, and $1.0B equity raise indicate aggressive growth financing but insufficient revenue anchoring to service debt at current margins.\"\n[chunk 5/6] CRWV 10-Q filing 2026-05-08. Focus on Item 1 Business narrative. Key SIFI signals: (1) Customer concentration\u201498% of revenue from committed contracts with top 3 customers (OpenAI $11.9B through 2030, Microsoft, Meta); single customer dominance creates revenue cliff risk. (2) Debt stack: $25.1B total debt + $10.1B operating lease liabilities = $35.1B gross leverage on ~$3.4B accumulated deficit and recent net losses ($740M Q1 2026); (3) CAPEX ROI gap\u2014massive infrastructure spend to support OpenAI commitment with limited contract diversification; customer concentration creates stranded asset risk if OpenAI reduces demand. (4) Execution risk on NVIDIA Rubin deployment H2 2026. (5) Material weaknesses in internal controls over financial reporting (IT general controls, segregation of duties, insufficient qualified personnel) as of March 31, 2026\u2014cost opacity signal. (6) Limited operating history\u2014prior to 2022 mostly crypto mining, platform launched 2020. (7) JV in Kenilworth, NJ data center with third-party developer\u2014off-balance risks not fully characterized. (8) Recent acquisitions (Monolith AI Nov 2025, Marimo Inc Feb 2026) with integration risk. No explicit SPV structures or circular dependencies identified in this section, but OpenAI-NVIDIA-CoreWeave triangle warrants monitoring (CoreWeave deploys NVIDIA chips to serve OpenAI). Risk from prepayment model\u2014customers prepay 15-25% of TCV, creating cash inflow/capex timing mismatch.\n[chunk 6/6] This excerpt is from CoreWeave Inc.'s 10-Q filing dated May 8, 2026 (Accession 0001769628-26-000222). The source text contains only exhibit indices and signature pages with minimal substantive business information. The only SIFI-material content identified: (1) CoreWeave's financing arrangement with MUFG Bank and other lenders (March 30, 2026), with U.S. Bank Trust acting as trustee for the lender group. This indicates secured debt backed by a limited guarantee from CoreWeave. No specific loan amount, terms, or further counterparty dependencies are disclosed in this excerpt. No customer concentration, investment activity, or related-party transactions are evident in the provided text. The capped call confirmations (April 2026) reference convertible securities mechanics but no underlying counterparty relationships are named. No quantified risks, circular dependencies, off-balance-sheet vehicles, or capex commitments are disclosed in this section.\""
+  }
+}

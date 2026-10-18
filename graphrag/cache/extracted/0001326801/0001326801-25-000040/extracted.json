@@ -1,0 +1,772 @@
+{
+  "related_party": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-Broadcom-BoardInterlockRisk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Related-Party / Board Interlock \u2014 Supplier Concentration",
+          "named_counterparties": [
+            "Broadcom"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Hock E. Tan is the president and chief executive officer of Broadcom Inc. (Broadcom). We are a party to certain arrangements with Broadcom, whereby we directly and indirectly purchase Broadcom's component products... In 2024, the total amount paid to Broadcom under these arrangements was approximately $987 million."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Broadcom-BoardInterlockSupplierConcentration",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 987000000,
+            "note": "Total 2024 payments to Broadcom for component products, design, development, and engineering services. Broadcom CEO Hock E. Tan sits on Meta's Audit & Risk Oversight Committee."
+          },
+          "named_counterparties": [
+            "Broadcom"
+          ],
+          "verbatim_quote": "Hock E. Tan is the president and chief executive officer of Broadcom Inc. (Broadcom)... In 2024, the total amount paid to Broadcom under these arrangements was approximately $987 million."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "company",
+        "target_name": "Meta"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Meta-Broadcom-BoardInterlockRisk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-Broadcom-BoardInterlockSupplierConcentration"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Meta-Broadcom-BoardInterlockSupplierConcentration",
+        "target_type": "company",
+        "target_name": "Broadcom"
+      }
+    ],
+    "notes": "[chunk 1/1] This DEF 14A filing is primarily a proxy statement covering compensation, equity plans, and related-party disclosures. SIFI-material content is limited. Key extraction:\n\n1. BROADCOM BOARD INTERLOCK + SUPPLIER CONCENTRATION (severity=3): Meta paid Broadcom ~$987M in 2024 for component products plus design/engineering services. Broadcom CEO Hock E. Tan simultaneously sits on Meta's Audit & Risk Oversight Committee \u2014 a textbook board-interlock / related-party supplier concentration risk. $987M is material (likely ~0.6% of Meta's ~$164B 2024 revenue, but concentrated in custom silicon/networking components that are strategically critical to AI infrastructure buildout).\n\n2. No off-balance-sheet SPVs, VIEs, or project-finance structures are disclosed in this section (those appear in the 10-K notes, not the proxy).\n\n3. No new equity investments in AI labs or compute providers are disclosed here.\n\n4. Aircraft charter arrangements with Zuckerberg ($1.77M total) and Olivan ($412K) are below SIFI materiality threshold \u2014 omitted per Rule 3.\n\n5. Zuckerberg indemnification arrangement for regulatory subsidiary liability noted but not SIFI-material in isolation."
+  },
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "hyperscaler",
+          "aliases": [
+            "Meta Platforms"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOG",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "ticker": "MSFT",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Apple",
+        "fields": {
+          "ticker": "AAPL",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NVIDIA",
+        "fields": {
+          "ticker": "NVDA",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Zuckerberg-Pledging-Risk",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "12,000,000 shares of Class B common stock pledged, ~3.5% of Zuckerberg's total holdings, ~2.1% of total voting power"
+          },
+          "named_counterparties": [
+            "Mark Zuckerberg"
+          ],
+          "verbatim_quote": "Mr. Zuckerberg has pledged 12,000,000 shares of Class B common stock, representing approximately 3.5% of the total shares beneficially owned by Mr. Zuckerberg and 0.5% of the total outstanding shares of our common stock, and approximately 2.1% of the total voting power of the outstanding shares of our common stock, in each case as of April 1, 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Zuckerberg-Aircraft-Related-Party",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "OTHER",
+          "severity": 1,
+          "numeric_signal": {
+            "amount_usd": 2585583,
+            "note": "Meta pays for Zuckerberg's personal use of aircraft he indirectly owns via charter arrangement; $2.59M in 2024"
+          },
+          "named_counterparties": [
+            "Mark Zuckerberg"
+          ],
+          "verbatim_quote": "Mr. Zuckerberg uses private aircraft for personal travel in connection with his overall security program (including a private aircraft that is indirectly and wholly owned by Mr. Zuckerberg and operated by an independent charter company)... We pay for travel by Mr. Zuckerberg on the aircraft owned by Mr. Zuckerberg under our Charter and Time Sharing Arrangements."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-Zuckerberg-Pledging-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-Zuckerberg-Aircraft-Related-Party"
+      }
+    ],
+    "notes": "[chunk 1/2] This DEF 14A Compensation Discussion & Analysis section is almost entirely boilerplate executive compensation governance, salary tables, RSU vesting schedules, and peer group benchmarking. No SIFI-material entities were identified: no SPVs, off-balance-sheet entities, AI lab investments, capex commitments, circularity arrangements, revenue roundtripping, or customer/supplier concentration disclosures appear in this section. The peer group listing (Alphabet, Amazon, Apple, AT&T, Cisco, Comcast, Microsoft, Netflix, PayPal, Salesforce, Disney, Uber, Verizon, and for 2025: NVIDIA, Oracle, Visa added) is noted for completeness but represents standard compensation benchmarking practice with no counterparty-web implications. NVIDIA's addition to Meta's 2025 peer group is noted as a weak signal of Meta's self-positioning relative to large-cap AI/infrastructure peers, but does not constitute a material relationship disclosure. No edges are emitted as there are no disclosed business relationships, investments, or risk signals in this section that meet the SIFI-materiality threshold.\n[chunk 2/2] This DEF 14A Compensation Discussion & Analysis section is largely boilerplate executive compensation disclosure with minimal SIFI-material content. Two signals extracted: (1) Zuckerberg's share pledge (12M Class B shares, ~2.1% voting power) creates a hidden leverage / forced-sale risk at the controlling-shareholder level \u2014 severity kept at 2 because the pledge is capped at 20% of holdings and loan LTV at 5% FMV per disclosed framework. (2) Meta's payment for Zuckerberg's personal use of an aircraft he indirectly owns is a related-party arrangement disclosed under \"Related Party Transactions\" per the filing \u2014 extracted as OTHER/severity 1 for counterparty-web completeness. No AI lab investments, SPVs, capex commitments, or supplier/customer concentration data appear in this section. Routine RSU grants, say-on-pay disclosures, Section 162(m) discussion, and CEO pay ratio are not SIFI-material and were skipped."
+  },
+  "director_comp": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "aliases": [
+            "Meta Platforms, Inc.",
+            "Facebook"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "BlackRock",
+        "fields": {
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Vanguard",
+        "fields": {
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Fidelity",
+        "fields": {
+          "aliases": [
+            "FMR LLC"
+          ],
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "aliases": [
+            "Facebook",
+            "Instagram",
+            "WhatsApp",
+            "Threads",
+            "Meta Platforms Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "OpenAI",
+        "fields": {
+          "aliases": [
+            "OpenAI"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Google",
+        "fields": {
+          "aliases": [
+            "Alphabet",
+            "Alphabet Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "aliases": [
+            "Microsoft Corporation"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "aliases": [
+            "Amazon Web Services",
+            "AWS"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Apple",
+        "fields": {
+          "aliases": [
+            "Apple Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Entergy",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NCMEC",
+        "fields": {
+          "aliases": [
+            "National Center for Missing & Exploited Children"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Thorn",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Childhelp",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Tech Coalition",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Blue Owl",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Brookfield",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "META-CHILD-SAFETY-CSAM-SCALE",
+        "fields": {
+          "filer": "Meta",
+          "category": "child_safety_exploitation",
+          "named_counterparties": [],
+          "severity": 4,
+          "verbatim_quote": "In 2023, nearly 36 million cases of online child sexual abuse material were reported; nearly 31 million of those (85 percent) stemmed from Meta platforms."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "META-CHILD-SAFETY-SEXTORTION",
+        "fields": {
+          "filer": "Meta",
+          "category": "child_safety_exploitation",
+          "named_counterparties": [],
+          "severity": 4,
+          "verbatim_quote": "Instagram is ranked first and Facebook second as sources of sextortion, which has also led to teen suicides."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "META-CHILD-SAFETY-MENTAL-HEALTH",
+        "fields": {
+          "filer": "Meta",
+          "category": "child_safety_mental_health",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Meta's own research shows Instagram's negative impacts on teens' self-image, increased rates of depression and anxiety, and increased suicidal thoughts."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "META-CHILD-SAFETY-CYBERBULLYING",
+        "fields": {
+          "filer": "Meta",
+          "category": "child_safety_cyberbullying",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Nearly 80% of teens are on Instagram and more than half of those users have been bullied on the platform."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "META-PRIVACY-GDPR-FINES",
+        "fields": {
+          "filer": "Meta",
+          "category": "privacy_regulatory",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Meta has been subject to a record \u20ac1.2 billion ($1.3 billion) fine for breaching the European Union's General Data Protection Regulation."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "META-PRIVACY-CHILD-DATA",
+        "fields": {
+          "filer": "Meta",
+          "category": "child_safety_privacy",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "In 2022, Meta was fined over $400 million for failing to safeguard children's information on Instagram."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "META-AI-DATA-ETHICS",
+        "fields": {
+          "filer": "Meta",
+          "category": "ai_data_ethics",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Meta's updated privacy policy now allows them to use a wide range of personal data for developing and improving its AI technologies, without explicit user consent."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "META-EMISSIONS-FOSSIL-FUEL-RELIANCE",
+        "fields": {
+          "filer": "Meta",
+          "category": "climate_operational",
+          "named_counterparties": [
+            "Entergy"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Meta's electricity use has increased by 200% and its total greenhouse gas emissions have doubled since 2019... Meta's record-breaking data center is to be built in Louisiana, where local utility Entergy plans to build three methane gas-powered combustion turbines to meet demand."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "META-EMISSIONS-REC-GREENWASHING",
+        "fields": {
+          "filer": "Meta",
+          "category": "climate_operational",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Meta purchases renewable energy certificates (RECs) which are an insufficient decarbonization tool as they do not generally result in new renewable energy capacity, leaving Meta's data centers reliant on high-carbon energy."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "META-CAPEX-ROI-DATACENTER-AI",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Meta's electricity use increased 200% and GHG emissions doubled since 2019 to support expanded AI operations; committed to record-breaking data center in Louisiana but relying on fossil fuels via Entergy turbines without clear renewable timeline"
+          },
+          "named_counterparties": [
+            "Entergy"
+          ],
+          "verbatim_quote": "Meta, a global leader in social technology, is rapidly growing its data center footprint to support expanded artificial intelligence operations. This expansion has caused Meta's electricity use to increase by 200% and its total greenhouse gas emissions to double since 2019."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "META-CHILD-SAFETY-REGULATORY-EXECUTION",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "numeric_signal": {
+            "counterparty_count": 42,
+            "note": "Forty-two U.S. states plus EU regulators actively targeting Meta on child safety; enforcement tools (content moderation, CSAM detection, deepfake identification) represent material execution risk if insufficient or if regulatory requirements materially exceed current capabilities"
+          },
+          "named_counterparties": [
+            "USG",
+            "EU"
+          ],
+          "verbatim_quote": "Forty-two states sued Meta claiming Facebook and Instagram algorithms are intentionally addictive and harm kids' mental health. The European Union's Digital Services Act requires identifying, reporting and removing child sexual abuse material."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "META-CONTENT-MODERATION-SCALE",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": null,
+            "note": "Scale of CSAM enforcement (6.2M pieces on Facebook, 2M on Instagram Q4 2024) suggests system capacity but also reputational/legal risk if enforcement gaps widen"
+          },
+          "named_counterparties": [
+            "NCMEC"
+          ],
+          "verbatim_quote": "Between October and December 2024, we took action on 6.2 million pieces of child sexual exploitation content on Facebook, of which 95.3% was found and actioned by us before it was reported, while 4.7% was reported by users. Over the same time period, we took action on 2 million pieces of child sexual exploitation content on Instagram, of which 96.9% was found and actioned by us before it was reported, while 3.1% was reported by users."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "META-DEEPFAKE-CSAM-GENERATIVE-AI",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "numeric_signal": {
+            "note": "Emerging threat: AI-generated CSAM (deepfakes) may outpace detection and enforcement; Meta's reliance on image matching and Take It Down tool fingerprinting may be insufficient if deepfake generation accelerates"
+          },
+          "named_counterparties": [
+            "Thorn",
+            "All Tech is Human",
+            "NCMEC"
+          ],
+          "verbatim_quote": "With the meteoric rise in use of deepfake materials comes an increasing likelihood that the child exploitation risk that follows will see a similar spike... Failure to do so, as evidenced by massive recent class-action lawsuits against tech companies like Apple, carries not only moral risks but tremendous legal and reputational price tags."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "META-DATA-CONCENTRATION-GDPR",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Meta's AI strategy depends on 'hundreds of billions of publicly shared images and tens of billions of public videos'; GDPR enforcement and consent requirements create uncertainty around data cost attribution and regulatory compliance burden"
+          },
+          "named_counterparties": [
+            "EU"
+          ],
+          "verbatim_quote": "Meta's strategy is to use its AI models to further monetize its data empire\u2014which includes 'hundreds of billions of publicly shared images and tens of billions of public videos, which we estimate is greater than the Common Crawl dataset.' A coalition of European consumer rights groups have accused Meta of collecting 'an unnecessary amount of information on its users \u2014 such as data used to infer their sexual orientation, emotional state or even their susceptibility to addiction \u2014 which they are unable to freely consent to.'"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "aliases": [
+            "Meta Platforms, Inc.",
+            "Facebook"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "BlackRock",
+        "fields": {
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "MicroStrategy",
+        "fields": {
+          "ticker": "MSTR",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Coinbase",
+        "fields": {
+          "ticker": "COIN",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ernst & Young LLP",
+        "fields": {
+          "aliases": [
+            "EY"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "TikTok",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Privacy_Violation_Regulatory_Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Privacy & Regulatory Compliance",
+          "named_counterparties": [
+            "USG",
+            "UK",
+            "Australia"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Meta was fined by US and UK regulators and recently agreed to a $31.85 million settlement with Australian regulators over the Cambridge Analytica scandal; investors sued Meta for SEC filings treating the risk of unauthorized use of user data as a hypothetical when Meta already knew Cambridge Analytica accessed information on 30 million users, causing stock price and market capitalization to plunge by $100 billion"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Data_Collection_Privacy_Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Data Privacy & Advertising Practices",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Meta's Privacy Policy does not fully detail the extent/specifics concerning the exact nature/granularity of data collected across all platforms, particularly concerning user interactions, device information, geolocation, biometric data, identified and deidentified data (including photos, videos, audio), offline conversions, and off-platform activities."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GDPR_Data_Transfer_Violation",
+        "fields": {
+          "filer": "Meta",
+          "category": "Regulatory Compliance - International",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Meta was fined \u20ac1.2 billion for breaching the General Data Protection Regulation by illegally transferring EU users' data"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta_Pixel_Privacy_Healthcare_Litigation",
+        "fields": {
+          "filer": "Meta",
+          "category": "Litigation Risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Meta Pixel has opened avenues for privacy and healthcare litigation"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Privacy_Disclosure_Gaps",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 8000000000,
+            "note": "Privacy program investment since 2019"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Meta retains data to 'provide services,' without specific timeframes/criteria for data retention/deletion, and policies regarding data anonymization/deidentification are not clearly outlined. Though Meta states it obtains user consent for data collection and processing, specific methods by which consent is obtained, how users are informed about data practices, options for users to manage/withdraw consent, cross-platform data integration, and how artificial intelligence/algorithms process user data to create targeted advertisements (including criteria/data used) are not thoroughly detailed\u2014raising concerns about the adequacy of informed consent and the ability to opt-out of specific data collection practices."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "BlackRock",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "Meta",
+        "properties": {
+          "pct_of_voting_power": 2.8,
+          "shares_held": "157,849,942 Class A shares (7.2%)"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Vanguard",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "Meta",
+        "properties": {
+          "pct_of_voting_power": 3.3,
+          "shares_held": "186,347,527 Class A shares (8.5%)"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Fidelity",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "Meta",
+        "properties": {
+          "pct_of_voting_power": 2.4,
+          "shares_held": "134,012,721 Class A shares (6.1%)"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "company",
+        "target_name": "BlackRock",
+        "predicate": "NAMES_COUNTERPARTY",
+        "properties": {
+          "context": "BlackRock is Meta's second largest institutional shareholder; advised 2% Bitcoin allocation"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "company",
+        "target_name": "Ernst & Young LLP",
+        "predicate": "SUPPLIES",
+        "properties": {
+          "context": "Independent registered public accounting firm for fiscal year 2025"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Privacy_Violation_Regulatory_Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Data_Collection_Privacy_Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "GDPR_Data_Transfer_Violation",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Meta_Pixel_Privacy_Healthcare_Litigation",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Privacy_Disclosure_Gaps",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      }
+    ],
+    "notes": "[chunk 1/4] FILING: Meta DEF 14A (2025-04-17). SECTION: Director Compensation and Security Ownership. SIFI EXTRACTION: This section contains minimal SIFI-material content. The director compensation disclosures are standard governance-level details with no hidden leverage, related-party circularity, or counterparty concentration risk beyond routine public disclosure. Key findings: (1) Mark Zuckerberg retains 99.8% voting control via Class B shares (342.6M shares, 10 votes/share) while holding only 14% economic interest\u2014severe voting-economic divergence. (2) Three passive institutional investors (BlackRock 7.2%, Vanguard 8.5%, Fidelity 6.1% of Class A) collectively hold 22% of economic equity but zero voting power due to dual-class structure. (3) Director personal security costs ($833K+ for Ms. Alford in 2024) are expensed without compensation cap adjustment, creating potential governance optics risk but no SIFI leverage or counterparty risk. (4) Deferred Compensation Plan enables RSU deferral for directors Arnold and Kimmitt, but amounts are immaterial to systemic risk. (5) Related-party identification: CZI Holdings LLC, Chan Zuckerberg Holdings LLC/II/III, Mark Zuckerberg Trust\u2014all Zuckerberg control vehicles, no external counterparty exposure. (6) Shareholder proposal (Proposal Six) explicitly notes the governance tension: 84% shareholder support for recapitalization to one-share-one-vote, but board defends dual-class structure as enabling long-term focus. This is a governance/agency risk, not a SIFI financial risk. EXCLUDED: Standard director RSU vesting schedules, annual retainer tables, excess meeting fees, stock ownership guidelines\u2014all boilerplate. CONCLUSION: No extraction of hidden_risk_signal or capex_commitment nodes warranted. The section documents passive index fund holdings and routine governance, not SIFI material.\"\n\n[chunk 3/4] DEF 14A Director Compensation section \u2014 no SIFI-material entities, investments, off-balance-sheet structures, or named counterparty relationships extracted. Text focuses on Meta's renewable energy procurement strategy (matching 100% electricity with clean energy since 2020, 15 GW contracted over a decade, gold LEED data centers) and shareholder proposals regarding Bitcoin treasury assessment. No specific counterparties, SPVs, investments, capex commitments to named entities, or risk signals that meet SIFI materiality threshold. Energy procurement through utilities and renewable developers is operational routine. Bitcoin proposal is governance/treasury strategy with no binding commitment or hidden leverage signal. Audit & Risk committee oversight is standard governance disclosure.\"\n[chunk 4/4] Extracted from Meta DEF 14A (2025-04-17) director compensation and shareholder proposal sections. Focus: privacy risk factors, regulatory violations, data collection opacity, and Bitcoin treasury consideration. No SIFI-material capex commitments, off-balance entities, or hidden leverage identified in this director compensation section. BlackRock relationship noted as institutional investor context. EY identified as auditor. Privacy-related risk signals detected as COST_OPACITY pattern due to incomplete disclosure of data collection practices, retention criteria, and consent mechanisms despite $8B privacy program investment since 2019.\""
+  }
+}

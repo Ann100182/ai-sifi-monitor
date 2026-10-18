@@ -1,0 +1,1740 @@
+{
+  "item_15": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "aliases": [
+            "Meta Platforms, Inc.",
+            "Facebook",
+            "Instagram",
+            "Messenger",
+            "WhatsApp"
+          ],
+          "role": "hyperscaler"
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/1] Item 15 / Item 16 / Forward-looking statements section contains only standard boilerplate: forward-looking statement disclaimers, definitions of terms like 'Meta,' 'Family,' metrics methodology notes (DAP, ARPP, violating accounts, user geography). No SIFI-material business relationships, investments, acquisitions, related-party arrangements, or counterparty dependencies are named or disclosed in this section. The content is procedural (exhibit list, form 10-K summary, signatures) and methodological (user metrics limitations). No capex commitments, off-balance-sheet entities, investments in AI labs or other companies, customer/supplier concentration beyond Meta's own product ecosystem, or hidden leverage structures are mentioned. Section is purely informational and does not merit extraction of entities beyond the filer itself for completeness.\""
+  },
+  "item_1": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "aliases": [
+            "Meta Platforms Inc.",
+            "Facebook"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ray-Ban",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "ASML",
+        "fields": {
+          "role": "supplier"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "company",
+        "target_name": "Ray-Ban",
+        "predicate": "SUPPLIES",
+        "properties": {
+          "context": "Ray-Ban Meta AI glasses with integrated Meta AI assistant"
+        }
+      }
+    ],
+    "notes": "[chunk 1/1] META Item 1 Business filing extracted. KEY FINDINGS: (1) No SIFI-material off-balance-sheet entities disclosed. (2) No material third-party capex commitments identified beyond routine infrastructure investment. (3) No equity investments in private AI labs disclosed in this section (Note: investments in CoreWeave, xAI, etc. may appear in financial statement footnotes, not Item 1). (4) No customer or supplier concentration > 10% disclosed. (5) Customer base is distributed across 'marketers' globally, not single-source dependent. (6) Reality Labs segment operates at loss ($19.88B expenses 2024) with long-term R&D burn; not yet a SIFI leverage risk due to FoA profitability cushion. (7) Regulatory risk (GDPR, DMA, DSA, Section 230 uncertainty) disclosed extensively but is standard Item 1A material, not SIFI-specific. (8) Ray-Ban partnership noted as supplier of AR hardware; no debt or contingent liability disclosed. (9) No related-party transactions, circular investments, or revenue roundtripping identified. RECOMMENDATION: Monitor RL segment burn rate and capex intensity in future filings for capex-ROI gap signal if growth stalls.\"\n  }\n]"
+  },
+  "item_1a": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Apple",
+        "fields": {
+          "role": "supplier",
+          "aliases": [
+            "Apple Inc."
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Google",
+        "fields": {
+          "ticker": "GOOGL",
+          "role": "competitor",
+          "aliases": [
+            "Alphabet"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "China",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "EU",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "FTC",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IRS",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-RealityLabs-CapexDrag",
+        "fields": {
+          "filer": "Meta",
+          "category": "Capex ROI Gap / Operating Loss",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "our investments in Reality Labs reduced our 2024 overall operating profit by approximately $17.73 billion, and we expect our Reality Labs investments and operating losses to increase in 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-RealityLabs-CapexROIGap",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 17730000000,
+            "note": "Reality Labs operating loss in 2024; expected to increase in 2025 with no near-term revenue match"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "our investments in Reality Labs reduced our 2024 overall operating profit by approximately $17.73 billion, and we expect our Reality Labs investments and operating losses to increase in 2025."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-AppleIOS-SupplierConcentration",
+        "fields": {
+          "filer": "Meta",
+          "category": "Supplier / Platform Concentration \u2014 Apple iOS",
+          "named_counterparties": [
+            "Apple",
+            "Google"
+          ],
+          "severity": 4,
+          "verbatim_quote": "in 2021, Apple made certain changes to its products and data use policies in connection with changes to its iOS operating system that reduce our and other iOS developers' ability to target and measure advertising, which has negatively impacted, and we expect will continue to negatively impact, the size of the budgets marketers are willing to commit to us and other advertising platforms."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-MobileOS-SupplierConcentration",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "note": "Substantially all mobile ad revenue dependent on Apple iOS and Google Android policies; both have restricted Meta's targeting and measurement capabilities"
+          },
+          "named_counterparties": [
+            "Apple",
+            "Google"
+          ],
+          "verbatim_quote": "The substantial majority of our revenue is generated from advertising on mobile devices... We are dependent on the interoperability of our products with popular mobile operating systems, networks, technologies, products, and standards that we do not control, such as the Android and iOS operating systems and mobile browsers."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-ChinaRevenue-GeopoliticalRisk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Customer / Revenue Concentration \u2014 China Resellers",
+          "named_counterparties": [
+            "China"
+          ],
+          "severity": 3,
+          "verbatim_quote": "we generate meaningful revenue from a small number of resellers serving advertisers based in China, and it is possible that the Chinese, United States, or other government could take action that reduces or eliminates our China-based advertising revenue, whether as a result of the trade dispute with the United States, including any tariffs implemented by the United States or China."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-ChinaReseller-CustomerConcentration",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "counterparty_count": 1,
+            "note": "Meaningful revenue from a small number of China-based resellers; single-government-action could eliminate entire revenue stream"
+          },
+          "named_counterparties": [
+            "China"
+          ],
+          "verbatim_quote": "we generate meaningful revenue from a small number of resellers serving advertisers based in China, and it is possible that the Chinese, United States, or other government could take action that reduces or eliminates our China-based advertising revenue."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-EUDataTransfer-RegulatoryRisk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Regulatory / Legal \u2014 EU Data Transfer & GDPR",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 4,
+          "verbatim_quote": "on May 12, 2023, the IDPC issued a Final Decision concluding that Meta Platforms Ireland's reliance on SCCs in respect of certain transfers of European Economic Area (EEA) Facebook user data was not in compliance with the GDPR. The IDPC issued an administrative fine of EUR \u20ac1.2 billion as well as corrective orders requiring Meta Platforms Ireland to suspend the relevant transfers."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-AIInfra-ExecutionRisk",
+        "fields": {
+          "filer": "Meta",
+          "category": "AI Infrastructure \u2014 Execution & Third-Party Dependency Risk",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "our ability to continue to develop and effectively deploy AI technologies is dependent on access to specific third-party equipment and other technical and physical infrastructure, such as processing hardware, network capacity, computing power, and related energy requirements, as to which we cannot control the availability or pricing, especially in a highly competitive environment."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-AIInfra-ExecutionRisk-Signal",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Large-scale AI infrastructure build dependent on third-party GPU/hardware supply with uncontrollable availability and pricing"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "our ability to continue to develop and effectively deploy AI technologies is dependent on access to specific third-party equipment and other technical and physical infrastructure, such as processing hardware, network capacity, computing power, and related energy requirements, as to which we cannot control the availability or pricing, especially in a highly competitive environment."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-HardwareSupply-SingleSourceRisk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Supplier Concentration \u2014 Hardware / Infrastructure Components",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "we rely on certain third-party equipment and components for our technical infrastructure that are manufactured by a small number of third parties, often with significant operations in a single region such as Asia."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-HardwareSupply-SupplierConcentration",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "counterparty_count": 1,
+            "note": "Key infrastructure components sourced from a small number of third parties with single-region (Asia) operations"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "we rely on certain third-party equipment and components for our technical infrastructure that are manufactured by a small number of third parties, often with significant operations in a single region such as Asia."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-IRS-TransferPricingRisk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Tax / Legal \u2014 IRS Transfer Pricing Dispute",
+          "named_counterparties": [
+            "IRS"
+          ],
+          "severity": 3,
+          "verbatim_quote": "in 2016 and 2018, the IRS issued formal assessments relating to transfer pricing with our foreign subsidiaries in conjunction with the examination of the 2010 through 2013 tax years. Although we disagree with the IRS's position and are litigating this issue, the ultimate resolution is uncertain and, if resolved in a manner unfavorable to us, may adversely affect our financial results."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-AdRevConcentration-CoreRisk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Revenue Concentration \u2014 Advertising",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Substantially all of our revenue is currently generated from marketers advertising on Facebook and Instagram. As is common in the industry, our marketers do not have long-term advertising commitments with us."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-AdRevenue-CustomerConcentration",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 1.0,
+            "note": "Substantially all revenue from advertising; no long-term marketer commitments; Apple iOS changes directly reduce marketer budgets"
+          },
+          "named_counterparties": [
+            "Apple"
+          ],
+          "verbatim_quote": "Substantially all of our revenue is currently generated from marketers advertising on Facebook and Instagram. As is common in the industry, our marketers do not have long-term advertising commitments with us."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-OpenSourceAI-ThirdPartyMisuseRisk",
+        "fields": {
+          "filer": "Meta",
+          "category": "AI Open Source \u2014 Uncontrolled Third-Party Misuse Liability",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We are also developing AI technology that we make available via open source, commercial, and non-commercial license agreements to third-parties that can use this technology for use in their own products and services. We may not have insight into, or control over, the practices of third parties who may utilize such AI technologies."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "EU",
+        "fields": {
+          "role": "regulator",
+          "aliases": [
+            "European Union",
+            "European Commission"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "USG",
+        "fields": {
+          "role": "regulator",
+          "aliases": [
+            "FTC",
+            "DOJ",
+            "U.S. federal government"
+          ]
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-EU-DPF-Service-Ban",
+        "fields": {
+          "filer": "Meta",
+          "category": "Data Transfer / Regulatory \u2014 EU-U.S. Data Privacy Framework invalidation",
+          "named_counterparties": [
+            "EU",
+            "CJEU",
+            "IDPC"
+          ],
+          "severity": 4,
+          "verbatim_quote": "A further invalidation of the EU-U.S. DPF by the CJEU could create considerable uncertainty and lead to us being unable to offer a number of our most significant products and services, including Facebook and Instagram, in Europe, which would materially and adversely affect our business, financial condition, and results of operations."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-EU-DPF-Revenue-At-Risk",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "named_counterparties": [
+            "EU"
+          ],
+          "verbatim_quote": "A further invalidation of the EU-U.S. DPF by the CJEU could create considerable uncertainty and lead to us being unable to offer a number of our most significant products and services, including Facebook and Instagram, in Europe, which would materially and adversely affect our business, financial condition, and results of operations."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-DMA-DSA-Compliance",
+        "fields": {
+          "filer": "Meta",
+          "category": "Regulatory \u2014 EU Digital Markets Act / Digital Services Act compliance costs and penalties",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "The DMA also includes significant penalties for non-compliance, and its key requirements are enforceable against designated gatekeeper companies as of March 2024. The DMA has caused, and may in the future cause, us to incur significant compliance costs and make changes to our products or business practices."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-Subscription-No-Ads-DMA-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Regulatory \u2014 EU DMA challenge to subscription/consent ad model; revenue impact",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "in March 2024, the European Commission opened formal proceedings regarding the compliance of our 'subscription for no ads' model with requirements under the DMA, and it issued preliminary findings in July 2024... in November 2024, we began offering users in the European Union... an option to see less personalized ads, which are expected to be less relevant and effective than our premium ad offerings."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Ad-Revenue-Degradation-EU",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 3,
+          "named_counterparties": [
+            "EU"
+          ],
+          "verbatim_quote": "we began offering users in the European Union, European Economic Area, and Switzerland who elect to continue using our services free-of-charge, supported by ads, an option to see less personalized ads, which are expected to be less relevant and effective than our premium ad offerings. These or any similar developments in the future may negatively impact our user growth and engagement, revenue, and financial results."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-FTC-Consent-Order-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Regulatory \u2014 FTC consent order; proposed prohibition on minors' data use; product launch restrictions",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 4,
+          "verbatim_quote": "The FTC initiated an administrative proceeding against us alleging, among other things, deficient compliance with the FTC consent order and seeking substantial modifications to the requirements of the consent order, including a prohibition on our use of minors' data for any commercial purposes, changes to the composition of our board of directors, and significant limitations on our ability to modify and launch new products."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-FTC-Product-Launch-Block",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "named_counterparties": [
+            "USG"
+          ],
+          "verbatim_quote": "If the challenge is unsuccessful and the FTC is able to impose the proposed order in its current form, it would limit our ability to provide certain features and services, engage in certain business practices, require us to further increase the time, resources, and costs we spend on compliance and oversight efforts, and would adversely affect our business and financial results."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-FTC-Antitrust-Instagram-WhatsApp",
+        "fields": {
+          "filer": "Meta",
+          "category": "Antitrust \u2014 FTC lawsuit seeking divestiture of Instagram and WhatsApp",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 4,
+          "verbatim_quote": "Beginning in 2020, we became subject to a lawsuit by the FTC alleging that we violated antitrust laws, including by acquiring Instagram in 2012 and WhatsApp in 2014. The complaint seeks a permanent injunction against our company's alleged violations of the antitrust laws, and other equitable relief, including divestiture or reconstruction of Instagram and WhatsApp."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-Privacy-Compliance-Cost-Opacity",
+        "fields": {
+          "filer": "Meta",
+          "category": "Cost Opacity \u2014 ongoing, unquantified privacy compliance program costs consuming operating resources",
+          "named_counterparties": [
+            "USG",
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "we are maintaining a comprehensive privacy program in connection with the FTC consent order that includes substantial management and board of directors oversight, stringent operational requirements and reporting obligations... These compliance and oversight efforts are increasing demand on our systems and resources, and require significant new and ongoing investments, including investments in compliance processes, personnel, and technical infrastructure."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Privacy-Compliance-Cost-Opacity-Signal",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "named_counterparties": [
+            "USG",
+            "EU"
+          ],
+          "verbatim_quote": "These compliance and oversight efforts are increasing demand on our systems and resources, and require significant new and ongoing investments, including investments in compliance processes, personnel, and technical infrastructure. We continually reallocate resources internally to assist with these efforts, and this has had, and will continue to have, an adverse impact on our other business initiatives."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-Cybersecurity-Nation-State",
+        "fields": {
+          "filer": "Meta",
+          "category": "Cybersecurity \u2014 nation-state and sophisticated actor attacks on user data and platform integrity",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "we believe that we are a particularly attractive target for such breaches and attacks, including from nation states and highly sophisticated, state-sponsored, or otherwise well-funded actors, and we experience heightened risk from time to time as a result of geopolitical events."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-Content-Section230-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Regulatory \u2014 Section 230 liability shield erosion; EU DSA/copyright enforcement; content removal fines",
+          "named_counterparties": [
+            "USG",
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "There also have been, and continue to be, various other litigation concerning, and state and federal legislative and executive efforts to remove or restrict, the scope of the protections under Section 230... our current protections from liability for third-party content in the United States could decrease or change. We could incur significant costs investigating and defending such claims and, if we are found liable, significant damages."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-Dual-Class-Governance-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Governance \u2014 dual-class structure concentrates voting control with CEO Zuckerberg; no minority shareholder recourse",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Holders of our Class B common stock, including our founder, Chairman, and CEO, together hold a majority of the combined voting power of our outstanding capital stock, and therefore are able to control the outcome of all matters submitted to our stockholders for approval so long as the shares of Class B common stock represent at least 9.1% of all outstanding shares of our Class A and Class B common stock."
+        }
+      }
+    ],
+    "edges": [],
+    "notes": null
+  },
+  "item_1b": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] Item 1B (Unresolved Staff Comments) and Item 1C (Cybersecurity) contain no SIFI-material entities or relationships. Item 1B is empty (\"None\"). Item 1C describes Meta's internal cybersecurity governance, risk assessment processes, and the appointment of Chief Information Security Officer Guy Rosen. While cybersecurity is operationally important, this section discloses no: (1) named business relationships or customer/supplier concentration; (2) investments or acquisitions; (3) related-party arrangements; (4) off-balance-sheet entities; (5) capital commitments; (6) counterparty webs; or (7) hidden leverage or circularity. The reference to \"third-party security experts and consultants\" and \"third-party assessment (TPA) process\" is generic vendor management, not SIFI-material concentration or execution risk. The statement \"In 2024, we did not identify any cybersecurity threats that have materially affected or are reasonably likely to materially affect our business strategy, results of operations, or financial condition\" is a negative assurance but names no counterparties or specific risks. Per HARD RULE 3, we skip boilerplate about generic cybersecurity governance and routine third-party controls. No extraction warranted.\""
+  },
+  "item_3": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "aliases": [
+            "Meta Platforms, Inc.",
+            "Facebook"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "FTC",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IDPC",
+        "fields": {
+          "aliases": [
+            "Irish Data Protection Commission"
+          ],
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "European Commission",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "FTC_Consent_Order_Modification_Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Regulatory Compliance & Data Privacy",
+          "named_counterparties": [
+            "FTC"
+          ],
+          "severity": 4,
+          "verbatim_quote": "On May 3, 2023, the FTC filed a public administrative proceeding seeking substantial changes to the modified consent order, which took effect in April 2020 after its entry by the U.S. District Court for the District of Columbia. The changes sought by the FTC are set forth in a proposed order and include, among others, a prohibition on our use of minors' data for any commercial purposes, changes to the composition of our board of directors, and significant limitations on our ability to modify and launch new products."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "GDPR_Data_Transfer_Suspension_Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Regulatory Compliance & Data Privacy",
+          "named_counterparties": [
+            "IDPC"
+          ],
+          "severity": 4,
+          "verbatim_quote": "On May 12, 2023, the IDPC issued a Final Decision concluding that Meta Platforms Ireland's reliance on Standard Contractual Clauses in respect of certain transfers of European Economic Area (EEA) Facebook user data was not in compliance with the GDPR. The IDPC issued an administrative fine of EUR \u20ac1.2 billion as well as corrective orders requiring Meta Platforms Ireland to suspend the relevant transfers and to bring its processing operations into compliance with Chapter V GDPR by ceasing the unlawful processing, including storage, of such data in the United States."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "European_Commission_Competition_Fine_Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Competition & Antitrust",
+          "named_counterparties": [
+            "European Commission"
+          ],
+          "severity": 3,
+          "verbatim_quote": "In November 2024, the European Commission issued a decision that Meta infringed Article 102 on the Treaty of the Functioning of the European Union in relation to certain alleged business practices relating to Facebook Marketplace and imposed a fine of approximately EUR \u20ac798 million."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Digital_Markets_Act_Compliance_Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Regulatory Compliance",
+          "named_counterparties": [
+            "European Commission"
+          ],
+          "severity": 3,
+          "verbatim_quote": "In March 2024, the European Commission opened an investigation into the compliance of our \"subscription for no ads\" consent model with requirements under Article 5(2) of the Digital Markets Act. The European Commission issued preliminary findings on July 1, 2024 reflecting its preliminary view that our model does not comply with such requirements, and indicated that it will conclude its investigation by March 2025."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Youth_Litigation_Concentration_Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Product Liability & Youth Harm Claims",
+          "named_counterparties": [],
+          "severity": 4,
+          "verbatim_quote": "Beginning in January 2022, we became subject to litigation and other proceedings that were filed in various federal and state courts alleging that Facebook and Instagram cause \"social media addiction\" in users, with most proceedings focused on those under 18 years old, resulting in various mental health and other harms. Putative class actions have been filed in the United States, Brazil, and Canada on behalf of users in those jurisdictions, and numerous school districts, municipalities, and tribal nations have filed public nuisance claims in the United States, Brazil, and/or Canada based on similar allegations."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "FTC_Product_Restrictions_Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Regulatory Compliance",
+          "named_counterparties": [
+            "FTC"
+          ],
+          "severity": 4,
+          "verbatim_quote": "Through the administrative process, the FTC could amend the order to impose the additional requirements set forth in the proposed order. We should have the opportunity to appeal an FTC decision modifying the order and could request the appellate court to stay the enforcement of the modifications to the order while the appeal is pending. It is unclear whether the appeal or the request for a stay would be successful."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Regulatory_Execution_Risk_FTC_Consent",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 5000000000,
+            "note": "FTC penalty already paid ($5B in 2020); additional fines and product restrictions pending through ongoing FTC administrative proceeding"
+          },
+          "named_counterparties": [
+            "FTC"
+          ],
+          "verbatim_quote": "We entered into a settlement and modified consent order to resolve the FTC inquiry, which took effect in April 2020 and required us to pay a penalty of $5.0 billion and to significantly enhance our practices and processes for privacy compliance and oversight."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "GDPR_Compliance_Cost_Opacity",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 1200000000,
+            "note": "EUR \u20ac1.2B fine; ongoing corrective orders suspension and compliance costs unquantified"
+          },
+          "named_counterparties": [
+            "IDPC"
+          ],
+          "verbatim_quote": "The IDPC issued an administrative fine of EUR \u20ac1.2 billion as well as corrective orders requiring Meta Platforms Ireland to suspend the relevant transfers and to bring its processing operations into compliance with Chapter V GDPR by ceasing the unlawful processing, including storage, of such data in the United States."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Litigation_Scale_Concentration_Risk",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "numeric_signal": {
+            "counterparty_count": 15,
+            "note": "Multiple simultaneous major litigation streams (antitrust, privacy, youth addiction, securities, copyright, advertising fraud, financial scams) across US and EU jurisdictions"
+          },
+          "named_counterparties": [
+            "FTC",
+            "European Commission",
+            "IDPC",
+            "CFPB"
+          ],
+          "verbatim_quote": "Over the last several years, the number and potential significance of the litigation and investigations involving the company have increased, and there can be no assurance that this trend will not continue."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "FTC_Consent_Order_Modification_Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "GDPR_Data_Transfer_Suspension_Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "European_Commission_Competition_Fine_Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Digital_Markets_Act_Compliance_Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Youth_Litigation_Concentration_Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "FTC_Product_Restrictions_Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Regulatory_Execution_Risk_FTC_Consent",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "GDPR_Compliance_Cost_Opacity",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Litigation_Scale_Concentration_Risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "FTC",
+        "target_type": "company",
+        "target_name": "Meta",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IDPC",
+        "target_type": "company",
+        "target_name": "Meta",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "company",
+        "source_name": "European Commission",
+        "target_type": "company",
+        "target_name": "Meta",
+        "predicate": "CITES_RISK"
+      }
+    ],
+    "notes": "[chunk 1/1] Meta 10-K Item 3 Legal Proceedings Section: SIFI-material extraction focused on regulatory execution risks and litigation concentration. Key findings: (1) EXECUTION_RISK around FTC consent order modification pending\u2014FTC proposed prohibition on use of minors' data for commercial purposes and significant product launch limitations would materially impact business model; (2) GDPR suspension of transatlantic data transfers (EUR \u20ac1.2B fine, corrective orders ongoing)\u2014creates operational uncertainty and compliance cost opacity; (3) COST_OPACITY in regulatory fines and required compliance infrastructure across multiple jurisdictions (FTC $5B, IDPC \u20ac1.2B, European Commission \u20ac798M, CFPB enforcement ongoing); (4) Litigation concentration risk across 6+ major vectors (antitrust, privacy, youth harm, securities, copyright, advertising fraud) with 15+ active proceedings spanning US, EU, and other jurisdictions. No capex commitments, off-balance-sheet entities, or direct investments mentioned in Item 3. No private AI lab relationships disclosed. Severity ratings reflect material business interruption risk and structural remedies (board changes, product restrictions, data transfer suspension).\"\n"
+  },
+  "item_7": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Meta-Capex-FY2024",
+        "fields": {
+          "filer": "Meta",
+          "amount_usd": 39230000000,
+          "start_fy": 2024,
+          "purpose": "Capital expenditures including principal payments on finance leases; data centers and technical infrastructure",
+          "verbatim_quote": "Capital expenditures, including principal payments on finance leases, were $39.23 billion for the year ended December 31, 2024."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-CostOpacity-DeprecLife",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 2900000000,
+            "note": "Estimated reduction in 2025 depreciation expense from extending server/network asset useful life from prior estimate to 5.5 years, based on assets in service as of Dec 31, 2024"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In January 2025, we completed an assessment of the useful lives of certain servers and network assets, which resulted in an increase in their estimated useful life to 5.5 years, effective beginning fiscal year 2025. Based on the servers and network assets placed in service as of December 31, 2024, we expect this change in accounting estimate will reduce our full-year 2025 depreciation expense by approximately $2.9 billion."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-CapexROIGap-AI-Infra",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 39230000000,
+            "note": "FY2024 capex of $39.23B driven by AI infrastructure build-out; RL segment alone consumed ~$17.73B in operating losses with no near-term monetization pathway disclosed"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In 2024, our RL segment reduced our overall operating profit by approximately $17.73 billion, and we continue to expect our RL operating losses to increase in 2025. We expect this will be a complex, evolving, and long-term initiative, and our ability to support our RL efforts is dependent on generating sufficient profits from other areas of our business."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-ExecutionRisk-AI-LongHorizon",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "RL/metaverse investments directed toward products that 'may only be fully realized in the next decade'; AI initiatives require increased infrastructure investment without matched contracted revenue"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Many of our RL investments are directed toward long-term, cutting-edge research and development for products that may only be fully realized in the next decade... we expect our AI initiatives will require increased investment in infrastructure and headcount."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-RegulatoryAdRevenue-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Regulatory / Ad Targeting Impairment",
+          "named_counterparties": [
+            "Apple",
+            "Alphabet"
+          ],
+          "severity": 3,
+          "verbatim_quote": "in 2021, Apple made certain changes to its products and data use policies in connection with changes to its iOS operating system that reduce our and other iOS developers' ability to target and measure advertising, which has negatively impacted, and we expect will continue to negatively impact, the size of the budgets marketers are willing to commit to us and other advertising platforms."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-RLLossAcceleration-Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Segment Drag / Reality Labs Operating Loss Growth",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "In 2024, our RL segment reduced our overall operating profit by approximately $17.73 billion, and we continue to expect our RL operating losses to increase in 2025."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Meta-2025-Capex",
+        "fields": {
+          "filer": "Meta",
+          "amount_usd": 62500000000,
+          "duration_yrs": 1,
+          "start_fy": 2025,
+          "purpose": "Core business and generative AI efforts including servers, data centers, and network infrastructure",
+          "verbatim_quote": "We anticipate making capital expenditures of approximately $60 billion to $65 billion in 2025 to support our core business and generative AI efforts."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-CapexROIGap-2025",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 62500000000,
+            "pct_of_revenue": 38,
+            "note": "Midpoint of $60B-$65B 2025 capex guidance vs $164.5B 2024 revenue (~38%); 2024 actual capex was $39.23B including finance lease principal payments, a sharp YoY ramp with no specific contracted revenue disclosed"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We anticipate making capital expenditures of approximately $60 billion to $65 billion in 2025 to support our core business and generative AI efforts."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-RealityLabs-ExecutionRisk",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 17729000000,
+            "note": "Cumulative RL operating losses accelerating: -$17.7B in 2024, -$16.1B in 2023, -$13.7B in 2022; total ~$47.5B in 3 years with no path to profitability disclosed"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Reality Labs\nRL loss from operations in 2024 increased $1.61 billion, or 10%, compared to 2023, driven by an increase in RL costs and expenses. RL costs and expenses increased primarily due to increases in employee compensation and infrastructure costs."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-HiddenLeverage-FinanceLease",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 29000000000,
+            "note": "Outstanding long-term debt $29.0B senior unsecured notes maturing 2027-2064; plus $1.969B principal payments on finance leases in 2024 (up from $1.058B in 2023), indicating growing off-P&L network infrastructure obligations"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of December 31, 2024, we had outstanding long-term debt in the form of senior unsecured notes for an aggregate principal amount of $29.0 billion, which mature from 2027 through 2064... Principal payments on finance leases (1,969) (1,058) (850)"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-CostOpacity-Depreciation",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 15500000000,
+            "note": "$15.5B depreciation and amortization in 2024; increase driven by data center/server buildout; detailed depreciation life schedules and any recent life-extension changes referenced only by pointer to Note 7, not disclosed in MD&A text"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Cash provided by operating activities during 2024 mostly consisted of $62.36 billion net income adjusted for certain non-cash items, such as $16.69 billion of share-based compensation expense and $15.50 billion of depreciation and amortization expense."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-UncertainTaxPositions",
+        "fields": {
+          "filer": "Meta",
+          "category": "Tax contingency / hidden liability",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "As of December 31, 2024, we had net uncertain tax positions of $9.99 billion which was included in long-term income taxes on our consolidated balance sheets. These unrecognized tax benefits were predominantly accrued for uncertainties with our research tax credits and transfer pricing with our foreign subsidiaries."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "capex_commitment",
+        "target_name": "Meta-Capex-FY2024"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-CostOpacity-DeprecLife"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-CapexROIGap-AI-Infra"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-ExecutionRisk-AI-LongHorizon"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Meta-RegulatoryAdRevenue-Risk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Meta-RLLossAcceleration-Risk"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "Meta-RegulatoryAdRevenue-Risk",
+        "target_type": "company",
+        "target_name": "Apple"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "Meta-RegulatoryAdRevenue-Risk",
+        "target_type": "company",
+        "target_name": "Alphabet"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "capex_commitment",
+        "target_name": "Meta-2025-Capex"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-CapexROIGap-2025"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-RealityLabs-ExecutionRisk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-HiddenLeverage-FinanceLease"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-CostOpacity-Depreciation"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Meta-UncertainTaxPositions"
+      }
+    ],
+    "notes": "[chunk 1/2] This filing section (Item 7 MD&A) is high-level and does not disclose SPVs, VIEs, off-balance-sheet entities, or named investment stakes. The primary SIFI-material signals extracted are: (1) COST_OPACITY from the Jan 2025 useful-life extension of servers/network assets to 5.5 years, reducing 2025 depreciation by ~$2.9B \u2014 a classic earnings management lever; (2) CAPEX_ROI_GAP from $39.23B FY2024 capex against a Reality Labs segment burning $17.73B/yr in operating losses with no near-term monetization; (3) EXECUTION_RISK from RL products \"only fully realized in the next decade.\" No Hyperion SPV detail, no specific counterparty capex commitments, and no investment stakes are named in this section \u2014 those likely appear in Notes 8/12 (Item 8). Apple and Alphabet are named as counterparties in the ad-targeting risk factor context. The depreciation life change is the highest-confidence hidden signal: extending useful life artificially boosts FY2025 EBITDA without any operational change.\n[chunk 2/2] SECTION COVERAGE: This is Meta's Item 7 MD&A section only \u2014 it does not contain Notes to Financial Statements (Notes 7, 8, 10, 12, etc. are referenced but not reproduced). Key observations:\n\n1. CAPEX RAMP: Meta guides $60B-$65B capex in 2025, up ~60% from $39.23B in 2024 (including finance lease principal). No specific counterparty named in this section (NVIDIA, custom silicon, etc. would appear in procurement disclosures). Severity 3 \u2014 large uncommitted spend with no matched contracted revenue disclosed.\n\n2. FINANCE LEASES: Principal payments on finance leases grew from $850M (2022) \u2192 $1.058B (2023) \u2192 $1.969B (2024), nearly doubling YoY. These network infrastructure obligations are off-P&L and accelerating \u2014 flagged as HIDDEN_LEVERAGE severity 2.\n\n3. REALITY LABS: Cumulative ~$47.5B in operating losses over 3 years with losses still growing. Flagged as EXECUTION_RISK severity 3.\n\n4. OFF-BALANCE-SHEET / SPV: The Hyperion SPV with Blue Owl (reported in other sources) is NOT mentioned in this MD&A section. If it appears in Notes or other sections, it should be extracted from those sections separately.\n\n5. NO INVESTMENT DISCLOSURES in this section \u2014 equity stakes in AI labs or compute providers would appear in Note 6 (equity investments) which is not included here.\n\n6. LONG-TERM DEBT: $29.0B senior unsecured notes, maturities 2027-2064, plus $28.1B in future interest obligations. Included in hidden leverage node.\n\n7. UNCERTAIN TAX: $9.99B in unrecognized tax benefits, predominantly transfer pricing and R&D credits \u2014 material contingent liability flagged as risk_factor severity 2."
+  },
+  "item_7a": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Jio Platforms Limited",
+        "fields": {
+          "role": "investment_target"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Meta-Jio",
+        "fields": {
+          "investor": "Meta",
+          "target": "Jio Platforms Limited",
+          "amount_usd": 6070000000.0,
+          "disclosed_date": "2024-12-31",
+          "verbatim_quote": "Our total non-marketable equity securities, which mostly consists of our investment in Jio Platforms Limited, had a carrying value of $6.07 billion and $6.14 billion as of December 31, 2024 and 2023, respectively."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta_FX_Risk",
+        "fields": {
+          "filer": "Meta",
+          "category": "Foreign Currency Exchange Risk",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We have foreign currency risks related to our revenue and operating expenses denominated in currencies other than the U.S. dollar, primarily the Euro. Accordingly, changes in exchange rates, and in particular a strengthening of the U.S. dollar, have in the past, and may in the future, negatively affect our revenue and other operating results as expressed in U.S. dollars."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta_NonMarketable_Equity_Impairment",
+        "fields": {
+          "filer": "Meta",
+          "category": "Equity Price Risk - Non-Marketable Securities",
+          "named_counterparties": [
+            "Jio Platforms Limited"
+          ],
+          "severity": 2,
+          "verbatim_quote": "Uncertainties in the global economic climate and financial markets could adversely impact the valuation of the companies we invest in and, therefore, result in a material impairment or downward adjustment in our investments."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "company",
+        "target_name": "Jio Platforms Limited",
+        "properties": {
+          "amount_usd": 6070000000.0,
+          "as_of_date": "2024-12-31"
+        }
+      }
+    ],
+    "notes": "[chunk 1/1] Item 7A contains quantitative and qualitative disclosures about market risk. No off-balance-sheet entities, capex commitments, or hidden-risk signals meeting SIFI-materiality thresholds were identified in this section. Meta discloses material foreign currency exposure ($690M net loss in 2024), fixed-rate senior notes of $29.0B outstanding, and a significant non-marketable equity investment in Jio Platforms Limited ($6.07B carrying value). The Jio investment represents a material equity price risk exposure. No evidence of SPVs, VIEs, residual value guarantees, or circular dependencies detected in this item. The section focuses on standard financial risk disclosures (FX, interest rate, equity price sensitivity)."
+  },
+  "financial_statements_and_notes": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "aliases": [
+            "Meta Platforms, Inc.",
+            "Meta Platforms"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-DepreciationLife-Extension-2025",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Useful lives of servers and network assets extended from 4-5 years to 5.5 years, effective FY2025. This will reduce depreciation expense and inflate reported earnings without any operational change."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In January 2025, we completed an assessment of the useful lives of certain servers and network assets, and determined we should extend the estimated useful lives to 5.5 years. This change in accounting estimate will be effective beginning fiscal year 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-OperatingLease-Scale",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 20234000000,
+            "note": "Operating lease ROU assets of $14.9B and total operating lease liabilities of ~$20.2B (current $1.94B + non-current $18.29B) represent significant off-balance-sheet-style obligations for data centers, offices, and colocations."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Our operating leases mostly comprise of certain data centers, offices, and colocations. We also have finance leases for certain network infrastructure... Our lease agreements generally do not contain any material residual value guarantees or material restrictive covenants."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Capex-ROI-Gap-2024",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 37256000000,
+            "note": "Property and equipment purchases of $37.3B in FY2024, up from $27.0B in FY2023. Net PP&E stands at $121.3B. Additionally, $7.1B of PP&E sits in accounts payable/accrued liabilities as non-cash investing activity, indicating further unrecognized commitments."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Purchases of property and equipment (37,256) (27,045) (31,186)... Property and equipment in accounts payable and accrued expenses and other current liabilities $7,127 $4,105 $3,319"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-NonMarketableEquity-Opacity",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 6070000000,
+            "note": "Non-marketable equity securities of $6.07B in privately-held companies valued using measurement alternative (cost less impairment, adjusted for observable transactions). Individual investees not named in this section; fair value highly uncertain."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Our non-marketable equity securities are investments in privately-held companies without readily determinable fair values. We elected to account for substantially all of our non-marketable equity securities using the measurement alternative, which is cost, less any impairment, adjusted for changes in fair value resulting from observable transactions for identical or similar investments of the same issuer."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-IRS-TransferPricing-Risk",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "IRS has issued notices on transfer pricing agreements with foreign subsidiaries. IRS position could apply to all subsequent tax years. Long-term income taxes liability stands at $9.99B."
+          },
+          "named_counterparties": [
+            "USG"
+          ],
+          "verbatim_quote": "The Company has received certain notices from the Internal Revenue Service (IRS) related to transfer pricing agreements with the Company's foreign subsidiaries for certain periods examined. The IRS has stated that it will also apply its position to tax years subsequent to those examined. If the IRS prevails in its position, it could result in an additional federal tax liability, plus interest and any penalties asserted."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-OperatingLeaseImpairment",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 383000000,
+            "note": "Net impairment losses of $383M in FY2024 ($2.43B in FY2023, $2.22B in FY2022) on operating lease ROU assets and leasehold improvements due to facilities consolidation. Cumulative losses across 3 years exceed $5B, suggesting persistent overcommitment to physical space."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "During the year ended December 31, 2024, 2023 and 2022, we recorded net impairment losses of $383 million, $2.43 billion, and $2.22 billion, respectively, in aggregate for operating lease ROU assets and leasehold improvements under ASC Topic 360 as a part of our facilities consolidation restructuring efforts."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Meta-PP&E-Spend-FY2024",
+        "fields": {
+          "filer": "Meta",
+          "amount_usd": 37256000000,
+          "start_fy": 2024,
+          "purpose": "Data center and technical infrastructure capital expenditures",
+          "verbatim_quote": "Purchases of property and equipment (37,256) (27,045) (31,186)"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Meta-NonMarketableEquity-Portfolio",
+        "fields": {
+          "investor": "Meta",
+          "target": "Various privately-held companies",
+          "amount_usd": 6070000000,
+          "disclosed_date": "2024-12-31",
+          "verbatim_quote": "Non-marketable equity securities 6,070 6,141... Our non-marketable equity securities are investments in privately-held companies without readily determinable fair values."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-China-Revenue-Concentration",
+        "fields": {
+          "filer": "Meta",
+          "category": "Customer/Geographic Concentration",
+          "named_counterparties": [
+            "China"
+          ],
+          "severity": 2,
+          "verbatim_quote": "China revenue was $18.35 billion, $13.69 billion, and $7.40 billion for the years ended December 31, 2024, 2023, and 2022, respectively."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-LongTermDebt-Growth",
+        "fields": {
+          "filer": "Meta",
+          "category": "Leverage / Debt",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Long-term debt 28,826 18,385... Proceeds from issuance of long-term debt, net 10,432 8,455 9,921"
+        }
+      },
+      {
+        "type": "company",
+        "name": "USG",
+        "fields": {
+          "aliases": [
+            "Internal Revenue Service",
+            "IRS"
+          ],
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Meta-Uncommenced-Leases-$34B",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Meta",
+          "beneficiary": "Meta",
+          "debt_stack_usd": 34120000000,
+          "term_yrs": 30,
+          "purpose": "Data centers, network infrastructure, and colocations \u2014 operating and finance leases signed but not yet commenced",
+          "verbatim_quote": "As of December 31, 2024, we have additional operating and finance leases, that have not yet commenced, with total lease obligations of approximately $34.12 billion, mostly for data centers, network infrastructure, and colocations. These operating and finance leases will commence between 2025 and 2030 with lease terms of greater than one year to 30 years."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Meta-Contractual-Commitments-$32.8B",
+        "fields": {
+          "filer": "Meta",
+          "amount_usd": 32824000000,
+          "duration_yrs": 5,
+          "start_fy": 2025,
+          "purpose": "Non-cancelable commitments primarily related to servers and network infrastructure, and content costs",
+          "verbatim_quote": "We have $32.82 billion of non-cancelable contractual commitments as of December 31, 2024, which are primarily related to our investments in servers and network infrastructure, and content costs."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Meta-RenewableEnergy-$25B",
+        "fields": {
+          "filer": "Meta",
+          "amount_usd": 24970000000,
+          "purpose": "Multi-year renewable energy purchase agreements (no fixed/minimum volume)",
+          "verbatim_quote": "Using the expected volume consumption, the total estimated spend related to our renewable energy agreements as of December 31, 2024 was approximately $24.97 billion, a majority of which is due beyond five years."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Meta-NonMarketable-Equity-$6B",
+        "fields": {
+          "investor": "Meta",
+          "target": "Various private companies",
+          "amount_usd": 6070000000,
+          "verbatim_quote": "Our non-marketable equity securities are investments in privately-held companies without readily determinable fair values... Total non-marketable equity securities $6,070 [million] ... $6,141 [million] as of December 31, 2024 and 2023."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-OffBS-Lease-Obligations",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 34120000000,
+            "note": "$34.12B in uncommenced operating/finance leases for data centers not yet on balance sheet, on top of $20.23B present-value operating lease liabilities already recorded"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of December 31, 2024, we have additional operating and finance leases, that have not yet commenced, with total lease obligations of approximately $34.12 billion, mostly for data centers, network infrastructure, and colocations. These operating and finance leases will commence between 2025 and 2030 with lease terms of greater than one year to 30 years."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Capex-ROI-Gap",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 32824000000,
+            "note": "$32.82B non-cancelable contractual commitments front-loaded: $26.34B due in 2025 alone, with no matched contracted revenue disclosed"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We have $32.82 billion of non-cancelable contractual commitments as of December 31, 2024, which are primarily related to our investments in servers and network infrastructure, and content costs... 2025: $26,335 [million]"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-ConstructionInProgress-Execution",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 26802000000,
+            "note": "$26.8B construction-in-progress on balance sheet as of Dec 31, 2024 \u2014 mostly data centers and network infrastructure not yet operational"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Construction in progress includes costs mostly related to construction of data centers, network infrastructure and servers... Construction in progress $26,802 [million] as of December 31, 2024."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-LegalAccruals-Opacity",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 5523000000,
+            "note": "$5.52B legal-related accruals in current liabilities as of Dec 31, 2024; FTC, GDPR, DSA, and youth-safety proceedings ongoing with potentially material unaccrued losses"
+          },
+          "named_counterparties": [
+            "FTC",
+            "IDPC"
+          ],
+          "verbatim_quote": "Legal-related accruals $5,523 [million]... we have accrued significant amounts for loss contingencies related to these inquiries and investigations in Europe, and we believe there is a reasonable possibility that additional accruals for losses related to these matters could be material individually or in the aggregate."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-IRS-Transfer-Pricing-2010-2013",
+        "fields": {
+          "filer": "Meta",
+          "category": "Tax Litigation \u2014 IRS Transfer Pricing",
+          "named_counterparties": [
+            "IRS"
+          ],
+          "severity": 3,
+          "verbatim_quote": "If the IRS prevails in its updated position, this could result in an additional federal tax liability of an estimated, aggregate amount of up to approximately $9.0 billion in excess of the amounts in our originally filed U.S. return, plus interest and any penalties asserted."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Meta-IRS-Transfer-Pricing-2011-2013-NewAdj",
+        "fields": {
+          "filer": "Meta",
+          "category": "Tax Litigation \u2014 IRS Additional Adjustments",
+          "named_counterparties": [
+            "IRS"
+          ],
+          "severity": 2,
+          "verbatim_quote": "If the IRS prevails in its position for these new adjustments, this could result in an additional federal tax liability of up to approximately $680 million in excess of the amounts in our originally filed U.S. returns, plus interest and any penalties asserted."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-Unrecognized-Tax-Benefit-Contingency",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 15130000000,
+            "note": "Gross unrecognized tax benefits of $15.13B as of Dec 31 2024; potential tax benefit of $10.11B if realized. IRS exposure up to ~$9.68B aggregate additional federal tax liability across two notices, plus interest and penalties."
+          },
+          "named_counterparties": [
+            "IRS"
+          ],
+          "verbatim_quote": "If our gross unrecognized tax benefits of $15.13 billion as of December 31, 2024 were realized in a future period, this would result in a tax benefit of $10.11 billion within our provision of income taxes at such time."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-RealityLabs-Cumulative-OpLoss",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 47566000000,
+            "note": "Reality Labs cumulative operating losses: $13.72B (2022) + $16.12B (2023) + $17.73B (2024) = ~$47.57B over three years, against revenue of only $2.15B in 2024.",
+            "pct_of_revenue": 10.8
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Reality Labs: Revenue $2,146 [million] ... Loss from operations $(17,729) [million in 2024] ... $(16,120) [2023] ... $(13,717) [2022]"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Meta-DepreciationDeferred-TaxLiability",
+        "fields": {
+          "filer": "Meta",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 10959000000,
+            "note": "Deferred tax liability from depreciation and amortization grew from $8.32B (2023) to $10.96B (2024), a 31.7% YoY increase, suggesting accelerating PP&E capitalization and/or depreciation life changes."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Deferred tax liabilities: Depreciation and amortization $(10,959) [2024] vs $(8,320) [2023]"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-DepreciationLife-Extension-2025"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-OperatingLease-Scale"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-Capex-ROI-Gap-2024"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-NonMarketableEquity-Opacity"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-IRS-TransferPricing-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-OperatingLeaseImpairment"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "capex_commitment",
+        "target_name": "Meta-PP&E-Spend-FY2024"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "investment",
+        "target_name": "Meta-NonMarketableEquity-Portfolio"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Meta-China-Revenue-Concentration"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Meta-LongTermDebt-Growth"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Meta-IRS-TransferPricing-Risk",
+        "target_type": "company",
+        "target_name": "USG"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "Meta-China-Revenue-Concentration",
+        "target_type": "company",
+        "target_name": "China"
+      },
+      {
+        "predicate": "SPONSORS",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "off_balance_entity",
+        "target_name": "Meta-Uncommenced-Leases-$34B"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "off_balance_entity",
+        "target_name": "Meta-Uncommenced-Leases-$34B"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "capex_commitment",
+        "target_name": "Meta-Contractual-Commitments-$32.8B"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "capex_commitment",
+        "target_name": "Meta-RenewableEnergy-$25B"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "investment",
+        "target_name": "Meta-NonMarketable-Equity-$6B"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-OffBS-Lease-Obligations"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-Capex-ROI-Gap"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-ConstructionInProgress-Execution"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-LegalAccruals-Opacity"
+      },
+      {
+        "predicate": "DEPENDS_ON",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Meta-OffBS-Lease-Obligations",
+        "target_type": "off_balance_entity",
+        "target_name": "Meta-Uncommenced-Leases-$34B"
+      },
+      {
+        "predicate": "DEPENDS_ON",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Meta-Capex-ROI-Gap",
+        "target_type": "capex_commitment",
+        "target_name": "Meta-Contractual-Commitments-$32.8B"
+      },
+      {
+        "predicate": "DEPENDS_ON",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Meta-ConstructionInProgress-Execution",
+        "target_type": "capex_commitment",
+        "target_name": "Meta-Contractual-Commitments-$32.8B"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Meta-IRS-Transfer-Pricing-2010-2013"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "risk_factor",
+        "target_name": "Meta-IRS-Transfer-Pricing-2011-2013-NewAdj"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-Unrecognized-Tax-Benefit-Contingency"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-RealityLabs-Cumulative-OpLoss"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Meta",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Meta-DepreciationDeferred-TaxLiability"
+      }
+    ],
+    "notes": "[chunk 1/3] Key findings from Meta's FY2024 10-K financial statements and notes:\n\n1. COST_OPACITY (Severity 3): Meta extended server/network asset useful lives from 4-5 years to 5.5 years effective January 2025. This is a prospective accounting change that will reduce depreciation expense and boost reported operating income without any operational improvement. No dollar-magnitude disclosure of the impact was included in this section.\n\n2. HIDDEN_LEVERAGE (Severity 3): Meta carries $14.9B in operating lease ROU assets and ~$20.2B in total operating lease liabilities (current + non-current) for data centers, offices, and colocations. While the filing states leases generally do not contain material residual value guarantees, the scale of these off-balance-sheet-style obligations is SIFI-material.\n\n3. CAPEX_ROI_GAP (Severity 3): PP&E purchases surged to $37.3B in FY2024 from $27.0B in FY2023, with $7.1B additional sitting in payables as non-cash commitments. Net PP&E stands at $121.3B. No specific contracted revenue is matched against this buildout in this section.\n\n4. COST_OPACITY (Severity 2): $6.07B in non-marketable equity securities in privately-held companies valued using the measurement alternative. Individual investees not named in this section \u2014 Note 6 referenced but not provided. Valuation is highly subjective (Level 3).\n\n5. EXECUTION_RISK (Severity 2): Cumulative operating lease impairment charges of ~$5B over FY2022-2024 ($2.22B, $2.43B, $0.38B) suggest persistent overcommitment to physical real estate, raising questions about capital discipline in future facility commitments.\n\n6. OTHER/Tax Risk (Severity 3): IRS transfer pricing dispute with foreign subsidiaries, with IRS stating it will apply position to all subsequent tax years. Long-term income taxes liability has grown to $9.99B from $7.51B.\n\n7. Long-term debt grew to $28.8B from $18.4B, with $10.4B of new issuance in FY2024.\n\n8. China revenue of $18.35B in FY2024 (~11.2% of total revenue $164.5B) represents a geographic concentration risk, particularly given geopolitical tensions.\n\nNote: The Hyperion SPV structure with Blue Owl referenced in the task prompt does not appear in this specific filing section. Note 6 (Non-marketable Equity Securities) was referenced but not provided in the source text \u2014 individual investee names are therefore not extractable from this section.\n[chunk 2/3] Key SIFI-material findings from Meta's 10-K financial notes:\n\n1. HIDDEN LEVERAGE (Severity 4): $34.12B in uncommenced operating/finance leases for data centers are NOT yet on the balance sheet. This is on top of the $20.23B in present-value operating lease liabilities already recorded plus $709M finance lease liabilities. Total lease exposure including uncommenced is ~$55B+.\n\n2. CAPEX ROI GAP (Severity 3): $32.82B in non-cancelable contractual commitments \u2014 critically, $26.34B (80%) is due in 2025 alone. No matched contracted revenue disclosed. Combined with the $34.12B uncommenced leases, total forward infrastructure obligations exceed $66B.\n\n3. EXECUTION RISK (Severity 3): $26.8B construction-in-progress sits on balance sheet but is not yet generating returns. Depreciation on servers/network alone hit $11.34B in 2024, up from $7.32B in 2023.\n\n4. NON-MARKETABLE EQUITY (Note 6): $6.07B portfolio of private company investments. Filing does NOT name individual investees in this section (unlike NVIDIA's Note 8 which enumerates them). No specific AI lab investments named; extraction limited to aggregate.\n\n5. RENEWABLE ENERGY COMMITMENTS: $24.97B estimated spend in multi-year agreements with no fixed/minimum volume \u2014 additional contingent obligation not captured in the $32.82B contractual commitments line.\n\n6. LEGAL ACCRUALS OPACITY (Severity 2): $5.52B in legal-related accruals; FTC consent order modification proceedings, GDPR/DSA fines, antitrust trial set April 2025, youth-safety mass arbitration \u2014 management acknowledges additional material losses reasonably possible but unquantified.\n[chunk 3/3] This filing section (Notes to Financial Statements \u2014 Income Taxes, Segment & Geographic Info) contains no off-balance-sheet SPVs, named capex counterparties, or private equity investments. Key extractions:\n\n1. **Tax Contingency / Hidden Leverage**: Meta carries $15.13B gross unrecognized tax benefits (up from $11.67B in 2023), with a net $10.11B potential benefit. Offsetting this, the IRS is asserting up to ~$9.68B in additional federal tax liabilities across two transfer-pricing notices (2010 and 2011\u20132013 tax years). The Tax Court opinion is expected in 2025, creating near-term resolution risk. Severity 3 (elevated) because the amount is material (~13.6% of 2024 pre-tax income) but Meta has partially reserved per ASC 740.\n\n2. **Reality Labs CAPEX_ROI_GAP**: Three-year cumulative operating losses of ~$47.6B against $6.2B in total RL revenue over the same period. 2024 RL revenue was $2.15B vs. a $17.73B operating loss \u2014 a 8.3x loss-to-revenue ratio. This is a sustained structural drag with no disclosed path to profitability, qualifying as a material capex/investment ROI gap.\n\n3. **Cost Opacity \u2014 Depreciation DTA**: The deferred tax liability for depreciation/amortization jumped 31.7% YoY to $10.96B, signaling rapid PP&E accumulation consistent with Meta's AI infrastructure buildout. Combined with the $16.74B capitalized R&D deferred tax asset (up from $9.29B), this points to significant balance-sheet inflation from tax-driven capitalization choices that may obscure true economic costs.\n\nNo capex commitments with named counterparties, SPVs, VIEs, or private equity investments were disclosed in this specific section."
+  },
+  "item_9a": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "ticker": "META",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ernst & Young",
+        "fields": {
+          "aliases": [
+            "EY",
+            "EY LLP"
+          ],
+          "role": "auditor"
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/1] Item 9A (Controls & Procedures) contains no SIFI-material content. The section is pure boilerplate: (1) standard disclosure controls evaluation, (2) management's assessment of internal control over financial reporting per COSO framework, (3) confirmation of no material changes in Q4 2024, and (4) generic limitations language. Item 9B names only routine Rule 10b5-1 trading plan disclosures by board members and officers (Peggy Alford, Christopher K. Cox). Items 10-14 are incorporation-by-reference to the Proxy Statement\u2014no substantive narrative content. No customer concentration, supplier dependencies, investments, related-party arrangements, off-balance-sheet entities, capex commitments, or circular relationships are disclosed in this section. Ernst & Young is named only as the independent auditor of internal controls\u2014a standard audit engagement with no leverage, concentration, or counterparty-risk implications. No extraction warranted beyond confirming Meta's identity.\""
+  }
+}

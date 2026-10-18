@@ -1,0 +1,590 @@
+{
+  "director_comp": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "aliases": [
+            "ORCL"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Stanford University",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "The Vanguard Group",
+        "fields": {
+          "role": "investor"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "predicate": "SUPPLIES",
+        "target_type": "company",
+        "target_name": "Stanford University",
+        "properties": {
+          "payment_amount": "de minimis",
+          "pct_of_oracle_revenue": "0.0002%",
+          "pct_of_stanford_revenue": "0.0005%",
+          "notes": "Falls within NYSE prescribed limits"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "The Vanguard Group",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "Oracle",
+        "properties": {
+          "equity_pct": "5.3%",
+          "shares": 149688484,
+          "date": "2024-02-13"
+        }
+      }
+    ],
+    "notes": "[chunk 1/1] SIFI-MATERIAL EXTRACTION NOTES FOR ORACLE DEF 14A (2025-09-26):\n\nSCOPE: Director Compensation section (Item 1 Business narrative). No capex commitments, off-balance-sheet entities, or AI lab investments disclosed in this section.\n\nENTITIES EXTRACTED:\n1. Oracle (hyperscaler) \u2014 public company, ticker ORCL\n2. Stanford University \u2014 customer, receives de minimis payments from Oracle\n3. The Vanguard Group \u2014 5.3% shareholder\n\nRISK SIGNALS IDENTIFIED:\n1. RELATED-PARTY / DIRECTOR CONFLICT: Dr. Michael J. Boskin (independent director) is employed by Stanford University, which has received donations from Oracle and board members. Oracle paid Stanford 0.0002% of revenue (de minimis but disclosed). This fits standard conflict-of-interest disclosure but does not rise to SIFI materiality (payment <0.01% of revenue, no supply concentration, no leverage).\n\n2. ELLISON PLEDGING: Lawrence J. Ellison (Founder, Executive Chair, CTO, 40.6% beneficial owner) has pledged 346,000,000 shares (12.2% of his holdings) as collateral for personal term loans. The Governance Committee has reviewed and determined no material risk to stockholders based on: (i) pledges secure only personal term loans for personal business ventures; (ii) no margin account pledges; (iii) Ellison has >4,600x the stock ownership minimum; (iv) financial capacity to repay without resorting to pledged shares. This is DISCLOSED and MONITORED quarterly by the Governance Committee per the Pledging Policy. While large in absolute terms, the Board's documented risk assessment and regular oversight mitigate SIFI classification. Not flagged as hidden leverage given transparency.\n\n3. STANFORD RELATIONSHIP: Immaterial (<0.01% of Oracle revenue). Does not meet CUSTOMER_CONCENTRATION threshold (>10% revenue). Complies with NYSE guidelines. No SIFI signal.\n\n4. VANGUARD SHAREHOLDING: 5.3% stake noted for governance context only; standard institutional investor holding, no SIFI risk implied.\n\nEXCLUDED (Boilerplate):\n- Standard director compensation structure (RSUs, cash retainers, vesting)\n- Corporate governance policies (majority voting, lead independent director rotation, stock ownership guidelines)\n- Board committee composition and risk oversight framework\n- Executive sessions and stockholder engagement processes\n- Code of Conduct, insider trading policy, speculation/pledging prohibitions (routine governance)\n- Human capital management overview\n\nCONCLUSION: No material SIFI entities or risks extracted from this section. Oracle's disclosed pledging arrangement by Ellison is transparent and actively monitored. No hidden leverage, circular dependencies, revenue roundtrips, capex gaps, or supplier/customer concentration warranting escalation."
+  },
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "hyperscaler",
+          "aliases": [
+            "ORCL",
+            "Oracle Corporation"
+          ]
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL-BonusToCapex-Reallocation",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "named_counterparties": [],
+          "verbatim_quote": "The Compensation Committee determined that preserving available cash to fund these strategic projects was in the best interest of the company and its stockholders... the funds used for bonuses could be better directed to capital expenditures supporting future growth in furtherance of the company's strategic priorities.",
+          "numeric_signal": {
+            "note": "All NEO bonuses (totaling ~$12M target pool) redirected to capex; signals aggressive capital allocation prioritization for AI/cloud infrastructure build-out over near-term cash compensation"
+          }
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL-EllisionPledging-Risk",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "named_counterparties": [
+            "Lawrence J. Ellison"
+          ],
+          "verbatim_quote": "Anti-pledging policy applicable to all employees and directors except Mr. Ellison (whose pledging activities are carefully monitored by our Governance Committee)",
+          "numeric_signal": {
+            "note": "Founder and controlling shareholder has explicit carve-out from anti-pledging policy; pledged shares could create forced-sale overhang if margin calls triggered"
+          }
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL-LeadershipTransition-2025",
+        "fields": {
+          "filer": "Oracle",
+          "category": "Execution Risk - Leadership Succession",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "In September 2025, consistent with Oracle's succession plan, Ms. Catz retired from her position as CEO and was appointed Executive Vice Chair of the Board, and the Board appointed Mr. Magouyrk and Mr. Sicilia as CEOs of Oracle to succeed Ms. Catz."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "ORCL-MagouyrK-CEO-OptionGrant-$250M",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 250000000,
+          "counterparty": "Clay Magouyrk",
+          "purpose": "CEO promotion equity grant - stock options to purchase $250M in Oracle shares (80% time-based, 20% PSOs vesting over 3-yr period ending May 31, 2028)",
+          "verbatim_quote": "Mr. Magouyrk received a grant of stock options to purchase $250 million in shares of Oracle common stock with 80% of the grant consisting of time-based stock options and 20% of the grant consisting of PSOs."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "ORCL-Sicilia-CEO-OptionGrant-$100M",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 100000000,
+          "counterparty": "Seamus Sicilia",
+          "purpose": "CEO promotion equity grant - stock options to purchase $100M in Oracle shares (80% time-based, 20% PSOs vesting over 3-yr period ending May 31, 2028)",
+          "verbatim_quote": "Mr. Sicilia received a grant of stock options to purchase $100 million in shares of Oracle common stock with 80% of the grant consisting of time-based stock options and 20% of the grant consisting of PSOs."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ampere Computing",
+        "fields": {
+          "aliases": [
+            "Ampere Computing Holdings LLC",
+            "Ampere Computing LLC"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SoftBank",
+        "fields": {
+          "aliases": [
+            "SoftBank Group Corp."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Oracle-Ampere-Equity",
+        "fields": {
+          "investor": "Oracle",
+          "target": "Ampere Computing",
+          "equity_pct": 29,
+          "amount_usd": 1600000000,
+          "verbatim_quote": "The total carrying value of our investments in Ampere, after accounting for losses under the equity method of accounting, was $1.6 billion as of May 31, 2025. Our equity investments in Ampere represent an ownership interest of approximately 29% as of May 31, 2025."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Oracle-Ampere-ConvDebt-FY25",
+        "fields": {
+          "investor": "Oracle",
+          "target": "Ampere Computing",
+          "amount_usd": 341000000,
+          "round": "convertible debt",
+          "disclosed_date": "2025",
+          "verbatim_quote": "During the fiscal year ended May 31, 2025, we invested an aggregate of $341 million in convertible debt instruments issued by Ampere."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-Ampere-Processor-Prepay",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 104100000,
+          "counterparty": "Ampere Computing",
+          "purpose": "Pre-payment order for Ampere processors; ~$97.4M remaining as of FY2025 year-end",
+          "verbatim_quote": "In fiscal 2023, Oracle placed a $104.1 million pre-payment order for Ampere processors which can be accessed through direct purchases from Ampere. During fiscal 2025, we purchased approximately $3.7 million directly. At fiscal year end, we had approximately $97.4 million remaining available under our pre-payment order."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Ampere-Circularity",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CIRCULARITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 1941000000,
+            "note": "Oracle holds $1.6B carrying value equity + $341M FY25 convertible debt in Ampere; Oracle also pre-paid $104.1M for Ampere processors and Ampere buys Oracle cloud services; put/call options of $500M-$1.5B outstanding; SoftBank acquiring Ampere"
+          },
+          "named_counterparties": [
+            "Ampere Computing",
+            "SoftBank"
+          ],
+          "verbatim_quote": "Oracle is an equity and convertible debt investor in Ampere Computing Holdings LLC (Ampere)... we invested an aggregate of $341 million in convertible debt instruments issued by Ampere... we also own convertible debt investments in Ampere which... will mature in June 2026... we are also a counterparty to certain put... and call... options at prices of approximately $500 million to $1.5 billion."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Ampere-SoftBank-Acquisition-Risk",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 1941000000,
+            "note": "Oracle holds $1.6B equity + $341M convertible debt in Ampere; SoftBank acquisition would extinguish Oracle's investor position; Oracle has $97.4M prepaid processor credit and is a CPU supply dependent; convertible debt matures June 2026"
+          },
+          "named_counterparties": [
+            "Ampere Computing",
+            "SoftBank"
+          ],
+          "verbatim_quote": "On March 19, 2025, SoftBank Group Corp. announced that it had entered into an agreement with Ampere and its equity holders to acquire all of the equity interests of Ampere (the Ampere Acquisition)... When the Ampere Acquisition closes, we will cease to be an investor in Ampere."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Ellison-RelatedParty-Circularity",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CIRCULARITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 21300000,
+            "note": "Oracle sells ~$10.8M of products/services to Ellison-affiliated entities; Oracle buys ~$10.5M of products/services from Ellison-affiliated entities (F50 League/SailGP $7.5M cash + $2.5M in product credits, Glass Aviation $2.5M, Wing and a Prayer $0.5M). SailGP round-trip: Oracle pays F50 League $7.5M cash AND SailGP receives Oracle products valued $2.5M."
+          },
+          "named_counterparties": [
+            "F50 League LLC",
+            "SailGP",
+            "Glass Aviation",
+            "Wing and a Prayer"
+          ],
+          "verbatim_quote": "In fiscal 2025, Oracle paid F50 League approximately $7.5 million and SailGP received Oracle products and services valued at approximately $2.5 million... Total related person transaction revenues were approximately 0.02% of our total revenues. Total related person operating expenses were approximately 0.04% of our total operating expenses in fiscal 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-SailGP-RevenueRoundtrip",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 10000000,
+            "note": "Three-year sponsorship: Oracle pays F50 League ~$7.5M cash/yr; SailGP simultaneously purchases Oracle cloud products/services (~$649K in FY25 plus $2.5M in-kind). Sponsorship package valued at ~$10M/year."
+          },
+          "named_counterparties": [
+            "F50 League LLC",
+            "SailGP"
+          ],
+          "verbatim_quote": "Oracle commenced a three-year sponsorship agreement with the SailGP sailing league (operated by Mr. Ellison's company F50 League LLC)... Oracle received a SailGP sponsorship package valued at approximately $10 million per year... In fiscal 2025, Oracle paid F50 League approximately $7.5 million and SailGP received Oracle products and services valued at approximately $2.5 million."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-Ampere-ConvDebt-Maturity",
+        "fields": {
+          "filer": "Oracle",
+          "category": "Related-party investment / refinancing risk",
+          "named_counterparties": [
+            "Ampere Computing",
+            "SoftBank"
+          ],
+          "severity": 2,
+          "verbatim_quote": "We also own convertible debt investments in Ampere which, under the terms of an agreement with Ampere and other co-investors, will mature in June 2026 and are convertible into equity securities at the holder's option under certain circumstances."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-Ampere-PutCall-Options",
+        "fields": {
+          "filer": "Oracle",
+          "category": "Off-balance-sheet contingent obligation / put-call options",
+          "named_counterparties": [
+            "Ampere Computing"
+          ],
+          "severity": 2,
+          "verbatim_quote": "we are also a counterparty to certain put (exercisable by a co-investor) and call (exercisable by Oracle) options at prices of approximately $500 million to $1.5 billion, respectively, to acquire additional equity interests in Ampere from our co-investors through January 2027."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-Netherlands-GDPR-Litigation",
+        "fields": {
+          "filer": "Oracle",
+          "category": "GDPR class action litigation / regulatory",
+          "named_counterparties": [
+            "The Privacy Collective",
+            "Salesforce"
+          ],
+          "severity": 2,
+          "verbatim_quote": "TPC claims damages under a number of categories, including: 'immaterial damages' (at a fixed amount of \u20ac500 per Dutch internet user); 'material damages'... compensation for losses suffered due to an alleged data breach (at a fixed amount of \u20ac100 per Dutch internet user); and compensation for the costs of the litigation funder (10% to 25% of the compensation awarded)."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL-BonusToCapex-Reallocation"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL-EllisionPledging-Risk"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "ORCL-LeadershipTransition-2025"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "ORCL-MagouyrK-CEO-OptionGrant-$250M"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "ORCL-Sicilia-CEO-OptionGrant-$100M"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ampere Computing",
+        "properties": {
+          "note": "29% equity + $341M convertible debt FY25; total carrying value $1.6B"
+        }
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Ampere Computing",
+        "target_type": "company",
+        "target_name": "Oracle",
+        "properties": {
+          "note": "Ampere processors; $104.1M prepay order placed FY2023, ~$97.4M remaining FY2025"
+        }
+      },
+      {
+        "predicate": "BUYS_COMPUTE_FROM",
+        "source_type": "company",
+        "source_name": "Ampere Computing",
+        "target_type": "company",
+        "target_name": "Oracle",
+        "properties": {
+          "note": "Ampere purchased ~$2.5M in Oracle cloud SaaS/PaaS/IaaS in FY2025"
+        }
+      },
+      {
+        "predicate": "CIRCULAR_WITH",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ampere Computing",
+        "properties": {
+          "note": "Oracle is investor, processor buyer, and cloud vendor to Ampere simultaneously"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "investment",
+        "source_name": "Oracle-Ampere-Equity",
+        "target_type": "company",
+        "target_name": "Ampere Computing"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "investment",
+        "source_name": "Oracle-Ampere-ConvDebt-FY25",
+        "target_type": "company",
+        "target_name": "Ampere Computing"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "Oracle-Ampere-Processor-Prepay"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Ampere-Circularity"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Ampere-SoftBank-Acquisition-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Ellison-RelatedParty-Circularity"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-SailGP-RevenueRoundtrip"
+      },
+      {
+        "predicate": "ROUND_TRIPS_WITH",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "SoftBank",
+        "properties": {
+          "note": "SoftBank acquiring Ampere, in which Oracle holds $1.6B carrying value; Oracle loses investor position and processor supply relationship upon close"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Oracle-Ampere-Circularity",
+        "target_type": "company",
+        "target_name": "Ampere Computing"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Oracle-Ampere-SoftBank-Acquisition-Risk",
+        "target_type": "company",
+        "target_name": "SoftBank"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "Oracle-Ampere-ConvDebt-Maturity"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "Oracle-Ampere-PutCall-Options"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "Oracle-Netherlands-GDPR-Litigation"
+      },
+      {
+        "predicate": "SPONSORS",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "SoftBank",
+        "properties": {
+          "note": "SoftBank acquiring Ampere; Oracle co-investor with put/call options $500M-$1.5B through Jan 2027"
+        }
+      }
+    ],
+    "notes": "[chunk 1/3] This DEF 14A Compensation Discussion & Analysis section is largely boilerplate executive compensation narrative. SIFI-material extractions are limited to:\n\n1. **Capex-over-compensation reallocation signal**: The Compensation Committee explicitly redirected ~$12M in NEO bonuses to capex/strategic priorities \u2014 a notable signal of aggressive AI/cloud infrastructure capital prioritization that corroborates Oracle's broader capex build-out narrative seen in 10-K filings.\n\n2. **Ellison pledging carve-out**: Founder Larry Ellison (controlling shareholder) is explicitly exempted from Oracle's anti-pledging policy. Given his massive concentrated stake, pledged-share margin risk is a latent hidden leverage signal worth tracking.\n\n3. **Dual-CEO succession**: Catz retired Sept 22, 2025; dual CEO structure (Magouyrk from OCI/AWS lineage + Sicilia from Industries/AI apps) signals Oracle's organizational bet on OCI as the AI infrastructure growth engine. Magouyrk's OCI background and the $250M grant size vs. Sicilia's $100M grant are a clear internal capital allocation signal.\n\n4. **Large CEO equity grants**: $350M combined in new option grants (Magouyrk $250M + Sicilia $100M) are dilutive commitments tied to revenue performance metrics through FY2028 \u2014 execution risk if OCI revenue targets miss.\n\nNo related-party transactions, SPVs, customer concentration disclosures, or third-party investment counterparties were named in this section. Amazon Web Services is mentioned only as Magouyrk's prior employer, not as a current business relationship.\n[chunk 2/3] This filing section is a DEF 14A Compensation Discussion & Analysis for Oracle (ORCL), covering executive compensation tables, severance terms, equity plan details, CEO pay ratio, and pay-versus-performance disclosures. After thorough review against SIFI-material criteria, there are NO extractable nodes or edges. Specifically: (1) No named customer concentration, supplier dependencies, or strategic partnerships disclosed. (2) No investments, acquisitions, or equity stakes in external entities mentioned. (3) No related-party arrangements beyond standard executive perquisites (security costs, aircraft use). (4) No SPVs, JVs, VIEs, off-balance-sheet obligations, or project finance structures. (5) No AI lab relationships, hyperscaler compute deals, or capex commitments. (6) The peer company list (Microsoft, Alphabet, Amazon, Meta, Adobe, Salesforce, IBM, Intel, etc.) appears solely in the context of executive compensation benchmarking \u2014 not as business counterparties \u2014 and does not constitute SIFI-material concentration or circularity. (7) No hidden leverage, revenue roundtripping, capex ROI gap, or supplier/customer concentration signals present. The entire section is standard proxy compensation boilerplate and does not meet the SIFI-materiality threshold defined in the extraction rules."
+  },
+  "beneficial_owners": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "aliases": [
+            "ORACLE CORPORATION"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadridge Financial Services",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Equiniti Trust Company",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "EY",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Innisfree M&A Incorporated",
+        "fields": {
+          "role": "supplier"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "predicate": "DEPENDS_ON",
+        "target_type": "company",
+        "target_name": "Broadridge Financial Services",
+        "properties": {
+          "relationship_type": "vote tabulation / election inspector services",
+          "contract_note": "appointed as inspector of elections for Annual Meeting"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "predicate": "DEPENDS_ON",
+        "target_type": "company",
+        "target_name": "Equiniti Trust Company",
+        "properties": {
+          "relationship_type": "transfer agent services",
+          "role": "stockholder transfer agent"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "predicate": "DEPENDS_ON",
+        "target_type": "company",
+        "target_name": "EY",
+        "properties": {
+          "relationship_type": "independent registered public accounting firm",
+          "fiscal_year": "2026",
+          "status": "subject to stockholder ratification"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "predicate": "DEPENDS_ON",
+        "target_type": "company",
+        "target_name": "Innisfree M&A Incorporated",
+        "properties": {
+          "relationship_type": "proxy solicitor",
+          "fee": "approximately $25,000 plus customary costs and expenses",
+          "services": "proxy solicitation and stockholder vote analysis"
+        }
+      }
+    ],
+    "notes": "[chunk 1/1] This DEF 14A section (Beneficial Owners / proxy voting mechanics) contains minimal SIFI-material content. The extraction focuses on identified third-party relationships with Oracle that materialize in operational dependencies: Broadridge (vote tabulation), Equiniti (transfer agency), EY (auditor), and Innisfree (proxy solicitation). None of these relationships involve hidden leverage, circularity, revenue roundtripping, capex ROI gaps, or concentration risk material enough to rise to SIFI level. The filing contains no discussion of customer concentration, supplier dependencies beyond routine service providers, strategic investments, off-balance-sheet entities, or related-party transactions. All identified suppliers are routine service vendors performing standard capital-markets and governance functions. No risk signals or hidden leverage patterns detected in this section.\""
+  }
+}

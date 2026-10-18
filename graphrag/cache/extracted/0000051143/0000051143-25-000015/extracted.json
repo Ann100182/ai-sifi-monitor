@@ -1,0 +1,463 @@
+{
+  "item_15": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier",
+          "aliases": [
+            "International Business Machines Corporation"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "aliases": [
+            "Google"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SAP",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Palo Alto Networks",
+        "fields": {
+          "role": "partner"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Samsung Electronics",
+        "fields": {
+          "role": "partner"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Informatica",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Splunk",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "BMC",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Accenture",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Capgemini",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Dell Technologies",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Hewlett-Packard Enterprise",
+        "fields": {
+          "aliases": [
+            "HPE"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intel",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NetApp",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Pure Storage",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-supplier-concentration-semiconductors",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "note": "Single or limited supplier reliance for server processor technology"
+          },
+          "verbatim_quote": "Certain of the company's businesses rely on a single or a limited number of suppliers, including for server processor technology for certain semiconductors."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-customer-concentration-government",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 2,
+          "named_counterparties": [
+            "U.S. Federal Government"
+          ],
+          "numeric_signal": {
+            "note": "Customers include numerous governmental entities within and outside the U.S., some with funding approval requirements"
+          },
+          "verbatim_quote": "The company's customers include numerous governmental entities within and outside the U.S., including the U.S. Federal Government and state and local entities. Some of the company's agreements with these customers may be subject to periodic funding approval."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-capex-roi-gap-ai",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "note": "Large ongoing investments in AI/generative AI with less certain client adoption and economic models"
+          },
+          "verbatim_quote": "The company continues to invest significantly in key strategic areas, including AI and generative AI, to drive revenue growth and market share gains. Client adoption rates and viable economic models are less certain in the high-value, highly competitive, and rapidly-growing segments."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-execution-risk-ai-commercialization",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "note": "Execution risk in commercializing AI innovations at scale"
+          },
+          "verbatim_quote": "If IBM is unable to continue its cutting-edge innovation in a highly competitive and rapidly evolving environment or is unable to commercialize such innovations, expand and scale them with sufficient speed and versatility or is unable to attract a successful developer ecosystem, the company could fail in its ongoing efforts to maintain and increase its market share and its profit margins."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-circularity-ecosystem-partners",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "CIRCULARITY",
+          "severity": 2,
+          "named_counterparties": [
+            "Adobe",
+            "Amazon",
+            "Microsoft",
+            "Oracle",
+            "Salesforce",
+            "SAP",
+            "Samsung Electronics"
+          ],
+          "numeric_signal": {
+            "note": "Strategic partners in some areas and competitors in others; potential revenue cross-dependencies"
+          },
+          "verbatim_quote": "Companies with which we have strategic partnerships in some areas may be competitors in other areas."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-ai-regulatory-risk",
+        "fields": {
+          "filer": "IBM",
+          "category": "AI and generative AI governance",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "The evolving global AI regulatory environment, including the enactment of the EU AI Act, may affect the company's business and the company's overall results of operations."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-open-source-risk",
+        "fields": {
+          "filer": "IBM",
+          "category": "Intellectual property and third-party software",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "Certain of the company's offerings incorporate or utilize open source and other third-party software licensed with limited or no warranties, indemnification, or other contractual protections for IBM."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-cybersecurity-ai-amplified",
+        "fields": {
+          "filer": "IBM",
+          "category": "Cybersecurity and AI-related attack vectors",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Computer hackers and others routinely attack the security of technology products, services, systems and networks using a wide variety of methods, and the increased use of generative AI may introduce novel methods of attack."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM-government-contractor-debarment",
+        "fields": {
+          "filer": "IBM",
+          "category": "Government contracting risk",
+          "named_counterparties": [
+            "U.S. Federal Government"
+          ],
+          "severity": 3,
+          "verbatim_quote": "The company could be suspended or debarred as a governmental contractor and could incur civil and criminal fines and penalties, which could negatively impact the company's results of operations, financial results and reputation."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Microsoft",
+        "predicate": "CIRCULAR_WITH"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Oracle",
+        "predicate": "CIRCULAR_WITH"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Salesforce",
+        "predicate": "CIRCULAR_WITH"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Amazon",
+        "predicate": "CIRCULAR_WITH"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Adobe",
+        "predicate": "CIRCULAR_WITH"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "SAP",
+        "predicate": "CIRCULAR_WITH"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Samsung Electronics",
+        "predicate": "CIRCULAR_WITH"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "company",
+        "target_name": "Palo Alto Networks",
+        "predicate": "NAMES_COUNTERPARTY"
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "IBM-supplier-concentration-semiconductors",
+        "target_type": "company",
+        "target_name": "IBM",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "IBM-customer-concentration-government",
+        "target_type": "company",
+        "target_name": "IBM",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "IBM-capex-roi-gap-ai",
+        "target_type": "company",
+        "target_name": "IBM",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "IBM-execution-risk-ai-commercialization",
+        "target_type": "company",
+        "target_name": "IBM",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "IBM-circularity-ecosystem-partners",
+        "target_type": "company",
+        "target_name": "IBM",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "risk_factor",
+        "source_name": "IBM-ai-regulatory-risk",
+        "target_type": "company",
+        "target_name": "IBM",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "risk_factor",
+        "source_name": "IBM-open-source-risk",
+        "target_type": "company",
+        "target_name": "IBM",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "risk_factor",
+        "source_name": "IBM-cybersecurity-ai-amplified",
+        "target_type": "company",
+        "target_name": "IBM",
+        "predicate": "CITES_RISK"
+      },
+      {
+        "source_type": "risk_factor",
+        "source_name": "IBM-government-contractor-debarment",
+        "target_type": "company",
+        "target_name": "IBM",
+        "predicate": "CITES_RISK"
+      }
+    ],
+    "notes": "[chunk 1/1] Extraction from IBM 10-K Item 1 (Business), Item 1A (Risk Factors), and Item 1C (Cybersecurity). Key SIFI-material findings: (1) SUPPLIER_CONCENTRATION risk in semiconductors (single/limited suppliers for server processor technology); (2) CUSTOMER_CONCENTRATION risk in government sector with funding approval dependencies; (3) CAPEX_ROI_GAP in AI/generative AI investments with uncertain client adoption and economic models; (4) EXECUTION_RISK in commercializing and scaling AI innovations; (5) CIRCULARITY among strategic partners that are also competitors (Microsoft, Oracle, Salesforce, Amazon, Adobe, SAP, Samsung). Risk factors on AI governance (EU AI Act), open-source licensing, cybersecurity amplified by AI attack vectors, and government contractor debarment exposure also flagged. No investments, off-balance-sheet entities, or specific capex commitments disclosed in this narrative section. Related-party governance noted (Chief Legal Officer Anne Robinson, Vice Chairman Gary D. Cohn with prior Goldman Sachs/White House roles), but no material financial arrangements disclosed."
+  },
+  "item_8_pointer": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM-Item8-Incorporation-By-Reference",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "COST_OPACITY",
+          "severity": 1,
+          "named_counterparties": [],
+          "verbatim_quote": "Item 8. Financial Statements and Supplementary Data: Refer to pages 46 through 121 of IBM's 2024 Annual Report to Stockholders, which are incorporated herein by reference."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "IBM",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM-Item8-Incorporation-By-Reference"
+      }
+    ],
+    "notes": "[chunk 1/1] This section is an Item 8 pointer \u2014 the actual financial statements (pages 46\u2013121 of the 2024 Annual Report to Stockholders) are incorporated by reference and NOT reproduced in this filing extract. As a result, there is NO substantive financial data here from which to extract capital commitments, off-balance-sheet entities, investments, or related-party transactions. The text covers only: (1) the Item 8 pass-through reference, (2) disclosure controls and procedures boilerplate (Item 9A), (3) equity compensation plan tables and plan descriptions (Item 12), and (4) further proxy-statement cross-references for Items 10\u201314. None of these contain SIFI-material structures (SPVs, capex commitments, AI lab investments, revenue roundtrips, etc.). The single hidden_risk_signal emitted is a low-severity (1) COST_OPACITY flag noting that all financial detail is incorporated by reference to an external document not included in this extract \u2014 a structural opacity worth flagging but not alarming on its own. No fabricated nodes or edges have been added."
+  },
+  "financial_statements_and_notes": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "aliases": [
+            "International Business Machines Corporation"
+          ],
+          "role": "supplier"
+        }
+      }
+    ],
+    "edges": [],
+    "notes": "[chunk 1/1] The source text is the exhibit index, signature pages, auditor report on financial statement schedule, and Schedule II (Valuation and Qualifying Accounts) from IBM's 2025 Form 10-K filing. This section contains NO SIFI-material content: no off-balance-sheet SPVs/VIEs, no capex commitments, no equity investments in AI labs or compute providers, no revenue roundtripping, no customer/supplier concentration disclosures, and no hidden leverage structures. The two credit facilities referenced ($2.5B three-year and $7.5B five-year, both dated June 22, 2021 with JPMorgan Chase as admin agent) are standard revolving credit facilities \u2014 not SIFI-material off-balance-sheet structures. Schedule II shows routine allowance for credit losses, inventory losses, and revenue-based provisions \u2014 all boilerplate. No actionable nodes or edges can be extracted without fabricating data, which is prohibited by Rule 1."
+  }
+}

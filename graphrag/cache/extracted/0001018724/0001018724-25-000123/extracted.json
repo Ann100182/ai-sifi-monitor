@@ -1,0 +1,736 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "aliases": [
+            "Amazon.com, Inc."
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Rivian",
+        "fields": {
+          "aliases": [
+            "Rivian Automotive, Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Anthropic",
+        "fields": {
+          "aliases": [
+            "Anthropic, PBC"
+          ],
+          "private": true,
+          "known_backers": [
+            "Amazon"
+          ]
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Amazon-Rivian-Investment",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Rivian",
+          "disclosed_date": "2024-09-30",
+          "verbatim_quote": "marketable equity securities valuation gain (loss) of $(117) million and $220 million in Q3 2024 and Q3 2025 is primarily from our equity investment in Rivian Automotive, Inc."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Amazon-Anthropic-Investment",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Anthropic",
+          "disclosed_date": "2025-09-30",
+          "verbatim_quote": "reclassification adjustments for the gains on available-for-sale debt securities of $2.3 billion in Q3 2025 and $5.6 billion for the nine months ended September 30, 2025 is primarily from the portions of our convertible notes investments in Anthropic, PBC that were converted to nonvoting preferred stock during Q3 2025"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-Depreciation-Life-Change",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 889000000,
+            "duration_yrs": 0.75,
+            "note": "Nine-month impact from server/networking equipment depreciation life reduction from 6 years to 5 years"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Effective January 1, 2025 we changed our estimate of the useful lives of a subset of our servers and networking equipment from six years to five years. The effect of this change in estimate for the nine months ended September 30, 2025 was an increase in depreciation and amortization expense of $889 million and a reduction in net income of $677 million"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-AWS-Capex-AI",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 120131000000,
+            "pct_of_revenue": 23.9,
+            "duration_yrs": 1,
+            "note": "12M capex through Sept 30, 2025; accelerating infrastructure spend with depreciation-life compression signals potential AI over-capacity"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Purchases of property and equipment (120,131) for twelve months ended September 30, 2025; Effective January 1, 2025 we changed our estimate of the useful lives of servers and networking equipment from six years to five years. The shorter useful lives are due to the increased pace of technology development, particularly in the area of artificial intelligence and machine learning."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-Long-Term-AWS-Commitments",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 200000000000,
+            "note": "Unrecognized customer contract commitments for AWS services",
+            "duration_yrs": 3.8
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "For contracts with original terms that exceed one year, those commitments not yet recognized were approximately $200 billion as of September 30, 2025. The weighted-average remaining life of our long-term contracts is 3.8 years."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Amazon-FTC-Settlement",
+        "fields": {
+          "filer": "Amazon",
+          "category": "Regulatory/Legal",
+          "named_counterparties": [
+            "Federal Trade Commission"
+          ],
+          "severity": 2,
+          "verbatim_quote": "During Q3 2025, we recorded $2.5 billion of expense related to the settlement of a lawsuit with the Federal Trade Commission (FTC)."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "aliases": [
+            "AMZN",
+            "Amazon.com"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Anthropic",
+        "fields": {
+          "aliases": [
+            "Anthropic"
+          ],
+          "private": true,
+          "known_backers": [
+            "Amazon"
+          ]
+        }
+      },
+      {
+        "type": "investment",
+        "name": "AMZN-Anthropic-convertible-2023-2024",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Anthropic",
+          "amount_usd": 5300000000,
+          "disclosed_date": "Q4 2024",
+          "verbatim_quote": "From Q3 2023 to Q4 2024, we invested $5.3 billion in convertible notes from Anthropic, which are classified as available-for-sale and reported at fair value with unrealized gains and losses included in \"Accumulated other comprehensive income (loss)\" and as Level 3 assets, and as of December 31, 2024 had an estimated fair value of approximately $13.8 billion."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "AMZN-Anthropic-Q2-2025",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Anthropic",
+          "amount_usd": 1300000000,
+          "disclosed_date": "Q2 2025",
+          "verbatim_quote": "In Q2 2025, we invested $1.3 billion in a new convertible note from Anthropic, and will invest an additional $1.4 billion in Q4 2025."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "AMZN-Anthropic-Q4-2025-commitment",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Anthropic",
+          "amount_usd": 1400000000,
+          "disclosed_date": "Q2 2025",
+          "verbatim_quote": "In Q2 2025, we invested $1.3 billion in a new convertible note from Anthropic, and will invest an additional $1.4 billion in Q4 2025."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "AMZN-Anthropic-nonvoting-preferred",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Anthropic",
+          "amount_usd": 14800000000,
+          "disclosed_date": "Q3 2025",
+          "verbatim_quote": "As of September 30, 2025, the amount recorded on our consolidated balance sheet for nonvoting preferred stock was approximately $14.8 billion."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-Anthropic-unrealized-gains-volatility",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "named_counterparties": [
+            "Anthropic"
+          ],
+          "numeric_signal": {
+            "amount_usd": 23700000000,
+            "note": "Convertible notes fair value as of Sept 30, 2025 with $18.8B unrealized gain"
+          },
+          "verbatim_quote": "As of September 30, 2025, the estimated fair value of our convertible notes recorded on our consolidated balance sheet was approximately $23.7 billion, and the associated unrealized gain included in \"Accumulated other comprehensive income (loss)\" was $18.8 billion."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-Anthropic-Level3-valuation-risk",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "named_counterparties": [
+            "Anthropic"
+          ],
+          "numeric_signal": {
+            "amount_usd": 14800000000,
+            "note": "Level 3 fair value measurements with significant unrealized gains"
+          },
+          "verbatim_quote": "The investment in nonvoting preferred stock was initially recorded at its estimated fair value at the time of the conversion and will be accounted for as a component of our equity investments in private companies not accounted for under the equity-method, with future adjustments for observable changes in prices or impairments representing Level 3 fair value measurements recognized in \"Other income (expense), net\" on our consolidated statements of operations."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-Anthropic-mark-to-market-earnings",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 4,
+          "named_counterparties": [
+            "Anthropic"
+          ],
+          "numeric_signal": {
+            "amount_usd": 5600000000,
+            "note": "Gains from Anthropic investments recorded in earnings: $3.3B (Q1) + $2.3B (Q3) = $5.6B in 9M 2025"
+          },
+          "verbatim_quote": "As a result of conversions, a significant portion of the unrealized gain associated with the notes as of December 31, 2024 was reclassified and a gain of approximately $3.3 billion was recorded in \"Other income (expense), net\" in our consolidated statement of operations... In Q3 2025, an additional portion of our notes was converted to nonvoting preferred stock, and as a result of the conversion a portion of the unrealized gain associated with the notes was reclassified and a gain of approximately $2.3 billion was recorded in \"Other income (expense), net.\" We also recorded an upward adjustment of $7.2 billion to our nonvoting preferred stock in \"Other income (expense), net\" to reflect observable changes in price."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-AWS-capex-acceleration",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 64808000000,
+            "duration_yrs": 0.75,
+            "note": "AWS property and equipment net additions 9M 2025: $64.8B, up 85% YoY from $35.0B"
+          },
+          "verbatim_quote": "Total net additions to property and equipment for AWS for the nine months ended September 30, 2025 were $64.8 billion compared to $35.0 billion for the nine months ended September 30, 2024. AWS segment assets as of September 30, 2025 were $223.7 billion compared to $155.9 billion as of December 31, 2024."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "AMZN-AWS-capex-2025-9m",
+        "fields": {
+          "filer": "Amazon",
+          "amount_usd": 64808000000,
+          "purpose": "AWS technology infrastructure and data center expansion",
+          "counterparty": "AWS segment",
+          "verbatim_quote": "Total net additions to property and equipment are as follows (in millions): Nine Months Ended September 30, 2025 AWS (2) $64,808"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-lease-obligations-off-balance",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 97998000000,
+            "note": "Present value of lease liabilities (operating + finance) as of Sept 30, 2025; Gross liabilities $117.1B"
+          },
+          "verbatim_quote": "Our lease liabilities were as follows (in millions): September 30, 2025 Gross lease liabilities $103,025 + $14,052 = $117,077; Present value of lease liabilities $86,233 + $11,765 = $97,998"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AMZN-future-lease-commitments",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "amount_usd": 75021000000,
+            "note": "Leases not yet commenced, primarily fulfillment network and data center facilities"
+          },
+          "verbatim_quote": "Leases not yet commenced: $75.0 billion as of September 30, 2025, which primarily relate to fulfillment network, data center, office, and other facilities"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "AMZN-total-commitments-2025-2029",
+        "fields": {
+          "filer": "Amazon",
+          "amount_usd": 376002000000,
+          "duration_yrs": 5,
+          "purpose": "Long-term debt, operating/finance leases, unconditional purchase obligations, financing obligations, and other commitments",
+          "verbatim_quote": "Total commitments: $376.0 billion as of September 30, 2025 including operating lease liabilities ($103.0B), finance lease liabilities ($14.1B), unconditional purchase obligations ($72.9B), and leases not yet commenced ($75.0B)"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "aliases": [
+            "Amazon.com",
+            "AMZN"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "ailab",
+        "name": "Anthropic",
+        "fields": {
+          "private": true,
+          "known_backers": [
+            "Amazon"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Rivian",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Amazon-Anthropic-Convertible",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Anthropic",
+          "amount_usd": 2700000000,
+          "round": "convertible notes",
+          "disclosed_date": "2025-10-31",
+          "verbatim_quote": "We made cash payments, net of acquired cash, related to acquisition and other investment activity of $622 million and $786 million during Q3 2024 and Q3 2025, and $4.5 billion and $2.4 billion for the nine months ended September 30, 2024 and 2025, which primarily reflect investments in convertible notes from Anthropic, including $1.3 billion we invested in Q2 2025. Furthermore, we will invest an additional $1.4 billion in another convertible note in Q4 2025."
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Amazon-Rivian",
+        "fields": {
+          "investor": "Amazon",
+          "target": "Rivian",
+          "round": "equity",
+          "disclosed_date": "2025-10-31",
+          "verbatim_quote": "The net loss of $(2.7) billion for the nine months ended September 30, 2024 is primarily from the marketable securities loss from our equity investment in Rivian."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Amazon-AWS-Infrastructure-2025-2026",
+        "fields": {
+          "filer": "Amazon",
+          "amount_usd": 115903000000,
+          "start_fy": 2025,
+          "purpose": "AWS business growth and fulfillment network expansion",
+          "verbatim_quote": "Cash capital expenditures were $21.3 billion and $34.2 billion during Q3 2024 and Q3 2025, and $51.6 billion and $89.9 billion for the nine months ended September 30, 2024 and 2025, which primarily reflect investments in technology infrastructure (the majority of which is to support AWS business growth) and in additional capacity to support our fulfillment network, both of which we expect to increase in 2025 and 2026."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Amazon-Semiconductor-Supply-Risk",
+        "fields": {
+          "filer": "Amazon",
+          "category": "supplier concentration",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "For example, we rely on a limited group of suppliers for semiconductor products, including products related to artificial intelligence infrastructure such as graphics processing units. Constraints on the availability of these products could adversely affect our ability to develop and operate artificial intelligence technologies, products, or services."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-Capex-ROI-Gap",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 115903000000,
+            "pct_of_revenue": 23,
+            "note": "Nine-month capex of $89.9B vs. consolidated net sales of $503.5B; FY2025 projected capex exceeds $115.9B against uncertain AI monetization timelines"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Cash capital expenditures were $21.3 billion and $34.2 billion during Q3 2024 and Q3 2025, and $51.6 billion and $89.9 billion for the nine months ended September 30, 2024 and 2025, which primarily reflect investments in technology infrastructure (the majority of which is to support AWS business growth) and in additional capacity to support our fulfillment network, both of which we expect to increase in 2025 and 2026."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-Anthropic-Valuation-Exposure",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 46900000000,
+            "pct_of_assets": null,
+            "note": "Recorded value in equity, equity warrant, and convertible debt investments of $46.9B; Anthropic preferred stock subject to observable price adjustments with significant mark-to-market volatility"
+          },
+          "named_counterparties": [
+            "Anthropic",
+            "Rivian"
+          ],
+          "verbatim_quote": "As of September 30, 2025, our recorded value in equity, equity warrant, and convertible debt investments in public and private companies was $46.9 billion. Our equity warrant investments in private companies at fair value and adjust our equity investments in private companies, which primarily include our equity investment in Anthropic, for observable price changes or impairments. Valuations of private companies are inherently more complex due to the lack of readily available market data."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-FTC-Litigation-Settlement",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 2500000000,
+            "note": "Q3 2025 FTC settlement charge of $2.5B; enforcement actions ongoing on competition and consumer protection aspects"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We expect to use cash on hand to satisfy the settlement of the FTC lawsuit. Operating income in Q3 2025 includes charges of $2.5 billion related to the settlement of a lawsuit with the FTC and $1.8 billion of estimated severance costs primarily related to planned role eliminations."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-Inventory-Write-Down-Exposure",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 435000000,
+            "note": "Sensitivity analysis: 1% additional inventory valuation allowance = ~$435M cost of sales impact"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "These assumptions about future disposition of inventory are inherently uncertain and changes in our estimates and assumptions may cause us to realize material write-downs in the future. As a measure of sensitivity, for every 1% of additional inventory valuation allowance as of September 30, 2025, we would have recorded an additional cost of sales of approximately $435 million."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Amazon-China-Seller-Dependency",
+        "fields": {
+          "filer": "Amazon",
+          "category": "supplier concentration",
+          "named_counterparties": [
+            "China"
+          ],
+          "severity": 3,
+          "verbatim_quote": "In addition, because China-based sellers account for significant portions of our third-party seller services and advertising revenues, and China-based suppliers provide significant portions of our components and finished goods, regulatory and trade restrictions, tariff policy changes and trade disputes, data protection and cybersecurity laws, economic factors, geopolitical events, security issues, or other factors negatively impacting China-based sellers and suppliers could adversely affect our operating results."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-India-Regulatory-VIE-Risk",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Indirect minority interest in third-party seller entity on amazon.in via contractual arrangement; regulatory risk if India changes foreign ownership restrictions"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In India, the government restricts the ownership or control of Indian companies by foreign entities involved in online multi-brand retail trading activities. For www.amazon.in, we provide certain marketing tools and logistics services to third-party sellers to enable them to sell online and deliver to customers, and we hold an indirect minority interest in an entity that is a third-party seller on the www.amazon.in marketplace."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Amazon-FX-Hedging-Exposure",
+        "fields": {
+          "filer": "Amazon",
+          "risk_type": "COST_OPACITY",
+          "severity": 1,
+          "numeric_signal": {
+            "amount_usd": 20400000000,
+            "note": "Foreign currency balances of $20.4B; 5% adverse FX movement = $1.0B loss; 20% adverse = $4.1B loss"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Based on the balance of foreign funds as of September 30, 2025, of $20.4 billion, an assumed 5%, 10%, and 20% adverse change to foreign exchange would result in declines of $1.0 billion, $2.0 billion, and $4.1 billion."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "ticker": "AMZN",
+          "aliases": [
+            "Amazon.com, Inc."
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Citibank",
+        "fields": {
+          "aliases": [
+            "Citibank N.A."
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "AMZN-Revolving-Credit-5B-2025",
+        "fields": {
+          "filer": "Amazon",
+          "amount_usd": 5000000000,
+          "duration_yrs": 0.9986,
+          "start_fy": 2025,
+          "counterparty": "Citibank",
+          "purpose": "general corporate purposes, including backstopping commercial paper program",
+          "verbatim_quote": "The 2025 Short-Term Credit Agreement provides the Company with an unsecured revolving credit facility with a borrowing capacity of up to $5.0 billion. The term of the 2025 Short-Term Credit Agreement is 364 days, but it may be extended for an additional period of 364 days subject to approval by the lenders. Borrowings under the 2025 Short-Term Credit Agreement will be used for general corporate purposes, including backstopping any notes that the Company may issue under its commercial paper program."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "company",
+        "target_name": "Rivian",
+        "predicate": "INVESTED_IN",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "ailab",
+        "target_name": "Anthropic",
+        "predicate": "INVESTED_IN",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-Depreciation-Life-Change",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-AWS-Capex-AI",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-Long-Term-AWS-Commitments",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "risk_factor",
+        "target_name": "Amazon-FTC-Settlement",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "predicate": "INVESTED_IN",
+        "target_type": "ailab",
+        "target_name": "Anthropic"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-Anthropic-unrealized-gains-volatility"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-Anthropic-Level3-valuation-risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-Anthropic-mark-to-market-earnings"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-AWS-capex-acceleration"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "AMZN-AWS-capex-2025-9m"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-lease-obligations-off-balance"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AMZN-future-lease-commitments"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "predicate": "COMMITTED_CAPEX",
+        "target_type": "capex_commitment",
+        "target_name": "AMZN-total-commitments-2025-2029"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "ailab",
+        "target_name": "Anthropic",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "investment_type": "convertible notes and nonvoting preferred stock",
+          "amount_disclosed": "$2.7 billion",
+          "note": "Including $1.3B in Q2 2025 and additional $1.4B planned for Q4 2025"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "company",
+        "target_name": "Rivian",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "investment_type": "equity",
+          "note": "Mark-to-market loss of $2.7B in 9M 2024"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "capex_commitment",
+        "target_name": "Amazon-AWS-Infrastructure-2025-2026",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {
+          "note": "Multi-year infrastructure buildout for AWS and fulfillment"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "risk_factor",
+        "target_name": "Amazon-Semiconductor-Supply-Risk",
+        "predicate": "CITES_RISK",
+        "properties": {
+          "note": "Single-source GPU/AI chip dependency for AWS infrastructure"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-Capex-ROI-Gap",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {
+          "note": "Large capex commitment with uncertain AI monetization ROI"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-Anthropic-Valuation-Exposure",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {
+          "note": "Investment portfolio concentration and mark-to-market volatility"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-China-Seller-Dependency",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {
+          "note": "Significant revenue concentration from China-based sellers and suppliers"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Amazon-India-Regulatory-VIE-Risk",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {
+          "note": "Contractual VIE structure for amazon.in marketplace exposure"
+        }
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Amazon",
+        "target_type": "capex_commitment",
+        "target_name": "AMZN-Revolving-Credit-5B-2025"
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Citibank",
+        "target_type": "capex_commitment",
+        "target_name": "AMZN-Revolving-Credit-5B-2025"
+      }
+    ],
+    "notes": "[chunk 1/4] EXTRACTION SUMMARY:\n\nKEY SIFI-MATERIAL FINDINGS:\n\n1. **COST OPACITY: Depreciation-Life Compression (Severity 3)**\n   - Jan 1, 2025: Amazon reduced server/networking equipment useful life from 6yr to 5yr\n   - 9M2025 impact: $889M additional depreciation expense, $677M net income reduction\n   - Root cause: \"increased pace of technology development, particularly in AI/machine learning\"\n   - **SIGNAL**: Shortening depreciation indicates potential over-capacity or rapid tech obsolescence in AWS infrastructure buildout. This is a classic leading indicator of CAPEX misallocation.\n\n2. **CAPEX_ROI_GAP: $120B annual infrastructure spend with AI acceleration (Severity 2)**\n   - 12M capex through Sept 30, 2025: $120.1B (23.9% of revenue)\n   - Coincides with depreciation-life shortening for AI/ML equipment\n   - Unrecognized AWS customer commitments: $200B at 3.8yr weighted-average remaining life\n   - **SIGNAL**: Massive infrastructure spend with shorter useful lives + $200B unrecognized commitments suggests potential mismatch between capex intensity and contracted revenue. Not yet in \"critical\" territory but warrants close monitoring.\n\n3. **ANTHROPIC INVESTMENT: $7.3B+ valuation gains (9M2025)**\n   - $2.3B convertible notes converted to nonvoting preferred stock in Q3 2025\n   - Additional $7.3B upward adjustments on private equity holdings\n   - **RELEVANCE**: Amazon is a major financial backer of a leading AI lab. Anthropic's scaling success directly tied to AWS capex expansion.\n   - **CIRCULARITY RISK**: Amazon invests in Anthropic \u2192 Anthropic buys AWS compute \u2192 AWS revenues fund further Amazon capex/AI initiatives. Early-stage revenue roundtrip dynamic.\n\n4. **FTC SETTLEMENT: $2.5B fine in Q3 2025**\n   - Non-material to earnings (already booked); disclosed for completeness.\n\n5. **DATA POINTS NOT EXTRACTED (boilerplate exclusions):**\n   - Routine stock-based compensation, tax policy changes, generic debt disclosures (all familiar to investors)\n   - Standard operating segment breakdowns (North America, International, AWS)\n   - Inventory valuation allowances, receivables provisioning (standard practice, no SIFI signal)\n   - Video/music content capitalization ($21.5B) \u2013 important but not concentration or off-balance-sheet concern\n\nEDGES: Straightforward investor/investee relationships and risk ownership.\n[chunk 4/4] Filing discusses a routine 364-day revolving credit facility ($5B unsecured) arranged by Amazon with Citibank as administrative agent. No SIFI-material leverage signals, hidden off-balance obligations, or circularity detected. The facility is standard corporate liquidity backstopping for commercial paper operations. Citibank and syndicate participants disclosed as providing various financial services to Amazon on a customary fee basis. No customer/supplier concentration concerns, strategic partnerships, or related-party arrangements requiring extraction. The credit agreement itself is standard market instrument with customary covenants and no financial ratio triggers.\""
+  }
+}

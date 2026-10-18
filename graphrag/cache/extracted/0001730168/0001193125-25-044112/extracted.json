@@ -1,0 +1,238 @@
+{
+  "related_party": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-Samueli-Pledge-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 2700000000,
+            "note": "16,175,000 shares pledged at ~$2.7B value as of Nov 15 2024, representing ~18% of Samueli's holdings and 0.3% of total outstanding shares"
+          },
+          "named_counterparties": [
+            "Henry Samueli"
+          ],
+          "verbatim_quote": "On November 15, 2024, Dr. Samueli pledged 16,175,000 shares of Broadcom common stock, which, at that time, represented approximately 18% of the total shares beneficially owned by Dr. Samueli and 0.3% of the total outstanding shares of Broadcom common stock. Based on the closing price of Broadcom common stock on November 15, 2024, the value of the pledged shares was approximately $2.7 billion."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-Samueli-Pledge-Risk"
+      }
+    ],
+    "notes": "[chunk 1/1] This DEF 14A proxy statement for Broadcom (AVGO) for fiscal year ended November 3, 2024 contains very limited SIFI-material financial structure disclosures. The filing is primarily a governance/compensation proxy, not a 10-K or 10-Q. Key observations:\n\n1. NO off-balance-sheet entities, SPVs, VIEs, or project finance structures are disclosed in this excerpt.\n2. NO capex commitments or multi-year compute agreements are named.\n3. NO equity investments in AI labs or private companies are disclosed in this excerpt (those would appear in 10-K Note disclosures, not a proxy).\n4. The one SIFI-material item is the Chairman Dr. Samueli's share pledge arrangement: 16.175M shares (~$2.7B at Nov 15, 2024) pledged as collateral for loans to fund the OCVIBE real estate development project in Orange County, CA. This is a governance/forced-sale risk, rated severity 2 (concern) \u2014 the pledge is only 0.3% of total shares outstanding and the Board assessed it as not posing material risk. No AI/compute circularity or hidden leverage patterns are present in this section.\n5. Broadcom's AI revenue of $12.2B (220% YoY growth, 41% of semiconductor revenue) is noted but no specific customer concentration or supplier dependency details are provided in this proxy excerpt sufficient to emit a SIFI node.\n6. The VMware acquisition integration is referenced but no off-balance-sheet financing structures are disclosed here."
+  },
+  "director_comp": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "Broadcom Inc.",
+            "AVGO"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "PricewaterhouseCoopers",
+        "fields": {
+          "aliases": [
+            "PwC"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Silver Lake",
+        "fields": {
+          "role": "investor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Google",
+        "fields": {
+          "aliases": [
+            "Alphabet Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intel",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "EMC",
+        "fields": {
+          "role": "competitor"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Meta"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "PricewaterhouseCoopers"
+      }
+    ],
+    "notes": "[chunk 1/1] EXTRACTION NOTES FOR BROADCOM DEF 14A (Director Compensation Section):\n\n**SIFI-MATERIAL ENTITIES IDENTIFIED:**\n\n1. **Meta Platforms, Inc.** \u2014 Material related-party link via CEO Hock E. Tan's directorship. Tan has served as a director of Meta since at least the filing date. This is a NAMES_COUNTERPARTY edge denoting a director-level interlock between Broadcom and Meta (a major hyperscaler and significant semiconductor customer).\n\n2. **Silver Lake** \u2014 Kenneth Y. Hao joined Broadcom's board in 2024 as an independent director. He has been Chairman and Managing Partner of Silver Lake (a $100B+ global technology investment firm) since December 2019. Silver Lake is a material investor/stakeholder in semiconductor and cloud infrastructure. This creates potential conflicts of interest and investment exposure.\n\n3. **PricewaterhouseCoopers (PwC)** \u2014 Auditor relationship. PwC has been Broadcom's independent registered public accounting firm since 2006 (19-year tenure as of filing date). Audit fees FY2024: $29.6M (up from $14.6M in FY2023, roughly doubled). Audit-related fees: $9.5M. This suggests an acquisition-related audit spike (\"acquisition due diligence\").\n\n**DIRECTOR INTERLOCKS & QUALIFICATIONS:**\n- Diane M. Bryant: Former Google Cloud COO, former Intel executive (Data Center Group). Potential conflict/overlap with Broadcom customer base.\n- Gayla J. Delly: Former CEO of Benchmark Electronics (contract manufacturing). Director of Flowserve, Littelfuse (manufacturing/industrial supply chain). Audit Committee Chair.\n- Harry L. You: Former Oracle CFO, former EMC executive. Currently serves as CEO/Chairman of dMY Squared Technology Group (SPAC). Compensation Committee Chair. Multiple SPAC director roles suggest complex financial arrangements.\n- Henry Samueli: Co-founder of original Broadcom Corporation. Co-owner of NHL's Anaheim Ducks since 2005. Chairman of Board. No material SIFI signals beyond traditional founder role.\n\n**COMPENSATION TRENDS (FY2024):**\n- Non-employee director annual retainer: $105K\n- Independent Chairman: $150K (increased to $175K in Dec 2024)\n- Audit Chair: $40K (increased to $45K in Dec 2024)\n- Initial RSU awards: $250K target (increased to $275K in Dec 2024)\n- Annual RSU awards: $250K target (increased to $275K in Dec 2024)\n- All equity awards vest over 1 year or at next annual meeting\n- Total director compensation increases suggest board expansion/retention pressure\n\n**WHY THIS IS NOT SIFI-MATERIAL IN THE 8-PATTERN FRAMEWORK:**\n- No hidden leverage, SPVs, or off-balance-sheet obligations disclosed\n- No revenue circularity or round-tripping evident\n- No capex ROI gap (director comp is routine corporate overhead)\n- No execution risk from commitments\n- Cost opacity: Audit fees doubled (spike explained by \"acquisition due diligence\"), but no hidden lease terms or goodwill opacity\n- Customer/supplier concentration: Meta is named but no revenue % disclosed; cannot assert >10% materiality\n- Director interlocks (Bryant/Tan at Google/Meta, You at Oracle/EMC) are routine board service; no circularity triangle yet visible in this section alone\n\n**RECOMMENDATION:**\nThis extraction captures the named counterparties and director interlocks. Cross-reference with other Broadcom filings (10-K, 10-Q, proxy statements) to assess whether Meta is a >10% revenue customer, whether Silver Lake has direct equity holdings in Broadcom, or whether Harry You's SPAC roles create related-party financial transactions. For now, edges are minimal\u2014only NAMES_COUNTERPARTY links (Meta, PwC).\n\n**NODES NOT EXTRACTED (boilerplate):**\n- Generic \"Executive Leadership\" or \"Finance/Accounting\" skills (chart data, non-entity)\n- Compensation Committee, Audit Committee, NESG Committee (governance bodies, not legal entities)\n- Raytheon, United Technologies, Integrated Device Technology, BearingPoint, GTY Technology, IonQ, Coupang, Genius Sports, Rush Street Interactive, National Instruments, Emerson Electric, SolarWinds, Splunk, NortonLifeLock, Flowserve, Littelfuse, Sirius XM, TiVo, Xperi, Rovi, SanDisk, Western Digital, NewSmith Capital Partners, Cluny Capital Limited, Singapore Telecommunications, Integrated Circuit Systems, Accenture, Korn/Ferry International, Rain Enhancement Technologies, dMY Technology Group entities (all background/historical roles, not active material counterparties in this filing section)\n\""
+  },
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "ticker": "AVGO",
+          "aliases": [
+            "AVGO"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-AI-Revenue-Concentration",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "pct_of_revenue": 0.41,
+            "amount_usd": 12200000000,
+            "note": "AI revenue $12.2B = 41% of semiconductor solutions revenue ($30.1B); 220% YoY growth indicates high concentration dependency on AI customer ramp"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "our AI revenue increased 220% from $3.8 billion in fiscal 2023 to $12.2 billion in fiscal 2024 and represented 41% of our fiscal 2024 semiconductor solutions revenue of $30.1 billion"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-VMware-Debt-Load",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 30400000000,
+            "note": "Secured $30.4B in bank loans to fund VMware acquisition; reduced to $13.6B by fiscal year end via debt repayments and investment-grade senior notes offerings"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Secured funding of $30.4 billion in bank loans to fund the VMware acquisition... Managed capital allocation in a focused and balanced manner, including reduced bank loans to $13.6 billion by fiscal year end through debt repayments using cash on hand and investment grade senior notes offerings"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-CEO-Key-Person-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "OTHER",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "CEO Hock Tan holds front-loaded 5-year PSU covering all cash incentives through FY2027 and all annual equity; stockholders flagged succession planning as primary concern in post-2024 meetings"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Most stockholders had questions regarding our Board's approach to CEO succession planning due to the importance of Mr. Tan to Broadcom's success and significant stockholder value creation."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "AVGO-AI-Execution-Risk",
+        "fields": {
+          "filer": "Broadcom",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 12200000000,
+            "note": "AI revenue of $12.2B driven by custom AI accelerators and AI connectivity; supply chain diversification cited as risk mitigation measure, implying prior single-source dependency concerns"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Implemented supply chain diversification and resiliency designed to ensure supply continuity and risk mitigation"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-AI-Revenue-Concentration"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-VMware-Debt-Load"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-CEO-Key-Person-Risk"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Broadcom",
+        "target_type": "hidden_risk_signal",
+        "target_name": "AVGO-AI-Execution-Risk"
+      }
+    ],
+    "notes": "[chunk 1/3] This DEF 14A Compensation Discussion & Analysis section is primarily executive compensation boilerplate. However, four SIFI-material signals were extracted:\n\n1. CUSTOMER_CONCENTRATION (severity 3): AI revenue ($12.2B, +220% YoY) now represents 41% of semiconductor solutions revenue. Broadcom does not name individual AI customers in this section, but the custom AI accelerator business (known to be Google TPU and Meta MTIA programs) creates high concentration risk. The 220% growth rate also implies the business is still in a ramp phase with execution risk.\n\n2. HIDDEN_LEVERAGE (severity 2): VMware acquisition funded with $30.4B in bank loans. While reduced to $13.6B by fiscal year-end via debt repayment and investment-grade notes, this represents meaningful residual leverage. The filing frames this as a CFO achievement, not a risk disclosure \u2014 making it a hidden signal rather than a named risk factor.\n\n3. KEY PERSON / OTHER (severity 3): Stockholders explicitly cited CEO succession planning as primary concern. Hock Tan's compensation is front-loaded via a 5-year PSU (covering through FY2027 with no cash bonus or annual equity), structurally embedding key-person dependency. This is governance-level systemic risk.\n\n4. EXECUTION_RISK (severity 2): Supply chain diversification language in Dr. Kawwas' review implies prior concentration in semiconductor supply chain \u2014 SIFI-material given Broadcom's role as sole-source custom AI ASIC supplier to hyperscalers.\n\nNo named AI lab counterparties, SPVs, off-balance-sheet entities, or investment disclosures appear in this section. Peer group list (NVIDIA, Intel, Meta, Oracle, etc.) is a comp benchmarking artifact \u2014 not a business relationship \u2014 and was not extracted per hard rules.\n[chunk 2/3] This DEF 14A section (Compensation Discussion & Analysis, Executive Compensation tables, CEO Pay Ratio, Pay vs. Performance) contains no SIFI-material entities. The content is entirely standard executive compensation disclosure: PSU/RSU vesting schedules based on Relative TSR performance, NEO salary and bonus tables, severance benefit terms, CEO pay ratio (8:1), and equity plan information. No named business relationships, customer/supplier dependencies, investments, acquisitions, off-balance-sheet entities, SPVs, related-party arrangements, or counterparty web elements are present. The only entities mentioned are Broadcom itself and acquired subsidiaries (LSI, Brocade, CA, VMware) in the context of assumed equity plans \u2014 none of which constitute SIFI-material relationships. Extraction is empty by design per Hard Rule 3.\n[chunk 3/3] Section reviewed: Broadcom DEF 14A (2025-03-03), comp_disc_analysis \u2014 equity compensation plan table and security ownership table. No SIFI-material entities found. Content is entirely standard proxy boilerplate: equity plan share counts (RSUs, PSUs, options), beneficial ownership disclosures for directors/officers, and 5%+ holder filings (Vanguard 10.0%, BlackRock 7.4%). No named customer/supplier relationships, no SPVs, no AI lab investments, no capex commitments, no circular dependencies, no revenue roundtripping, no off-balance-sheet vehicles, and no concentration risks are disclosed in this section. The pledged-shares footnote for Dr. Samueli (16.175M shares pledged as collateral) is a routine insider pledge arrangement, not SIFI-material. Extraction correctly returns empty graph per Hard Rule 3."
+  }
+}

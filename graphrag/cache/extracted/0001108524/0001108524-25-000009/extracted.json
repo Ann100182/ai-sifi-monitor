@@ -1,0 +1,938 @@
+{
+  "comp_disc_analysis": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce, Inc.",
+            "CRM"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-AgentforceDataCloud-RevenueConcentration",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 1,
+          "numeric_signal": {
+            "amount_usd": 900000000,
+            "pct_of_revenue": 2.4,
+            "note": "Data Cloud & AI ARR $900M on $37.9B total revenue, 120% YoY growth; nearly half of Fortune 100 are AI & Data Cloud customers"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Data Cloud & AI annual recurring revenue reached $900 million, an increase of 120% year-over-year. In the first 90 days after Agentforce launched, closed 5,000 Agentforce deals, including more than 3,000 paid."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-PeerGroupRestructuring-CompensationGovernance",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Executive Compensation Governance",
+          "named_counterparties": [
+            "Amazon",
+            "Alphabet",
+            "Meta",
+            "Advanced Micro Devices",
+            "Broadcom",
+            "Palo Alto Networks",
+            "Qualcomm"
+          ],
+          "severity": 1,
+          "verbatim_quote": "Established a new peer group for fiscal 2026 compensation decisions for our NEOs, replacing several mega cap companies: Removals: Amazon, Alphabet, Apple, and Meta Platforms. Additions: Advanced Micro Devices, Broadcom, Palo Alto Networks, and Qualcomm."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "role": "customer",
+          "aliases": [
+            "Salesforce, Inc.",
+            "CRM"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "ValueAct Capital",
+        "fields": {
+          "role": "customer",
+          "aliases": [
+            "ValueAct"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "ticker": "GOOGL",
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-Washington-Related-Party",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "named_counterparties": [
+            "Robin Washington",
+            "Alphabet"
+          ],
+          "verbatim_quote": "Robin Washington was appointed President and Chief Operating and Financial Officer... Her deep experience with Salesforce and her many contributions as an active member of Salesforce's Board since 2013... were also key factors in her appointment.",
+          "numeric_signal": {
+            "note": "Board member (since 2013) and concurrent Alphabet director appointed as executive officer March 2025; potential related-party and independence conflict"
+          }
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "CRM-ValueAct-Comp-Chair",
+        "fields": {
+          "filer": "Salesforce",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "named_counterparties": [
+            "ValueAct Capital",
+            "Mason Morfit"
+          ],
+          "verbatim_quote": "I will apply my expertise from my role as Co-CEO and Chief Investment Officer of ValueAct Capital to further align our executive compensation program with Company growth priorities.",
+          "numeric_signal": {
+            "note": "Active activist investor (ValueAct, >$10B AUM) controls Compensation Committee chair; potential alignment of comp design with activist agenda over long-term shareholder interests"
+          }
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CRM-Agentforce-Execution-Risk",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "EXECUTION_RISK",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We also launched AI technologies, including Agentforce, our digital labor platform. Agentforce and Data Cloud are among our fastest-growing products and form the foundation for our future strategy."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "role": "customer",
+          "aliases": [
+            "CRM",
+            "Salesforce, Inc."
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-AgentforceDataCloud-RevenueConcentration"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "risk_factor",
+        "target_name": "CRM-PeerGroupRestructuring-CompensationGovernance"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "ValueAct Capital",
+        "target_type": "company",
+        "target_name": "Salesforce"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-Washington-Related-Party"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "hidden_risk_signal",
+        "target_name": "CRM-ValueAct-Comp-Chair"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "CRM-ValueAct-Comp-Chair",
+        "target_type": "company",
+        "target_name": "ValueAct Capital"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "CRM-Washington-Related-Party",
+        "target_type": "company",
+        "target_name": "Alphabet"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "risk_factor",
+        "target_name": "CRM-Agentforce-Execution-Risk"
+      }
+    ],
+    "notes": "[chunk 1/3] This DEF 14A Compensation Discussion & Analysis section is primarily proxy governance/executive compensation boilerplate with very limited SIFI-material content. Key observations:\n\n1. NO off-balance-sheet SPVs, JVs, or project finance entities mentioned.\n2. NO named customer concentration disclosures beyond general Fortune 100 references.\n3. NO named supplier dependencies or single-source risks.\n4. NO AI lab investments or equity stakes disclosed in this section.\n5. NO related-party transactions of SIFI materiality beyond standard board interlocks (Sachin Mehra is CFO of Mastercard \u2014 noted as director but no material related-party transaction disclosed).\n6. The peer group change (removing Amazon, Alphabet, Apple, Meta; adding AMD, Broadcom, Palo Alto Networks, Qualcomm) is notable as a governance signal but not a direct financial risk.\n7. The Agentforce/Data Cloud $900M ARR growing 120% YoY on a $37.9B revenue base is strategically important context but not yet a SIFI concentration risk.\n8. ValueAct Capital's Mason Morfit is now Chair of the Compensation Committee \u2014 an activist investor in a board governance role worth monitoring for future strategic pressure.\n\nOverall: minimal SIFI-material extractions warranted from this section. The filing section is standard DEF 14A proxy governance content.\n[chunk 2/3] This DEF 14A Comp Discussion section is largely governance/compensation boilerplate with limited SIFI-material content. Key signals extracted:\n\n1. GOVERNANCE CONFLICT \u2014 Robin Washington simultaneously served as Salesforce Board member (Lead Independent Director, Audit Chair) AND sits on Alphabet's board (current), then was appointed Salesforce President & COFO in March 2025. This creates a potential related-party / independence tension, particularly given Alphabet is a major Salesforce competitor/partner in cloud and AI.\n\n2. ACTIVIST COMP CHAIR \u2014 Mason Morfit (ValueAct Capital Co-CEO/CIO, $10B+ AUM) chairs the Compensation Committee after ValueAct took an activist position in Salesforce (Jan 2023 Form 8-K cited). Comp design being led by an active activist investor is a governance-layer risk signal worth monitoring for compensation structures that may prioritize margin extraction over R&D/growth investment.\n\n3. AGENTFORCE EXECUTION \u2014 Compensation program was \"realigned to support Agentforce objectives\" \u2014 indicating performance metrics are now tied to a product that is described as early-stage and among \"fastest-growing\" but not yet at scale. No revenue concentration or counterparty data disclosed in this section.\n\nNo SPVs, off-balance-sheet entities, capex commitments, AI lab investments, or revenue roundtripping patterns were disclosed in this section.\n[chunk 3/3] This DEF 14A section (Compensation Discussion & Analysis) for Salesforce (CRM) is almost entirely boilerplate executive compensation disclosure \u2014 say-on-pay vote outcomes, peer group changes, PRSU/RSU/option mix, perquisite caps, stock ownership guidelines, and compensation consultant engagements (Compensia, Semler Brossy). None of the content rises to SIFI-material threshold: there are no named customer/supplier concentrations, no SPVs or off-balance-sheet entities, no equity investments in AI labs or counterparties, no capex commitments with named counterparties, and no related-party transactions. The only potentially relevant business metrics mentioned are: revenue $37.9B FY2025, operating cash flow $13.1B, RPO $63.4B, and Data Cloud/AI ARR $900M (+120% YoY) \u2014 but these are performance highlights without counterparty-web implications. ValueAct Capital (via Mason Morfit as Comp Committee Chair) is a notable activist investor presence but does not constitute a SIFI-material related-party arrangement requiring extraction. No edges can be drawn that are not purely boilerplate. Extracting a minimal Salesforce company node for registry completeness only."
+  },
+  "director_comp": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce, Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Accenture",
+        "fields": {
+          "aliases": [
+            "Accenture plc"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Cisco",
+        "fields": {
+          "aliases": [
+            "Cisco Systems, Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "aliases": [
+            "Oracle Corporation"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "aliases": [
+            "Adobe Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Dell",
+        "fields": {
+          "aliases": [
+            "Dell Technologies Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "PayPal",
+        "fields": {
+          "aliases": [
+            "PayPal Holdings, Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "aliases": [
+            "International Business Machines Corporation"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SAP",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intuit",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "ServiceNow",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Block",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "aliases": [
+            "Microsoft Corporation"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Workday",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "AMD",
+        "fields": {
+          "aliases": [
+            "Advanced Micro Devices, Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Palo Alto Networks",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Qualcomm",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "aliases": [
+            "Alphabet Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "aliases": [
+            "Amazon.com, Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Apple",
+        "fields": {
+          "aliases": [
+            "Apple Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Meta",
+        "fields": {
+          "aliases": [
+            "Meta Platforms, Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Compensia",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Semler Brossy",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Radford",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce, Inc.",
+            "CRM"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Slack",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce, Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "TIME Magazine",
+        "fields": {
+          "aliases": [
+            "TIME"
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Salesforce Foundation",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "Salesforce",
+          "beneficiary": "Salesforce Foundation",
+          "purpose": "Charitable philanthropy via 1-1-1 model (people, technology, resources)",
+          "verbatim_quote": "In January 1999, the Salesforce Foundation, also referred to as the Foundation, was chartered on an idea of leveraging the Company's people, technology and resources to help improve communities around the world. The Company calls this integrated philanthropic approach the 1-1-1 model. In connection with its 2019 business combination with Salesforce.org, the Company agreed to use its best efforts to make charitable cash contributions of up to $5 million to the Foundation in each fiscal quarter beginning in the third quarter of fiscal 2020 for ten years."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CEO-Related-Party-Aircraft-Perquisite",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Related-party transaction / private aircraft use perquisite",
+          "named_counterparties": [
+            "Marc Benioff"
+          ],
+          "severity": 1,
+          "verbatim_quote": "In fiscal 2021, Mr. Benioff entered into a Time Sharing Agreement with the Company providing for the reimbursement by the Company to Mr. Benioff for business use of his personal aircraft. For fiscal 2025, the value of this reimbursement (excluding a portion reported in \"All Other Compensation\" in the Summary Compensation Table) was approximately $188,923."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "CEO-Personal-Security-Costs",
+        "fields": {
+          "filer": "Salesforce",
+          "category": "Related-party transaction / executive security perquisite",
+          "named_counterparties": [
+            "Marc Benioff"
+          ],
+          "severity": 1,
+          "verbatim_quote": "For Mr. Benioff, this amount represents an allocation of costs paid by the Company for security arrangements provided for Mr. Benioff that are in addition to security arrangements provided while at work or on business travel. For fiscal 2025, this amount reflects certain ongoing security expenses allocable to the Company which, prior to fiscal 2024, were not invoiced to the Company."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Accenture",
+        "properties": {
+          "context": "peer_group_competitor",
+          "role_in_peer_group": "fy2025_and_fy2026"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Cisco",
+        "properties": {
+          "context": "peer_group_competitor",
+          "role_in_peer_group": "fy2025_and_fy2026"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Oracle",
+        "properties": {
+          "context": "peer_group_competitor",
+          "role_in_peer_group": "fy2025_and_fy2026"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Adobe",
+        "properties": {
+          "context": "peer_group_competitor",
+          "role_in_peer_group": "fy2025_and_fy2026"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Dell",
+        "properties": {
+          "context": "peer_group_competitor",
+          "role_in_peer_group": "fy2025_and_fy2026"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "PayPal",
+        "properties": {
+          "context": "peer_group_competitor",
+          "role_in_peer_group": "fy2025_and_fy2026"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "IBM",
+        "properties": {
+          "context": "peer_group_competitor",
+          "role_in_peer_group": "fy2025_and_fy2026"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "SAP",
+        "properties": {
+          "context": "peer_group_competitor",
+          "role_in_peer_group": "fy2025_and_fy2026"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Intuit",
+        "properties": {
+          "context": "peer_group_competitor",
+          "role_in_peer_group": "fy2025_and_fy2026"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "ServiceNow",
+        "properties": {
+          "context": "peer_group_competitor",
+          "role_in_peer_group": "fy2025_and_fy2026"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Block",
+        "properties": {
+          "context": "peer_group_competitor",
+          "role_in_peer_group": "fy2025_and_fy2026"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Microsoft",
+        "properties": {
+          "context": "peer_group_competitor",
+          "role_in_peer_group": "fy2025_and_fy2026"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Workday",
+        "properties": {
+          "context": "peer_group_competitor",
+          "role_in_peer_group": "fy2025_and_fy2026"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "AMD",
+        "properties": {
+          "context": "peer_group_competitor",
+          "added_fy2026": true
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Broadcom",
+        "properties": {
+          "context": "peer_group_competitor",
+          "added_fy2026": true
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Palo Alto Networks",
+        "properties": {
+          "context": "peer_group_competitor",
+          "added_fy2026": true
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Qualcomm",
+        "properties": {
+          "context": "peer_group_competitor",
+          "added_fy2026": true
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Alphabet",
+        "properties": {
+          "context": "peer_group_competitor",
+          "removed_fy2026": true,
+          "reason": "outsized_market_cap"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Amazon",
+        "properties": {
+          "context": "peer_group_competitor",
+          "removed_fy2026": true,
+          "reason": "outsized_market_cap"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Apple",
+        "properties": {
+          "context": "peer_group_competitor",
+          "removed_fy2026": true,
+          "reason": "outsized_market_cap"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Meta",
+        "properties": {
+          "context": "peer_group_competitor",
+          "removed_fy2026": true,
+          "reason": "outsized_market_cap"
+        }
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Compensia",
+        "target_type": "company",
+        "target_name": "Salesforce",
+        "properties": {
+          "service": "compensation_consulting",
+          "period": "fiscal_2024",
+          "approval_date": "September_2023"
+        }
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Semler Brossy",
+        "target_type": "company",
+        "target_name": "Salesforce",
+        "properties": {
+          "service": "compensation_consulting",
+          "period": "fiscal_2025_onwards",
+          "start_date": "after_2024_annual_meeting"
+        }
+      },
+      {
+        "predicate": "SUPPLIES",
+        "source_type": "company",
+        "source_name": "Radford",
+        "target_type": "company",
+        "target_name": "Salesforce",
+        "properties": {
+          "service": "custom_compensation_survey_data",
+          "context": "executive_officer_compensation_planning"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "predicate": "NAMES_COUNTERPARTY",
+        "target_type": "company",
+        "target_name": "Slack"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "off_balance_entity",
+        "target_name": "Salesforce Foundation",
+        "predicate": "SPONSORS",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "TIME Magazine",
+        "predicate": "SELLS_COMPUTE_TO",
+        "properties": {
+          "fiscal_year": 2025,
+          "amount": "~$700,000"
+        }
+      }
+    ],
+    "notes": "[chunk 2/3] FILING CONTEXT: CRM DEF 14A (2025-04-24). SECTION: Director Compensation. MATERIAL FINDINGS: None. RATIONALE: This section contains executive compensation disclosures (Summary Compensation Table, equity awards, NEO names, retention agreements, clawback policies, stock ownership guidelines). The only substantive business entity reference is Slack, identified via Parker Harris's title as \\\"Co-Founder and Chief Technology Officer, Slack,\\\" indicating Slack is a Salesforce operating unit/subsidiary. No SIFI-material relationships are disclosed here: no customer/supplier concentration data, no off-balance-sheet entities, no strategic partnerships with AI labs or hyperscalers, no leverage arrangements, no related-party transactions beyond standard executive compensation. Compensation levels and retention structures are governance-standard, not SIFI-material. Stock ownership guidelines, clawback policies, and insider trading restrictions are boilerplate governance. No hidden leverage, circularity, revenue roundtripping, capex commitments, execution risk, or cost opacity signals present in this section.\""
+  },
+  "beneficial_owners": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "CRM",
+            "Salesforce, Inc."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Vanguard",
+        "fields": {
+          "aliases": [
+            "The Vanguard Group"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "BlackRock",
+        "fields": {
+          "aliases": [
+            "BlackRock, Inc."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "State Street",
+        "fields": {
+          "aliases": [
+            "State Street Corporation"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ernst & Young",
+        "fields": {
+          "aliases": [
+            "EY",
+            "Ernst & Young LLP"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "ValueAct",
+        "fields": {
+          "aliases": [
+            "ValueAct Capital",
+            "ValueAct Capital Master Fund, L.P."
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "ticker": "CRM",
+          "aliases": [
+            "Salesforce, Inc."
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Vanguard",
+        "target_type": "company",
+        "target_name": "Salesforce",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "pct_of_outstanding": 8.7,
+          "shares": 83624885,
+          "filing_date": "2024-02-13"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "BlackRock",
+        "target_type": "company",
+        "target_name": "Salesforce",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "pct_of_outstanding": 7.6,
+          "shares": 72882619,
+          "filing_date": "2024-01-26"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "State Street",
+        "target_type": "company",
+        "target_name": "Salesforce",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "pct_of_outstanding": 5.1,
+          "shares": 49018644,
+          "filing_date": "2024-10-16"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "ValueAct",
+        "target_type": "company",
+        "target_name": "Salesforce",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "shares": 2898509,
+          "entity_structure": "ValueAct Capital Master Fund, L.P., managed through ValueAct Capital Management"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Salesforce",
+        "target_type": "company",
+        "target_name": "Ernst & Young",
+        "predicate": "DEPENDS_ON",
+        "properties": {
+          "fy2025_audit_fees_usd": 24292000,
+          "audit_related_fees_usd": 6667000,
+          "tax_fees_usd": 7502000,
+          "total_fees_usd": 38461000,
+          "role": "independent registered public accounting firm"
+        }
+      }
+    ],
+    "notes": "[chunk 1/4] CRM DEF 14A filing (2025-04-24) - Beneficial Owners section. Extracted institutional investors holding >5% of outstanding shares (Vanguard 8.7%, BlackRock 7.6%, State Street 5.1%) and significant shareholder ValueAct (2.9M shares via ValueAct Capital Master Fund L.P., represented on board by director Mason Morfit). Also extracted audit firm dependency on Ernst & Young LLP (FY2025 total fees $38.46M). No SIFI-material hidden leverage, circularity, revenue roundtrips, or concentration risks detected in this section\u2014this is primarily ownership structure disclosure and equity plan governance. No off-balance-sheet entities, capex commitments, or AI lab investments mentioned. Filing is routine proxy governance with no counterparty web materiality beyond standard institutional holdings.\n[chunk 2/4] SOURCE ANALYSIS: This DEF 14A excerpt covers procedural matters for the 2025 Annual Meeting of Stockholders \u2014 proxy voting mechanics, revocation procedures, stockholder proposal rules, and proxy solicitation logistics. The text contains only boilerplate governance procedure and does not disclose SIFI-material business relationships, customer concentration, supplier dependencies, strategic partnerships, investments, acquisitions, or related-party arrangements. The only named counterparty is D.F. King & Co., Inc. (proxy solicitation firm) engaged at $33,000 + expenses \u2014 immaterial to SIFI analysis. No hidden leverage, circularity, revenue roundtrips, capex commitments, execution risks, cost opacity, or concentration risks are present in this section. Extracted node: Salesforce only, for reference. No edges.\"\n[chunk 3/4] No SIFI-material entities identified in this section. The source text consists entirely of: (1) boilerplate proxy householding disclosure; (2) GAAP-to-non-GAAP financial reconciliation tables for FY2025/2024 (standard accounting reconciliation); (3) the full text of Salesforce's Amended and Restated 2013 Equity Incentive Plan (standard equity award plan terms, grant limits, vesting conditions, administrator powers, and procedural mechanics). No named business relationships, customer concentration signals, supplier dependencies, related-party arrangements, off-balance-sheet entities, investments, counterparty circularity, capex commitments, or hidden leverage indicators are present. The equity plan is routine compensation governance boilerplate with no SIFI relevance.\n[chunk 4/4] Source text is boilerplate equity compensation plan language (Sections 24\u201329 of a stock option/RSU plan). Contains only standard provisions on fractional shares, unfunded obligations, legal compliance, investment representations, regulatory authority, forfeiture, and stockholder approval. No named business relationships, investments, acquisitions, customer concentration, supplier dependencies, strategic partnerships, related-party arrangements, or SIFI-material entities are present. All provisions are generic and apply to the compensation plan administration. No counterparty web, leverage, circularity, revenue roundtripping, capex commitments, execution risk, or cost opacity signals identified. No extraction warranted."
+  }
+}

@@ -30,3 +30,10 @@ dist/
 *.egg-info/
 .env
 graphrag/.env
+
+# GraphRAG cache — commit parsed/ + extracted/ (51 MB, lets anyone rebuild
+# the indexes for free); ignore what is large and rebuildable locally.
+graphrag/cache/raw/
+graphrag/cache/kuzu
+graphrag/cache/kuzu.*
+graphrag/cache/chroma/

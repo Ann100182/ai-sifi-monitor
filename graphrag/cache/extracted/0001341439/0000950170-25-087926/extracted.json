@@ -1,0 +1,1467 @@
+{
+  "item_15": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "aliases": [
+            "Oracle Corporation"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ampere Computing",
+        "fields": {
+          "aliases": [
+            "Ampere Computing Holdings LLC"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SoftBank",
+        "fields": {
+          "aliases": [
+            "SoftBank Group Corp."
+          ],
+          "role": "competitor"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ampere Computing",
+        "properties": {
+          "status": "pending_acquisition_by_third_party",
+          "context": "Oracle investment pending SoftBank acquisition"
+        }
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ampere Computing",
+        "properties": {}
+      }
+    ],
+    "notes": "[chunk 1/1] Item 15 (Exhibits) and Cautionary Forward-Looking Statements section. Extracted only SIFI-material relationship: Oracle's investment in Ampere Computing with pending SoftBank acquisition. This represents a strategic supplier relationship (ARM-compatible processor IP) that could impact Oracle's competitive position and data center strategy. All other content is boilerplate forward-looking statement disclaimers and generic business strategy commentary (cloud migration expectations, capex planning, M&A optionality). No other named counterparties, contracts, or financial commitments disclosed in this section."
+  },
+  "item_1": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "aliases": [
+            "ORCL"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "OpenAI",
+        "fields": {
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon Web Services",
+        "fields": {
+          "aliases": [
+            "AWS"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Google Cloud",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Cerner Corporation",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SAP",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intel",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Cisco",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "HP Enterprise",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Workday",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-R&D-FY2025",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 9900000000,
+          "start_fy": 2025,
+          "purpose": "research and development to enhance existing portfolio and develop new technologies and services",
+          "verbatim_quote": "In fiscal 2025, 2024 and 2023, we invested $9.9 billion, $8.9 billion and $8.6 billion, respectively, in research and development to enhance our existing portfolio of offerings and to develop new technologies and services."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-OCI-AI-Competition-Risk",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [
+            "Amazon Web Services",
+            "Google Cloud",
+            "Microsoft"
+          ],
+          "numeric_signal": {
+            "note": "OCI must compete against mature hyperscale cloud platforms with broader AI service offerings and customer entrenchment"
+          },
+          "verbatim_quote": "our ability to develop AI technologies and features and to have access to AI technologies of competitors"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Cloud-Migration-Revenue-Dependency",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 3,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "pct_of_revenue": 43,
+            "note": "Cloud services revenues represented 43% of total revenues in FY2025, up from 37% in FY2024 and 32% in FY2023. Growth dependent on migration of on-premise customer base."
+          },
+          "verbatim_quote": "we are in the early stages of what we expect will be a material migration of our existing Oracle customer base from on-premise applications and infrastructure products and services to the Oracle Cloud. During the past three fiscal years, customers with annual license support contracts that migrated to the Oracle Cloud contributed to the increase in annualized cloud services revenue by $4.3 billion."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-OCI-Capacity-Expansion-Risk",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "note": "Large ongoing capex for OCI data center expansion with uncertain ROI relative to entrenched AWS, Azure, GCP"
+          },
+          "verbatim_quote": "We have invested in the rapid expansion of the Oracle Cloud by increasing existing data center capacity and adding data centers in new geographic locations to meet current and expected customer demand. We expect this trend will continue."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Hardware-Supply-Chain-Risk",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 2,
+          "named_counterparties": [],
+          "numeric_signal": {
+            "note": "Sole-source dependency for certain hardware components"
+          },
+          "verbatim_quote": "However, we do rely on sole sources for certain hardware components. We monitor and evaluate potential risks of disruption within our supply chain operations."
+        }
+      },
+      {
+        "type": "company",
+        "name": "ORCL",
+        "fields": {
+          "ticker": "ORCL",
+          "aliases": [
+            "Oracle",
+            "Oracle Corporation"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "aliases": [
+            "Azure"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "aliases": [
+            "AWS",
+            "Amazon Web Services"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "aliases": [
+            "Google Cloud"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "TSMC",
+        "fields": {
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "China",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "USG",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "EU",
+        "fields": {
+          "role": "regulator"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle Financial Services Software Limited",
+        "fields": {
+          "aliases": [
+            "OFSS"
+          ],
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle Corporation Japan",
+        "fields": {
+          "role": "subsidiary"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "AI_Product_Execution_Risk",
+        "fields": {
+          "filer": "ORCL",
+          "category": "Product Development & Competitiveness",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "If we are unable to introduce new AI products or if our AI products fail to operate as anticipated or as well as competing products or otherwise do not meet customer needs, or if our competitors' AI products achieve higher market acceptance than ours, we may fail to recoup our investments in AI and our business and reputation may be harmed."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL_CAPEX_ROI_GAP",
+        "fields": {
+          "filer": "ORCL",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Multi-year data center commitments with long-term lease obligations; no specific revenue tie-in disclosed for cloud infrastructure investments"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "In recent periods, our cloud services and license support expenses have grown to meet current and expected demand for our cloud offerings, including investments to increase our existing data center capacity and to establish data centers in new geographic locations. In connection with these investments, we entered, and expect to continue to enter, into long-term lease commitments with third-party data center providers and other significant commitments with suppliers of chips and other data center infrastructure."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL_CAPACITY_MISMATCH_RISK",
+        "fields": {
+          "filer": "ORCL",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Capacity planning volatility could lock Oracle into multi-year excess infrastructure commitments"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "If we underestimate customer demand or our data center capacity needs, we may face shortages of available infrastructure, limiting our ability to support customer growth and potentially causing us to lose business to competitors. Conversely, if we overestimate customer demand or our data center capacity needs, we could be locked into multi-year commitments for excess data center space, resulting in lower profitability and cash flows because our third-party data center vendors generally require us to pay significant contract termination fees to early exit such obligations."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL_SINGLE_SOURCE_DEPENDENCY",
+        "fields": {
+          "filer": "ORCL",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "counterparty_count": 1,
+            "note": "Single-vendor constraints for certain technologies and components; AI accelerator supply constraints"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "We depend on suppliers to develop, manufacture and deliver on a timely basis the necessary technologies and components for our hardware products that we market and sell to our customers and that we use as a part of our cloud infrastructure to deliver our cloud offerings, and there are some technologies and components that can only be purchased from a single vendor due to price, quality, technology, availability or other business constraints."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL_AI_ACCELERATOR_SUPPLY_CONSTRAINT",
+        "fields": {
+          "filer": "ORCL",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 4,
+          "numeric_signal": {
+            "note": "AI accelerator supply capacity is competitive; Oracle has accepted less favorable terms with suppliers to secure capacity; increased excess and obsolescence risk"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Industry supply capacity for AI accelerators, including graphics processing units, is competitive, and we at times have to accept less favorable terms with suppliers to avoid supply constraints. While this permits us to secure cloud infrastructure capacity, it has increased excess and obsolescence risk of such hardware products and could adversely impact our profitability and cash flows."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL_REVENUE_TIMING_VOLATILITY",
+        "fields": {
+          "filer": "ORCL",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Subscription-based cloud revenue recognized ratably vs. upfront license revenue; delays in observable deterioration of sales activity"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As customer demand for our cloud offerings increases, we experience volatility in our reported revenues and operating results due to the differences in timing of revenue recognition between our cloud license and on-premise license and hardware product arrangements relative to our cloud offering arrangements. Customers predominantly purchase our cloud offerings on a subscription basis, and revenues from these offerings are generally recognized ratably or as services are consumed over the terms of the subscriptions."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL_COMPETITIVE_MULTICLOUD_LEAKAGE",
+        "fields": {
+          "filer": "ORCL",
+          "risk_type": "CIRCULARITY",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Oracle's multicloud strategy enables customers to integrate with competitors' products, creating customer switching risk"
+          },
+          "named_counterparties": [
+            "Microsoft",
+            "Amazon",
+            "Alphabet"
+          ],
+          "verbatim_quote": "We offer our customers multicloud services whereby our customers can combine cloud services from multiple clouds with the goal of optimizing cost, functionality and performance. OCI's multicloud services work with a number of our competitors' products, including Microsoft Azure, Amazon Web Services and Google Cloud. This multicloud strategy could lead our customers to migrate away from our cloud offerings to our competitors' products or limit their purchases of additional Oracle products, either of which could adversely affect our revenues and profitability."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL_CHINA_TAIWAN_SUPPLY_RISK",
+        "fields": {
+          "filer": "ORCL",
+          "category": "Supply Chain & Geopolitical",
+          "named_counterparties": [
+            "China",
+            "Taiwan"
+          ],
+          "severity": 4,
+          "verbatim_quote": "Our supply chain operations are affected by industry consolidation and component constraints or shortages, natural disasters, political unrest (such as the tensions between China and Taiwan), public health crises, changes to trade laws or regulations, tariffs and customs controls, port stoppages, shipping interruptions or other transportation disruptions or slowdowns, and other factors affecting the countries or regions where these single source component vendors are located."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL_EXPORT_CONTROL_RISK",
+        "fields": {
+          "filer": "ORCL",
+          "category": "Regulatory & Compliance",
+          "named_counterparties": [
+            "USG",
+            "China"
+          ],
+          "severity": 3,
+          "verbatim_quote": "Sanctions, tariffs, export controls, geopolitical instability and related market disruptions or other regulatory, legislative or other trade and non-tariff barriers, including retaliatory measures, impede or prevent us from serving certain customers or restrict our customers from operating in specific jurisdictions."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL_TIKTOK_HOSTING_RISK",
+        "fields": {
+          "filer": "ORCL",
+          "category": "Regulatory & Compliance",
+          "named_counterparties": [
+            "USG"
+          ],
+          "severity": 2,
+          "verbatim_quote": "The U.S. enacted a law making it unlawful, beginning in January 2025, to provide internet hosting services to TikTok that are used to enable the distribution, maintenance, or updating of TikTok for users within the U.S. If the prohibition is lifted or expires without a resolution that satisfies relevant legal requirements, we may no longer be able to provide those services to TikTok, and if we cannot redeploy that capacity in a timely manner, our revenues and profits would be adversely impacted."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL_GDPR_PRIVACY_RISK",
+        "fields": {
+          "filer": "ORCL",
+          "category": "Data Privacy & Regulatory",
+          "named_counterparties": [
+            "EU"
+          ],
+          "severity": 3,
+          "verbatim_quote": "The GDPR provides for monetary penalties of up to \u20ac20 million, or up to 4% of an organization's worldwide revenue of the preceding financial year, whichever is greater. These penalties can be significant. For example, a U.S.-based technology company was fined \u20ac1.2 billion for alleged GDPR violations in 2023."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL_SUBSIDIARY_CONTROL_RISK",
+        "fields": {
+          "filer": "ORCL",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Oracle is majority shareholder but does not exert full control over OFSS (India) and Oracle Corporation Japan (Japan), both publicly traded entities"
+          },
+          "named_counterparties": [
+            "Oracle Financial Services Software Limited",
+            "Oracle Corporation Japan"
+          ],
+          "verbatim_quote": "As the majority shareholder of Oracle Financial Services Software Limited, a publicly traded company in India, and Oracle Corporation Japan, a publicly traded company in Japan, we face several additional risks, including being subject to local securities regulations and being unable to exert full control that we would otherwise have if these entities were wholly-owned subsidiaries."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "ORCL_R_AND_D_ROI_UNCERTAINTY",
+        "fields": {
+          "filer": "ORCL",
+          "category": "Product Development & Financial",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We may not receive significant revenues from our current research and development efforts for several years, if at all. Developing our various product offerings is expensive and the return on investment is often long."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "aliases": [
+            "Oracle Corporation"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ampere",
+        "fields": {
+          "aliases": [
+            "Ampere Computing Holdings LLC"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SoftBank",
+        "fields": {
+          "aliases": [
+            "SoftBank Group Corp."
+          ],
+          "role": "investor"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Oracle-Ampere-29pct",
+        "fields": {
+          "investor": "Oracle",
+          "target": "Ampere",
+          "equity_pct": 29,
+          "amount_usd": 1600000000.0,
+          "disclosed_date": "2025-05-31",
+          "verbatim_quote": "we had an ownership interest of approximately 29% as of May 31, 2025"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Ampere-convertible-debt",
+        "fields": {
+          "entity_type": "other",
+          "sponsor": "Ampere",
+          "beneficiary": "Oracle",
+          "amount_usd": 341000000.0,
+          "term_yrs": 1,
+          "purpose": "convertible debt investment maturing June 2026",
+          "verbatim_quote": "we invested an aggregate of $341 million in convertible debt instruments issued by Ampere. In accordance with the terms of an agreement with other co-investors, we are also a counterparty to certain put (exercisable by a co-investor) and call (exercisable by Oracle) options at prices of approximately $500 million to $1.5 billion"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Ampere-impairment-risk",
+        "fields": {
+          "filer": "Oracle",
+          "category": "Investment impairment",
+          "named_counterparties": [
+            "Ampere",
+            "SoftBank"
+          ],
+          "severity": 3,
+          "verbatim_quote": "we hold a portfolio of marketable and non-marketable debt and equity investments, including investments in Ampere Computing Holdings LLC (Ampere), a privately held related party entity in which we had an ownership interest of approximately 29% as of May 31, 2025. Any impairment charges and effect of changes in the fair values of certain of these investments are recorded as unrealized gains or losses"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Ampere-acquisition-contingency",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 1600000000.0,
+            "note": "Carrying value of Ampere investment subject to SoftBank acquisition closing"
+          },
+          "named_counterparties": [
+            "Ampere",
+            "SoftBank"
+          ],
+          "verbatim_quote": "On March 19, 2025, SoftBank Group Corp. announced that it had entered into an agreement with Ampere and certain of its equity holders to acquire all of the equity interests of Ampere (the Ampere Acquisition). The transaction is subject to customary closing conditions, including regulatory approvals, that are beyond our control. If the Ampere Acquisition closes, we will cease to be an investor in Ampere."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-customer-concentration",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Large transaction concentration in quarterly results"
+          },
+          "named_counterparties": [
+            "US federal government",
+            "government entities"
+          ],
+          "verbatim_quote": "If we lose one or more of our key customers for any reason, or we experience a delay in even a small number of these large transactions, our quarterly sales, revenues and profitability could fall significantly short of our predictions. ... Many governmental entities have the right to terminate contracts at any time for a variety of reasons, including without cause. For example, the U.S. federal government may terminate any of our government contracts and subcontracts at its convenience, or for default based on our performance."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-government-contract-risk",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "named_counterparties": [
+            "US federal government",
+            "DoD"
+          ],
+          "verbatim_quote": "Compliance with these cybersecurity requirements is complex and costly, and any failure or alleged failure to meet, or delays in meeting, the required security controls could result in liability, limit our ability to sell products and services, directly or indirectly, to the DoD and other federal and state government entities that implement similar cybersecurity requirements and adversely affect our reputation and sales."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "aliases": [
+            "ORCL"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ampere",
+        "fields": {
+          "role": "supplier"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "OpenAI",
+        "predicate": "SELLS_COMPUTE_TO",
+        "properties": {
+          "context": "Example customer mentioned: an artificial intelligence (AI) product company that uses OCI to build and serve generative AI models"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Amazon Web Services",
+        "predicate": "CIRCULAR_WITH",
+        "properties": {
+          "context": "Oracle Autonomous Database available on AWS alongside Azure and GCP; Oracle competes directly with AWS cloud offerings"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Microsoft",
+        "predicate": "CIRCULAR_WITH",
+        "properties": {
+          "context": "Oracle Autonomous Database available on Azure; Oracle competes with Microsoft across cloud and enterprise software"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Google Cloud",
+        "predicate": "CIRCULAR_WITH",
+        "properties": {
+          "context": "Oracle Autonomous Database available on Google Cloud; Oracle competes with GCP cloud offerings"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Cerner Corporation",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "context": "Oracle acquired Cerner Corporation; now faces competition from other healthcare IT providers"
+        }
+      },
+      {
+        "source_type": "capex_commitment",
+        "source_name": "Oracle-R&D-FY2025",
+        "target_type": "company",
+        "target_name": "Oracle",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {}
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "Oracle-OCI-AI-Competition-Risk",
+        "target_type": "company",
+        "target_name": "Oracle",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "Oracle-Cloud-Migration-Revenue-Dependency",
+        "target_type": "company",
+        "target_name": "Oracle",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "Oracle-OCI-Capacity-Expansion-Risk",
+        "target_type": "company",
+        "target_name": "Oracle",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "hidden_risk_signal",
+        "source_name": "Oracle-Hardware-Supply-Chain-Risk",
+        "target_type": "company",
+        "target_name": "Oracle",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "investment",
+        "target_name": "Oracle-Ampere-29pct",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "investment",
+        "source_name": "Oracle-Ampere-29pct",
+        "target_type": "company",
+        "target_name": "Ampere",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "SoftBank",
+        "target_type": "company",
+        "target_name": "Ampere",
+        "predicate": "NAMES_COUNTERPARTY"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "off_balance_entity",
+        "target_name": "Ampere-convertible-debt",
+        "predicate": "INVESTED_IN"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "Ampere-impairment-risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Ampere-acquisition-contingency",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-customer-concentration",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-government-contract-risk",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "predicate": "INVESTED_IN",
+        "target_type": "company",
+        "target_name": "Ampere",
+        "properties": {
+          "note": "Equity method investment disclosed in non-operating income section"
+        }
+      }
+    ],
+    "notes": "[chunk 1/5] ORACLE 10-K ITEM 1 EXTRACTION SUMMARY:\n\nKEY SIFI-MATERIAL FINDINGS:\n\n1. **Compute Customer: OpenAI (Implicit)**\n   - Item 1 references \"an artificial intelligence (AI) product company that uses OCI to build and serve generative AI models\" \u2014 this is OpenAI based on known public disclosures of Oracle-OpenAI partnership.\n   - No dollar amounts disclosed in Item 1; detailed agreements likely in Item 1A or footnotes.\n\n2. **Cloud Revenue Concentration (43% of total FY2025)**\n   - Rapid migration of on-premise customer base to OCI is material revenue driver.\n   - $4.3B annualized revenue contribution from migrated customers over 3 years = high execution risk if migration slows.\n   - This is a REVENUE_ROUNDTRIP pattern: customers are converting existing license support (recurring but low-margin) into higher-margin cloud subscriptions.\n\n3. **OCI Capex Expansion Risk (CAPEX_ROI_GAP)**\n   - Oracle states \"rapid expansion of the Oracle Cloud by increasing existing data center capacity and adding data centers in new geographic locations.\"\n   - No specific capex disclosed in Item 1 (likely in MD&A), but implies multi-billion annual spend.\n   - Competitive landscape: AWS, Azure, GCP are entrenched with superior scale and service breadth.\n   - Severe execution risk: Oracle must deploy massive capex while competing against better-capitalized, higher-volume hyperscalers.\n\n4. **Hardware Supply Chain Concentration**\n   - \"We do rely on sole sources for certain hardware components.\"\n   - Severity: 2 (monitored by Oracle but not disclosed as critical failure mode).\n\n5. **Circular Dependencies**\n   - Oracle Autonomous Database runs on AWS, Azure, GCP \u2014 Oracle competes with these platforms while selling to them or customers on their clouds.\n   - Creates potential pricing power erosion and customer lock-in risks.\n\n6. **Cerner Acquisition (Healthcare Vertical)**\n   - Oracle now faces Epic, Allscripts, athenahealth competition in healthcare IT.\n   - No details on Cerner's financials or customer concentration in Item 1.\n\n7. **R&D Investment: $9.9B FY2025**\n   - Reflects aggressive investment in AI capabilities and cloud infrastructure.\n   - High spend suggests Oracle believes AI/cloud is existential competitive battleground.\n\nNO OFF-BALANCE SHEET ENTITIES, SPVs, OR PROJECT FINANCE DETECTED in Item 1 Business section.\nNO CAPEX COMMITMENTS WITH NAMED COUNTERPARTIES (e.g., no disclosed multi-year contracts like Microsoft-OpenAI $60B).\nNO INVESTMENTS IN PRIVATE AI LABS disclosed in Item 1 narrative (likely in Note 8 or equity investment schedules).\n\nNEXT STEPS FOR ANALYST:\n- Cross-reference Item 1A (Risk Factors) for detailed OpenAI relationship, OCI competitive positioning.\n- Review MD&A (Item 7) for OCI capex guidance and cloud revenue bridge.\n- Check Note 13 (segment data) for revenue by geography and OCI gross margins.\n- Review Note 8 or equity investment schedule for any holdings in AI labs (CoreWeave, Figure, xAI, etc.).\n[chunk 3/5] ORACLE 10-K FILING EXTRACT (Item 1 Business & Related Sections)\n\nSIFI-MATERIAL FINDINGS:\n\n1. **AMPERE INVESTMENT (Related-party equity + convertible debt)**\n   - Oracle holds 29% equity stake in Ampere Computing (carrying value $1.6B as of 5/31/25)\n   - FY2025 additional convertible debt investment: $341M (matures June 2026)\n   - Call/put options portfolio on additional equity at $500M\u2013$1.5B through January 2027\n   - **CONTINGENCY RISK**: SoftBank announced March 19, 2025 acquisition of Ampere (all equity). Closing subject to regulatory approvals. Upon close, Oracle loses investor position and $1.6B asset.\n   - This is a RELATED-PARTY investment with opaque performance (equity method losses recognized) and pending third-party acquisition that could crystallize impairment.\n\n2. **CUSTOMER CONCENTRATION & TERMINATION RISK (Government)**\n   - Oracle explicitly discloses large transaction concentration affecting quarterly results: \"a small number of these large transactions\" delays = material revenue miss\n   - US federal government contracts subject to at-will termination \"at convenience\" and FedRAMP/DoD cybersecurity compliance mandates\n   - No specific % of revenue disclosed, but government sector material enough to cite in Item 1A risks and explicitly warn on single-transaction sensitivity\n\n3. **EXECUTION RISK: Government Cybersecurity Compliance**\n   - FedRAMP authorization, DoD CMMC, and other agency requirements create de facto single-customer (USG) dependency\n   - Failure/delay in meeting controls could block sales to entire federal market\n\n4. **CLOUD CAPEX & CAPACITY RISK** (implicit)\n   - Filing emphasizes \"our ability to manage Oracle Cloud capacity requirements to meet existing and prospective customer demand\"\n   - Cloud services now 43% of revenues (up from 32% in FY23); historical upward margin trend depends on cost fixity and customer concentration\n   - No explicit off-balance capex commitment disclosed in Item 1, but capacity management flagged as business driver\n\n5. **NO OFF-BALANCE SHEET SPVs OR PROJECT FINANCE IDENTIFIED** in Item 1\n   - Hardware leases mentioned (Hillsboro, Oregon manufacturing facility) but no residual value guarantees disclosed\n   - Data centers \"substantially all leased through colocation suppliers\" \u2013 no embedded RVG or SPV structure mentioned\n   - Indebtedness ($92.6B outstanding) appears on-balance per standard debt disclosure\n\n6. **CIRCULARITY & ROUND-TRIPPING: None Identified**\n   - No evidence of Ampere supplying compute to Oracle for resale, or revenue/credit round-tripping\n   - Ampere is pure financial investment (equity + convertible debt) with put/call options structure\n\n7. **COST OPACITY: Non-Marketable Investment Impairment Methodology**\n   - Critical accounting estimate: \"investee specific information available to us to make this assessment may be limited or may be available on a delayed basis\"\n   - Fair value estimation upon impairment involves \"significant level of estimation uncertainty and judgment\"\n   - This is a known source of earnings volatility not directly tied to core cloud/license operations\n\n**SEVERITY RATINGS:**\n- Ampere acquisition contingency: **2** (watch \u2013 material but manageable; SoftBank backing suggests credit quality, and deal structure known)\n- Customer concentration (government): **3** (elevated \u2013 large transaction volatility + at-will termination rights)\n- Government cybersecurity execution: **3** (elevated \u2013 regulatory barrier to market entry/expansion)\n- Ampere impairment risk: **3** (elevated \u2013 $1.6B asset subject to equity method losses; pending acquisition adds uncertainty)\n\n**COUNTERPARTY WEB:**\n- Oracle \u2190 (29% equity + $341M convertible debt) \u2192 Ampere\n- SoftBank \u2192 (announced acquisition) \u2192 Ampere\n- Oracle \u2190 (at-will termination + capex sync risk) \u2190 US Federal Government\n\n**DATA QUALITY NOTES:**\n- All material facts extracted from Item 1 (Business) and Item 7 (MD&A).\n- No specific government contract $, but \"numerous large transactions each quarter\" cited as revenue driver.\n- Ampere financials not disclosed; only carrying value and equity method impact referenced.\n- No other investments in private AI labs, hyperscalers, or AI infrastructure cos. named in this section.\n[chunk 4/5] Item 1 Business section - Oracle 10-K FY2025. No SIFI-material entities beyond Oracle itself and its equity-method investment in Ampere (noted as loss driver in non-operating income). No hidden leverage, SPVs, circularity, capex-revenue gaps, or concentration risks meeting the threshold. Cloud and license is 86% of revenue (highly concentrated in single business), but this is routine segment composition. Capital expenditures surged $21.2B in FY2025 (209% increase vs FY2024's $6.9B), but matched by strong cloud services revenue growth ($24.5B, +24% YoY). No related-party transactions, no off-balance-sheet entities, no strategic partnerships with other hyperscalers or AI labs named in this section. Infrastructure expenses rising sharply (+$1.6B), but explained as supporting cloud services growth. Standard currency hedging via FX forwards disclosed; not SIFI-material. No acquisition activity or significant customer/supplier concentration disclosed in Item 1.\"\n  }\n]\n[chunk 5/5] Item 8 and Item 9 are administrative sections with no SIFI-material content. Item 8 references Financial Statements (filed separately in Part IV). Item 9 reports no accounting disagreements. No entities, relationships, investments, commitments, or risk signals extracted."
+  },
+  "item_9a": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] Item 9A (Controls & Procedures), Item 9B (Other Information), Item 9C (Foreign Jurisdictions), and Part III Items 10\u201314 contain no SIFI-material entity information. This section consists entirely of standard governance disclosures: auditor certification (Ernst & Young LLP referenced only as the independent auditor), disclosure control attestations, management's assessment of internal control effectiveness, and cross-references to the proxy statement. No counterparties, investments, off-balance-sheet arrangements, capex commitments, or risk signals are disclosed in this excerpt. No extraction warranted."
+  },
+  "financial_statements_and_notes": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ampere Computing",
+        "fields": {
+          "aliases": [
+            "Ampere Computing Holdings LLC"
+          ],
+          "role": "supplier"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SoftBank",
+        "fields": {
+          "aliases": [
+            "SoftBank Group Corp."
+          ],
+          "role": "customer"
+        }
+      },
+      {
+        "type": "investment",
+        "name": "Oracle-Ampere Equity+Debt Investment",
+        "fields": {
+          "investor": "Oracle",
+          "target": "Ampere Computing",
+          "amount_usd": 1600000000,
+          "equity_pct": 29,
+          "verbatim_quote": "The majority of the non-marketable debt and equity investments held as of these dates were with Ampere Computing Holdings LLC (Ampere), a related party entity in which we have an ownership interest of approximately 29% as of May 31, 2025 and 2024. The total carrying value of our investments in Ampere...was $1.6 billion and $1.5 billion as of May 31, 2025 and 2024, respectively."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-FY2025-CapEx",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 21215000000,
+          "start_fy": 2025,
+          "purpose": "Data center and cloud infrastructure buildout",
+          "verbatim_quote": "Capital expenditures (21,215) ... Unpaid capital expenditures $2,970"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-DepreciationLifeExtension",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 733000000,
+            "note": "FY2025 operating expense reduction from extending server/networking useful life from 5 to 6 years; net income benefit $573M / $0.20 diluted EPS. Prior extension FY2023: 4\u21925 years, $434M expense reduction."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "During the first quarter of fiscal 2025, we completed an assessment of the useful lives of our servers and networking equipment and increased the estimate of the useful lives from five years to six years...this change in accounting estimate decreased our total operating expenses by $733 million and increased our net income by $573 million, or $0.21 per basic and $0.20 per diluted share, during fiscal 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-CapexROIGap-FY2025",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 24185000000,
+            "note": "FY2025 capex $21.2B cash paid + $3.0B unpaid = ~$24.2B total committed spend, vs. PP&E net balance doubling YoY ($21.5B\u2192$43.5B). Remaining performance obligations $137.8B not all matched to specific infrastructure. Operating lease liabilities nearly doubled YoY ($6.3B\u2192$11.5B).",
+            "pct_of_revenue": 42
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Capital expenditures (21,215)...Unpaid capital expenditures $2,970...Property, plant and equipment, net [grew from] 21,536 [to] 43,522...Operating lease liabilities [grew from] 6,255 [to] 11,536"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Ampere-RelatedPartyConcentration",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 1600000000,
+            "note": "Oracle holds ~29% equity + $341M convertible debt invested in FY2025 alone; total non-marketable investments $2.1B, majority in Ampere. SoftBank acquisition of Ampere pending, which would terminate Oracle's investment and potentially the supplier relationship."
+          },
+          "named_counterparties": [
+            "Ampere Computing",
+            "SoftBank"
+          ],
+          "verbatim_quote": "The majority of the non-marketable debt and equity investments held as of these dates were with Ampere Computing Holdings LLC (Ampere), a related party entity in which we have an ownership interest of approximately 29%...On March 19, 2025, SoftBank Group Corp. announced that it had entered into an agreement with Ampere and its equity holders to acquire all of the equity interests of Ampere."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Ampere-PutCallOptionExposure",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 1500000000,
+            "note": "Oracle is counterparty to put options (exercisable by co-investor, ~$500M) and call options (exercisable by Oracle, ~$1.5B) to acquire additional Ampere equity through January 2027; subject to SoftBank acquisition closing."
+          },
+          "named_counterparties": [
+            "Ampere Computing",
+            "SoftBank"
+          ],
+          "verbatim_quote": "we are also a counterparty to certain put (exercisable by a co-investor) and call (exercisable by Oracle) options at prices of approximately $500 million to $1.5 billion, respectively, to acquire additional equity interests in Ampere from our co-investors through January 2027."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-OperatingLeaseExpansion",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 11536000000,
+            "note": "Operating lease liabilities grew from $6.26B (FY2024) to $11.54B (FY2025), an 84% increase YoY, reflecting aggressive data center lease expansion not fully reflected in capex figures."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Operating lease liabilities [non-current] 11,536 [FY2025] vs. 6,255 [FY2024]"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-DebtStack",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 92568000000,
+            "note": "Total notes payable and borrowings: $7.27B current + $85.3B non-current = $92.6B as of May 31, 2025. Net debt ~$81.8B after $10.8B cash. FY2025 new issuances $19.5B, repayments $15.8B."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Notes payable and other borrowings, current 7,271 ... Notes payable and other borrowings, non-current 85,297 ... Proceeds from issuances of senior notes and term loan credit agreements, net of issuance costs 19,548 ... Repayments of senior notes and term loan credit agreements (15,841)"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-HardwareSupplyChainConcentration",
+        "fields": {
+          "filer": "Oracle",
+          "category": "Supplier Concentration / Single-Source Dependency",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "We outsource the manufacturing, assembly and delivery of the substantial majority of our hardware products...to a variety of companies, many of which are located outside the U.S. Further, we have simplified our supply chain processes by reducing the number of third-party manufacturing partners...Any inability of these third-party manufacturing partners to deliver the contracted services...could adversely impact future operating results."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-AmpereAcquisitionExecutionRisk",
+        "fields": {
+          "filer": "Oracle",
+          "category": "Execution Risk / Related Party Investment",
+          "named_counterparties": [
+            "Ampere Computing",
+            "SoftBank"
+          ],
+          "severity": 2,
+          "verbatim_quote": "On March 19, 2025, SoftBank Group Corp. announced that it had entered into an agreement with Ampere and its equity holders to acquire all of the equity interests of Ampere (the Ampere Acquisition). The transaction is subject to customary closing conditions, including regulatory approvals. When the Ampere Acquisition closes, we will cease to be an investor in Ampere."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Oracle-DataCenter-OffBalanceLease-$43.4B",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Oracle",
+          "beneficiary": "Oracle",
+          "debt_stack_usd": 43400000000,
+          "term_yrs": 13,
+          "purpose": "Data center operating leases not yet commenced, expected to start FY2026\u2013FY2028, terms of 10\u201316 years",
+          "verbatim_quote": "we have $43.4 billion of additional lease commitments, primarily for data centers, that are generally expected to commence between fiscal 2026 and fiscal 2028 and for terms of ten to sixteen years that were not reflected on our consolidated balance sheet as of May 31, 2025"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "Oracle-FinanceLeases-$2.9B",
+        "fields": {
+          "entity_type": "operating_lease",
+          "sponsor": "Oracle",
+          "beneficiary": "Oracle",
+          "debt_stack_usd": 2934000000,
+          "term_yrs": 15,
+          "purpose": "Finance leases, newly initiated in FY2025, weighted avg 15-year term at 5.5% discount rate",
+          "verbatim_quote": "ROU assets, net of $55 million of accumulated depreciation, current lease liabilities and non-current lease liabilities for our finance leases were $2.9 billion, $257 million and $2.7 billion, respectively. In fiscal 2025, we recorded finance lease ROU assets of $2.9 billion in exchange for finance lease obligations."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-OperatingLease-OnBalance-$13.45B",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 13450000000,
+          "duration_yrs": 10,
+          "start_fy": 2025,
+          "purpose": "On-balance-sheet operating lease liabilities, primarily data centers, weighted avg 10-year remaining term",
+          "verbatim_quote": "Total operating lease liabilities $13,450 ... Weighted average remaining lease term 10 years"
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-ConstructionInProgress-$16.5B",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 16510000000,
+          "start_fy": 2025,
+          "purpose": "Construction in progress primarily consisting of computer equipment to be built and deployed at data centers",
+          "verbatim_quote": "Construction in progress ... 16,510 ... Amounts primarily consist of computer equipment to be built and deployed at our data centers."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-UnconditionalPurchaseObligations-$2.2B",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 2226000000,
+          "duration_yrs": 5,
+          "start_fy": 2026,
+          "purpose": "Unconditional purchase obligations with suppliers for fixed/minimum quantities; excludes routine arrangements < 1 year",
+          "verbatim_quote": "our unconditional purchase and certain other obligations were as follows ... Total $2,226"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-OffBalanceLease-HiddenLeverage",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 43400000000,
+            "note": "$43.4B in data center lease commitments not yet on balance sheet as of May 31, 2025; expected to commence FY2026\u2013FY2028 for 10\u201316 year terms. On-balance operating lease liabilities already $13.45B."
+          },
+          "named_counterparties": [
+            "Oracle"
+          ],
+          "verbatim_quote": "we have $43.4 billion of additional lease commitments, primarily for data centers, that are generally expected to commence between fiscal 2026 and fiscal 2028 and for terms of ten to sixteen years that were not reflected on our consolidated balance sheet as of May 31, 2025"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-DepreciationLifeExtension-CostOpacity",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "COST_OPACITY",
+          "severity": 3,
+          "numeric_signal": {
+            "note": "Server/networking equipment useful life extended from 5 to 6 years effective start of FY2025, reducing annual depreciation and inflating near-term earnings"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "During the first quarter of fiscal 2025, we completed an assessment of the useful lives of our servers and networking equipment and increased the estimate of the useful lives from five years to six years, effective at the beginning of fiscal 2025."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-CapexROIGap-DataCenter",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 59900000000,
+            "note": "$43.4B off-balance lease commitments + $13.45B on-balance operating lease liabilities + $2.9B finance leases + $16.5B construction in progress = massive infrastructure build without disclosed matched contracted revenue. PP&E nearly doubled YoY ($21.5B to $43.5B net)."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Construction in progress ... 16,510 ... Amounts primarily consist of computer equipment to be built and deployed at our data centers ... we have $43.4 billion of additional lease commitments, primarily for data centers, that are generally expected to commence between fiscal 2026 and fiscal 2028"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-ExecutionRisk-DataCenter",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 43400000000,
+            "duration_yrs": 13,
+            "note": "$43.4B of lease commitments for data centers not yet commenced as of May 31, 2025; $16.5B construction in progress not yet operational"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "we have $43.4 billion of additional lease commitments, primarily for data centers, that are generally expected to commence between fiscal 2026 and fiscal 2028 and for terms of ten to sixteen years that were not reflected on our consolidated balance sheet as of May 31, 2025"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-Ampere-EquityMethodLoss",
+        "fields": {
+          "filer": "Oracle",
+          "category": "Investment / equity-method concentration",
+          "named_counterparties": [
+            "Ampere"
+          ],
+          "severity": 2,
+          "verbatim_quote": "net losses related to marketable and non-marketable investments, including losses attributable to equity method investments (primarily Ampere)"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Ampere",
+        "fields": {
+          "role": "supplier",
+          "aliases": [
+            "Ampere Computing"
+          ]
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "aliases": [
+            "Oracle Corporation",
+            "ORCL"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-LeaseROU-DeferredTax-Surge",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 3279000000,
+            "note": "Deferred tax asset for lease liabilities jumped from $1.553B (FY2024) to $3.279B (FY2025), implying ~$11B+ in new operating lease obligations added in a single year, consistent with aggressive data-center lease buildout"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Deferred tax assets: Lease liabilities $3,279 [FY2025] vs $1,553 [FY2024]... ROU assets $(3,207) [FY2025] vs $(1,503) [FY2024]"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-UnrecognizedTaxBenefit-Contingency",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "OTHER",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 9438000000,
+            "note": "Gross unrecognized tax benefits of $9.4B as of May 31 2025, growing from $7.3B in FY2023; interest and penalties accrued at $2.1B"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Total gross unrecognized tax benefits as of May 31 [2025] $9,438... Interest and penalties accrued as of May 31, 2025 and 2024 were $2.1 billion and $1.8 billion, respectively."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-ForeignEarnings-TaxExposure",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "COST_OPACITY",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 2000000000,
+            "note": "~$11B of undistributed foreign earnings not taxed in the US; potential net deferred tax liability of ~$2B if repatriated"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "At May 31, 2025, the amount of temporary differences related to undistributed earnings and other outside basis temporary differences of investments in foreign subsidiaries upon which U.S. income taxes have not been provided was approximately $11.0 billion... the potential net deferred tax liability associated with these other outside basis temporary differences would be approximately $2.0 billion."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ampere Computing"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "investment",
+        "target_name": "Oracle-Ampere Equity+Debt Investment"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "Oracle-FY2025-CapEx"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-DepreciationLifeExtension"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-CapexROIGap-FY2025"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Ampere-RelatedPartyConcentration"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Ampere-PutCallOptionExposure"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-OperatingLeaseExpansion"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-DebtStack"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "Oracle-HardwareSupplyChainConcentration"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "Oracle-AmpereAcquisitionExecutionRisk"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Oracle-Ampere-RelatedPartyConcentration",
+        "target_type": "company",
+        "target_name": "Ampere Computing"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Oracle-Ampere-RelatedPartyConcentration",
+        "target_type": "company",
+        "target_name": "SoftBank"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Oracle-Ampere-PutCallOptionExposure",
+        "target_type": "company",
+        "target_name": "Ampere Computing"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Oracle-Ampere-PutCallOptionExposure",
+        "target_type": "company",
+        "target_name": "SoftBank"
+      },
+      {
+        "predicate": "DEPENDS_ON",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ampere Computing"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "SoftBank",
+        "target_type": "company",
+        "target_name": "Ampere Computing"
+      },
+      {
+        "predicate": "SPONSORS",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "off_balance_entity",
+        "target_name": "Oracle-DataCenter-OffBalanceLease-$43.4B"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "off_balance_entity",
+        "target_name": "Oracle-DataCenter-OffBalanceLease-$43.4B"
+      },
+      {
+        "predicate": "SPONSORS",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "off_balance_entity",
+        "target_name": "Oracle-FinanceLeases-$2.9B"
+      },
+      {
+        "predicate": "BENEFITS",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "off_balance_entity",
+        "target_name": "Oracle-FinanceLeases-$2.9B"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "Oracle-OperatingLease-OnBalance-$13.45B"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "Oracle-ConstructionInProgress-$16.5B"
+      },
+      {
+        "predicate": "COMMITTED_CAPEX",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "Oracle-UnconditionalPurchaseObligations-$2.2B"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-OffBalanceLease-HiddenLeverage"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-DepreciationLifeExtension-CostOpacity"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-CapexROIGap-DataCenter"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-ExecutionRisk-DataCenter"
+      },
+      {
+        "predicate": "CITES_RISK",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "Oracle-Ampere-EquityMethodLoss"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "risk_factor",
+        "source_name": "Oracle-Ampere-EquityMethodLoss",
+        "target_type": "company",
+        "target_name": "Ampere"
+      },
+      {
+        "predicate": "INVESTED_IN",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "company",
+        "target_name": "Ampere"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Oracle-OffBalanceLease-HiddenLeverage",
+        "target_type": "off_balance_entity",
+        "target_name": "Oracle-DataCenter-OffBalanceLease-$43.4B"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Oracle-CapexROIGap-DataCenter",
+        "target_type": "capex_commitment",
+        "target_name": "Oracle-ConstructionInProgress-$16.5B"
+      },
+      {
+        "predicate": "NAMES_COUNTERPARTY",
+        "source_type": "hidden_risk_signal",
+        "source_name": "Oracle-ExecutionRisk-DataCenter",
+        "target_type": "off_balance_entity",
+        "target_name": "Oracle-DataCenter-OffBalanceLease-$43.4B"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-LeaseROU-DeferredTax-Surge"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-UnrecognizedTaxBenefit-Contingency"
+      },
+      {
+        "predicate": "HAS_RISK_SIGNAL",
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-ForeignEarnings-TaxExposure"
+      }
+    ],
+    "notes": "[chunk 2/3] KEY FINDINGS FROM ORACLE FY2025 10-K (filed 2025-06-18):\n\n1. HIDDEN LEVERAGE (Severity 4): Oracle has $43.4B of off-balance-sheet data center operating lease commitments not yet commenced as of May 31, 2025. These are expected to commence between FY2026 and FY2028 for terms of 10\u201316 years. Combined with the $13.45B of on-balance operating lease liabilities and $2.9B of new finance leases, total lease exposure exceeds $59B.\n\n2. COST OPACITY (Severity 3): Oracle extended server/networking equipment useful lives from 5 to 6 years effective start of FY2025. This reduces annual depreciation charges and inflates near-term reported earnings. The magnitude of the change is not separately quantified in this section but is material given $30.3B gross computer/network equipment balance.\n\n3. CAPEX ROI GAP (Severity 4): Net PP&E nearly doubled YoY from $21.5B to $43.5B, with $16.5B in construction-in-progress (primarily data center equipment not yet deployed). Combined with $43.4B off-balance lease commitments, Oracle has committed to an infrastructure wave without disclosed matched contracted revenues in this section.\n\n4. EXECUTION RISK (Severity 3): $43.4B in lease commitments and $16.5B CIP represent infrastructure not yet operational, creating significant execution risk if AI cloud demand does not materialize at expected pace.\n\n5. AMPERE EQUITY METHOD LOSSES: Oracle's non-operating income line explicitly flags losses from equity method investments \"primarily Ampere,\" indicating a material equity-method stake in Ampere Computing (Arm-based server chip designer). This is a supplier-investment overlap creating circularity risk (Oracle depends on Ampere chips for OCI, while also being a loss-bearing equity investor).\n\n6. DEBT: $92.6B total notes payable and borrowings outstanding (up from $86.9B). $90.3B in senior notes alone. This is a critical leverage observation but is a disclosed on-balance-sheet item and thus not flagged as hidden leverage separately.\n\nNo SPV/VIE structures, no named AI lab investment disclosures, and no named compute customer concentration data appeared in this section. The $43.4B off-balance lease is the dominant SIFI-material signal.\n[chunk 3/3] \nThis section of Oracle's FY2025 10-K (filed 2025-06-18) covers stock compensation plans, income taxes, segment information, earnings per share, and legal proceedings. There are no explicit SPV/VIE disclosures, named AI-lab investments, or named capex counterparty commitments in this section. \n\nKEY FINDINGS:\n1. HIDDEN_LEVERAGE (severity 3): The deferred tax asset for lease liabilities doubled from $1.553B to $3.279B YoY, and the ROU asset deferred tax liability went from $1.503B to $3.207B. This implies Oracle added roughly $11B+ in new operating lease right-of-use assets in FY2025 alone \u2014 consistent with a massive data-center lease buildout. No residual value guarantee disclosures appear in this section, but the scale of the ROU surge warrants monitoring.\n\n2. TAX CONTINGENCY (severity 2): $9.4B gross unrecognized tax benefits (up from $7.3B in FY2023), with $2.1B in accrued interest/penalties. Transfer pricing disputes across Australia, Brazil, Canada, India, and others named explicitly.\n\n3. COST_OPACITY (severity 2): ~$11B of undistributed foreign earnings not subjected to US tax, with ~$2B potential net deferred tax liability if repatriated.\n\n4. No named AI-lab investments, no SPV/off-balance-sheet entities, and no named capex counterparties appear in this specific section. Those are likely in earlier sections of the 10-K (Notes 1\u201310 covering debt, leases, and investments) not included here.\n\n5. Segment data confirms Oracle's cloud infrastructure revenue is growing rapidly ($24.6B infrastructure cloud services and license support in FY2025 vs $18.7B in FY2023), relevant context for data center lease surge.\n"
+  }
+}

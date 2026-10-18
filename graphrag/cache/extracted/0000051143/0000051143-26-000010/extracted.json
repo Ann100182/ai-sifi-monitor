@@ -1,0 +1,332 @@
+{
+  "item_15": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "IBM",
+        "fields": {
+          "ticker": "IBM",
+          "role": "customer"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Microsoft",
+        "fields": {
+          "role": "strategic_partner"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Amazon",
+        "fields": {
+          "aliases": [
+            "AWS",
+            "Amazon Web Services"
+          ],
+          "role": "strategic_partner"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "role": "strategic_partner"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Salesforce",
+        "fields": {
+          "role": "strategic_partner"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Adobe",
+        "fields": {
+          "role": "strategic_partner"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Palo Alto Networks",
+        "fields": {
+          "role": "strategic_partner"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Samsung Electronics",
+        "fields": {
+          "role": "strategic_partner"
+        }
+      },
+      {
+        "type": "company",
+        "name": "SAP",
+        "fields": {
+          "role": "strategic_partner"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Alphabet",
+        "fields": {
+          "aliases": [
+            "Google"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Broadcom",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "BMC",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Splunk",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Accenture",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Capgemini",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Dell Technologies",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "HPE",
+        "fields": {
+          "aliases": [
+            "Hewlett-Packard Enterprise"
+          ],
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Intel",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "NetApp",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Pure Storage",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Cisco",
+        "fields": {
+          "role": "competitor"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM_supplier_concentration_risk",
+        "fields": {
+          "filer": "IBM",
+          "category": "supplier_concentration",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "Certain of the company's businesses rely on a single or a limited number of suppliers, including for server processor technology for certain semiconductors. Changes in the business condition (financial or otherwise) of these suppliers could subject the company to losses and affect its ability to bring products to market."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM_capex_ai_roi_gap",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 2,
+          "numeric_signal": {
+            "note": "Large AI capex investments with uncertain commercialization timeline"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "The company continues to invest significantly in key strategic areas, including AI, to drive revenue growth and market share gains. Client adoption rates and viable economic models are less certain in the high-value, highly competitive, and rapidly-growing segments."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "IBM_ecosystem_dependency",
+        "fields": {
+          "filer": "IBM",
+          "risk_type": "SUPPLIER_CONCENTRATION",
+          "severity": 2,
+          "named_counterparties": [
+            "Microsoft",
+            "Amazon",
+            "Oracle",
+            "Salesforce",
+            "Adobe"
+          ],
+          "verbatim_quote": "The company offers its products directly and through a variety of third-party distributors, resellers, independent software vendors, independent service providers, and other ecosystem partners. Changes in the business condition (financial or otherwise) of these ecosystem partners could subject the company to losses and affect its ability to bring its products to market."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM_ai_reputational_risk",
+        "fields": {
+          "filer": "IBM",
+          "category": "AI_governance_risk",
+          "named_counterparties": [],
+          "severity": 3,
+          "verbatim_quote": "The Development and Use of AI, including the Company's Increased AI Solutions and Use of AI Technologies, Could Impact the Long-Term Success of the Company and its Reputation or Give Rise to Legal or Regulatory Action: IBM is increasingly applying AI technologies to its services and products... if the company does not continue to be recognized as an AI leader with strong governance processes or if our AI technologies do not work as intended or produce unexpected outcomes, IBM's ongoing efforts to maintain and increase its market share and its profit margins, its reputation, and its competitiveness could be harmed."
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "IBM_talent_shortage_risk",
+        "fields": {
+          "filer": "IBM",
+          "category": "talent_and_skill_gap",
+          "named_counterparties": [],
+          "severity": 2,
+          "verbatim_quote": "The Company Depends on Skilled Employees and Could Be Impacted by a Shortage of Critical Skills: Much of the future success of the company depends on the continued service, availability and integrity of skilled employees, including technical, marketing and staff resources. Skilled and experienced personnel in the areas where the company competes are in high demand, and competition for their talents is intense."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "SPONSORS",
+        "target_type": "company",
+        "target_name": "Microsoft"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "SPONSORS",
+        "target_type": "company",
+        "target_name": "Amazon"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "SPONSORS",
+        "target_type": "company",
+        "target_name": "Oracle"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "SPONSORS",
+        "target_type": "company",
+        "target_name": "Salesforce"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "SPONSORS",
+        "target_type": "company",
+        "target_name": "Adobe"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "SPONSORS",
+        "target_type": "company",
+        "target_name": "Palo Alto Networks"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "SPONSORS",
+        "target_type": "company",
+        "target_name": "Samsung Electronics"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "SPONSORS",
+        "target_type": "company",
+        "target_name": "SAP"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM_capex_ai_roi_gap"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "HAS_RISK_SIGNAL",
+        "target_type": "hidden_risk_signal",
+        "target_name": "IBM_ecosystem_dependency"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "IBM_supplier_concentration_risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "IBM_ai_reputational_risk"
+      },
+      {
+        "source_type": "company",
+        "source_name": "IBM",
+        "predicate": "CITES_RISK",
+        "target_type": "risk_factor",
+        "target_name": "IBM_talent_shortage_risk"
+      }
+    ],
+    "notes": "[chunk 1/1] EXTRACTION SUMMARY \u2014 IBM 10-K (filed 2026-02-24, Item 15 & Item 1A)\n\n**ENTITIES IDENTIFIED:**\n- 8 strategic partners explicitly named (Microsoft, AWS, Oracle, Salesforce, Adobe, Palo Alto Networks, Samsung Electronics, SAP)\n- 13 competitors across Software, Consulting, Infrastructure segments (Alphabet/Google, Broadcom, BMC, Splunk, Accenture, Capgemini, Dell, HPE, Intel, NetApp, Pure Storage, Cisco)\n\n**SIFI-MATERIAL FINDINGS:**\n\n1. **SUPPLIER CONCENTRATION (Severity 3)**: IBM discloses single/limited-supplier dependencies for \"server processor technology for certain semiconductors\" without naming the supplier. This is Intel/TSMC/ARM risk, materially relevant to infrastructure segment continuity.\n\n2. **CAPEX_ROI_GAP (Severity 2)**: IBM states it \"continues to invest significantly in key strategic areas, including AI\" but acknowledges \"Client adoption rates and viable economic models are less uncertain in the high-value, highly competitive, and rapidly-growing segments.\" No capex dollar amounts disclosed in this section, but risk thesis is clear: large speculative spend without matched customer adoption signals.\n\n3. **ECOSYSTEM DEPENDENCY (Severity 2)**: IBM relies on strategic partners for distribution/integration. Partners named include cloud hyperscalers (Microsoft, AWS, Oracle) and software vendors (Salesforce, Adobe, SAP). Loss of partnership with any major player could impact go-to-market, especially as IBM pivots to hybrid cloud/AI.\n\n4. **AI GOVERNANCE RISK (Severity 3)**: IBM must \"continue to be recognized as an AI leader with strong governance processes.\" Risk of reputational/competitive damage if AI solutions malfunction or lack trustworthiness. Relevant to SIFI because IBM's brand and enterprise lock-in depend on leadership perception.\n\n5. **TALENT SHORTAGE (Severity 2)**: Competition for AI/ML talent is explicitly cited as a risk factor. No quantified talent gap, but material to execution risk on AI/hybrid cloud strategy.\n\n**EXCLUDED:**\n- Generic competition, market cyclicality, currency hedging, pension/tax matters (routine for global enterprise)\n- Cybersecurity risk section (Item 1C) \u2014 disclosed as \"not material adverse effect to date\"; no novel attack vectors or single-point-of-failure dependencies flagged; standard SOC/incident response governance\n- Customer concentration \u2014 no major customer named as >10% of revenue in this section\n- Environmental/climate, legal proceedings (generic/boilerplate)\n\n**COUNTERPARTY WEB:**\nIBM has a moderately complex ecosystem:\n- **Strategic partners**: Cloud hyperscalers (AWS, Azure, Oracle Cloud) + software platforms (Salesforce, SAP, Adobe)\n- **Competitors in same space**: Accenture, Capgemini (consulting); Broadcom, Splunk (software); Dell, HPE, Intel (infrastructure)\n- **Supplier risk**: Unnamed processor supplier for server infrastructure (likely Intel or TSMC for custom chips)\n\nNo circular dependencies, off-balance-sheet SPVs, or revenue roundtripping detected in this section. No private AI lab investments disclosed.\n"
+  },
+  "item_8_pointer": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] This section of IBM's 10-K (Item 8 pointer, Items 9\u201314, Part III/IV boilerplate) contains no SIFI-material content. Item 8 is a bare pointer to pages 42\u2013116 of the 2025 Annual Report incorporated by reference \u2014 no financial statement data, notes, SPVs, capex commitments, investments, or risk factors are reproduced here. Items 9\u201314 cover internal controls certifications, equity compensation plan descriptions (2001 Plan, PWCC Plan, DCEAP, HashiCorp Plan), and proxy statement references. None of these contain hidden leverage, circularity, capex commitments, off-balance-sheet entities, or AI-lab investments disclosable at SIFI-material thresholds. No nodes or edges extracted to avoid fabrication per Hard Rule 1."
+  },
+  "financial_statements_and_notes": {
+    "nodes": [],
+    "edges": [],
+    "notes": "[chunk 1/1] The source text provided is IBM's 10-K filing section covering: (1) the exhibit index / table of contents listing instruments, credit agreements, and compensatory plans; (2) signature pages; (3) the auditor's report on the financial statement schedule; and (4) Schedule II \u2013 Valuation and Qualifying Accounts (allowance for credit losses, inventory losses, and revenue-based provisions). None of this content contains SIFI-material disclosures: there are no off-balance-sheet SPVs or VIEs described, no equity investments in AI labs or compute providers named, no capex commitments with specific counterparties, no revenue roundtripping structures, no customer/supplier concentration data, and no Item 1A risk factors. The two credit facilities mentioned ($2.5B three-year and $7.5B five-year revolving credit agreements with JPMorgan Chase as agent) are standard corporate revolvers \u2014 not project finance or hidden leverage structures. The Schedule II allowance balances are routine valuation accounts. No SIFI-material nodes or edges can be extracted from this section without fabricating information, which is prohibited by the hard rules."
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "FULL": {
+    "nodes": [
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "aliases": [
+            "ORCL",
+            "Oracle Corporation"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "off_balance_entity",
+        "name": "TikTok USDS JV",
+        "fields": {
+          "entity_type": "JV",
+          "co_owner": "Oracle",
+          "beneficiary": "TikTok",
+          "term_yrs": null,
+          "purpose": "TikTok US operations",
+          "verbatim_quote": "The substantial majority of the non-marketable investments we held as of August 31, 2026 were with TikTok USDS Joint Venture LLC, an equity method investee in which we have an ownership interest of 15%."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "Oracle-DataCenter-Infrastructure",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 288000000000,
+          "duration_yrs": 15,
+          "start_fy": 2027,
+          "counterparty": null,
+          "purpose": "data center arrangements",
+          "verbatim_quote": "As of August 31, 2026, we had $288 billion of additional lease commitments, substantially all related to data center arrangements, that are generally expected to commence between the second quarter of fiscal 2027 and fiscal 2029 and for terms of fifteen to nineteen years"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-CAPEX-ROI-Gap",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 288000000000,
+            "duration_yrs": 15,
+            "note": "Uncommitted data center lease obligations with 15-19 year terms, $288B committed but not yet on balance sheet, commenced FY2027-2029"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of August 31, 2026, we had $288 billion of additional lease commitments, substantially all related to data center arrangements, that are generally expected to commence between the second quarter of fiscal 2027 and fiscal 2029 and for terms of fifteen to nineteen years that were not reflected on our condensed consolidated balance sheets"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Customer-Financing-Component",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 11400000000,
+            "note": "Q1 FY2027 customer prepayments with significant financing component; sold $652M financing receivables to financial institutions"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "During the first quarter of fiscal 2027, we received $11.4 billion of prepayments from customers that included a significant financing component. No prepayments from customers that included a significant financing component were received during the first quarter of fiscal 2026."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Lease-Operating-vs-Finance",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 43806000000,
+            "note": "Operating + finance lease ROU assets and liabilities: OL $33.967B asset, $34.621B liability; FL $8.856B asset, $9.185B liability. Total on-balance lease obligations ~$43.8B"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "As of August 31, 2026... Operating lease ROU assets $33,967 million; Operating lease liabilities, current $4,027 million; Operating lease liabilities, non-current $30,594 million; Finance lease ROU assets $8,856 million; Finance lease liabilities, current $749 million; Finance lease liabilities, non-current $8,436 million"
+        }
+      },
+      {
+        "type": "risk_factor",
+        "name": "Oracle-PPE-Capex-Execution",
+        "fields": {
+          "filer": "Oracle",
+          "category": "EXECUTION_RISK",
+          "named_counterparties": [],
+          "severity": 4,
+          "verbatim_quote": "Capital expenditures $28,499 million for three months ended August 31, 2026, compared to $8,502 million for three months ended August 31, 2025. Construction in progress increased from $39,973 million (May 31, 2026) to $48,546 million (August 31, 2026)."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "Oracle-Deferred-Revenue-Growth",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 30789000000,
+            "pct_of_revenue": null,
+            "note": "Deferred revenues $30.789B (Aug 31, 2026) vs $15.395B (May 31, 2026); 100% increase in 3 months. Cloud deferred revenues doubled from $3.228B to $6.348B."
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Total deferred revenues $30,789 million as of August 31, 2026 versus $15,395 million as of May 31, 2026. Cloud deferred revenues increased from $3,228 million to $6,348 million."
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "company",
+        "name": "Oracle",
+        "fields": {
+          "ticker": "ORCL",
+          "aliases": [
+            "Oracle Corporation"
+          ],
+          "role": "hyperscaler"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL-CAPEX_ROI_GAP-Q1FY27",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CAPEX_ROI_GAP",
+          "severity": 4,
+          "numeric_signal": {
+            "amount_usd": 28500000000,
+            "duration_yrs": 1,
+            "note": "Q1 FY2027 capex $28.5B vs negative free cash flow of $5.4B; operating cash flow $23.1B insufficient to cover capex burn"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Net cash used for investing activities increased by $19.9 billion in the first quarter of fiscal 2027, relative to the first quarter of fiscal 2026, primarily due to a $20.0 billion increase in capital expenditures... We expect our capital expenditures in fiscal 2027 to be higher than fiscal 2026 as we increase our existing data center capacity and establish data centers in new geographic locations in order to meet current and expected customer demand for our cloud offerings."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL-EXECUTION_RISK-DATA_CENTER_EXPANSION",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "EXECUTION_RISK",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 28500000000,
+            "note": "Large capex commitment for data center expansion tied to 'current and expected customer demand' without explicit contracted revenue backing"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "During the first quarter of fiscal 2027, we entered into certain significant leases for data centers and other contractual commitments... We expect our capital expenditures in fiscal 2027 to be higher than fiscal 2026 as we increase our existing data center capacity and establish data centers in new geographic locations in order to meet current and expected customer demand for our cloud offerings."
+        }
+      },
+      {
+        "type": "capex_commitment",
+        "name": "ORCL-CAPEX-FY27",
+        "fields": {
+          "filer": "Oracle",
+          "amount_usd": 28500000000,
+          "start_fy": 2027,
+          "purpose": "Data center expansion, existing capacity increase, new geographic locations",
+          "verbatim_quote": "Cash used for capital expenditures increased from $8.5 billion in the first quarter of fiscal 2026 to $28.5 billion in the first quarter of fiscal 2027 primarily due to the expansion of our data centers. We expect our capital expenditures in fiscal 2027 to be higher than fiscal 2026 as we increase our existing data center capacity and establish data centers in new geographic locations in order to meet current and expected customer demand for our cloud offerings."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL-REVENUE_ROUNDTRIP-ATM",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "REVENUE_ROUNDTRIP",
+          "severity": 2,
+          "numeric_signal": {
+            "amount_usd": 19900000000,
+            "note": "Large equity issuance via ATM program; funding capex but not matched to contracted customer commitments"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "During the first quarter ended August 31, 2026, we fully utilized the ATM Program and issued approximately 141 million shares of common stock under the ATM Program for net proceeds of $19.9 billion... The increase in cash, cash equivalents and marketable securities as of August 31, 2026 in comparison to May 31, 2026 was primarily due to... $19.9 billion of cash proceeds from the issuance of common stock via the ATM Program, net of issuance costs, partially offset by $28.5 billion of cash used for capital expenditures"
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL-CUSTOMER_CONCENTRATION-RPO",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "CUSTOMER_CONCENTRATION",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 664000000000,
+            "pct_of_revenue": null,
+            "note": "Remaining performance obligations increased 46% YoY to $664B, driven by 'certain significant cloud contracts' but concentrated in unnamed cloud customers"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Remaining performance obligations were $664 billion and $455 billion as of August 31, 2026 and 2025, respectively. The increase in remaining performance obligations as of August 31, 2026 in comparison to August 31, 2025 was primarily attributable to certain significant cloud contracts that were entered into during the period."
+        }
+      },
+      {
+        "type": "hidden_risk_signal",
+        "name": "ORCL-DEBT_SERVICE_SPIKE",
+        "fields": {
+          "filer": "Oracle",
+          "risk_type": "HIDDEN_LEVERAGE",
+          "severity": 3,
+          "numeric_signal": {
+            "amount_usd": 1428000000,
+            "note": "Interest expense up 55% QoQ to $1.4B despite $3.1B debt repayment; $43B new debt issuance in FY26"
+          },
+          "named_counterparties": [],
+          "verbatim_quote": "Interest expense increased in the first quarter of fiscal 2027, relative to the first quarter of fiscal 2026, primarily due to higher average borrowings from the issuances of $43.0 billion of senior notes in fiscal 2026, partially offset by lower interest expense due to scheduled repayments of $8.1 billion of debt made during the first quarter of fiscal 2027 and full year of fiscal 2026."
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "off_balance_entity",
+        "target_name": "TikTok USDS JV",
+        "predicate": "INVESTED_IN",
+        "properties": {
+          "equity_pct": 0.15,
+          "note": "15% equity method investee in TikTok USDS Joint Venture LLC"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "Oracle-DataCenter-Infrastructure",
+        "predicate": "COMMITTED_CAPEX",
+        "properties": {
+          "amount_usd": 288000000000,
+          "duration_yrs": 15,
+          "note": "Uncommitted lease obligations not yet on balance sheet"
+        }
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-CAPEX-ROI-Gap",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Customer-Financing-Component",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Lease-Operating-vs-Finance",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "risk_factor",
+        "target_name": "Oracle-PPE-Capex-Execution",
+        "predicate": "CITES_RISK",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "Oracle-Deferred-Revenue-Growth",
+        "predicate": "HAS_RISK_SIGNAL",
+        "properties": {}
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "capex_commitment",
+        "target_name": "ORCL-CAPEX-FY27",
+        "predicate": "COMMITTED_CAPEX"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL-CAPEX_ROI_GAP-Q1FY27",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL-EXECUTION_RISK-DATA_CENTER_EXPANSION",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL-REVENUE_ROUNDTRIP-ATM",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL-CUSTOMER_CONCENTRATION-RPO",
+        "predicate": "HAS_RISK_SIGNAL"
+      },
+      {
+        "source_type": "company",
+        "source_name": "Oracle",
+        "target_type": "hidden_risk_signal",
+        "target_name": "ORCL-DEBT_SERVICE_SPIKE",
+        "predicate": "HAS_RISK_SIGNAL"
+      }
+    ],
+    "notes": "[chunk 1/3] ORACLE 10-Q Q1 FY2027 (Filing Date 2026-09-11). SIFI-Material Findings: 1) CAPEX_ROI_GAP CRITICAL (Severity 4): $288B of uncommitted data center lease commitments (15-19 years) not yet on balance sheet, commencing FY2027-2029. This massive off-balance infrastructure spend with no corresponding disclosed contracted customer revenue creates execution and ROI transparency risk. 2) HIDDEN_LEVERAGE ELEVATED (Severity 3): $43.8B in on-balance operating and finance lease obligations; additionally, the $288B future commitments represent deferred leverage not yet capitalized. 3) REVENUE_ROUNDTRIP ELEVATED (Severity 3): $11.4B in Q1 FY2027 customer prepayments with significant financing component (vs $0 prior year); Oracle is monetizing via non-recourse sales of $652M financing receivables to financial institutions, indicating customer credit risk transfer. 4) EXECUTION_RISK ELEVATED (Severity 4): Capital expenditures surged to $28.5B (Q1 FY2027) vs $8.5B (Q1 FY2026)\u20143.3x YoY increase. Construction-in-progress rose 21% to $48.5B in one quarter. Rapid infrastructure build-out with unknown customer anchor contracts. 5) RELATED PARTY: TikTok USDS Joint Venture LLC (15% equity method investee)\u2014geopolitical risk given TikTok regulatory status, though Oracle's stake is minority. 6) DEFERRED REVENUE SURGE: Cloud deferred revenue doubled in one quarter ($3.2B\u2192$6.3B), creating revenue quality questions and customer prepayment concentration risk. Overall: Oracle exhibits SIFI-relevant patterns in hidden infrastructure leverage, customer financing roundtripping, and capex execution risk that should be monitored for potential cascade effects on counterparty networks (especially if cloud infrastructure hyperscaler customers default or prepayment terms deteriorate).\n[chunk 2/3] This 10-Q filing (Q1 FY2027, filed 2026-09-11) contains primarily routine segment reporting, tax administration updates, and operational results. No SIFI-material entities, counterparties, investments, or risk signals are disclosed. The text covers: (1) Income tax provisions and audit status across multiple jurisdictions (routine); (2) Segment performance (Cloud/Software 88%, Hardware 4%, Services 8% of revenues); (3) Business overview discussing cloud infrastructure growth, customer renewal patterns, and general operational strategy; (4) Two litigation matters (Netherlands privacy class action vs. Oracle and Salesforce; securities class action re: OCI) both characterized by Oracle as non-material to financial position. The filing contains no named customer or supplier concentration risks, no disclosed material partnerships, no capex commitments tied to counterparties, no investments in private AI labs or other SIFI-material targets, no SPVs or off-balance entities, and no circular dependencies or revenue roundtripping arrangements. The tax audit disclosure (India, Brazil, Australia, Saudi Arabia, etc.) is standard cross-border tax controversy boilerplate without quantified amounts or specific counterparty risk. The securities litigation regarding OCI is generic disclosure risk without evidence of accounting misstatement, capacity shortfall, or operational execution failure.\"\n[chunk 3/3] Oracle 10-Q Q1 FY2027 (ended Aug 31, 2026). Key SIFI signals: (1) CAPEX_ROI_GAP: $28.5B Q1 capex burn (3.3x prior year) producing negative free cash flow of -$5.4B despite $23.1B operating cash; capex driven by data center expansion for 'expected customer demand' lacking explicit contract backing. (2) EXECUTION_RISK: Major data center build-out geographically dispersed; operationalization risk on $28.5B investment. (3) REVENUE_ROUNDTRIP: $19.9B ATM equity issuance in Q1 FY27 used to fund capex\u2014dilution signal. (4) CUSTOMER_CONCENTRATION: RPO surged 46% to $664B from 'certain significant cloud contracts' but counterparties unnamed; suggests hyperscaler concentration. (5) DEBT_SERVICE: Interest expense +55% to $1.4B/quarter on $43B debt issuance in FY26; debt pile-up without matching revenue. No specific counterparty names disclosed in the narrative sections reviewed; all risks tied to Oracle's own capex and funding strategy rather than inter-company circularity at this stage."
+  }
+}
