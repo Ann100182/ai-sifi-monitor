@@ -1,0 +1,21 @@
+# Phase 1 — fetch + parse (no LLM dependencies yet)
+requests>=2.32
+beautifulsoup4>=4.12
+lxml>=5.2
+tqdm>=4.66
+python-dotenv>=1.0
+
+# Phase 2 adds:
+# anthropic>=0.40
+# pydantic>=2.0
+
+# Phase 3 adds:
+# sentence-transformers>=3.0   # local embeddings via bge-small
+# torch>=2.4                    # transformers backend
+# chromadb>=0.5
+# neo4j>=5.20
+
+# Phase 4 adds:
+# langchain>=0.3
+# langchain-anthropic>=0.2
+# langgraph>=0.2
