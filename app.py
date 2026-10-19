@@ -30,18 +30,6 @@ st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 
 selected_tier = tier_selector()
 
-# Top-of-app masthead
-st.markdown(
-    "<div style='padding: 0.4rem 0 0.2rem 0;'>"
-    "<h1 style='margin:0; font-size:1.9rem; letter-spacing:-0.01em;'>AI SIFI Monitor</h1>"
-    "<p style='color:#94A3B8; font-size:0.9rem; margin:0.2rem 0 0.6rem 0; max-width:1100px;'>"
-    "Surveillance framework for the AI compute buildout. Tracks concentration risk, "
-    "off-balance-sheet leverage, vendor-financing circularity, and single-source "
-    "dependencies across 45 systemically important institutions."
-    "</p></div>",
-    unsafe_allow_html=True,
-)
-
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "📊  Portfolio Overview",
     "📈  Vintage Analysis",
@@ -130,20 +118,4 @@ with tab4:
 # ---- ExposureIQ (new, Phase 4/5 GraphRAG) ----
 with tab5:
     st.image(str(Path(__file__).parent / "assets" / "exposureiq_banner.png"), width="stretch")
-    hero(
-        theme="exposureiq",
-        icon="🔎",
-        title="ExposureIQ",
-        tagline=(
-            "GraphRAG over 147 SEC filings (10-K · 10-Q · 20-F · DEF 14A) from 12 cloud peers. "
-            "Surfaces hidden leverage, circularity, revenue roundtripping, SPV debt, and "
-            "capex ROI gaps that balance sheets don't show — with verbatim citations."
-        ),
-        chips=[
-            ("Filings indexed", "147"),
-            ("Risk signals", "1,801"),
-            ("Companies", "12"),
-            ("Backend", "LangGraph · Kuzu + Chroma · Sonnet 4.6 / Opus 4.7"),
-        ],
-    )
     exposureiq.render()
