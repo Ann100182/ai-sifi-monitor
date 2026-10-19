@@ -185,12 +185,14 @@ class QueryResult:
     cost_usd: float                             # all LLM calls in the run
     calls: list[LLMCall] = field(default_factory=list)
     seconds: float = 0.0
+    sections: list[str] = field(default_factory=list)   # target section groups, [] = any
 
 
 class QueryState(TypedDict, total=False):
     question: str
     strategy: str
     complexity: str
+    sections: list[str]                             # classifier's target section groups
     graph_evidence: list[EvidenceChunk]
     vector_evidence: list[EvidenceChunk]
     evidence: list[EvidenceChunk]
@@ -235,19 +237,40 @@ Line 2 — exactly ONE complexity:
 - SIMPLE: one company or one fact pattern; a direct lookup or summary.
 - MULTIHOP: chains relationships across 3+ entities, compares several companies, or requires reasoning across multiple filings/years.
 
-Line 3 — a one-sentence rationale."""
+Line 3 — the filing sections most likely to contain the answer, as `SECTIONS: ` followed by one or two of:
+- MDA: management's discussion — outlook, guidance, capex plans, results drivers, liquidity, backlog
+- RISK: risk factors — dependencies, suppliers, competition, regulation, export controls, concentration risk
+- NOTES: financial statements and notes — leases, VIEs, investments, debt, commitments, accounting policies, useful lives
+- BUSINESS: business description — products, strategy, customers, segments
+- GOVERNANCE: proxy — compensation, directors, ownership, related-party transactions
+- ANY: no particular section
+Example: `SECTIONS: MDA, NOTES`
+
+Line 4 — a one-sentence rationale."""
+
+# Classifier section groups → section_id values across 10-K, 10-Q and 20-F.
+# 10-Qs are mostly unsplit ("FULL"), so they're reached by the unfiltered query.
+SECTION_GROUPS = {
+    "MDA":        ["item_7", "item_7a", "part1_item2", "item_5"],
+    "RISK":       ["item_1a", "part2_item1a", "item_3d"],
+    "NOTES":      ["financial_statements_and_notes", "part1_item1", "item_8_pointer", "item_15"],
+    "BUSINESS":   ["item_1"],
+    "GOVERNANCE": ["comp_disc_analysis", "director_comp", "beneficial_owners", "related_party"],
+}
 
 
 def classify_node(state: QueryState) -> dict:
-    text, call = _call("classify", SONNET, 150,
+    text, call = _call("classify", SONNET, 200,
                        [{"role": "user", "content": CLASSIFY_PROMPT.format(q=state["question"])}])
     lines = [l.strip().upper() for l in text.splitlines() if l.strip()]
     first = lines[0] if lines else ""
     second = lines[1] if len(lines) > 1 else ""
     strategy = "graph" if first.startswith("GRAPH") else "hybrid" if first.startswith("HYBRID") else "vector"
     complexity = "multihop" if "MULTIHOP" in second or "MULTI-HOP" in second else "simple"
-    _log(state, f"[classify] strategy={strategy} complexity={complexity}")
-    return {"strategy": strategy, "complexity": complexity, "calls": [call]}
+    m = re.search(r"SECTIONS:\s*([A-Z ,]+)", text.upper())
+    sections = [s for s in re.findall(r"[A-Z]+", m.group(1)) if s in SECTION_GROUPS][:2] if m else []
+    _log(state, f"[classify] strategy={strategy} complexity={complexity} sections={sections or 'ANY'}")
+    return {"strategy": strategy, "complexity": complexity, "sections": sections, "calls": [call]}
 
 
 def route_retrieval(state: QueryState) -> list[str]:
@@ -451,30 +474,60 @@ def vector_search_node(state: QueryState, k: int = 8) -> dict:
                 extra={"distance": float(dist), "chunk_idx": md.get("chunk_idx")},
             ))
 
+    # Section-targeted pass: half the budget goes to the sections the classifier
+    # picked (e.g. MD&A for outlook questions), so boilerplate-heavy sections like
+    # proxy compensation tables can't crowd out the answer.
+    section_ids = [sid for g in state.get("sections") or [] for sid in SECTION_GROUPS[g]]
+
+    def _query(n, where=None):
+        try:
+            _pack(coll.query(query_embeddings=[qv], n_results=n, where=where, include=include))
+        except Exception:
+            pass   # e.g. no chunks match the filter
+
+    if section_ids:
+        in_sections = {"section_id": {"$in": section_ids}}
+        if tickers:
+            for t in tickers:
+                _query(max(2, (k // 2) // len(tickers)), {"$and": [{"ticker": t}, in_sections]})
+        else:
+            _query(k // 2, in_sections)
+
     if tickers:
-        per_ticker = max(2, k // len(tickers))
+        per_ticker = max(2, (k // 2 if section_ids else k) // len(tickers))
         for t in tickers:
-            _pack(coll.query(query_embeddings=[qv], n_results=per_ticker,
-                             where={"ticker": t}, include=include))
+            _query(per_ticker, {"ticker": t})
         if state.get("complexity") == "multihop":
             # Filings often omit counterparty names (e.g. Oracle never names OpenAI;
             # the deal shows up only as an RPO surge). Probe each named company's
             # backlog figures (exact-text match) so unnamed commitments can be cited.
             for t in tickers:
                 _pack_backlog(coll, t, evidence)
-        _pack(coll.query(query_embeddings=[qv], n_results=max(3, k - len(evidence)), include=include))
+        _query(max(3, k - len(evidence)))
     else:
-        _pack(coll.query(query_embeddings=[qv], n_results=k, include=include))
+        _query(max(3, k - len(evidence)))
 
-    seen = set()
-    deduped = []
-    for e in evidence:
-        key = (e.accession, e.section_id, e.extra.get("chunk_idx"))
-        if key in seen:
-            continue
-        seen.add(key)
-        deduped.append(e)
-    _log(state, f"[vector] {len(deduped)} chunks (ticker filter: {tickers or 'none'})")
+    def _dedupe(items):
+        seen, out = set(), []
+        for e in items:
+            key = (e.accession, e.section_id, e.extra.get("chunk_idx"))
+            if key not in seen:
+                seen.add(key)
+                out.append(e)
+        return out
+
+    deduped = _dedupe(evidence)
+    # Passes overlap (e.g. ASML has only two sections), so top up to k with fresh chunks.
+    if len(deduped) < k:
+        evidence = []
+        if tickers:
+            for t in tickers:
+                _query(k * 2, {"ticker": t})
+        else:
+            _query(k * 2)
+        deduped = _dedupe(deduped + evidence)[:max(k, len(deduped))]
+    _log(state, f"[vector] {len(deduped)} chunks (ticker filter: {tickers or 'none'}; "
+                f"sections: {state.get('sections') or 'any'})")
     return {"vector_evidence": deduped}
 
 
@@ -483,15 +536,19 @@ def vector_search_node(state: QueryState, k: int = 8) -> dict:
 SYNTHESIS_SYSTEM = """You are a specialist research analyst using the AI SIFI Monitor knowledge graph.
 You answer questions about 12 AI/cloud companies (Microsoft, Amazon, Alphabet, Oracle, Meta, IBM, Salesforce, Adobe, NVIDIA, ASML, CoreWeave, Broadcom) using evidence from their SEC filings 2024-2026.
 
-Core rules:
-1. Base every claim on the EVIDENCE provided. Do not invent facts or numbers.
-2. Cite each claim with [E1], [E2]... matching the evidence index.
-3. If evidence is thin or conflicts, say so explicitly. Do not pad.
-4. Prefer short, structured answers (bullets, tables) over long prose.
-5. Call out hidden-risk patterns when visible: hidden leverage, circularity, revenue roundtripping, capex ROI gap, cost opacity, execution risk, concentration.
-6. If the question requires data not in evidence, say "insufficient evidence" rather than guess.
-7. Graph evidence comes from LLM extraction and can contain errors; where a graph fact conflicts with filing text (vector evidence), trust the filing text and note the conflict.
-8. Filers often omit counterparty names. If the evidence shows an unnamed large commitment (e.g. a surge in remaining performance obligations, "a customer", "certain large contracts") that plausibly corresponds to a relationship in the question, cite it and label the link explicitly as an inference — e.g. "Oracle does not name OpenAI, but RPO rose from $X to $Y [E7], consistent with the reported OpenAI contract (inference, not disclosed)." Never present an inferred counterparty as disclosed."""
+Your answer is only as good as its grounding. Readers act on it, and every statement must be traceable to a filing.
+
+Grounding rules:
+1. Every factual statement comes from the EVIDENCE below and carries a citation [E1], [E2]... Do not use background knowledge about the companies, their products, suppliers, deals, history or accounting changes — even when it is well known, and even with a caveat. Do not add "general knowledge", "publicly known" or "outside the evidence" sections.
+2. Report figures as the evidence states them. Unit conversions (millions → billions), rounding and simple sums or ratios of cited figures are fine; show what you combined.
+3. Do not attribute purposes, motives or causes the filing does not state (e.g. don't say restricted cash is "for covenants" or capex is "AI-driven" unless the evidence says so). Interpretation is allowed only when it is built on cited facts and marked "(inference)".
+4. If the evidence does not answer the question, say "insufficient evidence", summarise what the evidence does show, and name what is missing. Do not fill the gap.
+5. Graph evidence comes from LLM extraction and can contain errors; where a graph fact conflicts with filing text (vector evidence), trust the filing text and note the conflict.
+6. Filers often omit counterparty names. If the evidence shows an unnamed large commitment (e.g. a surge in remaining performance obligations, "a customer", "certain large contracts") that plausibly corresponds to a relationship in the question, cite it and mark the link as inference — e.g. "Oracle does not name OpenAI, but RPO rose from $X to $Y [E7], consistent with the reported OpenAI contract (inference, not disclosed)." Never present an inferred counterparty as disclosed.
+
+Style:
+7. Prefer short, structured answers (bullets, tables) over long prose. Do not pad.
+8. Call out hidden-risk patterns (hidden leverage, circularity, revenue roundtripping, capex ROI gap, cost opacity, execution risk, concentration) when the cited evidence shows them; mark any pattern that goes beyond what the filing states as (inference)."""
 
 
 def _format_evidence(evidence: list[EvidenceChunk]) -> str:
@@ -559,4 +616,5 @@ def answer(question: str, verbose: bool = False) -> QueryResult:
         cost_usd=sum(c.cost_usd for c in calls),
         calls=calls,
         seconds=time.time() - t0,
+        sections=final.get("sections", []),
     )

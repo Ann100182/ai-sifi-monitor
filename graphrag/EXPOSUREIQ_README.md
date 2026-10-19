@@ -39,14 +39,14 @@ START → classify ─┬─► graph_search  ─┐
 
 | Step | What it does | Model |
 |---|---|---|
-| **classify** | Picks a strategy: `GRAPH` (relationships and extracted facts), `VECTOR` (narrative) or `HYBRID`. Also rates complexity: `SIMPLE` or `MULTIHOP`. | Claude Sonnet 4.6 |
+| **classify** | Picks a strategy: `GRAPH` (relationships and extracted facts), `VECTOR` (narrative) or `HYBRID`. Also rates complexity (`SIMPLE` or `MULTIHOP`) and names the filing sections likely to hold the answer: MD&A, risk factors, notes, business or governance. | Claude Sonnet 4.6 |
 | **graph_search** | Writes 1–3 Cypher queries and runs them on Kuzu. If a query fails, the error goes back to the model for one repair attempt. Each row is traced to its source filing (ticker · form · date). | Claude Sonnet 4.6 |
-| **vector_search** | Embeds the question locally (`BAAI/bge-small-en-v1.5`) and searches Chroma, filtered to the companies named in the question. Multi-hop questions also pull each company's latest backlog (RPO) figures, so commitments without a named counterparty can still be cited. | Local, no API cost |
+| **vector_search** | Embeds the question locally (`BAAI/bge-small-en-v1.5`) and searches Chroma, filtered to the companies named in the question. Half the budget is restricted to the sections the classifier chose, mapped across forms (MD&A is `item_7` in a 10-K, `part1_item2` in a 10-Q, `item_5` in a 20-F), so proxy boilerplate can't crowd out the answer. Multi-hop questions also pull each company's latest backlog (RPO) figures, so commitments without a named counterparty can still be cited. | Local, no API cost |
 | **synthesize** | Writes a cited answer (`[E1]`, `[E2]`…) using only the retrieved evidence. It flags hidden-risk patterns, says "insufficient evidence" instead of guessing, and labels inferred links as inference. | Sonnet 4.6, or **Opus 4.7** for `MULTIHOP` |
 
 Multi-hop questions always run both retrievers **in parallel**, because the graph often covers some of the entities but not all of them.
 
-**Typical cost and latency:** about $0.02 and 15 s for a simple question; $0.06–$0.13 and 25–40 s for a multi-hop one. The tab shows the cost of every LLM call.
+**Typical cost and latency:** about $0.02 and 15 s for a simple question; $0.06–$0.18 and 25–40 s for a multi-hop one. The tab shows the cost of every LLM call.
 
 ---
 
@@ -105,7 +105,7 @@ python -m graphrag.scripts.ask "Which SPVs does Meta sponsor?"
 streamlit run app.py        # → ExposureIQ tab
 ```
 
-The only key you need is `ANTHROPIC_API_KEY`, used at query time (about $0.02–$0.13 per question). Embeddings run locally. The first run downloads the ~130 MB `bge-small` embedding model.
+The only key you need is `ANTHROPIC_API_KEY`, used at query time (about $0.02–$0.18 per question). Embeddings run locally. The first run downloads the ~130 MB `bge-small` embedding model.
 
 ### Full rebuild from EDGAR (optional)
 
@@ -124,6 +124,36 @@ python -m graphrag.scripts.extract_all
 # 3. Rebuild the indexes
 python -m graphrag.scripts.phase3_build
 ```
+
+---
+
+## Evaluation
+
+ExposureIQ is measured on a 26-question set (`graphrag/eval/questions.jsonl`): 8 graph, 11 text, 6 multi-hop and 1 out-of-scope question. Claude Opus 4.7 grades each answer:
+
+- **Faithfulness:** the answer is split into individual factual claims, and each is checked against the evidence the pipeline retrieved. *Strict* counts only fully supported claims; *lenient* gives half credit to claims with a minor detail off.
+- **Relevance:** a 1–5 rating of whether the answer addresses the question. The table reports the share scoring 4 or 5.
+
+| Configuration | Claims | Faithfulness (strict) | Faithfulness (lenient) | Relevance (≥4/5) | Mean relevance |
+|---|---|---|---|---|---|
+| Original | 483 | 93.2% | 95.7% | 100% | 4.73 |
+| + Grounding-only answer prompt | 482 | 97.1% | 98.1% | 92% | 4.65 |
+| **+ Section-aware retrieval (current)** | **520** | **96.9%** | **98.0%** | **100%** | **4.81** |
+
+What changed between runs:
+
+1. **Grounding-only prompt.** Most early failures were the model adding outside knowledge. Forbidding it raised faithfulness, but exposed retrieval gaps: two questions now said "insufficient evidence" where the model used to fill in from memory.
+2. **Section-aware retrieval** closed those gaps. "Meta's capex outlook" went from proxy compensation tables to four MD&A passages with explicit guidance.
+
+The grader was audited by hand. Every figure in a "supported" claim was traced to the evidence, and every "unsupported" verdict was read. The grader leans slightly strict: in the current run, 2 of its 5 unsupported claims are true statements about which companies are covered.
+
+Run it yourself (about 11 minutes, ~$4):
+
+```bash
+python -m graphrag.eval.run_eval            # writes graphrag/eval/results/eval_<timestamp>*.{jsonl,md}
+```
+
+**Caveats:** one run per configuration, 26 questions, and a judge from the same model family as the generator. Treat the numbers as indicative, not a benchmark.
 
 ---
 

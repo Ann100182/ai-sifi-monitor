@@ -91,12 +91,12 @@ def draw_architecture(path: Path):
             ha="center", va="center", fontsize=7.6, color=SLATE, style="italic")
 
     # ---- Query-time band
-    band(0.15, 3.1, "QUERY TIME  ·  LangGraph state machine, ~\\$0.02–\\$0.13 / question")
+    band(0.15, 3.1, "QUERY TIME  ·  LangGraph state machine, ~\\$0.02–\\$0.18 / question")
     qy, qh = 1.0, 1.0
     box(0.35, qy, 1.75, qh, "Question", "Streamlit\nExposureIQ tab", fc=SLATE)
-    box(2.5, qy, 1.85, qh, "classify", "GRAPH · VECTOR · HYBRID\nSIMPLE · MULTIHOP", fc=GOLD, tc=NAVY)
+    box(2.5, qy, 1.85, qh, "classify", "strategy · complexity\ntarget sections", fc=GOLD, tc=NAVY)
     box(4.85, 1.75, 2.1, 0.95, "graph_search", "LLM → Cypher → Kuzu\n+1 self-repair round", fc=GOLD, tc=NAVY)
-    box(4.85, 0.35, 2.1, 0.95, "vector_search", "ticker-filtered Chroma\n+ backlog (RPO) probe")
+    box(4.85, 0.35, 2.1, 0.95, "vector_search", "ticker + section filtered\n+ backlog (RPO) probe")
     box(7.55, qy, 2.1, qh, "synthesize", "Sonnet 4.6 · Opus 4.7\nfor MULTIHOP", fc=GOLD, tc=NAVY)
     box(10.2, qy, 2.5, qh, "Cited answer", "[E1]… evidence · Cypher\ncost + pipeline trace", fc=SLATE)
     arrow(2.1, qy + qh / 2, 2.5, qy + qh / 2)
@@ -310,13 +310,16 @@ def build_architecture_doc(path: Path):
     doc.add_heading("7. Query engine", level=1)
     para(doc, "graphrag/query.py compiles a LangGraph StateGraph with four nodes:")
     table(doc, ["Node", "Role", "Model"], [
-        ["**classify**", "Chooses GRAPH, VECTOR or HYBRID retrieval and rates the question SIMPLE or "
-                         "MULTIHOP", "Sonnet 4.6"],
+        ["**classify**", "Chooses GRAPH, VECTOR or HYBRID retrieval, rates the question SIMPLE or "
+                         "MULTIHOP, and names the filing sections likely to hold the answer (MD&A, "
+                         "risk factors, notes, business, governance)", "Sonnet 4.6"],
         ["**graph_search**", "Writes 1–3 Cypher queries against the schema and runs them on Kuzu. "
                              "Failed queries go back to the model once with the Kuzu error. Each row "
                              "resolves to a ticker, form and filing date.", "Sonnet 4.6"],
-        ["**vector_search**", "Embeds the question, searches Chroma filtered to the companies it "
-                              "names, and for multi-hop questions adds each company's latest backlog "
+        ["**vector_search**", "Embeds the question and searches Chroma filtered to the companies it "
+                              "names. Half the budget is restricted to the chosen sections, mapped "
+                              "across forms (MD&A = item_7 in a 10-K, part1_item2 in a 10-Q, item_5 in "
+                              "a 20-F). Multi-hop questions also get each company's latest backlog "
                               "(RPO) figures via exact-text match", "Local"],
         ["**synthesize**", "Writes a cited answer from the evidence only; flags hidden-risk "
                            "patterns; says \"insufficient evidence\" rather than guessing; labels "
@@ -353,10 +356,27 @@ def build_architecture_doc(path: Path):
         ["One-off extraction", "$35.21 (Haiku $10.80, Sonnet $24.41), ~14 hours, 147 filings"],
         ["Index build", "~17 minutes locally, $0"],
         ["Simple question", "~$0.02, ~15 seconds"],
-        ["Multi-hop question", "~$0.06–$0.13, 25–40 seconds"],
+        ["Multi-hop question", "~$0.06–$0.18, 25–40 seconds"],
     ], widths=[2.0, 4.7])
 
-    doc.add_heading("10. Limitations and roadmap", level=1)
+    doc.add_heading("10. Evaluation", level=1)
+    para(doc,
+         "A 26-question set (8 graph, 11 text, 6 multi-hop, 1 out-of-scope) is graded by Claude Opus "
+         "4.7. Faithfulness splits each answer into factual claims and checks each against the "
+         "retrieved evidence; relevance rates 1–5 whether the answer addresses the question.")
+    table(doc, ["Configuration", "Faithfulness (strict)", "Faithfulness (lenient)",
+                "Relevance (≥4/5)", "Mean relevance"], [
+        ["Original", "93.2%", "95.7%", "100%", "4.73"],
+        ["+ Grounding-only answer prompt", "97.1%", "98.1%", "92%", "4.65"],
+        ["**+ Section-aware retrieval (current)**", "96.9%", "98.0%", "100%", "4.81"],
+    ], widths=[2.3, 1.1, 1.1, 1.1, 1.1])
+    para(doc,
+         "Forbidding outside knowledge lifted faithfulness but exposed retrieval gaps; section-aware "
+         "retrieval closed them (e.g. Meta's capex outlook now comes from MD&A, not proxy tables). "
+         "The grader was audited by hand and leans slightly strict. One run per configuration on 26 "
+         "questions, with a same-family judge: indicative, not a benchmark.")
+
+    doc.add_heading("11. Limitations and roadmap", level=1)
     bullets(doc, [
         "**Extraction errors.** Graph facts come from an LLM; answers still need a human read.",
         "**Filings only.** Undisclosed relationships appear only as labelled inference. Next: news "
@@ -364,7 +384,8 @@ def build_architecture_doc(path: Path):
         "**Dropped edges.** About 700 extracted edges fall outside the schema's allowed type pairs; "
         "widening the schema would recover them.",
         "**Snapshot corpus.** Re-run the pipeline to add new filings; 8-K, 6-K and S-1 are next.",
-        "**Evaluation.** A question set with graded answers and citations is planned.",
+        "**Evaluation.** Grow the 26-question set, add a judge from a different model family, and "
+        "run each configuration several times.",
     ])
 
     doc.save(path)
@@ -410,7 +431,7 @@ SCENES = [
      "jumping from 138 to 638 billion dollars, and labels the link as inference, not disclosure."),
     ("2:35 – 3:00", "Close",
      "Pipeline trace visible, then the GitHub repo page.",
-     "Simple questions cost about two cents and complex ones about ten to thirteen. The whole thing "
+     "Simple questions cost about two cents and complex ones up to about eighteen. On a 26-question evaluation, ninety-seven percent of claims were supported by the cited evidence. The whole thing "
      "runs on a laptop, and the repo includes the extracted data, so anyone can rebuild it in "
      "fifteen minutes. Next I'm adding news as a separate evidence source for the deals that "
      "filings won't name. Thanks for watching."),
@@ -472,8 +493,9 @@ def build_demo_script(path: Path):
     table(doc, ["Fact", "Value"], [
         ["Filings / companies / years", "147 / 12 / FY2024–2026"],
         ["Graph", "4,084 nodes, 3,583 edges, 1,631 hidden-risk signals"],
+        ["Eval (26 questions)", "97% faithfulness, 100% relevance"],
         ["One-off extraction cost", "$35 (about 14 hours)"],
-        ["Cost per question", "~$0.02 simple, ~$0.06–$0.13 multi-hop"],
+        ["Cost per question", "~$0.02 simple, ~$0.06–$0.18 multi-hop"],
         ["Meta Hyperion JV", "$27B, with Blue Owl"],
         ["Oracle backlog (RPO)", "$138B (May 2025) → $638B (May 2026) → $664B (Aug 2026)"],
         ["Microsoft ↔ OpenAI", "$13B funding commitment; $250B incremental Azure contract"],

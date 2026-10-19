@@ -1,0 +1,26 @@
+{"id": "g01", "category": "graph", "question": "Which SPVs does Meta sponsor?"}
+{"id": "g02", "category": "graph", "question": "What hidden-leverage signals above severity 4 appear in the latest 10-Ks?"}
+{"id": "g03", "category": "graph", "question": "List NVIDIA's disclosed investments in AI labs."}
+{"id": "g04", "category": "graph", "question": "Which companies disclose investments in OpenAI?"}
+{"id": "g05", "category": "graph", "question": "What capex commitments has Microsoft disclosed?"}
+{"id": "g06", "category": "graph", "question": "Which companies have the largest capex ROI gap signals?"}
+{"id": "g07", "category": "graph", "question": "What revenue roundtripping signals were extracted for Microsoft?"}
+{"id": "g08", "category": "graph", "question": "Which off-balance-sheet entities carry residual value guarantees?"}
+{"id": "v01", "category": "vector", "question": "How does Oracle describe its remaining performance obligations?"}
+{"id": "v02", "category": "vector", "question": "What does Meta say about its capital expenditure outlook?"}
+{"id": "v03", "category": "vector", "question": "How does NVIDIA describe export controls affecting China?"}
+{"id": "v04", "category": "vector", "question": "How does Alphabet describe changes to the useful lives of its servers?"}
+{"id": "v05", "category": "vector", "question": "What does Amazon say about AWS capacity constraints?"}
+{"id": "v06", "category": "vector", "question": "How does Broadcom describe its customer concentration?"}
+{"id": "v07", "category": "vector", "question": "What does CoreWeave disclose about its debt financing?"}
+{"id": "v08", "category": "vector", "question": "How does ASML describe its dependence on key suppliers?"}
+{"id": "v09", "category": "vector", "question": "What does Salesforce say about AI-related risks in its risk factors?"}
+{"id": "v10", "category": "vector", "question": "How does IBM describe risks to its hybrid cloud and AI strategy?"}
+{"id": "v11", "category": "vector", "question": "What does Adobe say about generative AI competition?"}
+{"id": "m01", "category": "multihop", "question": "Trace the OpenAI counterparty web across Microsoft, Oracle, and CoreWeave."}
+{"id": "m02", "category": "multihop", "question": "Which companies have the most severe customer concentration risk signals?"}
+{"id": "m03", "category": "multihop", "question": "Compare how Microsoft and Amazon describe their AI infrastructure capex commitments."}
+{"id": "m04", "category": "multihop", "question": "How are NVIDIA and CoreWeave financially linked?"}
+{"id": "m05", "category": "multihop", "question": "Compare data-center lease commitments across Meta, Microsoft, and Oracle."}
+{"id": "m06", "category": "multihop", "question": "Which companies show circularity signals involving AI labs?"}
+{"id": "x01", "category": "out_of_scope", "question": "What is Tesla's planned AI capex for 2026?"}

@@ -40,7 +40,9 @@ def _pipeline_caption(result) -> str:
     else:
         retrieval = "Graph" if result.strategy == "graph" else "Vector"
     model = "Opus 4.7" if "opus" in result.model_used else "Sonnet 4.6"
-    return f"Classify → {retrieval} → Synthesize ({model})"
+    sections = getattr(result, "sections", None)
+    target = f" · sections: {', '.join(sections)}" if sections else ""
+    return f"Classify → {retrieval} → Synthesize ({model}){target}"
 
 
 def _citation_header(e) -> str:
