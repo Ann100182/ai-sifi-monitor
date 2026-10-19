@@ -37,3 +37,6 @@ graphrag/cache/raw/
 graphrag/cache/kuzu
 graphrag/cache/kuzu.*
 graphrag/cache/chroma/
+
+# Office lock files
+~$*
