@@ -20,7 +20,7 @@ SUGGESTED_QUERIES = [
     "Which SPVs does Meta sponsor?",
     "Trace the OpenAI counterparty web across Microsoft, Oracle, and CoreWeave.",
     "What hidden-leverage signals above severity 4 appear in the latest 10-Ks?",
-    "How does ASML describe its China revenue exposure?",
+    "Which companies have the most severe customer concentration risk signals?",
     "List every NVIDIA investment disclosed across the past 3 years.",
     "Which companies have the largest capex ROI gap signals?",
 ]
